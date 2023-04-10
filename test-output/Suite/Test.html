@@ -1,0 +1,254 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>35/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 02 22:55:33 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>634 seconds (634827 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Freedo_domain.appium_1.appium_1_TC_003_Verify_login_component()'><b>appium_1_TC_003_Verify_login_component</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>1</td>
+<td>Freedo_domain.appium_1@1b84f475</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.appium_1_TC_004_1_Verify_login_functionality_Register_mo_number()'><b>appium_1_TC_004_1_Verify_login_functionality_Register_mo_number</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>4</td>
+<td>Freedo_domain.appium_1@1b84f475</td></tr>
+<tr>
+<td title='Freedo_domain.appium_4.appium_4__TC_0033_Verify_Create_Account_functionality()'><b>appium_4__TC_0033_Verify_Create_Account_functionality</b><br>Test class: Freedo_domain.appium_4</td>
+<td></td>
+<td>30</td>
+<td>Freedo_domain.appium_4@5bf8fa12</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.appium_1_TC_006_Select_all__City()'><b>appium_1_TC_006_Select_all__City</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>3</td>
+<td>Freedo_domain.appium_1@1b84f475</td></tr>
+<tr>
+<td title='Freedo_domain.appium_3.appium_3_TC_0027_Admin_approved_request()'><b>appium_3_TC_0027_Admin_approved_request</b><br>Test class: Freedo_domain.appium_3</td>
+<td></td>
+<td>33</td>
+<td>Freedo_domain.appium_3@1608bcbd</td></tr>
+<tr>
+<td title='Freedo_domain.appium_4.appium_4_TC_0028_verify_Booking_details()'><b>appium_4_TC_0028_verify_Booking_details</b><br>Test class: Freedo_domain.appium_4</td>
+<td></td>
+<td>18</td>
+<td>Freedo_domain.appium_4@5bf8fa12</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.appium_1_TC_004_2_Verify_OTP_Verification_Page()'><b>appium_1_TC_004_2_Verify_OTP_Verification_Page</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>6</td>
+<td>Freedo_domain.appium_1@1b84f475</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.appium_1_TC_0010_verify_booking_Rentals_fleet_section()'><b>appium_1_TC_0010_verify_booking_Rentals_fleet_section</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>16</td>
+<td>Freedo_domain.appium_1@1b84f475</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.appium_2_TC_0022_verify_app_dark_theme()'><b>appium_2_TC_0022_verify_app_dark_theme</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>3</td>
+<td>Freedo_domain.appium_2@554e218</td></tr>
+<tr>
+<td title='Freedo_domain.appium_4.appium_4_TC_0032_verify_log_out_account()'><b>appium_4_TC_0032_verify_log_out_account</b><br>Test class: Freedo_domain.appium_4</td>
+<td></td>
+<td>6</td>
+<td>Freedo_domain.appium_4@5bf8fa12</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.appium_1_TC_001_On_boarding_screen()'><b>appium_1_TC_001_On_boarding_screen</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>6</td>
+<td>Freedo_domain.appium_1@1b84f475</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.appium_1_TC_002_static_pages_view()'><b>appium_1_TC_002_static_pages_view</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>6</td>
+<td>Freedo_domain.appium_1@1b84f475</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.appium_1_TC_005_verify_all__City()'><b>appium_1_TC_005_verify_all__City</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>1</td>
+<td>Freedo_domain.appium_1@1b84f475</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.appium_2_TC_0021_verify_profile_edit_data()'><b>appium_2_TC_0021_verify_profile_edit_data</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>32</td>
+<td>Freedo_domain.appium_2@554e218</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.appium_1_TC_007_Verify_book_your_city_section()'><b>appium_1_TC_007_Verify_book_your_city_section</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>16</td>
+<td>Freedo_domain.appium_1@1b84f475</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.appium_1_TC_0015_admin_Request_reject()'><b>appium_1_TC_0015_admin_Request_reject</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>30</td>
+<td>Freedo_domain.appium_1@1b84f475</td></tr>
+<tr>
+<td title='Freedo_domain.appium_3.appium_3_TC_0024_verify_2_to_3_month_booking_with_valid_data()'><b>appium_3_TC_0024_verify_2_to_3_month_booking_with_valid_data</b><br>Test class: Freedo_domain.appium_3</td>
+<td></td>
+<td>32</td>
+<td>Freedo_domain.appium_3@1608bcbd</td></tr>
+<tr>
+<td title='Freedo_domain.appium_3.appium_3_TC_0025_verify_3_to_2_month_booking_summary_page()'><b>appium_3_TC_0025_verify_3_to_2_month_booking_summary_page</b><br>Test class: Freedo_domain.appium_3</td>
+<td></td>
+<td>4</td>
+<td>Freedo_domain.appium_3@1608bcbd</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.appium_1_TC_0011_verify_kyc_verification_process()'><b>appium_1_TC_0011_verify_kyc_verification_process</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>10</td>
+<td>Freedo_domain.appium_1@1b84f475</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.appium_1_TC_0012_verify_Aadhaar_verification_process()'><b>appium_1_TC_0012_verify_Aadhaar_verification_process</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>1</td>
+<td>Freedo_domain.appium_1@1b84f475</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.appium_2_TC_0018_verify_payment_process_methods()'><b>appium_2_TC_0018_verify_payment_process_methods</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>14</td>
+<td>Freedo_domain.appium_2@554e218</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.appium_2_TC_0020_verify_booking_page_components()'><b>appium_2_TC_0020_verify_booking_page_components</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>16</td>
+<td>Freedo_domain.appium_2@554e218</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.appium_2_TC_0017_verify_Home_delivery_section_with_fill_valid_data()'><b>appium_2_TC_0017_verify_Home_delivery_section_with_fill_valid_data</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>46</td>
+<td>Freedo_domain.appium_2@554e218</td></tr>
+<tr>
+<td title='Freedo_domain.appium_4.appium_4_TC_0031_verify_booking_page_status()'><b>appium_4_TC_0031_verify_booking_page_status</b><br>Test class: Freedo_domain.appium_4</td>
+<td></td>
+<td>23</td>
+<td>Freedo_domain.appium_4@5bf8fa12</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.appium_1_TC_009_cod_payment()'><b>appium_1_TC_009_cod_payment</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>7</td>
+<td>Freedo_domain.appium_1@1b84f475</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.appium_1_TC_004_3_Select_location()'><b>appium_1_TC_004_3_Select_location</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>9</td>
+<td>Freedo_domain.appium_1@1b84f475</td></tr>
+<tr>
+<td title='Freedo_domain.appium_4.appium_4_TC_0030_Admin_End_Ride_request()'><b>appium_4_TC_0030_Admin_End_Ride_request</b><br>Test class: Freedo_domain.appium_4</td>
+<td></td>
+<td>30</td>
+<td>Freedo_domain.appium_4@5bf8fa12</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.appium_1_TC_0013_verify_Selfi_verification_process()'><b>appium_1_TC_0013_verify_Selfi_verification_process</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>1</td>
+<td>Freedo_domain.appium_1@1b84f475</td></tr>
+<tr>
+<td title='Freedo_domain.appium_3.appium_3_TC_0026_verify_booking_payment_through_split()'><b>appium_3_TC_0026_verify_booking_payment_through_split</b><br>Test class: Freedo_domain.appium_3</td>
+<td></td>
+<td>31</td>
+<td>Freedo_domain.appium_3@1608bcbd</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.appium_2_TC_0016_verify_PickUp_delivery_section_with_valid_data()'><b>appium_2_TC_0016_verify_PickUp_delivery_section_with_valid_data</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>29</td>
+<td>Freedo_domain.appium_2@554e218</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.appium_2_TC_0019_verify_Booking_confirmation()'><b>appium_2_TC_0019_verify_Booking_confirmation</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>29</td>
+<td>Freedo_domain.appium_2@554e218</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.appium_2_TC_0023_admin_Request_reject()'><b>appium_2_TC_0023_admin_Request_reject</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>28</td>
+<td>Freedo_domain.appium_2@554e218</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.appium_1_TC_0014_verify_More_document_verification_process()'><b>appium_1_TC_0014_verify_More_document_verification_process</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>6</td>
+<td>Freedo_domain.appium_1@1b84f475</td></tr>
+<tr>
+<td title='Freedo_domain.appium_4.appium_4_TC_0029_verify_extend_ride_and_apply_coupon_code()'><b>appium_4_TC_0029_verify_extend_ride_and_apply_coupon_code</b><br>Test class: Freedo_domain.appium_4</td>
+<td></td>
+<td>34</td>
+<td>Freedo_domain.appium_4@5bf8fa12</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.appium_1_TC_008_verify_book_your_vehicle_section()'><b>appium_1_TC_008_verify_book_your_vehicle_section</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>13</td>
+<td>Freedo_domain.appium_1@1b84f475</td></tr>
+</table><p>
+</body>
+</html>

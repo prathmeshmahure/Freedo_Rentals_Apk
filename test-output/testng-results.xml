@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="9" total="44" passed="35" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-02T22:55:33 IST" name="Suite" finished-at="2023-04-02T23:06:08 IST" duration-ms="634827">
+    <groups>
+    </groups>
+    <test started-at="2023-04-02T22:55:33 IST" name="Test" finished-at="2023-04-02T23:06:08 IST" duration-ms="634827">
+      <class name="Freedo_domain.appium_4">
+        <test-method signature="appium_4_TC_0028_verify_Booking_details()[pri:7, instance:Freedo_domain.appium_4@5bf8fa12]" started-at="2023-04-02T23:03:44 IST" name="appium_4_TC_0028_verify_Booking_details" finished-at="2023-04-02T23:04:02 IST" duration-ms="18487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_4_TC_0028_verify_Booking_details -->
+        <test-method signature="appium_4_TC_0029_verify_extend_ride_and_apply_coupon_code()[pri:0, instance:Freedo_domain.appium_4@5bf8fa12]" started-at="2023-04-02T23:04:02 IST" name="appium_4_TC_0029_verify_extend_ride_and_apply_coupon_code" finished-at="2023-04-02T23:04:37 IST" depends-on-methods="Freedo_domain.appium_4.appium_4_TC_0028_verify_Booking_details" duration-ms="34914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_4_TC_0029_verify_extend_ride_and_apply_coupon_code -->
+        <test-method signature="appium_4_TC_0030_Admin_End_Ride_request()[pri:0, instance:Freedo_domain.appium_4@5bf8fa12]" started-at="2023-04-02T23:04:37 IST" name="appium_4_TC_0030_Admin_End_Ride_request" finished-at="2023-04-02T23:05:08 IST" depends-on-methods="Freedo_domain.appium_4.appium_4_TC_0029_verify_extend_ride_and_apply_coupon_code" duration-ms="30817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_4_TC_0030_Admin_End_Ride_request -->
+        <test-method signature="appium_4_TC_0031_verify_booking_page_status()[pri:0, instance:Freedo_domain.appium_4@5bf8fa12]" started-at="2023-04-02T23:05:08 IST" name="appium_4_TC_0031_verify_booking_page_status" finished-at="2023-04-02T23:05:31 IST" depends-on-methods="Freedo_domain.appium_4.appium_4_TC_0030_Admin_End_Ride_request" duration-ms="23313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_4_TC_0031_verify_booking_page_status -->
+        <test-method signature="appium_4_TC_0032_verify_log_out_account()[pri:8, instance:Freedo_domain.appium_4@5bf8fa12]" started-at="2023-04-02T23:05:31 IST" name="appium_4_TC_0032_verify_log_out_account" finished-at="2023-04-02T23:05:38 IST" duration-ms="6550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_4_TC_0032_verify_log_out_account -->
+        <test-method signature="appium_4__TC_0033_Verify_Create_Account_functionality()[pri:0, instance:Freedo_domain.appium_4@5bf8fa12]" started-at="2023-04-02T23:05:38 IST" name="appium_4__TC_0033_Verify_Create_Account_functionality" finished-at="2023-04-02T23:06:08 IST" depends-on-methods="Freedo_domain.appium_4.appium_4_TC_0032_verify_log_out_account" duration-ms="30050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_4__TC_0033_Verify_Create_Account_functionality -->
+      </class> <!-- Freedo_domain.appium_4 -->
+      <class name="Freedo_domain.appium_3">
+        <test-method signature="appium_3_TC_0024_verify_2_to_3_month_booking_with_valid_data()[pri:6, instance:Freedo_domain.appium_3@1608bcbd]" started-at="2023-04-02T23:02:02 IST" name="appium_3_TC_0024_verify_2_to_3_month_booking_with_valid_data" finished-at="2023-04-02T23:02:34 IST" duration-ms="32091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_3_TC_0024_verify_2_to_3_month_booking_with_valid_data -->
+        <test-method signature="appium_3_TC_0025_verify_3_to_2_month_booking_summary_page()[pri:0, instance:Freedo_domain.appium_3@1608bcbd]" started-at="2023-04-02T23:02:34 IST" name="appium_3_TC_0025_verify_3_to_2_month_booking_summary_page" finished-at="2023-04-02T23:02:38 IST" depends-on-methods="Freedo_domain.appium_3.appium_3_TC_0024_verify_2_to_3_month_booking_with_valid_data" duration-ms="4394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_3_TC_0025_verify_3_to_2_month_booking_summary_page -->
+        <test-method signature="appium_3_TC_0026_verify_booking_payment_through_split()[pri:0, instance:Freedo_domain.appium_3@1608bcbd]" started-at="2023-04-02T23:02:38 IST" name="appium_3_TC_0026_verify_booking_payment_through_split" finished-at="2023-04-02T23:03:10 IST" depends-on-methods="Freedo_domain.appium_3.appium_3_TC_0025_verify_3_to_2_month_booking_summary_page" duration-ms="31835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_3_TC_0026_verify_booking_payment_through_split -->
+        <test-method signature="appium_3_TC_0027_Admin_approved_request()[pri:0, instance:Freedo_domain.appium_3@1608bcbd]" started-at="2023-04-02T23:03:10 IST" name="appium_3_TC_0027_Admin_approved_request" finished-at="2023-04-02T23:03:44 IST" depends-on-methods="Freedo_domain.appium_3.appium_3_TC_0026_verify_booking_payment_through_split" duration-ms="33790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_3_TC_0027_Admin_approved_request -->
+      </class> <!-- Freedo_domain.appium_3 -->
+      <class name="Freedo_domain.appium_2">
+        <test-method signature="appium_2_TC_0016_verify_PickUp_delivery_section_with_valid_data()[pri:3, instance:Freedo_domain.appium_2@554e218]" started-at="2023-04-02T22:58:41 IST" name="appium_2_TC_0016_verify_PickUp_delivery_section_with_valid_data" finished-at="2023-04-02T22:59:11 IST" duration-ms="29514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_2_TC_0016_verify_PickUp_delivery_section_with_valid_data -->
+        <test-method signature="appium_2_TC_0017_verify_Home_delivery_section_with_fill_valid_data()[pri:0, instance:Freedo_domain.appium_2@554e218]" started-at="2023-04-02T22:59:11 IST" name="appium_2_TC_0017_verify_Home_delivery_section_with_fill_valid_data" finished-at="2023-04-02T22:59:57 IST" depends-on-methods="Freedo_domain.appium_2.appium_2_TC_0016_verify_PickUp_delivery_section_with_valid_data" duration-ms="46003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_2_TC_0017_verify_Home_delivery_section_with_fill_valid_data -->
+        <test-method signature="appium_2_TC_0018_verify_payment_process_methods()[pri:0, instance:Freedo_domain.appium_2@554e218]" started-at="2023-04-02T22:59:57 IST" name="appium_2_TC_0018_verify_payment_process_methods" finished-at="2023-04-02T23:00:11 IST" depends-on-methods="Freedo_domain.appium_2.appium_2_TC_0017_verify_Home_delivery_section_with_fill_valid_data" duration-ms="14734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_2_TC_0018_verify_payment_process_methods -->
+        <test-method signature="appium_2_TC_0019_verify_Booking_confirmation()[pri:0, instance:Freedo_domain.appium_2@554e218]" started-at="2023-04-02T23:00:11 IST" name="appium_2_TC_0019_verify_Booking_confirmation" finished-at="2023-04-02T23:00:41 IST" depends-on-methods="Freedo_domain.appium_2.appium_2_TC_0018_verify_payment_process_methods" duration-ms="29246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_2_TC_0019_verify_Booking_confirmation -->
+        <test-method signature="appium_2_TC_0020_verify_booking_page_components()[pri:0, instance:Freedo_domain.appium_2@554e218]" started-at="2023-04-02T23:00:41 IST" name="appium_2_TC_0020_verify_booking_page_components" finished-at="2023-04-02T23:00:57 IST" depends-on-methods="Freedo_domain.appium_2.appium_2_TC_0019_verify_Booking_confirmation" duration-ms="16085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_2_TC_0020_verify_booking_page_components -->
+        <test-method signature="appium_2_TC_0021_verify_profile_edit_data()[pri:4, instance:Freedo_domain.appium_2@554e218]" started-at="2023-04-02T23:00:57 IST" name="appium_2_TC_0021_verify_profile_edit_data" finished-at="2023-04-02T23:01:29 IST" duration-ms="32098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_2_TC_0021_verify_profile_edit_data -->
+        <test-method signature="appium_2_TC_0022_verify_app_dark_theme()[pri:0, instance:Freedo_domain.appium_2@554e218]" started-at="2023-04-02T23:01:29 IST" name="appium_2_TC_0022_verify_app_dark_theme" finished-at="2023-04-02T23:01:33 IST" depends-on-methods="Freedo_domain.appium_2.appium_2_TC_0021_verify_profile_edit_data" duration-ms="3984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_2_TC_0022_verify_app_dark_theme -->
+        <test-method signature="appium_2_TC_0023_admin_Request_reject()[pri:5, instance:Freedo_domain.appium_2@554e218]" started-at="2023-04-02T23:01:33 IST" name="appium_2_TC_0023_admin_Request_reject" finished-at="2023-04-02T23:02:02 IST" duration-ms="28905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_2_TC_0023_admin_Request_reject -->
+      </class> <!-- Freedo_domain.appium_2 -->
+      <class name="Freedo_domain.appium_1">
+        <test-method is-config="true" signature="BS()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:55:32 IST" name="BS" finished-at="2023-04-02T22:55:33 IST" duration-ms="1263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BS -->
+        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:55:33 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-04-02T22:56:18 IST" duration-ms="44730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OPEN_AND_INSTALL_APP -->
+        <test-method signature="appium_1_TC_001_On_boarding_screen()[pri:1, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:56:18 IST" name="appium_1_TC_001_On_boarding_screen" finished-at="2023-04-02T22:56:24 IST" duration-ms="6631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_1_TC_001_On_boarding_screen -->
+        <test-method signature="appium_1_TC_002_static_pages_view()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:56:25 IST" name="appium_1_TC_002_static_pages_view" finished-at="2023-04-02T22:56:31 IST" depends-on-methods="Freedo_domain.appium_1.appium_1_TC_001_On_boarding_screen" duration-ms="6437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_1_TC_002_static_pages_view -->
+        <test-method signature="appium_1_TC_003_Verify_login_component()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:56:31 IST" name="appium_1_TC_003_Verify_login_component" finished-at="2023-04-02T22:56:33 IST" depends-on-methods="Freedo_domain.appium_1.appium_1_TC_002_static_pages_view" duration-ms="1593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_1_TC_003_Verify_login_component -->
+        <test-method signature="appium_1_TC_004_1_Verify_login_functionality_Register_mo_number()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:56:33 IST" name="appium_1_TC_004_1_Verify_login_functionality_Register_mo_number" finished-at="2023-04-02T22:56:37 IST" depends-on-methods="Freedo_domain.appium_1.appium_1_TC_003_Verify_login_component" duration-ms="4270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_1_TC_004_1_Verify_login_functionality_Register_mo_number -->
+        <test-method signature="appium_1_TC_004_2_Verify_OTP_Verification_Page()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:56:37 IST" name="appium_1_TC_004_2_Verify_OTP_Verification_Page" finished-at="2023-04-02T22:56:43 IST" depends-on-methods="Freedo_domain.appium_1.appium_1_TC_004_1_Verify_login_functionality_Register_mo_number" duration-ms="6605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_1_TC_004_2_Verify_OTP_Verification_Page -->
+        <test-method signature="appium_1_TC_004_3_Select_location()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:56:43 IST" name="appium_1_TC_004_3_Select_location" finished-at="2023-04-02T22:56:53 IST" depends-on-methods="Freedo_domain.appium_1.appium_1_TC_004_2_Verify_OTP_Verification_Page" duration-ms="9080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_1_TC_004_3_Select_location -->
+        <test-method signature="appium_1_TC_005_verify_all__City()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:56:53 IST" name="appium_1_TC_005_verify_all__City" finished-at="2023-04-02T22:56:54 IST" depends-on-methods="Freedo_domain.appium_1.appium_1_TC_004_3_Select_location" duration-ms="1292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_1_TC_005_verify_all__City -->
+        <test-method signature="appium_1_TC_006_Select_all__City()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:56:54 IST" name="appium_1_TC_006_Select_all__City" finished-at="2023-04-02T22:56:57 IST" depends-on-methods="Freedo_domain.appium_1.appium_1_TC_005_verify_all__City" duration-ms="3542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_1_TC_006_Select_all__City -->
+        <test-method signature="appium_1_TC_007_Verify_book_your_city_section()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:56:57 IST" name="appium_1_TC_007_Verify_book_your_city_section" finished-at="2023-04-02T22:57:14 IST" depends-on-methods="Freedo_domain.appium_1.appium_1_TC_006_Select_all__City" duration-ms="16931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_1_TC_007_Verify_book_your_city_section -->
+        <test-method signature="appium_1_TC_008_verify_book_your_vehicle_section()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:57:14 IST" name="appium_1_TC_008_verify_book_your_vehicle_section" finished-at="2023-04-02T22:57:27 IST" depends-on-methods="Freedo_domain.appium_1.appium_1_TC_007_Verify_book_your_city_section" duration-ms="13058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_1_TC_008_verify_book_your_vehicle_section -->
+        <test-method signature="appium_1_TC_009_cod_payment()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:57:27 IST" name="appium_1_TC_009_cod_payment" finished-at="2023-04-02T22:57:34 IST" depends-on-methods="Freedo_domain.appium_1.appium_1_TC_008_verify_book_your_vehicle_section" duration-ms="7031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_1_TC_009_cod_payment -->
+        <test-method signature="appium_1_TC_0010_verify_booking_Rentals_fleet_section()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:57:34 IST" name="appium_1_TC_0010_verify_booking_Rentals_fleet_section" finished-at="2023-04-02T22:57:51 IST" depends-on-methods="Freedo_domain.appium_1.appium_1_TC_009_cod_payment" duration-ms="16581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_1_TC_0010_verify_booking_Rentals_fleet_section -->
+        <test-method signature="appium_1_TC_0011_verify_kyc_verification_process()[pri:2, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:57:51 IST" name="appium_1_TC_0011_verify_kyc_verification_process" finished-at="2023-04-02T22:58:02 IST" duration-ms="10800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_1_TC_0011_verify_kyc_verification_process -->
+        <test-method signature="appium_1_TC_0012_verify_Aadhaar_verification_process()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:58:02 IST" name="appium_1_TC_0012_verify_Aadhaar_verification_process" finished-at="2023-04-02T22:58:03 IST" depends-on-methods="Freedo_domain.appium_1.appium_1_TC_0011_verify_kyc_verification_process" duration-ms="1181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_1_TC_0012_verify_Aadhaar_verification_process -->
+        <test-method signature="appium_1_TC_0013_verify_Selfi_verification_process()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:58:03 IST" name="appium_1_TC_0013_verify_Selfi_verification_process" finished-at="2023-04-02T22:58:04 IST" depends-on-methods="Freedo_domain.appium_1.appium_1_TC_0012_verify_Aadhaar_verification_process" duration-ms="1348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_1_TC_0013_verify_Selfi_verification_process -->
+        <test-method signature="appium_1_TC_0014_verify_More_document_verification_process()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:58:04 IST" name="appium_1_TC_0014_verify_More_document_verification_process" finished-at="2023-04-02T22:58:10 IST" depends-on-methods="Freedo_domain.appium_1.appium_1_TC_0013_verify_Selfi_verification_process" duration-ms="6114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_1_TC_0014_verify_More_document_verification_process -->
+        <test-method signature="appium_1_TC_0015_admin_Request_reject()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T22:58:10 IST" name="appium_1_TC_0015_admin_Request_reject" finished-at="2023-04-02T22:58:41 IST" depends-on-methods="Freedo_domain.appium_1.appium_1_TC_0014_verify_More_document_verification_process" duration-ms="30666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium_1_TC_0015_admin_Request_reject -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Freedo_domain.appium_1@1b84f475]" started-at="2023-04-02T23:06:08 IST" name="teardown" finished-at="2023-04-02T23:06:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Freedo_domain.appium_1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

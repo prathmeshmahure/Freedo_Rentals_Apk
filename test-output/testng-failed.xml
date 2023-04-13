@@ -6,45 +6,18 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Freedo_domain.appium_4">
+      <class name="Freedo_domain.appium_1">
         <methods>
-          <include name="appium_4_TC_0031_verify_booking_page_status"/>
+          <include name="appium_1_TC_0014_verify_More_document_verification_process"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="appium_4_TC_0032_verify_log_out_account"/>
-          <include name="appium_4_TC_0029_verify_extend_ride_and_apply_coupon_code"/>
-          <include name="appium_4__TC_0033_Verify_Create_Account_functionality"/>
-          <include name="appium_4_TC_0028_verify_Booking_details"/>
-          <include name="appium_4_TC_0030_Admin_End_Ride_request"/>
+          <include name="appium_1_TC_0013_verify_Selfi_verification_process"/>
+          <include name="appium_1_TC_0011_verify_kyc_verification_process"/>
+          <include name="appium_1_TC_0015_admin_Request_reject"/>
+          <include name="appium_1_TC_0012_verify_Aadhaar_verification_process"/>
           <include name="teardown"/>
           <include name="BS"/>
         </methods>
-      </class> <!-- Freedo_domain.appium_4 -->
-      <class name="Freedo_domain.appium_3">
-        <methods>
-          <include name="appium_3_TC_0025_verify_3_to_2_month_booking_summary_page"/>
-          <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="appium_3_TC_0026_verify_booking_payment_through_split"/>
-          <include name="appium_3_TC_0027_Admin_approved_request"/>
-          <include name="appium_3_TC_0024_verify_2_to_3_month_booking_with_valid_data"/>
-          <include name="teardown"/>
-          <include name="BS"/>
-        </methods>
-      </class> <!-- Freedo_domain.appium_3 -->
-      <class name="Freedo_domain.appium_2">
-        <methods>
-          <include name="appium_2_TC_0016_verify_PickUp_delivery_section_with_valid_data"/>
-          <include name="appium_2_TC_0018_verify_payment_process_methods"/>
-          <include name="appium_2_TC_0022_verify_app_dark_theme"/>
-          <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="appium_2_TC_0021_verify_profile_edit_data"/>
-          <include name="appium_2_TC_0023_admin_Request_reject"/>
-          <include name="appium_2_TC_0019_verify_Booking_confirmation"/>
-          <include name="appium_2_TC_0020_verify_booking_page_components"/>
-          <include name="teardown"/>
-          <include name="appium_2_TC_0017_verify_Home_delivery_section_with_fill_valid_data"/>
-          <include name="BS"/>
-        </methods>
-      </class> <!-- Freedo_domain.appium_2 -->
+      </class> <!-- Freedo_domain.appium_1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -15,8 +15,8 @@ public class booking_page {
 	
 	
 //=============================== 1st drop down componenets ============================================================	
-	@FindBy(xpath="//android.widget.TextView[@content-desc='icon_Location']")			////Click_1st_location_dropdown
-	private WebElement Click_1st_location_dropdown;
+	@FindBy(xpath="//android.widget.TextView[@content-desc='HomeId_EnterIcon']")			////Click_1st_location_dropdown
+	private WebElement Click_1st_page_enter_button;
 	
 	@FindBy(xpath = "//android.widget.EditText[@content-desc='input_Location_Home']")  // text get 1st location dropdown
 	 private WebElement txt_1st_location_dropdown;
@@ -27,20 +27,10 @@ public class booking_page {
 	@FindBy(xpath="//android.widget.CheckedTextView[@text='Automation']")
 	private WebElement Click_Autonation_city;
 
-//	
-//	@Find(AppiumBy.accessibilityId(""))
-//	AndroidBy loc_Username_android1;
-	
 
-//	
-//	@FindBy(xpath="")
-//	private WebElement Email;
-//	
-//	@FindBy(xpath="")
-//	private WebElement Email;
 
 //================================== 2nd drop down componenets ========================================================	
-	@FindBy(xpath="//android.widget.TextView[@content-desc='icon_Package']")		////Click_Package_dropdown
+	@FindBy(xpath="//android.widget.EditText[@content-desc='input_Package_Filter']")		////Click_Package_dropdown
 	private WebElement Click_Package_dropdown;
 	
 	@FindBy(xpath="//android.widget.EditText[@content-desc='input_Package_Home']")		////txt_Package_dropdown
@@ -83,8 +73,8 @@ public class booking_page {
 	@FindBy(xpath="//android.widget.Button[@text='OK']")								//Click_calender_ok_button
 	private WebElement Click_calender_ok_button;
 	
-	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_BookNow']")
-	private WebElement Click_Book_now_Button;											//Click_Book_now_Button
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_Search_Filter_btn']")
+	private WebElement Click_go_freedo_Button;											//Click_Book_now_Button
 	
 //=====================================4th all Bike only =========================================================
 	@FindBy(xpath="//android.view.View[@text='OUR RENTING FLEET']")																			//Click_Bike_Tab
@@ -146,7 +136,7 @@ public class booking_page {
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc='View_DropUp_Date_bDetail']/android.view.ViewGroup/android.view.ViewGroup")						//txt_BKD_end_date
 	private WebElement txt_BKD_end_date;
 		
-	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_Continue_bDetail']")						//Click_Continue_Tab
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='bookingID_detail_address_click']")						//Click_Continue_Tab
 	private WebElement Click_Continue_Tab;
 	
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_Continue']")						//Click_Continue_Tab
@@ -163,6 +153,9 @@ public class booking_page {
 	
 	@FindBy(xpath="//android.widget.ImageView[@content-desc='imgcbx_Cash']")									//Click_cash_on_delivery
 	private WebElement Click_cash_on_delivery;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='cbx_Accept_summary']/android.view.ViewGroup/android.widget.ImageView")									//Click_cash_on_delivery
+	private WebElement click_I_accept_checkbox;
 	
 	@FindBy(xpath="//android.widget.ImageView[@content-desc='imgcbx_Split']")				//Click_split_payment
 	private WebElement Click_split_payment;
@@ -183,7 +176,7 @@ public class booking_page {
 	private WebElement cod_1st_available_text;
 	
 	@FindBy(xpath="//android.widget.Button[@text='OK']")							//cod_1st_available_ok_button
-	private WebElement cod_1st_available_ok_button;
+	private WebElement click_location_pop_up_ok_button;
 	
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_BackBOOKINGDETAILS']")	//Click_back_button
 	private WebElement Click_back_button;
@@ -355,8 +348,8 @@ public class booking_page {
 	@FindBy(xpath="//android.widget.TextView[@content-desc='txt_UploadBack']")	//Click_DL_upload_Back_page
 	private WebElement Click_DL_upload_Back_page;
 	
-	@FindBy(xpath="//android.widget.TextView[@text='Skip']")					//Click_kyc_skip_button
-	private WebElement Click_kyc_skip_button;
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_Verify Later']")					//Click_kyc_skip_button
+	private WebElement Click_kyc_Verify_later_button;
 	
 	@FindBy(xpath="//android.widget.TextView[@text='Next']")					//Click_kyc_next_button
 	private WebElement Click_kyc_next_button;
@@ -557,8 +550,8 @@ public class booking_page {
 						return txt_city_front_page;
 					}					
 //============================================ 1st drop down componenets getter ======= 1st page ================================					
-					public WebElement getClick_1st_location_dropdown() {
-						return Click_1st_location_dropdown;
+					public WebElement getClick_1st_page_enter_button() {
+						return Click_1st_page_enter_button;
 					}
 			
 					public WebElement getClick_1st_Metro_Hospital_Sector_12() {
@@ -630,8 +623,8 @@ public class booking_page {
 						return Click_calender_ok_button;
 					}
 					
-					public WebElement getClick_Book_now_Button() {
-						return Click_Book_now_Button;
+					public WebElement getClick_go_freedo_Button() {
+						return Click_go_freedo_Button;
 					}
 //========================================= all bike ===================================================== 2nd page=====================
 					
@@ -749,8 +742,8 @@ public class booking_page {
 						return cod_1st_available_text;
 					}
 					
-					public WebElement getcod_1st_available_ok_button() {
-						return cod_1st_available_ok_button;
+					public WebElement getclick_location_pop_up_ok_button() {
+						return click_location_pop_up_ok_button;
 					}
 					
 					public WebElement getClick_back_button() { 
@@ -972,8 +965,8 @@ public class booking_page {
 						return Click_DL_upload_Back_page;
 					}
 					
-					public WebElement getClick_kyc_skip_button() {
-						return Click_kyc_skip_button;
+					public WebElement getClick_kyc_Verify_later_button() {
+						return Click_kyc_Verify_later_button;
 					}
 					
 					public WebElement getClick_kyc_next_button() {
@@ -1184,7 +1177,7 @@ public class booking_page {
 					}
 
 					public WebElement getCod_1st_available_ok_button() {
-						return cod_1st_available_ok_button;
+						return click_location_pop_up_ok_button;
 					}
 
 					public WebElement getSummary_page_text() {
@@ -1361,6 +1354,14 @@ public class booking_page {
 
 					public WebElement getKYC_selfi_verified_txt() {
 						return KYC_selfi_verified_txt;
+					}
+
+					public WebElement getClick_I_accept_checkbox() {
+						return click_I_accept_checkbox;
+					}
+
+					public WebElement getClick_location_pop_up_ok_button() {
+						return click_location_pop_up_ok_button;
 					}
 					
 

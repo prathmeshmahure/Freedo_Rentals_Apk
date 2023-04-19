@@ -11,6 +11,24 @@ public class launch_login {
 	public WebDriver driver;
 	
 //=======================app launch page ============ 1 page ===================
+	@FindBy(how=How.XPATH,using="//android.widget.TextView[@text='Select Pickup Location, Date and Packages']")					//Skip Button1
+	private WebElement first_page_Select_pickUP_location;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='first_slide_indicator']")			
+	private WebElement first_page_first_slide_indicator;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='second_slide_indicator']")			
+	private WebElement first_page_second_slide_indicator;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='third_slide_indicator']")			
+	private WebElement first_page_third_slide_indicator;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='second_onboarding_title_txt']")			
+	private WebElement second_onboarding_tittle;
+	
+	@FindBy(xpath="(//android.widget.TextView[@content-desc='third_onboarding_title_txt'])[1]")			
+	private WebElement Thirdpage_onboarding_tittle;
+	
 	@FindBy(how=How.XPATH,using="//android.widget.TextView[@text='Skip']/.")					//Skip Button1
 	private WebElement Click_Skip_button1;
 	
@@ -320,6 +338,34 @@ public class launch_login {
 
 					public WebElement getPopular_cities_txt() {
 						return Popular_cities_txt;
+					}
+
+					public WebElement getFirst_page_Select_pickUP_location() {
+						return first_page_Select_pickUP_location;
+					}
+
+					public WebElement getfirst_page_first_slide_indicator() {
+						return first_page_first_slide_indicator;
+					}
+
+					public WebElement getSecond_onboarding_tittle() {
+						return second_onboarding_tittle;
+					}
+
+					public WebElement getThirdpage_onboarding_tittle() {
+						return Thirdpage_onboarding_tittle;
+					}
+
+					public WebElement getFirst_page_first_slide_indicator() {
+						return first_page_first_slide_indicator;
+					}
+
+					public WebElement getFirst_page_second_slide_indicator() {
+						return first_page_second_slide_indicator;
+					}
+
+					public WebElement getFirst_page_third_slide_indicator() {
+						return first_page_third_slide_indicator;
 					}
 					
 					

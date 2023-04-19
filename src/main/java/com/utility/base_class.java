@@ -13,7 +13,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
@@ -42,7 +41,7 @@ public class base_class {
 	}
 	
 	 @BeforeTest
-	  public void OPEN_AND_INSTALL_APP() throws MalformedURLException, Exception {
+	  public static  void OPEN_AND_INSTALL_APP() throws MalformedURLException, Exception {
 		 UiAutomator2Options cap=new UiAutomator2Options();
 //		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability("appium:automationName", "uiautomator2");
@@ -51,10 +50,10 @@ public class base_class {
 		cap.setCapability("appium:udid", "emulator-5554");// 0836731257071990 //emulator-5554 //0526532038000424
 		cap.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
 		cap.setCapability("appium:avdLaunchTimeout", 600000);
-		cap.setCapability("appPackage", "com.heerofreedo");
-		cap.setCapability("appActivity", "com.heerofreedo.MainActivity");
-		cap.setCapability("appium:noReset", "true");
-//		cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\10app-release.apk"));
+//		cap.setCapability("appPackage", "com.heerofreedo");
+//		cap.setCapability("appActivity", "com.heerofreedo.MainActivity");
+//		cap.setCapability("appium:noReset", "false");
+		cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\10app-release.apk"));
 //		cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\app-release.apk"));
 //		cap.setChromedriverExecutable(System.getProperty("user.dir")+"\\apk\\chromedriver.exe");
 		cap.setCapability("appium:ensureWebviewsHavePages", true);
@@ -69,7 +68,7 @@ public class base_class {
 	  }
 	 
 	
-	@AfterTest
+//	@AfterTest
 	public void teardown() {
 //		driver1.quit();
 //		service.stop();

@@ -236,8 +236,8 @@ public class appium_2 extends base_class{
 		library.Custom_click(book.getClick_Edit_profile_update_button(), "Update profile");
 		
 		Thread.sleep(1000);
-		library.visible_link(book.getcod_1st_available_ok_button(), "Update profile popup");
-		library.Custom_click(book.getcod_1st_available_ok_button(), "ok button"); // reuse method
+		library.visible_link(book.getClick_location_pop_up_ok_button(), "Update profile popup");
+		library.Custom_click(book.getClick_location_pop_up_ok_button(), "ok button"); // reuse method
 		library.Custom_click(book.getClick_Edit_profile_back_navigation_button(),"click back button");
 		
 	}

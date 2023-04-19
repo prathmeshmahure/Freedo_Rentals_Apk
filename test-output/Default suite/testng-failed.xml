@@ -3,14 +3,20 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Freedo_domain.TEST">
+      <class name="Freedo_domain.appium_0">
         <methods>
-          <include name="t1"/>
+          <include name="appium_1_TC_004_1_Verify_login_functionality_Register_mo_number"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="teardown"/>
+          <include name="appium_1_TC_001_On_boarding_screen"/>
+          <include name="appium_1_TC_002_static_pages_view"/>
+          <include name="appium_1_TC_004_2_Verify_OTP_Verification_Page"/>
+          <include name="appium_1_TC_005_verify_all__City"/>
+          <include name="appium_1_TC_006_Select_all__City"/>
           <include name="BS"/>
+          <include name="appium_1_TC_003_Verify_login_component"/>
+          <include name="appium_1_TC_004_3_Select_location"/>
         </methods>
-      </class> <!-- Freedo_domain.TEST -->
+      </class> <!-- Freedo_domain.appium_0 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

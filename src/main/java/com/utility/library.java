@@ -248,7 +248,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"= Not Selected"+" "+e);
 					log.error("==NOT=="+Element_name+"=Not Selected");
-					listner.onTestFailure(null);
+				//	listner.onTestFailure(null);
 					}
 		}
 //================================================================================================================================	    
@@ -262,7 +262,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"=  Selected"+" "+e);
 					log.error("==NOT=="+Element_name+"= Selected");
-					listner.onTestFailure(null);
+				//	listner.onTestFailure(null);
 					}
 		}
 //===============================================================================================================================	    

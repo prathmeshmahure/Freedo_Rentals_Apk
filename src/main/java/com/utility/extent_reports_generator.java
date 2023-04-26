@@ -27,7 +27,7 @@ public class extent_reports_generator {
 		extent.setSystemInfo("	Laptop", "	Lenovo Thinkpad");
 		extent.setSystemInfo("	QA", "	Prathmesh Mahure");
 		extent.setSystemInfo("	Operating system", "	Windows 10 pro");
-		extent.setSystemInfo("	BrowserName", "	AndroidStudio");
+		extent.setSystemInfo("	BrowserName", "	Android Studio");
 		
 		return extent;
 	}

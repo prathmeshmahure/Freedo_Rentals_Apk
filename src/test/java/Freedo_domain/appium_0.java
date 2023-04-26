@@ -25,8 +25,10 @@ public class appium_0 extends base_class {
 			log.info("***************TC_001_verify_install_apk starts*****************");
 			login=PageFactory.initElements(driver1, launch_login.class);	
 			
-			
+		//	login = new launch_login(driver1);
 			library.passmsg("Freedo app is ", " Install");
+			
+			
 		}
 	
 	//============================	Launch Application =============================================================
@@ -70,24 +72,26 @@ public class appium_0 extends base_class {
 		
 	//================================================================================================================
 		@Test(dependsOnMethods={"TC_004_Verify_the_NEXT_button_clicking"})	
-		public void TC_005_Verify_the_Done_button_clicking() throws Exception  {
-			log.info("***************TC_005_Verify_the_Done_button_clicking starts*****************");
+		public void TC_005_Verify_the_slide_indicator() throws Exception  {
+			log.info("***************TC_005_Verify_the_slide_indicator starts*****************");
 			
-			library.visible_link(login.getClick_Done_button(), "Done button");
-			library.Custom_click(login.getClick_Done_button(), "Done_button static 3rd page");
+			library.isSelectedFalse(login.getfirst_page_first_slide_indicator(), "first slide indicator is ");
+			library.isSelectedFalse(login.getFirst_page_second_slide_indicator(), "Second slide indicator is ");
+			library.isSelected(login.getFirst_page_third_slide_indicator(), "Third slide indicator is ");
 		}
 		
 		//================================================================================================================
-		@Test(dependsOnMethods={"TC_005_Verify_the_Done_button_clicking"})	
-		public void TC_006_Verify_the_slide_indicator() throws Exception  {
-				log.info("***************TC_005_Verify_the_Done_button_clicking starts*****************");
+		@Test(dependsOnMethods={"TC_005_Verify_the_slide_indicator"})	
+		public void TC_006_Verify_the_Done_button_clicking() throws Exception  {
+			log.info("***************TC_006_Verify_the_Done_button_clicking starts*****************");
 				
-			// inprogress
+			library.visible_link(login.getClick_Done_button(), "Done button");
+			library.Custom_click(login.getClick_Done_button(), "Done_button static 3rd page");
 		}
 
 
 	//=====================Verify_login_component_login_page =======================================================
-		@Test(dependsOnMethods={"TC_005_Verify_the_Done_button_clicking"})	
+		@Test(dependsOnMethods={"TC_006_Verify_the_Done_button_clicking"})	
 		public void appium_1_TC_003_Verify_login_component()  {
 			log.info("***************appium_1_TC_003_Verify_login_component starts*****************");
 			

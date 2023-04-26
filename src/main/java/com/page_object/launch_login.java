@@ -165,10 +165,11 @@ public class launch_login {
 		public launch_login(WebDriver driver) 
 		{
 			this.driver=driver;
+			//PageFactory.initElements(driver1, this);
 		}
 
 					public WebDriver getDriver() {
-						return driver;
+						return (WebDriver) driver;
 					}
 
 //=======================app launch page ============ 1 page getter method=====================================

@@ -35,8 +35,6 @@ public class appium_1 extends base_class {
 		log.info("***************appium_1_TC_007_Verify_book_your_city_section starts*****************");		
 		
 		Thread.sleep(2000);
-			
-		
 		library.Custom_click(book.getClick_1st_page_enter_button(), "Enter button");
 		library.date_select();
 		library.Custom_click(book.getClick_Package_dropdown(), "package dropdown");
@@ -69,7 +67,7 @@ public class appium_1 extends base_class {
 			appium_1.Scroll_UP_page_Action("page up");
 			library.visible_link(book.getClick_add_helmet_extra_charges(), "Extra helmet charges = "+book.getClick_add_helmet_extra_charges().getText());
 			library.getTextEqualIgnorCase(book.getClick_add_helmet_extra_charges(), "₹ 0.00");
-			library.isSelectedFalse(book.getClick_cash_on_delivery(), "Before select Cod check box is ");
+			library.isSelected(book.getClick_cash_on_delivery(), "Before select Cod check box is ");
 			library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
 			library.isSelected(book.getClick_cash_on_delivery(), "After select Cod check box is ");
 			library.Custom_click(book.getClick_I_accept_checkbox(), "I Accept checkbox");

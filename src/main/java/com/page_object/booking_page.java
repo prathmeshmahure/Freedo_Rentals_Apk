@@ -151,7 +151,7 @@ public class booking_page {
 	@FindBy(xpath="//android.widget.TextView[@content-desc='txt_Additional Helmet']")	//Click_add_helmet_extra_charges
 	private WebElement Click_add_helmet_extra_charges;
 	
-	@FindBy(xpath="//android.widget.ImageView[@content-desc='imgcbx_Cash']")									//Click_cash_on_delivery
+	@FindBy(xpath="//android.widget.TextView[@content-desc='imgcbx_Cash']")									//Click_cash_on_delivery
 	private WebElement Click_cash_on_delivery;
 	
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc='cbx_Accept_summary']/android.view.ViewGroup/android.widget.ImageView")									//Click_cash_on_delivery

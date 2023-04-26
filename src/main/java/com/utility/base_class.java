@@ -39,9 +39,8 @@ public class base_class {
 		excel=new excel_data_provider();
 				
 	}
-	
-	 @BeforeTest
-	  public static  void OPEN_AND_INSTALL_APP() throws MalformedURLException, Exception {
+	@BeforeTest	(dependsOnMethods="Champion_app_install") 
+	  public  void OPEN_AND_INSTALL_APP() throws MalformedURLException, Exception {
 		 UiAutomator2Options cap=new UiAutomator2Options();
 //		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability("appium:automationName", "uiautomator2");
@@ -49,11 +48,14 @@ public class base_class {
 		cap.setCapability("appium:deviceName", "pixel_6");//Infinix //pixel_6
 		cap.setCapability("appium:udid", "emulator-5554");// 0836731257071990 //emulator-5554 //0526532038000424
 		cap.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
-		cap.setCapability("appium:avdLaunchTimeout", 600000);
+		cap.setCapability("appium:avdLaunchTimeout", 600000);		
 //		cap.setCapability("appPackage", "com.heerofreedo");
 //		cap.setCapability("appActivity", "com.heerofreedo.MainActivity");
 //		cap.setCapability("appium:noReset", "false");
+		
 		cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\10app-release.apk"));
+		
+//		cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\Champion-app.apk"));
 //		cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\app-release.apk"));
 //		cap.setChromedriverExecutable(System.getProperty("user.dir")+"\\apk\\chromedriver.exe");
 		cap.setCapability("appium:ensureWebviewsHavePages", true);
@@ -65,14 +67,36 @@ public class base_class {
 	    driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
 	    driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	    log = LogManager.getLogger("Freedo_Rentals_Apk");
-	  }
-	 
+	  }	
+
+//==========================================================================================================
+	@BeforeTest
+	public  void Champion_app_install() throws MalformedURLException {
+		 UiAutomator2Options cap=new UiAutomator2Options();
+		 	cap.setCapability("appium:automationName", "uiautomator2");
+			cap.setCapability("platformName", "Android");
+			cap.setCapability("appium:deviceName", "pixel_6");//Infinix //pixel_6
+			cap.setCapability("appium:udid", "emulator-5554");// 0836731257071990 //emulator-5554 //0526532038000424
+			cap.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
+			cap.setCapability("appium:avdLaunchTimeout", 600000);		
+//		 	cap.setCapability("appPackage", "com.heerofreedo");
+//			cap.setCapability("appActivity", "com.heerofreedo.MainActivity");
+//			cap.setCapability("appium:noReset", "true");
+			cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\Champion-app.apk"));
+			cap.setCapability("appium:ensureWebviewsHavePages", true);
+			cap.setCapability("appium:nativeWebScreenshot", true);
+			cap.setCapability("appium:newCommandTimeout", 66000);
+			driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
+		    driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		    log = LogManager.getLogger("Freedo_Rentals_Apk");
+	}
 	
 //	@AfterTest
 	public void teardown() {
 //		driver1.quit();
 //		service.stop();
-	}
+	}	
+	
 //===============================================================================================================================================	
 //================================================================================================================================================
     @SuppressWarnings({ "deprecation", "rawtypes" })

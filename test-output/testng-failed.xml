@@ -8,8 +8,14 @@
     <classes>
       <class name="Freedo_domain.appium_1">
         <methods>
+          <include name="appium_1_TC_0014_verify_More_document_verification_process"/>
+          <include name="Champion_app_install"/>
           <include name="OPEN_AND_INSTALL_APP"/>
           <include name="appium_1_TC_009_cod_payment"/>
+          <include name="appium_1_TC_0013_verify_Selfi_verification_process"/>
+          <include name="appium_1_TC_0011_verify_kyc_verification_process"/>
+          <include name="appium_1_TC_0015_admin_Request_reject"/>
+          <include name="appium_1_TC_0012_verify_Aadhaar_verification_process"/>
           <include name="appium_1_TC_007_Verify_book_your_city_section"/>
           <include name="appium_1_TC_008_verify_book_your_vehicle_section"/>
           <include name="BS"/>

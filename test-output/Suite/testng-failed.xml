@@ -6,22 +6,25 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Freedo_domain.appium_1">
+      <class name="Freedo_domain.appium_0">
         <methods>
-          <include name="appium_1_TC_0014_verify_More_document_verification_process"/>
-          <include name="Champion_app_install"/>
+          <include name="TC_009_verify_create_an_account_by_clicking_login_page"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="appium_1_TC_009_cod_payment"/>
-          <include name="appium_1_TC_0013_verify_Selfi_verification_process"/>
-          <include name="appium_1_TC_0011_verify_kyc_verification_process"/>
-          <include name="appium_1_TC_0015_admin_Request_reject"/>
-          <include name="appium_1_TC_0012_verify_Aadhaar_verification_process"/>
-          <include name="appium_1_TC_007_Verify_book_your_city_section"/>
-          <include name="appium_1_TC_008_verify_book_your_vehicle_section"/>
+          <include name="TC_004_Verify_the_NEXT_button_clicking"/>
+          <include name="appium_1_TC_004_2_Verify_OTP_Verification_Page"/>
+          <include name="appium_1_TC_005_verify_all__City"/>
+          <include name="TC_002_verify_select_pickup_location_date_and_packages"/>
           <include name="BS"/>
-          <include name="appium_1_TC_0010_verify_booking_Rentals_fleet_section"/>
+          <include name="appium_1_TC_004_3_Select_location"/>
+          <include name="TC_005_Verify_the_slide_indicator"/>
+          <include name="TC_007_Verify_login_component"/>
+          <include name="TC_008_Verify_login_functionality_Register_mo_number"/>
+          <include name="appium_1_TC_006_Select_all__City"/>
+          <include name="TC_003_Verify_the_NEXT_button_clicking"/>
+          <include name="TC_0010_verify_user_able_to_create_an_account"/>
+          <include name="TC_006_Verify_the_Done_button_clicking"/>
         </methods>
-      </class> <!-- Freedo_domain.appium_1 -->
+      </class> <!-- Freedo_domain.appium_0 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

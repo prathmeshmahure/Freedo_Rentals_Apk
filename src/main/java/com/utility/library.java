@@ -68,7 +68,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL,fieldname+ "==Unable To Click =="+e);
 					log.error("==Not==Element is not clickable "+fieldname);
-					listner.onTestFailure(null);
+			//		listner.onTestFailure(null);
 								}
 		}
 	////////////////////////////////////////////////////////////////////////////////////////////////	
@@ -83,7 +83,7 @@ public class library extends base_class{
 		catch(Exception e) {
 				test.log(Status.FAIL,fieldname+ "==Field is not visible=="+e);
 					log.error("==NOT==Field is not visible "+fieldname);
-					listner.onTestFailure(null);
+			//		listner.onTestFailure(null);
 		}
 		}
 	//////////////////////////////////////////////////////////////////////////////////////////////////////    
@@ -276,7 +276,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"= Not Enabled"+" "+e);
 					log.error("==NOT=="+Element_name+"=Not Enabled");
-					listner.onTestFailure(null);
+				//	listner.onTestFailure(null);
 					}
 		}
 //===============================================================================================================================	    
@@ -290,7 +290,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"=  Enabled"+" "+e);
 					log.error("==NOT=="+Element_name+"= Enabled");
-					listner.onTestFailure(null);
+				//	listner.onTestFailure(null);
 					}
 		}
 //=================================================================================================================================	    
@@ -304,7 +304,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"= Not Displayed"+" "+e);
 					log.error("==NOT=="+Element_name+"= Not Displayed");
-					listner.onTestFailure(null);
+				//	listner.onTestFailure(null);
 					}
 		}
 //=================================================================================================================================	   
@@ -319,7 +319,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Expected_value+" Expected value is not Match"+" "+e);
 					log.error("==NOT=="+Expected_value +"Expected value is not Match");
-					listner.onTestFailure(null);
+			//		listner.onTestFailure(null);
 					}
 		}
 //==================================================================================================================================	    

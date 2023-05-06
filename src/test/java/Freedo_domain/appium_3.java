@@ -132,7 +132,7 @@ public class appium_3 extends base_class{
 		WebElement ele4=driver.findElement(By.xpath("//button[@title='Reset']"));library.Custom_click(ele4, "Reset button");
 		Thread.sleep(3000);
 		String s=config.getFirst_name();//user name to find web table
-		WebElement ele5=driver.findElement(By.xpath("//text[contains(text(),"+s+")]/parent::div/parent::td//following-sibling::td//div[@id='approve-action']"));
+		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::div/parent::td//following-sibling::td//div[@id='approve-action']"));
 		library.Custom_click(ele5, "accept booking request");
 		Thread.sleep(1000);
 		WebElement ele6=driver.findElement(By.xpath("//button[text()='Yes']"));library.Custom_click(ele6, "Yes button");
@@ -151,7 +151,7 @@ public class appium_3 extends base_class{
 		
 		
 		Thread.sleep(2000);
-		WebElement ele7=driver.findElement(By.xpath("//text[contains(text(),"+s+")]/parent::div/parent::td//following-sibling::td//div[@id='view-action']"));
+		WebElement ele7=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::div/parent::td//following-sibling::td//div[@id='view-action']"));
 		library.Custom_click(ele7, "view data");
 		Thread.sleep(3000);
 		WebElement ele8=driver.findElement(By.xpath("//p[text()='Booking Management']"));library.Custom_click(ele8, "Booking management");

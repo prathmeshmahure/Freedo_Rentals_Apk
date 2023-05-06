@@ -144,7 +144,7 @@ public class appium_4 extends base_class{
 		
 		Thread.sleep(1000);
 		String s=config.getFirst_name();
-		WebElement ele11=driver.findElement(By.xpath("//text[contains(text(),"+s+")]/parent::td//following-sibling::td//div[@id='view-action']"));
+		WebElement ele11=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::td//following-sibling::td//div[@id='view-action']"));
 		library.Custom_click(ele11, "table search user request");
 		
 		WebElement ele12=driver.findElement(By.xpath("//*[text()='Control Buttons']"));library.Custom_click(ele12, "Control button");

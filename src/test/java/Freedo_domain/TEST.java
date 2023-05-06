@@ -21,33 +21,32 @@ public class TEST extends base_class {
 		book = PageFactory.initElements(driver1, booking_page.class);
 		
 		
-		library.Custom_click(book.getClick_1st_page_enter_button(), "Enter button");
-		library.date_select();
-		library.Custom_click(book.getClick_Package_dropdown(), "package dropdown");
-		library.Custom_click(book.getClick_1_Days_package(),"Selected package");
-		library.Custom_click(book.getClick_go_freedo_Button(), "Book now button");
-		///////////////
-		Thread.sleep(2000);
-		library.isDisplayed(book.getOur_renting_fleet_page_txt(), "Our Renting fleet Page tittle is ");	
-		library.isSelected(book.getClick_Bike_Tab(), "Bike tab by default is ");
-		library.getTextEqualIgnorCase(book.getselect_random_Bike(), "Book Now");
-		library.bike_book_page(book.getselect_random_Bike(), "Bike");
-		//Start 
-		library.Custom_click(book.getclick_location_pop_up_ok_button(), "Location ok button");
-		appium_1.Scroll_UP_page_Action("page up");
-		library.isEnabled(book.getClick_Continue_Tab(), "Continue button is ");
-		library.Custom_click(book.getClick_Continue_Tab(), "Click continue tab");
 		
-		///////////////
-		library.isDisplayed(book.getsummary_page_text(), "SUMMARY page title is ");	
-		appium_1.Scroll_UP_page_Action("page up");
-		library.visible_link(book.getClick_add_helmet_extra_charges(), "Extra helmet charges = "+book.getClick_add_helmet_extra_charges().getText());
-		library.getTextEqualIgnorCase(book.getClick_add_helmet_extra_charges(), "₹ 0.00");
-		library.isSelectedFalse(book.getClick_cash_on_delivery(), "Before select Cod check box is ");
-		library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
-		library.isSelected(book.getClick_cash_on_delivery(), "After select Cod check box is ");
-		library.Custom_click(book.getClick_I_accept_checkbox(), "I Accept checkbox");
-		library.Custom_click(book.getClick_pay_now_button(), "click pay now button");
+		library.Custom_click(login.getClick_Privacy_Policy(), "Privacy policy");
+		library.visible_link(login.getPrivacy_policy_page_heading(), "Privacy policy page Heaading");
+		library.visible_link(login.getDelete_account(), "Delete account txt");
+		library.visible_link(login.getPrivacy_policy(), "Privacy policy txt");
+		library.visible_link(login.getBack_button(), " back button ");
+		
+		
+		log.info("***************TC_0013_verify_Privacy_policy_under_delete_dropdown_all_element starts*****************");
+		
+		library.Custom_click(login.getDelete_account_dropdown(), "Delete account dropdown open");
+		library.visible_link(login.getDA_checkbox_1(), "Bad experiance on a ride");
+		library.visible_link(login.getDA_checkbox_2(), "it's too experiance");
+		library.visible_link(login.getDA_checkbox_3(), "Negative support experiance");
+		library.visible_link(login.getDA_checkbox_4(), "Issues with my internet");
+		library.visible_link(login.getDA_checkbox_5(), "No longer support company");
+		library.visible_link(login.getDA_checkbox_6(), "Prefer not to say");
+		library.visible_link(login.getDA_checkbox_7(), "Others");
+	//	library.Custom_click(login.getDelete_account_dropdown(), "Delete account dropdown close");	
+		
+		log.info("***************TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element starts*****************");
+		
+		library.Custom_click(login.getDelete_account_dropdown(), "Privacy policy dropdown open");
+		library.visible_link(login.getPrivacy_policy_info(), "Privacy policy information");
+	//	library.Custom_click(login.getPrivacy_policy_dropdown(), "Privacy policy dropdown Close");	
+		library.Custom_click(login.getBack_button(), " back button ");
 		
 		
 	

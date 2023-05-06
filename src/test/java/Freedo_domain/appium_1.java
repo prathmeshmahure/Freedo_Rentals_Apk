@@ -200,8 +200,8 @@ public class appium_1 extends base_class {
 		WebElement ele4=driver.findElement(By.xpath("//button[@title='Reset']"));library.Custom_click(ele4, "Reset button");
 		
 		Thread.sleep(2000);
-		String s=config.getFirst_name();
-		WebElement ele5=driver.findElement(By.xpath("//text[contains(text(),"+s+")]/parent::div/parent::td//following-sibling::td//div[@id='reject-action']"));
+		String s=config.getFirst_name();            
+		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::div/parent::td//following-sibling::td//div[@id='reject-action']"));
 		library.Custom_click(ele5, "Reject bike booking");
 		WebElement ele6=driver.findElement(By.xpath("//div[@id='demo-simple-select-label']"));library.Custom_click(ele6, "select drop down");
 		

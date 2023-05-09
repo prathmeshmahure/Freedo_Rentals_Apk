@@ -71,6 +71,9 @@ public class config_data_provider {
 				public  String getadmin_booking_check() {
 					return pro.getProperty("admin_booking_check");
 				}
+				public  String getcity_name() {
+					return pro.getProperty("CityName");
+				}
 				
 				
 

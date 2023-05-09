@@ -177,6 +177,16 @@ public class base_class {
 		    	}
 		    	
 		    }
+///////////////////////////////////////////Android keys //////////////////////////////////////////////////////////////  	
+			public static void Back_button() {
+			try {
+			driver1.pressKey(new KeyEvent(AndroidKey.BACK));
+			}
+			catch(Exception e) {
+			
+			}
+			
+			}
 	 ///////////////////////////////////////////Explicit Wait //////////////////////////////////////////////////////////////  	
     public static void Explicit_wait_for_APK(WebElement element) {
     	

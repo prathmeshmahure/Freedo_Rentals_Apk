@@ -226,7 +226,8 @@ public class launch_login {
 	@FindBy(xpath="//android.widget.TextView[@text='Select Manually']")				 		 //Select Manually
 	private WebElement Select_Manually_location;
 //============================= Select City======================= 6 page =======================================
-
+	@FindBy(xpath="//android.widget.EditText[@content-desc='ipt_City']")				 		 //Search city by name
+	private WebElement Search_city;
 	
 	@FindBy(xpath="//android.widget.TextView[@text='Popular Cities']")		 //Select Location  Noida
 	private WebElement Popular_cities_txt;
@@ -567,6 +568,10 @@ public class launch_login {
 
 					public WebElement getOtp_time_slot() {
 						return Otp_time_slot;
+					}
+
+					public WebElement getSearch_city() {
+						return Search_city;
 					}
 					
 					

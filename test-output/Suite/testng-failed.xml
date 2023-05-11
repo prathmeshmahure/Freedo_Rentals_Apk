@@ -9,7 +9,6 @@
       <class name="Freedo_domain.appium_1">
         <methods>
           <include name="TC_0034_Verify_scooter_button_on_homepage"/>
-          <include name="TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements"/>
           <include name="OPEN_AND_INSTALL_APP"/>
           <include name="TC_0027_Verify_homepage_bike_rentals_tab_available_bike"/>
           <include name="TC_0024_Verify_home_page_all_elements"/>
@@ -23,6 +22,7 @@
           <include name="TC_0033_Verify_Bike_button_on_homepage"/>
           <include name="TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements"/>
           <include name="TC_0035_Verify_user_able_to_select_date_and_package_under_booking"/>
+          <include name="TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery"/>
           <include name="TC_0032_Verify_Booking_elements"/>
         </methods>
       </class> <!-- Freedo_domain.appium_1 -->

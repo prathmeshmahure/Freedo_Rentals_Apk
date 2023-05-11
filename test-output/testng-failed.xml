@@ -1,31 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.utility.listner"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Freedo_domain.appium_1">
+      <class name="Freedo_domain.TEST">
         <methods>
-          <include name="TC_0034_Verify_scooter_button_on_homepage"/>
-          <include name="TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements"/>
+          <include name="t1"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC_0027_Verify_homepage_bike_rentals_tab_available_bike"/>
-          <include name="TC_0024_Verify_home_page_all_elements"/>
-          <include name="TC_0029_Verify_freedo_rental_icon"/>
-          <include name="TC_0026_Verify_available_all_Scooters"/>
-          <include name="TC_0031_Verify_Booking_elements"/>
           <include name="BS"/>
-          <include name="TC_0025_Verify_available_all_bikes"/>
-          <include name="TC_0028_Verify_Rent_tab_all_elements"/>
-          <include name="TC_0030_Verify_more_button_all_elements"/>
-          <include name="TC_0033_Verify_Bike_button_on_homepage"/>
-          <include name="TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements"/>
-          <include name="TC_0035_Verify_user_able_to_select_date_and_package_under_booking"/>
-          <include name="TC_0032_Verify_Booking_elements"/>
         </methods>
-      </class> <!-- Freedo_domain.appium_1 -->
+      </class> <!-- Freedo_domain.TEST -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

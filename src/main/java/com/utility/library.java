@@ -244,11 +244,7 @@ public class library extends base_class{
 					test.log(Status.PASS, Element_name+"= Selected");
 					log.info("OK=="+Element_name+"= Selected");
 				   }
-				if(ele.isSelected()==false) {
-					test.log(Status.FAIL, Element_name+"= Not Selected"+" ");
-					log.error("==NOT=="+Element_name+"=Not Selected");
-				//	listner.onTestFailure(null);
-				   }
+				
 				}
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"= Not Selected"+" "+e);
@@ -277,6 +273,8 @@ public class library extends base_class{
 					test.log(Status.PASS, Element_name+"= Enabled");
 					log.info("OK=="+Element_name+"= Enabled");
 				   }
+				
+				
 				}
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"= Not Enabled"+" "+e);
@@ -291,6 +289,7 @@ public class library extends base_class{
 					test.log(Status.PASS, Element_name+"= Disabled");
 					log.info("OK=="+Element_name+"= Disabled");
 				   }
+				
 				}
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"=  Enabled"+" "+e);

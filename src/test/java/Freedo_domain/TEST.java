@@ -20,34 +20,29 @@ public class TEST extends base_class {
 		login=PageFactory.initElements(driver1, launch_login.class);
 		book = PageFactory.initElements(driver1, booking_page.class);
 		
-		
-		library.Custom_click(book.getClick_home_delivery_radio_button(), "Home delivery radio button");
-		appium_1.Scroll_UP_page_Action("up");
-		library.Custom_click(book.getClick_home_delivery_add_address(), "Add Address");
-		try {
-		library.Custom_click(book.getCod_1st_available_ok_button(), "Location on device ok");
-		}catch(Exception e) {		}
-		library.custom_sendkeys(book.getClick_home_delivery_search_address(), config.getgpsaddress(), "Searching address");
-		appium_1.EnterButton();
-		Thread.sleep(1000);
-		library.Custom_click(book.getClick_home_delivery_search_address_1(), "Random 1 option is selected address");
-		library.Custom_click(book.getClick_home_delivery_confirm_location(), "Confirm location");
-		library.custom_sendkeys(book.getClick_home_delivery_enter_name(), config.getFirst_name(), "Prathmesh");
-		library.custom_sendkeys(book.getClick_home_delivery_enter_complete_address(), config.getPort(), "Dummy address");
-		library.custom_sendkeys(book.getClick_home_delivery_landmark_optional(), config.getPort(), "Dummy address");
-		appium_1.EnterButton();
-		library.Custom_click(book.getClick_home_delivery_save_address_details(), "Save address details");
-		library.Custom_click(book.getClick_home_delivery_delete_address(), "delete address");
-		library.Custom_click(book.getClick_home_delivery_yes_address(), "delete confirm Yes ");
-		library.Custom_click(book.getClick_home_delivery_add_new_address_(), "Add new address");
-		appium_1.Back_button();
-		
-		
-		
-		
-	}
+		library.visible_link(book.getFBD_Booking_status(), "Booking status");
+		library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
+		library.visible_link(book.getFBD_Booking_id(), "Booking ID = "+book.getFBD_Booking_id().getText());
+		library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number = "+book.getFBD_vehicle_nummber().getText());
+		library.visible_link(book.getClick_show_more_details(), "show more details text");
+		library.Custom_click(book.getClick_show_more_details(), "show more details text");
+		Thread.sleep(2000);
+		library.visible_link(book.getFBD_pick_up_date(), "Pick Up Date = "+book.getFBD_pick_up_date().getText());
+		library.visible_link(book.getFBD_drop_off_date(), "Drop off date = "+book.getFBD_drop_off_date().getText());
+		library.visible_link(book.getFBD_pick_up_location(), "Pick Up Location = "+book.getFBD_pick_up_location().getText());
+		library.visible_link(book.getFBD_duration(), "Duration = "+book.getFBD_duration().getText());
+		library.visible_link(book.getFBD_handover_time(), "Handover Time = "+book.getFBD_handover_time().getText());
+		library.visible_link(book.getFBD_drop_off_location(), "Drop off Location = "+book.getFBD_drop_off_location().getText());
+		library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date = "+book.getFBD_planned_drop_off_date().getText());
+		library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date = "+book.getFBD_Actual_drop_off_date().getText());
+		library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up = "+book.getFBD_mode_of_pick_up().getText());
+		appium_2.Scroll_UP_page_Action("page up");
+		library.Custom_click(book.getClick_show_less_details(), "show less text");
+		library.visible_link(book.getClick_price_breakup(), "price break up Drop down");
 	
-
-
+	
+	
+	
+	}
 	
 }

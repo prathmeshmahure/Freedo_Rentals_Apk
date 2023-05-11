@@ -1,6 +1,12 @@
 package Freedo_domain;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -188,6 +194,7 @@ public class appium_1 extends base_class{
 		log.info("***************TC_0035_Verify_user_able_to_select_date_and_package_under_booking starts*****************");
 		
 		library.Custom_click(book.getHome_bike_tab(), "Bike button");
+		Thread.sleep(1000);
 		library.Custom_click(book.getBook_now_button(), "Booknow button");
 		library.date_select();
 		library.Custom_click(book.getClick_Package_dropdown(), "package dropdown");
@@ -243,12 +250,304 @@ public class appium_1 extends base_class{
 		library.Custom_click(book.getClick_home_delivery_delete_address(), "delete address");
 		library.Custom_click(book.getClick_home_delivery_yes_address(), "delete confirm Yes ");
 		library.Custom_click(book.getClick_home_delivery_add_new_address_(), "Add new address");
+		Thread.sleep(1000);
 		appium_1.Back_button();
+		appium_1.Back_button();
+		library.Custom_click(book.getClick_home_page_button(), "Home button");
+		appium_1.Scroll_down_page_Action("Down");
 	}
 //=========================================================================================================================	
-	
-	
-	
+	@Test(dependsOnMethods={"TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery"})
+	public void TC_0038_Verify_user_able_to_select_time_slot_afternoon() throws Exception {
+		log.info("***************TC_0038_Verify_user_able_to_select_time_slot_afternoon starts*****************");
+		
+		
+		library.Custom_click(book.getClick_home_page_button(), "Home button ");
+		Thread.sleep(1000);
+		library.Custom_click(book.getDifferent_city_name(), "Different city");
+		library.visible_link(login.getDetect_my_location(), "Detect my location");
+		library.Custom_click(login.getSelect_Manually_location(), "Select manually location");
+		library.Custom_click(login.getSelect_City_jaipur(), "Jaipur");
+		library.Custom_click(book.getClick_1st_page_enter_button(), "Enterbutton");
+		Thread.sleep(500);
+		library.date_select();
+		library.Custom_click(book.getClick_Package_dropdown(), "package dropdown");
+		library.Custom_click(book.getClick_1_Days_package(),"Selected package");
+		library.Custom_click(book.getClick_go_freedo_Button(), "Go Freedo button");
+		Thread.sleep(2000);
+		library.Custom_click(book.getBook_now_button(), "Booknow button");
+		Thread.sleep(1000);
+		library.Custom_click(book.getclick_location_pop_up_ok_button(), "ok button");
+		appium_1.Scroll_UP_page_Action("up");
+		library.Custom_click(book.getBooking_details_page_afternoon(), "Afternoon");
+		Thread.sleep(1000);
+		library.isSelected(book.getBooking_details_page_afternoon(), "Afternoon is");
+	}
+//==============================================================================================================================	
+	@Test(dependsOnMethods={"TC_0038_Verify_user_able_to_select_time_slot_afternoon"})
+	public void TC_0039_Verify_user_able_to_select_time_slot_Evening() throws Exception {
+		log.info("***************TC_0039_Verify_user_able_to_select_time_slot_Evening starts*****************");
+		
+		
+		library.Custom_click(book.getBooking_details_page_evening(), "Evening");
+		Thread.sleep(1000);
+		library.isSelected(book.getBooking_details_page_evening(), "Evening is");
+	}
+//========================================================================================================================
+	@Test(dependsOnMethods={"TC_0039_Verify_user_able_to_select_time_slot_Evening"})
+	public void TC_0040_Verify_user_able_to_select_time_slot_Morning() throws Exception {
+		log.info("***************TC_0040_Verify_user_able_to_select_time_slot_Morning starts*****************");
+		
+		library.Custom_click(book.getBooking_details_page_morning(), "Morning");
+		Thread.sleep(1000);
+		library.isSelected(book.getBooking_details_page_morning(), "Morning is");
+	}
+//=================================================================================================================================
+	@Test(dependsOnMethods={"TC_0040_Verify_user_able_to_select_time_slot_Morning"})
+	public void TC_0041_Verify_user_able_to_list_button() throws Exception {
+		log.info("***************TC_0041_Verify_user_able_to_list_button starts*****************");
+		
+		library.Custom_click(book.getBooking_details_page_list_button(), "List");
+		Thread.sleep(1000);
+		try {
+			library.Custom_click(book.getCod_1st_available_ok_button(), "OK ");
+		}catch(Exception e) {}
+		library.visible_link(book.getBooking_details_page_map_button(), "Maps");
+		appium_1.Back_button();
+	}
+//==================================================================================================================================	
+	@Test(dependsOnMethods={"TC_0041_Verify_user_able_to_list_button"})
+	public void TC_0042_Verify_select_automation_city() throws Exception {
+		log.info("***************TC_0042_Verify_select_automation_city starts*****************");
+		
+		appium_1.Back_button();
+		Thread.sleep(1000);
+		library.Custom_click(book.getClick_home_page_button(), "Home button ");
+		Thread.sleep(1000);
+		library.Custom_click(book.getDifferent_city_name(), "Different city");
+		library.visible_link(login.getDetect_my_location(), "Detect my location");
+		library.Custom_click(login.getSelect_Manually_location(), "Select manually location");
+		library.Custom_click(login.getSelect_City_Automation_City(), "Automation city");
+		library.Custom_click(book.getClick_1st_page_enter_button(), "Enterbutton");
+		Thread.sleep(500);
+		library.date_select();
+		library.Custom_click(book.getClick_Package_dropdown(), "package dropdown");
+		library.Custom_click(book.getClick_1_Days_package(),"Selected package");
+		library.Custom_click(book.getClick_go_freedo_Button(), "Go Freedo button");
+		Thread.sleep(2000);
+		library.Custom_click(book.getBook_now_button(), "Booknow button");
+		Thread.sleep(1000);
+		library.Custom_click(book.getclick_location_pop_up_ok_button(), "ok button");
+		appium_1.Scroll_UP_page_Action("up");
+	}
+//==================================================================================================================
+	@Test(dependsOnMethods={"TC_0042_Verify_select_automation_city"})
+	public void TC_0043_Verify_continue_button_and_summary_page() throws Exception {
+		log.info("***************TC_0043_Verify_continue_button_and_summary_page starts*****************");
+		
+
+		library.Custom_click(book.getClick_Continue_Tab(), "Continue button");
+		Thread.sleep(1000);
+		library.isDisplayed(book.getsummary_page_text(), "SUMMARY page title is ");
+		library.visible_link(book.getSummary_bike_name_txt(),"bike name = "+ book.getSummary_bike_name_txt().getText());
+		library.visible_link(book.getSummary_start_date(), "Start date = "+ book.getSummary_start_date().getText());
+		library.visible_link(book.getSummary_end_date(), " End date ="+ book.getSummary_end_date().getText());
+		library.visible_link(book.getSummary_start_time(), " Start time = "+ book.getSummary_start_time().getText());
+		library.visible_link(book.getSummary_end_time(), " End Time = "+ book.getSummary_end_time().getText());
+		library.visible_link(book.getSummary_package_duration(),"Duration = "+ book.getSummary_package_duration().getText());
+		library.visible_link(book.getSummary_pickup_location(),"Pick up Location = "+ book.getSummary_pickup_location().getText());
+		library.visible_link(book.getSummary_km_limit(), "KM LIMIT ="+book.getSummary_km_limit().getText());
+		library.visible_link(book.getSummary_excess_km_charges(), "Excess Km Charges = "+book.getSummary_excess_km_charges().getText());
+		library.visible_link(book.getSummary_excess_hourly_charges(),"Excess hourly charges = "+ book.getSummary_excess_hourly_charges().getText());
+		appium_1.Scroll_UP_page_Action("page up");
+		library.visible_link(book.getSummary_rent_additional_helmet_checkbox(), "Rent additonal helmet checkbox");
+		library.visible_link(book.getSummary_coupon_code_offers(), "View Offers");
+		library.visible_link(book.getSummary_package_charges(),"Package charges = "+ book.getSummary_package_charges().getText());
+		library.visible_link(book.getClick_add_helmet_extra_charges(), "Additonal helmet = "+book.getClick_add_helmet_extra_charges().getText());
+		library.visible_link(book.getSummary_delivery_charges(),"Delivery charges = "+ book.getSummary_delivery_charges().getText());
+		library.visible_link(book.getSummary_discount(),"Discount = "+ book.getSummary_discount().getText());
+		library.visible_link(book.getSummary_total_amount(), "Total Amount = "+ book.getSummary_total_amount().getText());
+		library.isSelectedFalse(book.getClick_cash_on_delivery(), "Before select Cod check box is ");
+		library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
+		library.isSelected(book.getClick_cash_on_delivery(), "After select Cod check box is ");
+		library.Custom_click(book.getClick_I_accept_checkbox(), "I Accept the Terms & Conditions checkbox");
+		library.visible_link(book.getClick_pay_now_button(), "click pay now button");
+	}
+//===================================================================================================================	
+	@Test(dependsOnMethods={"TC_0043_Verify_continue_button_and_summary_page"})
+	public void TC_0044_Verify_summary_page_additional_helmet_charges() throws Exception {
+		log.info("***************TC_0044_Verify_summary_page_additional_helmet_charges starts*****************");
+		
+		library.visible_link(book.getSummary_rent_additional_helmet_checkbox(), "Rent additonal helmet checkbox");
+		library.Custom_click(book.getSummary_rent_additional_helmet_checkbox(), "Rent additonal helmet checkbox");
+		library.visible_link(book.getSummary_Half_face_helmet(), "Half face helmet");
+		library.visible_link(book.getSummary_Full_face_helmet(), "Full face helmet");
+		library.visible_link(book.getSummary_package_charges(),"Package charges = "+ book.getSummary_package_charges().getText());
+		library.visible_link(book.getClick_add_helmet_extra_charges(), "Additonal helmet = "+book.getClick_add_helmet_extra_charges().getText());
+		library.visible_link(book.getSummary_delivery_charges(),"Delivery charges = "+ book.getSummary_delivery_charges().getText());
+		library.visible_link(book.getSummary_discount(),"Discount = "+ book.getSummary_discount().getText());
+		library.visible_link(book.getSummary_total_amount(), "Total Amount = "+ book.getSummary_total_amount().getText());
+	}
+//======================================================================================================================
+	@Test(dependsOnMethods={"TC_0044_Verify_summary_page_additional_helmet_charges"})
+	public void TC_0045_Verify_summary_page_coupon_code() throws Exception {
+		log.info("***************TC_0045_Verify_summary_page_coupon_code starts*****************");
+		
+		library.visible_link(book.getSummary_coupon_code_offers(), "Veiw offers ");
+		library.Custom_click(book.getSummary_coupon_code_offers(), "Veiw offers ");
+		Thread.sleep(2000);
+		library.visible_link(book.getSummary_coupon_page_title(), "APPLY COUPON CODE");
+		library.Custom_click(book.getSummary_coupon_apply(), "Apply coupon");
+		Thread.sleep(2000);
+		library.visible_link(book.getSummary_package_charges(),"Package charges = "+ book.getSummary_package_charges().getText());
+		library.visible_link(book.getClick_add_helmet_extra_charges(), "Additonal helmet = "+book.getClick_add_helmet_extra_charges().getText());
+		library.visible_link(book.getSummary_delivery_charges(),"Delivery charges = "+ book.getSummary_delivery_charges().getText());
+		library.visible_link(book.getSummary_discount(),"Discount = "+ book.getSummary_discount().getText());
+		library.visible_link(book.getSummary_total_amount(), "Total Amount = "+ book.getSummary_total_amount().getText());
+	}
+//=========================================================================================================================	
+	@Test(dependsOnMethods={"TC_0045_Verify_summary_page_coupon_code"})
+	public void TC_0046_Verify_summary_page_cash_on_delivery_method() throws Exception {
+		log.info("***************TC_0046_Verify_summary_page_cash_on_delivery_method starts*****************");
+		
+		library.isSelectedFalse(book.getClick_cash_on_delivery(), "Before select Cod check box is ");
+		library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
+		library.isSelected(book.getClick_cash_on_delivery(), "After select Cod check box is ");
+		library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
+	}
+//===========================================================================================================================	
+	@Test(dependsOnMethods={"TC_0046_Verify_summary_page_cash_on_delivery_method"})
+	public void TC_0047_Verify_summary_page_i_accept_checkbox() throws Exception {
+		log.info("***************TC_0047_Verify_summary_page_i_accept_checkbox starts*****************");
+		
+		library.isSelectedFalse(book.getClick_I_accept_checkbox(), "Before select I accept check box is ");
+		library.Custom_click(book.getClick_I_accept_checkbox(), "I accept Checkbox");
+		Assert.assertFalse(book.getClick_pay_now_button().isSelected(),"Pay now button enabled");
+		library.isSelected(book.getClick_I_accept_checkbox(), "After select I accept check box is ");
+		library.isEnabled(book.getClick_pay_now_button(), "Pay now button");
+	}
+//============================================================================================================================	
+	@Test(dependsOnMethods={"TC_0047_Verify_summary_page_i_accept_checkbox"})
+	public void TC_0048_Verify_summary_page_pay_now_button() throws Exception {
+		log.info("***************TC_0048_Verify_summary_page_pay_now_button starts*****************");
+		
+		library.Custom_click(book.getClick_pay_now_button(), "Pay now button");
+		Thread.sleep(8000);
+		library.visible_link(book.getClick_Pay_using_UPI(), "Pay using UPI");
+		library.visible_link(book.getClick_Pay_using_Card(), "Pay using card");
+		library.visible_link(book.getClick_Pay_using_Wallet(), "pay using wallet");
+		library.visible_link(book.getClick_Pay_using_Netbanking(), "Pay using Netbanking");
+		library.visible_link(book.getClick_Pay_using_cardles_EMI(), "Pay using cardless EMI");
+		library.visible_link(book.getClick_pay_now_button(), "Pay now button");
+	}
+//============================================================================================================================
+	@Test(dependsOnMethods={"TC_0048_Verify_summary_page_pay_now_button"})
+	public void TC_0049_Verify_user_able_to_make_payment() throws Exception {
+		log.info("***************TC_0049_Verify_user_able_to_make_payment starts*****************");
+		
+		library.Custom_click(book.getClick_pay_now_button(), "Pay now button");
+		Thread.sleep(8000);
+		library.Custom_click(book.getClick_Pay_using_Netbanking(), "Pay using Netbanking");
+		library.Custom_click(book.getClick_Pay_using_SBI_bank(), "Select SBI bank");
+		library.Custom_click(book.getClick_pay_now_button_sbi(), "Pay Now button");
+		
+		library.Custom_click(book.getClick_payment_successful(), "payment successful");
+		library.Custom_click(book.getClick_view_booking(), "booking details");
+		Thread.sleep(10000);
+		library.visible_link(book.getClick_view_booking(), "booking details");			
+		library.Custom_click(book.getClick_view_booking(), "booking details");
+		try {
+			if(book.getClick_view_booking().isDisplayed()) {
+			driver1.findElement(By.xpath("//android.widget.TextView[@content-desc='txt_ViewBooking']")).click();
+			}
+		}catch(Exception e){		}	
+	}
+//=============================================================================================================================
+	@Test(dependsOnMethods={"TC_0049_Verify_user_able_to_make_payment"})
+	public void TC_0050_Verify_user_able_to_view_booking_status() throws Exception {
+		log.info("***************TC_0050_Verify_user_able_to_view_booking_status starts*****************");
+		
+		library.visible_link(book.getFBD_Booking_status(), "Booking status");
+		
+	}
+//=============================================================================================================================	
+	@Test(dependsOnMethods={"TC_0050_Verify_user_able_to_view_booking_status"})
+	public void TC_0051_Verify_user_able_to_view_booking_status_all_elements() throws Exception {
+		log.info("***************TC_0051_Verify_user_able_to_view_booking_status_all_elements starts*****************");
+		
+
+		library.visible_link(book.getFBD_Booking_status(), "Booking status");
+		library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
+		library.visible_link(book.getFBD_Booking_id(), "Booking ID = "+book.getFBD_Booking_id().getText());
+		library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number = "+book.getFBD_vehicle_nummber().getText());
+		library.visible_link(book.getClick_show_more_details(), "show more details text");
+		library.Custom_click(book.getClick_show_more_details(), "show more details text");
+		Thread.sleep(2000);
+		library.visible_link(book.getFBD_pick_up_date(), "Pick Up Date = "+book.getFBD_pick_up_date().getText());
+		library.visible_link(book.getFBD_drop_off_date(), "Drop off date = "+book.getFBD_drop_off_date().getText());
+		library.visible_link(book.getFBD_pick_up_location(), "Pick Up Location = "+book.getFBD_pick_up_location().getText());
+		library.visible_link(book.getFBD_duration(), "Duration = "+book.getFBD_duration().getText());
+		library.visible_link(book.getFBD_handover_time(), "Handover Time = "+book.getFBD_handover_time().getText());
+		library.visible_link(book.getFBD_drop_off_location(), "Drop off Location = "+book.getFBD_drop_off_location().getText());
+		library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date = "+book.getFBD_planned_drop_off_date().getText());
+		library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date = "+book.getFBD_Actual_drop_off_date().getText());
+		library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up = "+book.getFBD_mode_of_pick_up().getText());
+		appium_2.Scroll_UP_page_Action("page up");
+		library.Custom_click(book.getClick_show_less_details(), "show less text");
+		library.visible_link(book.getClick_price_breakup(), "price break up Drop down");
+	}
+//============================================================================================================================	
+	@Test(dependsOnMethods={"TC_0051_Verify_user_able_to_view_booking_status_all_elements"})
+//	@Test
+	public void TC_0052_admin_Request_reject () throws Exception  {
+		log.info("***************appium_1_TC_0015_admin_Request_reject starts*****************");
+
+		Browseropen();
+		Robot r = new Robot();
+		for(int i=0; i<4; i++) {
+			r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
+		}
+		Thread.sleep(3000);
+		
+		WebElement ele1=driver.findElement(By.xpath("//div[@id=':r5:']"));library.Custom_click(ele1, "10 user");
+		WebElement ele2=driver.findElement(By.xpath("//li[normalize-space()='50']"));library.Custom_click(ele2, "50 user");
+		WebElement ele3=driver.findElement(By.xpath("//p[text()='Dashboard']"));library.Custom_click(ele3, "Dashboard");
+		WebElement ele4=driver.findElement(By.xpath("//button[@title='Reset']"));library.Custom_click(ele4, "Reset button");
+		
+		Thread.sleep(2000);
+		
+		String s=config.getFirst_name();            
+		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::div/parent::td//following-sibling::td//div[@id='reject-action']"));
+		library.Custom_click(ele5, "Reject bike booking");
+		WebElement ele6=driver.findElement(By.xpath("//div[@id='demo-simple-select-label']"));library.Custom_click(ele6, "select drop down");
+		
+		Thread.sleep(1000);
+		WebElement ele7=driver.findElement(By.xpath("//li[@data-value='Booked by mistake']"));library.Custom_click(ele7, "Booked My Mistake");
+		WebElement ele8=driver.findElement(By.xpath("//button[text()='Submit']"));library.Custom_click(ele8, "Submit button");
+		Thread.sleep(1000);
+		WebElement ele9=driver.findElement(By.xpath("//button[text()='Yes']"));library.Custom_click(ele9, "Yes button");
+		Thread.sleep(4000);
+		try {
+			driver.navigate().refresh();
+			Thread.sleep(3000);
+			if(ele5.isDisplayed()) {
+				library.Custom_click(ele5, "Reject bike booking");
+				library.Custom_click(ele6, "select drop down");
+				
+				Thread.sleep(1000);
+				library.Custom_click(ele7, "Booked My Mistake");
+				library.Custom_click(ele8, "Submit button");
+				Thread.sleep(1000);
+				library.Custom_click(ele9, "Yes button");
+				Thread.sleep(4000);
+			}
+		}catch(Exception e) {
+			
+		}	
+		library.passmsg("Approval is sucessfully "," rejected");
+		driver.close();
+	}
+
 	
 	
 	

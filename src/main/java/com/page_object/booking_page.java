@@ -138,7 +138,10 @@ public class booking_page {
 	private WebElement Click_Destini_125_Scooter;
 	
 //======================================== Booking Details page==========================================================	
+
 	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='bookingID_detail_list_text_id']")						
+	private WebElement booking_details_page_map_button;
 	
 	@FindBy(xpath="//android.widget.TextView[@content-desc='bookingId_detail_priceTwo']")						//txt_BKD_pickup_city
 	private WebElement booking_details_page_price;
@@ -188,6 +191,7 @@ public class booking_page {
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc='bookingID_detail_address_click']")						//Click_Continue_Tab
 	private WebElement Click_Continue_Tab;
 	
+///////////////////////////////////////////////////  SUMMARY page =================================================
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_Continue']")						//Click_Continue_Tab
 	private WebElement Click_SUmmary_page_Continue_Tab;
 	
@@ -203,7 +207,7 @@ public class booking_page {
 	@FindBy(xpath="//android.widget.TextView[@content-desc='imgcbx_Cash']")									//Click_cash_on_delivery
 	private WebElement Click_cash_on_delivery;
 	
-	@FindBy(xpath="//android.view.ViewGroup[@content-desc='cbx_Accept_summary']/android.view.ViewGroup/android.widget.ImageView")									//Click_cash_on_delivery
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='cbx_Accept_summary']")									//Click_cash_on_delivery
 	private WebElement click_I_accept_checkbox;
 	
 	@FindBy(xpath="//android.widget.ImageView[@content-desc='imgcbx_Split']")				//Click_split_payment
@@ -235,6 +239,66 @@ public class booking_page {
 	
 	@FindBy(xpath="//android.widget.TextView[@text='You are allowed to book only one vehicle at a time.']")			//cod_1st_available_ok_button
 	private WebElement booking_1st_only_one_vehicle_at_a_time_text;
+	//
+	@FindBy(xpath="//android.widget.TextView[@content-desc='summary_model_name_id']")			
+	private WebElement summary_bike_name_txt;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='summary_start_date_id']")			
+	private WebElement summary_start_date;
+	
+	@FindBy(xpath="(//android.widget.TextView[@content-desc='summary_end_date_id'])[1]")			
+	private WebElement summary_end_date;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='summary_start_time_id']")			
+	private WebElement summary_start_time;
+	
+	@FindBy(xpath="(//android.widget.TextView[@content-desc='summary_end_date_id'])[2]")			
+	private WebElement summary_end_time;
+	
+	@FindBy(xpath="(//android.widget.TextView[@content-desc='summary_value_ans_id'])[1]")			
+	private WebElement summary_package_duration;
+	
+	@FindBy(xpath="(//android.widget.TextView[@content-desc='summary_value_ans_id'])[2]")			
+	private WebElement summary_pickup_location;
+	
+	@FindBy(xpath="(//android.widget.TextView[@content-desc='summary_value_ans_id'])[3]")			
+	private WebElement summary_km_limit;
+	
+	@FindBy(xpath="(//android.widget.TextView[@content-desc='summary_value_ans_id'])[4]")			
+	private WebElement summary_excess_km_charges;
+	
+	@FindBy(xpath="(//android.widget.TextView[@content-desc='summary_value_ans_id'])[5]")			
+	private WebElement summary_excess_hourly_charges;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='cbx_Accept_isAdditionalHelmet']")			
+	private WebElement summary_rent_additional_helmet_checkbox;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='txt_Offers']")			
+	private WebElement summary_coupon_code_offers;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='txt_Package Charges']")			
+	private WebElement summary_package_charges;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='txt_Delivery Charges']")			
+	private WebElement summary_delivery_charges;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='txt_Discount']")			
+	private WebElement summary_discount;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='txt_TotalAmount']")			
+	private WebElement summary_total_amount;
+	
+	@FindBy(xpath="(//android.widget.TextView[@content-desc='summary_helmet_category_name_txt'])[1]")			
+	private WebElement summary_Half_face_helmet;
+	
+	@FindBy(xpath="(//android.widget.TextView[@content-desc='summary_helmet_category_name_txt'])[2]")			
+	private WebElement summary_Full_face_helmet;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='APPLY COUPON CODE']")			
+	private WebElement summary_coupon_page_title;
+	
+	@FindBy(xpath="(//android.view.ViewGroup[@content-desc='btn_Apply'])[2]")			
+	private WebElement summary_coupon_apply;
 	
 //========================================= Home delivery element ==============================================
 	
@@ -396,6 +460,9 @@ public class booking_page {
 	
 	@FindBy(xpath="//android.widget.TextView[@text='SBI']")						//Click_Pay_using_SBI_bank 
 	private WebElement Click_Pay_using_SBI_bank;
+	
+	@FindBy(xpath="//android.view.View[@text='Pay using Cardless EMI ']")						//Click_Pay_using_SBI_bank 
+	private WebElement Click_Pay_using_cardles_EMI;
 	
 	@FindBy(xpath="//android.widget.Button[@text='Pay Now']")					//Click_pay_now_button 
 	private WebElement Click_pay_now_button_sbi;
@@ -678,6 +745,36 @@ public class booking_page {
 	@FindBy(xpath="//android.widget.TextView[@content-desc='txt_Address']")
 	private WebElement FBD_address;
 	
+	@FindBy(xpath="//android.widget.TextView[@text='Booking Status']")
+	private WebElement FBD_Booking_status;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='FULL BOOKING DETAILS']")
+	private WebElement FBD_page_title;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='txt_Booking Id']")
+	private WebElement FBD_Booking_id;
+	
+//	@FindBy(xpath="")
+//	private WebElement FBD_;
+//	
+//	@FindBy(xpath="")
+//	private WebElement FBD_;
+//	
+//	@FindBy(xpath="")
+//	private WebElement FBD_;
+//	
+//	@FindBy(xpath="")
+//	private WebElement FBD_;
+//	
+//	@FindBy(xpath="")
+//	private WebElement FBD_;
+//	
+//	@FindBy(xpath="")
+//	private WebElement FBD_;
+//	
+//	@FindBy(xpath="")
+//	private WebElement FBD_;
+//	
 //	@FindBy(xpath="")
 //	private WebElement FBD_;
 //	
@@ -1701,6 +1798,106 @@ public class booking_page {
 
 					public WebElement getClick_home_delivery_search_address_1() {
 						return Click_home_delivery_search_address_1;
+					}
+
+					public WebElement getBooking_details_page_map_button() {
+						return booking_details_page_map_button;
+					}
+
+					public WebElement getSummary_bike_name_txt() {
+						return summary_bike_name_txt;
+					}
+
+					public WebElement getSummary_start_date() {
+						return summary_start_date;
+					}
+
+					public WebElement getSummary_end_date() {
+						return summary_end_date;
+					}
+
+					public WebElement getSummary_start_time() {
+						return summary_start_time;
+					}
+
+					public WebElement getSummary_end_time() {
+						return summary_end_time;
+					}
+
+					public WebElement getSummary_package_duration() {
+						return summary_package_duration;
+					}
+
+					public WebElement getSummary_pickup_location() {
+						return summary_pickup_location;
+					}
+
+					public WebElement getSummary_km_limit() {
+						return summary_km_limit;
+					}
+
+					public WebElement getSummary_excess_km_charges() {
+						return summary_excess_km_charges;
+					}
+
+					public WebElement getSummary_excess_hourly_charges() {
+						return summary_excess_hourly_charges;
+					}
+
+					public WebElement getSummary_rent_additional_helmet_checkbox() {
+						return summary_rent_additional_helmet_checkbox;
+					}
+
+					public WebElement getSummary_coupon_code_offers() {
+						return summary_coupon_code_offers;
+					}
+
+					public WebElement getSummary_package_charges() {
+						return summary_package_charges;
+					}
+
+					public WebElement getSummary_delivery_charges() {
+						return summary_delivery_charges;
+					}
+
+					public WebElement getSummary_discount() {
+						return summary_discount;
+					}
+
+					public WebElement getSummary_total_amount() {
+						return summary_total_amount;
+					}
+
+					public WebElement getSummary_Half_face_helmet() {
+						return summary_Half_face_helmet;
+					}
+
+					public WebElement getSummary_Full_face_helmet() {
+						return summary_Full_face_helmet;
+					}
+
+					public WebElement getSummary_coupon_page_title() {
+						return summary_coupon_page_title;
+					}
+
+					public WebElement getSummary_coupon_apply() {
+						return summary_coupon_apply;
+					}
+
+					public WebElement getClick_Pay_using_cardles_EMI() {
+						return Click_Pay_using_cardles_EMI;
+					}
+
+					public WebElement getFBD_Booking_status() {
+						return FBD_Booking_status;
+					}
+
+					public WebElement getFBD_page_title() {
+						return FBD_page_title;
+					}
+
+					public WebElement getFBD_Booking_id() {
+						return FBD_Booking_id;
 					}
 					
 

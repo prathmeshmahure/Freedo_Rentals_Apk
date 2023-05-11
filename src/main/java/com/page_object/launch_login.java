@@ -251,6 +251,9 @@ public class launch_login {
 	@FindBy(xpath="")				 		 //Select Location Faridabad
 	private WebElement Select_City_Faridabad;
 	
+	@FindBy(xpath="//android.widget.TextView[@text='Jaipur']")				 		
+	private WebElement Select_City_jaipur;
+	
 	@FindBy(xpath="//android.widget.TextView[@text='Gurugram']")				 	 //Select Location Gurugram
 	private WebElement Select_City_Gurugram;
 	
@@ -580,6 +583,10 @@ public class launch_login {
 
 					public WebElement getSelected_city_not_available() {
 						return Selected_city_not_available;
+					}
+
+					public WebElement getSelect_City_jaipur() {
+						return Select_City_jaipur;
 					}
 					
 					

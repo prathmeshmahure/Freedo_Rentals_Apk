@@ -74,6 +74,9 @@ public class config_data_provider {
 				public  String getcity_name() {
 					return pro.getProperty("CityName");
 				}
+				public  String getgpsaddress() {
+					return pro.getProperty("gpsaddress");
+				}
 				
 				
 

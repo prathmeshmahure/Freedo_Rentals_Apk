@@ -14,19 +14,19 @@ public class launch_login {
 	@FindBy(how=How.XPATH,using="//android.widget.TextView[@text='Select Pickup Location, Date and Packages']")					//Skip Button1
 	private WebElement first_page_Select_pickUP_location;
 	
-	@FindBy(xpath="//android.view.ViewGroup[@content-desc='first_slide_indicator']")			
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='view_dot_first']")			
 	private WebElement first_page_first_slide_indicator;
 	
-	@FindBy(xpath="//android.view.ViewGroup[@content-desc='second_slide_indicator']")			
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='view_dot_second']")			
 	private WebElement first_page_second_slide_indicator;
 	
-	@FindBy(xpath="//android.view.ViewGroup[@content-desc='third_slide_indicator']")			
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='view_dot_third']")			
 	private WebElement first_page_third_slide_indicator;
 	
-	@FindBy(xpath="//android.widget.TextView[@content-desc='second_onboarding_title_txt']")			
+	@FindBy(xpath="//android.widget.TextView[@text='Get it Home Delivered or Pickup from location']")			
 	private WebElement second_onboarding_tittle;
 	
-	@FindBy(xpath="(//android.widget.TextView[@content-desc='third_onboarding_title_txt'])[1]")			
+	@FindBy(xpath="//android.widget.TextView[@text='Complete the payment and enjoy the ride']")			
 	private WebElement Thirdpage_onboarding_tittle;
 	
 	@FindBy(how=How.XPATH,using="//android.widget.TextView[@text='Skip']/.")					//Skip Button1
@@ -128,34 +128,34 @@ public class launch_login {
 		@FindBy(how=How.XPATH,using="//android.widget.TextView[@text='Delete Account']")						
 		private WebElement delete_account;
 		
-		@FindBy(how=How.XPATH,using="(//android.widget.TextView[@text=''])[1]")						
+		@FindBy(how=How.XPATH,using="//android.view.ViewGroup[@content-desc='btn_arrow_delete']")						
 		private WebElement delete_account_dropdown;
 		
-		@FindBy(how=How.XPATH,using="(//android.widget.TextView[@content-desc=\"imgprivacy_policy_checkbox\"])[1]")						
+		@FindBy(how=How.XPATH,using="//android.widget.TextView[@content-desc='imgcb_Bad experience on a ride']")						
 		private WebElement DA_checkbox_1;
 		
-		@FindBy(how=How.XPATH,using="(//android.widget.TextView[@content-desc=\"imgprivacy_policy_checkbox\"])[2]")						
+		@FindBy(how=How.XPATH,using="(//android.widget.TextView[@index='0'])[4]")						
 		private WebElement DA_checkbox_2;
 		
-		@FindBy(how=How.XPATH,using="(//android.widget.TextView[@content-desc=\"imgprivacy_policy_checkbox\"])[3]")						
+		@FindBy(how=How.XPATH,using="//android.widget.TextView[@content-desc='imgcb_Negative support experience']")						
 		private WebElement DA_checkbox_3;
 		
-		@FindBy(how=How.XPATH,using="(//android.widget.TextView[@content-desc=\"imgprivacy_policy_checkbox\"])[4]")						
+		@FindBy(how=How.XPATH,using="//android.widget.TextView[@content-desc='imgcb_Issues with my internet']")						
 		private WebElement DA_checkbox_4;
 		
-		@FindBy(how=How.XPATH,using="(//android.widget.TextView[@content-desc=\"imgprivacy_policy_checkbox\"])[5]")						
+		@FindBy(how=How.XPATH,using="//android.widget.TextView[@content-desc='imgcb_No longer support company']")						
 		private WebElement DA_checkbox_5;
 		
-		@FindBy(how=How.XPATH,using="(//android.widget.TextView[@content-desc=\"imgprivacy_policy_checkbox\"])[6]")						
+		@FindBy(how=How.XPATH,using="//android.widget.TextView[@content-desc='imgcb_Prefer not to say']")						
 		private WebElement DA_checkbox_6;
 		
-		@FindBy(how=How.XPATH,using="(//android.widget.TextView[@content-desc=\"imgprivacy_policy_checkbox\"])[7]")						
+		@FindBy(how=How.XPATH,using="//android.widget.TextView[@content-desc='imgcb_Others']")						
 		private WebElement DA_checkbox_7;
 		///================================================
 	@FindBy(how=How.XPATH,using="//android.widget.TextView[@text='Privacy Policy']")						
 	private WebElement privacy_policy;
 	
-	@FindBy(how=How.XPATH,using="(//android.widget.TextView[@text=''])[2]")						
+	@FindBy(how=How.XPATH,using="//android.view.ViewGroup[@content-desc='btn_arrow_privacy']")						
 	private WebElement privacy_policy_dropdown;
 	
 	@FindBy(how=How.XPATH,using="//android.widget.TextView[@text='In this Privacy Policy, “Services” App and Vehicle respectively means:']")						
@@ -183,7 +183,7 @@ public class launch_login {
 	@FindBy(how=How.XPATH,using="//android.view.ViewGroup[@content-desc='btn_verify']")				//Verify button
 	private WebElement Click_OTP_Verify_button;
 	
-	@FindBy(how=How.XPATH,using="//android.widget.TextView[@index='5']")				//Verify button
+	@FindBy(how=How.XPATH,using="//android.widget.TextView[@content-desc='txt_timer']")				//Verify button
 	private WebElement Otp_time_slot;
 									
 	@FindBy(how=How.XPATH,using="//android.widget.TextView[@text='Create an Account']")	////Create Account
@@ -231,6 +231,10 @@ public class launch_login {
 	
 	@FindBy(xpath="//android.widget.TextView[@text='Popular Cities']")		 //Select Location  Noida
 	private WebElement Popular_cities_txt;
+	
+	@FindBy(xpath="//android.widget.ImageView[@content-desc='img_NoCIty']")				 		 
+	private WebElement Selected_city_not_available;
+	
 	
 	@FindBy(xpath="//android.widget.TextView[@text='Delhi']")				 		 //Select Location Delhi
 	private WebElement Select_City_Delhi;
@@ -572,6 +576,10 @@ public class launch_login {
 
 					public WebElement getSearch_city() {
 						return Search_city;
+					}
+
+					public WebElement getSelected_city_not_available() {
+						return Selected_city_not_available;
 					}
 					
 					

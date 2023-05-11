@@ -26,7 +26,24 @@ public class booking_page {
 	
 	@FindBy(xpath="//android.widget.CheckedTextView[@text='Automation']")
 	private WebElement Click_Autonation_city;
-
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='txt_userName']")
+	private WebElement username;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='homeId_cityName']")
+	private WebElement home_city_name;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='homeId_differCity']")
+	private WebElement different_city_name;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='img_LocationHome']")
+	private WebElement location_icon;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_Bike']")
+	private WebElement home_bike_tab;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_Scooter']")
+	private WebElement home_scooter_tab;
 
 
 //================================== 2nd drop down componenets ========================================================	
@@ -80,6 +97,9 @@ public class booking_page {
 	@FindBy(xpath="//android.view.View[@text='OUR RENTING FLEET']")																			//Click_Bike_Tab
 	private WebElement Our_renting_fleet_page_txt;
 	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='renting_bike_available']")																			//Click_Bike_Tab
+	private WebElement available_bikes;
+	
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc='renting_btn_Bike']")																			//Click_Bike_Tab
 	private WebElement Click_Bike_Tab;
 	
@@ -118,6 +138,35 @@ public class booking_page {
 	private WebElement Click_Destini_125_Scooter;
 	
 //======================================== Booking Details page==========================================================	
+	
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='bookingId_detail_priceTwo']")						//txt_BKD_pickup_city
+	private WebElement booking_details_page_price;
+	
+	@FindBy(xpath="//android.widget.RelativeLayout[@index='2']")						
+	private WebElement booking_details_page_map;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='bookingId_detail_totalKmTwo']")						
+	private WebElement booking_details_page_KM_limit;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='bookingId_detail_excessPerKmChargeTwo']")						
+	private WebElement booking_details_page_excess_km_charges;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='bookingId_detail_excessPerHourTwo']")						
+	private WebElement booking_details_page_excess_hourly_charges;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_TimeSlot_Morning']")						
+	private WebElement booking_details_page_morning;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_timeslot_afternoon']")						
+	private WebElement booking_details_page_afternoon;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_timeslot_evening']")						
+	private WebElement booking_details_page_evening;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='bookingID_detail_list_View_click']")						
+	private WebElement booking_details_page_list_button;
+				//=======================================
 	@FindBy(xpath="//android.widget.TextView[@text='BOOKING DETAILS']")						//txt_BKD_pickup_city
 	private WebElement booking_details_page_txt;
 	
@@ -189,11 +238,45 @@ public class booking_page {
 	
 //========================================= Home delivery element ==============================================
 	
-	@FindBy(xpath="//android.widget.ImageView[@content-desc='imgradioBtn_Pickup']")	//Click_home_delivery_radio_button
+	@FindBy(xpath="//android.widget.TextView[@content-desc='imgradioBtn__book_detail_Pickup']")	//Click_home_delivery_radio_button
 	private WebElement Click_Pick_up_vehicle_radio_button;
 	
-	@FindBy(xpath="//android.widget.ImageView[@content-desc='imgradioBtn_Home']")	//Click_home_delivery_radio_button
+	@FindBy(xpath="//android.widget.TextView[@content-desc='imgradioBtn_book_detail_Home']")	//Click_home_delivery_radio_button
 	private WebElement Click_home_delivery_radio_button;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='bookingID_detail_address_click']")					
+	private WebElement Click_home_delivery_add_address;
+	
+	@FindBy(xpath="//android.widget.EditText[@text='Enter Location Manually']")					
+	private WebElement Click_home_delivery_search_address;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Udyog Vihar, Sector 19, Gurugram, Haryana, India']")	//android.widget.TextView[@text='Udyog Vihar, Sector 19, Gurugram, Haryana, India']				
+	private WebElement Click_home_delivery_search_address_1;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Confirm Location']")					
+	private WebElement Click_home_delivery_confirm_location;
+	
+	@FindBy(xpath="//android.widget.EditText[@text='Name']")					
+	private WebElement Click_home_delivery_enter_name;
+	
+	@FindBy(xpath="//android.widget.EditText[@text='Enter complete address']")					
+	private WebElement Click_home_delivery_enter_complete_address;
+	
+	@FindBy(xpath="//android.widget.EditText[@text='Landmark (optional)']")					
+	private WebElement Click_home_delivery_landmark_optional;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Save Address Details']")					
+	private WebElement Click_home_delivery_save_address_details;
+	
+	@FindBy(xpath="(//android.widget.TextView[@text=''])[2]")					
+	private WebElement Click_home_delivery_delete_address;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_Yes_address']")					
+	private WebElement Click_home_delivery_yes_address;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_Add_New_Address']")					
+	private WebElement Click_home_delivery_add_new_address_;
+				//==================================
 	
 	@FindBy(xpath="//android.widget.EditText[@content-desc='ipt_Address_bDetail']")						//Click_home_delivery_Address
 	private WebElement Click_home_delivery_Address;
@@ -224,8 +307,76 @@ public class booking_page {
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc='rental_process_tab']")		//Click_home_page_Rent_button
 	private WebElement Click_home_page_Rent_button;
 	
+	  //==========================================================
+			@FindBy(xpath="//android.view.View[@text='RENTAL PROCESS']")		//Click_home_page_Rent_button
+			private WebElement Rent_page_heading;
+			
+			@FindBy(xpath="//android.widget.TextView[@content-desc='txtDatePickup']")		//Click_home_page_Rent_button
+			private WebElement rent_select_date_and_pickup_location;
+			
+			@FindBy(xpath="//android.widget.TextView[@content-desc='txtListBikes']")		//Click_home_page_Rent_button
+			private WebElement rent_bikes_and_scooters;
+			
+			@FindBy(xpath="//android.widget.TextView[@content-desc='txtKyc']")		//Click_home_page_Rent_button
+			private WebElement rent_submit_kyc_and_document;
+			
+			@FindBy(xpath="//android.widget.TextView[@content-desc='txtPay']")		//Click_home_page_Rent_button
+			private WebElement rent_pay_and_book_bike;
+			
+			@FindBy(xpath="//android.widget.TextView[@content-desc='txtRide']")		//Click_home_page_Rent_button
+			private WebElement rent_enjoy_ride;
+	
+	  //==========================================================
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc='more_component_tab']")		//Click_home_page_More_button
 	private WebElement Click_home_page_More_button;
+	//========================================================
+					@FindBy(xpath="//android.widget.TextView[@text='Notification']")		//Click_home_page_More_button
+					private WebElement More_button_notification;
+					
+					@FindBy(xpath="//android.widget.TextView[@text='Edit Profile']")		//Click_home_page_More_button
+					private WebElement More_button_Edit_Profile;
+					
+					@FindBy(xpath="//android.widget.TextView[@text='Split Payment']")		//Click_home_page_More_button
+					private WebElement More_button_split_payment;
+					
+					@FindBy(xpath="//android.widget.TextView[@text='Rate Us']")		//Click_home_page_More_button
+					private WebElement More_button_rate_us;
+					
+					@FindBy(xpath="//android.widget.TextView[@content-desc='txt_moreKYC']")		//Click_home_page_More_button
+					private WebElement More_button_KYC;
+					
+					@FindBy(xpath="//android.widget.TextView[@content-desc='txt_moreTerms & Conditions']")		//Click_home_page_More_button
+					private WebElement More_button_terms_and_condition;
+					
+					@FindBy(xpath="//android.widget.TextView[@content-desc='txt_morePrivacy Policy']")		//Click_home_page_More_button
+					private WebElement More_button_privacy_policy;
+					
+					@FindBy(xpath="//android.widget.TextView[@content-desc='txt_moreAddress Book']")		//Click_home_page_More_button
+					private WebElement More_button_address_book;
+					
+					@FindBy(xpath="//android.widget.TextView[@content-desc='txt_moreAbout Us']")		//Click_home_page_More_button
+					private WebElement More_button_about_us;
+					
+					@FindBy(xpath="//android.widget.TextView[@content-desc='txt_moreContact Us']")		//Click_home_page_More_button
+					private WebElement More_button_contact_us;
+					
+					@FindBy(xpath="//android.widget.TextView[@content-desc='txt_moreInvite your friend']")		//Click_home_page_More_button
+					private WebElement More_button_invite_your_friend;
+					
+					@FindBy(xpath="//android.widget.TextView[@content-desc='txt_moreFAQ']")		//Click_home_page_More_button
+					private WebElement More_button_faq;
+					
+					@FindBy(xpath="//android.widget.TextView[@index='11']")		//Click_home_page_More_button
+					private WebElement More_button_app_version;
+					
+
+		//========================================================
+					@FindBy(xpath="//android.widget.TextView[@text='Book Now']")		//Click_home_page_More_button
+					private WebElement book_now_button;
+	
+	
+	
+	
 
 //========================================== Payment page methods ============================================
 	@FindBy(xpath="//android.view.View[@text='Pay using UPI ']")				//Click_Pay_using_UPI
@@ -1362,6 +1513,194 @@ public class booking_page {
 
 					public WebElement getClick_location_pop_up_ok_button() {
 						return click_location_pop_up_ok_button;
+					}
+
+					public WebElement getUsername() {
+						return username;
+					}
+
+					public WebElement getHome_city_name() {
+						return home_city_name;
+					}
+
+					public WebElement getDifferent_city_name() {
+						return different_city_name;
+					}
+
+					public WebElement getLocation_icon() {
+						return location_icon;
+					}
+
+					public WebElement getHome_bike_tab() {
+						return home_bike_tab;
+					}
+
+					public WebElement getHome_scooter_tab() {
+						return home_scooter_tab;
+					}
+
+					public WebElement getAvailable_bikes() {
+						return available_bikes;
+					}
+
+					public WebElement getRent_page_heading() {
+						return Rent_page_heading;
+					}
+
+					public WebElement getRent_select_date_and_pickup_location() {
+						return rent_select_date_and_pickup_location;
+					}
+
+					public WebElement getRent_bikes_and_scooters() {
+						return rent_bikes_and_scooters;
+					}
+
+					public WebElement getRent_submit_kyc_and_document() {
+						return rent_submit_kyc_and_document;
+					}
+
+					public WebElement getRent_pay_and_book_bike() {
+						return rent_pay_and_book_bike;
+					}
+
+					public WebElement getRent_enjoy_ride() {
+						return rent_enjoy_ride;
+					}
+
+					public WebElement getMore_button_notification() {
+						return More_button_notification;
+					}
+
+					public WebElement getMore_button_Edit_Profile() {
+						return More_button_Edit_Profile;
+					}
+
+					public WebElement getMore_button_split_payment() {
+						return More_button_split_payment;
+					}
+
+					public WebElement getMore_button_rate_us() {
+						return More_button_rate_us;
+					}
+
+					public WebElement getMore_button_KYC() {
+						return More_button_KYC;
+					}
+
+					public WebElement getMore_button_terms_and_condition() {
+						return More_button_terms_and_condition;
+					}
+
+					public WebElement getMore_button_privacy_policy() {
+						return More_button_privacy_policy;
+					}
+
+					public WebElement getMore_button_address_book() {
+						return More_button_address_book;
+					}
+
+					public WebElement getMore_button_about_us() {
+						return More_button_about_us;
+					}
+
+					public WebElement getMore_button_contact_us() {
+						return More_button_contact_us;
+					}
+
+					public WebElement getMore_button_invite_your_friend() {
+						return More_button_invite_your_friend;
+					}
+
+					public WebElement getMore_button_faq() {
+						return More_button_faq;
+					}
+
+					public WebElement getMore_button_app_version() {
+						return More_button_app_version;
+					}
+
+					public WebElement getBook_now_button() {
+						return book_now_button;
+					}
+
+					public WebElement getBooking_details_page_price() {
+						return booking_details_page_price;
+					}
+
+					public WebElement getBooking_details_page_KM_limit() {
+						return booking_details_page_KM_limit;
+					}
+
+					public WebElement getBooking_details_page_excess_km_charges() {
+						return booking_details_page_excess_km_charges;
+					}
+
+					public WebElement getBooking_details_page_excess_hourly_charges() {
+						return booking_details_page_excess_hourly_charges;
+					}
+
+					public WebElement getBooking_details_page_morning() {
+						return booking_details_page_morning;
+					}
+
+					public WebElement getBooking_details_page_afternoon() {
+						return booking_details_page_afternoon;
+					}
+
+					public WebElement getBooking_details_page_evening() {
+						return booking_details_page_evening;
+					}
+
+					public WebElement getBooking_details_page_list_button() {
+						return booking_details_page_list_button;
+					}
+
+					public WebElement getBooking_details_page_map() {
+						return booking_details_page_map;
+					}
+
+					public WebElement getClick_home_delivery_add_address() {
+						return Click_home_delivery_add_address;
+					}
+
+					public WebElement getClick_home_delivery_search_address() {
+						return Click_home_delivery_search_address;
+					}
+
+					public WebElement getClick_home_delivery_confirm_location() {
+						return Click_home_delivery_confirm_location;
+					}
+
+					public WebElement getClick_home_delivery_enter_name() {
+						return Click_home_delivery_enter_name;
+					}
+
+					public WebElement getClick_home_delivery_enter_complete_address() {
+						return Click_home_delivery_enter_complete_address;
+					}
+
+					public WebElement getClick_home_delivery_landmark_optional() {
+						return Click_home_delivery_landmark_optional;
+					}
+
+					public WebElement getClick_home_delivery_save_address_details() {
+						return Click_home_delivery_save_address_details;
+					}
+
+					public WebElement getClick_home_delivery_delete_address() {
+						return Click_home_delivery_delete_address;
+					}
+
+					public WebElement getClick_home_delivery_yes_address() {
+						return Click_home_delivery_yes_address;
+					}
+
+					public WebElement getClick_home_delivery_add_new_address_() {
+						return Click_home_delivery_add_new_address_;
+					}
+
+					public WebElement getClick_home_delivery_search_address_1() {
+						return Click_home_delivery_search_address_1;
 					}
 					
 

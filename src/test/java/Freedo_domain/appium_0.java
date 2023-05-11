@@ -166,10 +166,11 @@ public class appium_0 extends base_class {
 		}
 //==================================================================================================================		
 		@Test(dependsOnMethods={"TC_0010_verify_user_able_to_create_an_account"})
-		public void TC_0011_verify_Terms_and_condition_link_on_create_an_account_page() {
+		public void TC_0011_verify_Terms_and_condition_link_on_create_an_account_page() throws Exception {
 			log.info("***************TC_0011_verify_Terms_and_condition_link_on_create_an_account_page starts*****************");
 			
 			library.Custom_click(login.getClick_Terms_and_Conditions(), "Terms and condition ");
+			Thread.sleep(3000);
 			library.visible_link(login.getTerms_and_condition_page_heading(), "Terms and condition page Heaading");
 			library.visible_link(login.getT_and_c_page_info_present(), "page info is present");
 			library.Custom_click(login.getBack_button(), "Terms and condition back button ");		
@@ -198,16 +199,16 @@ public class appium_0 extends base_class {
 			library.visible_link(login.getDA_checkbox_5(), "No longer support company");
 			library.visible_link(login.getDA_checkbox_6(), "Prefer not to say");
 			library.visible_link(login.getDA_checkbox_7(), "Others");
-		//	library.Custom_click(login.getDelete_account_dropdown(), "Delete account dropdown close");	
+			library.Custom_click(login.getDelete_account_dropdown(), "Delete account dropdown close");	
 		}
 //================================================================================================================
 		@Test(dependsOnMethods={"TC_0013_verify_Privacy_policy_under_delete_dropdown_all_element"})
 		public void TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element() {
 			log.info("***************TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element starts*****************");
 			
-			library.Custom_click(login.getDelete_account_dropdown(), "Privacy policy dropdown open");
+			library.Custom_click(login.getPrivacy_policy_dropdown(), "Privacy policy dropdown open");
 			library.visible_link(login.getPrivacy_policy_info(), "Privacy policy information");
-		//	library.Custom_click(login.getPrivacy_policy_dropdown(), "Privacy policy dropdown Close");	
+			library.Custom_click(login.getPrivacy_policy_dropdown(), "Privacy policy dropdown Close");	
 			library.Custom_click(login.getBack_button(), " back button ");
 		}
 //================================================================================================================		
@@ -269,52 +270,12 @@ public class appium_0 extends base_class {
 		library.Custom_click(login.getSelect_Manually_location(), "Select_Manually_location");//click
 		
 		}
-//================================ Search city name =====================================================================
-		@Test(dependsOnMethods={"TC_0019_Select_location"})
-		public void TC_0020_Verify_validation_message() throws Exception  {
-			log.info("***************TC_0020_Verify_validation_message starts*****************");
-			
-			appium_0.Back_button();	
-			
-		}
-//======================================================================================================================
-		@Test(dependsOnMethods={"TC_0020_Verify_validation_message"})
-		public void TC_0021_Search_city_name() throws Exception  {
-			log.info("***************TC_0020_Search_city_name starts*****************");
-			
-		library.visible_link(login.getSearch_city(), "Please select your city");
-		library.custom_sendkeys(login.getSearch_city(), config.getcity_name(), "Search city by city name");
-		appium_0.EnterButton();
-		library.visible_link(login.getSelect_City_Automation_City(), "Automation city");
-		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 //============================Verify city visible =======================================================================
 		
-		@Test(dependsOnMethods={"TC_0021_Search_city_name"})
-		public void TC_0022_verify_user_select_City() {
-			log.info("***************TC_0022_verify_user_select_City starts*****************");
-			
+		@Test(dependsOnMethods={"TC_0019_Select_location"})
+		public void TC_0020_verify_user_select_City() {
+			log.info("***************TC_0020_verify_user_select_City starts*****************");
+				
 			library.visible_link(login.getPopular_cities_txt(), "Popular cities text");
 			library.visible_link(login.getSelect_City_Delhi(), "Delhi");
 			library.visible_link(login.getSelect_City_Gurugram(), "Gurugram");
@@ -322,11 +283,31 @@ public class appium_0 extends base_class {
 			library.visible_link(login.getSelect_City_Greater_Bengaluru(), "Bengaluru");
 			library.visible_link(login.getSelect_City_Automation_City(), "Automation city");
 //			library.visible_link(login.getSelect_City_Greater_Noida(), "Greater_Noida");
-		}
+				}
 		
+//================================ Search city name =====================================================================
+		@Test(dependsOnMethods={"TC_0020_verify_user_select_City"})
+		public void TC_0021_Search_wrong_city_name() throws Exception  {
+				log.info("***************TC_0021_Search_wrong_city_name starts*****************");
+					
+			library.visible_link(login.getSearch_city(), "Please select your city");
+			library.custom_sendkeys(login.getSearch_city(), "Aurangabad", "Search city by city name");
+			appium_0.EnterButton();
+			library.visible_link(login.getSelected_city_not_available(), "Selected city not available");
+				}
+//================================ Search city name =====================================================================
+		@Test(dependsOnMethods={"TC_0021_Search_wrong_city_name"})
+		public void TC_0022_Search_city_name() throws Exception  {
+			log.info("***************TC_0022_Search_city_name starts*****************");
+			
+		library.visible_link(login.getSearch_city(), "Please select your city");
+		library.custom_sendkeys(login.getSearch_city(), config.getcity_name(), "Search city by city name");
+		appium_0.EnterButton();
+		library.visible_link(login.getSelect_City_Automation_City(), "Automation city");
+		}			
 //===========================Select city =============================================================================
 		
-		@Test(dependsOnMethods={"TC_0022_verify_user_select_City"})
+		@Test(dependsOnMethods={"TC_0022_Search_city_name"})
 		public void TC_0023_Select_all__City() {
 			log.info("***************TC_0023_Select_all__City starts*****************");
 			

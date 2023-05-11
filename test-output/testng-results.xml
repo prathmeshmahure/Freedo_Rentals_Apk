@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-07T23:54:23 IST" name="Default suite" finished-at="2023-05-07T23:54:59 IST" duration-ms="36496">
+  <suite started-at="2023-05-11T00:03:42 IST" name="Default suite" finished-at="2023-05-11T00:04:32 IST" duration-ms="50609">
     <groups>
     </groups>
-    <test started-at="2023-05-07T23:54:23 IST" name="Default test" finished-at="2023-05-07T23:54:59 IST" duration-ms="36496">
+    <test started-at="2023-05-11T00:03:42 IST" name="Default test" finished-at="2023-05-11T00:04:32 IST" duration-ms="50609">
       <class name="Freedo_domain.TEST">
-        <test-method is-config="true" signature="BS()[pri:0, instance:Freedo_domain.TEST@5677323c]" started-at="2023-05-07T23:54:21 IST" name="BS" finished-at="2023-05-07T23:54:23 IST" duration-ms="1851" status="PASS">
+        <test-method is-config="true" signature="BS()[pri:0, instance:Freedo_domain.TEST@5677323c]" started-at="2023-05-11T00:03:40 IST" name="BS" finished-at="2023-05-11T00:03:42 IST" duration-ms="1569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BS -->
-        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Freedo_domain.TEST@5677323c]" started-at="2023-05-07T23:54:23 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-05-07T23:54:49 IST" duration-ms="26045" status="PASS">
+        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Freedo_domain.TEST@5677323c]" started-at="2023-05-11T00:03:42 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-05-11T00:03:58 IST" duration-ms="16445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OPEN_AND_INSTALL_APP -->
-        <test-method signature="t1()[pri:0, instance:Freedo_domain.TEST@5677323c]" started-at="2023-05-07T23:54:49 IST" name="t1" finished-at="2023-05-07T23:54:59 IST" duration-ms="10390" status="PASS">
+        <test-method signature="t1()[pri:0, instance:Freedo_domain.TEST@5677323c]" started-at="2023-05-11T00:03:58 IST" name="t1" finished-at="2023-05-11T00:04:32 IST" duration-ms="34135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- t1 -->

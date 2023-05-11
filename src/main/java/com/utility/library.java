@@ -53,7 +53,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, fieldname+"== Unable To Send  Value=="+e);
 					log.error("==Not==Value not send "+fieldname);
-					listner.onTestFailure(null);
+			//		listner.onTestFailure(null);
 			}
 		}
 	/////////////////////////////////////////////////////////////////////////////////////////////////
@@ -100,7 +100,7 @@ public class library extends base_class{
 	    	catch(Exception e) {
 				test.log(Status.FAIL,fieldname+ "Unable To swipe Action =="+e);
 				log.error("==NOT==Unable To swipe Action  "+fieldname);
-				listner.onTestFailure(null);
+		//		listner.onTestFailure(null);
 				}
 	    }
 	    
@@ -116,7 +116,7 @@ public class library extends base_class{
 					driver1.findElement(By.id("android:id/button1")).click();
 					test.log(Status.FAIL, "Somethink went wrong found =="+fieldname);
 					log.info("Somethink went wrong found "+fieldname);
-					listner.onTestFailure(null);
+			//		listner.onTestFailure(null);
 				}
 			}
 			catch(Exception e) {
@@ -149,7 +149,7 @@ public class library extends base_class{
 		catch(Exception e) {
 				test.log(Status.FAIL,fieldname+ "==Bike is  not available & Selected=="+e);
 				log.error("==NOT==Bike is not available & Selected "+fieldname);
-				listner.onTestFailure(null);
+	//			listner.onTestFailure(null);
 				}
 	    }
 //==============================================================================================================================
@@ -181,7 +181,7 @@ public class library extends base_class{
 	    	}catch(Exception e) {
 	    		test.log(Status.FAIL,fieldname+ "==Tap action failed=="+e);
 	    		log.error("==NOT==Tap action failed "+fieldname);
-	    		listner.onTestFailure(null);
+	   // 		listner.onTestFailure(null);
 	    		}
 	    }
 //==================================================================================================================================    	
@@ -222,14 +222,14 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, fieldname1+"==Unable Action performed =="+e);
 					log.error("==NOT=="+fieldname+""+fieldname1);
-					listner.onTestFailure(null);
+		//			listner.onTestFailure(null);
 								}
 		}
 //=============================================================================================================================	    
 	    public static void failmsg(String fieldname,String fieldname1) {
 			try {		test.log(Status.FAIL, fieldname+""+fieldname1);
 						log.error("==NOT=="+fieldname+""+fieldname1);
-						listner.onTestFailure(null);
+		//				listner.onTestFailure(null);
 				}
 			catch(Exception e) {
 					test.log(Status.FAIL, fieldname+""+fieldname1+" "+e);
@@ -243,6 +243,11 @@ public class library extends base_class{
 				if(ele.isSelected()==true) {
 					test.log(Status.PASS, Element_name+"= Selected");
 					log.info("OK=="+Element_name+"= Selected");
+				   }
+				if(ele.isSelected()==false) {
+					test.log(Status.FAIL, Element_name+"= Not Selected"+" ");
+					log.error("==NOT=="+Element_name+"=Not Selected");
+				//	listner.onTestFailure(null);
 				   }
 				}
 			catch(Exception e) {

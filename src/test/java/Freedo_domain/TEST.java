@@ -21,22 +21,26 @@ public class TEST extends base_class {
 		book = PageFactory.initElements(driver1, booking_page.class);
 		
 		
-		
-		appium_0.Back_button();
-		
-		log.info("***************TC_0020_Search_city_name starts*****************");
-		
-		library.visible_link(login.getSearch_city(), "Please select your city");
-		library.custom_sendkeys(login.getSearch_city(), config.getcity_name(), "Search city by city name");
-		appium_0.EnterButton();
-		library.visible_link(login.getSelect_City_Automation_City(), "Automation city");
-		
-		
-		
-		
-		
-		
-		
+		library.Custom_click(book.getClick_home_delivery_radio_button(), "Home delivery radio button");
+		appium_1.Scroll_UP_page_Action("up");
+		library.Custom_click(book.getClick_home_delivery_add_address(), "Add Address");
+		try {
+		library.Custom_click(book.getCod_1st_available_ok_button(), "Location on device ok");
+		}catch(Exception e) {		}
+		library.custom_sendkeys(book.getClick_home_delivery_search_address(), config.getgpsaddress(), "Searching address");
+		appium_1.EnterButton();
+		Thread.sleep(1000);
+		library.Custom_click(book.getClick_home_delivery_search_address_1(), "Random 1 option is selected address");
+		library.Custom_click(book.getClick_home_delivery_confirm_location(), "Confirm location");
+		library.custom_sendkeys(book.getClick_home_delivery_enter_name(), config.getFirst_name(), "Prathmesh");
+		library.custom_sendkeys(book.getClick_home_delivery_enter_complete_address(), config.getPort(), "Dummy address");
+		library.custom_sendkeys(book.getClick_home_delivery_landmark_optional(), config.getPort(), "Dummy address");
+		appium_1.EnterButton();
+		library.Custom_click(book.getClick_home_delivery_save_address_details(), "Save address details");
+		library.Custom_click(book.getClick_home_delivery_delete_address(), "delete address");
+		library.Custom_click(book.getClick_home_delivery_yes_address(), "delete confirm Yes ");
+		library.Custom_click(book.getClick_home_delivery_add_new_address_(), "Add new address");
+		appium_1.Back_button();
 		
 		
 		

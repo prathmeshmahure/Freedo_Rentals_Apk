@@ -6,25 +6,26 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Freedo_domain.appium_0">
+      <class name="Freedo_domain.appium_1">
         <methods>
-          <include name="TC_009_verify_create_an_account_by_clicking_login_page"/>
+          <include name="TC_0034_Verify_scooter_button_on_homepage"/>
+          <include name="TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC_004_Verify_the_NEXT_button_clicking"/>
-          <include name="appium_1_TC_004_2_Verify_OTP_Verification_Page"/>
-          <include name="appium_1_TC_005_verify_all__City"/>
-          <include name="TC_002_verify_select_pickup_location_date_and_packages"/>
+          <include name="TC_0027_Verify_homepage_bike_rentals_tab_available_bike"/>
+          <include name="TC_0024_Verify_home_page_all_elements"/>
+          <include name="TC_0029_Verify_freedo_rental_icon"/>
+          <include name="TC_0026_Verify_available_all_Scooters"/>
+          <include name="TC_0031_Verify_Booking_elements"/>
           <include name="BS"/>
-          <include name="appium_1_TC_004_3_Select_location"/>
-          <include name="TC_005_Verify_the_slide_indicator"/>
-          <include name="TC_007_Verify_login_component"/>
-          <include name="TC_008_Verify_login_functionality_Register_mo_number"/>
-          <include name="appium_1_TC_006_Select_all__City"/>
-          <include name="TC_003_Verify_the_NEXT_button_clicking"/>
-          <include name="TC_0010_verify_user_able_to_create_an_account"/>
-          <include name="TC_006_Verify_the_Done_button_clicking"/>
+          <include name="TC_0025_Verify_available_all_bikes"/>
+          <include name="TC_0028_Verify_Rent_tab_all_elements"/>
+          <include name="TC_0030_Verify_more_button_all_elements"/>
+          <include name="TC_0033_Verify_Bike_button_on_homepage"/>
+          <include name="TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements"/>
+          <include name="TC_0035_Verify_user_able_to_select_date_and_package_under_booking"/>
+          <include name="TC_0032_Verify_Booking_elements"/>
         </methods>
-      </class> <!-- Freedo_domain.appium_0 -->
+      </class> <!-- Freedo_domain.appium_1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

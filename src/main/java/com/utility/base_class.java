@@ -51,7 +51,7 @@ public class base_class {
 		cap.setCapability("appium:avdLaunchTimeout", 600000);		
 		cap.setCapability("appPackage", "com.heerofreedo");
 		cap.setCapability("appActivity", "com.heerofreedo.MainActivity");
-		cap.setCapability("appium:noReset", "false");
+		cap.setCapability("appium:noReset", "true");
 		
 //		cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\10app-release.apk"));
 //		cap.setChromedriverExecutable(System.getProperty("user.dir")+"\\apk\\chromedriver.exe");
@@ -144,9 +144,9 @@ public class base_class {
     		TouchAction action = new TouchAction(driver1);
         	action.press(PointOption.point(startx ,starty)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1))).moveTo(PointOption.point(endx ,endy))
     		.release().perform();
-        	log.info("Successfully  Swipe page direction Action "+fieldname);
+      //  	log.info("Successfully  Swipe page direction Action "+fieldname);
     	}catch(Exception e) {		    	
-    		log.error("==NOT==Unable To Swipe page direction Action "+fieldname);
+    	//	log.error("==NOT==Unable To Swipe page direction Action "+fieldname);
 		}	
     }
 ////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -161,6 +161,16 @@ public class launch_login {
 	@FindBy(how=How.XPATH,using="//android.widget.TextView[@text='In this Privacy Policy, “Services” App and Vehicle respectively means:']")						
 	private WebElement privacy_policy_info;
 	
+
+	
+	@FindBy(how=How.XPATH,using="//android.widget.TextView[@text='Changed Mind? Go back.']")						
+	private WebElement privacy_policy_Changed_mind_go_back;
+	
+	@FindBy(how=How.XPATH,using="//android.widget.TextView[@text='Deactivate Account']")						
+	private WebElement privacy_policy_Deactivate_account;
+	
+	@FindBy(how=How.XPATH,using="//android.widget.TextView[@text='Confirm Deletion']")						
+	private WebElement privacy_policy_confirm_deletion;
 	
 	
 	
@@ -587,6 +597,18 @@ public class launch_login {
 
 					public WebElement getSelect_City_jaipur() {
 						return Select_City_jaipur;
+					}
+
+					public WebElement getPrivacy_policy_Changed_mind_go_back() {
+						return privacy_policy_Changed_mind_go_back;
+					}
+
+					public WebElement getPrivacy_policy_Deactivate_account() {
+						return privacy_policy_Deactivate_account;
+					}
+
+					public WebElement getPrivacy_policy_confirm_deletion() {
+						return privacy_policy_confirm_deletion;
 					}
 					
 					

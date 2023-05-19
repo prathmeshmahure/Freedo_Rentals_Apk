@@ -235,7 +235,7 @@ public class appium_4 extends base_class{
 	library.custom_sendkeys(login.getClick_Enter_Mobile_Number_C_A(), config.getMobile(), "Enter number");
 	library.visible_link(book.getCA_MF_email(), "Email ID mandotary field ( * )");
 	library.custom_sendkeys(login.getClick_Enter_Email(), config.getEnter_Email(), "Enter Email");
-	appium_2.EnterButton();
+	appium_21.EnterButton();
 	library.visible_link(book.getCA_MF_gender(), "Gender mandotary field ( * )");
 			if(login.getClick_Gender_Male().isSelected()==true) {
 				library.passmsg("Gender MALE is by default = ", "Selected");

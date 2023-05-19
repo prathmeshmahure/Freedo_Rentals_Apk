@@ -121,7 +121,7 @@ public class appium_0 extends base_class {
 		public void TC_009_verify_create_an_account_by_clicking_login_page() {
 			log.info("***************TC_009_verify_create_an_account_by_clicking_login_page starts*****************");
 
-			library.Custom_click(login.getCreateAccount(), "Create an account");
+			
 			library.Custom_click(login.getCreateAccount(), "Create an account at login page");
 			library.visible_link(login.getField_first_name(), "First name");
 			library.visible_link(login.getField_last_name(), "Last name");
@@ -148,7 +148,7 @@ public class appium_0 extends base_class {
 		//	library.custom_sendkeys(login.getClick_Enter_Mobile_Number_C_A(), config.getMobile(), "Enter number");
 			library.visible_link(book.getCA_MF_email(), "Email ID mandotary field ( * )");
 			library.custom_sendkeys(login.getClick_Enter_Email(), config.getEnter_Email(), "Enter Email");
-			appium_2.EnterButton();
+			appium_21.EnterButton();
 			library.visible_link(book.getCA_MF_gender(), "Gender mandotary field ( * )");
 			library.Custom_click(login.getClick_Gender_Female(), "Female gender selected");
 			library.Custom_click(login.getClick_Gender_Other(), "Other gender selected");
@@ -172,6 +172,7 @@ public class appium_0 extends base_class {
 			library.Custom_click(login.getClick_Terms_and_Conditions(), "Terms and condition ");
 			Thread.sleep(3000);
 			library.visible_link(login.getTerms_and_condition_page_heading(), "Terms and condition page Heaading");
+			Thread.sleep(3000);
 			library.visible_link(login.getT_and_c_page_info_present(), "page info is present");
 			library.Custom_click(login.getBack_button(), "Terms and condition back button ");		
 		}
@@ -213,10 +214,11 @@ public class appium_0 extends base_class {
 		}
 //================================================================================================================		
 		@Test(dependsOnMethods={"TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element"})
-		public void TC_0015_verify_login_button_on_create_an_account_page() {
+		public void TC_0015_verify_login_button_on_create_an_account_page() throws Exception {
 			log.info("***************TC_0015_verify_login_button_on_create_an_account_page starts*****************");
 			
 			library.Custom_click(login.getClick_Login_button_C_A(), "login button on create an account page");
+			Thread.sleep(2000);
 			library.visible_link(login.getLogin_heading(), "Login heading ");
 		}
 //=================================================================================================================		

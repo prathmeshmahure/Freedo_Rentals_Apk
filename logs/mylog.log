@@ -1,20 +1,22 @@
-[INFO ] 2023-05-12 02:32:23.185 [main] Freedo_Rentals_Apk - OK==Field is visible  Booking status
-[INFO ] 2023-05-12 02:32:25.124 [main] Freedo_Rentals_Apk - OK==Field is visible  Booking status = Approval In Progress
-[INFO ] 2023-05-12 02:32:26.191 [main] Freedo_Rentals_Apk - OK==Field is visible  Booking ID = AU110523178813911056
-[INFO ] 2023-05-12 02:32:28.166 [main] Freedo_Rentals_Apk - OK==Field is visible  Vehicle number = TEST122
-[INFO ] 2023-05-12 02:32:29.079 [main] Freedo_Rentals_Apk - OK==Field is visible  show more details text
-[INFO ] 2023-05-12 02:32:31.318 [main] Freedo_Rentals_Apk - OK==Element is clickable show more details text
-[INFO ] 2023-05-12 02:32:36.192 [main] Freedo_Rentals_Apk - OK==Field is visible  Pick Up Date = 13 May 2023
-[INFO ] 2023-05-12 02:32:38.166 [main] Freedo_Rentals_Apk - OK==Field is visible  Drop off date = 14 May 2023
-[INFO ] 2023-05-12 02:32:39.373 [main] Freedo_Rentals_Apk - OK==Field is visible  Pick Up Location = Auto 12
-[INFO ] 2023-05-12 02:32:41.148 [main] Freedo_Rentals_Apk - OK==Field is visible  Duration = 1 Days
-[INFO ] 2023-05-12 02:32:43.185 [main] Freedo_Rentals_Apk - OK==Field is visible  Handover Time = Not Available
-[INFO ] 2023-05-12 02:32:45.176 [main] Freedo_Rentals_Apk - OK==Field is visible  Drop off Location = Not Available
-[INFO ] 2023-05-12 02:32:47.164 [main] Freedo_Rentals_Apk - OK==Field is visible  Planned drop off date = 14 May 2023
-[INFO ] 2023-05-12 02:32:49.176 [main] Freedo_Rentals_Apk - OK==Field is visible  Actual Drop-off date = Not Available
-[INFO ] 2023-05-12 02:32:51.143 [main] Freedo_Rentals_Apk - OK==Field is visible  Mode of pick-up = Pick-Up Vehicle
-[INFO ] 2023-05-12 02:32:53.605 [main] Freedo_Rentals_Apk - OK==Field is visible  Booking status = Approval In Progress
-[INFO ] 2023-05-12 02:32:55.299 [main] Freedo_Rentals_Apk - OK==Field is visible  Booking status = Approval In Progress
-[INFO ] 2023-05-12 02:32:59.499 [main] Freedo_Rentals_Apk - Successfully  Scroll up page Action page up
-[INFO ] 2023-05-12 02:33:02.118 [main] Freedo_Rentals_Apk - OK==Element is clickable show less text
-[INFO ] 2023-05-12 02:33:02.439 [main] Freedo_Rentals_Apk - OK==Field is visible  price breakp
+[INFO ] 2023-05-18 22:46:12.832 [main] Freedo_Rentals_Apk - OK==Value send successfully username
+[INFO ] 2023-05-18 22:46:13.218 [main] Freedo_Rentals_Apk - OK==Value send successfully password
+[INFO ] 2023-05-18 22:46:13.426 [main] Freedo_Rentals_Apk - OK==Element is clickable Submit
+[INFO ] 2023-05-18 22:46:17.886 [main] Freedo_Rentals_Apk - OK==Element is clickable 10 user
+[INFO ] 2023-05-18 22:46:18.153 [main] Freedo_Rentals_Apk - OK==Element is clickable 50 user
+[INFO ] 2023-05-18 22:46:21.474 [main] Freedo_Rentals_Apk - OK==Element is clickable accept booking request
+[INFO ] 2023-05-18 22:46:22.603 [main] Freedo_Rentals_Apk - OK==Element is clickable Yes button
+[ERROR] 2023-05-18 22:46:22.863 [main] Freedo_Rentals_Apk - ==Not==Element is not clickable accept booking request 2
+[ERROR] 2023-05-18 22:46:23.908 [main] Freedo_Rentals_Apk - ==Not==Element is not clickable Yes button 2
+[INFO ] 2023-05-18 22:46:26.268 [main] Freedo_Rentals_Apk - OK==Element is clickable view data
+[INFO ] 2023-05-18 22:46:29.521 [main] Freedo_Rentals_Apk - OK==Element is clickable Booking management
+[INFO ] 2023-05-18 22:46:31.391 [main] Freedo_Rentals_Apk - OK==Value send successfully Search user name
+[INFO ] 2023-05-18 22:46:34.560 [main] Freedo_Rentals_Apk - OK==Element is clickable calender click
+[INFO ] 2023-05-18 22:46:34.819 [main] Freedo_Rentals_Apk - OK==Element is clickable Select date
+[INFO ] 2023-05-18 22:46:35.390 [main] Freedo_Rentals_Apk - OK==Element is clickable Upcoming button
+[INFO ] 2023-05-18 22:46:36.746 [main] Freedo_Rentals_Apk - OK==Element is clickable table search user request view action
+[INFO ] 2023-05-18 22:46:37.676 [main] Freedo_Rentals_Apk - OK==Element is clickable Control button
+[INFO ] 2023-05-18 22:46:37.849 [main] Freedo_Rentals_Apk - OK==Element is clickable Start ride
+[INFO ] 2023-05-18 22:46:38.037 [main] Freedo_Rentals_Apk - OK==Value send successfully enter bike reading
+[INFO ] 2023-05-18 22:46:38.173 [main] Freedo_Rentals_Apk - OK==Element is clickable Submit button
+[INFO ] 2023-05-18 22:46:38.236 [main] Freedo_Rentals_Apk - OK==Element is clickable Yes button
+[INFO ] 2023-05-18 22:46:41.248 [main] Freedo_Rentals_Apk - Approval is sucessfully Accepted

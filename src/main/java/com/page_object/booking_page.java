@@ -433,6 +433,9 @@ public class booking_page {
 					@FindBy(xpath="//android.widget.TextView[@index='11']")		//Click_home_page_More_button
 					private WebElement More_button_app_version;
 					
+					@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_No']")		//Click_home_page_More_button
+					private WebElement More_button_logout_cancel;
+					
 
 		//========================================================
 					@FindBy(xpath="//android.widget.TextView[@text='Book Now']")		//Click_home_page_More_button
@@ -464,7 +467,7 @@ public class booking_page {
 	@FindBy(xpath="//android.view.View[@text='Pay using Cardless EMI ']")						//Click_Pay_using_SBI_bank 
 	private WebElement Click_Pay_using_cardles_EMI;
 	
-	@FindBy(xpath="//android.widget.Button[@text='Pay Now']")					//Click_pay_now_button 
+	@FindBy(xpath="//android.widget.Button[@text='Pay Now' or @resource-id='redesign-v15-cta']")					//Click_pay_now_button 
 	private WebElement Click_pay_now_button_sbi;
 	
 	@FindBy(xpath="//android.view.View[@text='Enter your UPI ID']")				//Click_Enter_your_UPI_ID 
@@ -532,12 +535,12 @@ public class booking_page {
 	
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_BackFULLBOOKINGDETAILS']")	//Click_Home_booking_tab_back_button
 	private WebElement Click_Home_booking_tab_back_button;
-//	
-//	@FindBy(xpath="")						//
-//	private WebElement Click_Home_booking_tab_extend_ride;
-//	
-//	@FindBy(xpath="")						//
-//	private WebElement Click_Home_booking_tab;
+	
+	@FindBy(xpath="//android.widget.TextView[@text='Track Booking Status']")						//
+	private WebElement Click_Home_booking_tab_track_booking_status;
+	
+	@FindBy(xpath="//android.view.View[@text='BOOKING STATUS']")						//
+	private WebElement Click_Home_booking_tab_booking_status_page_tittle;
 //======================================= more button option =================================================	
 	@FindBy(xpath="//android.widget.TextView[@text='KYC']")						//Click_more_option_kyc_txt
 	private WebElement Click_more_option_kyc_txt;
@@ -545,7 +548,7 @@ public class booking_page {
 	@FindBy(xpath="//android.widget.TextView[@text='Logout']")					//Click_more_option_logout_txt
 	private WebElement Click_more_option_logout_txt;
 	
-	@FindBy(xpath="//android.widget.TextView[@text='Yes']")					//Click_more_option_logout_yes_txt
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_Yes']")					//Click_more_option_logout_yes_txt
 	private WebElement Click_more_option_logout_yes_txt;
 //======================================== Kyc Verification page ====================================================
 	@FindBy(xpath="(//android.view.View[@text(),'KYC VERIFICATION'])[1]")			//KYC page tittle
@@ -754,14 +757,19 @@ public class booking_page {
 	@FindBy(xpath="//android.widget.TextView[@content-desc='txt_Booking Id']")
 	private WebElement FBD_Booking_id;
 	
-//	@FindBy(xpath="")
-//	private WebElement FBD_;
-//	
-//	@FindBy(xpath="")
-//	private WebElement FBD_;
-//	
-//	@FindBy(xpath="")
-//	private WebElement FBD_;
+	@FindBy(xpath="//android.widget.TextView[@content-desc='icon_down_endRide']")
+	private WebElement FBD_end_ride;
+			//============================
+	
+		@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_Raise_Request']")
+		private WebElement FBD_end_ride_raised_request_button;
+	
+			//============================
+	@FindBy(xpath="//android.widget.TextView[@content-desc='icon_down_vehcileDocuments']")
+	private WebElement FBD_vehicle_documents;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='txt_Invoice1']")
+	private WebElement FBD_Invoice_button;
 //	
 //	@FindBy(xpath="")
 //	private WebElement FBD_;
@@ -1898,6 +1906,34 @@ public class booking_page {
 
 					public WebElement getFBD_Booking_id() {
 						return FBD_Booking_id;
+					}
+
+					public WebElement getClick_Home_booking_tab_track_booking_status() {
+						return Click_Home_booking_tab_track_booking_status;
+					}
+
+					public WebElement getClick_Home_booking_tab_booking_status_page_tittle() {
+						return Click_Home_booking_tab_booking_status_page_tittle;
+					}
+
+					public WebElement getMore_button_logout_cancel() {
+						return More_button_logout_cancel;
+					}
+
+					public WebElement getFBD_end_ride() {
+						return FBD_end_ride;
+					}
+
+					public WebElement getFBD_vehicle_documents() {
+						return FBD_vehicle_documents;
+					}
+
+					public WebElement getFBD_end_ride_raised_request_button() {
+						return FBD_end_ride_raised_request_button;
+					}
+
+					public WebElement getFBD_Invoice_button() {
+						return FBD_Invoice_button;
 					}
 					
 

@@ -1,5 +1,12 @@
 package Freedo_domain;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.util.Date;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -20,25 +27,93 @@ public class TEST extends base_class {
 		login=PageFactory.initElements(driver1, launch_login.class);
 		book = PageFactory.initElements(driver1, booking_page.class);
 		
-		library.visible_link(book.getFBD_Booking_status(), "Booking status");
-		library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
-		library.visible_link(book.getFBD_Booking_id(), "Booking ID = "+book.getFBD_Booking_id().getText());
-		library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number = "+book.getFBD_vehicle_nummber().getText());
-		library.visible_link(book.getClick_show_more_details(), "show more details text");
-		library.Custom_click(book.getClick_show_more_details(), "show more details text");
+		Browseropen();
+		Robot r = new Robot();
+		for(int i=0; i<4; i++) {
+			r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
+		}
+		Thread.sleep(3000);
+		
+	//	WebElement ele3=driver.findElement(By.xpath("//p[text()='Dashboard']"));library.Custom_click(ele3, "Dashboard");
+	//	WebElement ele4=driver.findElement(By.xpath("//button[@title='Reset']"));library.Custom_click(ele4, "Reset button");
+		WebElement ele1=driver.findElement(By.xpath("(//div[@aria-haspopup='listbox'])[3]"));library.Custom_click(ele1, "10 user");
+		WebElement ele2=driver.findElement(By.xpath("//li[normalize-space()='50']"));library.Custom_click(ele2, "50 user");
+		Thread.sleep(3000);
+		String s=config.getFirst_name();//user name to find web table
+		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::div/parent::td//following-sibling::td//div[@id='approve-action']"));
+		library.Custom_click(ele5, "accept booking request");
+		Thread.sleep(1000);
+		WebElement ele6=driver.findElement(By.xpath("//button[text()='Yes']"));library.Custom_click(ele6, "Yes button");
+//		try {
+//		ele5.click();
+//		ele6.click();
+//		}catch(Exception e) {
+//			
+//		}
+	
+		
+		WebElement biketext=driver.findElement(By.xpath("//text[contains(text(),\"Prathmesh\")]/parent::div/parent::td//following-sibling::td[2]"));
+		String b1=biketext.getText();
+				try {
+				if(ele5.isDisplayed()) {
+					
+					library.Custom_click(ele5, "accept booking request 2");
+					Thread.sleep(1000);
+					library.Custom_click(ele6, "Yes button 2");
+				}}catch(Exception e) {
+					library.passmsg("Admin request ", "Accepted");
+				}
+		
+		
 		Thread.sleep(2000);
-		library.visible_link(book.getFBD_pick_up_date(), "Pick Up Date = "+book.getFBD_pick_up_date().getText());
-		library.visible_link(book.getFBD_drop_off_date(), "Drop off date = "+book.getFBD_drop_off_date().getText());
-		library.visible_link(book.getFBD_pick_up_location(), "Pick Up Location = "+book.getFBD_pick_up_location().getText());
-		library.visible_link(book.getFBD_duration(), "Duration = "+book.getFBD_duration().getText());
-		library.visible_link(book.getFBD_handover_time(), "Handover Time = "+book.getFBD_handover_time().getText());
-		library.visible_link(book.getFBD_drop_off_location(), "Drop off Location = "+book.getFBD_drop_off_location().getText());
-		library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date = "+book.getFBD_planned_drop_off_date().getText());
-		library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date = "+book.getFBD_Actual_drop_off_date().getText());
-		library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up = "+book.getFBD_mode_of_pick_up().getText());
-		appium_2.Scroll_UP_page_Action("page up");
-		library.Custom_click(book.getClick_show_less_details(), "show less text");
-		library.visible_link(book.getClick_price_breakup(), "price break up Drop down");
+		WebElement ele7=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::div/parent::td//following-sibling::td//div[@id='view-action']"));
+		library.Custom_click(ele7, "view data");
+		Thread.sleep(3000);
+		WebElement ele8=driver.findElement(By.xpath("//p[text()='Booking Management']"));library.Custom_click(ele8, "Booking management");
+		
+		WebElement ele9=driver.findElement(By.xpath("//input[@placeholder='Search User' or @value='prathmesh']"));	library.custom_sendkeys(ele9, config.getFirst_name(), "Search user name");
+		Thread.sleep(3000);
+		///////////////////////////////////////////////// calender
+		
+		
+		WebElement calendar=driver.findElement(By.xpath("(//*[@data-testid='CalendarIcon'])[2]"));		library.Custom_click(calendar, "calender click");
+		
+		Date d=new Date();
+		int  da=d.getDate();
+		int m=Integer.parseInt(config.getdate());
+		int date=da+m;
+		
+		List<WebElement> lastday=driver.findElements(By.xpath("//div[@role][4]/parent::div/parent::div/parent::div//following-sibling::div//button"));
+		int totaldays=lastday.size();
+		int i=date;
+		int nextdate=i-totaldays;
+			if(i<=totaldays) {
+				WebElement dateselect=driver.findElement(By.xpath("(//button[normalize-space()="+i+"])[1]"));
+				library.Custom_click(dateselect, "Select date");
+			}else {
+				driver.findElement(By.xpath("//button[@title='Next month']")).click();
+				WebElement dateselect=driver.findElement(By.xpath("(//button[normalize-space()="+nextdate+"])[1]"));
+				library.Custom_click(dateselect, "Select date");
+			}
+		
+				
+		///////////////////////////////////////////////////////////
+		WebElement ele10=driver.findElement(By.xpath("//h5[text()='Upcoming']"));library.Custom_click(ele10, "Upcoming button");
+		
+		Thread.sleep(1000);
+		WebElement ele11=driver.findElement(By.xpath("//text[contains(text(),"+s+")]/parent::td//following-sibling::td//div[@id='view-action']"));
+		library.Custom_click(ele11, "table search user request view action");
+		
+		WebElement ele12=driver.findElement(By.xpath("//*[text()='Control Buttons']"));library.Custom_click(ele12, "Control button");
+		WebElement ele13=driver.findElement(By.xpath("//button[text()='Start Ride']"));library.Custom_click(ele13, "Start ride");
+		WebElement ele14=driver.findElement(By.xpath("//input[@value='0']"));library.custom_sendkeys(ele14, config.getstart_km_reading(), "enter bike reading");
+		
+		WebElement ele15=driver.findElement(By.xpath("//button[text()='Submit']"));	library.Custom_click(ele15, "Submit button");
+		WebElement ele16=driver.findElement(By.xpath("//button[text()='Yes']"));library.Custom_click(ele16, "Yes button");
+		
+		Thread.sleep(3000);
+		log.info("Approval is sucessfully Accepted");
+		driver.close();
 	
 	
 	

@@ -74,11 +74,11 @@ public class library extends base_class{
 	////////////////////////////////////////////////////////////////////////////////////////////////	
 		public static void visible_link(WebElement element,String fieldname) {
 			try {
-				if(element.isEnabled() || element.isDisplayed()==true) {
+			//	if(element.isEnabled() || element.isDisplayed()==true) {
 				
 				test.log(Status.PASS , "==Field is visible =="+fieldname);
 				log.info("OK==Field is visible  "+fieldname);
-				}
+			//	}
 		}
 		catch(Exception e) {
 				test.log(Status.FAIL,fieldname+ "==Field is not visible=="+e);

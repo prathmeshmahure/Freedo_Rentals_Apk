@@ -222,7 +222,7 @@ public class booking_page {
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_Close']")				//Click_notification_close_button
 	private WebElement Click_notification_close_button;
 	
-	@FindBy(xpath="//android.widget.TextView[@text='Pay Now']")							//Click_pay_now_button
+	@FindBy(xpath="//android.widget.Button[@text='Pay Now']")							//Click_pay_now_button
 	private WebElement Click_pay_now_button;
 	
 	@FindBy(xpath="//android.widget.TextView[@text='Only one cod is applicable per user for future ride booking']")	//cod_1st_available_text

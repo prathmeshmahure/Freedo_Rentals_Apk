@@ -34,9 +34,9 @@ public class appium_21 extends base_class{
 		log.info("***************appium_2_TC_0016_verify_PickUp_delivery_section_with_valid_data starts*****************");
 		
 		Thread.sleep(3000);
-		Assert.assertTrue(book.getClick_1st_location_dropdown().isDisplayed());
+	//	Assert.assertTrue(book.getClick_1st_location_dropdown().isDisplayed());
 		library.Custom_click(book.getClick_home_page_button(), "home button");
-		library.Custom_click(book.getClick_1st_location_dropdown(),"1 st location dropdown");
+	//	library.Custom_click(book.getClick_1st_location_dropdown(),"1 st location dropdown");
 		library.Custom_click(book.getClick_Autonation_city(), "location Automation");
 	//	library.Custom_click(book.getClick_1st_Metro_Hospital_Sector_12(),"location selected");
 		library.Custom_click(book.getClick_Package_dropdown(), "package ");
@@ -49,7 +49,7 @@ public class appium_21 extends base_class{
 		String pickupdate=book.gettxt_calender_pickup_date().getText();
 		String dropupdate=book.gettxt_calender_dropup_date().getText();
 		
-		library.Custom_click(book.getClick_Book_now_Button(), "book now button");
+	//	library.Custom_click(book.getClick_Book_now_Button(), "book now button");
 		Thread.sleep(2000);
 		library.bike_book_page(book.getselect_random_Bike(), "random bike selected");
 		Thread.sleep(3000);

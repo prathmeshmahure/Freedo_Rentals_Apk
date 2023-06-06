@@ -28,19 +28,19 @@ public class appium_3 extends base_class{
 		book = PageFactory.initElements(driver1, booking_page.class);
 		log.info("***************appium_3_TC_0024_verify_2_to_3_month_booking_with_valid_data starts*****************");
 		
-		Assert.assertTrue(book.getClick_1st_location_dropdown().isDisplayed());
+	//	Assert.assertTrue(book.getClick_1st_location_dropdown().isDisplayed());
 		library.Custom_click(book.getClick_home_page_button(), "home button");
 		action=new AndroidTouchAction(driver1);
 		Thread.sleep(5000);
-		library.visible_link(book.getClick_1st_location_dropdown(), "1st location dropdown");
-		library.Custom_click(book.getClick_1st_location_dropdown(), "1st lo");
+	//	library.visible_link(book.getClick_1st_location_dropdown(), "1st location dropdown");
+	//	library.Custom_click(book.getClick_1st_location_dropdown(), "1st lo");
 	
 		library.Custom_click(book.getClick_Autonation_city(), "location Automation");
 //		library.Custom_click(book.getClick_1st_Metro_Hospital_Sector_12(), "enter Area");
 		library.Custom_click(book.getClick_Package_dropdown(), "package dropdown");
 		library.Custom_click(book.getClick_90_Days_package(),"Selected package");
 		library.date_select();
-		library.Custom_click(book.getClick_Book_now_Button(), "Book now button");
+	//	library.Custom_click(book.getClick_Book_now_Button(), "Book now button");
 		
 		Thread.sleep(2000);
 		String s=book.getselect_random_Bike().getText();

@@ -6,7 +6,6 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
-import com.freedo_domain.appium_1;
 import com.page_object.booking_page;
 import com.page_object.launch_login;
 import com.utility.base_class;

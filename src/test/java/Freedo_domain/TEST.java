@@ -34,26 +34,17 @@ public class TEST extends base_class {
 		}
 		Thread.sleep(3000);
 		
-	//	WebElement ele3=driver.findElement(By.xpath("//p[text()='Dashboard']"));library.Custom_click(ele3, "Dashboard");
-	//	WebElement ele4=driver.findElement(By.xpath("//button[@title='Reset']"));library.Custom_click(ele4, "Reset button");
+		WebElement ele4=driver.findElement(By.xpath("//button[@title='Reset']"));library.Custom_click(ele4, "Reset button");
 		WebElement ele1=driver.findElement(By.xpath("(//div[@aria-haspopup='listbox'])[3]"));library.Custom_click(ele1, "10 user");
 		WebElement ele2=driver.findElement(By.xpath("//li[normalize-space()='50']"));library.Custom_click(ele2, "50 user");
 		Thread.sleep(3000);
 		String s=config.getFirst_name();//user name to find web table
+		
 		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::div/parent::td//following-sibling::td//div[@id='approve-action']"));
 		library.Custom_click(ele5, "accept booking request");
 		Thread.sleep(1000);
 		WebElement ele6=driver.findElement(By.xpath("//button[text()='Yes']"));library.Custom_click(ele6, "Yes button");
-//		try {
-//		ele5.click();
-//		ele6.click();
-//		}catch(Exception e) {
-//			
-//		}
-	
 		
-		WebElement biketext=driver.findElement(By.xpath("//text[contains(text(),\"Prathmesh\")]/parent::div/parent::td//following-sibling::td[2]"));
-		String b1=biketext.getText();
 				try {
 				if(ele5.isDisplayed()) {
 					

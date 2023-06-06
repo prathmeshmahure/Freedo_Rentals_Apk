@@ -27,6 +27,22 @@
           <include name="TC_0059_Verify_user_able_to_Online_payment_booking"/>
         </methods>
       </class> <!-- Freedo_domain.appium_2 -->
+      <class name="Freedo_domain.appium_1">
+        <methods>
+          <include name="TC_0044_Verify_summary_page_additional_helmet_charges"/>
+          <include name="TC_0050_Verify_user_able_to_view_booking_status"/>
+          <include name="OPEN_AND_INSTALL_APP"/>
+          <include name="TC_0046_Verify_summary_page_cash_on_delivery_method"/>
+          <include name="TC_0051_Verify_user_able_to_view_booking_status_all_elements"/>
+          <include name="TC_0049_Verify_user_able_to_make_payment"/>
+          <include name="TC_0047_Verify_summary_page_i_accept_checkbox"/>
+          <include name="TC_0048_Verify_summary_page_pay_now_button"/>
+          <include name="TC_0042_Verify_select_automation_city"/>
+          <include name="BS"/>
+          <include name="TC_0043_Verify_continue_button_and_summary_page"/>
+          <include name="TC_0045_Verify_summary_page_coupon_code"/>
+        </methods>
+      </class> <!-- Freedo_domain.appium_1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

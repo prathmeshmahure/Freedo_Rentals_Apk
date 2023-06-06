@@ -320,7 +320,7 @@ public class booking_page {
 	@FindBy(xpath="//android.widget.TextView[@text='Confirm Location']")					
 	private WebElement Click_home_delivery_confirm_location;
 	
-	@FindBy(xpath="//android.widget.EditText[@text='Name']")					
+	@FindBy(xpath="//android.widget.EditText[@text='First name']")					
 	private WebElement Click_home_delivery_enter_name;
 	
 	@FindBy(xpath="//android.widget.EditText[@text='Enter complete address']")					

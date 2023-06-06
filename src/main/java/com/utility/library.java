@@ -53,7 +53,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, fieldname+"== Unable To Send  Value=="+e);
 					log.error("==Not==Value not send "+fieldname);
-			//		listner.onTestFailure(null);
+					listner.onTestFailure(null);
 			}
 		}
 	/////////////////////////////////////////////////////////////////////////////////////////////////
@@ -74,11 +74,11 @@ public class library extends base_class{
 	////////////////////////////////////////////////////////////////////////////////////////////////	
 		public static void visible_link(WebElement element,String fieldname) {
 			try {
-			//	if(element.isEnabled() || element.isDisplayed()==true) {
+				if(element.isEnabled() || element.isDisplayed()==true) {
 				
 				test.log(Status.PASS , "==Field is visible =="+fieldname);
 				log.info("OK==Field is visible  "+fieldname);
-			//	}
+				}
 		}
 		catch(Exception e) {
 				test.log(Status.FAIL,fieldname+ "==Field is not visible=="+e);
@@ -149,7 +149,7 @@ public class library extends base_class{
 		catch(Exception e) {
 				test.log(Status.FAIL,fieldname+ "==Bike is  not available & Selected=="+e);
 				log.error("==NOT==Bike is not available & Selected "+fieldname);
-	//			listner.onTestFailure(null);
+				listner.onTestFailure(null);
 				}
 	    }
 //==============================================================================================================================
@@ -222,14 +222,14 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, fieldname1+"==Unable Action performed =="+e);
 					log.error("==NOT=="+fieldname+""+fieldname1);
-		//			listner.onTestFailure(null);
+					listner.onTestFailure(null);
 								}
 		}
 //=============================================================================================================================	    
 	    public static void failmsg(String fieldname,String fieldname1) {
 			try {		test.log(Status.FAIL, fieldname+""+fieldname1);
 						log.error("==NOT=="+fieldname+""+fieldname1);
-		//				listner.onTestFailure(null);
+						listner.onTestFailure(null);
 				}
 			catch(Exception e) {
 					test.log(Status.FAIL, fieldname+""+fieldname1+" "+e);
@@ -249,7 +249,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"= Not Selected"+" "+e);
 					log.error("==NOT=="+Element_name+"=Not Selected");
-				//	listner.onTestFailure(null);
+					listner.onTestFailure(null);
 					}
 		}
 //================================================================================================================================	    
@@ -263,7 +263,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"=  Selected"+" "+e);
 					log.error("==NOT=="+Element_name+"= Selected");
-				//	listner.onTestFailure(null);
+					listner.onTestFailure(null);
 					}
 		}
 //===============================================================================================================================	    
@@ -279,7 +279,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"= Not Enabled"+" "+e);
 					log.error("==NOT=="+Element_name+"=Not Enabled");
-				//	listner.onTestFailure(null);
+					listner.onTestFailure(null);
 					}
 		}
 //===============================================================================================================================	    
@@ -294,7 +294,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"=  Enabled"+" "+e);
 					log.error("==NOT=="+Element_name+"= Enabled");
-				//	listner.onTestFailure(null);
+					listner.onTestFailure(null);
 					}
 		}
 //=================================================================================================================================	    
@@ -308,7 +308,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"= Not Displayed"+" "+e);
 					log.error("==NOT=="+Element_name+"= Not Displayed");
-				//	listner.onTestFailure(null);
+					listner.onTestFailure(null);
 					}
 		}
 //=================================================================================================================================	   
@@ -323,7 +323,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Expected_value+" Expected value is not Match"+" "+e);
 					log.error("==NOT=="+Expected_value +"Expected value is not Match");
-			//		listner.onTestFailure(null);
+					listner.onTestFailure(null);
 					}
 		}
 //==================================================================================================================================	    

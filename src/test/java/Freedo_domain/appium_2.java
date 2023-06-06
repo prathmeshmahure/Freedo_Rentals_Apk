@@ -97,7 +97,7 @@ public class appium_2 extends base_class{
 	public void TC_0054_Verify_user_able_to_logout_cancel () throws Exception  {
 		log.info("***************TC_0054_Verify_user_able_to_logout_cancel starts*****************");
 			
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		library.Custom_click(book.getClick_home_page_button(), "Home button");
 		Thread.sleep(3000);
 		library.Custom_click(book.getClick_home_page_More_button(), "more  button");
@@ -151,6 +151,7 @@ public class appium_2 extends base_class{
 	public void TC_0057_Verify_user_able_to_COD_booking() throws Exception  {
 		log.info("***************TC_0057_Verify_user_able_to_COD_booking starts*****************");
 		
+		Thread.sleep(3000);
 		library.Custom_click(book.getClick_home_page_button(), "Home button");
 		Thread.sleep(2000);
 		library.Custom_click(book.getClick_1st_page_enter_button(), "Enter button");
@@ -274,26 +275,17 @@ public class appium_2 extends base_class{
 		}
 		Thread.sleep(3000);
 		
-	//	WebElement ele3=driver.findElement(By.xpath("//p[text()='Dashboard']"));library.Custom_click(ele3, "Dashboard");
 		WebElement ele4=driver.findElement(By.xpath("//button[@title='Reset']"));library.Custom_click(ele4, "Reset button");
 		WebElement ele1=driver.findElement(By.xpath("(//div[@aria-haspopup='listbox'])[3]"));library.Custom_click(ele1, "10 user");
 		WebElement ele2=driver.findElement(By.xpath("//li[normalize-space()='50']"));library.Custom_click(ele2, "50 user");
 		Thread.sleep(3000);
 		String s=config.getFirst_name();//user name to find web table
-		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::div/parent::td//following-sibling::td//div[@id='approve-action']"));
-	//	library.Custom_click(ele5, "accept booking request");
-		Thread.sleep(1000);
-		WebElement ele6=driver.findElement(By.xpath("//button[text()='Yes']"));//library.Custom_click(ele6, "Yes button");
-		try {
-		ele5.click();
-		ele6.click();
-		}catch(Exception e) {
-			
-		}
-	
 		
-		WebElement biketext=driver.findElement(By.xpath("//text[contains(text(),\"Prathmesh\")]/parent::div/parent::td//following-sibling::td[2]"));
-		String b1=biketext.getText();
+		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::div/parent::td//following-sibling::td//div[@id='approve-action']"));
+		library.Custom_click(ele5, "accept booking request");
+		Thread.sleep(1000);
+		WebElement ele6=driver.findElement(By.xpath("//button[text()='Yes']"));library.Custom_click(ele6, "Yes button");
+		
 				try {
 				if(ele5.isDisplayed()) {
 					
@@ -365,7 +357,12 @@ public class appium_2 extends base_class{
 		appium_2.Back_button();
 		library.Custom_click(book.getClick_home_page_Bookings_button(), "Bookings button");
 		Thread.sleep(3000);
-		library.Custom_click(book.getClick_booking_page_view_button(), "View button");
+		try {
+			driver1.findElement(By.xpath("//android.widget.TextView[@text='View']")).click();
+		}catch(Exception e){
+			
+		}
+		//library.Custom_click(book.getClick_booking_page_view_button(), "View button");
 		Thread.sleep(4000);
 		library.visible_link(book.getClick_show_more_details(), "show more details text");
 		library.Custom_click(book.getClick_show_more_details(), "show more details text");

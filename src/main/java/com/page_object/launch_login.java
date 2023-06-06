@@ -196,7 +196,7 @@ public class launch_login {
 	@FindBy(how=How.XPATH,using="//android.widget.TextView[@content-desc='txt_timer']")				//Verify button
 	private WebElement Otp_time_slot;
 									
-	@FindBy(how=How.XPATH,using="//android.widget.TextView[@text='Create an Account']")	////Create Account
+	@FindBy(how=How.XPATH,using="//android.widget.TextView[@content-desc='txt_create_account']")	////Create Account
 	private WebElement CreateAccount;
 	
 	@FindBy(how=How.XPATH,using="//android.widget.TextView[@text='+91-']")			

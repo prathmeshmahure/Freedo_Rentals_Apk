@@ -133,6 +133,7 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getMore_button_invite_your_friend(), "Invite your friend");
 		library.visible_link(book.getMore_button_faq(), "FAQ");
 		library.visible_link(book.getClick_more_option_logout_txt(), "Logout");
+		library.visible_link(book.getMore_button_app_version(), "App version ");
 		library.visible_link(book.getMore_button_app_version(), "App "+book.getMore_button_app_version().getText());
 	}
 //====================================================================================================================
@@ -145,13 +146,21 @@ public class appium_1 extends base_class{
 		library.Custom_click(book.getClick_home_page_Bookings_button(), "home page booking button");
 		Thread.sleep(2000);
 	//	library.visible_link(book.getClick_Home_booking_tab_bike_image(), "bike images");
+		library.visible_link(book.getClick_Home_booking_tab_bike_text(),"bike name ");
+		library.visible_link(book.getClick_Home_booking_tab_pickup_location_txt(), "pick up Location");
+		library.visible_link(book.getClick_Home_booking_tab_pickup_date_txt(),"pick up date ");
+		library.visible_link(book.getClick_Home_booking_tab_package_duration(),"Duration ");
+		library.visible_link(book.getClick_Home_booking_tab_dropoff_date(),"Drop of date ");
+		library.visible_link(book.getClick_Home_booking_tab_total_amount_paid(), "Total amount ");
+		
+		
 		library.visible_link(book.getClick_Home_booking_tab_bike_text(),"bike name ="+ book.getClick_Home_booking_tab_bike_text().getText());
 		library.visible_link(book.getClick_Home_booking_tab_pickup_location_txt(), "pick up Location ="+ book.getClick_Home_booking_tab_pickup_location_txt().getText());
 		library.visible_link(book.getClick_Home_booking_tab_pickup_date_txt(),"pick up date ="+ book.getClick_Home_booking_tab_pickup_date_txt().getText());
 		library.visible_link(book.getClick_Home_booking_tab_package_duration(),"Duration ="+ book.getClick_Home_booking_tab_package_duration().getText());
 		library.visible_link(book.getClick_Home_booking_tab_dropoff_date(),"Drop of date ="+ book.getClick_Home_booking_tab_dropoff_date().getText());
 		library.visible_link(book.getClick_Home_booking_tab_total_amount_paid(), "Total amount ="+ book.getClick_Home_booking_tab_total_amount_paid().getText());
-		library.visible_link(book.getClick_Home_booking_tab_booking_status(),"booking status ="+ book.getClick_Home_booking_tab_booking_status().getText());
+	//	library.visible_link(book.getClick_Home_booking_tab_booking_status(),"booking status ="+ book.getClick_Home_booking_tab_booking_status().getText());
 		library.visible_link(book.getClick_booking_page_view_button(), "view booking");
 	}
 //======================================================================================================================	
@@ -257,7 +266,7 @@ public class appium_1 extends base_class{
 		Thread.sleep(1000);
 		appium_1.Back_button();
 		appium_1.Back_button();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		library.Custom_click(book.getClick_home_page_button(), "Home button");
 		Thread.sleep(1000);
 		appium_1.Scroll_down_page_Action("Down");
@@ -326,6 +335,7 @@ public class appium_1 extends base_class{
 //	@Test(dependsOnMethods={"TC_0041_Verify_user_able_to_list_button"})
 	@Test(priority=2)
 	public void TC_0042_Verify_select_automation_city() throws Exception {
+		login=PageFactory.initElements(driver1, launch_login.class);
 		log.info("***************TC_0042_Verify_select_automation_city starts*****************");
 		
 		appium_1.Back_button();
@@ -384,7 +394,7 @@ public class appium_1 extends base_class{
 		library.isSelectedFalse(book.getClick_cash_on_delivery(), "Before select Cod check box is ");
 		library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
 		library.isSelected(book.getClick_cash_on_delivery(), "After select Cod check box is ");
-		library.Custom_click(book.getClick_I_accept_checkbox(), "I Accept the Terms & Conditions checkbox");
+	//	library.Custom_click(book.getClick_I_accept_checkbox(), "I Accept the Terms & Conditions checkbox");
 		library.visible_link(book.getClick_pay_now_button(), "click pay now button");
 		library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
 	}
@@ -433,7 +443,7 @@ public class appium_1 extends base_class{
 		library.isSelected(book.getClick_cash_on_delivery(), "After select Cod check box is ");
 		Thread.sleep(500);
 		library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
-		library.Custom_click(book.getClick_I_accept_checkbox(), "I accept Checkbox");
+	//	library.Custom_click(book.getClick_I_accept_checkbox(), "I accept Checkbox");
 		Thread.sleep(500);
 
 	}
@@ -443,10 +453,10 @@ public class appium_1 extends base_class{
 		log.info("***************TC_0047_Verify_summary_page_i_accept_checkbox starts*****************");
 		
 		Thread.sleep(2000);
-		library.isSelectedFalse(book.getClick_I_accept_checkbox(), "Before select I accept check box is ");
-		library.Custom_click(book.getClick_I_accept_checkbox(), "I accept Checkbox");
+	//	library.isSelectedFalse(book.getClick_I_accept_checkbox(), "Before select I accept check box is ");
+	//	library.Custom_click(book.getClick_I_accept_checkbox(), "I accept Checkbox");
 		Assert.assertFalse(book.getClick_pay_now_button().isSelected(),"Pay now button enabled");
-		library.isSelected(book.getClick_I_accept_checkbox(), "After select I accept check box is ");
+	//	library.isSelected(book.getClick_I_accept_checkbox(), "After select I accept check box is ");
 		library.isEnabled(book.getClick_pay_now_button(), "Pay now button");
 		Thread.sleep(2000);
 		

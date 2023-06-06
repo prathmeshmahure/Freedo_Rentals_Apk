@@ -1,15 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.utility.listner"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Freedo_domain.appium_0">
+      <class name="Freedo_domain.appium_2">
         <methods>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC_002_verify_select_pickup_location_date_and_packages"/>
+          <include name="TC_0062_Verify_user_End_ride_request"/>
+          <include name="TC_0053_Track_booking_status"/>
+          <include name="TC_0056_Verify_user_able_to_deactivate_account"/>
+          <include name="TC_0058_admin_Request_reject"/>
+          <include name="TC_0057_Verify_user_able_to_COD_booking"/>
+          <include name="TC_0060_Admin_approved_request"/>
+          <include name="TC_0061_Verify_user_able_to_view_booking_status_all_elements"/>
           <include name="BS"/>
+          <include name="TC_0063_Verify_user_end_ride_booking_status"/>
+          <include name="TC_0054_Verify_user_able_to_logout_cancel"/>
+          <include name="TC_0065_Verify_user_Complete_ride_booking_status"/>
+          <include name="TC_0064_Admin_check_End_ride_request"/>
+          <include name="TC_0052_admin_Request_reject"/>
+          <include name="TC_0065_Verify_after_Complete_ride_invoice_button"/>
+          <include name="TC_0055_Verify_user_able_to_successful_logout"/>
+          <include name="TC_0059_Verify_user_able_to_Online_payment_booking"/>
         </methods>
-      </class> <!-- Freedo_domain.appium_0 -->
+      </class> <!-- Freedo_domain.appium_2 -->
+      <class name="Freedo_domain.appium_1">
+        <methods>
+          <include name="TC_0044_Verify_summary_page_additional_helmet_charges"/>
+          <include name="TC_0050_Verify_user_able_to_view_booking_status"/>
+          <include name="OPEN_AND_INSTALL_APP"/>
+          <include name="TC_0046_Verify_summary_page_cash_on_delivery_method"/>
+          <include name="TC_0051_Verify_user_able_to_view_booking_status_all_elements"/>
+          <include name="TC_0049_Verify_user_able_to_make_payment"/>
+          <include name="TC_0047_Verify_summary_page_i_accept_checkbox"/>
+          <include name="TC_0048_Verify_summary_page_pay_now_button"/>
+          <include name="TC_0042_Verify_select_automation_city"/>
+          <include name="BS"/>
+          <include name="TC_0043_Verify_continue_button_and_summary_page"/>
+          <include name="TC_0045_Verify_summary_page_coupon_code"/>
+        </methods>
+      </class> <!-- Freedo_domain.appium_1 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

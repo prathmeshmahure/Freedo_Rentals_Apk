@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeSuite;
@@ -20,7 +21,6 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
-import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
@@ -41,29 +41,29 @@ public class base_class {
 	}
 	@BeforeTest	//(dependsOnMethods="Champion_app_install") 
 	  public  void OPEN_AND_INSTALL_APP() throws MalformedURLException, Exception {
-		 UiAutomator2Options cap=new UiAutomator2Options();
-//			DesiredCapabilities cap = new DesiredCapabilities();
-			cap.setCapability("appium:automationName", "uiautomator2");
-			cap.setCapability("platformName", "Android");
-			cap.setCapability("appium:deviceName", "pixel_6");//Infinix //pixel_6
-			cap.setCapability("appium:udid", "emulator-5554");// 0836731257071990 //emulator-5554 //0526532038000424
-			cap.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
-			cap.setCapability("appium:avdLaunchTimeout", 600000);		
-//			cap.setCapability("appPackage", "com.heerofreedo");
-//			cap.setCapability("appActivity", "com.heerofreedo.MainActivity");
-//			cap.setCapability("appium:noReset", "true");
-			
-			cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\10app-release.apk"));
-//			cap.setChromedriverExecutable(System.getProperty("user.dir")+"\\apk\\chromedriver.exe");
-			cap.setCapability("appium:ensureWebviewsHavePages", true);
-			cap.setCapability("appium:nativeWebScreenshot", true);
-			cap.setCapability("appium:newCommandTimeout", 66000);
-		    
-//		    URL remoteUrl = new URL("http://127.0.0.1:4723/");
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		 capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
+		 capabilities.setCapability("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
+		 capabilities.setCapability("pCloudy_DurationInMinutes", 15);
+		 capabilities.setCapability("newCommandTimeout", 600);
+		 capabilities.setCapability("launchTimeout", 90000);
+		 capabilities.setCapability("pCloudy_DeviceManufacturer", "GOOGLE");
+		 capabilities.setCapability("pCloudy_DeviceVersion", "13.0.0");
+		 capabilities.setCapability("platformVersion", "13.0.0");
+		 capabilities.setCapability("platformName", "Android");
+		 capabilities.setCapability("automationName", "uiautomator2");
+		 capabilities.setCapability("pCloudy_ApplicationName", "10app-release.apk");
+		 capabilities.setCapability("appPackage", "com.heerofreedo");
+		 capabilities.setCapability("appActivity", "com.heerofreedo.MainActivity");
+		 capabilities.setCapability("pCloudy_WildNet", "false");
+		 capabilities.setCapability("pCloudy_EnableVideo", "true");
+		 capabilities.setCapability("pCloudy_EnablePerformanceData", "true");
+		 capabilities.setCapability("pCloudy_EnableDeviceLogs", "true");
+		 
+		 driver1 = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
 
-		    driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
 
-		    driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	    log = LogManager.getLogger("Freedo_Rentals_Apk");
 	  }	
 
@@ -240,7 +240,7 @@ DesiredCapabilities capabilities = new DesiredCapabilities();
 		 capabilities.setCapability("platformVersion", "13.0.0");
 		 capabilities.setCapability("platformName", "Android");
 		 capabilities.setCapability("automationName", "uiautomator2");
-		 capabilities.setCapability("pCloudy_ApplicationName", "app-release.apk");
+		 capabilities.setCapability("pCloudy_ApplicationName", "10app-release.apk");
 		 capabilities.setCapability("appPackage", "com.heerofreedo");
 		 capabilities.setCapability("appActivity", "com.heerofreedo.MainActivity");
 		 capabilities.setCapability("pCloudy_WildNet", "false");

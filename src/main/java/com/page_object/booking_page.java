@@ -222,6 +222,9 @@ public class booking_page {
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_Close']")				//Click_notification_close_button
 	private WebElement Click_notification_close_button;
 	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_PayNow']")							//Click_pay_now_button
+	private WebElement Click_summary_pay_now_button;
+	
 	@FindBy(xpath="//android.widget.Button[@text='Pay Now']")							//Click_pay_now_button
 	private WebElement Click_pay_now_button;
 	
@@ -539,7 +542,7 @@ public class booking_page {
 	@FindBy(xpath="//android.widget.TextView[@text='Track Booking Status']")						//
 	private WebElement Click_Home_booking_tab_track_booking_status;
 	
-	@FindBy(xpath="//android.view.View[@text='BOOKING STATUS']")						//
+	@FindBy(xpath="//android.widget.TextView[@text='Booking Status']")						//
 	private WebElement Click_Home_booking_tab_booking_status_page_tittle;
 //======================================= more button option =================================================	
 	@FindBy(xpath="//android.widget.TextView[@text='KYC']")						//Click_more_option_kyc_txt
@@ -1934,6 +1937,10 @@ public class booking_page {
 
 					public WebElement getFBD_Invoice_button() {
 						return FBD_Invoice_button;
+					}
+
+					public WebElement getClick_summary_pay_now_button() {
+						return Click_summary_pay_now_button;
 					}
 					
 

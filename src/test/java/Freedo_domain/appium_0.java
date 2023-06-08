@@ -24,9 +24,7 @@ public class appium_0 extends base_class {
 			log.info("***************TC_001_verify_install_apk starts*****************");
 			login=PageFactory.initElements(driver1, launch_login.class);	
 			
-		//	login = new launch_login(driver1);
-			library.passmsg("Freedo app is ", " Install");
-			
+			library.visible_link(login.getFirst_page_Select_pickUP_location(), "Freedo app is Install");
 			
 		}
 	
@@ -115,10 +113,21 @@ public class appium_0 extends base_class {
 			library.isEnabled(login.getClick_Login_button(), "Login button is ");
 		//	library.Custom_click(login.getClick_Login_button(), "login button");
 		}
-//=================================================================================================================
+//=================================================================================================================		
 		@Test(dependsOnMethods={"TC_008_Verify_login_functionality_Register_mo_number"})
-		public void TC_009_verify_create_an_account_by_clicking_login_page() {
-			log.info("***************TC_009_verify_create_an_account_by_clicking_login_page starts*****************");
+		public void TC_009_verify_login_button_on_create_an_account_page() throws Exception {
+			log.info("***************TC_009_verify_login_button_on_create_an_account_page starts*****************");
+			
+			library.Custom_click(login.getCreateAccount(), "Create an account at login page");
+			Thread.sleep(1000);
+			library.Custom_click(login.getClick_Login_button_C_A(), "login button on create an account page");
+			Thread.sleep(2000);
+			
+		}	
+//=================================================================================================================
+		@Test(dependsOnMethods={"TC_009_verify_login_button_on_create_an_account_page"})
+		public void TC_0010_verify_create_an_account_by_clicking_login_page() {
+			log.info("***************TC_0010_verify_create_an_account_by_clicking_login_page starts*****************");
 
 			
 			library.Custom_click(login.getCreateAccount(), "Create an account at login page");
@@ -134,9 +143,9 @@ public class appium_0 extends base_class {
 			library.visible_link(login.getField_login(), "Login");			
 		}
 //===================================================================================================================		
-		@Test(dependsOnMethods={"TC_009_verify_create_an_account_by_clicking_login_page"})
-		public void TC_0010_verify_user_able_to_create_an_account() {
-			log.info("***************TC_0010_verify_user_able_to_create_an_account starts*****************");
+		@Test(dependsOnMethods={"TC_0010_verify_create_an_account_by_clicking_login_page"})
+		public void TC_0011_verify_user_able_to_create_an_account() {
+			log.info("***************TC_0011_verify_user_able_to_create_an_account starts*****************");
 			book = PageFactory.initElements(driver1, booking_page.class);
 			
 			library.visible_link(book.getCA_MF_firstname(), "First name mandotary field ( * )");
@@ -164,9 +173,9 @@ public class appium_0 extends base_class {
 		//	library.Custom_click(login.getClick_Create_My_Account(), "Create my account");		
 		}
 //==================================================================================================================		
-		@Test(dependsOnMethods={"TC_0010_verify_user_able_to_create_an_account"})
-		public void TC_0011_verify_Terms_and_condition_link_on_create_an_account_page() throws Exception {
-			log.info("***************TC_0011_verify_Terms_and_condition_link_on_create_an_account_page starts*****************");
+		@Test(dependsOnMethods={"TC_0011_verify_user_able_to_create_an_account"})
+		public void TC_0012_verify_Terms_and_condition_link_on_create_an_account_page() throws Exception {
+			log.info("***************TC_0012_verify_Terms_and_condition_link_on_create_an_account_page starts*****************");
 			
 			library.Custom_click(login.getClick_Terms_and_Conditions(), "Terms and condition ");
 			Thread.sleep(3000);
@@ -176,9 +185,9 @@ public class appium_0 extends base_class {
 			library.Custom_click(login.getBack_button(), "Terms and condition back button ");		
 		}
 //===================================================================================================================
-		@Test(dependsOnMethods={"TC_0011_verify_Terms_and_condition_link_on_create_an_account_page"})
-		public void TC_0012_verify_Privacy_and_policy_link_on_create_an_account_page() {
-			log.info("***************TC_0012_verify_Privacy_and_policy_link_on_create_an_account_page starts*****************");
+		@Test(dependsOnMethods={"TC_0012_verify_Terms_and_condition_link_on_create_an_account_page"})
+		public void TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page() {
+			log.info("***************TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page starts*****************");
 			
 			library.Custom_click(login.getClick_Privacy_Policy(), "Privacy policy");
 			library.visible_link(login.getPrivacy_policy_page_heading(), "Privacy policy page Heaading");
@@ -187,22 +196,7 @@ public class appium_0 extends base_class {
 			library.visible_link(login.getBack_button(), " back button ");		
 		}
 //=======================================================================================================================		
-		@Test(dependsOnMethods={"TC_0012_verify_Privacy_and_policy_link_on_create_an_account_page"})
-		public void TC_0013_verify_Privacy_policy_under_delete_dropdown_all_element() {
-			log.info("***************TC_0013_verify_Privacy_policy_under_delete_dropdown_all_element starts*****************");
-			
-//			library.Custom_click(login.getDelete_account_dropdown(), "Delete account dropdown open");
-//			library.visible_link(login.getDA_checkbox_1(), "Bad experiance on a ride");
-//			library.visible_link(login.getDA_checkbox_2(), "it's too experiance");
-//			library.visible_link(login.getDA_checkbox_3(), "Negative support experiance");
-//			library.visible_link(login.getDA_checkbox_4(), "Issues with my internet");
-//			library.visible_link(login.getDA_checkbox_5(), "No longer support company");
-//			library.visible_link(login.getDA_checkbox_6(), "Prefer not to say");
-//			library.visible_link(login.getDA_checkbox_7(), "Others");
-//			library.Custom_click(login.getDelete_account_dropdown(), "Delete account dropdown close");	
-		}
-//================================================================================================================
-		@Test(dependsOnMethods={"TC_0013_verify_Privacy_policy_under_delete_dropdown_all_element"})
+		@Test(dependsOnMethods={"TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page"})
 		public void TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element() {
 			log.info("***************TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element starts*****************");
 			
@@ -212,28 +206,21 @@ public class appium_0 extends base_class {
 			library.Custom_click(login.getBack_button(), " back button ");
 		}
 //================================================================================================================		
-		@Test(dependsOnMethods={"TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element"})
-		public void TC_0015_verify_login_button_on_create_an_account_page() throws Exception {
-			log.info("***************TC_0015_verify_login_button_on_create_an_account_page starts*****************");
-			
-			library.Custom_click(login.getClick_Login_button_C_A(), "login button on create an account page");
-			Thread.sleep(2000);
-			library.visible_link(login.getLogin_heading(), "Login heading ");
-		}
-//=================================================================================================================		
-		@Test(dependsOnMethods={"TC_0015_verify_login_button_on_create_an_account_page"})
-		public void TC_0016_Verify_login_functionality_Register_mo_number() throws Exception  {
-			log.info("***************TC_0016_Verify_login_functionality_Register_mo_number starts*****************");
 		
-			library.custom_sendkeys(login.getEnter_MO_Number(), config.getMobile(), "Enter mobile number");
-			appium_1.EnterButton();
-			library.Custom_click(login.getClick_Login_button(), "login button");
+//=================================================================================================================		
+		@Test(dependsOnMethods={"TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element"})
+		public void TC_0015_Verify_create_my_account_button() throws Exception  {
+			log.info("***************TC_0015_Verify_create_my_account_button starts*****************");
+		
+			library.Custom_click(login.getClick_Create_My_Account(), "Create my account");
 		}
 //=================================================================================================================
-		@Test(dependsOnMethods={"TC_0016_Verify_login_functionality_Register_mo_number"})
-		public void TC_0017_Verify_otp_verification_time_slot() throws Exception  {
-			log.info("***************TC_0017_Verify_otp_verification_time_slot starts*****************");
-		
+		@Test(dependsOnMethods={"TC_0015_Verify_create_my_account_button"})
+		public void TC_0016_Verify_otp_verification_time_slot() throws Exception  {
+			log.info("***************TC_0016_Verify_otp_verification_time_slot starts*****************");
+			
+			Thread.sleep(2000);	
+			library.visible_link(login.getOtp_time_slot(), " Time duration ");
 			library.visible_link(login.getOtp_time_slot(), " Time duration "+login.getOtp_time_slot().getText());
 			
 		}
@@ -242,9 +229,9 @@ public class appium_0 extends base_class {
 		
 		
 //================================ OTP VERIFYCATION PAGE ==========================================================
-		@Test(dependsOnMethods={"TC_0017_Verify_otp_verification_time_slot"})
-		public void TC_0018_Verify_OTP_Verification_Page() throws InterruptedException   {
-			log.info("***************TC_0018_Verify_OTP_Verification_Page starts*****************");
+		@Test(dependsOnMethods={"TC_0016_Verify_otp_verification_time_slot"})
+		public void TC_0017_Verify_OTP_Verification_Page() throws InterruptedException   {
+			log.info("***************TC_0017_Verify_OTP_Verification_Page starts*****************");
 			Thread.sleep(5000);	
 		
 		library.isDisplayed(login.getOtp_verification_txt(), "OTP VERIFICATION page tittle");
@@ -256,9 +243,9 @@ public class appium_0 extends base_class {
 		}
 
 //========================= After login select location ===============================================================
-		@Test(dependsOnMethods={"TC_0018_Verify_OTP_Verification_Page"})
-		public void TC_0019_Select_location() throws Exception  {
-			log.info("***************TC_0019_Select_location starts*****************");
+		@Test(dependsOnMethods={"TC_0017_Verify_OTP_Verification_Page"})
+		public void TC_0018_Select_location() throws Exception  {
+			log.info("***************TC_0018_Select_location starts*****************");
 			
 		library.visible_link(login.getWhile_using_this_app(), "While_using_this_app");
 //		library.visible_link(login.getOnly_this_time(), "location page Only_this_time");
@@ -273,9 +260,9 @@ public class appium_0 extends base_class {
 		}
 //============================Verify city visible =======================================================================
 		
-		@Test(dependsOnMethods={"TC_0019_Select_location"})
-		public void TC_0020_verify_user_select_City() {
-			log.info("***************TC_0020_verify_user_select_City starts*****************");
+		@Test(dependsOnMethods={"TC_0018_Select_location"})
+		public void TC_0019_verify_user_select_City() {
+			log.info("***************TC_0019_verify_user_select_City starts*****************");
 				
 			library.visible_link(login.getPopular_cities_txt(), "Popular cities text");
 			library.visible_link(login.getSelect_City_Delhi(), "Delhi");
@@ -287,9 +274,9 @@ public class appium_0 extends base_class {
 				}
 		
 //================================ Search city name =====================================================================
-		@Test(dependsOnMethods={"TC_0020_verify_user_select_City"})
-		public void TC_0021_Search_wrong_city_name() throws Exception  {
-				log.info("***************TC_0021_Search_wrong_city_name starts*****************");
+		@Test(dependsOnMethods={"TC_0019_verify_user_select_City"})
+		public void TC_0020_Search_wrong_city_name() throws Exception  {
+				log.info("***************TC_0020_Search_wrong_city_name starts*****************");
 					
 			library.visible_link(login.getSearch_city(), "Please select your city");
 			library.custom_sendkeys(login.getSearch_city(), "Aurangabad", "Search city by city name");
@@ -297,9 +284,9 @@ public class appium_0 extends base_class {
 			library.visible_link(login.getSelected_city_not_available(), "Selected city not available");
 				}
 //================================ Search city name =====================================================================
-		@Test(dependsOnMethods={"TC_0021_Search_wrong_city_name"})
-		public void TC_0022_Search_city_name() throws Exception  {
-			log.info("***************TC_0022_Search_city_name starts*****************");
+		@Test(dependsOnMethods={"TC_0020_Search_wrong_city_name"})
+		public void TC_0021_Search_city_name() throws Exception  {
+			log.info("***************TC_0021_Search_city_name starts*****************");
 			
 		library.visible_link(login.getSearch_city(), "Please select your city");
 		library.custom_sendkeys(login.getSearch_city(), config.getcity_name(), "Search city by city name");
@@ -308,11 +295,18 @@ public class appium_0 extends base_class {
 		}			
 //===========================Select city =============================================================================
 		
-		@Test(dependsOnMethods={"TC_0022_Search_city_name"})
-		public void TC_0023_Select_all__City() {
-			log.info("***************TC_0023_Select_all__City starts*****************");
+		@Test(dependsOnMethods={"TC_0021_Search_city_name"})
+		public void TC_0022_Select_all__City() {
+			log.info("***************TC_0022_Select_all__City starts*****************");
 			
 			library.Custom_click(login.getSelect_City_Automation_City(), "Automation city");
+
+		}
+//=========================================================================================================================
+		@Test(dependsOnMethods={"TC_0022_Select_all__City"})
+		public void TC_0023_Verify_location_popup() {
+			log.info("***************TC_0023_Verify_location_popup starts*****************");
+			
 			
 			library.visible_link(login.getWhile_using_this_app(), "location page While_using_this_app");
 //			library.visible_link(login.getOnly_this_time(), "location page Only_this_time");
@@ -320,8 +314,6 @@ public class appium_0 extends base_class {
 			library.Custom_click(login.getDont_allow_1(), "Dont allow 1");
 
 		}
-
-	
 	
 	
 }

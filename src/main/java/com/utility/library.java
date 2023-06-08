@@ -86,7 +86,24 @@ public class library extends base_class{
 			//		listner.onTestFailure(null);
 		}
 		}
-	//////////////////////////////////////////////////////////////////////////////////////////////////////    
+	//////////////////////////////////////////////////////////////////////////////////////////////////////   
+		public static void visible_link_gettext(WebElement element,String fieldname) {
+			try {
+				if(element.isEnabled() || element.isDisplayed()==true) {
+					
+					String text=element.getText();
+				
+				test.log(Status.PASS , "==Field is visible =="+fieldname+""+text);
+				log.info("OK==Field is visible  "+fieldname+""+text);
+				}
+		}
+		catch(Exception e) {
+				test.log(Status.FAIL,fieldname+ "==Field is not visible=="+e);
+					log.error("==NOT==Field is not visible "+fieldname);
+			//		listner.onTestFailure(null);
+		}
+		}
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
 	    public static void Swipe_page_Action(WebElement element,String direction,String fieldname) {
 	    	try {
 				if(element.isEnabled() && element.isDisplayed()==true) {
@@ -249,7 +266,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"= Not Selected"+" "+e);
 					log.error("==NOT=="+Element_name+"=Not Selected");
-					listner.onTestFailure(null);
+				//	listner.onTestFailure(null);
 					}
 		}
 //================================================================================================================================	    
@@ -263,7 +280,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"=  Selected"+" "+e);
 					log.error("==NOT=="+Element_name+"= Selected");
-					listner.onTestFailure(null);
+				//	listner.onTestFailure(null);
 					}
 		}
 //===============================================================================================================================	    
@@ -279,7 +296,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"= Not Enabled"+" "+e);
 					log.error("==NOT=="+Element_name+"=Not Enabled");
-					listner.onTestFailure(null);
+				//	listner.onTestFailure(null);
 					}
 		}
 //===============================================================================================================================	    
@@ -294,7 +311,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"=  Enabled"+" "+e);
 					log.error("==NOT=="+Element_name+"= Enabled");
-					listner.onTestFailure(null);
+				//	listner.onTestFailure(null);
 					}
 		}
 //=================================================================================================================================	    

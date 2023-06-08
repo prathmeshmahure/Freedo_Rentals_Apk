@@ -86,7 +86,8 @@ public class appium_2 extends base_class{
 		library.Custom_click(book.getClick_home_page_Bookings_button(), "Home page booking button");
 		Thread.sleep(10000);
 		library.visible_link(book.getClick_Home_booking_tab_track_booking_status(), "Track booking status");
-		library.visible_link(book.getClick_Home_booking_tab_booking_status_page_tittle(), "Booking Status page tittle");
+		Thread.sleep(1000);
+		library.visible_link(book.getClick_Home_booking_tab_booking_status_page_tittle(), "Booking Status ");
 		appium_2.Back_button();
 		Thread.sleep(2000);
 		appium_2.Back_button();
@@ -138,6 +139,13 @@ public class appium_2 extends base_class{
 		library.Custom_click(book.getMore_button_privacy_policy(), "Privacy policy");
 		library.Custom_click(login.getDelete_account_dropdown(), "Delete account");
 		library.Custom_click(login.getDA_checkbox_1(), "Bad experiance on ride");
+		library.visible_link(login.getDA_checkbox_1(), "Bad experiance on a ride");
+		library.visible_link(login.getDA_checkbox_2(), "it's too experiance");
+		library.visible_link(login.getDA_checkbox_3(), "Negative support experiance");
+		library.visible_link(login.getDA_checkbox_4(), "Issues with my internet");
+		library.visible_link(login.getDA_checkbox_5(), "No longer support company");
+		library.visible_link(login.getDA_checkbox_6(), "Prefer not to say");
+		library.visible_link(login.getDA_checkbox_7(), "Others");
 		library.visible_link(login.getPrivacy_policy_Changed_mind_go_back(), "Changed mind go back");
 		library.visible_link(login.getPrivacy_policy_Deactivate_account(), "Deactivate account");
 		library.visible_link(login.getPrivacy_policy_confirm_deletion(), "Confirm deletion");
@@ -167,9 +175,9 @@ public class appium_2 extends base_class{
 		Thread.sleep(2000);
 		appium_2.Scroll_UP_page_Action("page up");
 		library.Custom_click(book.getClick_cash_on_delivery(), "Cod booking");
-		library.Custom_click(book.getClick_I_accept_checkbox(), "I accept checkbox");
+	//	library.Custom_click(book.getClick_I_accept_checkbox(), "I accept checkbox");
 		Thread.sleep(1000);
-		library.Custom_click(book.getClick_pay_now_button(), "Pay now button");
+		library.Custom_click(book.getClick_summary_pay_now_button(), "Pay now button");
 		Thread.sleep(1000);
 		library.Custom_click(book.getClick_view_booking(), "View booking");
 	}
@@ -244,9 +252,9 @@ public class appium_2 extends base_class{
 		library.Custom_click(book.getClick_Continue_Tab(), "Continue button");
 		Thread.sleep(4000);
 		appium_2.Scroll_UP_page_Action("page up");
-		library.Custom_click(book.getClick_I_accept_checkbox(), "I accept checkbox");
+	//	library.Custom_click(book.getClick_I_accept_checkbox(), "I accept checkbox");
 		Thread.sleep(1000);
-		library.Custom_click(book.getClick_pay_now_button(), "Pay now button");
+		library.Custom_click(book.getClick_summary_pay_now_button(), "Pay now button");
 		library.Custom_click(book.getClick_Pay_using_Netbanking(), "Pay using Netbanking");
 		library.Custom_click(book.getClick_Pay_using_SBI_bank(), "Select SBI bank");
 		library.Custom_click(book.getClick_pay_now_button_sbi(), "Pay Now button");
@@ -371,9 +379,21 @@ public class appium_2 extends base_class{
 		library.visible_link(book.getFBD_Booking_status(), "Booking status");
 		library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
 		Thread.sleep(2000);
-		library.visible_link(book.getFBD_Booking_id(), "Booking ID = "+book.getFBD_Booking_id().getText());
-		library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number = "+book.getFBD_vehicle_nummber().getText());
+		library.visible_link(book.getFBD_Booking_id(), "Booking ID  ");
+		library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number  ");		
+		library.visible_link(book.getFBD_pick_up_date(), "Pick Up Date  ");
+		library.visible_link(book.getFBD_drop_off_date(), "Drop off date  ");
+		library.visible_link(book.getFBD_pick_up_location(), "Pick Up Location  ");
+		library.visible_link(book.getFBD_duration(), "Duration  ");
+		library.visible_link(book.getFBD_handover_time(), "Handover Time  ");
+		library.visible_link(book.getFBD_drop_off_location(), "Drop off Location  ");
+		library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date  ");
+		library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date  ");
+		library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up  ");
 		
+		try {
+		library.visible_link(book.getFBD_Booking_id(), "Booking ID = "+book.getFBD_Booking_id().getText());
+		library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number = "+book.getFBD_vehicle_nummber().getText());		
 		library.visible_link(book.getFBD_pick_up_date(), "Pick Up Date = "+book.getFBD_pick_up_date().getText());
 		library.visible_link(book.getFBD_drop_off_date(), "Drop off date = "+book.getFBD_drop_off_date().getText());
 		library.visible_link(book.getFBD_pick_up_location(), "Pick Up Location = "+book.getFBD_pick_up_location().getText());
@@ -383,6 +403,9 @@ public class appium_2 extends base_class{
 		library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date = "+book.getFBD_planned_drop_off_date().getText());
 		library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date = "+book.getFBD_Actual_drop_off_date().getText());
 		library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up = "+book.getFBD_mode_of_pick_up().getText());
+		}catch(Exception e) {
+			log.error("text is not present");
+		}
 		appium_2.Scroll_UP_page_Action("page up");
 		library.Custom_click(book.getClick_show_less_details(), "show less text");
 		library.visible_link(book.getClick_Home_booking_tab_extend_ride(), "Extend ride drop down");

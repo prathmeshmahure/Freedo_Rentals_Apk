@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>66/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>63/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 09 07:35:50 IST 2023</td>
+<td>Started on:</td><td>Fri Jun 09 14:28:25 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>1348 seconds (1348263 ms)</td>
+<tr><td>Total time:</td><td>1352 seconds (1352256 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,96 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Freedo_domain.appium_2.TC_0064_Admin_check_End_ride_request()'><b>TC_0064_Admin_check_End_ride_request</b><br>Test class: Freedo_domain.appium_2</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Complete Ride&apos;]&quot;}
+  (Session info: chrome=114.0.5735.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [341f0b9e0d02a24d041c7f88ec56c154, findElement {using=xpath, value=//button[normalize-space()=&apos;Complete Ride&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62164}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62164/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 341f0b9e0d02a24d041c7f88ec56c154
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Freedo_domain.appium_2.TC_0064_Admin_check_End_ride_request(appium_2.java:469)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1161307977", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1161307977'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Complete Ride&apos;]&quot;}
+  (Session info: chrome=114.0.5735.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [341f0b9e0d02a24d041c7f88ec56c154, findElement {using=xpath, value=//button[normalize-space()=&apos;Complete Ride&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62164}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62164/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 341f0b9e0d02a24d041c7f88ec56c154
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Freedo_domain.appium_2.TC_0064_Admin_check_End_ride_request(appium_2.java:469)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>54</td>
+<td>Freedo_domain.appium_2@740d2e78</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,39 +165,24 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Freedo_domain.appium_1.TC_0047_Verify_summary_page_i_accept_checkbox()'><b>TC_0047_Verify_summary_page_i_accept_checkbox</b><br>Test class: Freedo_domain.appium_1</td>
+<td title='Freedo_domain.appium_1.TC_0034_Verify_scooter_button_on_homepage()'><b>TC_0034_Verify_scooter_button_on_homepage</b><br>Test class: Freedo_domain.appium_1</td>
 <td></td>
-<td>4</td>
+<td>7</td>
 <td>Freedo_domain.appium_1@b7c4869</td></tr>
 <tr>
-<td title='Freedo_domain.appium_1.TC_0046_Verify_summary_page_cash_on_delivery_method()'><b>TC_0046_Verify_summary_page_cash_on_delivery_method</b><br>Test class: Freedo_domain.appium_1</td>
+<td title='Freedo_domain.appium_1.TC_0027_Verify_homepage_bike_rentals_tab_available_bike()'><b>TC_0027_Verify_homepage_bike_rentals_tab_available_bike</b><br>Test class: Freedo_domain.appium_1</td>
 <td></td>
-<td>8</td>
+<td>19</td>
 <td>Freedo_domain.appium_1@b7c4869</td></tr>
-<tr>
-<td title='Freedo_domain.appium_0.TC_0021_Search_city_name()'><b>TC_0021_Search_city_name</b><br>Test class: Freedo_domain.appium_0</td>
-<td></td>
-<td>5</td>
-<td>Freedo_domain.appium_0@21fd5faa</td></tr>
-<tr>
-<td title='Freedo_domain.appium_1.TC_0033_Verify_Bike_button_on_homepage()'><b>TC_0033_Verify_Bike_button_on_homepage</b><br>Test class: Freedo_domain.appium_1</td>
-<td></td>
-<td>12</td>
-<td>Freedo_domain.appium_1@b7c4869</td></tr>
-<tr>
-<td title='Freedo_domain.appium_2.TC_0052_admin_Request_reject()'><b>TC_0052_admin_Request_reject</b><br>Test class: Freedo_domain.appium_2</td>
-<td></td>
-<td>49</td>
-<td>Freedo_domain.appium_2@740d2e78</td></tr>
 <tr>
 <td title='Freedo_domain.appium_0.TC_005_Verify_the_slide_indicator()'><b>TC_005_Verify_the_slide_indicator</b><br>Test class: Freedo_domain.appium_0</td>
 <td></td>
 <td>0</td>
 <td>Freedo_domain.appium_0@21fd5faa</td></tr>
 <tr>
-<td title='Freedo_domain.appium_0.TC_0017_Verify_OTP_Verification_Page()'><b>TC_0017_Verify_OTP_Verification_Page</b><br>Test class: Freedo_domain.appium_0</td>
+<td title='Freedo_domain.appium_0.TC_0010_verify_create_an_account_by_clicking_login_page()'><b>TC_0010_verify_create_an_account_by_clicking_login_page</b><br>Test class: Freedo_domain.appium_0</td>
 <td></td>
-<td>8</td>
+<td>4</td>
 <td>Freedo_domain.appium_0@21fd5faa</td></tr>
 <tr>
 <td title='Freedo_domain.appium_1.TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements()'><b>TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements</b><br>Test class: Freedo_domain.appium_1</td>
@@ -115,39 +190,44 @@ function toggleAllBoxes() {
 <td>13</td>
 <td>Freedo_domain.appium_1@b7c4869</td></tr>
 <tr>
-<td title='Freedo_domain.appium_2.TC_0065_Verify_user_Complete_ride_booking_status()'><b>TC_0065_Verify_user_Complete_ride_booking_status</b><br>Test class: Freedo_domain.appium_2</td>
+<td title='Freedo_domain.appium_1.TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery()'><b>TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery</b><br>Test class: Freedo_domain.appium_1</td>
 <td></td>
-<td>33</td>
-<td>Freedo_domain.appium_2@740d2e78</td></tr>
-<tr>
-<td title='Freedo_domain.appium_1.TC_0029_Verify_freedo_rental_icon()'><b>TC_0029_Verify_freedo_rental_icon</b><br>Test class: Freedo_domain.appium_1</td>
-<td></td>
-<td>5</td>
+<td>66</td>
 <td>Freedo_domain.appium_1@b7c4869</td></tr>
 <tr>
-<td title='Freedo_domain.appium_1.TC_0038_Verify_user_able_to_select_time_slot_afternoon()'><b>TC_0038_Verify_user_able_to_select_time_slot_afternoon</b><br>Test class: Freedo_domain.appium_1</td>
+<td title='Freedo_domain.appium_1.TC_0031_Verify_Booking_elements()'><b>TC_0031_Verify_Booking_elements</b><br>Test class: Freedo_domain.appium_1</td>
 <td></td>
-<td>52</td>
+<td>27</td>
 <td>Freedo_domain.appium_1@b7c4869</td></tr>
 <tr>
 <td title='Freedo_domain.appium_1.TC_0048_Verify_summary_page_pay_now_button()'><b>TC_0048_Verify_summary_page_pay_now_button</b><br>Test class: Freedo_domain.appium_1</td>
 <td></td>
-<td>19</td>
+<td>21</td>
 <td>Freedo_domain.appium_1@b7c4869</td></tr>
 <tr>
-<td title='Freedo_domain.appium_2.TC_0060_Admin_approved_request()'><b>TC_0060_Admin_approved_request</b><br>Test class: Freedo_domain.appium_2</td>
+<td title='Freedo_domain.appium_1.TC_0028_Verify_Rent_tab_all_elements()'><b>TC_0028_Verify_Rent_tab_all_elements</b><br>Test class: Freedo_domain.appium_1</td>
 <td></td>
-<td>57</td>
-<td>Freedo_domain.appium_2@740d2e78</td></tr>
+<td>12</td>
+<td>Freedo_domain.appium_1@b7c4869</td></tr>
 <tr>
-<td title='Freedo_domain.appium_0.TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element()'><b>TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element</b><br>Test class: Freedo_domain.appium_0</td>
+<td title='Freedo_domain.appium_0.TC_007_Verify_login_component()'><b>TC_007_Verify_login_component</b><br>Test class: Freedo_domain.appium_0</td>
 <td></td>
-<td>5</td>
+<td>4</td>
 <td>Freedo_domain.appium_0@21fd5faa</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.TC_0033_Verify_Bike_button_on_homepage()'><b>TC_0033_Verify_Bike_button_on_homepage</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>12</td>
+<td>Freedo_domain.appium_1@b7c4869</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.TC_0055_Verify_user_able_to_successful_logout()'><b>TC_0055_Verify_user_able_to_successful_logout</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>10</td>
+<td>Freedo_domain.appium_2@740d2e78</td></tr>
 <tr>
 <td title='Freedo_domain.appium_1.TC_0041_Verify_user_able_to_list_button()'><b>TC_0041_Verify_user_able_to_list_button</b><br>Test class: Freedo_domain.appium_1</td>
 <td></td>
-<td>3</td>
+<td>2</td>
 <td>Freedo_domain.appium_1@b7c4869</td></tr>
 <tr>
 <td title='Freedo_domain.appium_0.TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page()'><b>TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page</b><br>Test class: Freedo_domain.appium_0</td>
@@ -155,224 +235,19 @@ function toggleAllBoxes() {
 <td>4</td>
 <td>Freedo_domain.appium_0@21fd5faa</td></tr>
 <tr>
-<td title='Freedo_domain.appium_0.TC_004_Verify_the_NEXT_button_clicking()'><b>TC_004_Verify_the_NEXT_button_clicking</b><br>Test class: Freedo_domain.appium_0</td>
-<td></td>
-<td>4</td>
-<td>Freedo_domain.appium_0@21fd5faa</td></tr>
-<tr>
-<td title='Freedo_domain.appium_1.TC_0028_Verify_Rent_tab_all_elements()'><b>TC_0028_Verify_Rent_tab_all_elements</b><br>Test class: Freedo_domain.appium_1</td>
-<td></td>
-<td>8</td>
-<td>Freedo_domain.appium_1@b7c4869</td></tr>
-<tr>
-<td title='Freedo_domain.appium_0.TC_002_verify_select_pickup_location_date_and_packages()'><b>TC_002_verify_select_pickup_location_date_and_packages</b><br>Test class: Freedo_domain.appium_0</td>
-<td></td>
-<td>1</td>
-<td>Freedo_domain.appium_0@21fd5faa</td></tr>
-<tr>
-<td title='Freedo_domain.appium_0.TC_0023_Verify_location_popup()'><b>TC_0023_Verify_location_popup</b><br>Test class: Freedo_domain.appium_0</td>
-<td></td>
-<td>4</td>
-<td>Freedo_domain.appium_0@21fd5faa</td></tr>
-<tr>
-<td title='Freedo_domain.appium_0.TC_0022_Select_all__City()'><b>TC_0022_Select_all__City</b><br>Test class: Freedo_domain.appium_0</td>
-<td></td>
-<td>0</td>
-<td>Freedo_domain.appium_0@21fd5faa</td></tr>
-<tr>
-<td title='Freedo_domain.appium_1.TC_0025_Verify_available_all_bikes()'><b>TC_0025_Verify_available_all_bikes</b><br>Test class: Freedo_domain.appium_1</td>
-<td></td>
-<td>22</td>
-<td>Freedo_domain.appium_1@b7c4869</td></tr>
-<tr>
-<td title='Freedo_domain.appium_2.TC_0053_Track_booking_status()'><b>TC_0053_Track_booking_status</b><br>Test class: Freedo_domain.appium_2</td>
-<td></td>
-<td>24</td>
-<td>Freedo_domain.appium_2@740d2e78</td></tr>
-<tr>
-<td title='Freedo_domain.appium_1.TC_0043_Verify_continue_button_and_summary_page()'><b>TC_0043_Verify_continue_button_and_summary_page</b><br>Test class: Freedo_domain.appium_1</td>
-<td></td>
-<td>30</td>
-<td>Freedo_domain.appium_1@b7c4869</td></tr>
-<tr>
-<td title='Freedo_domain.appium_1.TC_0034_Verify_scooter_button_on_homepage()'><b>TC_0034_Verify_scooter_button_on_homepage</b><br>Test class: Freedo_domain.appium_1</td>
-<td></td>
-<td>7</td>
-<td>Freedo_domain.appium_1@b7c4869</td></tr>
-<tr>
-<td title='Freedo_domain.appium_0.TC_009_verify_login_button_on_create_an_account_page()'><b>TC_009_verify_login_button_on_create_an_account_page</b><br>Test class: Freedo_domain.appium_0</td>
-<td></td>
-<td>4</td>
-<td>Freedo_domain.appium_0@21fd5faa</td></tr>
-<tr>
-<td title='Freedo_domain.appium_2.TC_0059_Verify_user_able_to_Online_payment_booking()'><b>TC_0059_Verify_user_able_to_Online_payment_booking</b><br>Test class: Freedo_domain.appium_2</td>
-<td></td>
-<td>104</td>
-<td>Freedo_domain.appium_2@740d2e78</td></tr>
-<tr>
-<td title='Freedo_domain.appium_0.TC_003_Verify_the_NEXT_button_clicking()'><b>TC_003_Verify_the_NEXT_button_clicking</b><br>Test class: Freedo_domain.appium_0</td>
-<td></td>
-<td>3</td>
-<td>Freedo_domain.appium_0@21fd5faa</td></tr>
-<tr>
-<td title='Freedo_domain.appium_0.TC_0015_Verify_create_my_account_button()'><b>TC_0015_Verify_create_my_account_button</b><br>Test class: Freedo_domain.appium_0</td>
-<td></td>
-<td>2</td>
-<td>Freedo_domain.appium_0@21fd5faa</td></tr>
-<tr>
-<td title='Freedo_domain.appium_0.TC_007_Verify_login_component()'><b>TC_007_Verify_login_component</b><br>Test class: Freedo_domain.appium_0</td>
-<td></td>
-<td>2</td>
-<td>Freedo_domain.appium_0@21fd5faa</td></tr>
-<tr>
-<td title='Freedo_domain.appium_1.TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery()'><b>TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery</b><br>Test class: Freedo_domain.appium_1</td>
-<td></td>
-<td>58</td>
-<td>Freedo_domain.appium_1@b7c4869</td></tr>
-<tr>
-<td title='Freedo_domain.appium_2.TC_0058_admin_Request_reject()'><b>TC_0058_admin_Request_reject</b><br>Test class: Freedo_domain.appium_2</td>
-<td></td>
-<td>50</td>
-<td>Freedo_domain.appium_2@740d2e78</td></tr>
-<tr>
-<td title='Freedo_domain.appium_2.TC_0063_Verify_user_end_ride_booking_status()'><b>TC_0063_Verify_user_end_ride_booking_status</b><br>Test class: Freedo_domain.appium_2</td>
-<td></td>
-<td>5</td>
-<td>Freedo_domain.appium_2@740d2e78</td></tr>
-<tr>
-<td title='Freedo_domain.appium_0.TC_0018_Select_location()'><b>TC_0018_Select_location</b><br>Test class: Freedo_domain.appium_0</td>
-<td></td>
-<td>14</td>
-<td>Freedo_domain.appium_0@21fd5faa</td></tr>
-<tr>
-<td title='Freedo_domain.appium_0.TC_006_Verify_the_Done_button_clicking()'><b>TC_006_Verify_the_Done_button_clicking</b><br>Test class: Freedo_domain.appium_0</td>
-<td></td>
-<td>0</td>
-<td>Freedo_domain.appium_0@21fd5faa</td></tr>
-<tr>
-<td title='Freedo_domain.appium_0.TC_001_verify_install_apk()'><b>TC_001_verify_install_apk</b><br>Test class: Freedo_domain.appium_0</td>
-<td></td>
-<td>8</td>
-<td>Freedo_domain.appium_0@21fd5faa</td></tr>
-<tr>
-<td title='Freedo_domain.appium_1.TC_0045_Verify_summary_page_coupon_code()'><b>TC_0045_Verify_summary_page_coupon_code</b><br>Test class: Freedo_domain.appium_1</td>
-<td></td>
-<td>18</td>
-<td>Freedo_domain.appium_1@b7c4869</td></tr>
-<tr>
-<td title='Freedo_domain.appium_2.TC_0064_Admin_check_End_ride_request()'><b>TC_0064_Admin_check_End_ride_request</b><br>Test class: Freedo_domain.appium_2</td>
-<td></td>
-<td>52</td>
-<td>Freedo_domain.appium_2@740d2e78</td></tr>
-<tr>
-<td title='Freedo_domain.appium_1.TC_0026_Verify_available_all_Scooters()'><b>TC_0026_Verify_available_all_Scooters</b><br>Test class: Freedo_domain.appium_1</td>
-<td></td>
-<td>5</td>
-<td>Freedo_domain.appium_1@b7c4869</td></tr>
-<tr>
-<td title='Freedo_domain.appium_2.TC_0061_Verify_user_able_to_view_booking_status_all_elements()'><b>TC_0061_Verify_user_able_to_view_booking_status_all_elements</b><br>Test class: Freedo_domain.appium_2</td>
-<td></td>
-<td>84</td>
-<td>Freedo_domain.appium_2@740d2e78</td></tr>
-<tr>
-<td title='Freedo_domain.appium_2.TC_0062_Verify_user_End_ride_request()'><b>TC_0062_Verify_user_End_ride_request</b><br>Test class: Freedo_domain.appium_2</td>
-<td></td>
-<td>5</td>
-<td>Freedo_domain.appium_2@740d2e78</td></tr>
-<tr>
-<td title='Freedo_domain.appium_1.TC_0024_Verify_home_page_all_elements()'><b>TC_0024_Verify_home_page_all_elements</b><br>Test class: Freedo_domain.appium_1</td>
-<td></td>
-<td>23</td>
-<td>Freedo_domain.appium_1@b7c4869</td></tr>
-<tr>
-<td title='Freedo_domain.appium_0.TC_0020_Search_wrong_city_name()'><b>TC_0020_Search_wrong_city_name</b><br>Test class: Freedo_domain.appium_0</td>
-<td></td>
-<td>5</td>
-<td>Freedo_domain.appium_0@21fd5faa</td></tr>
-<tr>
-<td title='Freedo_domain.appium_2.TC_0065_Verify_after_Complete_ride_invoice_button()'><b>TC_0065_Verify_after_Complete_ride_invoice_button</b><br>Test class: Freedo_domain.appium_2</td>
-<td></td>
-<td>22</td>
-<td>Freedo_domain.appium_2@740d2e78</td></tr>
-<tr>
-<td title='Freedo_domain.appium_0.TC_0011_verify_user_able_to_create_an_account()'><b>TC_0011_verify_user_able_to_create_an_account</b><br>Test class: Freedo_domain.appium_0</td>
-<td></td>
-<td>21</td>
-<td>Freedo_domain.appium_0@21fd5faa</td></tr>
-<tr>
-<td title='Freedo_domain.appium_0.TC_0019_verify_user_select_City()'><b>TC_0019_verify_user_select_City</b><br>Test class: Freedo_domain.appium_0</td>
-<td></td>
-<td>3</td>
-<td>Freedo_domain.appium_0@21fd5faa</td></tr>
-<tr>
-<td title='Freedo_domain.appium_0.TC_0012_verify_Terms_and_condition_link_on_create_an_account_page()'><b>TC_0012_verify_Terms_and_condition_link_on_create_an_account_page</b><br>Test class: Freedo_domain.appium_0</td>
-<td></td>
-<td>20</td>
-<td>Freedo_domain.appium_0@21fd5faa</td></tr>
-<tr>
-<td title='Freedo_domain.appium_2.TC_0057_Verify_user_able_to_COD_booking()'><b>TC_0057_Verify_user_able_to_COD_booking</b><br>Test class: Freedo_domain.appium_2</td>
-<td></td>
-<td>47</td>
-<td>Freedo_domain.appium_2@740d2e78</td></tr>
-<tr>
-<td title='Freedo_domain.appium_0.TC_008_Verify_login_functionality_Register_mo_number()'><b>TC_008_Verify_login_functionality_Register_mo_number</b><br>Test class: Freedo_domain.appium_0</td>
-<td></td>
-<td>3</td>
-<td>Freedo_domain.appium_0@21fd5faa</td></tr>
-<tr>
-<td title='Freedo_domain.appium_2.TC_0055_Verify_user_able_to_successful_logout()'><b>TC_0055_Verify_user_able_to_successful_logout</b><br>Test class: Freedo_domain.appium_2</td>
+<td title='Freedo_domain.appium_0.TC_0017_Verify_OTP_Verification_Page()'><b>TC_0017_Verify_OTP_Verification_Page</b><br>Test class: Freedo_domain.appium_0</td>
 <td></td>
 <td>9</td>
-<td>Freedo_domain.appium_2@740d2e78</td></tr>
-<tr>
-<td title='Freedo_domain.appium_1.TC_0030_Verify_more_button_all_elements()'><b>TC_0030_Verify_more_button_all_elements</b><br>Test class: Freedo_domain.appium_1</td>
-<td></td>
-<td>14</td>
-<td>Freedo_domain.appium_1@b7c4869</td></tr>
+<td>Freedo_domain.appium_0@21fd5faa</td></tr>
 <tr>
 <td title='Freedo_domain.appium_1.TC_0035_Verify_user_able_to_select_date_and_package_under_booking()'><b>TC_0035_Verify_user_able_to_select_date_and_package_under_booking</b><br>Test class: Freedo_domain.appium_1</td>
 <td></td>
-<td>26</td>
+<td>28</td>
 <td>Freedo_domain.appium_1@b7c4869</td></tr>
 <tr>
-<td title='Freedo_domain.appium_1.TC_0027_Verify_homepage_bike_rentals_tab_available_bike()'><b>TC_0027_Verify_homepage_bike_rentals_tab_available_bike</b><br>Test class: Freedo_domain.appium_1</td>
+<td title='Freedo_domain.appium_1.TC_0046_Verify_summary_page_cash_on_delivery_method()'><b>TC_0046_Verify_summary_page_cash_on_delivery_method</b><br>Test class: Freedo_domain.appium_1</td>
 <td></td>
-<td>16</td>
-<td>Freedo_domain.appium_1@b7c4869</td></tr>
-<tr>
-<td title='Freedo_domain.appium_1.TC_0050_Verify_user_able_to_view_booking_status()'><b>TC_0050_Verify_user_able_to_view_booking_status</b><br>Test class: Freedo_domain.appium_1</td>
-<td></td>
-<td>1</td>
-<td>Freedo_domain.appium_1@b7c4869</td></tr>
-<tr>
-<td title='Freedo_domain.appium_1.TC_0040_Verify_user_able_to_select_time_slot_Morning()'><b>TC_0040_Verify_user_able_to_select_time_slot_Morning</b><br>Test class: Freedo_domain.appium_1</td>
-<td></td>
-<td>2</td>
-<td>Freedo_domain.appium_1@b7c4869</td></tr>
-<tr>
-<td title='Freedo_domain.appium_2.TC_0056_Verify_user_able_to_deactivate_account()'><b>TC_0056_Verify_user_able_to_deactivate_account</b><br>Test class: Freedo_domain.appium_2</td>
-<td></td>
-<td>42</td>
-<td>Freedo_domain.appium_2@740d2e78</td></tr>
-<tr>
-<td title='Freedo_domain.appium_1.TC_0032_Verify_Booking_elements()'><b>TC_0032_Verify_Booking_elements</b><br>Test class: Freedo_domain.appium_1</td>
-<td></td>
-<td>14</td>
-<td>Freedo_domain.appium_1@b7c4869</td></tr>
-<tr>
-<td title='Freedo_domain.appium_1.TC_0044_Verify_summary_page_additional_helmet_charges()'><b>TC_0044_Verify_summary_page_additional_helmet_charges</b><br>Test class: Freedo_domain.appium_1</td>
-<td></td>
-<td>11</td>
-<td>Freedo_domain.appium_1@b7c4869</td></tr>
-<tr>
-<td title='Freedo_domain.appium_1.TC_0039_Verify_user_able_to_select_time_slot_Evening()'><b>TC_0039_Verify_user_able_to_select_time_slot_Evening</b><br>Test class: Freedo_domain.appium_1</td>
-<td></td>
-<td>2</td>
-<td>Freedo_domain.appium_1@b7c4869</td></tr>
-<tr>
-<td title='Freedo_domain.appium_1.TC_0051_Verify_user_able_to_view_booking_status_all_elements()'><b>TC_0051_Verify_user_able_to_view_booking_status_all_elements</b><br>Test class: Freedo_domain.appium_1</td>
-<td></td>
-<td>48</td>
+<td>7</td>
 <td>Freedo_domain.appium_1@b7c4869</td></tr>
 <tr>
 <td title='Freedo_domain.appium_0.TC_0016_Verify_otp_verification_time_slot()'><b>TC_0016_Verify_otp_verification_time_slot</b><br>Test class: Freedo_domain.appium_0</td>
@@ -382,28 +257,292 @@ function toggleAllBoxes() {
 <tr>
 <td title='Freedo_domain.appium_1.TC_0042_Verify_select_automation_city()'><b>TC_0042_Verify_select_automation_city</b><br>Test class: Freedo_domain.appium_1</td>
 <td></td>
-<td>57</td>
+<td>66</td>
+<td>Freedo_domain.appium_1@b7c4869</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.TC_0047_Verify_summary_page_i_accept_checkbox()'><b>TC_0047_Verify_summary_page_i_accept_checkbox</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>4</td>
+<td>Freedo_domain.appium_1@b7c4869</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.TC_0062_Verify_user_End_ride_request()'><b>TC_0062_Verify_user_End_ride_request</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>5</td>
+<td>Freedo_domain.appium_2@740d2e78</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.TC_0040_Verify_user_able_to_select_time_slot_Morning()'><b>TC_0040_Verify_user_able_to_select_time_slot_Morning</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>3</td>
+<td>Freedo_domain.appium_1@b7c4869</td></tr>
+<tr>
+<td title='Freedo_domain.appium_0.TC_0020_Search_wrong_city_name()'><b>TC_0020_Search_wrong_city_name</b><br>Test class: Freedo_domain.appium_0</td>
+<td></td>
+<td>5</td>
+<td>Freedo_domain.appium_0@21fd5faa</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.TC_0029_Verify_freedo_rental_icon()'><b>TC_0029_Verify_freedo_rental_icon</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>4</td>
 <td>Freedo_domain.appium_1@b7c4869</td></tr>
 <tr>
 <td title='Freedo_domain.appium_2.TC_0054_Verify_user_able_to_logout_cancel()'><b>TC_0054_Verify_user_able_to_logout_cancel</b><br>Test class: Freedo_domain.appium_2</td>
 <td></td>
-<td>17</td>
+<td>19</td>
 <td>Freedo_domain.appium_2@740d2e78</td></tr>
 <tr>
-<td title='Freedo_domain.appium_1.TC_0049_Verify_user_able_to_make_payment()'><b>TC_0049_Verify_user_able_to_make_payment</b><br>Test class: Freedo_domain.appium_1</td>
+<td title='Freedo_domain.appium_0.TC_0012_verify_Terms_and_condition_link_on_create_an_account_page()'><b>TC_0012_verify_Terms_and_condition_link_on_create_an_account_page</b><br>Test class: Freedo_domain.appium_0</td>
 <td></td>
-<td>58</td>
+<td>21</td>
+<td>Freedo_domain.appium_0@21fd5faa</td></tr>
+<tr>
+<td title='Freedo_domain.appium_0.TC_006_Verify_the_Done_button_clicking()'><b>TC_006_Verify_the_Done_button_clicking</b><br>Test class: Freedo_domain.appium_0</td>
+<td></td>
+<td>0</td>
+<td>Freedo_domain.appium_0@21fd5faa</td></tr>
+<tr>
+<td title='Freedo_domain.appium_0.TC_0011_verify_user_able_to_create_an_account()'><b>TC_0011_verify_user_able_to_create_an_account</b><br>Test class: Freedo_domain.appium_0</td>
+<td></td>
+<td>18</td>
+<td>Freedo_domain.appium_0@21fd5faa</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.TC_0026_Verify_available_all_Scooters()'><b>TC_0026_Verify_available_all_Scooters</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>6</td>
 <td>Freedo_domain.appium_1@b7c4869</td></tr>
 <tr>
-<td title='Freedo_domain.appium_0.TC_0010_verify_create_an_account_by_clicking_login_page()'><b>TC_0010_verify_create_an_account_by_clicking_login_page</b><br>Test class: Freedo_domain.appium_0</td>
+<td title='Freedo_domain.appium_1.TC_0025_Verify_available_all_bikes()'><b>TC_0025_Verify_available_all_bikes</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>20</td>
+<td>Freedo_domain.appium_1@b7c4869</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.TC_0024_Verify_home_page_all_elements()'><b>TC_0024_Verify_home_page_all_elements</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>26</td>
+<td>Freedo_domain.appium_1@b7c4869</td></tr>
+<tr>
+<td title='Freedo_domain.appium_0.TC_0019_verify_user_select_City()'><b>TC_0019_verify_user_select_City</b><br>Test class: Freedo_domain.appium_0</td>
+<td></td>
+<td>3</td>
+<td>Freedo_domain.appium_0@21fd5faa</td></tr>
+<tr>
+<td title='Freedo_domain.appium_0.TC_0022_Select_all__City()'><b>TC_0022_Select_all__City</b><br>Test class: Freedo_domain.appium_0</td>
+<td></td>
+<td>2</td>
+<td>Freedo_domain.appium_0@21fd5faa</td></tr>
+<tr>
+<td title='Freedo_domain.appium_0.TC_002_verify_select_pickup_location_date_and_packages()'><b>TC_002_verify_select_pickup_location_date_and_packages</b><br>Test class: Freedo_domain.appium_0</td>
+<td></td>
+<td>1</td>
+<td>Freedo_domain.appium_0@21fd5faa</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.TC_0043_Verify_continue_button_and_summary_page()'><b>TC_0043_Verify_continue_button_and_summary_page</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>29</td>
+<td>Freedo_domain.appium_1@b7c4869</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.TC_0030_Verify_more_button_all_elements()'><b>TC_0030_Verify_more_button_all_elements</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>17</td>
+<td>Freedo_domain.appium_1@b7c4869</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.TC_0063_Verify_user_end_ride_booking_status()'><b>TC_0063_Verify_user_end_ride_booking_status</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>7</td>
+<td>Freedo_domain.appium_2@740d2e78</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.TC_0051_Verify_user_able_to_view_booking_status_all_elements()'><b>TC_0051_Verify_user_able_to_view_booking_status_all_elements</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>47</td>
+<td>Freedo_domain.appium_1@b7c4869</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.TC_0060_Admin_approved_request()'><b>TC_0060_Admin_approved_request</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>63</td>
+<td>Freedo_domain.appium_2@740d2e78</td></tr>
+<tr>
+<td title='Freedo_domain.appium_0.TC_003_Verify_the_NEXT_button_clicking()'><b>TC_003_Verify_the_NEXT_button_clicking</b><br>Test class: Freedo_domain.appium_0</td>
+<td></td>
+<td>4</td>
+<td>Freedo_domain.appium_0@21fd5faa</td></tr>
+<tr>
+<td title='Freedo_domain.appium_0.TC_0023_Verify_location_popup()'><b>TC_0023_Verify_location_popup</b><br>Test class: Freedo_domain.appium_0</td>
+<td></td>
+<td>1</td>
+<td>Freedo_domain.appium_0@21fd5faa</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.TC_0052_admin_Request_reject()'><b>TC_0052_admin_Request_reject</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>51</td>
+<td>Freedo_domain.appium_2@740d2e78</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.TC_0059_Verify_user_able_to_Online_payment_booking()'><b>TC_0059_Verify_user_able_to_Online_payment_booking</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>115</td>
+<td>Freedo_domain.appium_2@740d2e78</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.TC_0057_Verify_user_able_to_COD_booking()'><b>TC_0057_Verify_user_able_to_COD_booking</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>45</td>
+<td>Freedo_domain.appium_2@740d2e78</td></tr>
+<tr>
+<td title='Freedo_domain.appium_0.TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element()'><b>TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element</b><br>Test class: Freedo_domain.appium_0</td>
+<td></td>
+<td>5</td>
+<td>Freedo_domain.appium_0@21fd5faa</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.TC_0044_Verify_summary_page_additional_helmet_charges()'><b>TC_0044_Verify_summary_page_additional_helmet_charges</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>11</td>
+<td>Freedo_domain.appium_1@b7c4869</td></tr>
+<tr>
+<td title='Freedo_domain.appium_0.TC_004_Verify_the_NEXT_button_clicking()'><b>TC_004_Verify_the_NEXT_button_clicking</b><br>Test class: Freedo_domain.appium_0</td>
+<td></td>
+<td>4</td>
+<td>Freedo_domain.appium_0@21fd5faa</td></tr>
+<tr>
+<td title='Freedo_domain.appium_0.TC_001_verify_install_apk()'><b>TC_001_verify_install_apk</b><br>Test class: Freedo_domain.appium_0</td>
+<td></td>
+<td>10</td>
+<td>Freedo_domain.appium_0@21fd5faa</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.TC_0039_Verify_user_able_to_select_time_slot_Evening()'><b>TC_0039_Verify_user_able_to_select_time_slot_Evening</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>2</td>
+<td>Freedo_domain.appium_1@b7c4869</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.TC_0032_Verify_Booking_elements()'><b>TC_0032_Verify_Booking_elements</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>14</td>
+<td>Freedo_domain.appium_1@b7c4869</td></tr>
+<tr>
+<td title='Freedo_domain.appium_0.TC_0015_Verify_create_my_account_button()'><b>TC_0015_Verify_create_my_account_button</b><br>Test class: Freedo_domain.appium_0</td>
+<td></td>
+<td>2</td>
+<td>Freedo_domain.appium_0@21fd5faa</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.TC_0061_Verify_user_able_to_view_booking_status_all_elements()'><b>TC_0061_Verify_user_able_to_view_booking_status_all_elements</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>82</td>
+<td>Freedo_domain.appium_2@740d2e78</td></tr>
+<tr>
+<td title='Freedo_domain.appium_0.TC_008_Verify_login_functionality_Register_mo_number()'><b>TC_008_Verify_login_functionality_Register_mo_number</b><br>Test class: Freedo_domain.appium_0</td>
+<td></td>
+<td>4</td>
+<td>Freedo_domain.appium_0@21fd5faa</td></tr>
+<tr>
+<td title='Freedo_domain.appium_0.TC_009_verify_login_button_on_create_an_account_page()'><b>TC_009_verify_login_button_on_create_an_account_page</b><br>Test class: Freedo_domain.appium_0</td>
 <td></td>
 <td>6</td>
 <td>Freedo_domain.appium_0@21fd5faa</td></tr>
 <tr>
-<td title='Freedo_domain.appium_1.TC_0031_Verify_Booking_elements()'><b>TC_0031_Verify_Booking_elements</b><br>Test class: Freedo_domain.appium_1</td>
+<td title='Freedo_domain.appium_1.TC_0049_Verify_user_able_to_make_payment()'><b>TC_0049_Verify_user_able_to_make_payment</b><br>Test class: Freedo_domain.appium_1</td>
 <td></td>
-<td>27</td>
+<td>59</td>
 <td>Freedo_domain.appium_1@b7c4869</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.TC_0050_Verify_user_able_to_view_booking_status()'><b>TC_0050_Verify_user_able_to_view_booking_status</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>0</td>
+<td>Freedo_domain.appium_1@b7c4869</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.TC_0045_Verify_summary_page_coupon_code()'><b>TC_0045_Verify_summary_page_coupon_code</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>16</td>
+<td>Freedo_domain.appium_1@b7c4869</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.TC_0056_Verify_user_able_to_deactivate_account()'><b>TC_0056_Verify_user_able_to_deactivate_account</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>42</td>
+<td>Freedo_domain.appium_2@740d2e78</td></tr>
+<tr>
+<td title='Freedo_domain.appium_0.TC_0021_Search_city_name()'><b>TC_0021_Search_city_name</b><br>Test class: Freedo_domain.appium_0</td>
+<td></td>
+<td>5</td>
+<td>Freedo_domain.appium_0@21fd5faa</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.TC_0058_admin_Request_reject()'><b>TC_0058_admin_Request_reject</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>49</td>
+<td>Freedo_domain.appium_2@740d2e78</td></tr>
+<tr>
+<td title='Freedo_domain.appium_1.TC_0038_Verify_user_able_to_select_time_slot_afternoon()'><b>TC_0038_Verify_user_able_to_select_time_slot_afternoon</b><br>Test class: Freedo_domain.appium_1</td>
+<td></td>
+<td>54</td>
+<td>Freedo_domain.appium_1@b7c4869</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.TC_0053_Track_booking_status()'><b>TC_0053_Track_booking_status</b><br>Test class: Freedo_domain.appium_2</td>
+<td></td>
+<td>20</td>
+<td>Freedo_domain.appium_2@740d2e78</td></tr>
+<tr>
+<td title='Freedo_domain.appium_0.TC_0018_Select_location()'><b>TC_0018_Select_location</b><br>Test class: Freedo_domain.appium_0</td>
+<td></td>
+<td>17</td>
+<td>Freedo_domain.appium_0@21fd5faa</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Freedo_domain.appium_2.TC_0065_Verify_user_Complete_ride_booking_status()'><b>TC_0065_Verify_user_Complete_ride_booking_status</b><br>Test class: Freedo_domain.appium_2</td>
+<td><div><pre>java.lang.Throwable: Method appium_2.TC_0065_Verify_user_Complete_ride_booking_status()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2101422773", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2101422773'><pre>java.lang.Throwable: Method appium_2.TC_0065_Verify_user_Complete_ride_booking_status()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Freedo_domain.appium_2@740d2e78</td></tr>
+<tr>
+<td title='Freedo_domain.appium_2.TC_0066_Verify_after_Complete_ride_invoice_button()'><b>TC_0066_Verify_after_Complete_ride_invoice_button</b><br>Test class: Freedo_domain.appium_2</td>
+<td><div><pre>java.lang.Throwable: Method appium_2.TC_0066_Verify_after_Complete_ride_invoice_button()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace605577660", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace605577660'><pre>java.lang.Throwable: Method appium_2.TC_0066_Verify_after_Complete_ride_invoice_button()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Freedo_domain.appium_2@740d2e78</td></tr>
 </table><p>
 </body>
 </html>

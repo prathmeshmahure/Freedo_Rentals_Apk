@@ -150,7 +150,7 @@ public class appium_1 extends base_class{
 		Thread.sleep(1000);
 		library.Custom_click(book.getClick_home_page_Bookings_button(), "home page booking button");
 		Thread.sleep(2000);
-	//	library.visible_link(book.getClick_Home_booking_tab_bike_image(), "bike images");
+		library.visible_link(book.getClick_Home_booking_tab_bike_image(), "bike images");
 		library.visible_link(book.getClick_Home_booking_tab_bike_text(),"bike name ");
 		library.visible_link(book.getClick_Home_booking_tab_pickup_location_txt(), "pick up Location");
 		library.visible_link(book.getClick_Home_booking_tab_pickup_date_txt(),"pick up date ");
@@ -273,7 +273,7 @@ public class appium_1 extends base_class{
 		library.Custom_click(book.getClick_home_delivery_yes_address(), "delete confirm Yes ");
 		Thread.sleep(2000);
 		library.Custom_click(book.getClick_home_delivery_add_new_address_(), "Add new address");
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		appium_1.Back_button();
 		Thread.sleep(1000);
 		appium_1.Back_button();
@@ -553,30 +553,33 @@ public class appium_1 extends base_class{
 		library.Custom_click(book.getClick_show_more_details(), "show more details text");
 		Thread.sleep(2000);
 		library.visible_link(book.getFBD_Booking_status(), "Booking status");
+		library.visible_link(book.getFBD_Booking_id(), "Booking ID ");
+		library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number ");		
+		library.visible_link(book.getFBD_pick_up_date(), "Pick Up Date =");
+		library.visible_link(book.getFBD_drop_off_date(), "Drop off date ");
+		library.visible_link(book.getFBD_pick_up_location(), "Pick Up Location ");
+		library.visible_link(book.getFBD_duration(), "Duration ");
+		library.visible_link(book.getFBD_handover_time(), "Handover Time ");
+		library.visible_link(book.getFBD_drop_off_location(), "Drop off Location  ");
+		library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date ");
+		library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date ");
+		library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up ");
+
+		
+		
 		library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
 		Thread.sleep(2000);
-		library.visible_link(book.getFBD_Booking_id(), "Booking ID ");
-		library.visible_link(book.getFBD_Booking_id(), "Booking ID = "+book.getFBD_Booking_id().getText());
-		library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number ");		
-		library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number = "+book.getFBD_vehicle_nummber().getText());
 		
-		library.visible_link(book.getFBD_pick_up_date(), "Pick Up Date =");
+		library.visible_link(book.getFBD_Booking_id(), "Booking ID = "+book.getFBD_Booking_id().getText());
+		library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number = "+book.getFBD_vehicle_nummber().getText());		
 		library.visible_link(book.getFBD_pick_up_date(), "Pick Up Date = "+book.getFBD_pick_up_date().getText());
-		library.visible_link(book.getFBD_drop_off_date(), "Drop off date ");
 		library.visible_link(book.getFBD_drop_off_date(), "Drop off date = "+book.getFBD_drop_off_date().getText());
-		library.visible_link(book.getFBD_pick_up_location(), "Pick Up Location ");
 		library.visible_link(book.getFBD_pick_up_location(), "Pick Up Location = "+book.getFBD_pick_up_location().getText());
-		library.visible_link(book.getFBD_duration(), "Duration ");
 		library.visible_link(book.getFBD_duration(), "Duration = "+book.getFBD_duration().getText());
-		library.visible_link(book.getFBD_handover_time(), "Handover Time ");
 		library.visible_link(book.getFBD_handover_time(), "Handover Time = "+book.getFBD_handover_time().getText());
-		library.visible_link(book.getFBD_drop_off_location(), "Drop off Location  ");
 		library.visible_link(book.getFBD_drop_off_location(), "Drop off Location = "+book.getFBD_drop_off_location().getText());
-		library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date ");
 		library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date = "+book.getFBD_planned_drop_off_date().getText());
-		library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date ");
 		library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date = "+book.getFBD_Actual_drop_off_date().getText());
-		library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up ");
 		library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up = "+book.getFBD_mode_of_pick_up().getText());
 	
 		appium_1.Scroll_UP_page_Action("page up");

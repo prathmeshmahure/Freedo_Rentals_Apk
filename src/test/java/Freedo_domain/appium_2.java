@@ -29,6 +29,7 @@ public class appium_2 extends base_class{
 		log.info("***************TC_0052_admin_Request_reject starts*****************");
 
 		Browseropen();
+		Thread.sleep(3000);
 		Robot r = new Robot();
 		for(int i=0; i<4; i++) {
 			r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
@@ -277,6 +278,7 @@ public class appium_2 extends base_class{
 		log.info("***************TC_0060_Admin_approved_request starts*****************");
 		
 		Browseropen();
+		Thread.sleep(3000);
 		Robot r = new Robot();
 		for(int i=0; i<4; i++) {
 			r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
@@ -443,6 +445,7 @@ public class appium_2 extends base_class{
 		log.info("***************TC_0064_Admin_check_End_ride_request starts*****************");
 		
 		Browseropen();
+		Thread.sleep(3000);
 		Robot r = new Robot();
 		for(int i=0; i<4; i++) {
 			r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
@@ -480,10 +483,14 @@ public class appium_2 extends base_class{
 	public void TC_0065_Verify_user_Complete_ride_booking_status() throws Exception {
 		log.info("***************TC_0065_Verify_user_Complete_ride_booking_status starts*****************");
 		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
+		library.Custom_click(book.getClick_home_page_button(), "Home button");
+		Thread.sleep(3000);
 		library.Custom_click(book.getClick_home_page_Bookings_button(), "Bookings button");
 		Thread.sleep(3000);
-		library.Custom_click(book.getClick_booking_page_view_button(), "View button");
+		try {
+		//	driver1.findElement(By.xpath("//android.widget.TextView[@text='View']")).click();
+		}catch(Exception e) {}
 		Thread.sleep(4000);
 		
 		library.visible_link(book.getFBD_Booking_status(), "Booking status");
@@ -491,8 +498,8 @@ public class appium_2 extends base_class{
 	}
 //====================================================================================================================================	
 	@Test(dependsOnMethods={"TC_0065_Verify_user_Complete_ride_booking_status"})
-	public void TC_0065_Verify_after_Complete_ride_invoice_button() throws Exception {
-		log.info("***************TC_0065_Verify_after_Complete_ride_invoice_button starts*****************");
+	public void TC_0066_Verify_after_Complete_ride_invoice_button() throws Exception {
+		log.info("***************TC_0066_Verify_after_Complete_ride_invoice_button starts*****************");
 		
 		Thread.sleep(2000);
 		library.visible_link(book.getFBD_Invoice_button(), "Invoice Button");

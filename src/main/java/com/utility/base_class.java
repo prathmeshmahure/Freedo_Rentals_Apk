@@ -1,4 +1,5 @@
 package com.utility;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 
@@ -39,39 +40,8 @@ public class base_class {
 				
 	}
 	
-	@BeforeTest	//(dependsOnMethods="Champion_app_install") 
-	public void OPEN_AND_INSTALL_APP() {
-        try {
-UiAutomator2Options capabilities = new UiAutomator2Options();
-capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
-capabilities.setCapability("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
-capabilities.setCapability("pCloudy_DurationInMinutes", 15);
-capabilities.setCapability("newCommandTimeout", 600);
-capabilities.setCapability("launchTimeout", 90000);
-capabilities.setCapability("pCloudy_DeviceManufacturer", "GOOGLE");
-capabilities.setCapability("platformVersion", "13.0.0");
-capabilities.setCapability("platformName", "Android");
-capabilities.setCapability("automationName", "uiautomator2");
-capabilities.setCapability("pCloudy_ApplicationName", "10app-release.apk");
-capabilities.setCapability("appPackage", "com.heerofreedo");
-capabilities.setCapability("appActivity", "com.heerofreedo.MainActivity");
-capabilities.setCapability("pCloudy_WildNet", "false");
-capabilities.setCapability("pCloudy_EnableVideo", "false");
-capabilities.setCapability("pCloudy_EnablePerformanceData", "false");
-capabilities.setCapability("pCloudy_EnableDeviceLogs", "false");
-driver1 = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
-
-} catch (Exception e) {
-    System.out.println(e);
-}
-
-	
-	
-	
-	
-	
-	
-/*	  public  void OPEN_AND_INSTALL_APP() throws MalformedURLException, Exception {
+	@BeforeTest	//(dependsOnMethods="Champion_app_install") 	
+	  public  void OPEN_AND_INSTALL_APP() throws MalformedURLException, Exception {
 		
 		 UiAutomator2Options cap=new UiAutomator2Options();
 //			DesiredCapabilities cap = new DesiredCapabilities();
@@ -95,7 +65,7 @@ driver1 = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/h
 
 		    driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
 		
-	*/	
+		
 		
 		
 		

@@ -39,14 +39,16 @@ public class TEST extends base_class {
 		WebElement ele2=driver.findElement(By.xpath("//li[normalize-space()='50']"));library.Custom_click(ele2, "50 user");
 		Thread.sleep(3000);
 		String s=config.getFirst_name();//user name to find web table
-		
+		Thread.sleep(2000);
 		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::div/parent::td//following-sibling::td//div[@id='approve-action']"));
 		library.Custom_click(ele5, "accept booking request");
 		Thread.sleep(1000);
-		WebElement ele6=driver.findElement(By.xpath("//button[text()='Yes']"));library.Custom_click(ele6, "Yes button");
+		WebElement ele6=driver.findElement(By.xpath("//button[text()='Yes']"));
+		library.Custom_click(ele6, "Yes button");
 		
+		Thread.sleep(4000);
 				try {
-				if(ele5.isDisplayed()) {
+				if(ele5.isDisplayed() && ele5.isEnabled() == true)  {
 					
 					library.Custom_click(ele5, "accept booking request 2");
 					Thread.sleep(1000);

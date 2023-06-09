@@ -190,7 +190,7 @@ public class launch_login {
 	@FindBy(how=How.XPATH,using="(//android.widget.EditText)[1]")								//Enter otp ( index )
 	private WebElement Enter_OTP;
 	
-	@FindBy(how=How.XPATH,using="//android.view.ViewGroup[@content-desc='btn_verify']")				//Verify button
+	@FindBy(how=How.XPATH,using="//android.widget.TextView[@text='Verify Code' or @text='Verify OTP']")				//Verify button
 	private WebElement Click_OTP_Verify_button;
 	
 	@FindBy(how=How.XPATH,using="//android.widget.TextView[@content-desc='txt_timer']")				//Verify button

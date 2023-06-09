@@ -1,63 +1,10 @@
-[INFO ] 2023-06-08 15:53:37.720 [main] Freedo_Rentals_Apk - ***************TC_001_verify_install_apk starts*****************
-[INFO ] 2023-06-08 15:53:42.949 [main] Freedo_Rentals_Apk - OK==Field is visible  Freedo app is Install
-[INFO ] 2023-06-08 15:53:42.979 [main] Freedo_Rentals_Apk - ***************TC_002_verify_select_pickup_location_date_and_packages starts*****************
-[INFO ] 2023-06-08 15:53:43.332 [main] Freedo_Rentals_Apk - OK==Field is visible  Select pickup location date and packages
-[INFO ] 2023-06-08 15:53:43.545 [main] Freedo_Rentals_Apk - OK==First slide indicator is = Selected
-[INFO ] 2023-06-08 15:53:43.920 [main] Freedo_Rentals_Apk - OK==Field is visible  first slide indicator
-[INFO ] 2023-06-08 15:53:44.314 [main] Freedo_Rentals_Apk - OK==Field is visible  second slide indicator
-[INFO ] 2023-06-08 15:53:44.626 [main] Freedo_Rentals_Apk - OK==Field is visible  third slide indicator
-[INFO ] 2023-06-08 15:53:44.973 [main] Freedo_Rentals_Apk - OK==Field is visible  Next_button static 1st page
-[INFO ] 2023-06-08 15:53:45.324 [main] Freedo_Rentals_Apk - OK==Field is visible  Skip_button static 1st page
-[INFO ] 2023-06-08 15:53:45.335 [main] Freedo_Rentals_Apk - ***************TC_003_Verify_the_NEXT_button_clicking starts*****************
-[INFO ] 2023-06-08 15:53:46.102 [main] Freedo_Rentals_Apk - OK==Element is clickable Next_button1 static 1st page
-[INFO ] 2023-06-08 15:53:49.263 [main] Freedo_Rentals_Apk - OK==second slide indicator is = Selected
-[INFO ] 2023-06-08 15:53:50.056 [main] Freedo_Rentals_Apk - OK==Field is visible   = Get it Home Delivered or Pickup from location
-[INFO ] 2023-06-08 15:53:50.423 [main] Freedo_Rentals_Apk - OK==Field is visible  Skip_button static 2nd page
-[INFO ] 2023-06-08 15:53:50.433 [main] Freedo_Rentals_Apk - ***************TC_004_Verify_the_NEXT_button_clicking starts*****************
-[INFO ] 2023-06-08 15:53:51.207 [main] Freedo_Rentals_Apk - OK==Element is clickable Next_button2 static 2nd page
-[INFO ] 2023-06-08 15:53:54.306 [main] Freedo_Rentals_Apk - OK==Third slide indicator is = Selected
-[INFO ] 2023-06-08 15:53:54.905 [main] Freedo_Rentals_Apk - OK==Field is visible   = Complete the payment and enjoy the ride
-[INFO ] 2023-06-08 15:53:54.909 [main] Freedo_Rentals_Apk - ***************TC_005_Verify_the_slide_indicator starts*****************
-[INFO ] 2023-06-08 15:53:55.240 [main] Freedo_Rentals_Apk - OK==first slide indicator is = Not Selected
-[INFO ] 2023-06-08 15:53:55.578 [main] Freedo_Rentals_Apk - OK==Second slide indicator is = Not Selected
-[INFO ] 2023-06-08 15:53:55.888 [main] Freedo_Rentals_Apk - OK==Third slide indicator is = Selected
-[INFO ] 2023-06-08 15:53:55.897 [main] Freedo_Rentals_Apk - ***************TC_006_Verify_the_Done_button_clicking starts*****************
-[INFO ] 2023-06-08 15:53:56.223 [main] Freedo_Rentals_Apk - OK==Field is visible  Done button
-[INFO ] 2023-06-08 15:53:56.882 [main] Freedo_Rentals_Apk - OK==Element is clickable Done_button static 3rd page
-[INFO ] 2023-06-08 15:53:56.891 [main] Freedo_Rentals_Apk - ***************TC_007_Verify_login_component starts*****************
-[INFO ] 2023-06-08 15:53:58.457 [main] Freedo_Rentals_Apk - OK==Field is visible  Login heading
-[INFO ] 2023-06-08 15:53:58.792 [main] Freedo_Rentals_Apk - OK==Field is visible  Mobile icon
-[INFO ] 2023-06-08 15:53:59.155 [main] Freedo_Rentals_Apk - OK==Field is visible  +91 indian code 
-[INFO ] 2023-06-08 15:53:59.470 [main] Freedo_Rentals_Apk - OK==Field is visible  Enter mobile number
-[INFO ] 2023-06-08 15:54:00.630 [main] Freedo_Rentals_Apk - OK==Field is visible  login button
-[INFO ] 2023-06-08 15:54:01.017 [main] Freedo_Rentals_Apk - OK==Login button is = Disabled
-[INFO ] 2023-06-08 15:54:01.405 [main] Freedo_Rentals_Apk - OK==Field is visible  You don't have an account ?
-[INFO ] 2023-06-08 15:54:01.812 [main] Freedo_Rentals_Apk - OK==Field is visible  Create an account
-[INFO ] 2023-06-08 15:54:01.821 [main] Freedo_Rentals_Apk - ***************TC_008_Verify_login_functionality_Register_mo_number starts*****************
-[INFO ] 2023-06-08 15:54:04.508 [main] Freedo_Rentals_Apk - OK==Value send successfully Enter mobile number
-[INFO ] 2023-06-08 15:54:06.075 [main] Freedo_Rentals_Apk - OK==Login button is = Enabled
-[INFO ] 2023-06-08 15:54:06.078 [main] Freedo_Rentals_Apk - ***************TC_009_verify_login_button_on_create_an_account_page starts*****************
-[INFO ] 2023-06-08 15:54:07.676 [main] Freedo_Rentals_Apk - OK==Element is clickable Create an account at login page
-[INFO ] 2023-06-08 15:54:09.492 [main] Freedo_Rentals_Apk - OK==Element is clickable login button on create an account page
-[INFO ] 2023-06-08 15:54:11.502 [main] Freedo_Rentals_Apk - ***************TC_0010_verify_create_an_account_by_clicking_login_page starts*****************
-[INFO ] 2023-06-08 15:54:12.163 [main] Freedo_Rentals_Apk - OK==Element is clickable Create an account at login page
-[INFO ] 2023-06-08 15:54:13.483 [main] Freedo_Rentals_Apk - OK==Field is visible  First name
-[INFO ] 2023-06-08 15:54:13.908 [main] Freedo_Rentals_Apk - OK==Field is visible  Last name
-[INFO ] 2023-06-08 15:54:14.240 [main] Freedo_Rentals_Apk - OK==Field is visible  Mobile number
-[INFO ] 2023-06-08 15:54:14.586 [main] Freedo_Rentals_Apk - OK==Field is visible  Email
-[INFO ] 2023-06-08 15:54:15.034 [main] Freedo_Rentals_Apk - OK==Field is visible  Gender
-[INFO ] 2023-06-08 15:54:15.455 [main] Freedo_Rentals_Apk - OK== I accept checkbox= Not Selected
-[INFO ] 2023-06-08 15:54:15.869 [main] Freedo_Rentals_Apk - OK==Field is visible  Terms and condition
-[INFO ] 2023-06-08 15:54:16.558 [main] Freedo_Rentals_Apk - OK==Field is visible  Privacy Policy
-[INFO ] 2023-06-08 15:54:17.163 [main] Freedo_Rentals_Apk - OK==Create my account button= Disabled
-[INFO ] 2023-06-08 15:54:17.606 [main] Freedo_Rentals_Apk - OK==Field is visible  Login
-[INFO ] 2023-06-08 15:54:17.612 [main] Freedo_Rentals_Apk - ***************TC_0011_verify_user_able_to_create_an_account starts*****************
-[INFO ] 2023-06-08 15:54:18.055 [main] Freedo_Rentals_Apk - OK==Field is visible  First name mandotary field ( * )
-[INFO ] 2023-06-08 15:54:20.124 [main] Freedo_Rentals_Apk - OK==Value send successfully First name
-[INFO ] 2023-06-08 15:54:21.390 [main] Freedo_Rentals_Apk - OK==Field is visible  Last name mandotary field ( * )
-[INFO ] 2023-06-08 15:54:23.678 [main] Freedo_Rentals_Apk - OK==Value send successfully Last name
-[INFO ] 2023-06-08 15:54:24.764 [main] Freedo_Rentals_Apk - OK==Field is visible  Mobile number mandotary field ( * )
-[INFO ] 2023-06-08 15:54:25.130 [main] Freedo_Rentals_Apk - OK==Field is visible  Email ID mandotary field ( * )
-[ERROR] 2023-06-08 15:54:45.937 [main] Freedo_Rentals_Apk - ==Not==Value not send Enter Email
-[INFO ] 2023-06-08 15:54:45.996 [main] Freedo_Rentals_Apk - ***************TC_0024_Verify_home_page_all_elements starts*****************
-[ERROR] 2023-06-08 15:55:06.670 [main] Freedo_Rentals_Apk - ==NOT==Field is not visible Selected city name is visible
+[INFO ] 2023-06-09 08:35:58.022 [main] Freedo_Rentals_Apk - OK==Value send successfully username
+[INFO ] 2023-06-09 08:35:58.138 [main] Freedo_Rentals_Apk - OK==Value send successfully password
+[INFO ] 2023-06-09 08:35:58.236 [main] Freedo_Rentals_Apk - OK==Element is clickable Submit
+[INFO ] 2023-06-09 08:36:02.616 [main] Freedo_Rentals_Apk - OK==Element is clickable Reset button
+[INFO ] 2023-06-09 08:36:02.747 [main] Freedo_Rentals_Apk - OK==Element is clickable 10 user
+[INFO ] 2023-06-09 08:36:03.121 [main] Freedo_Rentals_Apk - OK==Element is clickable 50 user
+[INFO ] 2023-06-09 08:36:08.239 [main] Freedo_Rentals_Apk - OK==Element is clickable accept booking request
+[INFO ] 2023-06-09 08:36:09.338 [main] Freedo_Rentals_Apk - OK==Element is clickable Yes button
+[INFO ] 2023-06-09 08:36:13.373 [main] Freedo_Rentals_Apk - OK==Admin request Accepted
+[INFO ] 2023-06-09 08:36:15.530 [main] Freedo_Rentals_Apk - OK==Element is clickable view data

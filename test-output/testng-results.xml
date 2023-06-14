@@ -1,83 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="70" passed="63" failed="1" skipped="2">
+<testng-results ignored="4" total="70" passed="51" failed="1" skipped="14">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-09T14:28:25 IST" name="Suite" finished-at="2023-06-09T14:50:57 IST" duration-ms="1352256">
+  <suite started-at="2023-06-12T22:33:08 IST" name="Suite" finished-at="2023-06-12T22:47:33 IST" duration-ms="865565">
     <groups>
     </groups>
-    <test started-at="2023-06-09T14:28:25 IST" name="Test" finished-at="2023-06-09T14:50:57 IST" duration-ms="1352256">
+    <test started-at="2023-06-12T22:33:08 IST" name="Test" finished-at="2023-06-12T22:47:33 IST" duration-ms="865565">
       <class name="Freedo_domain.appium_2">
-        <test-method signature="TC_0052_admin_Request_reject()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-09T14:41:28 IST" name="TC_0052_admin_Request_reject" finished-at="2023-06-09T14:42:20 IST" duration-ms="51643" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0052_admin_Request_reject -->
-        <test-method signature="TC_0053_Track_booking_status()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-09T14:42:20 IST" name="TC_0053_Track_booking_status" finished-at="2023-06-09T14:42:41 IST" depends-on-methods="Freedo_domain.appium_2.TC_0052_admin_Request_reject" duration-ms="20738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0053_Track_booking_status -->
-        <test-method signature="TC_0054_Verify_user_able_to_logout_cancel()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-09T14:42:41 IST" name="TC_0054_Verify_user_able_to_logout_cancel" finished-at="2023-06-09T14:43:01 IST" depends-on-methods="Freedo_domain.appium_2.TC_0053_Track_booking_status" duration-ms="19693" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0054_Verify_user_able_to_logout_cancel -->
-        <test-method signature="TC_0055_Verify_user_able_to_successful_logout()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-09T14:43:01 IST" name="TC_0055_Verify_user_able_to_successful_logout" finished-at="2023-06-09T14:43:11 IST" depends-on-methods="Freedo_domain.appium_2.TC_0054_Verify_user_able_to_logout_cancel" duration-ms="10513" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0055_Verify_user_able_to_successful_logout -->
-        <test-method signature="TC_0056_Verify_user_able_to_deactivate_account()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-09T14:43:11 IST" name="TC_0056_Verify_user_able_to_deactivate_account" finished-at="2023-06-09T14:43:53 IST" depends-on-methods="Freedo_domain.appium_2.TC_0055_Verify_user_able_to_successful_logout" duration-ms="42206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0056_Verify_user_able_to_deactivate_account -->
-        <test-method signature="TC_0057_Verify_user_able_to_COD_booking()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-09T14:43:53 IST" name="TC_0057_Verify_user_able_to_COD_booking" finished-at="2023-06-09T14:44:38 IST" depends-on-methods="Freedo_domain.appium_2.TC_0056_Verify_user_able_to_deactivate_account" duration-ms="45127" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0057_Verify_user_able_to_COD_booking -->
-        <test-method signature="TC_0058_admin_Request_reject()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-09T14:44:38 IST" name="TC_0058_admin_Request_reject" finished-at="2023-06-09T14:45:28 IST" depends-on-methods="Freedo_domain.appium_2.TC_0057_Verify_user_able_to_COD_booking" duration-ms="49179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0058_admin_Request_reject -->
-        <test-method signature="TC_0059_Verify_user_able_to_Online_payment_booking()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-09T14:45:28 IST" name="TC_0059_Verify_user_able_to_Online_payment_booking" finished-at="2023-06-09T14:47:23 IST" depends-on-methods="Freedo_domain.appium_2.TC_0058_admin_Request_reject" duration-ms="115817" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0059_Verify_user_able_to_Online_payment_booking -->
-        <test-method signature="TC_0060_Admin_approved_request()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-09T14:47:23 IST" name="TC_0060_Admin_approved_request" finished-at="2023-06-09T14:48:27 IST" depends-on-methods="Freedo_domain.appium_2.TC_0059_Verify_user_able_to_Online_payment_booking" duration-ms="63663" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0060_Admin_approved_request -->
-        <test-method signature="TC_0061_Verify_user_able_to_view_booking_status_all_elements()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-09T14:48:27 IST" name="TC_0061_Verify_user_able_to_view_booking_status_all_elements" finished-at="2023-06-09T14:49:49 IST" depends-on-methods="Freedo_domain.appium_2.TC_0060_Admin_approved_request" duration-ms="82331" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0061_Verify_user_able_to_view_booking_status_all_elements -->
-        <test-method signature="TC_0062_Verify_user_End_ride_request()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-09T14:49:49 IST" name="TC_0062_Verify_user_End_ride_request" finished-at="2023-06-09T14:49:55 IST" depends-on-methods="Freedo_domain.appium_2.TC_0061_Verify_user_able_to_view_booking_status_all_elements" duration-ms="5307" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0062_Verify_user_End_ride_request -->
-        <test-method signature="TC_0063_Verify_user_end_ride_booking_status()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-09T14:49:55 IST" name="TC_0063_Verify_user_end_ride_booking_status" finished-at="2023-06-09T14:50:03 IST" depends-on-methods="Freedo_domain.appium_2.TC_0062_Verify_user_End_ride_request" duration-ms="7848" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0063_Verify_user_end_ride_booking_status -->
-        <test-method signature="TC_0064_Admin_check_End_ride_request()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-09T14:50:03 IST" name="TC_0064_Admin_check_End_ride_request" finished-at="2023-06-09T14:50:57 IST" depends-on-methods="Freedo_domain.appium_2.TC_0063_Verify_user_end_ride_booking_status" duration-ms="54853" status="FAIL">
+        <test-method signature="TC_0052_admin_Request_reject()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-12T22:47:03 IST" name="TC_0052_admin_Request_reject" finished-at="2023-06-12T22:47:33 IST" duration-ms="30061" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Complete Ride']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@aria-haspopup='listbox'])[3]"}
   (Session info: chrome=114.0.5735.110)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [341f0b9e0d02a24d041c7f88ec56c154, findElement {using=xpath, value=//button[normalize-space()='Complete Ride']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62164}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62164/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 341f0b9e0d02a24d041c7f88ec56c154]]>
+Command: [debe7314222e7d732c1f09339a3aba74, findElement {using=xpath, value=(//div[@aria-haspopup='listbox'])[3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61020}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61020/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: debe7314222e7d732c1f09339a3aba74]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Complete Ride']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@aria-haspopup='listbox'])[3]"}
   (Session info: chrome=114.0.5735.110)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [341f0b9e0d02a24d041c7f88ec56c154, findElement {using=xpath, value=//button[normalize-space()='Complete Ride']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62164}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62164/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 341f0b9e0d02a24d041c7f88ec56c154
+Command: [debe7314222e7d732c1f09339a3aba74, findElement {using=xpath, value=(//div[@aria-haspopup='listbox'])[3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61020}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61020/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: debe7314222e7d732c1f09339a3aba74
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -94,7 +46,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at Freedo_domain.appium_2.TC_0064_Admin_check_End_ride_request(appium_2.java:469)
+at Freedo_domain.appium_2.TC_0052_admin_Request_reject(appium_2.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -128,8 +80,392 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- TC_0052_admin_Request_reject -->
+        <test-method signature="TC_0053_Track_booking_status()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-12T22:47:33 IST" name="TC_0053_Track_booking_status" finished-at="2023-06-12T22:47:33 IST" depends-on-methods="Freedo_domain.appium_2.TC_0052_admin_Request_reject" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method appium_2.TC_0053_Track_booking_status()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method appium_2.TC_0053_Track_booking_status()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0053_Track_booking_status -->
+        <test-method signature="TC_0054_Verify_user_able_to_logout_cancel()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-12T22:47:33 IST" name="TC_0054_Verify_user_able_to_logout_cancel" finished-at="2023-06-12T22:47:33 IST" depends-on-methods="Freedo_domain.appium_2.TC_0053_Track_booking_status" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method appium_2.TC_0054_Verify_user_able_to_logout_cancel()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method appium_2.TC_0054_Verify_user_able_to_logout_cancel()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0054_Verify_user_able_to_logout_cancel -->
+        <test-method signature="TC_0055_Verify_user_able_to_successful_logout()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-12T22:47:33 IST" name="TC_0055_Verify_user_able_to_successful_logout" finished-at="2023-06-12T22:47:33 IST" depends-on-methods="Freedo_domain.appium_2.TC_0054_Verify_user_able_to_logout_cancel" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method appium_2.TC_0055_Verify_user_able_to_successful_logout()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method appium_2.TC_0055_Verify_user_able_to_successful_logout()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0055_Verify_user_able_to_successful_logout -->
+        <test-method signature="TC_0056_Verify_user_able_to_deactivate_account()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-12T22:47:33 IST" name="TC_0056_Verify_user_able_to_deactivate_account" finished-at="2023-06-12T22:47:33 IST" depends-on-methods="Freedo_domain.appium_2.TC_0055_Verify_user_able_to_successful_logout" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method appium_2.TC_0056_Verify_user_able_to_deactivate_account()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method appium_2.TC_0056_Verify_user_able_to_deactivate_account()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0056_Verify_user_able_to_deactivate_account -->
+        <test-method signature="TC_0057_Verify_user_able_to_COD_booking()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-12T22:47:33 IST" name="TC_0057_Verify_user_able_to_COD_booking" finished-at="2023-06-12T22:47:33 IST" depends-on-methods="Freedo_domain.appium_2.TC_0056_Verify_user_able_to_deactivate_account" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method appium_2.TC_0057_Verify_user_able_to_COD_booking()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method appium_2.TC_0057_Verify_user_able_to_COD_booking()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0057_Verify_user_able_to_COD_booking -->
+        <test-method signature="TC_0058_admin_Request_reject()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-12T22:47:33 IST" name="TC_0058_admin_Request_reject" finished-at="2023-06-12T22:47:33 IST" depends-on-methods="Freedo_domain.appium_2.TC_0057_Verify_user_able_to_COD_booking" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method appium_2.TC_0058_admin_Request_reject()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method appium_2.TC_0058_admin_Request_reject()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0058_admin_Request_reject -->
+        <test-method signature="TC_0059_Verify_user_able_to_Online_payment_booking()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-12T22:47:33 IST" name="TC_0059_Verify_user_able_to_Online_payment_booking" finished-at="2023-06-12T22:47:33 IST" depends-on-methods="Freedo_domain.appium_2.TC_0058_admin_Request_reject" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method appium_2.TC_0059_Verify_user_able_to_Online_payment_booking()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method appium_2.TC_0059_Verify_user_able_to_Online_payment_booking()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0059_Verify_user_able_to_Online_payment_booking -->
+        <test-method signature="TC_0060_Admin_approved_request()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-12T22:47:33 IST" name="TC_0060_Admin_approved_request" finished-at="2023-06-12T22:47:33 IST" depends-on-methods="Freedo_domain.appium_2.TC_0059_Verify_user_able_to_Online_payment_booking" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method appium_2.TC_0060_Admin_approved_request()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method appium_2.TC_0060_Admin_approved_request()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0060_Admin_approved_request -->
+        <test-method signature="TC_0061_Verify_user_able_to_view_booking_status_all_elements()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-12T22:47:33 IST" name="TC_0061_Verify_user_able_to_view_booking_status_all_elements" finished-at="2023-06-12T22:47:33 IST" depends-on-methods="Freedo_domain.appium_2.TC_0060_Admin_approved_request" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method appium_2.TC_0061_Verify_user_able_to_view_booking_status_all_elements()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method appium_2.TC_0061_Verify_user_able_to_view_booking_status_all_elements()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0061_Verify_user_able_to_view_booking_status_all_elements -->
+        <test-method signature="TC_0062_Verify_user_End_ride_request()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-12T22:47:33 IST" name="TC_0062_Verify_user_End_ride_request" finished-at="2023-06-12T22:47:33 IST" depends-on-methods="Freedo_domain.appium_2.TC_0061_Verify_user_able_to_view_booking_status_all_elements" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method appium_2.TC_0062_Verify_user_End_ride_request()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method appium_2.TC_0062_Verify_user_End_ride_request()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0062_Verify_user_End_ride_request -->
+        <test-method signature="TC_0063_Verify_user_end_ride_booking_status()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-12T22:47:33 IST" name="TC_0063_Verify_user_end_ride_booking_status" finished-at="2023-06-12T22:47:33 IST" depends-on-methods="Freedo_domain.appium_2.TC_0062_Verify_user_End_ride_request" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method appium_2.TC_0063_Verify_user_end_ride_booking_status()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method appium_2.TC_0063_Verify_user_end_ride_booking_status()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0063_Verify_user_end_ride_booking_status -->
+        <test-method signature="TC_0064_Admin_check_End_ride_request()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-12T22:47:33 IST" name="TC_0064_Admin_check_End_ride_request" finished-at="2023-06-12T22:47:33 IST" depends-on-methods="Freedo_domain.appium_2.TC_0063_Verify_user_end_ride_booking_status" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method appium_2.TC_0064_Admin_check_End_ride_request()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method appium_2.TC_0064_Admin_check_End_ride_request()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- TC_0064_Admin_check_End_ride_request -->
-        <test-method signature="TC_0065_Verify_user_Complete_ride_booking_status()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-09T14:50:57 IST" name="TC_0065_Verify_user_Complete_ride_booking_status" finished-at="2023-06-09T14:50:57 IST" depends-on-methods="Freedo_domain.appium_2.TC_0064_Admin_check_End_ride_request" duration-ms="0" status="SKIP">
+        <test-method signature="TC_0065_Verify_user_Complete_ride_booking_status()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-12T22:47:33 IST" name="TC_0065_Verify_user_Complete_ride_booking_status" finished-at="2023-06-12T22:47:33 IST" depends-on-methods="Freedo_domain.appium_2.TC_0064_Admin_check_End_ride_request" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method appium_2.TC_0065_Verify_user_Complete_ride_booking_status()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods]]>
@@ -161,7 +497,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0065_Verify_user_Complete_ride_booking_status -->
-        <test-method signature="TC_0066_Verify_after_Complete_ride_invoice_button()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-09T14:50:57 IST" name="TC_0066_Verify_after_Complete_ride_invoice_button" finished-at="2023-06-09T14:50:57 IST" depends-on-methods="Freedo_domain.appium_2.TC_0065_Verify_user_Complete_ride_booking_status" duration-ms="0" status="SKIP">
+        <test-method signature="TC_0066_Verify_after_Complete_ride_invoice_button()[pri:0, instance:Freedo_domain.appium_2@740d2e78]" started-at="2023-06-12T22:47:33 IST" name="TC_0066_Verify_after_Complete_ride_invoice_button" finished-at="2023-06-12T22:47:33 IST" depends-on-methods="Freedo_domain.appium_2.TC_0065_Verify_user_Complete_ride_booking_status" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method appium_2.TC_0066_Verify_after_Complete_ride_invoice_button()[pri:0, instance:Freedo_domain.appium_2@740d2e78] depends on not successfully finished methods]]>
@@ -195,217 +531,217 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- TC_0066_Verify_after_Complete_ride_invoice_button -->
       </class> <!-- Freedo_domain.appium_2 -->
       <class name="Freedo_domain.appium_1">
-        <test-method signature="TC_0024_Verify_home_page_all_elements()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:31:21 IST" name="TC_0024_Verify_home_page_all_elements" finished-at="2023-06-09T14:31:47 IST" duration-ms="26651" status="PASS">
+        <test-method signature="TC_0024_Verify_home_page_all_elements()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:36:12 IST" name="TC_0024_Verify_home_page_all_elements" finished-at="2023-06-12T22:36:40 IST" duration-ms="27110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0024_Verify_home_page_all_elements -->
-        <test-method signature="TC_0025_Verify_available_all_bikes()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:31:47 IST" name="TC_0025_Verify_available_all_bikes" finished-at="2023-06-09T14:32:08 IST" depends-on-methods="Freedo_domain.appium_1.TC_0024_Verify_home_page_all_elements" duration-ms="20832" status="PASS">
+        <test-method signature="TC_0025_Verify_available_all_bikes()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:36:40 IST" name="TC_0025_Verify_available_all_bikes" finished-at="2023-06-12T22:37:00 IST" depends-on-methods="Freedo_domain.appium_1.TC_0024_Verify_home_page_all_elements" duration-ms="20849" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0025_Verify_available_all_bikes -->
-        <test-method signature="TC_0026_Verify_available_all_Scooters()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:32:08 IST" name="TC_0026_Verify_available_all_Scooters" finished-at="2023-06-09T14:32:15 IST" depends-on-methods="Freedo_domain.appium_1.TC_0025_Verify_available_all_bikes" duration-ms="6920" status="PASS">
+        <test-method signature="TC_0026_Verify_available_all_Scooters()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:37:00 IST" name="TC_0026_Verify_available_all_Scooters" finished-at="2023-06-12T22:37:06 IST" depends-on-methods="Freedo_domain.appium_1.TC_0025_Verify_available_all_bikes" duration-ms="5301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0026_Verify_available_all_Scooters -->
-        <test-method signature="TC_0027_Verify_homepage_bike_rentals_tab_available_bike()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:32:15 IST" name="TC_0027_Verify_homepage_bike_rentals_tab_available_bike" finished-at="2023-06-09T14:32:35 IST" depends-on-methods="Freedo_domain.appium_1.TC_0026_Verify_available_all_Scooters" duration-ms="19549" status="PASS">
+        <test-method signature="TC_0027_Verify_homepage_bike_rentals_tab_available_bike()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:37:06 IST" name="TC_0027_Verify_homepage_bike_rentals_tab_available_bike" finished-at="2023-06-12T22:37:27 IST" depends-on-methods="Freedo_domain.appium_1.TC_0026_Verify_available_all_Scooters" duration-ms="21075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0027_Verify_homepage_bike_rentals_tab_available_bike -->
-        <test-method signature="TC_0028_Verify_Rent_tab_all_elements()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:32:35 IST" name="TC_0028_Verify_Rent_tab_all_elements" finished-at="2023-06-09T14:32:47 IST" depends-on-methods="Freedo_domain.appium_1.TC_0027_Verify_homepage_bike_rentals_tab_available_bike" duration-ms="12493" status="PASS">
+        <test-method signature="TC_0028_Verify_Rent_tab_all_elements()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:37:27 IST" name="TC_0028_Verify_Rent_tab_all_elements" finished-at="2023-06-12T22:37:39 IST" depends-on-methods="Freedo_domain.appium_1.TC_0027_Verify_homepage_bike_rentals_tab_available_bike" duration-ms="12383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0028_Verify_Rent_tab_all_elements -->
-        <test-method signature="TC_0029_Verify_freedo_rental_icon()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:32:47 IST" name="TC_0029_Verify_freedo_rental_icon" finished-at="2023-06-09T14:32:51 IST" depends-on-methods="Freedo_domain.appium_1.TC_0028_Verify_Rent_tab_all_elements" duration-ms="4140" status="PASS">
+        <test-method signature="TC_0029_Verify_freedo_rental_icon()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:37:39 IST" name="TC_0029_Verify_freedo_rental_icon" finished-at="2023-06-12T22:37:43 IST" depends-on-methods="Freedo_domain.appium_1.TC_0028_Verify_Rent_tab_all_elements" duration-ms="3321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0029_Verify_freedo_rental_icon -->
-        <test-method signature="TC_0030_Verify_more_button_all_elements()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:32:51 IST" name="TC_0030_Verify_more_button_all_elements" finished-at="2023-06-09T14:33:09 IST" depends-on-methods="Freedo_domain.appium_1.TC_0029_Verify_freedo_rental_icon" duration-ms="17161" status="PASS">
+        <test-method signature="TC_0030_Verify_more_button_all_elements()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:37:43 IST" name="TC_0030_Verify_more_button_all_elements" finished-at="2023-06-12T22:38:01 IST" depends-on-methods="Freedo_domain.appium_1.TC_0029_Verify_freedo_rental_icon" duration-ms="18460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0030_Verify_more_button_all_elements -->
-        <test-method signature="TC_0031_Verify_Booking_elements()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:33:09 IST" name="TC_0031_Verify_Booking_elements" finished-at="2023-06-09T14:33:36 IST" depends-on-methods="Freedo_domain.appium_1.TC_0030_Verify_more_button_all_elements" duration-ms="27398" status="PASS">
+        <test-method signature="TC_0031_Verify_Booking_elements()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:38:01 IST" name="TC_0031_Verify_Booking_elements" finished-at="2023-06-12T22:38:31 IST" depends-on-methods="Freedo_domain.appium_1.TC_0030_Verify_more_button_all_elements" duration-ms="30199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0031_Verify_Booking_elements -->
-        <test-method signature="TC_0032_Verify_Booking_elements()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:33:36 IST" name="TC_0032_Verify_Booking_elements" finished-at="2023-06-09T14:33:51 IST" depends-on-methods="Freedo_domain.appium_1.TC_0031_Verify_Booking_elements" duration-ms="14560" status="PASS">
+        <test-method signature="TC_0032_Verify_Booking_elements()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:38:31 IST" name="TC_0032_Verify_Booking_elements" finished-at="2023-06-12T22:38:46 IST" depends-on-methods="Freedo_domain.appium_1.TC_0031_Verify_Booking_elements" duration-ms="14418" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0032_Verify_Booking_elements -->
-        <test-method signature="TC_0033_Verify_Bike_button_on_homepage()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:33:51 IST" name="TC_0033_Verify_Bike_button_on_homepage" finished-at="2023-06-09T14:34:03 IST" depends-on-methods="Freedo_domain.appium_1.TC_0032_Verify_Booking_elements" duration-ms="12736" status="PASS">
+        <test-method signature="TC_0033_Verify_Bike_button_on_homepage()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:38:46 IST" name="TC_0033_Verify_Bike_button_on_homepage" finished-at="2023-06-12T22:39:00 IST" depends-on-methods="Freedo_domain.appium_1.TC_0032_Verify_Booking_elements" duration-ms="14355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0033_Verify_Bike_button_on_homepage -->
-        <test-method signature="TC_0034_Verify_scooter_button_on_homepage()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:34:03 IST" name="TC_0034_Verify_scooter_button_on_homepage" finished-at="2023-06-09T14:34:11 IST" depends-on-methods="Freedo_domain.appium_1.TC_0033_Verify_Bike_button_on_homepage" duration-ms="7971" status="PASS">
+        <test-method signature="TC_0034_Verify_scooter_button_on_homepage()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:39:00 IST" name="TC_0034_Verify_scooter_button_on_homepage" finished-at="2023-06-12T22:39:09 IST" depends-on-methods="Freedo_domain.appium_1.TC_0033_Verify_Bike_button_on_homepage" duration-ms="8585" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0034_Verify_scooter_button_on_homepage -->
-        <test-method signature="TC_0035_Verify_user_able_to_select_date_and_package_under_booking()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:34:11 IST" name="TC_0035_Verify_user_able_to_select_date_and_package_under_booking" finished-at="2023-06-09T14:34:40 IST" depends-on-methods="Freedo_domain.appium_1.TC_0034_Verify_scooter_button_on_homepage" duration-ms="28389" status="PASS">
+        <test-method signature="TC_0035_Verify_user_able_to_select_date_and_package_under_booking()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:39:09 IST" name="TC_0035_Verify_user_able_to_select_date_and_package_under_booking" finished-at="2023-06-12T22:39:39 IST" depends-on-methods="Freedo_domain.appium_1.TC_0034_Verify_scooter_button_on_homepage" duration-ms="30254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0035_Verify_user_able_to_select_date_and_package_under_booking -->
-        <test-method signature="TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:34:40 IST" name="TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements" finished-at="2023-06-09T14:34:53 IST" depends-on-methods="Freedo_domain.appium_1.TC_0035_Verify_user_able_to_select_date_and_package_under_booking" duration-ms="13792" status="PASS">
+        <test-method signature="TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:39:39 IST" name="TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements" finished-at="2023-06-12T22:39:58 IST" depends-on-methods="Freedo_domain.appium_1.TC_0035_Verify_user_able_to_select_date_and_package_under_booking" duration-ms="18856" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements -->
-        <test-method signature="TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:34:53 IST" name="TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery" finished-at="2023-06-09T14:36:00 IST" depends-on-methods="Freedo_domain.appium_1.TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements" duration-ms="66855" status="PASS">
+        <test-method signature="TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:39:58 IST" name="TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery" finished-at="2023-06-12T22:41:22 IST" depends-on-methods="Freedo_domain.appium_1.TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements" duration-ms="84410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery -->
-        <test-method signature="TC_0038_Verify_user_able_to_select_time_slot_afternoon()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:36:00 IST" name="TC_0038_Verify_user_able_to_select_time_slot_afternoon" finished-at="2023-06-09T14:36:55 IST" depends-on-methods="Freedo_domain.appium_1.TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery" duration-ms="54660" status="PASS">
+        <test-method signature="TC_0038_Verify_user_able_to_select_time_slot_afternoon()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:41:22 IST" name="TC_0038_Verify_user_able_to_select_time_slot_afternoon" finished-at="2023-06-12T22:42:20 IST" depends-on-methods="Freedo_domain.appium_1.TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery" duration-ms="57455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0038_Verify_user_able_to_select_time_slot_afternoon -->
-        <test-method signature="TC_0039_Verify_user_able_to_select_time_slot_Evening()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:36:55 IST" name="TC_0039_Verify_user_able_to_select_time_slot_Evening" finished-at="2023-06-09T14:36:57 IST" depends-on-methods="Freedo_domain.appium_1.TC_0038_Verify_user_able_to_select_time_slot_afternoon" duration-ms="2472" status="PASS">
+        <test-method signature="TC_0039_Verify_user_able_to_select_time_slot_Evening()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:42:20 IST" name="TC_0039_Verify_user_able_to_select_time_slot_Evening" finished-at="2023-06-12T22:42:22 IST" depends-on-methods="Freedo_domain.appium_1.TC_0038_Verify_user_able_to_select_time_slot_afternoon" duration-ms="2264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0039_Verify_user_able_to_select_time_slot_Evening -->
-        <test-method signature="TC_0040_Verify_user_able_to_select_time_slot_Morning()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:36:57 IST" name="TC_0040_Verify_user_able_to_select_time_slot_Morning" finished-at="2023-06-09T14:37:01 IST" depends-on-methods="Freedo_domain.appium_1.TC_0039_Verify_user_able_to_select_time_slot_Evening" duration-ms="3119" status="PASS">
+        <test-method signature="TC_0040_Verify_user_able_to_select_time_slot_Morning()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:42:22 IST" name="TC_0040_Verify_user_able_to_select_time_slot_Morning" finished-at="2023-06-12T22:42:24 IST" depends-on-methods="Freedo_domain.appium_1.TC_0039_Verify_user_able_to_select_time_slot_Evening" duration-ms="1930" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0040_Verify_user_able_to_select_time_slot_Morning -->
-        <test-method signature="TC_0041_Verify_user_able_to_list_button()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:37:01 IST" name="TC_0041_Verify_user_able_to_list_button" finished-at="2023-06-09T14:37:03 IST" depends-on-methods="Freedo_domain.appium_1.TC_0040_Verify_user_able_to_select_time_slot_Morning" duration-ms="2771" status="PASS">
+        <test-method signature="TC_0041_Verify_user_able_to_list_button()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:42:24 IST" name="TC_0041_Verify_user_able_to_list_button" finished-at="2023-06-12T22:42:26 IST" depends-on-methods="Freedo_domain.appium_1.TC_0040_Verify_user_able_to_select_time_slot_Morning" duration-ms="2535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0041_Verify_user_able_to_list_button -->
-        <test-method signature="TC_0042_Verify_select_automation_city()[pri:2, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:37:03 IST" name="TC_0042_Verify_select_automation_city" finished-at="2023-06-09T14:38:10 IST" duration-ms="66502" status="PASS">
+        <test-method signature="TC_0042_Verify_select_automation_city()[pri:2, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:42:26 IST" name="TC_0042_Verify_select_automation_city" finished-at="2023-06-12T22:43:30 IST" duration-ms="63359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0042_Verify_select_automation_city -->
-        <test-method signature="TC_0043_Verify_continue_button_and_summary_page()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:38:10 IST" name="TC_0043_Verify_continue_button_and_summary_page" finished-at="2023-06-09T14:38:40 IST" depends-on-methods="Freedo_domain.appium_1.TC_0042_Verify_select_automation_city" duration-ms="29747" status="PASS">
+        <test-method signature="TC_0043_Verify_continue_button_and_summary_page()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:43:30 IST" name="TC_0043_Verify_continue_button_and_summary_page" finished-at="2023-06-12T22:44:04 IST" depends-on-methods="Freedo_domain.appium_1.TC_0042_Verify_select_automation_city" duration-ms="34286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0043_Verify_continue_button_and_summary_page -->
-        <test-method signature="TC_0044_Verify_summary_page_additional_helmet_charges()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:38:40 IST" name="TC_0044_Verify_summary_page_additional_helmet_charges" finished-at="2023-06-09T14:38:51 IST" depends-on-methods="Freedo_domain.appium_1.TC_0043_Verify_continue_button_and_summary_page" duration-ms="11708" status="PASS">
+        <test-method signature="TC_0044_Verify_summary_page_additional_helmet_charges()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:44:04 IST" name="TC_0044_Verify_summary_page_additional_helmet_charges" finished-at="2023-06-12T22:44:19 IST" depends-on-methods="Freedo_domain.appium_1.TC_0043_Verify_continue_button_and_summary_page" duration-ms="14874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0044_Verify_summary_page_additional_helmet_charges -->
-        <test-method signature="TC_0045_Verify_summary_page_coupon_code()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:38:51 IST" name="TC_0045_Verify_summary_page_coupon_code" finished-at="2023-06-09T14:39:07 IST" depends-on-methods="Freedo_domain.appium_1.TC_0044_Verify_summary_page_additional_helmet_charges" duration-ms="16186" status="PASS">
+        <test-method signature="TC_0045_Verify_summary_page_coupon_code()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:44:19 IST" name="TC_0045_Verify_summary_page_coupon_code" finished-at="2023-06-12T22:44:37 IST" depends-on-methods="Freedo_domain.appium_1.TC_0044_Verify_summary_page_additional_helmet_charges" duration-ms="18385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0045_Verify_summary_page_coupon_code -->
-        <test-method signature="TC_0046_Verify_summary_page_cash_on_delivery_method()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:39:07 IST" name="TC_0046_Verify_summary_page_cash_on_delivery_method" finished-at="2023-06-09T14:39:15 IST" depends-on-methods="Freedo_domain.appium_1.TC_0045_Verify_summary_page_coupon_code" duration-ms="7453" status="PASS">
+        <test-method signature="TC_0046_Verify_summary_page_cash_on_delivery_method()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:44:37 IST" name="TC_0046_Verify_summary_page_cash_on_delivery_method" finished-at="2023-06-12T22:44:46 IST" depends-on-methods="Freedo_domain.appium_1.TC_0045_Verify_summary_page_coupon_code" duration-ms="8470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0046_Verify_summary_page_cash_on_delivery_method -->
-        <test-method signature="TC_0047_Verify_summary_page_i_accept_checkbox()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:39:15 IST" name="TC_0047_Verify_summary_page_i_accept_checkbox" finished-at="2023-06-09T14:39:20 IST" depends-on-methods="Freedo_domain.appium_1.TC_0046_Verify_summary_page_cash_on_delivery_method" duration-ms="4885" status="PASS">
+        <test-method signature="TC_0047_Verify_summary_page_i_accept_checkbox()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:44:46 IST" name="TC_0047_Verify_summary_page_i_accept_checkbox" finished-at="2023-06-12T22:44:50 IST" depends-on-methods="Freedo_domain.appium_1.TC_0046_Verify_summary_page_cash_on_delivery_method" duration-ms="4556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0047_Verify_summary_page_i_accept_checkbox -->
-        <test-method signature="TC_0048_Verify_summary_page_pay_now_button()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:39:20 IST" name="TC_0048_Verify_summary_page_pay_now_button" finished-at="2023-06-09T14:39:41 IST" depends-on-methods="Freedo_domain.appium_1.TC_0047_Verify_summary_page_i_accept_checkbox" duration-ms="21301" status="PASS">
+        <test-method signature="TC_0048_Verify_summary_page_pay_now_button()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:44:50 IST" name="TC_0048_Verify_summary_page_pay_now_button" finished-at="2023-06-12T22:45:15 IST" depends-on-methods="Freedo_domain.appium_1.TC_0047_Verify_summary_page_i_accept_checkbox" duration-ms="24992" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0048_Verify_summary_page_pay_now_button -->
-        <test-method signature="TC_0049_Verify_user_able_to_make_payment()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:39:41 IST" name="TC_0049_Verify_user_able_to_make_payment" finished-at="2023-06-09T14:40:40 IST" depends-on-methods="Freedo_domain.appium_1.TC_0048_Verify_summary_page_pay_now_button" duration-ms="59091" status="PASS">
+        <test-method signature="TC_0049_Verify_user_able_to_make_payment()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:45:15 IST" name="TC_0049_Verify_user_able_to_make_payment" finished-at="2023-06-12T22:46:15 IST" depends-on-methods="Freedo_domain.appium_1.TC_0048_Verify_summary_page_pay_now_button" duration-ms="59322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0049_Verify_user_able_to_make_payment -->
-        <test-method signature="TC_0050_Verify_user_able_to_view_booking_status()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:40:40 IST" name="TC_0050_Verify_user_able_to_view_booking_status" finished-at="2023-06-09T14:40:41 IST" depends-on-methods="Freedo_domain.appium_1.TC_0049_Verify_user_able_to_make_payment" duration-ms="644" status="PASS">
+        <test-method signature="TC_0050_Verify_user_able_to_view_booking_status()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:46:15 IST" name="TC_0050_Verify_user_able_to_view_booking_status" finished-at="2023-06-12T22:46:16 IST" depends-on-methods="Freedo_domain.appium_1.TC_0049_Verify_user_able_to_make_payment" duration-ms="957" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0050_Verify_user_able_to_view_booking_status -->
-        <test-method signature="TC_0051_Verify_user_able_to_view_booking_status_all_elements()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-09T14:40:41 IST" name="TC_0051_Verify_user_able_to_view_booking_status_all_elements" finished-at="2023-06-09T14:41:28 IST" depends-on-methods="Freedo_domain.appium_1.TC_0050_Verify_user_able_to_view_booking_status" duration-ms="47598" status="PASS">
+        <test-method signature="TC_0051_Verify_user_able_to_view_booking_status_all_elements()[pri:0, instance:Freedo_domain.appium_1@b7c4869]" started-at="2023-06-12T22:46:16 IST" name="TC_0051_Verify_user_able_to_view_booking_status_all_elements" finished-at="2023-06-12T22:47:03 IST" depends-on-methods="Freedo_domain.appium_1.TC_0050_Verify_user_able_to_view_booking_status" duration-ms="47688" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0051_Verify_user_able_to_view_booking_status_all_elements -->
       </class> <!-- Freedo_domain.appium_1 -->
       <class name="Freedo_domain.appium_0">
-        <test-method is-config="true" signature="BS()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:28:22 IST" name="BS" finished-at="2023-06-09T14:28:25 IST" duration-ms="2901" status="PASS">
+        <test-method is-config="true" signature="BS()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:33:05 IST" name="BS" finished-at="2023-06-12T22:33:08 IST" duration-ms="2908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BS -->
-        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:28:25 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-06-09T14:28:58 IST" duration-ms="32758" status="PASS">
+        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:33:08 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-06-12T22:33:46 IST" duration-ms="37808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OPEN_AND_INSTALL_APP -->
-        <test-method signature="TC_001_verify_install_apk()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:28:58 IST" name="TC_001_verify_install_apk" finished-at="2023-06-09T14:29:08 IST" duration-ms="10112" status="PASS">
+        <test-method signature="TC_001_verify_install_apk()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:33:46 IST" name="TC_001_verify_install_apk" finished-at="2023-06-12T22:33:53 IST" duration-ms="7385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_001_verify_install_apk -->
-        <test-method signature="TC_002_verify_select_pickup_location_date_and_packages()[pri:1, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:29:08 IST" name="TC_002_verify_select_pickup_location_date_and_packages" finished-at="2023-06-09T14:29:09 IST" duration-ms="1244" status="PASS">
+        <test-method signature="TC_002_verify_select_pickup_location_date_and_packages()[pri:1, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:33:53 IST" name="TC_002_verify_select_pickup_location_date_and_packages" finished-at="2023-06-12T22:33:55 IST" duration-ms="1985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_002_verify_select_pickup_location_date_and_packages -->
-        <test-method signature="TC_003_Verify_the_NEXT_button_clicking()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:29:09 IST" name="TC_003_Verify_the_NEXT_button_clicking" finished-at="2023-06-09T14:29:14 IST" depends-on-methods="Freedo_domain.appium_0.TC_002_verify_select_pickup_location_date_and_packages" duration-ms="4914" status="PASS">
+        <test-method signature="TC_003_Verify_the_NEXT_button_clicking()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:33:55 IST" name="TC_003_Verify_the_NEXT_button_clicking" finished-at="2023-06-12T22:34:00 IST" depends-on-methods="Freedo_domain.appium_0.TC_002_verify_select_pickup_location_date_and_packages" duration-ms="4584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_003_Verify_the_NEXT_button_clicking -->
-        <test-method signature="TC_004_Verify_the_NEXT_button_clicking()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:29:14 IST" name="TC_004_Verify_the_NEXT_button_clicking" finished-at="2023-06-09T14:29:18 IST" depends-on-methods="Freedo_domain.appium_0.TC_003_Verify_the_NEXT_button_clicking" duration-ms="4116" status="PASS">
+        <test-method signature="TC_004_Verify_the_NEXT_button_clicking()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:34:00 IST" name="TC_004_Verify_the_NEXT_button_clicking" finished-at="2023-06-12T22:34:04 IST" depends-on-methods="Freedo_domain.appium_0.TC_003_Verify_the_NEXT_button_clicking" duration-ms="4351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_004_Verify_the_NEXT_button_clicking -->
-        <test-method signature="TC_005_Verify_the_slide_indicator()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:29:18 IST" name="TC_005_Verify_the_slide_indicator" finished-at="2023-06-09T14:29:19 IST" depends-on-methods="Freedo_domain.appium_0.TC_004_Verify_the_NEXT_button_clicking" duration-ms="454" status="PASS">
+        <test-method signature="TC_005_Verify_the_slide_indicator()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:34:04 IST" name="TC_005_Verify_the_slide_indicator" finished-at="2023-06-12T22:34:05 IST" depends-on-methods="Freedo_domain.appium_0.TC_004_Verify_the_NEXT_button_clicking" duration-ms="834" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_005_Verify_the_slide_indicator -->
-        <test-method signature="TC_006_Verify_the_Done_button_clicking()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:29:19 IST" name="TC_006_Verify_the_Done_button_clicking" finished-at="2023-06-09T14:29:20 IST" depends-on-methods="Freedo_domain.appium_0.TC_005_Verify_the_slide_indicator" duration-ms="582" status="PASS">
+        <test-method signature="TC_006_Verify_the_Done_button_clicking()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:34:05 IST" name="TC_006_Verify_the_Done_button_clicking" finished-at="2023-06-12T22:34:06 IST" depends-on-methods="Freedo_domain.appium_0.TC_005_Verify_the_slide_indicator" duration-ms="968" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_006_Verify_the_Done_button_clicking -->
-        <test-method signature="TC_007_Verify_login_component()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:29:20 IST" name="TC_007_Verify_login_component" finished-at="2023-06-09T14:29:24 IST" depends-on-methods="Freedo_domain.appium_0.TC_006_Verify_the_Done_button_clicking" duration-ms="4197" status="PASS">
+        <test-method signature="TC_007_Verify_login_component()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:34:06 IST" name="TC_007_Verify_login_component" finished-at="2023-06-12T22:34:09 IST" depends-on-methods="Freedo_domain.appium_0.TC_006_Verify_the_Done_button_clicking" duration-ms="3597" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_007_Verify_login_component -->
-        <test-method signature="TC_008_Verify_login_functionality_Register_mo_number()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:29:24 IST" name="TC_008_Verify_login_functionality_Register_mo_number" finished-at="2023-06-09T14:29:29 IST" depends-on-methods="Freedo_domain.appium_0.TC_007_Verify_login_component" duration-ms="4837" status="PASS">
+        <test-method signature="TC_008_Verify_login_functionality_Register_mo_number()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:34:09 IST" name="TC_008_Verify_login_functionality_Register_mo_number" finished-at="2023-06-12T22:34:15 IST" depends-on-methods="Freedo_domain.appium_0.TC_007_Verify_login_component" duration-ms="5722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_008_Verify_login_functionality_Register_mo_number -->
-        <test-method signature="TC_009_verify_login_button_on_create_an_account_page()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:29:29 IST" name="TC_009_verify_login_button_on_create_an_account_page" finished-at="2023-06-09T14:29:35 IST" depends-on-methods="Freedo_domain.appium_0.TC_008_Verify_login_functionality_Register_mo_number" duration-ms="6070" status="PASS">
+        <test-method signature="TC_009_verify_login_button_on_create_an_account_page()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:34:15 IST" name="TC_009_verify_login_button_on_create_an_account_page" finished-at="2023-06-12T22:34:21 IST" depends-on-methods="Freedo_domain.appium_0.TC_008_Verify_login_functionality_Register_mo_number" duration-ms="5451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_009_verify_login_button_on_create_an_account_page -->
-        <test-method signature="TC_0010_verify_create_an_account_by_clicking_login_page()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:29:35 IST" name="TC_0010_verify_create_an_account_by_clicking_login_page" finished-at="2023-06-09T14:29:40 IST" depends-on-methods="Freedo_domain.appium_0.TC_009_verify_login_button_on_create_an_account_page" duration-ms="4944" status="PASS">
+        <test-method signature="TC_0010_verify_create_an_account_by_clicking_login_page()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:34:21 IST" name="TC_0010_verify_create_an_account_by_clicking_login_page" finished-at="2023-06-12T22:34:27 IST" depends-on-methods="Freedo_domain.appium_0.TC_009_verify_login_button_on_create_an_account_page" duration-ms="6608" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0010_verify_create_an_account_by_clicking_login_page -->
-        <test-method signature="TC_0011_verify_user_able_to_create_an_account()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:29:40 IST" name="TC_0011_verify_user_able_to_create_an_account" finished-at="2023-06-09T14:29:58 IST" depends-on-methods="Freedo_domain.appium_0.TC_0010_verify_create_an_account_by_clicking_login_page" duration-ms="18273" status="PASS">
+        <test-method signature="TC_0011_verify_user_able_to_create_an_account()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:34:27 IST" name="TC_0011_verify_user_able_to_create_an_account" finished-at="2023-06-12T22:34:50 IST" depends-on-methods="Freedo_domain.appium_0.TC_0010_verify_create_an_account_by_clicking_login_page" duration-ms="22500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0011_verify_user_able_to_create_an_account -->
-        <test-method signature="TC_0012_verify_Terms_and_condition_link_on_create_an_account_page()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:29:58 IST" name="TC_0012_verify_Terms_and_condition_link_on_create_an_account_page" finished-at="2023-06-09T14:30:20 IST" depends-on-methods="Freedo_domain.appium_0.TC_0011_verify_user_able_to_create_an_account" duration-ms="21804" status="PASS">
+        <test-method signature="TC_0012_verify_Terms_and_condition_link_on_create_an_account_page()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:34:50 IST" name="TC_0012_verify_Terms_and_condition_link_on_create_an_account_page" finished-at="2023-06-12T22:35:14 IST" depends-on-methods="Freedo_domain.appium_0.TC_0011_verify_user_able_to_create_an_account" duration-ms="23826" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0012_verify_Terms_and_condition_link_on_create_an_account_page -->
-        <test-method signature="TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:30:20 IST" name="TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page" finished-at="2023-06-09T14:30:24 IST" depends-on-methods="Freedo_domain.appium_0.TC_0012_verify_Terms_and_condition_link_on_create_an_account_page" duration-ms="4841" status="PASS">
+        <test-method signature="TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:35:14 IST" name="TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page" finished-at="2023-06-12T22:35:18 IST" depends-on-methods="Freedo_domain.appium_0.TC_0012_verify_Terms_and_condition_link_on_create_an_account_page" duration-ms="4551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page -->
-        <test-method signature="TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:30:25 IST" name="TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element" finished-at="2023-06-09T14:30:30 IST" depends-on-methods="Freedo_domain.appium_0.TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page" duration-ms="5071" status="PASS">
+        <test-method signature="TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:35:18 IST" name="TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element" finished-at="2023-06-12T22:35:23 IST" depends-on-methods="Freedo_domain.appium_0.TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page" duration-ms="5160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element -->
-        <test-method signature="TC_0015_Verify_create_my_account_button()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:30:30 IST" name="TC_0015_Verify_create_my_account_button" finished-at="2023-06-09T14:30:32 IST" depends-on-methods="Freedo_domain.appium_0.TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element" duration-ms="2681" status="PASS">
+        <test-method signature="TC_0015_Verify_create_my_account_button()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:35:23 IST" name="TC_0015_Verify_create_my_account_button" finished-at="2023-06-12T22:35:26 IST" depends-on-methods="Freedo_domain.appium_0.TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element" duration-ms="2586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0015_Verify_create_my_account_button -->
-        <test-method signature="TC_0016_Verify_otp_verification_time_slot()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:30:32 IST" name="TC_0016_Verify_otp_verification_time_slot" finished-at="2023-06-09T14:30:36 IST" depends-on-methods="Freedo_domain.appium_0.TC_0015_Verify_create_my_account_button" duration-ms="3335" status="PASS">
+        <test-method signature="TC_0016_Verify_otp_verification_time_slot()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:35:26 IST" name="TC_0016_Verify_otp_verification_time_slot" finished-at="2023-06-12T22:35:29 IST" depends-on-methods="Freedo_domain.appium_0.TC_0015_Verify_create_my_account_button" duration-ms="3202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0016_Verify_otp_verification_time_slot -->
-        <test-method signature="TC_0017_Verify_OTP_Verification_Page()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:30:36 IST" name="TC_0017_Verify_OTP_Verification_Page" finished-at="2023-06-09T14:30:45 IST" depends-on-methods="Freedo_domain.appium_0.TC_0016_Verify_otp_verification_time_slot" duration-ms="9483" status="PASS">
+        <test-method signature="TC_0017_Verify_OTP_Verification_Page()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:35:29 IST" name="TC_0017_Verify_OTP_Verification_Page" finished-at="2023-06-12T22:35:38 IST" depends-on-methods="Freedo_domain.appium_0.TC_0016_Verify_otp_verification_time_slot" duration-ms="8543" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0017_Verify_OTP_Verification_Page -->
-        <test-method signature="TC_0018_Select_location()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:30:45 IST" name="TC_0018_Select_location" finished-at="2023-06-09T14:31:03 IST" depends-on-methods="Freedo_domain.appium_0.TC_0017_Verify_OTP_Verification_Page" duration-ms="17475" status="PASS">
+        <test-method signature="TC_0018_Select_location()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:35:38 IST" name="TC_0018_Select_location" finished-at="2023-06-12T22:35:52 IST" depends-on-methods="Freedo_domain.appium_0.TC_0017_Verify_OTP_Verification_Page" duration-ms="14061" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0018_Select_location -->
-        <test-method signature="TC_0019_verify_user_select_City()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:31:03 IST" name="TC_0019_verify_user_select_City" finished-at="2023-06-09T14:31:06 IST" depends-on-methods="Freedo_domain.appium_0.TC_0018_Select_location" duration-ms="3338" status="PASS">
+        <test-method signature="TC_0019_verify_user_select_City()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:35:52 IST" name="TC_0019_verify_user_select_City" finished-at="2023-06-12T22:35:56 IST" depends-on-methods="Freedo_domain.appium_0.TC_0018_Select_location" duration-ms="3880" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0019_verify_user_select_City -->
-        <test-method signature="TC_0020_Search_wrong_city_name()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:31:06 IST" name="TC_0020_Search_wrong_city_name" finished-at="2023-06-09T14:31:11 IST" depends-on-methods="Freedo_domain.appium_0.TC_0019_verify_user_select_City" duration-ms="5029" status="PASS">
+        <test-method signature="TC_0020_Search_wrong_city_name()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:35:56 IST" name="TC_0020_Search_wrong_city_name" finished-at="2023-06-12T22:36:03 IST" depends-on-methods="Freedo_domain.appium_0.TC_0019_verify_user_select_City" duration-ms="7059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0020_Search_wrong_city_name -->
-        <test-method signature="TC_0021_Search_city_name()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:31:11 IST" name="TC_0021_Search_city_name" finished-at="2023-06-09T14:31:16 IST" depends-on-methods="Freedo_domain.appium_0.TC_0020_Search_wrong_city_name" duration-ms="5408" status="PASS">
+        <test-method signature="TC_0021_Search_city_name()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:36:03 IST" name="TC_0021_Search_city_name" finished-at="2023-06-12T22:36:08 IST" depends-on-methods="Freedo_domain.appium_0.TC_0020_Search_wrong_city_name" duration-ms="5652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0021_Search_city_name -->
-        <test-method signature="TC_0022_Select_all__City()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:31:16 IST" name="TC_0022_Select_all__City" finished-at="2023-06-09T14:31:19 IST" depends-on-methods="Freedo_domain.appium_0.TC_0021_Search_city_name" duration-ms="2957" status="PASS">
+        <test-method signature="TC_0022_Select_all__City()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:36:08 IST" name="TC_0022_Select_all__City" finished-at="2023-06-12T22:36:12 IST" depends-on-methods="Freedo_domain.appium_0.TC_0021_Search_city_name" duration-ms="3268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0022_Select_all__City -->
-        <test-method signature="TC_0023_Verify_location_popup()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-09T14:31:19 IST" name="TC_0023_Verify_location_popup" finished-at="2023-06-09T14:31:21 IST" depends-on-methods="Freedo_domain.appium_0.TC_0022_Select_all__City" duration-ms="1473" status="PASS">
+        <test-method signature="TC_0023_Verify_location_popup()[pri:0, instance:Freedo_domain.appium_0@21fd5faa]" started-at="2023-06-12T22:36:12 IST" name="TC_0023_Verify_location_popup" finished-at="2023-06-12T22:36:12 IST" depends-on-methods="Freedo_domain.appium_0.TC_0022_Select_all__City" duration-ms="926" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0023_Verify_location_popup -->

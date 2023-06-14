@@ -357,8 +357,8 @@ public class booking_page {
 	@FindBy(xpath="//android.widget.EditText[@content-desc='ipt_Pincode_bDetail']")						//Click_home_delivery_pincode
 	private WebElement Click_home_delivery_pincode;
 	
-//	@FindBy(xpath="")						//
-//	private WebElement Click_home_delivery_;
+	@FindBy(xpath="//android.widget.Button[@content-desc='TabNav, back']")						//
+	private WebElement Click_home_delivery_back_button;
 	
 //========================================== Home page button =========================================================	
 	
@@ -1941,6 +1941,10 @@ public class booking_page {
 
 					public WebElement getClick_summary_pay_now_button() {
 						return Click_summary_pay_now_button;
+					}
+
+					public WebElement getClick_home_delivery_back_button() {
+						return Click_home_delivery_back_button;
 					}
 					
 

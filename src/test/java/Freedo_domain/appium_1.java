@@ -271,14 +271,19 @@ public class appium_1 extends base_class{
 		library.Custom_click(book.getClick_home_delivery_save_address_details(), "Save address details");
 		library.Custom_click(book.getClick_home_delivery_delete_address(), "delete address");
 		library.Custom_click(book.getClick_home_delivery_yes_address(), "delete confirm Yes ");
-		Thread.sleep(2000);
-		library.Custom_click(book.getClick_home_delivery_add_new_address_(), "Add new address");
 		Thread.sleep(3000);
+		library.Custom_click(book.getClick_home_delivery_add_new_address_(), "Add new address");
+		Thread.sleep(2000);
 		appium_1.Back_button();
 		Thread.sleep(1000);
 		appium_1.Back_button();
 		Thread.sleep(3000);
-		library.Custom_click(book.getClick_home_page_button(), "Home button");
+		try {
+			driver1.findElement(By.xpath("//android.widget.Button[@content-desc='TabNav, back']")).click();
+			driver1.findElement(By.xpath("//android.view.ViewGroup[@content-desc='home_tab']")).click();
+		}catch(Exception e) {
+			driver1.findElement(By.xpath("//android.view.ViewGroup[@content-desc='home_tab']")).click();
+		}
 		Thread.sleep(1000);
 		appium_1.Scroll_down_page_Action("Down");
 	}
@@ -550,13 +555,14 @@ public class appium_1 extends base_class{
 		log.info("***************TC_0051_Verify_user_able_to_view_booking_status_all_elements starts*****************");
 		
 		library.visible_link(book.getClick_show_more_details(), "show more details text");
-		library.Custom_click(book.getClick_show_more_details(), "show more details text");
+		
 		Thread.sleep(2000);
 		library.visible_link(book.getFBD_Booking_status(), "Booking status");
 		library.visible_link(book.getFBD_Booking_id(), "Booking ID ");
 		library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number ");		
 		library.visible_link(book.getFBD_pick_up_date(), "Pick Up Date =");
 		library.visible_link(book.getFBD_drop_off_date(), "Drop off date ");
+		library.Custom_click(book.getClick_show_more_details(), "show more details text");
 		library.visible_link(book.getFBD_pick_up_location(), "Pick Up Location ");
 		library.visible_link(book.getFBD_duration(), "Duration ");
 		library.visible_link(book.getFBD_handover_time(), "Handover Time ");

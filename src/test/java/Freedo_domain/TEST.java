@@ -1,6 +1,5 @@
 package Freedo_domain;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -16,48 +15,40 @@ public class TEST extends base_class {
 	public booking_page book;
 	public static ExtentTest test;
 	
-	@Test
-	public void t1() throws Exception {
-		login=PageFactory.initElements(driver1, launch_login.class);
-		book = PageFactory.initElements(driver1, booking_page.class);
+//	@Test
+//	public void t1() throws Exception {
 		
-		library.Custom_click(book.getClick_home_delivery_radio_button(), "Home delivery radio button");
-		appium_1.Scroll_UP_page_Action("up");
-		library.Custom_click(book.getClick_home_delivery_add_address(), "Add Address");
-		try {
-		library.Custom_click(book.getCod_1st_available_ok_button(), "Location on device ok");
-		}catch(Exception e) {		}
-		library.custom_sendkeys(book.getClick_home_delivery_search_address(), config.getgpsaddress(), "Searching address");
-		appium_1.EnterButton();
-		Thread.sleep(1000);
-		library.Custom_click(book.getClick_home_delivery_search_address_1(), "Random 1 option is selected address");
-		library.Custom_click(book.getClick_home_delivery_confirm_location(), "Confirm location");
-		library.custom_sendkeys(book.getClick_home_delivery_enter_name(), config.getFirst_name(), "Prathmesh");
-		library.custom_sendkeys(book.getClick_home_delivery_enter_complete_address(), config.getPort(), "Dummy address");
-		library.custom_sendkeys(book.getClick_home_delivery_landmark_optional(), config.getPort(), "Dummy address");
-		appium_1.EnterButton();
-		library.Custom_click(book.getClick_home_delivery_save_address_details(), "Save address details");
-		library.Custom_click(book.getClick_home_delivery_delete_address(), "delete address");
-		library.Custom_click(book.getClick_home_delivery_yes_address(), "delete confirm Yes ");
-		Thread.sleep(3000);
-		library.Custom_click(book.getClick_home_delivery_add_new_address_(), "Add new address");
-		Thread.sleep(2000);
-		appium_1.Back_button();
-		Thread.sleep(1000);
-		appium_1.Back_button();
-		Thread.sleep(3000);
-		try {
-			driver1.findElement(By.xpath("//android.widget.Button[@content-desc='TabNav, back']")).click();
-			driver1.findElement(By.xpath("//android.view.ViewGroup[@content-desc='home_tab']")).click();
-		}catch(Exception e) {
-			driver1.findElement(By.xpath("//android.view.ViewGroup[@content-desc='home_tab']")).click();
+		
+		@Test(priority=0)
+		public void TC_001_verify_install_apk() throws Exception {
+			login=PageFactory.initElements(driver1, launch_login.class);
+			book = PageFactory.initElements(driver1, booking_page.class);
+			log.info("***************TC_001_verify_install_apk starts*****************");
+			login=PageFactory.initElements(driver1, launch_login.class);	
+			
+			library.visible_link(login.getFirst_page_Select_pickUP_location(), "Freedo app is Install");
+			
 		}
-		Thread.sleep(1000);
-		appium_1.Scroll_down_page_Action("Down");
+	
+//============================	Launch Application =============================================================
+		@Test(priority=1)
+		public void TC_002_verify_select_pickup_location_date_and_packages() {
+			login=PageFactory.initElements(driver1, launch_login.class);	
+			log.info("***************TC_002_verify_select_pickup_location_date_and_packages starts*****************");
+			
+			library.visible_link(login.getFirst_page_Select_pickUP_location(), "Select pickup location date and packages");
+			library.isSelected(login.getfirst_page_first_slide_indicator(), "First slide indicator is ");
+			library.visible_link(login.getfirst_page_first_slide_indicator(), "first slide indicator");
+			library.visible_link(login.getFirst_page_second_slide_indicator(), "second slide indicator");
+			library.visible_link(login.getFirst_page_third_slide_indicator(), "third slide indicator");
+			library.visible_link(login.getClick_Next_button1(), "Next_button static 1st page");
+			library.visible_link(login.getClick_Skip_button1(), "Skip_button static 1st page");
+				
+		}
 	
 		
 	
 	
-	}
+//	}
 	
 }

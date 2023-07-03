@@ -62,6 +62,7 @@ public class appium_0 extends base_class {
 			log.info("***************TC_004_Verify_the_NEXT_button_clicking starts*****************");
 			
 			library.Custom_click(login.getClick_Next_button2(), "Next_button2 static 2nd page");
+			Thread.sleep(2000);
 			library.isSelected(login.getFirst_page_third_slide_indicator(), "Third slide indicator is ");
 			library.visible_link(login.getThirdpage_onboarding_tittle()," = "+ login.getThirdpage_onboarding_tittle().getText());
 			

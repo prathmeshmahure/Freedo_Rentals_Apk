@@ -52,11 +52,11 @@ public class base_class {
 			cap.setCapability("appium:udid", "emulator-5554");// 0836731257071990 //emulator-5554 //0526532038000424
 			cap.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
 			cap.setCapability("appium:avdLaunchTimeout", 600000);		
-//			cap.setCapability("appPackage", "com.heerofreedo");
-//			cap.setCapability("appActivity", "com.heerofreedo.MainActivity");
-//			cap.setCapability("appium:noReset", "false");
+			cap.setCapability("appPackage", "com.heerofreedo");
+			cap.setCapability("appActivity", "com.heerofreedo.MainActivity");
+			cap.setCapability("appium:noReset", "false");
 			
-			cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\10app-release.apk"));
+//			cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\10app-release.apk"));
 //			cap.setChromedriverExecutable(System.getProperty("user.dir")+"\\apk\\chromedriver.exe");
 			cap.setCapability("appium:ensureWebviewsHavePages", true);
 			cap.setCapability("appium:nativeWebScreenshot", true);
@@ -68,7 +68,7 @@ public class base_class {
 		
 		
 	*/	
-		
+	
 		
 		
 		

@@ -44,7 +44,8 @@ public class appium_0 extends base_class {
 				
 		}
 //================================ static_pages_view ============================================================
-		@Test(dependsOnMethods={"TC_002_verify_select_pickup_location_date_and_packages"})	
+	//	@Test(dependsOnMethods={"TC_002_verify_select_pickup_location_date_and_packages"})	
+		@Test(priority=2)
 		public void TC_003_Verify_the_NEXT_button_clicking() throws Exception  {
 			log.info("***************TC_003_Verify_the_NEXT_button_clicking starts*****************");
 			
@@ -57,7 +58,8 @@ public class appium_0 extends base_class {
 		}
 		
 //================================================================================================================
-		@Test(dependsOnMethods={"TC_003_Verify_the_NEXT_button_clicking"})	
+		//@Test(dependsOnMethods={"TC_003_Verify_the_NEXT_button_clicking"})	
+		@Test(priority=3)
 		public void TC_004_Verify_the_NEXT_button_clicking() throws Exception  {
 			log.info("***************TC_004_Verify_the_NEXT_button_clicking starts*****************");
 			
@@ -69,7 +71,8 @@ public class appium_0 extends base_class {
 		}
 		
 //================================================================================================================
-		@Test(dependsOnMethods={"TC_004_Verify_the_NEXT_button_clicking"})	
+		//@Test(dependsOnMethods={"TC_004_Verify_the_NEXT_button_clicking"})	
+		@Test(priority=4)
 		public void TC_005_Verify_the_slide_indicator() throws Exception  {
 			log.info("***************TC_005_Verify_the_slide_indicator starts*****************");
 			
@@ -79,7 +82,8 @@ public class appium_0 extends base_class {
 		}
 		
 //================================================================================================================
-		@Test(dependsOnMethods={"TC_005_Verify_the_slide_indicator"})	
+	//	@Test(dependsOnMethods={"TC_005_Verify_the_slide_indicator"})	
+		@Test(priority=5)
 		public void TC_006_Verify_the_Done_button_clicking() throws Exception  {
 			log.info("***************TC_006_Verify_the_Done_button_clicking starts*****************");
 				
@@ -89,7 +93,8 @@ public class appium_0 extends base_class {
 
 
 //=====================Verify_login_component_login_page =======================================================
-		@Test(dependsOnMethods={"TC_006_Verify_the_Done_button_clicking"})	
+		//@Test(dependsOnMethods={"TC_006_Verify_the_Done_button_clicking"})	
+		@Test(priority=6)
 		public void TC_007_Verify_login_component()  {
 			log.info("***************TC_007_Verify_login_component starts*****************");
 			
@@ -105,7 +110,8 @@ public class appium_0 extends base_class {
 		}
 		
 //================================== Frontend_login ================================================================
-		@Test(dependsOnMethods={"TC_007_Verify_login_component"})
+		//@Test(dependsOnMethods={"TC_007_Verify_login_component"})
+		@Test(priority=7)
 		public void TC_008_Verify_login_functionality_Register_mo_number() throws Exception  {
 			log.info("***************TC_008_Verify_login_functionality_Register_mo_number starts*****************");
 		
@@ -115,7 +121,8 @@ public class appium_0 extends base_class {
 		//	library.Custom_click(login.getClick_Login_button(), "login button");
 		}
 //=================================================================================================================		
-		@Test(dependsOnMethods={"TC_008_Verify_login_functionality_Register_mo_number"})
+	//	@Test(dependsOnMethods={"TC_008_Verify_login_functionality_Register_mo_number"})
+		@Test(priority=8)
 		public void TC_009_verify_login_button_on_create_an_account_page() throws Exception {
 			log.info("***************TC_009_verify_login_button_on_create_an_account_page starts*****************");
 			
@@ -126,7 +133,8 @@ public class appium_0 extends base_class {
 			
 		}	
 //=================================================================================================================
-		@Test(dependsOnMethods={"TC_009_verify_login_button_on_create_an_account_page"})
+	//	@Test(dependsOnMethods={"TC_009_verify_login_button_on_create_an_account_page"})
+		@Test(priority=9)
 		public void TC_0010_verify_create_an_account_by_clicking_login_page() {
 			log.info("***************TC_0010_verify_create_an_account_by_clicking_login_page starts*****************");
 
@@ -144,7 +152,8 @@ public class appium_0 extends base_class {
 			library.visible_link(login.getField_login(), "Login");			
 		}
 //===================================================================================================================		
-		@Test(dependsOnMethods={"TC_0010_verify_create_an_account_by_clicking_login_page"})
+	//	@Test(dependsOnMethods={"TC_0010_verify_create_an_account_by_clicking_login_page"})
+		@Test(priority=10)
 		public void TC_0011_verify_user_able_to_create_an_account() {
 			log.info("***************TC_0011_verify_user_able_to_create_an_account starts*****************");
 			book = PageFactory.initElements(driver1, booking_page.class);
@@ -174,7 +183,8 @@ public class appium_0 extends base_class {
 		//	library.Custom_click(login.getClick_Create_My_Account(), "Create my account");		
 		}
 //==================================================================================================================		
-		@Test(dependsOnMethods={"TC_0011_verify_user_able_to_create_an_account"})
+	//	@Test(dependsOnMethods={"TC_0011_verify_user_able_to_create_an_account"})
+		@Test(priority=11)
 		public void TC_0012_verify_Terms_and_condition_link_on_create_an_account_page() throws Exception {
 			log.info("***************TC_0012_verify_Terms_and_condition_link_on_create_an_account_page starts*****************");
 			
@@ -186,7 +196,8 @@ public class appium_0 extends base_class {
 			library.Custom_click(login.getBack_button(), "Terms and condition back button ");		
 		}
 //===================================================================================================================
-		@Test(dependsOnMethods={"TC_0012_verify_Terms_and_condition_link_on_create_an_account_page"})
+	//	@Test(dependsOnMethods={"TC_0012_verify_Terms_and_condition_link_on_create_an_account_page"})
+		@Test(priority=12)
 		public void TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page() {
 			log.info("***************TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page starts*****************");
 			
@@ -197,7 +208,8 @@ public class appium_0 extends base_class {
 			library.visible_link(login.getBack_button(), " back button ");		
 		}
 //=======================================================================================================================		
-		@Test(dependsOnMethods={"TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page"})
+	//	@Test(dependsOnMethods={"TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page"})
+		@Test(priority=13)
 		public void TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element() {
 			log.info("***************TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element starts*****************");
 			
@@ -209,14 +221,16 @@ public class appium_0 extends base_class {
 //================================================================================================================		
 		
 //=================================================================================================================		
-		@Test(dependsOnMethods={"TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element"})
+		//@Test(dependsOnMethods={"TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element"})
+		@Test(priority=14)
 		public void TC_0015_Verify_create_my_account_button() throws Exception  {
 			log.info("***************TC_0015_Verify_create_my_account_button starts*****************");
 		
 			library.Custom_click(login.getClick_Create_My_Account(), "Create my account");
 		}
 //=================================================================================================================
-		@Test(dependsOnMethods={"TC_0015_Verify_create_my_account_button"})
+	//	@Test(dependsOnMethods={"TC_0015_Verify_create_my_account_button"})
+		@Test(priority=15)
 		public void TC_0016_Verify_otp_verification_time_slot() throws Exception  {
 			log.info("***************TC_0016_Verify_otp_verification_time_slot starts*****************");
 			
@@ -230,7 +244,8 @@ public class appium_0 extends base_class {
 		
 		
 //================================ OTP VERIFYCATION PAGE ==========================================================
-		@Test(dependsOnMethods={"TC_0016_Verify_otp_verification_time_slot"})
+	//	@Test(dependsOnMethods={"TC_0016_Verify_otp_verification_time_slot"})
+		@Test(priority=16)
 		public void TC_0017_Verify_OTP_Verification_Page() throws InterruptedException   {
 			log.info("***************TC_0017_Verify_OTP_Verification_Page starts*****************");
 			Thread.sleep(5000);	
@@ -244,7 +259,8 @@ public class appium_0 extends base_class {
 		}
 
 //========================= After login select location ===============================================================
-		@Test(dependsOnMethods={"TC_0017_Verify_OTP_Verification_Page"})
+	//	@Test(dependsOnMethods={"TC_0017_Verify_OTP_Verification_Page"})
+		@Test(priority=17)
 		public void TC_0018_Select_location() throws Exception  {
 			log.info("***************TC_0018_Select_location starts*****************");
 			
@@ -261,7 +277,8 @@ public class appium_0 extends base_class {
 		}
 //============================Verify city visible =======================================================================
 		
-		@Test(dependsOnMethods={"TC_0018_Select_location"})
+	//	@Test(dependsOnMethods={"TC_0018_Select_location"})
+		@Test(priority=18)
 		public void TC_0019_verify_user_select_City() {
 			log.info("***************TC_0019_verify_user_select_City starts*****************");
 				
@@ -275,7 +292,8 @@ public class appium_0 extends base_class {
 				}
 		
 //================================ Search city name =====================================================================
-		@Test(dependsOnMethods={"TC_0019_verify_user_select_City"})
+	//	@Test(dependsOnMethods={"TC_0019_verify_user_select_City"})
+		@Test(priority=19)
 		public void TC_0020_Search_wrong_city_name() throws Exception  {
 				log.info("***************TC_0020_Search_wrong_city_name starts*****************");
 					
@@ -285,7 +303,8 @@ public class appium_0 extends base_class {
 			library.visible_link(login.getSelected_city_not_available(), "Selected city not available");
 				}
 //================================ Search city name =====================================================================
-		@Test(dependsOnMethods={"TC_0020_Search_wrong_city_name"})
+	//	@Test(dependsOnMethods={"TC_0020_Search_wrong_city_name"})
+		@Test(priority=20)
 		public void TC_0021_Search_city_name() throws Exception  {
 			log.info("***************TC_0021_Search_city_name starts*****************");
 			
@@ -296,7 +315,8 @@ public class appium_0 extends base_class {
 		}			
 //===========================Select city =============================================================================
 		
-		@Test(dependsOnMethods={"TC_0021_Search_city_name"})
+	//	@Test(dependsOnMethods={"TC_0021_Search_city_name"})
+		@Test(priority=21)
 		public void TC_0022_Select_all__City() {
 			log.info("***************TC_0022_Select_all__City starts*****************");
 			
@@ -304,7 +324,8 @@ public class appium_0 extends base_class {
 
 		}
 //=========================================================================================================================
-		@Test(dependsOnMethods={"TC_0022_Select_all__City"})
+		//@Test(dependsOnMethods={"TC_0022_Select_all__City"})
+		@Test(priority=22)
 		public void TC_0023_Verify_location_popup() {
 			log.info("***************TC_0023_Verify_location_popup starts*****************");
 			

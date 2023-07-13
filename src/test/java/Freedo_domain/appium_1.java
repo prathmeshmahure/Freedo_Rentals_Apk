@@ -19,7 +19,7 @@ public class appium_1 extends base_class{
 	public static ExtentTest test;
 	
 //========================================== Booking page =========================================================
-	@Test
+	@Test(priority=1)
 	public void TC_0024_Verify_home_page_all_elements() throws Exception {
 		book = PageFactory.initElements(driver1, booking_page.class);
 		log.info("***************TC_0024_Verify_home_page_all_elements starts*****************");		
@@ -44,7 +44,8 @@ public class appium_1 extends base_class{
 		
 		}	
 //===================================================================================================================	
-	@Test(dependsOnMethods={"TC_0024_Verify_home_page_all_elements"})
+	//@Test(dependsOnMethods={"TC_0024_Verify_home_page_all_elements"})
+	@Test(priority=2)
 	public void TC_0025_Verify_available_all_bikes() throws Exception {
 		book = PageFactory.initElements(driver1, booking_page.class);
 		log.info("***************TC_0025_Verify_available_all_bikes starts*****************");
@@ -61,7 +62,8 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getAvailable_bikes(), book.getAvailable_bikes().getText());
 	}
 //=================================================================================================================
-	@Test(dependsOnMethods={"TC_0025_Verify_available_all_bikes"})
+	//@Test(dependsOnMethods={"TC_0025_Verify_available_all_bikes"})
+	@Test(priority=3)
 	public void TC_0026_Verify_available_all_Scooters() throws Exception {
 		log.info("***************TC_0026_Verify_available_all_Scooters starts*****************");
 		
@@ -71,7 +73,8 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getAvailable_bikes(), book.getAvailable_bikes().getText());
 	}
 //================================================================================================================	
-	@Test(dependsOnMethods={"TC_0026_Verify_available_all_Scooters"})
+//	@Test(dependsOnMethods={"TC_0026_Verify_available_all_Scooters"})
+	@Test(priority=4)
 	public void TC_0027_Verify_homepage_bike_rentals_tab_available_bike() throws Exception {
 		log.info("***************TC_0027_Verify_homepage_bike_rentals_tab_available_bike starts*****************");
 		
@@ -88,7 +91,8 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getAvailable_bikes(), book.getAvailable_bikes().getText());
 	}
 //================================================================================================================	
-	@Test(dependsOnMethods={"TC_0027_Verify_homepage_bike_rentals_tab_available_bike"})
+	//@Test(dependsOnMethods={"TC_0027_Verify_homepage_bike_rentals_tab_available_bike"})
+	@Test(priority=5)
 	public void TC_0028_Verify_Rent_tab_all_elements() throws Exception {
 		log.info("***************TC_0028_Verify_Rent_tab_all_elements starts*****************");
 		
@@ -103,7 +107,8 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getRent_enjoy_ride(), "Enjoy the ride");
 	}
 //===============================================================================================================	
-	@Test(dependsOnMethods={"TC_0028_Verify_Rent_tab_all_elements"})
+	//@Test(dependsOnMethods={"TC_0028_Verify_Rent_tab_all_elements"})
+	@Test(priority=6)
 	public void TC_0029_Verify_freedo_rental_icon() throws Exception {
 		log.info("***************TC_0029_Verify_freedo_rental_icon starts*****************");
 		
@@ -117,7 +122,8 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getDifferent_city_name(), "Home page");
 	}
 //==================================================================================================================
-	@Test(dependsOnMethods={"TC_0029_Verify_freedo_rental_icon"})
+	//@Test(dependsOnMethods={"TC_0029_Verify_freedo_rental_icon"})
+	@Test(priority=7)
 	public void TC_0030_Verify_more_button_all_elements() throws Exception {
 		log.info("***************TC_0030_Verify_more_button_all_elements starts*****************");
 		
@@ -142,7 +148,8 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getMore_button_app_version(), "App "+book.getMore_button_app_version().getText());
 	}
 //====================================================================================================================
-	@Test(dependsOnMethods={"TC_0030_Verify_more_button_all_elements"})
+	//@Test(dependsOnMethods={"TC_0030_Verify_more_button_all_elements"})
+	@Test(priority=8)
 	public void TC_0031_Verify_Booking_elements() throws Exception {
 		log.info("***************TC_0031_Verify_Booking_elements starts*****************");
 		
@@ -169,7 +176,8 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getClick_booking_page_view_button(), "view booking");
 	}
 //======================================================================================================================	
-	@Test(dependsOnMethods={"TC_0031_Verify_Booking_elements"})
+	//@Test(dependsOnMethods={"TC_0031_Verify_Booking_elements"})
+	@Test(priority=9)
 	public void TC_0032_Verify_Booking_elements() throws Exception {
 		login=PageFactory.initElements(driver1, launch_login.class);
 		log.info("***************TC_0032_Verify_Booking_elements starts*****************");
@@ -183,7 +191,8 @@ public class appium_1 extends base_class{
 		library.Custom_click(login.getSelect_City_Automation_City(), "Automation city");	
 	}
 //======================================================================================================================
-	@Test(dependsOnMethods={"TC_0032_Verify_Booking_elements"})
+	//@Test(dependsOnMethods={"TC_0032_Verify_Booking_elements"})
+	@Test(priority=10)
 	public void TC_0033_Verify_Bike_button_on_homepage() throws Exception {
 		log.info("***************TC_0033_Verify_Bike_button_on_homepage starts*****************");
 		
@@ -195,7 +204,8 @@ public class appium_1 extends base_class{
 		appium_1.Scroll_UP_page_Action("up");
 	}
 //======================================================================================================================	
-	@Test(dependsOnMethods={"TC_0033_Verify_Bike_button_on_homepage"})
+	//@Test(dependsOnMethods={"TC_0033_Verify_Bike_button_on_homepage"})
+	@Test(priority=11)
 	public void TC_0034_Verify_scooter_button_on_homepage() throws Exception {
 		log.info("***************TC_0034_Verify_scooter_button_on_homepage starts*****************");
 		
@@ -206,7 +216,8 @@ public class appium_1 extends base_class{
 		library.passmsg("Scooter is ", "Available");
 	}
 //=====================================================================================================================	
-	@Test(dependsOnMethods={"TC_0034_Verify_scooter_button_on_homepage"})
+	//@Test(dependsOnMethods={"TC_0034_Verify_scooter_button_on_homepage"})
+	@Test(priority=12)
 	public void TC_0035_Verify_user_able_to_select_date_and_package_under_booking() throws Exception {
 		log.info("***************TC_0035_Verify_user_able_to_select_date_and_package_under_booking starts*****************");
 		
@@ -222,7 +233,8 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getBooking_details_page_price(), "Price is ="+book.getBooking_details_page_price().getText());
 	}
 //======================================================================================================================
-	@Test(dependsOnMethods={"TC_0035_Verify_user_able_to_select_date_and_package_under_booking"})
+	//@Test(dependsOnMethods={"TC_0035_Verify_user_able_to_select_date_and_package_under_booking"})
+	@Test(priority=13)
 	public void TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements() throws Exception {
 		log.info("***************TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements starts*****************");
 		
@@ -248,7 +260,8 @@ public class appium_1 extends base_class{
 		
 	}
 //===========================================================================================================================
-	@Test(dependsOnMethods={"TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements"})
+	//@Test(dependsOnMethods={"TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements"})
+	@Test(priority=14)
 	public void TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery() throws Exception {
 		log.info("***************TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery starts*****************");
 		
@@ -288,7 +301,8 @@ public class appium_1 extends base_class{
 		appium_1.Scroll_down_page_Action("Down");
 	}
 //=========================================================================================================================	
-	@Test(dependsOnMethods={"TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery"})
+	//@Test(dependsOnMethods={"TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery"})
+	@Test(priority=15)
 	public void TC_0038_Verify_user_able_to_select_time_slot_afternoon() throws Exception {
 		log.info("***************TC_0038_Verify_user_able_to_select_time_slot_afternoon starts*****************");
 		
@@ -315,7 +329,8 @@ public class appium_1 extends base_class{
 		library.isSelected(book.getBooking_details_page_afternoon(), "Afternoon is");
 	}
 //==============================================================================================================================	
-	@Test(dependsOnMethods={"TC_0038_Verify_user_able_to_select_time_slot_afternoon"})
+	//@Test(dependsOnMethods={"TC_0038_Verify_user_able_to_select_time_slot_afternoon"})
+	@Test(priority=16)
 	public void TC_0039_Verify_user_able_to_select_time_slot_Evening() throws Exception {
 		log.info("***************TC_0039_Verify_user_able_to_select_time_slot_Evening starts*****************");
 		
@@ -325,7 +340,8 @@ public class appium_1 extends base_class{
 		library.isSelected(book.getBooking_details_page_evening(), "Evening is");
 	}
 //========================================================================================================================
-	@Test(dependsOnMethods={"TC_0039_Verify_user_able_to_select_time_slot_Evening"})
+	//@Test(dependsOnMethods={"TC_0039_Verify_user_able_to_select_time_slot_Evening"})
+	@Test(priority=17)
 	public void TC_0040_Verify_user_able_to_select_time_slot_Morning() throws Exception {
 		log.info("***************TC_0040_Verify_user_able_to_select_time_slot_Morning starts*****************");
 		
@@ -334,7 +350,8 @@ public class appium_1 extends base_class{
 		library.isSelected(book.getBooking_details_page_morning(), "Morning is");
 	}
 //=================================================================================================================================
-	@Test(dependsOnMethods={"TC_0040_Verify_user_able_to_select_time_slot_Morning"})
+	//@Test(dependsOnMethods={"TC_0040_Verify_user_able_to_select_time_slot_Morning"})
+	@Test(priority=18)
 	public void TC_0041_Verify_user_able_to_list_button() throws Exception {
 		log.info("***************TC_0041_Verify_user_able_to_list_button starts*****************");
 		
@@ -349,7 +366,7 @@ public class appium_1 extends base_class{
 	}
 //==================================================================================================================================	
 //	@Test(dependsOnMethods={"TC_0041_Verify_user_able_to_list_button"})
-	@Test(priority=2)
+	@Test(priority=19)
 	public void TC_0042_Verify_select_automation_city() throws Exception {
 		login=PageFactory.initElements(driver1, launch_login.class);
 		log.info("***************TC_0042_Verify_select_automation_city starts*****************");
@@ -379,8 +396,8 @@ public class appium_1 extends base_class{
 		appium_1.Scroll_UP_page_Action("up");
 	}
 //==================================================================================================================
-	@Test(dependsOnMethods={"TC_0042_Verify_select_automation_city"})
-//	@Test
+	//@Test(dependsOnMethods={"TC_0042_Verify_select_automation_city"})
+	@Test(priority=20)
 	public void TC_0043_Verify_continue_button_and_summary_page() throws Exception {
 		log.info("***************TC_0043_Verify_continue_button_and_summary_page starts*****************");
 		book = PageFactory.initElements(driver1, booking_page.class);
@@ -432,7 +449,8 @@ public class appium_1 extends base_class{
 		library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
 	}
 //===================================================================================================================	
-	@Test(dependsOnMethods={"TC_0043_Verify_continue_button_and_summary_page"})
+	//@Test(dependsOnMethods={"TC_0043_Verify_continue_button_and_summary_page"})
+	@Test(priority=21)
 	public void TC_0044_Verify_summary_page_additional_helmet_charges() throws Exception {
 		log.info("***************TC_0044_Verify_summary_page_additional_helmet_charges starts*****************");
 		
@@ -454,7 +472,8 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getSummary_total_amount(), "Total Amount = "+ book.getSummary_total_amount().getText());
 	}
 //======================================================================================================================
-	@Test(dependsOnMethods={"TC_0044_Verify_summary_page_additional_helmet_charges"})
+	//@Test(dependsOnMethods={"TC_0044_Verify_summary_page_additional_helmet_charges"})
+	@Test(priority=22)
 	public void TC_0045_Verify_summary_page_coupon_code() throws Exception {
 		log.info("***************TC_0045_Verify_summary_page_coupon_code starts*****************");
 		
@@ -478,7 +497,8 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getSummary_total_amount(), "Total Amount = "+ book.getSummary_total_amount().getText());
 	}
 //=========================================================================================================================	
-	@Test(dependsOnMethods={"TC_0045_Verify_summary_page_coupon_code"})
+	//@Test(dependsOnMethods={"TC_0045_Verify_summary_page_coupon_code"})
+	@Test(priority=23)
 	public void TC_0046_Verify_summary_page_cash_on_delivery_method() throws Exception {
 		log.info("***************TC_0046_Verify_summary_page_cash_on_delivery_method starts*****************");
 		
@@ -493,7 +513,8 @@ public class appium_1 extends base_class{
 
 	}
 //===========================================================================================================================	
-	@Test(dependsOnMethods={"TC_0046_Verify_summary_page_cash_on_delivery_method"})
+	//@Test(dependsOnMethods={"TC_0046_Verify_summary_page_cash_on_delivery_method"})
+	@Test(priority=24)
 	public void TC_0047_Verify_summary_page_i_accept_checkbox() throws Exception {
 		log.info("***************TC_0047_Verify_summary_page_i_accept_checkbox starts*****************");
 		
@@ -507,7 +528,8 @@ public class appium_1 extends base_class{
 		
 	}
 //============================================================================================================================	
-	@Test(dependsOnMethods={"TC_0047_Verify_summary_page_i_accept_checkbox"})
+	//@Test(dependsOnMethods={"TC_0047_Verify_summary_page_i_accept_checkbox"})
+	@Test(priority=25)
 	public void TC_0048_Verify_summary_page_pay_now_button() throws Exception {
 		log.info("***************TC_0048_Verify_summary_page_pay_now_button starts*****************");
 		
@@ -521,7 +543,8 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getClick_pay_now_button(), "Pay now button");
 	}
 //============================================================================================================================
-	@Test(dependsOnMethods={"TC_0048_Verify_summary_page_pay_now_button"})
+	//@Test(dependsOnMethods={"TC_0048_Verify_summary_page_pay_now_button"})
+	@Test(priority=26)
 	public void TC_0049_Verify_user_able_to_make_payment() throws Exception {
 		log.info("***************TC_0049_Verify_user_able_to_make_payment starts*****************");
 		
@@ -542,7 +565,8 @@ public class appium_1 extends base_class{
 		}catch(Exception e){		}	
 	}
 //=============================================================================================================================
-	@Test(dependsOnMethods={"TC_0049_Verify_user_able_to_make_payment"})
+	//@Test(dependsOnMethods={"TC_0049_Verify_user_able_to_make_payment"})
+	@Test(priority=27)
 	public void TC_0050_Verify_user_able_to_view_booking_status() throws Exception {
 		log.info("***************TC_0050_Verify_user_able_to_view_booking_status starts*****************");
 		
@@ -550,7 +574,8 @@ public class appium_1 extends base_class{
 		
 	}
 //=============================================================================================================================	
-	@Test(dependsOnMethods={"TC_0050_Verify_user_able_to_view_booking_status"})
+	//@Test(dependsOnMethods={"TC_0050_Verify_user_able_to_view_booking_status"})
+	@Test(priority=28)
 	public void TC_0051_Verify_user_able_to_view_booking_status_all_elements() throws Exception {
 		log.info("***************TC_0051_Verify_user_able_to_view_booking_status_all_elements starts*****************");
 		

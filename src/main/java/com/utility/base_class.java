@@ -43,7 +43,7 @@ public class base_class {
 	@BeforeTest	//(dependsOnMethods="Champion_app_install") 	
 	  public  void OPEN_AND_INSTALL_APP() throws MalformedURLException, Exception {
 		
-/*	
+/*	*/
  
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setCapability("appium:automationName", "uiautomator2");
@@ -67,12 +67,12 @@ public class base_class {
 		    driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
 		
 		
-	*/	
+/*	*/	
 	
 		
 		
 		
-/*	*/	//========================== *******  Pcloudy =========================
+/*		//========================== *******  Pcloudy =========================
 		
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		 capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
@@ -94,7 +94,7 @@ public class base_class {
 		 capabilities.setCapability("pCloudy_EnableDeviceLogs", "true");
 		 
 		 driver1 = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
-/*
+
 */
 		driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	    log = LogManager.getLogger("Freedo_Rentals_Apk");

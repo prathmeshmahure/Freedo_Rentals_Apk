@@ -24,7 +24,7 @@ public class appium_2 extends base_class{
 	public static ExtentTest test;
 //============================================================================================================
 //	@Test(dependsOnMethods={"TC_0051_Verify_user_able_to_view_booking_status_all_elements"})
-	@Test
+	@Test(priority=1)
 	public void TC_0052_admin_Request_reject () throws Exception  {
 		log.info("***************TC_0052_admin_Request_reject starts*****************");
 
@@ -77,7 +77,8 @@ public class appium_2 extends base_class{
 	}
 
 //=============================================================================================================
-	@Test(dependsOnMethods={"TC_0052_admin_Request_reject"})
+	//@Test(dependsOnMethods={"TC_0052_admin_Request_reject"})
+	@Test(priority=2)
 	public void TC_0053_Track_booking_status () throws Exception  {
 		book = PageFactory.initElements(driver1, booking_page.class);
 		log.info("***************TC_0053_Track_booking_status starts*****************");
@@ -95,7 +96,8 @@ public class appium_2 extends base_class{
 		Thread.sleep(1000);
 	}
 //==============================================================================================================	
-	@Test(dependsOnMethods={"TC_0053_Track_booking_status"})
+	//@Test(dependsOnMethods={"TC_0053_Track_booking_status"})
+	@Test(priority=3)
 	public void TC_0054_Verify_user_able_to_logout_cancel () throws Exception  {
 		log.info("***************TC_0054_Verify_user_able_to_logout_cancel starts*****************");
 			
@@ -109,7 +111,8 @@ public class appium_2 extends base_class{
 		library.Custom_click(book.getMore_button_logout_cancel(), "Logout cancel");
 	}
 //=============================================================================================================
-	@Test(dependsOnMethods={"TC_0054_Verify_user_able_to_logout_cancel"})
+	//@Test(dependsOnMethods={"TC_0054_Verify_user_able_to_logout_cancel"})
+	@Test(priority=4)
 	public void TC_0055_Verify_user_able_to_successful_logout () throws Exception  {
 		login=PageFactory.initElements(driver1, launch_login.class);
 		log.info("***************TC_0055_Verify_user_able_to_logout starts*****************");
@@ -121,7 +124,8 @@ public class appium_2 extends base_class{
 		library.visible_link(login.getLogin_heading(), "Login heading");
 	}
 //==================================================================================================================
-	@Test(dependsOnMethods={"TC_0055_Verify_user_able_to_successful_logout"})
+	//@Test(dependsOnMethods={"TC_0055_Verify_user_able_to_successful_logout"})
+	@Test(priority=5)
 	public void TC_0056_Verify_user_able_to_deactivate_account () throws Exception  {
 		login=PageFactory.initElements(driver1, launch_login.class);
 		log.info("***************TC_0056_Verify_user_able_to_deactivate_account starts*****************");
@@ -156,7 +160,8 @@ public class appium_2 extends base_class{
 		Thread.sleep(1000);
 	}
 //============================================================================================================================
-	@Test(dependsOnMethods={"TC_0056_Verify_user_able_to_deactivate_account"})
+	//@Test(dependsOnMethods={"TC_0056_Verify_user_able_to_deactivate_account"})
+	@Test(priority=6)
 	public void TC_0057_Verify_user_able_to_COD_booking() throws Exception  {
 		log.info("***************TC_0057_Verify_user_able_to_COD_booking starts*****************");
 		
@@ -183,8 +188,8 @@ public class appium_2 extends base_class{
 		library.Custom_click(book.getClick_view_booking(), "View booking");
 	}
 //=============================================================================================================================	
-	@Test(dependsOnMethods={"TC_0057_Verify_user_able_to_COD_booking"})
-//	@Test
+	//@Test(dependsOnMethods={"TC_0057_Verify_user_able_to_COD_booking"})
+	@Test(priority=7)
 	public void TC_0058_admin_Request_reject () throws Exception  {
 		log.info("***************TC_0058_admin_Request_reject starts*****************");
 
@@ -235,7 +240,8 @@ public class appium_2 extends base_class{
 		driver.close();
 	}
 //===========================================================================================================================
-	@Test(dependsOnMethods={"TC_0058_admin_Request_reject"})
+	//@Test(dependsOnMethods={"TC_0058_admin_Request_reject"})
+	@Test(priority=8)
 	public void TC_0059_Verify_user_able_to_Online_payment_booking() throws Exception  {
 		log.info("***************TC_0059_Verify_user_able_to_Online_payment_booking starts*****************");
 		
@@ -272,8 +278,8 @@ public class appium_2 extends base_class{
 		}catch(Exception e){		}	
 	}
 //================================================================================================================================	
-	@Test(dependsOnMethods={"TC_0059_Verify_user_able_to_Online_payment_booking"})
-//	@Test
+	//@Test(dependsOnMethods={"TC_0059_Verify_user_able_to_Online_payment_booking"})
+	@Test(priority=9)
 	public void TC_0060_Admin_approved_request () throws Exception {
 		log.info("***************TC_0060_Admin_approved_request starts*****************");
 		
@@ -360,7 +366,8 @@ public class appium_2 extends base_class{
 		driver.close();
 	}
 //===================================================================================================================================	
-	@Test(dependsOnMethods={"TC_0060_Admin_approved_request"})
+	//@Test(dependsOnMethods={"TC_0060_Admin_approved_request"})
+	@Test(priority=10)
 	public void TC_0061_Verify_user_able_to_view_booking_status_all_elements() throws Exception {
 		log.info("***************TC_0061_Verify_user_able_to_view_booking_status_all_elements starts*****************");
 		
@@ -419,7 +426,8 @@ public class appium_2 extends base_class{
 		
 	}
 //============================================================================================================================
-	@Test(dependsOnMethods={"TC_0061_Verify_user_able_to_view_booking_status_all_elements"})
+//	@Test(dependsOnMethods={"TC_0061_Verify_user_able_to_view_booking_status_all_elements"})
+	@Test(priority=11)
 	public void TC_0062_Verify_user_End_ride_request() throws Exception {
 		log.info("***************TC_0062_Verify_user_End_ride_request starts*****************");
 		
@@ -429,7 +437,8 @@ public class appium_2 extends base_class{
 	}
 	
 //============================================================================================================================	
-	@Test(dependsOnMethods={"TC_0062_Verify_user_End_ride_request"})
+	//@Test(dependsOnMethods={"TC_0062_Verify_user_End_ride_request"})
+	@Test(priority=12)
 	public void TC_0063_Verify_user_end_ride_booking_status() throws Exception {
 		log.info("***************TC_0063_Verify_user_end_ride_booking_status starts*****************");
 		
@@ -439,8 +448,8 @@ public class appium_2 extends base_class{
 	}
 	
 //============================================================================================================================	
-	@Test(dependsOnMethods={"TC_0063_Verify_user_end_ride_booking_status"})
-//	@Test
+	//@Test(dependsOnMethods={"TC_0063_Verify_user_end_ride_booking_status"})
+	@Test(priority=13)
 	public void TC_0064_Admin_check_End_ride_request () throws Exception {
 		log.info("***************TC_0064_Admin_check_End_ride_request starts*****************");
 		
@@ -479,7 +488,8 @@ public class appium_2 extends base_class{
 		driver.close();
 	}
 //===================================================================================================================================	
-	@Test(dependsOnMethods={"TC_0064_Admin_check_End_ride_request"})
+	//@Test(dependsOnMethods={"TC_0064_Admin_check_End_ride_request"})
+	@Test(priority=14)
 	public void TC_0065_Verify_user_Complete_ride_booking_status() throws Exception {
 		log.info("***************TC_0065_Verify_user_Complete_ride_booking_status starts*****************");
 		
@@ -497,7 +507,8 @@ public class appium_2 extends base_class{
 		library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
 	}
 //====================================================================================================================================	
-	@Test(dependsOnMethods={"TC_0065_Verify_user_Complete_ride_booking_status"})
+	//@Test(dependsOnMethods={"TC_0065_Verify_user_Complete_ride_booking_status"})
+	@Test(priority=15)
 	public void TC_0066_Verify_after_Complete_ride_invoice_button() throws Exception {
 		log.info("***************TC_0066_Verify_after_Complete_ride_invoice_button starts*****************");
 		

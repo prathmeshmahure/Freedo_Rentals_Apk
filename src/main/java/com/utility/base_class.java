@@ -54,7 +54,7 @@ public class base_class {
 			cap.setCapability("appium:avdLaunchTimeout", 600000);		
 			cap.setCapability("appPackage", "com.heerofreedo");
 			cap.setCapability("appActivity", "com.heerofreedo.MainActivity");
-			cap.setCapability("appium:noReset", "false");
+			cap.setCapability("appium:noReset", "true");
 			
 //			cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\10app-release.apk"));
 //			cap.setChromedriverExecutable(System.getProperty("user.dir")+"\\apk\\chromedriver.exe");

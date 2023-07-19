@@ -23,7 +23,8 @@ public class appium_1 extends base_class{
 	public void TC_0024_Verify_home_page_all_elements() throws Exception {
 		book = PageFactory.initElements(driver1, booking_page.class);
 		log.info("***************TC_0024_Verify_home_page_all_elements starts*****************");		
-			
+		
+		Assert.assertTrue(book.getTxt_city_front_page().isDisplayed());
 		library.visible_link(book.getTxt_city_front_page(), "Selected city name is visible");
 		library.visible_link(book.getUsername(), "Username");
 		library.visible_link(book.getUsername(), book.getUsername().getText());
@@ -50,6 +51,7 @@ public class appium_1 extends base_class{
 		book = PageFactory.initElements(driver1, booking_page.class);
 		log.info("***************TC_0025_Verify_available_all_bikes starts*****************");
 		
+		Assert.assertTrue(book.getClick_1st_page_enter_button().isDisplayed());
 		library.Custom_click(book.getClick_1st_page_enter_button(), "Enter button(Arrow)");
 		library.date_select();
 		library.Custom_click(book.getClick_Package_dropdown(), "package dropdown");
@@ -67,6 +69,7 @@ public class appium_1 extends base_class{
 	public void TC_0026_Verify_available_all_Scooters() throws Exception {
 		log.info("***************TC_0026_Verify_available_all_Scooters starts*****************");
 		
+		Assert.assertTrue(book.getClick_Scooter_Tab().isDisplayed());
 		library.Custom_click(book.getClick_Scooter_Tab(), "Scooter tab");
 		Thread.sleep(1000);
 		library.visible_link(book.getAvailable_bikes(), "Available bike quantity");
@@ -78,6 +81,7 @@ public class appium_1 extends base_class{
 	public void TC_0027_Verify_homepage_bike_rentals_tab_available_bike() throws Exception {
 		log.info("***************TC_0027_Verify_homepage_bike_rentals_tab_available_bike starts*****************");
 		
+		Assert.assertTrue(book.getClick_home_page_button().isDisplayed());
 		library.Custom_click(book.getClick_home_page_button(), "Home button ");
 		Thread.sleep(2000);
 		library.Custom_click(book.getClick_home_page_bike_rental_button(), "Bike Rental button ");
@@ -96,6 +100,7 @@ public class appium_1 extends base_class{
 	public void TC_0028_Verify_Rent_tab_all_elements() throws Exception {
 		log.info("***************TC_0028_Verify_Rent_tab_all_elements starts*****************");
 		
+		Assert.assertTrue(book.getClick_home_page_Rent_button().isDisplayed());
 		library.Custom_click(book.getClick_home_page_button(), "Home button ");
 		Thread.sleep(1000);
 		library.Custom_click(book.getClick_home_page_Rent_button(), "Rent tab ");
@@ -127,6 +132,7 @@ public class appium_1 extends base_class{
 	public void TC_0030_Verify_more_button_all_elements() throws Exception {
 		log.info("***************TC_0030_Verify_more_button_all_elements starts*****************");
 		
+		Assert.assertTrue(book.getClick_home_page_More_button().isDisplayed());
 		library.Custom_click(book.getClick_home_page_More_button(), "More button ");
 		Thread.sleep(1000);
 		library.visible_link(book.getclick_dark_theme(), "Dark theme mode");
@@ -153,6 +159,7 @@ public class appium_1 extends base_class{
 	public void TC_0031_Verify_Booking_elements() throws Exception {
 		log.info("***************TC_0031_Verify_Booking_elements starts*****************");
 		
+		Assert.assertTrue(book.getClick_home_page_Bookings_button().isDisplayed());
 		library.Custom_click(book.getClick_home_page_button(), "Home button ");
 		Thread.sleep(1000);
 		library.Custom_click(book.getClick_home_page_Bookings_button(), "home page booking button");
@@ -182,6 +189,7 @@ public class appium_1 extends base_class{
 		login=PageFactory.initElements(driver1, launch_login.class);
 		log.info("***************TC_0032_Verify_Booking_elements starts*****************");
 		
+		Assert.assertTrue(book.getClick_home_page_button().isDisplayed());
 		library.Custom_click(book.getClick_home_page_button(), "Home button ");
 		Thread.sleep(1000);
 		library.Custom_click(book.getDifferent_city_name(), "Different city");
@@ -209,6 +217,7 @@ public class appium_1 extends base_class{
 	public void TC_0034_Verify_scooter_button_on_homepage() throws Exception {
 		log.info("***************TC_0034_Verify_scooter_button_on_homepage starts*****************");
 		
+		Assert.assertTrue(book.getHome_scooter_tab().isDisplayed());
 		library.Custom_click(book.getHome_scooter_tab(), "Scooter button");
 		library.isSelected(book.getHome_scooter_tab(), "Scooter button is ");
 		appium_1.swipe_page_direction(1237, 1637, 153, 1577, "Available bike");
@@ -221,6 +230,7 @@ public class appium_1 extends base_class{
 	public void TC_0035_Verify_user_able_to_select_date_and_package_under_booking() throws Exception {
 		log.info("***************TC_0035_Verify_user_able_to_select_date_and_package_under_booking starts*****************");
 		
+		Assert.assertTrue(book.getHome_bike_tab().isDisplayed());
 		library.Custom_click(book.getHome_bike_tab(), "Bike button");
 		Thread.sleep(1000);
 		library.Custom_click(book.getBook_now_button(), "Booknow button");
@@ -229,6 +239,9 @@ public class appium_1 extends base_class{
 		library.Custom_click(book.getClick_1_Days_package(),"Selected package");
 		library.Custom_click(book.getClick_go_freedo_Button(), "Go Freedo button");
 		Thread.sleep(2000);
+		try {
+			driver1.findElement(By.xpath("//android.widget.TextView[@text='Book Now']")).click();
+		}catch(Exception e) {}
 		library.Custom_click(book.getclick_location_pop_up_ok_button(), "ok button");
 		library.visible_link(book.getBooking_details_page_price(), "Price is ="+book.getBooking_details_page_price().getText());
 	}
@@ -238,6 +251,7 @@ public class appium_1 extends base_class{
 	public void TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements() throws Exception {
 		log.info("***************TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements starts*****************");
 		
+		Assert.assertTrue(book.getClick_Pick_up_vehicle_radio_button().isDisplayed());
 		library.visible_link(book.getClick_Pick_up_vehicle_radio_button(), "Pick-up vehicle radio button");
 		library.isSelected(book.getClick_Pick_up_vehicle_radio_button(), "Pick-up vehicle radio button");
 		library.visible_link(book.getClick_home_delivery_radio_button(), "Home delivery radio button");
@@ -265,7 +279,7 @@ public class appium_1 extends base_class{
 	public void TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery() throws Exception {
 		log.info("***************TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery starts*****************");
 		
-		
+		Assert.assertTrue(book.getClick_home_delivery_radio_button().isDisplayed());
 		library.Custom_click(book.getClick_home_delivery_radio_button(), "Home delivery radio button");
 		appium_1.Scroll_UP_page_Action("up");
 		library.Custom_click(book.getClick_home_delivery_add_address(), "Add Address");
@@ -306,7 +320,7 @@ public class appium_1 extends base_class{
 	public void TC_0038_Verify_user_able_to_select_time_slot_afternoon() throws Exception {
 		log.info("***************TC_0038_Verify_user_able_to_select_time_slot_afternoon starts*****************");
 		
-		
+		Assert.assertTrue(book.getClick_home_page_button().isDisplayed());
 		library.Custom_click(book.getClick_home_page_button(), "Home button ");
 		Thread.sleep(1000);
 		library.Custom_click(book.getDifferent_city_name(), "Different city");
@@ -334,7 +348,7 @@ public class appium_1 extends base_class{
 	public void TC_0039_Verify_user_able_to_select_time_slot_Evening() throws Exception {
 		log.info("***************TC_0039_Verify_user_able_to_select_time_slot_Evening starts*****************");
 		
-		
+		Assert.assertTrue(book.getBooking_details_page_evening().isDisplayed());
 		library.Custom_click(book.getBooking_details_page_evening(), "Evening");
 		Thread.sleep(1000);
 		library.isSelected(book.getBooking_details_page_evening(), "Evening is");
@@ -345,6 +359,7 @@ public class appium_1 extends base_class{
 	public void TC_0040_Verify_user_able_to_select_time_slot_Morning() throws Exception {
 		log.info("***************TC_0040_Verify_user_able_to_select_time_slot_Morning starts*****************");
 		
+		Assert.assertTrue(book.getBooking_details_page_morning().isDisplayed());
 		library.Custom_click(book.getBooking_details_page_morning(), "Morning");
 		Thread.sleep(1000);
 		library.isSelected(book.getBooking_details_page_morning(), "Morning is");
@@ -355,6 +370,7 @@ public class appium_1 extends base_class{
 	public void TC_0041_Verify_user_able_to_list_button() throws Exception {
 		log.info("***************TC_0041_Verify_user_able_to_list_button starts*****************");
 		
+		Assert.assertTrue(book.getBooking_details_page_list_button().isDisplayed());
 		library.Custom_click(book.getBooking_details_page_list_button(), "List");
 		Thread.sleep(1000);
 		try {
@@ -373,6 +389,7 @@ public class appium_1 extends base_class{
 		
 		appium_1.Back_button();
 		Thread.sleep(1000);
+		Assert.assertTrue(book.getClick_home_page_button().isDisplayed());
 		library.Custom_click(book.getClick_home_page_button(), "Home button ");
 		Thread.sleep(1000);
 		library.Custom_click(book.getDifferent_city_name(), "Different city");
@@ -401,7 +418,8 @@ public class appium_1 extends base_class{
 	public void TC_0043_Verify_continue_button_and_summary_page() throws Exception {
 		log.info("***************TC_0043_Verify_continue_button_and_summary_page starts*****************");
 		book = PageFactory.initElements(driver1, booking_page.class);
-
+		
+		Assert.assertTrue(book.getClick_Continue_Tab().isDisplayed());
 		library.Custom_click(book.getClick_Continue_Tab(), "Continue button");
 		Thread.sleep(1000);
 		library.isDisplayed(book.getsummary_page_text(), "SUMMARY page title is ");
@@ -454,6 +472,7 @@ public class appium_1 extends base_class{
 	public void TC_0044_Verify_summary_page_additional_helmet_charges() throws Exception {
 		log.info("***************TC_0044_Verify_summary_page_additional_helmet_charges starts*****************");
 		
+		Assert.assertTrue(book.getSummary_rent_additional_helmet_checkbox().isDisplayed());
 		library.visible_link(book.getSummary_rent_additional_helmet_checkbox(), "Rent additonal helmet checkbox");
 		Thread.sleep(1000);
 		library.Custom_click(book.getSummary_rent_additional_helmet_checkbox(), "Rent additonal helmet checkbox");
@@ -477,6 +496,7 @@ public class appium_1 extends base_class{
 	public void TC_0045_Verify_summary_page_coupon_code() throws Exception {
 		log.info("***************TC_0045_Verify_summary_page_coupon_code starts*****************");
 		
+		Assert.assertTrue(book.getSummary_coupon_code_offers().isDisplayed());
 		library.visible_link(book.getSummary_coupon_code_offers(), "Veiw offers ");
 		library.Custom_click(book.getSummary_coupon_code_offers(), "Veiw offers ");
 		Thread.sleep(3000);
@@ -533,6 +553,7 @@ public class appium_1 extends base_class{
 	public void TC_0048_Verify_summary_page_pay_now_button() throws Exception {
 		log.info("***************TC_0048_Verify_summary_page_pay_now_button starts*****************");
 		
+		Assert.assertTrue(book.getClick_summary_pay_now_button().isDisplayed());
 		library.Custom_click(book.getClick_summary_pay_now_button(), "Pay now button");
 		Thread.sleep(10000);
 		library.visible_link(book.getClick_Pay_using_UPI(), "Pay using UPI");
@@ -548,6 +569,7 @@ public class appium_1 extends base_class{
 	public void TC_0049_Verify_user_able_to_make_payment() throws Exception {
 		log.info("***************TC_0049_Verify_user_able_to_make_payment starts*****************");
 		
+		Assert.assertTrue(book.getClick_Pay_using_Netbanking().isDisplayed());
 		library.Custom_click(book.getClick_Pay_using_Netbanking(), "Pay using Netbanking");
 		library.Custom_click(book.getClick_Pay_using_SBI_bank(), "Select SBI bank");
 		library.Custom_click(book.getClick_pay_now_button_sbi(), "Pay Now button");
@@ -582,6 +604,7 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getClick_show_more_details(), "show more details text");
 		
 		Thread.sleep(2000);
+		Assert.assertTrue(book.getFBD_Booking_status().isDisplayed());
 		library.visible_link(book.getFBD_Booking_status(), "Booking status");
 		library.visible_link(book.getFBD_Booking_id(), "Booking ID ");
 		library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number ");		

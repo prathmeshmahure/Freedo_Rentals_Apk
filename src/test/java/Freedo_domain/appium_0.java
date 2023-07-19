@@ -34,6 +34,7 @@ public class appium_0 extends base_class {
 			login=PageFactory.initElements(driver1, launch_login.class);	
 			log.info("***************TC_002_verify_select_pickup_location_date_and_packages starts*****************");
 			
+			Assert.assertTrue(login.getFirst_page_Select_pickUP_location().isDisplayed());
 			library.visible_link(login.getFirst_page_Select_pickUP_location(), "Select pickup location date and packages");
 			library.isSelected(login.getfirst_page_first_slide_indicator(), "First slide indicator is ");
 			library.visible_link(login.getfirst_page_first_slide_indicator(), "first slide indicator");
@@ -49,6 +50,7 @@ public class appium_0 extends base_class {
 		public void TC_003_Verify_the_NEXT_button_clicking() throws Exception  {
 			log.info("***************TC_003_Verify_the_NEXT_button_clicking starts*****************");
 			
+			Assert.assertTrue(login.getClick_Next_button1().isDisplayed());
 			library.Custom_click(login.getClick_Next_button1(), "Next_button1 static 1st page");
 			library.isSelected(login.getFirst_page_second_slide_indicator(), "second slide indicator is ");
 			library.visible_link(login.getSecond_onboarding_tittle()," = "+ login.getSecond_onboarding_tittle().getText());
@@ -63,6 +65,7 @@ public class appium_0 extends base_class {
 		public void TC_004_Verify_the_NEXT_button_clicking() throws Exception  {
 			log.info("***************TC_004_Verify_the_NEXT_button_clicking starts*****************");
 			
+			Assert.assertTrue(login.getClick_Next_button2().isDisplayed());
 			library.Custom_click(login.getClick_Next_button2(), "Next_button2 static 2nd page");
 			Thread.sleep(2000);
 			library.isSelected(login.getFirst_page_third_slide_indicator(), "Third slide indicator is ");
@@ -76,6 +79,7 @@ public class appium_0 extends base_class {
 		public void TC_005_Verify_the_slide_indicator() throws Exception  {
 			log.info("***************TC_005_Verify_the_slide_indicator starts*****************");
 			
+			Assert.assertTrue(login.getfirst_page_first_slide_indicator().isDisplayed());
 			library.isSelectedFalse(login.getfirst_page_first_slide_indicator(), "first slide indicator is ");
 			library.isSelectedFalse(login.getFirst_page_second_slide_indicator(), "Second slide indicator is ");
 			library.isSelected(login.getFirst_page_third_slide_indicator(), "Third slide indicator is ");
@@ -86,7 +90,8 @@ public class appium_0 extends base_class {
 		@Test(priority=5)
 		public void TC_006_Verify_the_Done_button_clicking() throws Exception  {
 			log.info("***************TC_006_Verify_the_Done_button_clicking starts*****************");
-				
+			
+			Assert.assertTrue(login.getClick_Done_button().isDisplayed());
 			library.visible_link(login.getClick_Done_button(), "Done button");
 			library.Custom_click(login.getClick_Done_button(), "Done_button static 3rd page");
 		}
@@ -115,6 +120,7 @@ public class appium_0 extends base_class {
 		public void TC_008_Verify_login_functionality_Register_mo_number() throws Exception  {
 			log.info("***************TC_008_Verify_login_functionality_Register_mo_number starts*****************");
 		
+			Assert.assertTrue(login.getEnter_MO_Number().isDisplayed());
 			library.custom_sendkeys(login.getEnter_MO_Number(), config.getMobile(), "Enter mobile number");
 			appium_1.EnterButton();
 			library.isEnabled(login.getClick_Login_button(), "Login button is ");
@@ -126,6 +132,7 @@ public class appium_0 extends base_class {
 		public void TC_009_verify_login_button_on_create_an_account_page() throws Exception {
 			log.info("***************TC_009_verify_login_button_on_create_an_account_page starts*****************");
 			
+			Assert.assertTrue(login.getCreateAccount().isDisplayed());
 			library.Custom_click(login.getCreateAccount(), "Create an account at login page");
 			Thread.sleep(1000);
 			library.Custom_click(login.getClick_Login_button_C_A(), "login button on create an account page");
@@ -138,7 +145,7 @@ public class appium_0 extends base_class {
 		public void TC_0010_verify_create_an_account_by_clicking_login_page() {
 			log.info("***************TC_0010_verify_create_an_account_by_clicking_login_page starts*****************");
 
-			
+			Assert.assertTrue(login.getCreateAccount().isDisplayed());
 			library.Custom_click(login.getCreateAccount(), "Create an account at login page");
 			library.visible_link(login.getField_first_name(), "First name");
 			library.visible_link(login.getField_last_name(), "Last name");
@@ -158,6 +165,7 @@ public class appium_0 extends base_class {
 			log.info("***************TC_0011_verify_user_able_to_create_an_account starts*****************");
 			book = PageFactory.initElements(driver1, booking_page.class);
 			
+			Assert.assertTrue(book.getCA_MF_firstname().isDisplayed());
 			library.visible_link(book.getCA_MF_firstname(), "First name mandotary field ( * )");
 			library.custom_sendkeys(login.getClick_First_name(), config.getFirst_name(), "First name");
 			library.visible_link(book.getCA_MF_lastname(), "Last name mandotary field ( * )");
@@ -188,6 +196,7 @@ public class appium_0 extends base_class {
 		public void TC_0012_verify_Terms_and_condition_link_on_create_an_account_page() throws Exception {
 			log.info("***************TC_0012_verify_Terms_and_condition_link_on_create_an_account_page starts*****************");
 			
+			Assert.assertTrue(login.getClick_Terms_and_Conditions().isDisplayed());
 			library.Custom_click(login.getClick_Terms_and_Conditions(), "Terms and condition ");
 			Thread.sleep(3000);
 			library.visible_link(login.getTerms_and_condition_page_heading(), "Terms and condition page Heaading");
@@ -201,6 +210,7 @@ public class appium_0 extends base_class {
 		public void TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page() {
 			log.info("***************TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page starts*****************");
 			
+			Assert.assertTrue(login.getClick_Privacy_Policy().isDisplayed());
 			library.Custom_click(login.getClick_Privacy_Policy(), "Privacy policy");
 			library.visible_link(login.getPrivacy_policy_page_heading(), "Privacy policy page Heaading");
 	//		library.visible_link(login.getDelete_account(), "Delete account txt");
@@ -213,6 +223,7 @@ public class appium_0 extends base_class {
 		public void TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element() {
 			log.info("***************TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element starts*****************");
 			
+			Assert.assertTrue(login.getPrivacy_policy_dropdown().isDisplayed());
 			library.Custom_click(login.getPrivacy_policy_dropdown(), "Privacy policy dropdown open");
 			library.visible_link(login.getPrivacy_policy_info(), "Privacy policy information");
 			library.Custom_click(login.getPrivacy_policy_dropdown(), "Privacy policy dropdown Close");	
@@ -249,7 +260,7 @@ public class appium_0 extends base_class {
 		public void TC_0017_Verify_OTP_Verification_Page() throws InterruptedException   {
 			log.info("***************TC_0017_Verify_OTP_Verification_Page starts*****************");
 			Thread.sleep(5000);	
-		
+		Assert.assertTrue(login.getOtp_verification_txt().isDisplayed());
 		library.isDisplayed(login.getOtp_verification_txt(), "OTP VERIFICATION page tittle");
 		library.visible_link(login.getEnter_OTP(), "OTP Enter field");
 		library.visible_link(login.getClick_OTP_Verify_button(), "Verify otp button");
@@ -263,7 +274,8 @@ public class appium_0 extends base_class {
 		@Test(priority=17)
 		public void TC_0018_Select_location() throws Exception  {
 			log.info("***************TC_0018_Select_location starts*****************");
-			
+		
+		Assert.assertTrue(login.getWhile_using_this_app().isDisplayed());
 		library.visible_link(login.getWhile_using_this_app(), "While_using_this_app");
 //		library.visible_link(login.getOnly_this_time(), "location page Only_this_time");
 		library.visible_link(login.getDont_allow(), "Dont allow");
@@ -281,7 +293,8 @@ public class appium_0 extends base_class {
 		@Test(priority=18)
 		public void TC_0019_verify_user_select_City() {
 			log.info("***************TC_0019_verify_user_select_City starts*****************");
-				
+			
+			Assert.assertTrue(login.getPopular_cities_txt().isDisplayed());
 			library.visible_link(login.getPopular_cities_txt(), "Popular cities text");
 			library.visible_link(login.getSelect_City_Delhi(), "Delhi");
 			library.visible_link(login.getSelect_City_Gurugram(), "Gurugram");
@@ -296,7 +309,8 @@ public class appium_0 extends base_class {
 		@Test(priority=19)
 		public void TC_0020_Search_wrong_city_name() throws Exception  {
 				log.info("***************TC_0020_Search_wrong_city_name starts*****************");
-					
+			
+			Assert.assertTrue(login.getSearch_city().isDisplayed());	
 			library.visible_link(login.getSearch_city(), "Please select your city");
 			library.custom_sendkeys(login.getSearch_city(), "Aurangabad", "Search city by city name");
 			appium_0.EnterButton();
@@ -307,7 +321,8 @@ public class appium_0 extends base_class {
 		@Test(priority=20)
 		public void TC_0021_Search_city_name() throws Exception  {
 			log.info("***************TC_0021_Search_city_name starts*****************");
-			
+		
+		Assert.assertTrue(login.getSearch_city().isDisplayed());
 		library.visible_link(login.getSearch_city(), "Please select your city");
 		library.custom_sendkeys(login.getSearch_city(), config.getcity_name(), "Search city by city name");
 		appium_0.EnterButton();
@@ -329,7 +344,7 @@ public class appium_0 extends base_class {
 		public void TC_0023_Verify_location_popup() {
 			log.info("***************TC_0023_Verify_location_popup starts*****************");
 			
-			
+			Assert.assertTrue(login.getWhile_using_this_app().isDisplayed());
 			library.visible_link(login.getWhile_using_this_app(), "location page While_using_this_app");
 //			library.visible_link(login.getOnly_this_time(), "location page Only_this_time");
 			library.visible_link(login.getDont_allow_1(),"Dont allow 1");

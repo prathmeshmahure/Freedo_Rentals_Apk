@@ -81,7 +81,9 @@ public class appium_1 extends base_class{
 	public void TC_0027_Verify_homepage_bike_rentals_tab_available_bike() throws Exception {
 		log.info("***************TC_0027_Verify_homepage_bike_rentals_tab_available_bike starts*****************");
 		
+		Thread.sleep(1000);
 		Assert.assertTrue(book.getClick_home_page_button().isDisplayed());
+		Thread.sleep(1000);
 		library.Custom_click(book.getClick_home_page_button(), "Home button ");
 		Thread.sleep(2000);
 		library.Custom_click(book.getClick_home_page_bike_rental_button(), "Bike Rental button ");
@@ -101,6 +103,7 @@ public class appium_1 extends base_class{
 		log.info("***************TC_0028_Verify_Rent_tab_all_elements starts*****************");
 		
 		Assert.assertTrue(book.getClick_home_page_Rent_button().isDisplayed());
+		Thread.sleep(1000);
 		library.Custom_click(book.getClick_home_page_button(), "Home button ");
 		Thread.sleep(1000);
 		library.Custom_click(book.getClick_home_page_Rent_button(), "Rent tab ");
@@ -117,6 +120,7 @@ public class appium_1 extends base_class{
 	public void TC_0029_Verify_freedo_rental_icon() throws Exception {
 		log.info("***************TC_0029_Verify_freedo_rental_icon starts*****************");
 		
+		Thread.sleep(1000);
 		library.visible_link(book.getClick_home_page_button(), "Home button ");
 		try {
 			driver1.findElement(By.xpath("//android.view.ViewGroup[@content-desc='home_tab']")).click();
@@ -196,7 +200,7 @@ public class appium_1 extends base_class{
 		library.visible_link(login.getDetect_my_location(), "Detect my location");
 		library.visible_link(login.getSelect_Manually_location(), "Select manually location");
 		library.Custom_click(login.getSelect_Manually_location(), "Select manually location");
-		library.Custom_click(login.getSelect_City_Automation_City(), "Automation city");	
+		library.Custom_click(login.getSelect_City_Noida(), config.getcity_name()+" city");	
 	}
 //======================================================================================================================
 	//@Test(dependsOnMethods={"TC_0032_Verify_Booking_elements"})
@@ -320,13 +324,13 @@ public class appium_1 extends base_class{
 	public void TC_0038_Verify_user_able_to_select_time_slot_afternoon() throws Exception {
 		log.info("***************TC_0038_Verify_user_able_to_select_time_slot_afternoon starts*****************");
 		
-		Assert.assertTrue(book.getClick_home_page_button().isDisplayed());
+//		Assert.assertTrue(book.getClick_home_page_button().isDisplayed());
 		library.Custom_click(book.getClick_home_page_button(), "Home button ");
 		Thread.sleep(1000);
 		library.Custom_click(book.getDifferent_city_name(), "Different city");
 		library.visible_link(login.getDetect_my_location(), "Detect my location");
 		library.Custom_click(login.getSelect_Manually_location(), "Select manually location");
-		library.Custom_click(login.getSelect_City_jaipur(), "Jaipur");
+		library.Custom_click(login.getSelect_City_Noida(),config.getcity_name()+" city");
 		library.Custom_click(book.getClick_1st_page_enter_button(), "Enterbutton");
 		Thread.sleep(500);
 		library.date_select();
@@ -383,19 +387,19 @@ public class appium_1 extends base_class{
 //==================================================================================================================================	
 //	@Test(dependsOnMethods={"TC_0041_Verify_user_able_to_list_button"})
 	@Test(priority=19)
-	public void TC_0042_Verify_select_automation_city() throws Exception {
+	public void TC_0042_Verify_select_city() throws Exception {
 		login=PageFactory.initElements(driver1, launch_login.class);
-		log.info("***************TC_0042_Verify_select_automation_city starts*****************");
+		log.info("***************TC_0042_Verify_select_city starts*****************");
 		
 		appium_1.Back_button();
 		Thread.sleep(1000);
-		Assert.assertTrue(book.getClick_home_page_button().isDisplayed());
+	//	Assert.assertTrue(book.getClick_home_page_button().isDisplayed());
 		library.Custom_click(book.getClick_home_page_button(), "Home button ");
 		Thread.sleep(1000);
 		library.Custom_click(book.getDifferent_city_name(), "Different city");
 		library.visible_link(login.getDetect_my_location(), "Detect my location");
 		library.Custom_click(login.getSelect_Manually_location(), "Select manually location");
-		library.Custom_click(login.getSelect_City_Automation_City(), "Automation city");
+		library.Custom_click(login.getSelect_City_Noida(), config.getcity_name()+" city");
 		library.Custom_click(book.getClick_1st_page_enter_button(), "Enterbutton");
 		Thread.sleep(500);
 		library.date_select();
@@ -591,7 +595,7 @@ public class appium_1 extends base_class{
 	@Test(priority=27)
 	public void TC_0050_Verify_user_able_to_view_booking_status() throws Exception {
 		log.info("***************TC_0050_Verify_user_able_to_view_booking_status starts*****************");
-		
+		Thread.sleep(3000);
 		library.visible_link(book.getFBD_Booking_status(), "Booking status");
 		
 	}

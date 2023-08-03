@@ -326,7 +326,7 @@ public class appium_0 extends base_class {
 		library.visible_link(login.getSearch_city(), "Please select your city");
 		library.custom_sendkeys(login.getSearch_city(), config.getcity_name(), "Search city by city name");
 		appium_0.EnterButton();
-		library.visible_link(login.getSelect_City_Automation_City(), "Automation city");
+		library.visible_link(login.getSelect_City_Noida(), config.getcity_name()+" city");
 		}			
 //===========================Select city =============================================================================
 		
@@ -335,7 +335,7 @@ public class appium_0 extends base_class {
 		public void TC_0022_Select_all__City() {
 			log.info("***************TC_0022_Select_all__City starts*****************");
 			
-			library.Custom_click(login.getSelect_City_Automation_City(), "Automation city");
+			library.Custom_click(login.getSelect_City_Noida(), config.getcity_name()+" city");
 
 		}
 //=========================================================================================================================

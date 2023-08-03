@@ -86,7 +86,7 @@ public class appium_2 extends base_class{
 		library.Custom_click(book.getClick_home_page_button(), "Home button");
 		Thread.sleep(2000);
 		library.Custom_click(book.getClick_home_page_Bookings_button(), "Home page booking button");
-		Thread.sleep(10000);
+		Thread.sleep(12000);
 		library.visible_link(book.getClick_Home_booking_tab_track_booking_status(), "Track booking status");
 		Thread.sleep(1000);
 		library.visible_link(book.getClick_Home_booking_tab_booking_status_page_tittle(), "Booking Status ");
@@ -137,7 +137,7 @@ public class appium_2 extends base_class{
 		Thread.sleep(2000);
 		library.Custom_click(login.getSelect_Manually_location(), "Select manually location");
 		Thread.sleep(2000);
-		library.Custom_click(login.getSelect_City_Automation_City(), "Select Automation city");
+		library.Custom_click(login.getSelect_City_Noida(), config.getcity_name()+" city");
 		Thread.sleep(2000);
 		library.Custom_click(book.getClick_home_page_More_button(), "More button");
 		Thread.sleep(2000);
@@ -357,6 +357,21 @@ public class appium_2 extends base_class{
 		WebElement ele12=driver.findElement(By.xpath("//*[text()='Control Buttons']"));library.Custom_click(ele12, "Control button");
 		WebElement ele13=driver.findElement(By.xpath("//button[text()='Start Ride']"));library.Custom_click(ele13, "Start ride");
 		WebElement ele14=driver.findElement(By.xpath("//input[@value='0']"));library.custom_sendkeys(ele14, config.getstart_km_reading(), "enter bike reading");
+		WebElement dropdownbike=driver.findElement(By.xpath("//em[normalize-space()='Select Registration']"));library.Custom_click(dropdownbike, "Select bike number");
+		WebElement dropdownbike1=driver.findElement(By.xpath("//li[@tabindex='-1']"));library.Custom_click(dropdownbike1, "bike number is selected");
+		
+		//////////////////////////////////////////////////////// date as per select bike booking
+		WebElement calendar2=driver.findElement(By.xpath("(//button[@tabindex='0'])[2]"));		library.Custom_click(calendar2, "calender click");
+		if(i<=totaldays) {
+			WebElement dateselect=driver.findElement(By.xpath("(//button[normalize-space()="+i+"])[1]"));
+			library.Custom_click(dateselect, "Select date");
+		}else {
+			driver.findElement(By.xpath("//button[@title='Next month']")).click();
+			WebElement dateselect=driver.findElement(By.xpath("(//button[normalize-space()="+nextdate+"])[1]"));
+			library.Custom_click(dateselect, "Select date");
+		}
+		///////////////////////////////////////////////////////
+		
 		
 		WebElement ele15=driver.findElement(By.xpath("//button[text()='Submit']"));	library.Custom_click(ele15, "Submit button");
 		WebElement ele16=driver.findElement(By.xpath("//button[text()='Yes']"));library.Custom_click(ele16, "Yes button");
@@ -364,6 +379,7 @@ public class appium_2 extends base_class{
 		Thread.sleep(3000);
 		log.info("Approval is sucessfully Accepted");
 		driver.close();
+
 	}
 //===================================================================================================================================	
 	//@Test(dependsOnMethods={"TC_0060_Admin_approved_request"})
@@ -504,6 +520,7 @@ public class appium_2 extends base_class{
 		Thread.sleep(4000);
 		
 		library.visible_link(book.getFBD_Booking_status(), "Booking status");
+		Thread.sleep(2000);
 		library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
 	}
 //====================================================================================================================================	

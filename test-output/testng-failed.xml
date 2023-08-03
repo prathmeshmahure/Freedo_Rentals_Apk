@@ -6,18 +6,10 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Freedo_domain.appium_0">
-        <methods>
-          <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC_0016_Verify_otp_verification_time_slot"/>
-          <include name="BS"/>
-        </methods>
-      </class> <!-- Freedo_domain.appium_0 -->
       <class name="Freedo_domain.appium_2">
         <methods>
+          <include name="TC_0063_Verify_user_end_ride_booking_status"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC_0064_Admin_check_End_ride_request"/>
-          <include name="TC_0060_Admin_approved_request"/>
           <include name="BS"/>
         </methods>
       </class> <!-- Freedo_domain.appium_2 -->

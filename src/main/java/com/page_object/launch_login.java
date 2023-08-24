@@ -4,6 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+import io.appium.java_client.android.AndroidDriver;
 
 public class launch_login {
 	
@@ -266,12 +269,14 @@ public class launch_login {
 	
 	@FindBy(xpath="//android.widget.TextView[@text='Gurugram']")				 	 //Select Location Gurugram
 	private WebElement Select_City_Gurugram;
+
+	
 	
 //=======================================================================================================
-		public launch_login(WebDriver driver) 
+		public launch_login(AndroidDriver driver1) 
 		{
-			this.driver=driver;
-			//PageFactory.initElements(driver1, this);
+			driver=driver1;
+			PageFactory.initElements(driver1, this);
 		}
 
 					public WebDriver getDriver() {

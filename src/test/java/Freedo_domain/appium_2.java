@@ -7,7 +7,6 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -80,7 +79,8 @@ public class appium_2 extends base_class{
 	//@Test(dependsOnMethods={"TC_0052_admin_Request_reject"})
 	@Test(priority=2)
 	public void TC_0053_Track_booking_status () throws Exception  {
-		book = PageFactory.initElements(driver1, booking_page.class);
+		//book = PageFactory.initElements(driver1, booking_page.class);
+		book = new booking_page(driver1);
 		log.info("***************TC_0053_Track_booking_status starts*****************");
 			
 		library.Custom_click(book.getClick_home_page_button(), "Home button");
@@ -114,7 +114,8 @@ public class appium_2 extends base_class{
 	//@Test(dependsOnMethods={"TC_0054_Verify_user_able_to_logout_cancel"})
 	@Test(priority=4)
 	public void TC_0055_Verify_user_able_to_successful_logout () throws Exception  {
-		login=PageFactory.initElements(driver1, launch_login.class);
+		//login=PageFactory.initElements(driver1, launch_login.class);
+		login = new launch_login(driver1);
 		log.info("***************TC_0055_Verify_user_able_to_logout starts*****************");
 			
 		Thread.sleep(2000);
@@ -127,7 +128,7 @@ public class appium_2 extends base_class{
 	//@Test(dependsOnMethods={"TC_0055_Verify_user_able_to_successful_logout"})
 	@Test(priority=5)
 	public void TC_0056_Verify_user_able_to_deactivate_account () throws Exception  {
-		login=PageFactory.initElements(driver1, launch_login.class);
+		
 		log.info("***************TC_0056_Verify_user_able_to_deactivate_account starts*****************");
 			
 		library.custom_sendkeys(login.getEnter_MO_Number(), config.getMobile(), "MObile number entering");
@@ -188,8 +189,8 @@ public class appium_2 extends base_class{
 		library.Custom_click(book.getClick_view_booking(), "View booking");
 	}
 //=============================================================================================================================	
-	//@Test(dependsOnMethods={"TC_0057_Verify_user_able_to_COD_booking"})
-	@Test(priority=7)
+	@Test(dependsOnMethods={"TC_0057_Verify_user_able_to_COD_booking"})
+	//@Test(priority=7)
 	public void TC_0058_admin_Request_reject () throws Exception  {
 		log.info("***************TC_0058_admin_Request_reject starts*****************");
 
@@ -278,8 +279,8 @@ public class appium_2 extends base_class{
 		}catch(Exception e){		}	
 	}
 //================================================================================================================================	
-	//@Test(dependsOnMethods={"TC_0059_Verify_user_able_to_Online_payment_booking"})
-	@Test(priority=9)
+	@Test(dependsOnMethods={"TC_0059_Verify_user_able_to_Online_payment_booking"})
+	//@Test(priority=9)
 	public void TC_0060_Admin_approved_request () throws Exception {
 		log.info("***************TC_0060_Admin_approved_request starts*****************");
 		

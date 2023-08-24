@@ -1,6 +1,5 @@
 package Freedo_domain;
 
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -15,15 +14,15 @@ import com.utility.library;
 public class appium_0 extends base_class {
 	public booking_page book;
 	public launch_login login;
-	public static ExtentTest test;
+	public ExtentTest test;
 	
 	
 //=============================================================================================================
 		@Test(priority=0)
 		public void TC_001_verify_install_apk() throws Exception {
 			log.info("***************TC_001_verify_install_apk starts*****************");
-			login=PageFactory.initElements(driver1, launch_login.class);	
-			
+		//	login=PageFactory.initElements(driver1, launch_login.class);	
+			login = new launch_login(driver1);
 			library.visible_link(login.getFirst_page_Select_pickUP_location(), "Freedo app is Install");
 			
 		}
@@ -31,7 +30,7 @@ public class appium_0 extends base_class {
 //============================	Launch Application =============================================================
 		@Test(priority=1)
 		public void TC_002_verify_select_pickup_location_date_and_packages() {
-			login=PageFactory.initElements(driver1, launch_login.class);	
+			
 			log.info("***************TC_002_verify_select_pickup_location_date_and_packages starts*****************");
 			
 			Assert.assertTrue(login.getFirst_page_Select_pickUP_location().isDisplayed());
@@ -163,7 +162,8 @@ public class appium_0 extends base_class {
 		@Test(priority=10)
 		public void TC_0011_verify_user_able_to_create_an_account() {
 			log.info("***************TC_0011_verify_user_able_to_create_an_account starts*****************");
-			book = PageFactory.initElements(driver1, booking_page.class);
+		//	book = PageFactory.initElements(driver1, booking_page.class);
+			book = new booking_page(driver1);
 			
 			Assert.assertTrue(book.getCA_MF_firstname().isDisplayed());
 			library.visible_link(book.getCA_MF_firstname(), "First name mandotary field ( * )");
@@ -199,10 +199,10 @@ public class appium_0 extends base_class {
 			Assert.assertTrue(login.getClick_Terms_and_Conditions().isDisplayed());
 			library.Custom_click(login.getClick_Terms_and_Conditions(), "Terms and condition ");
 			Thread.sleep(3000);
-			library.visible_link(login.getTerms_and_condition_page_heading(), "Terms and condition page Heaading");
+			library.visible_link(login.getTerms_and_condition_page_heading(), "Terms and condition page Heading");
 			Thread.sleep(3000);
-			library.visible_link(login.getT_and_c_page_info_present(), "page info is present");
-			library.Custom_click(login.getBack_button(), "Terms and condition back button ");		
+			library.visible_link(login.getT_and_c_page_info_present(), "Terms and condition page info");
+			library.Custom_click(login.getBack_button(), "Terms and condition page back button ");		
 		}
 //===================================================================================================================
 	//	@Test(dependsOnMethods={"TC_0012_verify_Terms_and_condition_link_on_create_an_account_page"})
@@ -246,6 +246,7 @@ public class appium_0 extends base_class {
 			log.info("***************TC_0016_Verify_otp_verification_time_slot starts*****************");
 			
 			Thread.sleep(2000);	
+			appium_0.EnterButton();
 			library.visible_link(login.getOtp_time_slot(), " Time duration ");
 			library.visible_link(login.getOtp_time_slot(), " Time duration "+login.getOtp_time_slot().getText());
 			

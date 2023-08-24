@@ -11,7 +11,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Listeners;
@@ -29,9 +28,10 @@ import io.appium.java_client.touch.offset.ElementOption;
 public class library extends base_class{
 	public static WebDriver driver;
 	public static ExtentTest test;
-	public static listner listner;
-//	public static AndroidDriver driver1;
+	public static WebDriverWait wait;
 	public static booking_page book;
+	static listner listner = new listner();
+	
 //	public library(AndroidDriver driver1) {
 //		library.driver1=driver1;
 //		
@@ -42,10 +42,17 @@ public class library extends base_class{
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////	
 		public static void custom_sendkeys(WebElement element,String value,String fieldname ) {
+			
+//			boolean ans =element.isDisplayed() || element.isEnabled();
+//			Assert.assertTrue(ans);
 			try {
+				wait = new WebDriverWait(driver1, Duration.ofSeconds(10));
+				wait.until(ExpectedConditions.elementToBeClickable(element));
 					if(element.isEnabled() || element.isDisplayed()==true) {
+						
 						element.click();
 						element.sendKeys(value);
+						
 					test.log(Status.PASS, fieldname+ "==value send successfully=="+value );
 					log.info("OK==Value send successfully "+fieldname);
 					}
@@ -53,14 +60,20 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, fieldname+"== Unable To Send  Value=="+e);
 					log.error("==Not==Value not send "+fieldname);
+					
 					listner.onTestFailure(null);
 			}
 		}
 	/////////////////////////////////////////////////////////////////////////////////////////////////
 		public static void Custom_click(WebElement element,String fieldname) {
-			try {
+			try {	
+				wait = new WebDriverWait(driver1, Duration.ofSeconds(10));
+				wait.until(ExpectedConditions.visibilityOfAllElements(element));
+				
 					if(element.isDisplayed() || element.isEnabled()==true) {
+						
 						element.click();
+						
 						test.log(Status.PASS, "Successfully click=="+ fieldname);
 					log.info("OK==Element is clickable "+fieldname);
 					}
@@ -68,28 +81,33 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL,fieldname+ "==Unable To Click =="+e);
 					log.error("==Not==Element is not clickable "+fieldname);
-			//		listner.onTestFailure(null);
+					
+					listner.onTestFailure(null);
 								}
 		}
 	////////////////////////////////////////////////////////////////////////////////////////////////	
 		public static void visible_link(WebElement element,String fieldname) {
 			try {
-				if(element.isEnabled() || element.isDisplayed()==true) {
-				
-				test.log(Status.PASS , "==Field is visible =="+fieldname);
+				wait = new WebDriverWait(driver1, Duration.ofSeconds(10));
+				wait.until(ExpectedConditions.visibilityOfAllElements(element));
+				if(element.isEnabled() || element.isDisplayed()==true) { 
+					
+				test.log(Status.PASS , "Field is visible =="+fieldname);
 				log.info("OK==Field is visible  "+fieldname);
 				}
 		}
 		catch(Exception e) {
 				test.log(Status.FAIL,fieldname+ "==Field is not visible=="+e);
 					log.error("==NOT==Field is not visible "+fieldname);
-			//		listner.onTestFailure(null);
+					listner.onTestFailure(null);
 		}
 		}
 	//////////////////////////////////////////////////////////////////////////////////////////////////////   
 		public static void visible_link_gettext(WebElement element,String fieldname) {
 			try {
 				if(element.isEnabled() || element.isDisplayed()==true) {
+					wait = new WebDriverWait(driver1, Duration.ofSeconds(10));
+					wait.until(ExpectedConditions.elementToBeClickable(element));
 					
 					String text=element.getText();
 				
@@ -100,7 +118,7 @@ public class library extends base_class{
 		catch(Exception e) {
 				test.log(Status.FAIL,fieldname+ "==Field is not visible=="+e);
 					log.error("==NOT==Field is not visible "+fieldname);
-			//		listner.onTestFailure(null);
+					listner.onTestFailure(null);
 		}
 		}
 	//////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -117,35 +135,16 @@ public class library extends base_class{
 	    	catch(Exception e) {
 				test.log(Status.FAIL,fieldname+ "Unable To swipe Action =="+e);
 				log.error("==NOT==Unable To swipe Action  "+fieldname);
-		//		listner.onTestFailure(null);
+				listner.onTestFailure(null);
 				}
 	    }
 	    
 
-	  ////////////////////////////////////// Alert message //////////////////////////////////////////////////////////////////
-	    public static void Error_message_something(WebElement element , String fieldname) {
-	    	try {
-			    element=driver1.findElement(By.id("android:id/message"));
-			    String ele=element.getText();
-				if(ele.equals("Something went wrong, please try again")==true) {
-					log.info(ele);
-					driver1.switchTo().alert().accept();
-					driver1.findElement(By.id("android:id/button1")).click();
-					test.log(Status.FAIL, "Somethink went wrong found =="+fieldname);
-					log.info("Somethink went wrong found "+fieldname);
-			//		listner.onTestFailure(null);
-				}
-			}
-			catch(Exception e) {
-				test.log(Status.PASS, "Somethink went wrong not found =="+fieldname);
-					
-			}
-	    }
-	    	
+
 	  ///////////////////////////////////////////Explicit Wait //////////////////////////////////////////////////////////////  	
 	    public static void Explicit_wait_for_element(WebElement element) {
 	    	
-	    	WebDriverWait wait=new WebDriverWait(driver1,Duration.ofSeconds(20));
+	    	WebDriverWait wait1=new WebDriverWait(driver1,Duration.ofSeconds(20));
 	    	wait.until(ExpectedConditions.visibilityOf(element));
 	    }
 	  
@@ -166,7 +165,7 @@ public class library extends base_class{
 		catch(Exception e) {
 				test.log(Status.FAIL,fieldname+ "==Bike is  not available & Selected=="+e);
 				log.error("==NOT==Bike is not available & Selected "+fieldname);
-				listner.onTestFailure(null);
+		//		listner.onTestFailure(null);
 				}
 	    }
 //==============================================================================================================================
@@ -198,14 +197,15 @@ public class library extends base_class{
 	    	}catch(Exception e) {
 	    		test.log(Status.FAIL,fieldname+ "==Tap action failed=="+e);
 	    		log.error("==NOT==Tap action failed "+fieldname);
-	   // 		listner.onTestFailure(null);
+	    		listner.onTestFailure(null);
 	    		}
 	    }
 //==================================================================================================================================    	
 	   
 	    @SuppressWarnings("deprecation")
 		public static void date_select() {
-	    	book = PageFactory.initElements(driver1, booking_page.class);
+	    //	book = PageFactory.initElements(driver1, booking_page.class);
+	    	book = new booking_page(driver1);
 			library.Custom_click(book.getClick_calender_date(), "calender date select");
 		Date d=new Date();
 		int  da=d.getDate();
@@ -246,12 +246,12 @@ public class library extends base_class{
 	    public static void failmsg(String fieldname,String fieldname1) {
 			try {		test.log(Status.FAIL, fieldname+""+fieldname1);
 						log.error("==NOT=="+fieldname+""+fieldname1);
-						listner.onTestFailure(null);
+				//		listner.onTestFailure(null);
 				}
 			catch(Exception e) {
 					test.log(Status.FAIL, fieldname+""+fieldname1+" "+e);
 					log.error("==NOT=="+fieldname+""+fieldname1);
-				//	listner.onTestFailure(null);
+					listner.onTestFailure(null);
 								}
 		}
 //================================================================================================================================	    
@@ -266,7 +266,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"= Not Selected"+" "+e);
 					log.error("==NOT=="+Element_name+"=Not Selected");
-				//	listner.onTestFailure(null);
+					listner.onTestFailure(null);
 					}
 		}
 //================================================================================================================================	    
@@ -280,7 +280,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"=  Selected"+" "+e);
 					log.error("==NOT=="+Element_name+"= Selected");
-				//	listner.onTestFailure(null);
+					listner.onTestFailure(null);
 					}
 		}
 //===============================================================================================================================	    
@@ -296,7 +296,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"= Not Enabled"+" "+e);
 					log.error("==NOT=="+Element_name+"=Not Enabled");
-				//	listner.onTestFailure(null);
+					listner.onTestFailure(null);
 					}
 		}
 //===============================================================================================================================	    
@@ -311,7 +311,7 @@ public class library extends base_class{
 			catch(Exception e) {
 					test.log(Status.FAIL, Element_name+"=  Enabled"+" "+e);
 					log.error("==NOT=="+Element_name+"= Enabled");
-				//	listner.onTestFailure(null);
+					listner.onTestFailure(null);
 					}
 		}
 //=================================================================================================================================	    
@@ -344,8 +344,7 @@ public class library extends base_class{
 					}
 		}
 //==================================================================================================================================	    
-	    
-	    
+	   
 	    
 	    
 	    

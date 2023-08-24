@@ -1,12 +1,17 @@
 package com.utility;
+import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,6 +19,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
@@ -24,6 +30,7 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
+import net.bytebuddy.utility.RandomString;
 
 public class base_class {
 	public static WebDriver driver;
@@ -43,7 +50,7 @@ public class base_class {
 	@BeforeTest	//(dependsOnMethods="Champion_app_install") 	
 	  public  void OPEN_AND_INSTALL_APP() throws MalformedURLException, Exception {
 		
-/*	 
+/*	 */
  
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setCapability("appium:automationName", "uiautomator2");
@@ -52,9 +59,13 @@ public class base_class {
 			cap.setCapability("appium:udid", "emulator-5554");// 0836731257071990 //emulator-5554 //0526532038000424
 			cap.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
 			cap.setCapability("appium:avdLaunchTimeout", 600000);		
-			cap.setCapability("appPackage", "com.heerofreedo");
-			cap.setCapability("appActivity", "com.heerofreedo.MainActivity");
-			cap.setCapability("appium:noReset", "false");
+//			cap.setCapability("appPackage", "com.heerofreedo");
+//			cap.setCapability("appActivity", "com.heerofreedo.MainActivity");
+//			cap.setCapability("appium:noReset", "false");
+			
+			cap.setCapability("appPackage", "com.android.chrome");
+			cap.setCapability("appActivity", "com.google.android.apps.chrome.Main");
+			cap.setCapability("appium:noReset", "false");  
 			
 //			cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\10app-release.apk"));
 //			cap.setChromedriverExecutable(System.getProperty("user.dir")+"\\apk\\chromedriver.exe");
@@ -66,13 +77,13 @@ public class base_class {
 
 		    driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
 		
-		
+		    /*		
 	*/	
 	
 		
 		
 		
-/*	*/	//========================== *******  Pcloudy =========================
+/*		//========================== *******  Pcloudy =========================
 		
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		 capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
@@ -94,10 +105,11 @@ public class base_class {
 		 capabilities.setCapability("pCloudy_EnableDeviceLogs", "true");
 		 
 		 driver1 = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
-/*
-*/
-		driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
+*/      
+		driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 	    log = LogManager.getLogger("Freedo_Rentals_Apk");
+	    log.info(" =============== /= Freedo Rentals Mobile App Automation Report =/ ==================  ");
 	  }	
 
 //==========================================================================================================
@@ -128,11 +140,14 @@ public class base_class {
 	    log = LogManager.getLogger("Freedo_Rentals_Apk");
 	  }	
 	*/
-//	@AfterTest
-	public void teardown() {
+	@BeforeMethod
+	public void logger() {
+		 log.info(" ===================================================================================  ");
+		 log.info(" =================================================================================== ");
 //		driver1.quit();
 //		service.stop();
 	}	
+	
 	
 //===============================================================================================================================================	
 //================================================================================================================================================
@@ -253,9 +268,53 @@ public class base_class {
 		
 		Thread.sleep(1000);
     }
-  
-	
-
+  //==========================================================================================
+    public void Basecapture(String filename) {
+    	String str = RandomString.make(3);
+		TakesScreenshot ts=(TakesScreenshot)driver ;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		File destination = new File("./Screenshots/Fail/"+str+filename);
+		try {
+			FileUtils.copyFile(source, destination);
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+		}
+	//================================================================================================
+   public static void chromeapp_launchreset() throws MalformedURLException {
+	   
+	   DesiredCapabilities cap = new DesiredCapabilities();
+		cap.setCapability("appium:automationName", "uiautomator2");
+		cap.setCapability("platformName", "Android");
+		cap.setCapability("appium:deviceName", "pixel_6");//Infinix //pixel_6
+		cap.setCapability("appium:udid", "emulator-5554");// 0836731257071990 //emulator-5554 //0526532038000424
+		cap.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
+		cap.setCapability("appium:avdLaunchTimeout", 600000);
+		cap.setCapability("appium:adbExecTimeout", "60000");
+		cap.setCapability("appPackage", "com.android.chrome");
+		cap.setCapability("appActivity", "com.google.android.apps.chrome.Main");
+		cap.setCapability("appium:noReset", "false");   
+		
+		driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
+	   
+   }
+   //=====================================================================================================
+   public static void championapp_launch() throws MalformedURLException {
+	   
+	   DesiredCapabilities cap = new DesiredCapabilities();
+		cap.setCapability("appium:automationName", "uiautomator2");
+		cap.setCapability("platformName", "Android");
+		cap.setCapability("appium:deviceName", "pixel_6");//Infinix //pixel_6
+		cap.setCapability("appium:udid", "emulator-5554");// 0836731257071990 //emulator-5554 //0526532038000424
+		cap.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
+		cap.setCapability("appium:avdLaunchTimeout", 600000);
+		cap.setCapability("appPackage", "com.freedoadmin");
+		cap.setCapability("appActivity", "com.freedoadmin.MainActivity");
+		cap.setCapability("appium:noReset", "false");
+		
+		driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
+	   
+   }
 }
 
 

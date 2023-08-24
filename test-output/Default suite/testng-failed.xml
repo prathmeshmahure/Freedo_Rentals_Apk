@@ -6,7 +6,8 @@
       <class name="Freedo_domain.TEST">
         <methods>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC_001_verify_install_apk"/>
+          <include name="logger"/>
+          <include name="TC_0052_verify_install_apk"/>
           <include name="BS"/>
         </methods>
       </class> <!-- Freedo_domain.TEST -->

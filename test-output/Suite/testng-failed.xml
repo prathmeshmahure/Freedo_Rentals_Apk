@@ -6,13 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Freedo_domain.appium_2">
+      <class name="Freedo_domain.appium_1">
         <methods>
-          <include name="TC_0063_Verify_user_end_ride_booking_status"/>
           <include name="OPEN_AND_INSTALL_APP"/>
+          <include name="TC_0030_Verify_more_button_all_elements"/>
+          <include name="logger"/>
           <include name="BS"/>
         </methods>
-      </class> <!-- Freedo_domain.appium_2 -->
+      </class> <!-- Freedo_domain.appium_1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

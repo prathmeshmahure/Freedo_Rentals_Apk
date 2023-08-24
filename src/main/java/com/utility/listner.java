@@ -12,9 +12,11 @@ import com.aventstack.extentreports.Status;
 
 public class listner extends base_class implements ITestListener {
 	
+	
 	ExtentReports extent=extent_reports_generator.getreports();
 	ThreadLocal<ExtentTest> extent_test=new ThreadLocal<ExtentTest>();
 
+		
 		public void onTestStart(ITestResult result) {
 			library.test=extent.createTest(result.getTestClass().getName()+ " == " +result.getMethod().getMethodName());
 	//		library.test.addScreenCaptureFromBase64String(getscreenshot());
@@ -23,27 +25,19 @@ public class listner extends base_class implements ITestListener {
 	
 		public void onTestSuccess(ITestResult result) {
 			library.test.log(Status.PASS, "Test Case Pass" );
-		//	library.test.addScreenCaptureFromBase64String(getscreenshot());
-			
+	//		library.test.addScreenCaptureFromBase64String(getscreenshot());
 		}
 	
 		public void onTestFailure(ITestResult result) {
 			library.test.log(Status.FAIL, "Test Case Fail");
-	//		library.test.addScreenCaptureFromBase64String(getscreenshot());
-			
-//			library.test.addScreenCaptureFromBase64String(getscreenshot1());
-			
+			library.test.addScreenCaptureFromBase64String(getscreenshot());	
+		
+		//	Basecapture(result.getMethod().getMethodName()+".jpg");
 		}
-/*		public void onTestFailure1(ITestResult result) {
-			library.test.log(Status.FAIL, "Test Case Fail");
-			//library.test.addScreenCaptureFromBase64String(getscreenshot());
-		library.test.addScreenCaptureFromBase64String(getscreenshot1());
-			
-		}*/
 	
 		public void onTestSkipped(ITestResult result) {
 			library.test.log(Status.SKIP, "Test Case Skip");
-		}
+			}
 	
 	
 		public void onFinish(ITestContext context) {
@@ -56,12 +50,9 @@ public class listner extends base_class implements ITestListener {
 			return ts.getScreenshotAs(OutputType.BASE64);
 		}
 		public String getscreenshot1() {
-			TakesScreenshot ts=(TakesScreenshot)driver ;
-			return ts.getScreenshotAs(OutputType.BASE64);
+			TakesScreenshot ts1=(TakesScreenshot)driver ;
+			return ts1.getScreenshotAs(OutputType.BASE64);
 		}
 		
-
-		
-	
 
 }

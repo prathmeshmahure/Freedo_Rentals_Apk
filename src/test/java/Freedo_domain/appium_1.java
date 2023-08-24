@@ -1,7 +1,7 @@
 package Freedo_domain;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -21,7 +21,8 @@ public class appium_1 extends base_class{
 //========================================== Booking page =========================================================
 	@Test(priority=1)
 	public void TC_0024_Verify_home_page_all_elements() throws Exception {
-		book = PageFactory.initElements(driver1, booking_page.class);
+		//book = PageFactory.initElements(driver1, booking_page.class);
+		book = new booking_page(driver1);
 		log.info("***************TC_0024_Verify_home_page_all_elements starts*****************");		
 		
 		Assert.assertTrue(book.getTxt_city_front_page().isDisplayed());
@@ -48,7 +49,7 @@ public class appium_1 extends base_class{
 	//@Test(dependsOnMethods={"TC_0024_Verify_home_page_all_elements"})
 	@Test(priority=2)
 	public void TC_0025_Verify_available_all_bikes() throws Exception {
-		book = PageFactory.initElements(driver1, booking_page.class);
+		
 		log.info("***************TC_0025_Verify_available_all_bikes starts*****************");
 		
 		Assert.assertTrue(book.getClick_1st_page_enter_button().isDisplayed());
@@ -141,7 +142,7 @@ public class appium_1 extends base_class{
 		Thread.sleep(1000);
 		library.visible_link(book.getclick_dark_theme(), "Dark theme mode");
 		library.visible_link(book.getMore_button_notification(), "Notification");
-		library.visible_link(book.getMore_button_Edit_Profile(), "Edit profile");
+		library.visible_link(book.getMore_button_my_Profile(), "My profile");
 		library.visible_link(book.getMore_button_split_payment(), "Split payment");
 		library.visible_link(book.getMore_button_rate_us(), "Rate us");
 		library.visible_link(book.getMore_button_KYC(), "KYC");
@@ -190,7 +191,8 @@ public class appium_1 extends base_class{
 	//@Test(dependsOnMethods={"TC_0031_Verify_Booking_elements"})
 	@Test(priority=9)
 	public void TC_0032_Verify_Booking_elements() throws Exception {
-		login=PageFactory.initElements(driver1, launch_login.class);
+		//login=PageFactory.initElements(driver1, launch_login.class);
+		login = new launch_login(driver1);
 		log.info("***************TC_0032_Verify_Booking_elements starts*****************");
 		
 		Assert.assertTrue(book.getClick_home_page_button().isDisplayed());
@@ -244,7 +246,10 @@ public class appium_1 extends base_class{
 		library.Custom_click(book.getClick_go_freedo_Button(), "Go Freedo button");
 		Thread.sleep(2000);
 		try {
-			driver1.findElement(By.xpath("//android.widget.TextView[@text='Book Now']")).click();
+			WebElement element=driver1.findElement(By.xpath("//android.widget.TextView[@text='Book Now']"));
+			if(element.isDisplayed() || element.isEnabled()==true) {
+				element.click();
+			}
 		}catch(Exception e) {}
 		library.Custom_click(book.getclick_location_pop_up_ok_button(), "ok button");
 		library.visible_link(book.getBooking_details_page_price(), "Price is ="+book.getBooking_details_page_price().getText());
@@ -310,8 +315,11 @@ public class appium_1 extends base_class{
 		appium_1.Back_button();
 		Thread.sleep(3000);
 		try {
-			driver1.findElement(By.xpath("//android.widget.Button[@content-desc='TabNav, back']")).click();
-			driver1.findElement(By.xpath("//android.view.ViewGroup[@content-desc='home_tab']")).click();
+			WebElement element=driver1.findElement(By.xpath("//android.widget.Button[@content-desc='TabNav, back']"));
+			if(element.isDisplayed() || element.isEnabled()==true) {
+				element.click();
+				driver1.findElement(By.xpath("//android.view.ViewGroup[@content-desc='home_tab']")).click();
+			}
 		}catch(Exception e) {
 			driver1.findElement(By.xpath("//android.view.ViewGroup[@content-desc='home_tab']")).click();
 		}
@@ -388,7 +396,7 @@ public class appium_1 extends base_class{
 //	@Test(dependsOnMethods={"TC_0041_Verify_user_able_to_list_button"})
 	@Test(priority=19)
 	public void TC_0042_Verify_select_city() throws Exception {
-		login=PageFactory.initElements(driver1, launch_login.class);
+		
 		log.info("***************TC_0042_Verify_select_city starts*****************");
 		
 		appium_1.Back_button();
@@ -421,7 +429,7 @@ public class appium_1 extends base_class{
 	@Test(priority=20)
 	public void TC_0043_Verify_continue_button_and_summary_page() throws Exception {
 		log.info("***************TC_0043_Verify_continue_button_and_summary_page starts*****************");
-		book = PageFactory.initElements(driver1, booking_page.class);
+		
 		
 		Assert.assertTrue(book.getClick_Continue_Tab().isDisplayed());
 		library.Custom_click(book.getClick_Continue_Tab(), "Continue button");
@@ -501,8 +509,8 @@ public class appium_1 extends base_class{
 		log.info("***************TC_0045_Verify_summary_page_coupon_code starts*****************");
 		
 		Assert.assertTrue(book.getSummary_coupon_code_offers().isDisplayed());
-		library.visible_link(book.getSummary_coupon_code_offers(), "Veiw offers ");
-		library.Custom_click(book.getSummary_coupon_code_offers(), "Veiw offers ");
+		library.visible_link(book.getSummary_coupon_code_offers(), "View offers ");
+		library.Custom_click(book.getSummary_coupon_code_offers(), "View offers ");
 		Thread.sleep(3000);
 		library.visible_link(book.getSummary_coupon_page_title(), "APPLY COUPON CODE");
 		library.Custom_click(book.getSummary_coupon_apply(), "Apply coupon");

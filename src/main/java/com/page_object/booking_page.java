@@ -3,6 +3,9 @@ package com.page_object;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import io.appium.java_client.android.AndroidDriver;
 
 public class booking_page {
 	
@@ -400,8 +403,8 @@ public class booking_page {
 					@FindBy(xpath="//android.widget.TextView[@text='Notification']")		//Click_home_page_More_button
 					private WebElement More_button_notification;
 					
-					@FindBy(xpath="//android.widget.TextView[@text='Edit Profile']")		//Click_home_page_More_button
-					private WebElement More_button_Edit_Profile;
+					@FindBy(xpath="//android.widget.TextView[@content-desc='txt_moreMy Profile']")		//Click_home_page_More_button
+					private WebElement More_button_MY_Profile;
 					
 					@FindBy(xpath="//android.widget.TextView[@text='Split Payment']")		//Click_home_page_More_button
 					private WebElement More_button_split_payment;
@@ -433,7 +436,7 @@ public class booking_page {
 					@FindBy(xpath="//android.widget.TextView[@content-desc='txt_moreFAQ']")		//Click_home_page_More_button
 					private WebElement More_button_faq;
 					
-					@FindBy(xpath="//android.widget.TextView[@index='11']")		//Click_home_page_More_button
+					@FindBy(xpath="//android.widget.TextView[@content-desc='txt_app_version']")		//Click_home_page_More_button
 					private WebElement More_button_app_version;
 					
 					@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_No']")		//Click_home_page_More_button
@@ -795,9 +798,10 @@ public class booking_page {
 
 	
 //=============================================================================================================
-		public booking_page(WebDriver driver) 
+		public booking_page(AndroidDriver driver1) 
 		{
-			this.driver=driver;
+			driver=driver1;
+			PageFactory.initElements(driver1, this);
 		}
 
 					public WebDriver getDriver() {
@@ -1679,8 +1683,8 @@ public class booking_page {
 						return More_button_notification;
 					}
 
-					public WebElement getMore_button_Edit_Profile() {
-						return More_button_Edit_Profile;
+					public WebElement getMore_button_my_Profile() {
+						return More_button_MY_Profile;
 					}
 
 					public WebElement getMore_button_split_payment() {

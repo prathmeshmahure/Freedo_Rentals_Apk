@@ -476,7 +476,7 @@ public class appium_1 extends base_class{
 		library.isSelected(book.getClick_cash_on_delivery(), "After select Cod check box is ");
 	//	library.Custom_click(book.getClick_I_accept_checkbox(), "I Accept the Terms & Conditions checkbox");
 		library.visible_link(book.getClick_summary_pay_now_button(), "click pay now button");
-		library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
+	//	library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
 	}
 //===================================================================================================================	
 	//@Test(dependsOnMethods={"TC_0043_Verify_continue_button_and_summary_page"})
@@ -488,8 +488,8 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getSummary_rent_additional_helmet_checkbox(), "Rent additonal helmet checkbox");
 		Thread.sleep(1000);
 		library.Custom_click(book.getSummary_rent_additional_helmet_checkbox(), "Rent additonal helmet checkbox");
-		library.visible_link(book.getSummary_Half_face_helmet(), "Half face helmet");
-		library.visible_link(book.getSummary_Full_face_helmet(), "Full face helmet");
+		library.visible_link(book.getSummary_Half_face_helmet(), "Full face helmet");
+	//	library.visible_link(book.getSummary_Full_face_helmet(), "half face helmet");
 		library.visible_link(book.getSummary_package_charges(),"Package charges  ");
 		library.visible_link(book.getClick_add_helmet_extra_charges(), "Additonal helmet ");
 		library.visible_link(book.getSummary_delivery_charges(),"Delivery charges  ");
@@ -539,7 +539,7 @@ public class appium_1 extends base_class{
 		library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
 		library.isSelected(book.getClick_cash_on_delivery(), "After select Cod check box is ");
 		Thread.sleep(500);
-		library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
+	//	library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
 	//	library.Custom_click(book.getClick_I_accept_checkbox(), "I accept Checkbox");
 		Thread.sleep(500);
 

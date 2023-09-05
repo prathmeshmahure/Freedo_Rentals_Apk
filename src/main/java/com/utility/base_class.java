@@ -22,6 +22,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
@@ -31,7 +32,7 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import net.bytebuddy.utility.RandomString;
-
+@Listeners(com.utility.listner.class)
 public class base_class {
 	public static WebDriver driver;
 	public static config_data_provider config;
@@ -59,13 +60,9 @@ public class base_class {
 			cap.setCapability("appium:udid", "emulator-5554");// 0836731257071990 //emulator-5554 //0526532038000424
 			cap.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
 			cap.setCapability("appium:avdLaunchTimeout", 600000);		
-//			cap.setCapability("appPackage", "com.heerofreedo");
-//			cap.setCapability("appActivity", "com.heerofreedo.MainActivity");
-//			cap.setCapability("appium:noReset", "false");
-			
-			cap.setCapability("appPackage", "com.android.chrome");
-			cap.setCapability("appActivity", "com.google.android.apps.chrome.Main");
-			cap.setCapability("appium:noReset", "false");  
+			cap.setCapability("appPackage", "com.heerofreedo");
+			cap.setCapability("appActivity", "com.heerofreedo.MainActivity");
+			cap.setCapability("appium:noReset", "false");
 			
 //			cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\10app-release.apk"));
 //			cap.setChromedriverExecutable(System.getProperty("user.dir")+"\\apk\\chromedriver.exe");

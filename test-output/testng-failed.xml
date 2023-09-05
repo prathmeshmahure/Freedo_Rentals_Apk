@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.utility.listner"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Freedo_domain.TEST">
+      <class name="Freedo_domain.appium_2">
         <methods>
+          <include name="TC_0063_Verify_user_end_ride_booking_status"/>
           <include name="OPEN_AND_INSTALL_APP"/>
+          <include name="TC_0064_Admin_check_End_ride_request"/>
           <include name="logger"/>
-          <include name="TC_0052_verify_install_apk"/>
+          <include name="TC_0059_Verify_user_able_to_Online_payment_booking"/>
+          <include name="TC_0060_Admin_approved_request"/>
           <include name="BS"/>
         </methods>
-      </class> <!-- Freedo_domain.TEST -->
+      </class> <!-- Freedo_domain.appium_2 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

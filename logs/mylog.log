@@ -1,5 +1,716 @@
-[INFO ] 2023-08-24 18:16:45.665 [main] Freedo_Rentals_Apk -  =============== /= Freedo Rentals Mobile App Automation Report =/ ==================  
-[INFO ] 2023-08-24 18:16:45.741 [main] Freedo_Rentals_Apk -  ===================================================================================  
-[INFO ] 2023-08-24 18:16:45.742 [main] Freedo_Rentals_Apk -  =================================================================================== 
-[INFO ] 2023-08-24 18:16:45.858 [main] Freedo_Rentals_Apk - ***************TC_0052_admin_Request_reject starts*****************
-[INFO ] 2023-08-24 18:17:05.866 [main] Freedo_Rentals_Apk -  chrome launch
+[INFO ] 2023-09-05 20:10:44.608 [main] Freedo_Rentals_Apk -  =============== /= Freedo Rentals Mobile App Automation Report =/ ==================  
+[INFO ] 2023-09-05 20:10:44.649 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:10:44.651 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:10:45.478 [main] Freedo_Rentals_Apk - ***************TC_001_verify_install_apk starts*****************
+[INFO ] 2023-09-05 20:10:51.149 [main] Freedo_Rentals_Apk - OK==Field is visible  Freedo app is Install
+[INFO ] 2023-09-05 20:10:51.552 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:10:51.553 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:10:51.935 [main] Freedo_Rentals_Apk - ***************TC_002_verify_select_pickup_location_date_and_packages starts*****************
+[INFO ] 2023-09-05 20:10:52.153 [main] Freedo_Rentals_Apk - OK==Field is visible  Select pickup location date and packages
+[INFO ] 2023-09-05 20:10:52.231 [main] Freedo_Rentals_Apk - OK==First slide indicator is = Selected
+[INFO ] 2023-09-05 20:10:52.395 [main] Freedo_Rentals_Apk - OK==Field is visible  first slide indicator
+[INFO ] 2023-09-05 20:10:52.552 [main] Freedo_Rentals_Apk - OK==Field is visible  second slide indicator
+[INFO ] 2023-09-05 20:10:52.708 [main] Freedo_Rentals_Apk - OK==Field is visible  third slide indicator
+[INFO ] 2023-09-05 20:10:52.872 [main] Freedo_Rentals_Apk - OK==Field is visible  Next_button static 1st page
+[INFO ] 2023-09-05 20:10:53.051 [main] Freedo_Rentals_Apk - OK==Field is visible  Skip_button static 1st page
+[INFO ] 2023-09-05 20:10:53.561 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:10:53.561 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:10:54.034 [main] Freedo_Rentals_Apk - ***************TC_003_Verify_the_NEXT_button_clicking starts*****************
+[INFO ] 2023-09-05 20:10:54.406 [main] Freedo_Rentals_Apk - OK==Element is clickable Next_button1 static 1st page
+[INFO ] 2023-09-05 20:10:57.335 [main] Freedo_Rentals_Apk - OK==second slide indicator is = Selected
+[INFO ] 2023-09-05 20:10:57.540 [main] Freedo_Rentals_Apk - OK==Field is visible   = Get it Home Delivered or Pickup from location
+[INFO ] 2023-09-05 20:10:57.662 [main] Freedo_Rentals_Apk - OK==Field is visible  Skip_button static 2nd page
+[INFO ] 2023-09-05 20:10:58.039 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:10:58.039 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:10:58.452 [main] Freedo_Rentals_Apk - ***************TC_004_Verify_the_NEXT_button_clicking starts*****************
+[INFO ] 2023-09-05 20:10:58.811 [main] Freedo_Rentals_Apk - OK==Element is clickable Next_button2 static 2nd page
+[INFO ] 2023-09-05 20:11:01.718 [main] Freedo_Rentals_Apk - OK==Third slide indicator is = Selected
+[INFO ] 2023-09-05 20:11:01.887 [main] Freedo_Rentals_Apk - OK==Field is visible   = Complete the payment and enjoy the ride
+[INFO ] 2023-09-05 20:11:02.239 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:11:02.239 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:11:02.617 [main] Freedo_Rentals_Apk - ***************TC_005_Verify_the_slide_indicator starts*****************
+[INFO ] 2023-09-05 20:11:02.741 [main] Freedo_Rentals_Apk - OK==first slide indicator is = Not Selected
+[INFO ] 2023-09-05 20:11:02.796 [main] Freedo_Rentals_Apk - OK==Second slide indicator is = Not Selected
+[INFO ] 2023-09-05 20:11:02.854 [main] Freedo_Rentals_Apk - OK==Third slide indicator is = Selected
+[INFO ] 2023-09-05 20:11:03.300 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:11:03.300 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:11:03.735 [main] Freedo_Rentals_Apk - ***************TC_006_Verify_the_Done_button_clicking starts*****************
+[INFO ] 2023-09-05 20:11:03.931 [main] Freedo_Rentals_Apk - OK==Field is visible  Done button
+[INFO ] 2023-09-05 20:11:04.212 [main] Freedo_Rentals_Apk - OK==Element is clickable Done_button static 3rd page
+[INFO ] 2023-09-05 20:11:04.903 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:11:04.903 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:11:05.388 [main] Freedo_Rentals_Apk - ***************TC_007_Verify_login_component starts*****************
+[INFO ] 2023-09-05 20:11:05.593 [main] Freedo_Rentals_Apk - OK==Field is visible  Login heading
+[INFO ] 2023-09-05 20:11:05.728 [main] Freedo_Rentals_Apk - OK==Field is visible  Mobile icon
+[INFO ] 2023-09-05 20:11:05.860 [main] Freedo_Rentals_Apk - OK==Field is visible  +91 indian code 
+[INFO ] 2023-09-05 20:11:05.993 [main] Freedo_Rentals_Apk - OK==Field is visible  Enter mobile number
+[INFO ] 2023-09-05 20:11:06.217 [main] Freedo_Rentals_Apk - OK==Field is visible  login button
+[INFO ] 2023-09-05 20:11:06.300 [main] Freedo_Rentals_Apk - OK==Login button is = Disabled
+[INFO ] 2023-09-05 20:11:06.481 [main] Freedo_Rentals_Apk - OK==Field is visible  You don't have an account ?
+[INFO ] 2023-09-05 20:11:06.621 [main] Freedo_Rentals_Apk - OK==Field is visible  Create an account
+[INFO ] 2023-09-05 20:11:07.080 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:11:07.080 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:11:07.486 [main] Freedo_Rentals_Apk - ***************TC_008_Verify_login_functionality_Register_mo_number starts*****************
+[INFO ] 2023-09-05 20:11:09.641 [main] Freedo_Rentals_Apk - OK==Value send successfully Enter mobile number
+[INFO ] 2023-09-05 20:11:11.327 [main] Freedo_Rentals_Apk - OK==Login button is = Enabled
+[INFO ] 2023-09-05 20:11:11.728 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:11:11.728 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:11:12.154 [main] Freedo_Rentals_Apk - ***************TC_009_verify_login_button_on_create_an_account_page starts*****************
+[INFO ] 2023-09-05 20:11:13.562 [main] Freedo_Rentals_Apk - OK==Element is clickable Create an account at login page
+[INFO ] 2023-09-05 20:11:14.887 [main] Freedo_Rentals_Apk - OK==Element is clickable login button on create an account page
+[INFO ] 2023-09-05 20:11:17.236 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:11:17.236 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:11:17.572 [main] Freedo_Rentals_Apk - ***************TC_0010_verify_create_an_account_by_clicking_login_page starts*****************
+[INFO ] 2023-09-05 20:11:17.840 [main] Freedo_Rentals_Apk - OK==Element is clickable Create an account at login page
+[INFO ] 2023-09-05 20:11:19.037 [main] Freedo_Rentals_Apk - OK==Field is visible  First name
+[INFO ] 2023-09-05 20:11:19.198 [main] Freedo_Rentals_Apk - OK==Field is visible  Last name
+[INFO ] 2023-09-05 20:11:19.353 [main] Freedo_Rentals_Apk - OK==Field is visible  Mobile number
+[INFO ] 2023-09-05 20:11:19.558 [main] Freedo_Rentals_Apk - OK==Field is visible  Email
+[INFO ] 2023-09-05 20:11:20.001 [main] Freedo_Rentals_Apk - OK==Field is visible  Gender
+[INFO ] 2023-09-05 20:11:20.094 [main] Freedo_Rentals_Apk - OK== I accept checkbox= Not Selected
+[INFO ] 2023-09-05 20:11:20.293 [main] Freedo_Rentals_Apk - OK==Field is visible  Terms and condition
+[INFO ] 2023-09-05 20:11:20.483 [main] Freedo_Rentals_Apk - OK==Field is visible  Privacy Policy
+[INFO ] 2023-09-05 20:11:20.582 [main] Freedo_Rentals_Apk - OK==Create my account button= Disabled
+[INFO ] 2023-09-05 20:11:20.792 [main] Freedo_Rentals_Apk - OK==Field is visible  Login
+[INFO ] 2023-09-05 20:11:21.227 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:11:21.227 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:11:21.634 [main] Freedo_Rentals_Apk - ***************TC_0011_verify_user_able_to_create_an_account starts*****************
+[INFO ] 2023-09-05 20:11:21.956 [main] Freedo_Rentals_Apk - OK==Field is visible  First name mandotary field ( * )
+[INFO ] 2023-09-05 20:11:24.240 [main] Freedo_Rentals_Apk - OK==Value send successfully First name
+[INFO ] 2023-09-05 20:11:25.098 [main] Freedo_Rentals_Apk - OK==Field is visible  Last name mandotary field ( * )
+[INFO ] 2023-09-05 20:11:26.872 [main] Freedo_Rentals_Apk - OK==Value send successfully Last name
+[INFO ] 2023-09-05 20:11:27.785 [main] Freedo_Rentals_Apk - OK==Field is visible  Mobile number mandotary field ( * )
+[INFO ] 2023-09-05 20:11:27.955 [main] Freedo_Rentals_Apk - OK==Field is visible  Email ID mandotary field ( * )
+[INFO ] 2023-09-05 20:11:29.874 [main] Freedo_Rentals_Apk - OK==Value send successfully Enter Email
+[INFO ] 2023-09-05 20:11:31.654 [main] Freedo_Rentals_Apk - OK==Field is visible  Gender mandotary field ( * )
+[INFO ] 2023-09-05 20:11:31.965 [main] Freedo_Rentals_Apk - OK==Element is clickable Female gender selected
+[INFO ] 2023-09-05 20:11:32.972 [main] Freedo_Rentals_Apk - OK==Element is clickable Other gender selected
+[INFO ] 2023-09-05 20:11:33.873 [main] Freedo_Rentals_Apk - OK==Element is clickable Male gender selected
+[INFO ] 2023-09-05 20:11:34.559 [main] Freedo_Rentals_Apk - OK==i accept checkbox By default is not = selected
+[INFO ] 2023-09-05 20:11:34.856 [main] Freedo_Rentals_Apk - OK==Element is clickable I accept checkbox
+[INFO ] 2023-09-05 20:11:35.620 [main] Freedo_Rentals_Apk - OK==Field is visible  Terms and condition 
+[INFO ] 2023-09-05 20:11:35.782 [main] Freedo_Rentals_Apk - OK==Field is visible  login button is present
+[INFO ] 2023-09-05 20:11:35.858 [main] Freedo_Rentals_Apk - OK==Create my account= Enabled
+[INFO ] 2023-09-05 20:11:36.226 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:11:36.226 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:11:36.619 [main] Freedo_Rentals_Apk - ***************TC_0012_verify_Terms_and_condition_link_on_create_an_account_page starts*****************
+[INFO ] 2023-09-05 20:11:37.037 [main] Freedo_Rentals_Apk - OK==Element is clickable Terms and condition 
+[INFO ] 2023-09-05 20:11:40.217 [main] Freedo_Rentals_Apk - OK==Field is visible  Terms and condition page Heading
+[INFO ] 2023-09-05 20:11:47.161 [main] Freedo_Rentals_Apk - OK==Field is visible  Terms and condition page info
+[INFO ] 2023-09-05 20:11:47.439 [main] Freedo_Rentals_Apk - OK==Element is clickable Terms and condition page back button 
+[INFO ] 2023-09-05 20:11:48.315 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:11:48.316 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:11:48.813 [main] Freedo_Rentals_Apk - ***************TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page starts*****************
+[INFO ] 2023-09-05 20:11:49.353 [main] Freedo_Rentals_Apk - OK==Element is clickable Privacy policy
+[INFO ] 2023-09-05 20:11:50.673 [main] Freedo_Rentals_Apk - OK==Field is visible  Privacy policy page Heaading
+[INFO ] 2023-09-05 20:11:50.770 [main] Freedo_Rentals_Apk - OK==Field is visible  Privacy policy txt
+[INFO ] 2023-09-05 20:11:50.882 [main] Freedo_Rentals_Apk - OK==Field is visible   back button 
+[INFO ] 2023-09-05 20:11:51.386 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:11:51.386 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:11:51.798 [main] Freedo_Rentals_Apk - ***************TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element starts*****************
+[INFO ] 2023-09-05 20:11:52.091 [main] Freedo_Rentals_Apk - OK==Element is clickable Privacy policy dropdown open
+[INFO ] 2023-09-05 20:11:53.187 [main] Freedo_Rentals_Apk - OK==Field is visible  Privacy policy information
+[INFO ] 2023-09-05 20:11:53.843 [main] Freedo_Rentals_Apk - OK==Element is clickable Privacy policy dropdown Close
+[INFO ] 2023-09-05 20:11:54.609 [main] Freedo_Rentals_Apk - OK==Element is clickable  back button 
+[INFO ] 2023-09-05 20:11:55.388 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:11:55.388 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:11:55.825 [main] Freedo_Rentals_Apk - ***************TC_0015_Verify_create_my_account_button starts*****************
+[INFO ] 2023-09-05 20:11:56.169 [main] Freedo_Rentals_Apk - OK==Element is clickable Create my account
+[INFO ] 2023-09-05 20:11:56.829 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:11:56.830 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:11:57.293 [main] Freedo_Rentals_Apk - ***************TC_0016_Verify_otp_verification_time_slot starts*****************
+[INFO ] 2023-09-05 20:12:00.062 [main] Freedo_Rentals_Apk - OK==Field is visible   Time duration 
+[INFO ] 2023-09-05 20:12:00.214 [main] Freedo_Rentals_Apk - OK==Field is visible   Time duration 01:57
+[INFO ] 2023-09-05 20:12:00.553 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:12:00.553 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:12:00.899 [main] Freedo_Rentals_Apk - ***************TC_0017_Verify_OTP_Verification_Page starts*****************
+[INFO ] 2023-09-05 20:12:06.028 [main] Freedo_Rentals_Apk - OK==OTP VERIFICATION page tittle= Displayed
+[INFO ] 2023-09-05 20:12:06.138 [main] Freedo_Rentals_Apk - OK==Field is visible  OTP Enter field
+[INFO ] 2023-09-05 20:12:06.773 [main] Freedo_Rentals_Apk - OK==Field is visible  Verify otp button
+[INFO ] 2023-09-05 20:12:08.073 [main] Freedo_Rentals_Apk - OK==Value send successfully OTP send 6 digit successfully
+[INFO ] 2023-09-05 20:12:08.731 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:12:08.731 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:12:09.434 [main] Freedo_Rentals_Apk - ***************TC_0018_Select_location starts*****************
+[INFO ] 2023-09-05 20:12:13.454 [main] Freedo_Rentals_Apk - OK==Field is visible  While_using_this_app
+[INFO ] 2023-09-05 20:12:13.572 [main] Freedo_Rentals_Apk - OK==Field is visible  Dont allow
+[INFO ] 2023-09-05 20:12:14.195 [main] Freedo_Rentals_Apk - OK==Element is clickable Dont allow
+[INFO ] 2023-09-05 20:12:17.310 [main] Freedo_Rentals_Apk - OK==Field is visible  Detect_my_location
+[INFO ] 2023-09-05 20:12:17.403 [main] Freedo_Rentals_Apk - OK==Field is visible  Select_Manually_location
+[INFO ] 2023-09-05 20:12:17.626 [main] Freedo_Rentals_Apk - OK==Element is clickable Select_Manually_location
+[INFO ] 2023-09-05 20:12:18.375 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:12:18.375 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:12:18.823 [main] Freedo_Rentals_Apk - ***************TC_0019_verify_user_select_City starts*****************
+[INFO ] 2023-09-05 20:12:19.120 [main] Freedo_Rentals_Apk - OK==Field is visible  Popular cities text
+[INFO ] 2023-09-05 20:12:19.339 [main] Freedo_Rentals_Apk - OK==Field is visible  Delhi
+[INFO ] 2023-09-05 20:12:19.555 [main] Freedo_Rentals_Apk - OK==Field is visible  Gurugram
+[INFO ] 2023-09-05 20:12:19.794 [main] Freedo_Rentals_Apk - OK==Field is visible  Noida
+[INFO ] 2023-09-05 20:12:19.996 [main] Freedo_Rentals_Apk - OK==Field is visible  Bengaluru
+[INFO ] 2023-09-05 20:12:20.445 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:12:20.445 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:12:20.874 [main] Freedo_Rentals_Apk - ***************TC_0020_Search_wrong_city_name starts*****************
+[INFO ] 2023-09-05 20:12:21.158 [main] Freedo_Rentals_Apk - OK==Field is visible  Please select your city
+[INFO ] 2023-09-05 20:12:22.834 [main] Freedo_Rentals_Apk - OK==Value send successfully Search city by city name
+[INFO ] 2023-09-05 20:12:24.912 [main] Freedo_Rentals_Apk - OK==Field is visible  Selected city not available
+[INFO ] 2023-09-05 20:12:25.434 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:12:25.435 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:12:25.928 [main] Freedo_Rentals_Apk - ***************TC_0021_Search_city_name starts*****************
+[INFO ] 2023-09-05 20:12:26.080 [main] Freedo_Rentals_Apk - OK==Field is visible  Please select your city
+[INFO ] 2023-09-05 20:12:28.489 [main] Freedo_Rentals_Apk - OK==Value send successfully Search city by city name
+[INFO ] 2023-09-05 20:12:30.273 [main] Freedo_Rentals_Apk - OK==Field is visible  Noida city
+[INFO ] 2023-09-05 20:12:30.716 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:12:30.716 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:12:31.154 [main] Freedo_Rentals_Apk - ***************TC_0022_Select_all__City starts*****************
+[INFO ] 2023-09-05 20:12:33.610 [main] Freedo_Rentals_Apk - OK==Element is clickable Noida city
+[INFO ] 2023-09-05 20:12:34.898 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:12:34.898 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:12:35.646 [main] Freedo_Rentals_Apk - ***************TC_0023_Verify_location_popup starts*****************
+[INFO ] 2023-09-05 20:12:35.837 [main] Freedo_Rentals_Apk - OK==Field is visible  location page While_using_this_app
+[INFO ] 2023-09-05 20:12:35.957 [main] Freedo_Rentals_Apk - OK==Field is visible  Dont allow 1
+[INFO ] 2023-09-05 20:12:36.186 [main] Freedo_Rentals_Apk - OK==Element is clickable Dont allow 1
+[INFO ] 2023-09-05 20:12:37.103 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:12:37.103 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:12:37.853 [main] Freedo_Rentals_Apk - ***************TC_0024_Verify_home_page_all_elements starts*****************
+[INFO ] 2023-09-05 20:12:38.340 [main] Freedo_Rentals_Apk - OK==Field is visible  Selected city name is visible
+[INFO ] 2023-09-05 20:12:38.661 [main] Freedo_Rentals_Apk - OK==Field is visible  Username
+[INFO ] 2023-09-05 20:12:39.127 [main] Freedo_Rentals_Apk - OK==Field is visible  Hi, Prathmesh!
+[INFO ] 2023-09-05 20:12:39.388 [main] Freedo_Rentals_Apk - OK==Field is visible  City name
+[INFO ] 2023-09-05 20:12:39.787 [main] Freedo_Rentals_Apk - OK==Field is visible   Noida
+[INFO ] 2023-09-05 20:12:40.065 [main] Freedo_Rentals_Apk - OK==Field is visible  Location icon
+[INFO ] 2023-09-05 20:12:40.351 [main] Freedo_Rentals_Apk - OK==Field is visible  Enter button(Arrow)
+[INFO ] 2023-09-05 20:12:40.586 [main] Freedo_Rentals_Apk - OK==Field is visible  Different city ?
+[INFO ] 2023-09-05 20:12:43.788 [main] Freedo_Rentals_Apk - Successfully  Scroll up page Action up
+[INFO ] 2023-09-05 20:12:44.036 [main] Freedo_Rentals_Apk - OK==Field is visible  Bike button
+[INFO ] 2023-09-05 20:12:44.271 [main] Freedo_Rentals_Apk - OK==Field is visible  Scooter button
+[INFO ] 2023-09-05 20:12:47.402 [main] Freedo_Rentals_Apk - Successfully  Scroll page down Action Down
+[INFO ] 2023-09-05 20:12:47.663 [main] Freedo_Rentals_Apk - OK==Field is visible  Bike Rental
+[INFO ] 2023-09-05 20:12:47.922 [main] Freedo_Rentals_Apk - OK==Field is visible  Bookings
+[INFO ] 2023-09-05 20:12:48.210 [main] Freedo_Rentals_Apk - OK==Field is visible  Home button
+[INFO ] 2023-09-05 20:12:48.491 [main] Freedo_Rentals_Apk - OK==Field is visible  Rent
+[INFO ] 2023-09-05 20:12:48.770 [main] Freedo_Rentals_Apk - OK==Field is visible  More
+[INFO ] 2023-09-05 20:12:49.303 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:12:49.303 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:12:49.804 [main] Freedo_Rentals_Apk - ***************TC_0025_Verify_available_all_bikes starts*****************
+[INFO ] 2023-09-05 20:12:50.375 [main] Freedo_Rentals_Apk - OK==Element is clickable Enter button(Arrow)
+[INFO ] 2023-09-05 20:12:51.422 [main] Freedo_Rentals_Apk - OK==Element is clickable calender date select
+[INFO ] 2023-09-05 20:12:53.557 [main] Freedo_Rentals_Apk - OK==Element is clickable calender ok button
+[INFO ] 2023-09-05 20:12:55.140 [main] Freedo_Rentals_Apk - OK==Element is clickable package dropdown
+[INFO ] 2023-09-05 20:12:56.167 [main] Freedo_Rentals_Apk - OK==Element is clickable Selected package
+[INFO ] 2023-09-05 20:12:56.354 [main] Freedo_Rentals_Apk - OK==Element is clickable Go Freedo button
+[INFO ] 2023-09-05 20:12:58.479 [main] Freedo_Rentals_Apk - OK==Our Renting fleet Page tittle is = Displayed
+[INFO ] 2023-09-05 20:12:58.841 [main] Freedo_Rentals_Apk - OK==Element is clickable Bike tab
+[INFO ] 2023-09-05 20:12:58.977 [main] Freedo_Rentals_Apk - OK==Bike tab by default is = Selected
+[INFO ] 2023-09-05 20:12:59.629 [main] Freedo_Rentals_Apk - OK==Field is visible  9 Bikes Available
+[INFO ] 2023-09-05 20:13:00.092 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:13:00.092 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:13:00.575 [main] Freedo_Rentals_Apk - ***************TC_0026_Verify_available_all_Scooters starts*****************
+[INFO ] 2023-09-05 20:13:01.621 [main] Freedo_Rentals_Apk - OK==Element is clickable Scooter tab
+[INFO ] 2023-09-05 20:13:02.833 [main] Freedo_Rentals_Apk - OK==Field is visible  Available bike quantity
+[INFO ] 2023-09-05 20:13:03.189 [main] Freedo_Rentals_Apk - OK==Field is visible  5 Scooters Available
+[INFO ] 2023-09-05 20:13:03.710 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:13:03.710 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:13:04.223 [main] Freedo_Rentals_Apk - ***************TC_0027_Verify_homepage_bike_rentals_tab_available_bike starts*****************
+[INFO ] 2023-09-05 20:13:07.201 [main] Freedo_Rentals_Apk - OK==Element is clickable Home button 
+[INFO ] 2023-09-05 20:13:09.740 [main] Freedo_Rentals_Apk - OK==Element is clickable Bike Rental button 
+[INFO ] 2023-09-05 20:13:10.920 [main] Freedo_Rentals_Apk - OK==Element is clickable Bike tab
+[INFO ] 2023-09-05 20:13:12.174 [main] Freedo_Rentals_Apk - OK==Field is visible  Available bikes
+[INFO ] 2023-09-05 20:13:12.517 [main] Freedo_Rentals_Apk - OK==Field is visible  9 Bikes Available
+[INFO ] 2023-09-05 20:13:12.966 [main] Freedo_Rentals_Apk - OK==Element is clickable Scooter tab
+[INFO ] 2023-09-05 20:13:14.158 [main] Freedo_Rentals_Apk - OK==Field is visible  Available Scooters
+[INFO ] 2023-09-05 20:13:14.527 [main] Freedo_Rentals_Apk - OK==Field is visible  5 Scooters Available
+[INFO ] 2023-09-05 20:13:15.274 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:13:15.274 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:13:15.875 [main] Freedo_Rentals_Apk - ***************TC_0028_Verify_Rent_tab_all_elements starts*****************
+[INFO ] 2023-09-05 20:13:17.391 [main] Freedo_Rentals_Apk - OK==Element is clickable Home button 
+[INFO ] 2023-09-05 20:13:19.788 [main] Freedo_Rentals_Apk - OK==Element is clickable Rent tab 
+[INFO ] 2023-09-05 20:13:20.740 [main] Freedo_Rentals_Apk - OK==Field is visible  Rental Process page heading
+[INFO ] 2023-09-05 20:13:20.974 [main] Freedo_Rentals_Apk - OK==Field is visible  Select date & pickup location
+[INFO ] 2023-09-05 20:13:21.157 [main] Freedo_Rentals_Apk - OK==Field is visible  Select from the list of Bikes/Scooters
+[INFO ] 2023-09-05 20:13:21.374 [main] Freedo_Rentals_Apk - OK==Field is visible  Submit kyc and documents
+[INFO ] 2023-09-05 20:13:21.626 [main] Freedo_Rentals_Apk - OK==Field is visible  Pay & book the bike
+[INFO ] 2023-09-05 20:13:22.022 [main] Freedo_Rentals_Apk - OK==Field is visible  Enjoy the ride
+[INFO ] 2023-09-05 20:13:22.451 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:13:22.452 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:13:22.870 [main] Freedo_Rentals_Apk - ***************TC_0029_Verify_freedo_rental_icon starts*****************
+[INFO ] 2023-09-05 20:13:24.068 [main] Freedo_Rentals_Apk - OK==Field is visible  Home button 
+[INFO ] 2023-09-05 20:13:26.393 [main] Freedo_Rentals_Apk - OK==Field is visible  Home page
+[INFO ] 2023-09-05 20:13:26.858 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:13:26.858 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:13:27.353 [main] Freedo_Rentals_Apk - ***************TC_0030_Verify_more_button_all_elements starts*****************
+[INFO ] 2023-09-05 20:13:27.989 [main] Freedo_Rentals_Apk - OK==Element is clickable More button 
+[INFO ] 2023-09-05 20:13:29.253 [main] Freedo_Rentals_Apk - OK==Field is visible  Dark theme mode
+[INFO ] 2023-09-05 20:13:29.489 [main] Freedo_Rentals_Apk - OK==Field is visible  Notification
+[INFO ] 2023-09-05 20:13:29.767 [main] Freedo_Rentals_Apk - OK==Field is visible  My profile
+[INFO ] 2023-09-05 20:13:30.299 [main] Freedo_Rentals_Apk - OK==Field is visible  Split payment
+[INFO ] 2023-09-05 20:13:30.594 [main] Freedo_Rentals_Apk - OK==Field is visible  Rate us
+[INFO ] 2023-09-05 20:13:30.896 [main] Freedo_Rentals_Apk - OK==Field is visible  KYC
+[INFO ] 2023-09-05 20:13:31.199 [main] Freedo_Rentals_Apk - OK==Field is visible  Terms & condition
+[INFO ] 2023-09-05 20:13:31.500 [main] Freedo_Rentals_Apk - OK==Field is visible  Privacy policy
+[INFO ] 2023-09-05 20:13:31.807 [main] Freedo_Rentals_Apk - OK==Field is visible  Address book
+[INFO ] 2023-09-05 20:13:34.590 [main] Freedo_Rentals_Apk - Successfully  Scroll up page Action up
+[INFO ] 2023-09-05 20:13:34.858 [main] Freedo_Rentals_Apk - OK==Field is visible  About us
+[INFO ] 2023-09-05 20:13:35.147 [main] Freedo_Rentals_Apk - OK==Field is visible  Contact us
+[INFO ] 2023-09-05 20:13:35.435 [main] Freedo_Rentals_Apk - OK==Field is visible  Invite your friend
+[INFO ] 2023-09-05 20:13:35.724 [main] Freedo_Rentals_Apk - OK==Field is visible  FAQ
+[INFO ] 2023-09-05 20:13:36.064 [main] Freedo_Rentals_Apk - OK==Field is visible  Logout
+[INFO ] 2023-09-05 20:13:36.369 [main] Freedo_Rentals_Apk - OK==Field is visible  App version 
+[INFO ] 2023-09-05 20:13:36.814 [main] Freedo_Rentals_Apk - OK==Field is visible  App Version 2.0.8
+[INFO ] 2023-09-05 20:13:37.236 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:13:37.236 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:13:37.645 [main] Freedo_Rentals_Apk - ***************TC_0031_Verify_Booking_elements starts*****************
+[INFO ] 2023-09-05 20:13:38.302 [main] Freedo_Rentals_Apk - OK==Element is clickable Home button 
+[INFO ] 2023-09-05 20:13:40.790 [main] Freedo_Rentals_Apk - OK==Element is clickable home page booking button
+[INFO ] 2023-09-05 20:13:43.212 [main] Freedo_Rentals_Apk - OK==Field is visible  bike images
+[INFO ] 2023-09-05 20:13:43.397 [main] Freedo_Rentals_Apk - OK==Field is visible  bike name 
+[INFO ] 2023-09-05 20:13:43.562 [main] Freedo_Rentals_Apk - OK==Field is visible  pick up Location
+[INFO ] 2023-09-05 20:13:43.744 [main] Freedo_Rentals_Apk - OK==Field is visible  pick up date 
+[INFO ] 2023-09-05 20:13:43.987 [main] Freedo_Rentals_Apk - OK==Field is visible  Duration 
+[INFO ] 2023-09-05 20:13:44.175 [main] Freedo_Rentals_Apk - OK==Field is visible  Drop of date 
+[INFO ] 2023-09-05 20:13:44.402 [main] Freedo_Rentals_Apk - OK==Field is visible  Total amount 
+[INFO ] 2023-09-05 20:13:44.745 [main] Freedo_Rentals_Apk - OK==Field is visible  bike name =HERO HF Deluxe
+[INFO ] 2023-09-05 20:13:45.056 [main] Freedo_Rentals_Apk - OK==Field is visible  pick up Location =Noida
+[INFO ] 2023-09-05 20:13:45.393 [main] Freedo_Rentals_Apk - OK==Field is visible  pick up date =06 Sep 2023
+[INFO ] 2023-09-05 20:13:45.712 [main] Freedo_Rentals_Apk - OK==Field is visible  Duration =1 Days
+[INFO ] 2023-09-05 20:13:46.042 [main] Freedo_Rentals_Apk - OK==Field is visible  Drop of date =07 Sep 2023
+[INFO ] 2023-09-05 20:13:46.380 [main] Freedo_Rentals_Apk - OK==Field is visible  Total amount =₹ 175
+[INFO ] 2023-09-05 20:13:46.607 [main] Freedo_Rentals_Apk - OK==Field is visible  view booking
+[INFO ] 2023-09-05 20:13:47.223 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:13:47.223 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:13:47.842 [main] Freedo_Rentals_Apk - ***************TC_0032_Verify_Booking_elements starts*****************
+[INFO ] 2023-09-05 20:13:48.295 [main] Freedo_Rentals_Apk - OK==Element is clickable Home button 
+[INFO ] 2023-09-05 20:13:51.323 [main] Freedo_Rentals_Apk - OK==Element is clickable Different city
+[INFO ] 2023-09-05 20:13:54.019 [main] Freedo_Rentals_Apk - OK==Field is visible  Detect my location
+[INFO ] 2023-09-05 20:13:54.148 [main] Freedo_Rentals_Apk - OK==Field is visible  Select manually location
+[INFO ] 2023-09-05 20:13:54.429 [main] Freedo_Rentals_Apk - OK==Element is clickable Select manually location
+[INFO ] 2023-09-05 20:13:55.657 [main] Freedo_Rentals_Apk - OK==Element is clickable Noida city
+[INFO ] 2023-09-05 20:13:56.724 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:13:56.725 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:13:58.422 [main] Freedo_Rentals_Apk - ***************TC_0033_Verify_Bike_button_on_homepage starts*****************
+[INFO ] 2023-09-05 20:14:02.339 [main] Freedo_Rentals_Apk - Successfully  Scroll up page Action up
+[INFO ] 2023-09-05 20:14:03.323 [main] Freedo_Rentals_Apk - OK==Bike button by default is = Selected
+[INFO ] 2023-09-05 20:14:06.003 [main] Freedo_Rentals_Apk - OK==bike is Available
+[INFO ] 2023-09-05 20:14:09.428 [main] Freedo_Rentals_Apk - Successfully  Scroll up page Action up
+[INFO ] 2023-09-05 20:14:10.005 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:14:10.005 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:14:10.479 [main] Freedo_Rentals_Apk - ***************TC_0034_Verify_scooter_button_on_homepage starts*****************
+[INFO ] 2023-09-05 20:14:11.022 [main] Freedo_Rentals_Apk - OK==Element is clickable Scooter button
+[INFO ] 2023-09-05 20:14:12.030 [main] Freedo_Rentals_Apk - OK==Scooter button is = Selected
+[INFO ] 2023-09-05 20:14:15.030 [main] Freedo_Rentals_Apk - OK==Scooter is Available
+[INFO ] 2023-09-05 20:14:15.535 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:14:15.535 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:14:16.045 [main] Freedo_Rentals_Apk - ***************TC_0035_Verify_user_able_to_select_date_and_package_under_booking starts*****************
+[INFO ] 2023-09-05 20:14:16.654 [main] Freedo_Rentals_Apk - OK==Element is clickable Bike button
+[INFO ] 2023-09-05 20:14:18.092 [main] Freedo_Rentals_Apk - OK==Element is clickable Booknow button
+[INFO ] 2023-09-05 20:14:19.137 [main] Freedo_Rentals_Apk - OK==Element is clickable calender date select
+[INFO ] 2023-09-05 20:14:21.346 [main] Freedo_Rentals_Apk - OK==Element is clickable calender ok button
+[INFO ] 2023-09-05 20:14:22.863 [main] Freedo_Rentals_Apk - OK==Element is clickable package dropdown
+[INFO ] 2023-09-05 20:14:23.776 [main] Freedo_Rentals_Apk - OK==Element is clickable Selected package
+[INFO ] 2023-09-05 20:14:23.984 [main] Freedo_Rentals_Apk - OK==Element is clickable Go Freedo button
+[INFO ] 2023-09-05 20:14:41.234 [main] Freedo_Rentals_Apk - OK==Element is clickable ok button
+[INFO ] 2023-09-05 20:14:42.260 [main] Freedo_Rentals_Apk - OK==Field is visible  Price is =₹350
+[INFO ] 2023-09-05 20:14:42.886 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:14:42.887 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:14:43.494 [main] Freedo_Rentals_Apk - ***************TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements starts*****************
+[INFO ] 2023-09-05 20:14:44.062 [main] Freedo_Rentals_Apk - OK==Field is visible  Pick-up vehicle radio button
+[INFO ] 2023-09-05 20:14:44.222 [main] Freedo_Rentals_Apk - OK==Pick-up vehicle radio button= Selected
+[INFO ] 2023-09-05 20:14:44.609 [main] Freedo_Rentals_Apk - OK==Field is visible  Home delivery radio button
+[INFO ] 2023-09-05 20:14:47.902 [main] Freedo_Rentals_Apk - Successfully  Scroll up page Action up
+[INFO ] 2023-09-05 20:14:48.239 [main] Freedo_Rentals_Apk - OK==Field is visible  Bike Price 
+[INFO ] 2023-09-05 20:14:48.598 [main] Freedo_Rentals_Apk - OK==Field is visible  Km reading
+[INFO ] 2023-09-05 20:14:49.035 [main] Freedo_Rentals_Apk - OK==Field is visible  Excess km charges Price
+[INFO ] 2023-09-05 20:14:49.435 [main] Freedo_Rentals_Apk - OK==Field is visible  Excess hourly charges Price 
+[INFO ] 2023-09-05 20:14:49.942 [main] Freedo_Rentals_Apk - OK==Field is visible  Price is =₹350
+[INFO ] 2023-09-05 20:14:50.503 [main] Freedo_Rentals_Apk - OK==Field is visible  Price is =120Km
+[INFO ] 2023-09-05 20:14:51.074 [main] Freedo_Rentals_Apk - OK==Field is visible  Price is =₹2/km
+[INFO ] 2023-09-05 20:14:51.599 [main] Freedo_Rentals_Apk - OK==Field is visible  Price is =₹50/hr
+[INFO ] 2023-09-05 20:14:51.976 [main] Freedo_Rentals_Apk - OK==Field is visible  Map
+[INFO ] 2023-09-05 20:14:52.337 [main] Freedo_Rentals_Apk - OK==Field is visible  Time slot Morning
+[INFO ] 2023-09-05 20:14:52.719 [main] Freedo_Rentals_Apk - OK==Field is visible  Time slot Afternoon
+[INFO ] 2023-09-05 20:14:53.041 [main] Freedo_Rentals_Apk - OK==Field is visible  Time slot Evening
+[INFO ] 2023-09-05 20:14:53.441 [main] Freedo_Rentals_Apk - OK==Field is visible  List button
+[INFO ] 2023-09-05 20:14:53.765 [main] Freedo_Rentals_Apk - OK==Field is visible  Continue button
+[INFO ] 2023-09-05 20:14:54.568 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:14:54.569 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:14:55.344 [main] Freedo_Rentals_Apk - ***************TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery starts*****************
+[INFO ] 2023-09-05 20:14:56.105 [main] Freedo_Rentals_Apk - OK==Element is clickable Home delivery radio button
+[INFO ] 2023-09-05 20:14:59.707 [main] Freedo_Rentals_Apk - Successfully  Scroll up page Action up
+[INFO ] 2023-09-05 20:15:00.260 [main] Freedo_Rentals_Apk - OK==Element is clickable Add Address
+[INFO ] 2023-09-05 20:15:04.254 [main] Freedo_Rentals_Apk - OK==Element is clickable Location on device ok
+[INFO ] 2023-09-05 20:15:06.257 [main] Freedo_Rentals_Apk - OK==Value send successfully Searching address
+[INFO ] 2023-09-05 20:15:10.027 [main] Freedo_Rentals_Apk - OK==Element is clickable Random 1 option is selected address
+[INFO ] 2023-09-05 20:15:10.490 [main] Freedo_Rentals_Apk - OK==Element is clickable Confirm location
+[INFO ] 2023-09-05 20:15:13.175 [main] Freedo_Rentals_Apk - OK==Value send successfully Prathmesh
+[INFO ] 2023-09-05 20:15:15.367 [main] Freedo_Rentals_Apk - OK==Value send successfully Dummy address
+[INFO ] 2023-09-05 20:15:17.910 [main] Freedo_Rentals_Apk - OK==Value send successfully Dummy address
+[INFO ] 2023-09-05 20:15:20.303 [main] Freedo_Rentals_Apk - OK==Element is clickable Save address details
+[INFO ] 2023-09-05 20:15:21.507 [main] Freedo_Rentals_Apk - OK==Element is clickable delete address
+[INFO ] 2023-09-05 20:15:22.768 [main] Freedo_Rentals_Apk - OK==Element is clickable delete confirm Yes 
+[INFO ] 2023-09-05 20:15:25.974 [main] Freedo_Rentals_Apk - OK==Element is clickable Add new address
+[INFO ] 2023-09-05 20:15:52.754 [main] Freedo_Rentals_Apk - Successfully  Scroll page down Action Down
+[INFO ] 2023-09-05 20:15:53.168 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:15:53.168 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:15:53.584 [main] Freedo_Rentals_Apk - ***************TC_0038_Verify_user_able_to_select_time_slot_afternoon starts*****************
+[INFO ] 2023-09-05 20:15:53.942 [main] Freedo_Rentals_Apk - OK==Element is clickable Home button 
+[INFO ] 2023-09-05 20:15:55.312 [main] Freedo_Rentals_Apk - OK==Element is clickable Different city
+[INFO ] 2023-09-05 20:15:57.280 [main] Freedo_Rentals_Apk - OK==Field is visible  Detect my location
+[INFO ] 2023-09-05 20:15:57.707 [main] Freedo_Rentals_Apk - OK==Element is clickable Select manually location
+[INFO ] 2023-09-05 20:15:58.721 [main] Freedo_Rentals_Apk - OK==Element is clickable Noida city
+[INFO ] 2023-09-05 20:16:02.323 [main] Freedo_Rentals_Apk - OK==Element is clickable Enterbutton
+[INFO ] 2023-09-05 20:16:03.406 [main] Freedo_Rentals_Apk - OK==Element is clickable calender date select
+[INFO ] 2023-09-05 20:16:05.915 [main] Freedo_Rentals_Apk - OK==Element is clickable calender ok button
+[INFO ] 2023-09-05 20:16:07.414 [main] Freedo_Rentals_Apk - OK==Element is clickable package dropdown
+[INFO ] 2023-09-05 20:16:08.429 [main] Freedo_Rentals_Apk - OK==Element is clickable Selected package
+[INFO ] 2023-09-05 20:16:08.650 [main] Freedo_Rentals_Apk - OK==Element is clickable Go Freedo button
+[INFO ] 2023-09-05 20:16:11.270 [main] Freedo_Rentals_Apk - OK==Element is clickable Booknow button
+[INFO ] 2023-09-05 20:16:16.150 [main] Freedo_Rentals_Apk - OK==Element is clickable ok button
+[INFO ] 2023-09-05 20:16:20.008 [main] Freedo_Rentals_Apk - Successfully  Scroll up page Action up
+[INFO ] 2023-09-05 20:16:20.570 [main] Freedo_Rentals_Apk - OK==Element is clickable Afternoon
+[INFO ] 2023-09-05 20:16:21.719 [main] Freedo_Rentals_Apk - OK==Afternoon is= Selected
+[INFO ] 2023-09-05 20:16:22.493 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:16:22.493 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:16:23.309 [main] Freedo_Rentals_Apk - ***************TC_0039_Verify_user_able_to_select_time_slot_Evening starts*****************
+[INFO ] 2023-09-05 20:16:24.237 [main] Freedo_Rentals_Apk - OK==Element is clickable Evening
+[INFO ] 2023-09-05 20:16:25.405 [main] Freedo_Rentals_Apk - OK==Evening is= Selected
+[INFO ] 2023-09-05 20:16:26.160 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:16:26.160 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:16:26.976 [main] Freedo_Rentals_Apk - ***************TC_0040_Verify_user_able_to_select_time_slot_Morning starts*****************
+[INFO ] 2023-09-05 20:16:28.066 [main] Freedo_Rentals_Apk - OK==Element is clickable Morning
+[INFO ] 2023-09-05 20:16:29.277 [main] Freedo_Rentals_Apk - OK==Morning is= Selected
+[INFO ] 2023-09-05 20:16:30.093 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:16:30.094 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:16:30.882 [main] Freedo_Rentals_Apk - ***************TC_0041_Verify_user_able_to_list_button starts*****************
+[INFO ] 2023-09-05 20:16:31.831 [main] Freedo_Rentals_Apk - OK==Element is clickable List
+[INFO ] 2023-09-05 20:16:32.971 [main] Freedo_Rentals_Apk - OK==Field is visible  Maps
+[INFO ] 2023-09-05 20:16:33.649 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:16:33.650 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:16:34.181 [main] Freedo_Rentals_Apk - ***************TC_0042_Verify_select_city starts*****************
+[ERROR] 2023-09-05 20:16:36.871 [main] Freedo_Rentals_Apk - ==Not==Element is not clickable Home button 
+[INFO ] 2023-09-05 20:16:38.688 [main] Freedo_Rentals_Apk - OK==Element is clickable Different city
+[INFO ] 2023-09-05 20:16:41.083 [main] Freedo_Rentals_Apk - OK==Field is visible  Detect my location
+[INFO ] 2023-09-05 20:16:41.305 [main] Freedo_Rentals_Apk - OK==Element is clickable Select manually location
+[INFO ] 2023-09-05 20:16:42.320 [main] Freedo_Rentals_Apk - OK==Element is clickable Noida city
+[INFO ] 2023-09-05 20:16:46.334 [main] Freedo_Rentals_Apk - OK==Element is clickable Enterbutton
+[INFO ] 2023-09-05 20:16:47.404 [main] Freedo_Rentals_Apk - OK==Element is clickable calender date select
+[INFO ] 2023-09-05 20:16:49.555 [main] Freedo_Rentals_Apk - OK==Element is clickable calender ok button
+[INFO ] 2023-09-05 20:16:51.087 [main] Freedo_Rentals_Apk - OK==Element is clickable package dropdown
+[INFO ] 2023-09-05 20:16:51.967 [main] Freedo_Rentals_Apk - OK==Element is clickable Selected package
+[INFO ] 2023-09-05 20:16:52.177 [main] Freedo_Rentals_Apk - OK==Element is clickable Go Freedo button
+[INFO ] 2023-09-05 20:16:54.755 [main] Freedo_Rentals_Apk - OK==Element is clickable Booknow button
+[INFO ] 2023-09-05 20:17:11.000 [main] Freedo_Rentals_Apk - OK==Element is clickable ok button
+[INFO ] 2023-09-05 20:17:14.963 [main] Freedo_Rentals_Apk - Successfully  Scroll up page Action up
+[INFO ] 2023-09-05 20:17:15.497 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:17:15.498 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:17:16.092 [main] Freedo_Rentals_Apk - ***************TC_0043_Verify_continue_button_and_summary_page starts*****************
+[INFO ] 2023-09-05 20:17:16.958 [main] Freedo_Rentals_Apk - OK==Element is clickable Continue button
+[INFO ] 2023-09-05 20:17:18.415 [main] Freedo_Rentals_Apk - OK==SUMMARY page title is = Displayed
+[INFO ] 2023-09-05 20:17:18.577 [main] Freedo_Rentals_Apk - OK==Field is visible  bike name 
+[INFO ] 2023-09-05 20:17:18.752 [main] Freedo_Rentals_Apk - OK==Field is visible  Start date  
+[INFO ] 2023-09-05 20:17:19.202 [main] Freedo_Rentals_Apk - OK==Field is visible   End date 
+[INFO ] 2023-09-05 20:17:19.410 [main] Freedo_Rentals_Apk - OK==Field is visible   Start time  
+[INFO ] 2023-09-05 20:17:19.622 [main] Freedo_Rentals_Apk - OK==Field is visible   End Time  
+[INFO ] 2023-09-05 20:17:19.844 [main] Freedo_Rentals_Apk - OK==Field is visible  Duration  
+[INFO ] 2023-09-05 20:17:20.087 [main] Freedo_Rentals_Apk - OK==Field is visible  Pick up Location  
+[INFO ] 2023-09-05 20:17:20.299 [main] Freedo_Rentals_Apk - OK==Field is visible  KM LIMIT 
+[INFO ] 2023-09-05 20:17:20.524 [main] Freedo_Rentals_Apk - OK==Field is visible  Excess Km Charges  
+[INFO ] 2023-09-05 20:17:20.760 [main] Freedo_Rentals_Apk - OK==Field is visible  Excess hourly charges  
+[INFO ] 2023-09-05 20:17:21.075 [main] Freedo_Rentals_Apk - OK==Field is visible  bike name =  HF Deluxe
+[INFO ] 2023-09-05 20:17:21.379 [main] Freedo_Rentals_Apk - OK==Field is visible  Start date = 2023-09-06
+[INFO ] 2023-09-05 20:17:21.713 [main] Freedo_Rentals_Apk - OK==Field is visible   End date =2023-09-07
+[INFO ] 2023-09-05 20:17:22.019 [main] Freedo_Rentals_Apk - OK==Field is visible   Start time = 10:00 AM - 11:00 AM
+[INFO ] 2023-09-05 20:17:22.310 [main] Freedo_Rentals_Apk - OK==Field is visible   End Time = 10:00 AM - 11:00 AM
+[INFO ] 2023-09-05 20:17:22.624 [main] Freedo_Rentals_Apk - OK==Field is visible  Duration = 1 Days
+[INFO ] 2023-09-05 20:17:22.928 [main] Freedo_Rentals_Apk - OK==Field is visible  Pick up Location = Freedo Sector 63 Noida
+[INFO ] 2023-09-05 20:17:23.226 [main] Freedo_Rentals_Apk - OK==Field is visible  KM LIMIT =120 KM
+[INFO ] 2023-09-05 20:17:23.525 [main] Freedo_Rentals_Apk - OK==Field is visible  Excess Km Charges = ₹2/km
+[INFO ] 2023-09-05 20:17:23.860 [main] Freedo_Rentals_Apk - OK==Field is visible  Excess hourly charges = ₹50/hr
+[INFO ] 2023-09-05 20:17:28.084 [main] Freedo_Rentals_Apk - Successfully  Scroll up page Action page up
+[INFO ] 2023-09-05 20:17:28.257 [main] Freedo_Rentals_Apk - OK==Field is visible  Rent additonal helmet checkbox
+[INFO ] 2023-09-05 20:17:28.427 [main] Freedo_Rentals_Apk - OK==Field is visible  View Offers
+[INFO ] 2023-09-05 20:17:28.595 [main] Freedo_Rentals_Apk - OK==Field is visible  Package charges  
+[INFO ] 2023-09-05 20:17:28.814 [main] Freedo_Rentals_Apk - OK==Field is visible  Additonal helmet  
+[INFO ] 2023-09-05 20:17:29.019 [main] Freedo_Rentals_Apk - OK==Field is visible  Delivery charges  
+[INFO ] 2023-09-05 20:17:29.237 [main] Freedo_Rentals_Apk - OK==Field is visible  Discount  
+[INFO ] 2023-09-05 20:17:29.462 [main] Freedo_Rentals_Apk - OK==Field is visible  Total Amount  
+[INFO ] 2023-09-05 20:17:29.771 [main] Freedo_Rentals_Apk - OK==Field is visible  Package charges = ₹ 350.00
+[INFO ] 2023-09-05 20:17:30.085 [main] Freedo_Rentals_Apk - OK==Field is visible  Additonal helmet = ₹ 0.00
+[INFO ] 2023-09-05 20:17:30.371 [main] Freedo_Rentals_Apk - OK==Field is visible  Delivery charges = ₹ 0
+[INFO ] 2023-09-05 20:17:30.650 [main] Freedo_Rentals_Apk - OK==Field is visible  Discount = ₹ 0
+[INFO ] 2023-09-05 20:17:30.969 [main] Freedo_Rentals_Apk - OK==Field is visible  Total Amount = ₹ 350.00
+[INFO ] 2023-09-05 20:17:31.089 [main] Freedo_Rentals_Apk - OK==Before select Cod check box is = Not Selected
+[INFO ] 2023-09-05 20:17:31.457 [main] Freedo_Rentals_Apk - OK==Element is clickable cash on delivery
+[INFO ] 2023-09-05 20:17:32.165 [main] Freedo_Rentals_Apk - OK==After select Cod check box is = Selected
+[INFO ] 2023-09-05 20:17:32.354 [main] Freedo_Rentals_Apk - OK==Field is visible  click pay now button
+[INFO ] 2023-09-05 20:17:32.770 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:17:32.770 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:17:33.207 [main] Freedo_Rentals_Apk - ***************TC_0044_Verify_summary_page_additional_helmet_charges starts*****************
+[INFO ] 2023-09-05 20:17:33.510 [main] Freedo_Rentals_Apk - OK==Field is visible  Rent additonal helmet checkbox
+[INFO ] 2023-09-05 20:17:34.819 [main] Freedo_Rentals_Apk - OK==Element is clickable Rent additonal helmet checkbox
+[INFO ] 2023-09-05 20:17:35.677 [main] Freedo_Rentals_Apk - OK==Field is visible  Full face helmet
+[INFO ] 2023-09-05 20:17:35.832 [main] Freedo_Rentals_Apk - OK==Field is visible  Package charges  
+[INFO ] 2023-09-05 20:17:35.999 [main] Freedo_Rentals_Apk - OK==Field is visible  Additonal helmet 
+[INFO ] 2023-09-05 20:17:36.232 [main] Freedo_Rentals_Apk - OK==Field is visible  Delivery charges  
+[INFO ] 2023-09-05 20:17:36.453 [main] Freedo_Rentals_Apk - OK==Field is visible  Discount  
+[INFO ] 2023-09-05 20:17:36.696 [main] Freedo_Rentals_Apk - OK==Field is visible  Total Amount 
+[INFO ] 2023-09-05 20:17:37.043 [main] Freedo_Rentals_Apk - OK==Field is visible  Package charges = ₹ 350.00
+[INFO ] 2023-09-05 20:17:37.410 [main] Freedo_Rentals_Apk - OK==Field is visible  Additonal helmet = ₹ 50.00
+[INFO ] 2023-09-05 20:17:37.772 [main] Freedo_Rentals_Apk - OK==Field is visible  Delivery charges = ₹ 0
+[INFO ] 2023-09-05 20:17:38.106 [main] Freedo_Rentals_Apk - OK==Field is visible  Discount = ₹ 0
+[INFO ] 2023-09-05 20:17:38.462 [main] Freedo_Rentals_Apk - OK==Field is visible  Total Amount = ₹ 400.00
+[INFO ] 2023-09-05 20:17:38.919 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:17:38.919 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:17:39.399 [main] Freedo_Rentals_Apk - ***************TC_0045_Verify_summary_page_coupon_code starts*****************
+[INFO ] 2023-09-05 20:17:39.700 [main] Freedo_Rentals_Apk - OK==Field is visible  View offers 
+[INFO ] 2023-09-05 20:17:40.102 [main] Freedo_Rentals_Apk - OK==Element is clickable View offers 
+[INFO ] 2023-09-05 20:17:43.254 [main] Freedo_Rentals_Apk - OK==Field is visible  APPLY COUPON CODE
+[INFO ] 2023-09-05 20:17:43.472 [main] Freedo_Rentals_Apk - OK==Element is clickable Apply coupon
+[INFO ] 2023-09-05 20:17:48.969 [main] Freedo_Rentals_Apk - Successfully  Scroll up page Action up
+[INFO ] 2023-09-05 20:17:49.142 [main] Freedo_Rentals_Apk - OK==Field is visible  Package charges  
+[INFO ] 2023-09-05 20:17:49.320 [main] Freedo_Rentals_Apk - OK==Field is visible  Additonal helmet  
+[INFO ] 2023-09-05 20:17:49.527 [main] Freedo_Rentals_Apk - OK==Field is visible  Delivery charges  
+[INFO ] 2023-09-05 20:17:49.755 [main] Freedo_Rentals_Apk - OK==Field is visible  Discount  
+[INFO ] 2023-09-05 20:17:49.983 [main] Freedo_Rentals_Apk - OK==Field is visible  Total Amount  
+[INFO ] 2023-09-05 20:17:50.325 [main] Freedo_Rentals_Apk - OK==Field is visible  Package charges = ₹ 350.00
+[INFO ] 2023-09-05 20:17:50.666 [main] Freedo_Rentals_Apk - OK==Field is visible  Additonal helmet = ₹ 50.00
+[INFO ] 2023-09-05 20:17:50.991 [main] Freedo_Rentals_Apk - OK==Field is visible  Delivery charges = ₹ 0
+[INFO ] 2023-09-05 20:17:51.344 [main] Freedo_Rentals_Apk - OK==Field is visible  Discount = - ₹ 225.00
+[INFO ] 2023-09-05 20:17:51.695 [main] Freedo_Rentals_Apk - OK==Field is visible  Total Amount = ₹ 175.00
+[INFO ] 2023-09-05 20:17:52.142 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:17:52.142 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:17:52.591 [main] Freedo_Rentals_Apk - ***************TC_0046_Verify_summary_page_cash_on_delivery_method starts*****************
+[INFO ] 2023-09-05 20:17:56.171 [main] Freedo_Rentals_Apk - Successfully  Scroll up page Action up
+[INFO ] 2023-09-05 20:17:56.552 [main] Freedo_Rentals_Apk - OK==Element is clickable cash on delivery
+[INFO ] 2023-09-05 20:17:58.639 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:17:58.639 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:17:58.986 [main] Freedo_Rentals_Apk - ***************TC_0047_Verify_summary_page_i_accept_checkbox starts*****************
+[INFO ] 2023-09-05 20:18:01.588 [main] Freedo_Rentals_Apk - OK==Pay now button= Enabled
+[INFO ] 2023-09-05 20:18:03.944 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:18:03.944 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:18:04.290 [main] Freedo_Rentals_Apk - ***************TC_0048_Verify_summary_page_pay_now_button starts*****************
+[INFO ] 2023-09-05 20:18:04.671 [main] Freedo_Rentals_Apk - OK==Element is clickable Pay now button
+[INFO ] 2023-09-05 20:18:14.853 [main] Freedo_Rentals_Apk - OK==Field is visible  Pay using UPI
+[INFO ] 2023-09-05 20:18:15.604 [main] Freedo_Rentals_Apk - OK==Field is visible  Pay using card
+[INFO ] 2023-09-05 20:18:15.732 [main] Freedo_Rentals_Apk - OK==Field is visible  pay using wallet
+[INFO ] 2023-09-05 20:18:15.874 [main] Freedo_Rentals_Apk - OK==Field is visible  Pay using Netbanking
+[INFO ] 2023-09-05 20:18:16.611 [main] Freedo_Rentals_Apk - OK==Field is visible  Pay now button
+[INFO ] 2023-09-05 20:18:17.000 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:18:17.000 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:18:17.376 [main] Freedo_Rentals_Apk - ***************TC_0049_Verify_user_able_to_make_payment starts*****************
+[INFO ] 2023-09-05 20:18:17.870 [main] Freedo_Rentals_Apk - OK==Element is clickable Pay using Netbanking
+[INFO ] 2023-09-05 20:18:19.822 [main] Freedo_Rentals_Apk - OK==Element is clickable Select SBI bank
+[INFO ] 2023-09-05 20:18:20.824 [main] Freedo_Rentals_Apk - OK==Element is clickable Pay Now button
+[INFO ] 2023-09-05 20:18:24.664 [main] Freedo_Rentals_Apk - OK==Element is clickable payment successful
+[INFO ] 2023-09-05 20:18:28.325 [main] Freedo_Rentals_Apk - OK==Element is clickable booking details
+[INFO ] 2023-09-05 20:18:38.447 [main] Freedo_Rentals_Apk - OK==Field is visible  booking details
+[INFO ] 2023-09-05 20:18:38.638 [main] Freedo_Rentals_Apk - OK==Element is clickable booking details
+[INFO ] 2023-09-05 20:19:01.086 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:19:01.086 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:19:01.440 [main] Freedo_Rentals_Apk - ***************TC_0050_Verify_user_able_to_view_booking_status starts*****************
+[INFO ] 2023-09-05 20:19:04.620 [main] Freedo_Rentals_Apk - OK==Field is visible  Booking status
+[INFO ] 2023-09-05 20:19:04.957 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:19:04.957 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:19:05.306 [main] Freedo_Rentals_Apk - ***************TC_0051_Verify_user_able_to_view_booking_status_all_elements starts*****************
+[INFO ] 2023-09-05 20:19:05.883 [main] Freedo_Rentals_Apk - OK==Field is visible  show more details text
+[INFO ] 2023-09-05 20:19:08.167 [main] Freedo_Rentals_Apk - OK==Field is visible  Booking status
+[INFO ] 2023-09-05 20:19:08.338 [main] Freedo_Rentals_Apk - OK==Field is visible  Booking ID 
+[INFO ] 2023-09-05 20:19:08.477 [main] Freedo_Rentals_Apk - OK==Field is visible  Vehicle number 
+[INFO ] 2023-09-05 20:19:08.628 [main] Freedo_Rentals_Apk - OK==Field is visible  Pick Up Date =
+[INFO ] 2023-09-05 20:19:08.790 [main] Freedo_Rentals_Apk - OK==Field is visible  Drop off date 
+[INFO ] 2023-09-05 20:19:09.053 [main] Freedo_Rentals_Apk - OK==Element is clickable show more details text
+[INFO ] 2023-09-05 20:19:09.976 [main] Freedo_Rentals_Apk - OK==Field is visible  Pick Up Location 
+[INFO ] 2023-09-05 20:19:10.144 [main] Freedo_Rentals_Apk - OK==Field is visible  Duration 
+[INFO ] 2023-09-05 20:19:10.311 [main] Freedo_Rentals_Apk - OK==Field is visible  Handover Time 
+[INFO ] 2023-09-05 20:19:10.470 [main] Freedo_Rentals_Apk - OK==Field is visible  Drop off Location  
+[INFO ] 2023-09-05 20:19:10.620 [main] Freedo_Rentals_Apk - OK==Field is visible  Planned drop off date 
+[INFO ] 2023-09-05 20:19:10.775 [main] Freedo_Rentals_Apk - OK==Field is visible  Actual Drop-off date 
+[INFO ] 2023-09-05 20:19:10.941 [main] Freedo_Rentals_Apk - OK==Field is visible  Mode of pick-up 
+[INFO ] 2023-09-05 20:19:11.174 [main] Freedo_Rentals_Apk - OK==Field is visible  Booking status = Approval In Progress
+[INFO ] 2023-09-05 20:19:13.411 [main] Freedo_Rentals_Apk - OK==Field is visible  Booking ID = NO050923114570116
+[INFO ] 2023-09-05 20:19:13.663 [main] Freedo_Rentals_Apk - OK==Field is visible  Vehicle number = Not Assigned
+[INFO ] 2023-09-05 20:19:13.882 [main] Freedo_Rentals_Apk - OK==Field is visible  Pick Up Date = 06 Sep 2023
+[INFO ] 2023-09-05 20:19:14.104 [main] Freedo_Rentals_Apk - OK==Field is visible  Drop off date = 07 Sep 2023
+[INFO ] 2023-09-05 20:19:14.339 [main] Freedo_Rentals_Apk - OK==Field is visible  Pick Up Location = Freedo H-193
+[INFO ] 2023-09-05 20:19:14.552 [main] Freedo_Rentals_Apk - OK==Field is visible  Duration = 1 Days
+[INFO ] 2023-09-05 20:19:14.790 [main] Freedo_Rentals_Apk - OK==Field is visible  Handover Time = Not Available
+[INFO ] 2023-09-05 20:19:15.020 [main] Freedo_Rentals_Apk - OK==Field is visible  Drop off Location = Not Available
+[INFO ] 2023-09-05 20:19:15.270 [main] Freedo_Rentals_Apk - OK==Field is visible  Planned drop off date = 07 Sep 2023
+[INFO ] 2023-09-05 20:19:15.500 [main] Freedo_Rentals_Apk - OK==Field is visible  Actual Drop-off date = Not Available
+[INFO ] 2023-09-05 20:19:15.771 [main] Freedo_Rentals_Apk - OK==Field is visible  Mode of pick-up = Pick-Up Vehicle
+[INFO ] 2023-09-05 20:19:18.821 [main] Freedo_Rentals_Apk - Successfully  Scroll up page Action page up
+[INFO ] 2023-09-05 20:19:19.156 [main] Freedo_Rentals_Apk - OK==Element is clickable show less text
+[INFO ] 2023-09-05 20:19:19.927 [main] Freedo_Rentals_Apk - OK==Field is visible  price break up Drop down
+[INFO ] 2023-09-05 20:19:20.360 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:19:20.360 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:19:20.732 [main] Freedo_Rentals_Apk - ***************TC_0052_admin_Request_reject starts*****************
+[INFO ] 2023-09-05 20:19:29.152 [main] Freedo_Rentals_Apk - OK==Value send successfully username
+[INFO ] 2023-09-05 20:19:29.259 [main] Freedo_Rentals_Apk - OK==Value send successfully password
+[INFO ] 2023-09-05 20:19:29.331 [main] Freedo_Rentals_Apk - OK==Element is clickable Submit
+[INFO ] 2023-09-05 20:19:40.618 [main] Freedo_Rentals_Apk - OK==Element is clickable Reject bike booking
+[INFO ] 2023-09-05 20:19:40.768 [main] Freedo_Rentals_Apk - OK==Element is clickable select drop down
+[INFO ] 2023-09-05 20:19:41.867 [main] Freedo_Rentals_Apk - OK==Element is clickable Booked My Mistake
+[INFO ] 2023-09-05 20:19:42.309 [main] Freedo_Rentals_Apk - OK==Element is clickable Submit button
+[INFO ] 2023-09-05 20:19:43.374 [main] Freedo_Rentals_Apk - OK==Element is clickable Yes button
+[INFO ] 2023-09-05 20:19:50.672 [main] Freedo_Rentals_Apk - OK==Approval is sucessfully  rejected
+[INFO ] 2023-09-05 20:19:51.126 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:19:51.126 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:19:51.481 [main] Freedo_Rentals_Apk - ***************TC_0053_Track_booking_status starts*****************
+[INFO ] 2023-09-05 20:19:51.783 [main] Freedo_Rentals_Apk - OK==Element is clickable Home button
+[INFO ] 2023-09-05 20:19:55.054 [main] Freedo_Rentals_Apk - OK==Element is clickable Home page booking button
+[INFO ] 2023-09-05 20:20:07.305 [main] Freedo_Rentals_Apk - OK==Field is visible  Track booking status
+[INFO ] 2023-09-05 20:20:08.504 [main] Freedo_Rentals_Apk - OK==Field is visible  Booking Status 
+[INFO ] 2023-09-05 20:20:12.109 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:20:12.109 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:20:12.579 [main] Freedo_Rentals_Apk - ***************TC_0054_Verify_user_able_to_logout_cancel starts*****************
+[INFO ] 2023-09-05 20:20:15.970 [main] Freedo_Rentals_Apk - OK==Element is clickable Home button
+[INFO ] 2023-09-05 20:20:19.385 [main] Freedo_Rentals_Apk - OK==Element is clickable more  button
+[INFO ] 2023-09-05 20:20:24.667 [main] Freedo_Rentals_Apk - Successfully  Scroll up page Action page up
+[INFO ] 2023-09-05 20:20:25.100 [main] Freedo_Rentals_Apk - OK==Element is clickable log out account
+[INFO ] 2023-09-05 20:20:26.232 [main] Freedo_Rentals_Apk - OK==Element is clickable Logout cancel
+[INFO ] 2023-09-05 20:20:26.692 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:20:26.692 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:20:27.034 [main] Freedo_Rentals_Apk - ***************TC_0055_Verify_user_able_to_logout starts*****************
+[INFO ] 2023-09-05 20:20:30.338 [main] Freedo_Rentals_Apk - OK==Element is clickable log out account
+[INFO ] 2023-09-05 20:20:30.586 [main] Freedo_Rentals_Apk - OK==Element is clickable Logout
+[INFO ] 2023-09-05 20:20:35.281 [main] Freedo_Rentals_Apk - OK==Field is visible  Login heading
+[INFO ] 2023-09-05 20:20:35.601 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:20:35.601 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:20:35.920 [main] Freedo_Rentals_Apk - ***************TC_0056_Verify_user_able_to_deactivate_account starts*****************
+[INFO ] 2023-09-05 20:20:37.838 [main] Freedo_Rentals_Apk - OK==Value send successfully MObile number entering
+[INFO ] 2023-09-05 20:20:38.671 [main] Freedo_Rentals_Apk - OK==Element is clickable login button
+[INFO ] 2023-09-05 20:20:45.782 [main] Freedo_Rentals_Apk - OK==Value send successfully OTP send
+[INFO ] 2023-09-05 20:20:51.625 [main] Freedo_Rentals_Apk - OK==Element is clickable Select manually location
+[INFO ] 2023-09-05 20:20:53.902 [main] Freedo_Rentals_Apk - OK==Element is clickable Noida city
+[INFO ] 2023-09-05 20:20:56.772 [main] Freedo_Rentals_Apk - OK==Element is clickable More button
+[INFO ] 2023-09-05 20:20:59.254 [main] Freedo_Rentals_Apk - OK==Element is clickable Privacy policy
+[INFO ] 2023-09-05 20:21:00.487 [main] Freedo_Rentals_Apk - OK==Element is clickable Delete account
+[INFO ] 2023-09-05 20:21:01.683 [main] Freedo_Rentals_Apk - OK==Element is clickable Bad experiance on ride
+[INFO ] 2023-09-05 20:21:02.696 [main] Freedo_Rentals_Apk - OK==Field is visible  Bad experiance on a ride
+[INFO ] 2023-09-05 20:21:02.852 [main] Freedo_Rentals_Apk - OK==Field is visible  it's too experiance
+[INFO ] 2023-09-05 20:21:03.019 [main] Freedo_Rentals_Apk - OK==Field is visible  Negative support experiance
+[INFO ] 2023-09-05 20:21:03.212 [main] Freedo_Rentals_Apk - OK==Field is visible  Issues with my internet
+[INFO ] 2023-09-05 20:21:03.418 [main] Freedo_Rentals_Apk - OK==Field is visible  No longer support company
+[INFO ] 2023-09-05 20:21:03.613 [main] Freedo_Rentals_Apk - OK==Field is visible  Prefer not to say
+[INFO ] 2023-09-05 20:21:03.811 [main] Freedo_Rentals_Apk - OK==Field is visible  Others
+[INFO ] 2023-09-05 20:21:04.032 [main] Freedo_Rentals_Apk - OK==Field is visible  Changed mind go back
+[INFO ] 2023-09-05 20:21:04.246 [main] Freedo_Rentals_Apk - OK==Field is visible  Deactivate account
+[INFO ] 2023-09-05 20:21:04.453 [main] Freedo_Rentals_Apk - OK==Field is visible  Confirm deletion
+[INFO ] 2023-09-05 20:21:08.143 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:21:08.143 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:21:08.764 [main] Freedo_Rentals_Apk - ***************TC_0057_Verify_user_able_to_COD_booking starts*****************
+[INFO ] 2023-09-05 20:21:12.137 [main] Freedo_Rentals_Apk - OK==Element is clickable Home button
+[INFO ] 2023-09-05 20:21:14.485 [main] Freedo_Rentals_Apk - OK==Element is clickable Enter button
+[INFO ] 2023-09-05 20:21:16.512 [main] Freedo_Rentals_Apk - OK==Element is clickable calender date select
+[INFO ] 2023-09-05 20:21:17.727 [main] Freedo_Rentals_Apk - OK==Element is clickable calender ok button
+[INFO ] 2023-09-05 20:21:19.333 [main] Freedo_Rentals_Apk - OK==Element is clickable package dropdown
+[INFO ] 2023-09-05 20:21:20.295 [main] Freedo_Rentals_Apk - OK==Element is clickable Selected package
+[INFO ] 2023-09-05 20:21:20.508 [main] Freedo_Rentals_Apk - OK==Element is clickable Go Freedo button
+[INFO ] 2023-09-05 20:21:22.837 [main] Freedo_Rentals_Apk - OK==Element is clickable Book now button
+[INFO ] 2023-09-05 20:21:27.545 [main] Freedo_Rentals_Apk - OK==Element is clickable ok button
+[INFO ] 2023-09-05 20:21:28.977 [main] Freedo_Rentals_Apk - OK==Element is clickable Continue button
+[INFO ] 2023-09-05 20:21:33.851 [main] Freedo_Rentals_Apk - Successfully  Scroll up page Action page up
+[INFO ] 2023-09-05 20:21:34.242 [main] Freedo_Rentals_Apk - OK==Element is clickable Cod booking
+[INFO ] 2023-09-05 20:21:35.541 [main] Freedo_Rentals_Apk - OK==Element is clickable Pay now button
+[INFO ] 2023-09-05 20:21:37.829 [main] Freedo_Rentals_Apk - OK==Element is clickable View booking
+[INFO ] 2023-09-05 20:21:38.482 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:21:38.482 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:21:39.165 [main] Freedo_Rentals_Apk - ***************TC_0058_admin_Request_reject starts*****************
+[INFO ] 2023-09-05 20:21:46.241 [main] Freedo_Rentals_Apk - OK==Value send successfully username
+[INFO ] 2023-09-05 20:21:46.344 [main] Freedo_Rentals_Apk - OK==Value send successfully password
+[INFO ] 2023-09-05 20:21:46.409 [main] Freedo_Rentals_Apk - OK==Element is clickable Submit
+[INFO ] 2023-09-05 20:21:54.561 [main] Freedo_Rentals_Apk - OK==Element is clickable Reject bike booking
+[INFO ] 2023-09-05 20:21:54.636 [main] Freedo_Rentals_Apk - OK==Element is clickable select drop down
+[INFO ] 2023-09-05 20:21:55.751 [main] Freedo_Rentals_Apk - OK==Element is clickable Booked My Mistake
+[INFO ] 2023-09-05 20:21:56.142 [main] Freedo_Rentals_Apk - OK==Element is clickable Submit button
+[INFO ] 2023-09-05 20:21:57.198 [main] Freedo_Rentals_Apk - OK==Element is clickable Yes button
+[INFO ] 2023-09-05 20:22:04.429 [main] Freedo_Rentals_Apk - OK==Approval is sucessfully  rejected
+[INFO ] 2023-09-05 20:22:04.957 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:22:04.957 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:22:05.326 [main] Freedo_Rentals_Apk - ***************TC_0059_Verify_user_able_to_Online_payment_booking starts*****************
+[INFO ] 2023-09-05 20:22:06.002 [main] Freedo_Rentals_Apk - OK==Element is clickable Home button
+[INFO ] 2023-09-05 20:22:08.937 [main] Freedo_Rentals_Apk - OK==Element is clickable Enter button
+[INFO ] 2023-09-05 20:22:10.856 [main] Freedo_Rentals_Apk - OK==Element is clickable calender date select
+[INFO ] 2023-09-05 20:22:13.070 [main] Freedo_Rentals_Apk - OK==Element is clickable calender ok button
+[INFO ] 2023-09-05 20:22:13.956 [main] Freedo_Rentals_Apk - OK==Element is clickable package dropdown
+[INFO ] 2023-09-05 20:22:15.641 [main] Freedo_Rentals_Apk - OK==Element is clickable Selected package
+[INFO ] 2023-09-05 20:22:15.873 [main] Freedo_Rentals_Apk - OK==Element is clickable Go Freedo button
+[INFO ] 2023-09-05 20:22:18.310 [main] Freedo_Rentals_Apk - OK==Element is clickable Book now button
+[INFO ] 2023-09-05 20:22:23.872 [main] Freedo_Rentals_Apk - OK==Element is clickable ok button
+[INFO ] 2023-09-05 20:22:25.214 [main] Freedo_Rentals_Apk - OK==Element is clickable Continue button
+[INFO ] 2023-09-05 20:22:32.084 [main] Freedo_Rentals_Apk - Successfully  Scroll up page Action page up
+[INFO ] 2023-09-05 20:22:33.354 [main] Freedo_Rentals_Apk - OK==Element is clickable Pay now button
+[INFO ] 2023-09-05 20:22:42.708 [main] Freedo_Rentals_Apk - OK==Element is clickable Pay using Netbanking
+[INFO ] 2023-09-05 20:22:44.718 [main] Freedo_Rentals_Apk - OK==Element is clickable Select SBI bank
+[INFO ] 2023-09-05 20:22:45.724 [main] Freedo_Rentals_Apk - OK==Element is clickable Pay Now button
+[INFO ] 2023-09-05 20:22:49.406 [main] Freedo_Rentals_Apk - OK==Element is clickable payment successful
+[INFO ] 2023-09-05 20:22:53.653 [main] Freedo_Rentals_Apk - OK==Element is clickable booking details
+[INFO ] 2023-09-05 20:23:03.870 [main] Freedo_Rentals_Apk - OK==Element is clickable booking details
+[INFO ] 2023-09-05 20:23:26.323 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:23:26.323 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:23:26.673 [main] Freedo_Rentals_Apk - ***************TC_0060_Admin_approved_request starts*****************
+[INFO ] 2023-09-05 20:23:32.445 [main] Freedo_Rentals_Apk - OK==Value send successfully username
+[INFO ] 2023-09-05 20:23:32.549 [main] Freedo_Rentals_Apk - OK==Value send successfully password
+[INFO ] 2023-09-05 20:23:32.614 [main] Freedo_Rentals_Apk - OK==Element is clickable Submit
+[INFO ] 2023-09-05 20:23:39.700 [main] Freedo_Rentals_Apk - OK==Element is clickable Reset button
+[ERROR] 2023-09-05 20:23:45.828 [main] Freedo_Rentals_Apk - ==Not==Element is not clickable accept booking request
+[INFO ] 2023-09-05 20:23:57.665 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:23:57.665 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:23:58.005 [main] Freedo_Rentals_Apk - ***************TC_0061_Verify_user_able_to_view_booking_status_all_elements starts*****************
+[INFO ] 2023-09-05 20:24:01.590 [main] Freedo_Rentals_Apk - OK==Element is clickable Bookings button
+[INFO ] 2023-09-05 20:24:23.921 [main] Freedo_Rentals_Apk - OK==Field is visible  show more details text
+[INFO ] 2023-09-05 20:24:24.210 [main] Freedo_Rentals_Apk - OK==Element is clickable show more details text
+[INFO ] 2023-09-05 20:24:29.769 [main] Freedo_Rentals_Apk - Successfully  Scroll page down Action Down
+[INFO ] 2023-09-05 20:24:29.937 [main] Freedo_Rentals_Apk - OK==Field is visible  Booking status
+[INFO ] 2023-09-05 20:24:30.203 [main] Freedo_Rentals_Apk - OK==Field is visible  Booking status = Approval In Progress
+[INFO ] 2023-09-05 20:24:32.412 [main] Freedo_Rentals_Apk - OK==Field is visible  Booking ID  
+[INFO ] 2023-09-05 20:24:32.622 [main] Freedo_Rentals_Apk - OK==Field is visible  Vehicle number  
+[INFO ] 2023-09-05 20:24:32.792 [main] Freedo_Rentals_Apk - OK==Field is visible  Pick Up Date  
+[INFO ] 2023-09-05 20:24:32.948 [main] Freedo_Rentals_Apk - OK==Field is visible  Drop off date  
+[INFO ] 2023-09-05 20:24:33.130 [main] Freedo_Rentals_Apk - OK==Field is visible  Pick Up Location  
+[INFO ] 2023-09-05 20:24:33.289 [main] Freedo_Rentals_Apk - OK==Field is visible  Duration  
+[INFO ] 2023-09-05 20:24:33.444 [main] Freedo_Rentals_Apk - OK==Field is visible  Handover Time  
+[INFO ] 2023-09-05 20:24:33.618 [main] Freedo_Rentals_Apk - OK==Field is visible  Drop off Location  
+[INFO ] 2023-09-05 20:24:33.781 [main] Freedo_Rentals_Apk - OK==Field is visible  Planned drop off date  
+[INFO ] 2023-09-05 20:24:33.950 [main] Freedo_Rentals_Apk - OK==Field is visible  Actual Drop-off date  
+[INFO ] 2023-09-05 20:24:34.139 [main] Freedo_Rentals_Apk - OK==Field is visible  Mode of pick-up  
+[INFO ] 2023-09-05 20:24:34.380 [main] Freedo_Rentals_Apk - OK==Field is visible  Booking ID = NO050923114570116
+[INFO ] 2023-09-05 20:24:34.607 [main] Freedo_Rentals_Apk - OK==Field is visible  Vehicle number = Not Assigned
+[INFO ] 2023-09-05 20:24:34.861 [main] Freedo_Rentals_Apk - OK==Field is visible  Pick Up Date = 06 Sep 2023
+[INFO ] 2023-09-05 20:24:35.125 [main] Freedo_Rentals_Apk - OK==Field is visible  Drop off date = 07 Sep 2023
+[INFO ] 2023-09-05 20:24:35.417 [main] Freedo_Rentals_Apk - OK==Field is visible  Pick Up Location = Freedo H-193
+[INFO ] 2023-09-05 20:24:35.645 [main] Freedo_Rentals_Apk - OK==Field is visible  Duration = 1 Days
+[INFO ] 2023-09-05 20:24:35.939 [main] Freedo_Rentals_Apk - OK==Field is visible  Handover Time = Not Available
+[INFO ] 2023-09-05 20:24:36.198 [main] Freedo_Rentals_Apk - OK==Field is visible  Drop off Location = Not Available
+[INFO ] 2023-09-05 20:24:36.445 [main] Freedo_Rentals_Apk - OK==Field is visible  Planned drop off date = 07 Sep 2023
+[INFO ] 2023-09-05 20:24:36.763 [main] Freedo_Rentals_Apk - OK==Field is visible  Actual Drop-off date = Not Available
+[INFO ] 2023-09-05 20:24:37.055 [main] Freedo_Rentals_Apk - OK==Field is visible  Mode of pick-up = Pick-Up Vehicle
+[INFO ] 2023-09-05 20:24:40.851 [main] Freedo_Rentals_Apk - Successfully  Scroll up page Action page up
+[INFO ] 2023-09-05 20:24:41.152 [main] Freedo_Rentals_Apk - OK==Element is clickable show less text
+[ERROR] 2023-09-05 20:25:15.294 [main] Freedo_Rentals_Apk - ==NOT==Field is not visible Extend ride drop down
+[ERROR] 2023-09-05 20:25:45.842 [main] Freedo_Rentals_Apk - ==NOT==Field is not visible End ride drop down
+[INFO ] 2023-09-05 20:25:46.505 [main] Freedo_Rentals_Apk - OK==Field is visible  price break up Drop down
+[ERROR] 2023-09-05 20:26:16.713 [main] Freedo_Rentals_Apk - ==NOT==Field is not visible Vehicle document
+[INFO ] 2023-09-05 20:26:17.440 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:26:17.440 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:26:17.794 [main] Freedo_Rentals_Apk - ***************TC_0062_Verify_user_End_ride_request starts*****************
+[ERROR] 2023-09-05 20:26:47.927 [main] Freedo_Rentals_Apk - ==Not==Element is not clickable End ride drop down
+[ERROR] 2023-09-05 20:27:18.460 [main] Freedo_Rentals_Apk - ==Not==Element is not clickable End ride raised request button
+[INFO ] 2023-09-05 20:27:19.180 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:27:19.180 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:27:19.525 [main] Freedo_Rentals_Apk - ***************TC_0063_Verify_user_end_ride_booking_status starts*****************
+[ERROR] 2023-09-05 20:27:52.784 [main] Freedo_Rentals_Apk - ==NOT==Field is not visible Booking status
+[INFO ] 2023-09-05 20:28:08.682 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:28:08.682 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:28:09.125 [main] Freedo_Rentals_Apk - ***************TC_0064_Admin_check_End_ride_request starts*****************
+[INFO ] 2023-09-05 20:28:14.813 [main] Freedo_Rentals_Apk - OK==Value send successfully username
+[INFO ] 2023-09-05 20:28:14.911 [main] Freedo_Rentals_Apk - OK==Value send successfully password
+[INFO ] 2023-09-05 20:28:14.982 [main] Freedo_Rentals_Apk - OK==Element is clickable Submit
+[ERROR] 2023-09-05 20:28:23.071 [main] Freedo_Rentals_Apk - ==Not==Element is not clickable Return Requests Received
+[INFO ] 2023-09-05 20:28:36.838 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:28:36.838 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:28:37.239 [main] Freedo_Rentals_Apk - ***************TC_0065_Verify_user_Complete_ride_booking_status starts*****************
+[INFO ] 2023-09-05 20:28:40.576 [main] Freedo_Rentals_Apk - OK==Element is clickable Home button
+[INFO ] 2023-09-05 20:28:44.005 [main] Freedo_Rentals_Apk - OK==Element is clickable Bookings button
+[INFO ] 2023-09-05 20:28:51.368 [main] Freedo_Rentals_Apk - OK==Field is visible  Booking status
+[INFO ] 2023-09-05 20:28:53.658 [main] Freedo_Rentals_Apk - OK==Field is visible  Booking status = Cancelled
+[INFO ] 2023-09-05 20:28:54.039 [main] Freedo_Rentals_Apk -  ===================================================================================  
+[INFO ] 2023-09-05 20:28:54.039 [main] Freedo_Rentals_Apk -  =================================================================================== 
+[INFO ] 2023-09-05 20:28:54.409 [main] Freedo_Rentals_Apk - ***************TC_0066_Verify_after_Complete_ride_invoice_button starts*****************
+[ERROR] 2023-09-05 20:29:27.124 [main] Freedo_Rentals_Apk - ==NOT==Field is not visible Invoice Button

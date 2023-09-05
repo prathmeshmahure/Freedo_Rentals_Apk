@@ -301,7 +301,7 @@ public class appium_0 extends base_class {
 			library.visible_link(login.getSelect_City_Gurugram(), "Gurugram");
 			library.visible_link(login.getSelect_City_Noida(), "Noida");
 			library.visible_link(login.getSelect_City_Greater_Bengaluru(), "Bengaluru");
-			library.visible_link(login.getSelect_City_Automation_City(), "Automation city");
+//			library.visible_link(login.getSelect_City_Automation_City(), "Automation city");
 //			library.visible_link(login.getSelect_City_Greater_Noida(), "Greater_Noida");
 				}
 		

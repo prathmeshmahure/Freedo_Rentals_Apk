@@ -19,13 +19,13 @@ public class listner extends base_class implements ITestListener {
 		
 		public void onTestStart(ITestResult result) {
 			library.test=extent.createTest(result.getTestClass().getName()+ " == " +result.getMethod().getMethodName());
-	//		library.test.addScreenCaptureFromBase64String(getscreenshot());
+			library.test.addScreenCaptureFromBase64String(getscreenshot());
 			extent_test.set(library.test);
 		}
 	
 		public void onTestSuccess(ITestResult result) {
 			library.test.log(Status.PASS, "Test Case Pass" );
-	//		library.test.addScreenCaptureFromBase64String(getscreenshot());
+			library.test.addScreenCaptureFromBase64String(getscreenshot());
 		}
 	
 		public void onTestFailure(ITestResult result) {
@@ -48,6 +48,9 @@ public class listner extends base_class implements ITestListener {
 		public String getscreenshot() {
 			TakesScreenshot ts=(TakesScreenshot)driver1 ;
 			return ts.getScreenshotAs(OutputType.BASE64);
+			 
+			
+			
 		}
 		public String getscreenshot1() {
 			TakesScreenshot ts1=(TakesScreenshot)driver ;

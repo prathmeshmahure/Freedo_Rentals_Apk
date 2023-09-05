@@ -35,16 +35,19 @@ public class appium_2 extends base_class{
 		}
 		Thread.sleep(3000);
 		
-		WebElement ele1=driver.findElement(By.xpath("(//div[@aria-haspopup='listbox'])[3]"));library.Custom_click(ele1, "10 user");
-		WebElement ele2=driver.findElement(By.xpath("//li[normalize-space()='50']"));library.Custom_click(ele2, "50 user");
+		r.keyPress(KeyEvent.VK_PAGE_DOWN);
+		r.keyRelease(KeyEvent.VK_PAGE_DOWN);
+//		WebElement ele1=driver.findElement(By.xpath("(//div[@aria-haspopup='listbox'])[3]"));library.Custom_click(ele1, "10 user");
+//		WebElement ele2=driver.findElement(By.xpath("//li[normalize-space()='50']"));library.Custom_click(ele2, "50 user");
 	//	WebElement ele3=driver.findElement(By.xpath("//p[text()='Dashboard']"));library.Custom_click(ele3, "Dashboard");
 		Thread.sleep(2000);
 	//	WebElement ele4=driver.findElement(By.xpath("//button[@title='Reset']"));library.Custom_click(ele4, "Reset button");
 		
 		Thread.sleep(2000);
 		
-		String s=config.getFirst_name();            
-		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::div/parent::td//following-sibling::td//div[@id='reject-action']"));
+		String s=config.getFirst_name();
+		String l=config.getLast_name();
+		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+" "+l+"']/parent::div/parent::td//following-sibling::td//div[@id='reject-action']"));
 		library.Custom_click(ele5, "Reject bike booking");
 		WebElement ele6=driver.findElement(By.xpath("//div[@id='demo-simple-select-label']"));library.Custom_click(ele6, "select drop down");
 		
@@ -200,17 +203,19 @@ public class appium_2 extends base_class{
 			r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
 		}
 		Thread.sleep(3000);
-		
-		WebElement ele1=driver.findElement(By.xpath("(//div[@aria-haspopup='listbox'])[3]"));library.Custom_click(ele1, "10 user");
-		WebElement ele2=driver.findElement(By.xpath("//li[normalize-space()='50']"));library.Custom_click(ele2, "50 user");
+		r.keyPress(KeyEvent.VK_PAGE_DOWN);
+		r.keyRelease(KeyEvent.VK_PAGE_DOWN);
+//		WebElement ele1=driver.findElement(By.xpath("(//div[@aria-haspopup='listbox'])[3]"));library.Custom_click(ele1, "10 user");
+//		WebElement ele2=driver.findElement(By.xpath("//li[normalize-space()='50']"));library.Custom_click(ele2, "50 user");
 	//	WebElement ele3=driver.findElement(By.xpath("//p[text()='Dashboard']"));library.Custom_click(ele3, "Dashboard");
 		Thread.sleep(2000);
 	//	WebElement ele4=driver.findElement(By.xpath("//button[@title='Reset']"));library.Custom_click(ele4, "Reset button");
 		
 		Thread.sleep(2000);
 		
-		String s=config.getFirst_name();            
-		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::div/parent::td//following-sibling::td//div[@id='reject-action']"));
+		String s=config.getFirst_name(); 
+		String l=config.getLast_name();
+		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+" "+l+"']/parent::div/parent::td//following-sibling::td//div[@id='reject-action']"));
 		library.Custom_click(ele5, "Reject bike booking");
 		WebElement ele6=driver.findElement(By.xpath("//div[@id='demo-simple-select-label']"));library.Custom_click(ele6, "select drop down");
 		
@@ -291,14 +296,16 @@ public class appium_2 extends base_class{
 			r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
 		}
 		Thread.sleep(3000);
-		
+		r.keyPress(KeyEvent.VK_PAGE_DOWN);
+		r.keyRelease(KeyEvent.VK_PAGE_DOWN);
 		WebElement ele4=driver.findElement(By.xpath("//button[@title='Reset']"));library.Custom_click(ele4, "Reset button");
-		WebElement ele1=driver.findElement(By.xpath("(//div[@aria-haspopup='listbox'])[3]"));library.Custom_click(ele1, "10 user");
-		WebElement ele2=driver.findElement(By.xpath("//li[normalize-space()='50']"));library.Custom_click(ele2, "50 user");
+//		WebElement ele1=driver.findElement(By.xpath("(//div[@aria-haspopup='listbox'])[3]"));library.Custom_click(ele1, "10 user");
+//		WebElement ele2=driver.findElement(By.xpath("//li[normalize-space()='50']"));library.Custom_click(ele2, "50 user");
 		Thread.sleep(3000);
 		String s=config.getFirst_name();//user name to find web table
+		String l=config.getLast_name();
 		Thread.sleep(2000);
-		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::div/parent::td//following-sibling::td//div[@id='approve-action']"));
+		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+" "+l+"']/parent::div/parent::td//following-sibling::td//div[@id='approve-action']"));
 		library.Custom_click(ele5, "accept booking request");
 		Thread.sleep(1000);
 		WebElement ele6=driver.findElement(By.xpath("//button[text()='Yes']"));
@@ -317,7 +324,7 @@ public class appium_2 extends base_class{
 		
 		
 		Thread.sleep(2000);
-		WebElement ele7=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::div/parent::td//following-sibling::td//div[@id='view-action']"));
+		WebElement ele7=driver.findElement(By.xpath("//text[text()='"+s+" "+l+"']/parent::div/parent::td//following-sibling::td//div[@id='view-action']"));
 		library.Custom_click(ele7, "view data");
 		Thread.sleep(3000);
 		WebElement ele8=driver.findElement(By.xpath("//p[text()='Booking Management']"));library.Custom_click(ele8, "Booking management");
@@ -352,7 +359,7 @@ public class appium_2 extends base_class{
 		WebElement ele10=driver.findElement(By.xpath("//h5[text()='Upcoming']"));library.Custom_click(ele10, "Upcoming button");
 		
 		Thread.sleep(1000);
-		WebElement ele11=driver.findElement(By.xpath("//text[contains(text(),"+s+")]/parent::td//following-sibling::td//div[@id='view-action']"));
+		WebElement ele11=driver.findElement(By.xpath("//text[text()="+s+" "+l+"]/parent::td//following-sibling::td//div[@id='view-action']"));
 		library.Custom_click(ele11, "table search user request view action");
 		
 		WebElement ele12=driver.findElement(By.xpath("//*[text()='Control Buttons']"));library.Custom_click(ele12, "Control button");
@@ -477,12 +484,14 @@ public class appium_2 extends base_class{
 			r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
 		}
 		Thread.sleep(3000);
-		
+		r.keyPress(KeyEvent.VK_PAGE_DOWN);
+		r.keyRelease(KeyEvent.VK_PAGE_DOWN);
 		WebElement ele3=driver.findElement(By.xpath("//h5[normalize-space()='Return Requests Received']"));library.Custom_click(ele3, "Return Requests Received");
 		
 		Thread.sleep(3000);
 		String s=config.getFirst_name();//user name to find web table
-		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::div/parent::td//following-sibling::td//div[@id='view-action']"));
+		String l=config.getLast_name();
+		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+" "+l+"']/parent::div/parent::td//following-sibling::td//div[@id='view-action']"));
 		library.Custom_click(ele5, "View booking request");
 		Thread.sleep(2000);
 		

@@ -3,6 +3,9 @@ package com.page_object;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import io.appium.java_client.android.AndroidDriver;
 
 public class web_admin {
 	public static WebDriver driver;
@@ -80,15 +83,15 @@ public class web_admin {
 	private WebElement Click_complete_ride;
 	
 //=======================================================================================================
-			public web_admin(WebDriver driver) 
+			public web_admin(AndroidDriver driver1) 
 			{
-				web_admin.driver=driver;
-			//	PageFactory.initElements(driver, this.driver);
+				driver=driver1;
+				PageFactory.initElements(driver1, this);
 			}
 
-//						public WebDriver getDriver() {
-//							return driver;
-//					}
+						public WebDriver getDriver() {
+							return (WebDriver) driver;
+					}
 
 //=======================app launch page ============ 1 page getter method=====================================
 						public WebElement getClick_login_username() {

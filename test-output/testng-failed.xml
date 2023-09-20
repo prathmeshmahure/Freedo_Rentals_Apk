@@ -8,12 +8,9 @@
     <classes>
       <class name="Freedo_domain.appium_2">
         <methods>
-          <include name="TC_0063_Verify_user_end_ride_booking_status"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC_0064_Admin_check_End_ride_request"/>
+          <include name="TC_0065_Verify_user_Complete_ride_booking_status"/>
           <include name="logger"/>
-          <include name="TC_0059_Verify_user_able_to_Online_payment_booking"/>
-          <include name="TC_0060_Admin_approved_request"/>
           <include name="BS"/>
         </methods>
       </class> <!-- Freedo_domain.appium_2 -->

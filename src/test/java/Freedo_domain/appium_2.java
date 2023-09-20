@@ -250,6 +250,7 @@ public class appium_2 extends base_class{
 	@Test(priority=8)
 	public void TC_0059_Verify_user_able_to_Online_payment_booking() throws Exception  {
 		log.info("***************TC_0059_Verify_user_able_to_Online_payment_booking starts*****************");
+		book = new booking_page(driver1);
 		
 		library.Custom_click(book.getClick_home_page_button(), "Home button");
 		Thread.sleep(2000);
@@ -268,6 +269,7 @@ public class appium_2 extends base_class{
 	//	library.Custom_click(book.getClick_I_accept_checkbox(), "I accept checkbox");
 		Thread.sleep(1000);
 		library.Custom_click(book.getClick_summary_pay_now_button(), "Pay now button");
+		Thread.sleep(5000);
 		library.Custom_click(book.getClick_Pay_using_Netbanking(), "Pay using Netbanking");
 		library.Custom_click(book.getClick_Pay_using_SBI_bank(), "Select SBI bank");
 		library.Custom_click(book.getClick_pay_now_button_sbi(), "Pay Now button");
@@ -304,7 +306,7 @@ public class appium_2 extends base_class{
 		Thread.sleep(3000);
 		String s=config.getFirst_name();//user name to find web table
 		String l=config.getLast_name();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+" "+l+"']/parent::div/parent::td//following-sibling::td//div[@id='approve-action']"));
 		library.Custom_click(ele5, "accept booking request");
 		Thread.sleep(1000);
@@ -343,7 +345,7 @@ public class appium_2 extends base_class{
 		
 		List<WebElement> lastday=driver.findElements(By.xpath("//div[@role][4]/parent::div/parent::div/parent::div//following-sibling::div//button"));
 		int totaldays=lastday.size();
-		int i=date;
+		int i=date + 2; //adding 2 days extra to visible 
 		int nextdate=i-totaldays;
 			if(i<=totaldays) {
 				WebElement dateselect=driver.findElement(By.xpath("(//button[normalize-space()="+i+"])[1]"));
@@ -359,30 +361,42 @@ public class appium_2 extends base_class{
 		WebElement ele10=driver.findElement(By.xpath("//h5[text()='Upcoming']"));library.Custom_click(ele10, "Upcoming button");
 		
 		Thread.sleep(1000);
-		WebElement ele11=driver.findElement(By.xpath("//text[text()="+s+" "+l+"]/parent::td//following-sibling::td//div[@id='view-action']"));
+		WebElement ele11=driver.findElement(By.xpath("//div[@id='view-action']"));
 		library.Custom_click(ele11, "table search user request view action");
+		/////// Upgrade vehicle ////////
 		
-		WebElement ele12=driver.findElement(By.xpath("//*[text()='Control Buttons']"));library.Custom_click(ele12, "Control button");
-		WebElement ele13=driver.findElement(By.xpath("//button[text()='Start Ride']"));library.Custom_click(ele13, "Start ride");
-		WebElement ele14=driver.findElement(By.xpath("//input[@value='0']"));library.custom_sendkeys(ele14, config.getstart_km_reading(), "enter bike reading");
-		WebElement dropdownbike=driver.findElement(By.xpath("//em[normalize-space()='Select Registration']"));library.Custom_click(dropdownbike, "Select bike number");
-		WebElement dropdownbike1=driver.findElement(By.xpath("//li[@tabindex='-1']"));library.Custom_click(dropdownbike1, "bike number is selected");
+		WebElement ele91=driver.findElement(By.xpath("//button[text()=' Upgrade Vehicle']"));library.Custom_click(ele91, "Upgrade vehicle");
+		WebElement ele92=driver.findElement(By.xpath("//em[text()='Available Vehicles']"));library.Custom_click(ele92, "Available vehicles");
+		WebElement ele93=driver.findElement(By.xpath("//li[text()='HF Deluxe']"));library.Custom_click(ele93, "Hf deluxe bike selected");
+		WebElement ele94=driver.findElement(By.xpath("//button[@title='Request Upgrade']"));library.Custom_click(ele94, "Request upgrade vehicle");
+		
+		Thread.sleep(3000);
+		
+		
+		////////////////
+		
+		
+	//	WebElement ele12=driver.findElement(By.xpath("//*[text()='Control Buttons']"));library.Custom_click(ele12, "Control button");
+		WebElement ele13=driver.findElement(By.xpath("(//button[text()='Start Ride' or @data-bs-toggle='modal'])[1]"));library.Custom_click(ele13, "Start ride");
+		WebElement ele14=driver.findElement(By.xpath("//input[@placeholder='Start Reading']"));library.custom_sendkeys(ele14, config.getstart_km_reading(), "enter bike reading");
+		WebElement dropdownbike=driver.findElement(By.xpath("//option[text()='Select Registration']"));library.Custom_click(dropdownbike, "Select bike number");
+		WebElement dropdownbike1=driver.findElement(By.xpath("(//option[@value])[2]"));library.Custom_click(dropdownbike1, "bike number is selected");
 		
 		//////////////////////////////////////////////////////// date as per select bike booking
-		WebElement calendar2=driver.findElement(By.xpath("(//button[@tabindex='0'])[2]"));		library.Custom_click(calendar2, "calender click");
-		if(i<=totaldays) {
-			WebElement dateselect=driver.findElement(By.xpath("(//button[normalize-space()="+i+"])[1]"));
-			library.Custom_click(dateselect, "Select date");
-		}else {
-			driver.findElement(By.xpath("//button[@title='Next month']")).click();
-			WebElement dateselect=driver.findElement(By.xpath("(//button[normalize-space()="+nextdate+"])[1]"));
-			library.Custom_click(dateselect, "Select date");
-		}
+//		WebElement calendar2=driver.findElement(By.xpath("//input[@type=\"date\"]"));		library.Custom_click(calendar2, "calender click");
+//		if(i<=totaldays) {
+//			WebElement dateselect=driver.findElement(By.xpath("(//button[normalize-space()="+i+"])[1]"));
+//			library.Custom_click(dateselect, "Select date");
+//		}else {
+//			driver.findElement(By.xpath("//button[@title='Next month']")).click();
+//			WebElement dateselect=driver.findElement(By.xpath("(//button[normalize-space()="+nextdate+"])[1]"));
+//			library.Custom_click(dateselect, "Select date");
+//		}
 		///////////////////////////////////////////////////////
 		
 		
-		WebElement ele15=driver.findElement(By.xpath("//button[text()='Submit']"));	library.Custom_click(ele15, "Submit button");
-		WebElement ele16=driver.findElement(By.xpath("//button[text()='Yes']"));library.Custom_click(ele16, "Yes button");
+		WebElement ele15=driver.findElement(By.xpath("//button[text()='Start Ride']"));	library.Custom_click(ele15, "Start ride button");
+//		WebElement ele16=driver.findElement(By.xpath("//button[text()='Yes']"));library.Custom_click(ele16, "Yes button");
 		
 		Thread.sleep(3000);
 		log.info("Approval is sucessfully Accepted");
@@ -390,8 +404,8 @@ public class appium_2 extends base_class{
 
 	}
 //===================================================================================================================================	
-	//@Test(dependsOnMethods={"TC_0060_Admin_approved_request"})
-	@Test(priority=10)
+	@Test(dependsOnMethods={"TC_0060_Admin_approved_request"})
+	//@Test(priority=10)
 	public void TC_0061_Verify_user_able_to_view_booking_status_all_elements() throws Exception {
 		log.info("***************TC_0061_Verify_user_able_to_view_booking_status_all_elements starts*****************");
 		
@@ -450,8 +464,8 @@ public class appium_2 extends base_class{
 		
 	}
 //============================================================================================================================
-//	@Test(dependsOnMethods={"TC_0061_Verify_user_able_to_view_booking_status_all_elements"})
-	@Test(priority=11)
+	@Test(dependsOnMethods={"TC_0061_Verify_user_able_to_view_booking_status_all_elements"})
+	//@Test(priority=11)
 	public void TC_0062_Verify_user_End_ride_request() throws Exception {
 		log.info("***************TC_0062_Verify_user_End_ride_request starts*****************");
 		
@@ -461,19 +475,19 @@ public class appium_2 extends base_class{
 	}
 	
 //============================================================================================================================	
-	//@Test(dependsOnMethods={"TC_0062_Verify_user_End_ride_request"})
-	@Test(priority=12)
+	@Test(dependsOnMethods={"TC_0062_Verify_user_End_ride_request"})
+	//@Test(priority=12)
 	public void TC_0063_Verify_user_end_ride_booking_status() throws Exception {
 		log.info("***************TC_0063_Verify_user_end_ride_booking_status starts*****************");
 		
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		library.visible_link(book.getFBD_Booking_status(), "Booking status");
 		library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
 	}
 	
 //============================================================================================================================	
-	//@Test(dependsOnMethods={"TC_0063_Verify_user_end_ride_booking_status"})
-	@Test(priority=13)
+	@Test(dependsOnMethods={"TC_0063_Verify_user_end_ride_booking_status"})
+	//@Test(priority=13)
 	public void TC_0064_Admin_check_End_ride_request () throws Exception {
 		log.info("***************TC_0064_Admin_check_End_ride_request starts*****************");
 		
@@ -495,18 +509,21 @@ public class appium_2 extends base_class{
 		library.Custom_click(ele5, "View booking request");
 		Thread.sleep(2000);
 		
-		WebElement ViewEditreaidng=driver.findElement(By.xpath("//span[normalize-space()='View/Edit Odometer Readings']"));library.Custom_click(ViewEditreaidng, "View/Edit Odometer Readings");
-		WebElement endreading=driver.findElement(By.xpath("//input[@value='0']"));	library.custom_sendkeys(endreading, config.getend_km_reading(), "End ride km reading");
+		r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_R);r.keyRelease(KeyEvent.VK_R);r.keyRelease(KeyEvent.VK_CONTROL);
+		
+		WebElement ViewEditreaidng=driver.findElement(By.xpath("//button[text()=' Update Odometer Reading']"));library.Custom_click(ViewEditreaidng, "Update Odometer Readings");
+		WebElement endreading=driver.findElement(By.xpath("//input[@placeholder='Update Reading']"));	library.custom_sendkeys(endreading, config.getend_km_reading(), "End ride km reading");
 		Thread.sleep(1000);
-		WebElement ele15=driver.findElement(By.xpath("//button[normalize-space()='Update']"));	library.Custom_click(ele15, "Update button");
+		WebElement ele15=driver.findElement(By.xpath("//button[text()='Update Reading']"));	library.Custom_click(ele15, "Update Reading");
+		WebElement closepopup=driver.findElement(By.xpath("//a[@id='closeModal2']"));	library.Custom_click(closepopup, "Close Update Reading popup");
 		
 		Thread.sleep(2000);
-		WebElement ele19=driver.findElement(By.xpath("//*[text()='Control Buttons']"));
-		library.Custom_click(ele19, "Control button");
+		WebElement ele19=driver.findElement(By.xpath("//button[text()=' Complete Ride']"));
+		library.Custom_click(ele19, "Complete ride");
 //		WebElement extracharge=driver.findElement(By.xpath("//button[text()='Add Extra Charges']"));library.Custom_click(extracharge, "add extra charges");
-		WebElement Complete=driver.findElement(By.xpath("//button[normalize-space()='Complete Ride']"));		library.Custom_click(Complete, "Complete ride");
+		WebElement Complete=driver.findElement(By.xpath("//input[@id='checkboxNoLabel']"));		library.Custom_click(Complete, "Complete ride checkbox");
 		Thread.sleep(2000);
-		WebElement ele16=driver.findElement(By.xpath("//button[normalize-space()='Yes']"));library.Custom_click(ele16, "Yes button");
+		WebElement ele16=driver.findElement(By.xpath("//button[text()='Confirm & Complete Ride']"));library.Custom_click(ele16, "Confirm and complete ride button");
 		Thread.sleep(2000);
 		
 		Thread.sleep(3000);
@@ -527,7 +544,7 @@ public class appium_2 extends base_class{
 		try {
 		//	driver1.findElement(By.xpath("//android.widget.TextView[@text='View']")).click();
 		}catch(Exception e) {}
-		Thread.sleep(4000);
+		Thread.sleep(10000);
 		
 		library.visible_link(book.getFBD_Booking_status(), "Booking status");
 		Thread.sleep(2000);

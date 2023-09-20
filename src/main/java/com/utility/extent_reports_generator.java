@@ -24,10 +24,11 @@ public class extent_reports_generator extends base_class{
 		extent=new ExtentReports();
 		extent.attachReporter(report);
 		extent.setSystemInfo("	Project Name", " Freedo Rentals ");
-		extent.setSystemInfo("	Laptop", "	Lenovo Thinkpad");
+		extent.setSystemInfo("	Laptop", "	Dell");
 		extent.setSystemInfo("	QA", "	Prathmesh Mahure");
 		extent.setSystemInfo("	Operating system", "	Windows 10 pro");
 		extent.setSystemInfo("	BrowserName", "	Android Studio");
+		extent.setSystemInfo("	Device Name", "	Pixel 6");
 		
 		return extent;
 	}

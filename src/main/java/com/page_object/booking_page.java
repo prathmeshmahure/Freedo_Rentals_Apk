@@ -455,7 +455,7 @@ public class booking_page {
 	@FindBy(xpath="//android.view.View[@text='Pay using UPI ']")				//Click_Pay_using_UPI
 	private WebElement Click_Pay_using_UPI;
 	
-	@FindBy(xpath="//android.view.View[@text='Pay using Card All cards supported ']")	//Click_Pay_using_Card
+	@FindBy(xpath="//android.view.View[@text='Pay using Card ']")	//Click_Pay_using_Card
 	private WebElement Click_Pay_using_Card;
 	
 	@FindBy(xpath="//android.view.View[@text='Pay using Wallet ']")			//Click_Pay_using_Wallet

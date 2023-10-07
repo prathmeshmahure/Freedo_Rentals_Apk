@@ -62,7 +62,7 @@ public class base_class {
 			cap.setCapability("appium:avdLaunchTimeout", 600000);		
 			cap.setCapability("appPackage", "com.heerofreedo");
 			cap.setCapability("appActivity", "com.heerofreedo.MainActivity");
-			cap.setCapability("appium:noReset", "false");
+			cap.setCapability("appium:noReset", "true");
 			
 //			cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\10app-release.apk"));
 //			cap.setChromedriverExecutable(System.getProperty("user.dir")+"\\apk\\chromedriver.exe");
@@ -261,7 +261,7 @@ public class base_class {
 		Thread.sleep(2000);
 		WebElement ele=driver.findElement(By.xpath("//input[@id='userName']"));	library.custom_sendkeys(ele, config.getweb_credential(), "username");
 		WebElement ele1=driver.findElement(By.xpath("//input[@id='password']"));library.custom_sendkeys(ele1, config.getweb_credential(), "password");
-		WebElement ele2=driver.findElement(By.xpath("//button[@title='SUBMIT']"));library.Custom_click(ele2, "Submit");
+		WebElement ele2=driver.findElement(By.xpath("//button[normalize-space()='Login']"));library.Custom_click(ele2, "Login");
 		
 		Thread.sleep(1000);
     }

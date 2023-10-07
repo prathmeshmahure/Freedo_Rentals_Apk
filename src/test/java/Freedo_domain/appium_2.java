@@ -392,14 +392,32 @@ public class appium_2 extends base_class{
 //			WebElement dateselect=driver.findElement(By.xpath("(//button[normalize-space()="+nextdate+"])[1]"));
 //			library.Custom_click(dateselect, "Select date");
 //		}
-		///////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////// MITS form 
+		WebElement Generate_MITC_Form = driver.findElement(By.xpath("//button[normalize-space()='Generate MITC Form']"));	library.Custom_click(Generate_MITC_Form, "Generate MITC Form");
+		WebElement MITC_FORM_Link = driver.findElement(By.xpath("//a[normalize-space()='MITC FORM Link']"));	library.Custom_click(MITC_FORM_Link, "MITC FORM Link");
 		
-		
-		WebElement ele15=driver.findElement(By.xpath("//button[text()='Start Ride']"));	library.Custom_click(ele15, "Start ride button");
-//		WebElement ele16=driver.findElement(By.xpath("//button[text()='Yes']"));library.Custom_click(ele16, "Yes button");
-		
-		Thread.sleep(3000);
-		log.info("Approval is sucessfully Accepted");
+		WebElement MITS_form_checkbox = driver.findElement(By.xpath("//input[@value='Personal']"));	library.Custom_click(MITS_form_checkbox, "MITS form checkbox");
+		WebElement Send_Otp=driver.findElement(By.xpath("//button[normalize-space()='Send Otp']"));	library.Custom_click(Send_Otp, "Send Otp button");
+		WebElement OTP_input_box=driver.findElement(By.xpath("(//input[@type='number'])[1]"));	library.custom_sendkeys(OTP_input_box,config.getOTP(), "OTP input box");
+		WebElement Verify_button=driver.findElement(By.xpath("//div[text()='Verify']"));	library.Custom_click(Verify_button, "Verify button");
+		 
+		//close current tab short cut keys
+		WebElement about_text=driver.findElement(By.xpath("//a[normalize-space()='About']"));
+		if(about_text.isDisplayed()) {
+		r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_W);r.keyRelease(KeyEvent.VK_W);r.keyRelease(KeyEvent.VK_CONTROL);
+		}
+		/////////////////////// MITS form end 
+		WebElement MITC_FORM_status = driver.findElement(By.xpath("//a[normalize-space()='Check MITC Status']"));	library.Custom_click(MITC_FORM_status, "MITC FORM Status");
+		Thread.sleep(1000);
+		WebElement Start_Ride=driver.findElement(By.xpath("//button[text()='Start Ride']"));	library.Custom_click(Start_Ride, "Start ride button");
+		Thread.sleep(2000);
+		////// verify booking is ongoing
+		WebElement Ongoing=driver.findElement(By.xpath("//span[text()='Ongoing']"));
+		if(Ongoing.isDisplayed()) {
+			log.info("Approval is sucessfully Accepted");
+		}else {
+			log.error("Approval is not accepted");
+		}
 		driver.close();
 
 	}

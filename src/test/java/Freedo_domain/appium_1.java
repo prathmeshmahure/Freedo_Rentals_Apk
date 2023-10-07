@@ -245,12 +245,12 @@ public class appium_1 extends base_class{
 		library.Custom_click(book.getClick_1_Days_package(),"Selected package");
 		library.Custom_click(book.getClick_go_freedo_Button(), "Go Freedo button");
 		Thread.sleep(2000);
-		try {
-			WebElement element=driver1.findElement(By.xpath("//android.widget.TextView[@text='Book Now']"));
-			if(element.isDisplayed() || element.isEnabled()==true) {
-				element.click();
-			}
-		}catch(Exception e) {}
+//		try {
+//			WebElement element=driver1.findElement(By.xpath("//android.widget.TextView[@text='Book Now']"));
+//			if(element.isDisplayed() || element.isEnabled()==true) {
+//				element.click();
+//			}
+//		}catch(Exception e) {}
 		library.Custom_click(book.getclick_location_pop_up_ok_button(), "ok button");
 		library.visible_link(book.getBooking_details_page_price(), "Price is ="+book.getBooking_details_page_price().getText());
 	}
@@ -417,9 +417,9 @@ public class appium_1 extends base_class{
 		Thread.sleep(2000);
 		library.Custom_click(book.getBook_now_button(), "Booknow button");
 		Thread.sleep(1000);
-		try {if(book.getBook_now_button().isDisplayed()==true) {
-			driver1.findElement(By.xpath("//android.widget.TextView[@text='Book Now']")).click();}
-		}catch(Exception e) {}
+//		try {if(book.getBook_now_button().isDisplayed()==true) {
+//			driver1.findElement(By.xpath("//android.widget.TextView[@text='Book Now']")).click();}
+//		}catch(Exception e) {}
 		
 		library.Custom_click(book.getclick_location_pop_up_ok_button(), "ok button");
 		appium_1.Scroll_UP_page_Action("up");

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">66 methods,   66 passed</span>
+                    <span class="method-stats">66 methods, 2 failed,   64 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Freedo_domain.appium_2" class="method navigator-link" hash-for-method="TC_0052_admin_Request_reject">TC_0052_admin_Request_reject</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Freedo_domain.appium_2" class="method navigator-link" hash-for-method="TC_0064_Admin_check_End_ride_request">TC_0064_Admin_check_End_ride_request</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -334,11 +353,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Freedo_domain.appium_2" class="method navigator-link" hash-for-method="TC_0052_admin_Request_reject">TC_0052_admin_Request_reject</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Freedo_domain.appium_2" class="method navigator-link" hash-for-method="TC_0053_Track_booking_status">TC_0053_Track_booking_status</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -399,11 +413,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Freedo_domain.appium_2" class="method navigator-link" hash-for-method="TC_0064_Admin_check_End_ride_request">TC_0064_Admin_check_End_ride_request</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Freedo_domain.appium_2" class="method navigator-link" hash-for-method="TC_0065_Verify_user_Complete_ride_booking_status">TC_0065_Verify_user_Complete_ride_booking_status</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -444,6 +453,77 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Freedo_domain.appium_2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_0052_admin_Request_reject">
+                  </a> <!-- TC_0052_admin_Request_reject -->
+                  <span class="method-name">TC_0052_admin_Request_reject</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;demo-simple-select-label&apos;]&quot;}
+  (Session info: chrome=117.0.5938.149)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [22ef07fb846cbdb6213157d31738e74e, findElement {using=xpath, value=//div[@id=&apos;demo-simple-select-label&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54533}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54533/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 22ef07fb846cbdb6213157d31738e74e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at Freedo_domain.appium_2.TC_0052_admin_Request_reject(appium_2.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_0064_Admin_check_End_ride_request">
+                  </a> <!-- TC_0064_Admin_check_End_ride_request -->
+                  <span class="method-name">TC_0064_Admin_check_End_ride_request</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=117.0.5938.149)
+Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe00eebb1907c04343063a277051c1bd, findElement {using=xpath, value=//input[@id=&apos;userName&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54831}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54831/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe00eebb1907c04343063a277051c1bd
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.utility.base_class.Browseropen(base_class.java:262)
+	at Freedo_domain.appium_2.TC_0064_Admin_check_End_ride_request(appium_2.java:494)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -825,13 +905,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_0052_admin_Request_reject">
-                  </a> <!-- TC_0052_admin_Request_reject -->
-                  <span class="method-name">TC_0052_admin_Request_reject</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="TC_0053_Track_booking_status">
                   </a> <!-- TC_0053_Track_booking_status -->
                   <span class="method-name">TC_0053_Track_booking_status</span>
@@ -909,13 +982,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_0064_Admin_check_End_ride_request">
-                  </a> <!-- TC_0064_Admin_check_End_ride_request -->
-                  <span class="method-name">TC_0064_Admin_check_End_ride_request</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="TC_0065_Verify_user_Complete_ride_booking_status">
                   </a> <!-- TC_0065_Verify_user_Complete_ride_booking_status -->
                   <span class="method-name">TC_0065_Verify_user_Complete_ride_booking_status</span>
@@ -989,274 +1055,274 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(66);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_0059_Verify_user_able_to_Online_payment_booking')
+data.setCell(0, 1, 'TC_0052_admin_Request_reject')
 data.setCell(0, 2, 'Freedo_domain.appium_2')
-data.setCell(0, 3, 134076);
+data.setCell(0, 3, 187800);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_0043_Verify_continue_button_and_summary_page')
-data.setCell(1, 2, 'Freedo_domain.appium_1')
-data.setCell(1, 3, 111865);
+data.setCell(1, 1, 'TC_0061_Verify_user_able_to_view_booking_status_all_elements')
+data.setCell(1, 2, 'Freedo_domain.appium_2')
+data.setCell(1, 3, 157495);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery')
-data.setCell(2, 2, 'Freedo_domain.appium_1')
-data.setCell(2, 3, 84432);
+data.setCell(2, 1, 'TC_0059_Verify_user_able_to_Online_payment_booking')
+data.setCell(2, 2, 'Freedo_domain.appium_2')
+data.setCell(2, 3, 106137);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_0061_Verify_user_able_to_view_booking_status_all_elements')
-data.setCell(3, 2, 'Freedo_domain.appium_2')
-data.setCell(3, 3, 75073);
+data.setCell(3, 1, 'TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery')
+data.setCell(3, 2, 'Freedo_domain.appium_1')
+data.setCell(3, 3, 75770);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_0057_Verify_user_able_to_COD_booking')
+data.setCell(4, 1, 'TC_0062_Verify_user_End_ride_request')
 data.setCell(4, 2, 'Freedo_domain.appium_2')
-data.setCell(4, 3, 64189);
+data.setCell(4, 3, 64790);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC_0049_Verify_user_able_to_make_payment')
-data.setCell(5, 2, 'Freedo_domain.appium_1')
-data.setCell(5, 3, 60088);
+data.setCell(5, 1, 'TC_0060_Admin_approved_request')
+data.setCell(5, 2, 'Freedo_domain.appium_2')
+data.setCell(5, 3, 59043);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC_0042_Verify_select_city')
+data.setCell(6, 1, 'TC_0049_Verify_user_able_to_make_payment')
 data.setCell(6, 2, 'Freedo_domain.appium_1')
-data.setCell(6, 3, 59703);
+data.setCell(6, 3, 58975);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC_0056_Verify_user_able_to_deactivate_account')
+data.setCell(7, 1, 'TC_0053_Track_booking_status')
 data.setCell(7, 2, 'Freedo_domain.appium_2')
-data.setCell(7, 3, 52737);
+data.setCell(7, 3, 56404);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC_0060_Admin_approved_request')
-data.setCell(8, 2, 'Freedo_domain.appium_2')
-data.setCell(8, 3, 52192);
+data.setCell(8, 1, 'TC_0038_Verify_user_able_to_select_time_slot_afternoon')
+data.setCell(8, 2, 'Freedo_domain.appium_1')
+data.setCell(8, 3, 51726);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC_0038_Verify_user_able_to_select_time_slot_afternoon')
+data.setCell(9, 1, 'TC_0042_Verify_select_city')
 data.setCell(9, 2, 'Freedo_domain.appium_1')
-data.setCell(9, 3, 51396);
+data.setCell(9, 3, 50859);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TC_0051_Verify_user_able_to_view_booking_status_all_elements')
-data.setCell(10, 2, 'Freedo_domain.appium_1')
-data.setCell(10, 3, 41580);
+data.setCell(10, 1, 'TC_0056_Verify_user_able_to_deactivate_account')
+data.setCell(10, 2, 'Freedo_domain.appium_2')
+data.setCell(10, 3, 47633);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'TC_0035_Verify_user_able_to_select_date_and_package_under_booking')
-data.setCell(11, 2, 'Freedo_domain.appium_1')
-data.setCell(11, 3, 38258);
+data.setCell(11, 1, 'TC_0057_Verify_user_able_to_COD_booking')
+data.setCell(11, 2, 'Freedo_domain.appium_2')
+data.setCell(11, 3, 47059);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TC_0064_Admin_check_End_ride_request')
-data.setCell(12, 2, 'Freedo_domain.appium_2')
-data.setCell(12, 3, 37500);
+data.setCell(12, 1, 'TC_0043_Verify_continue_button_and_summary_page')
+data.setCell(12, 2, 'Freedo_domain.appium_1')
+data.setCell(12, 3, 40005);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'TC_0052_admin_Request_reject')
-data.setCell(13, 2, 'Freedo_domain.appium_2')
-data.setCell(13, 3, 33180);
+data.setCell(13, 1, 'TC_0051_Verify_user_able_to_view_booking_status_all_elements')
+data.setCell(13, 2, 'Freedo_domain.appium_1')
+data.setCell(13, 3, 36592);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'TC_0011_verify_user_able_to_create_an_account')
-data.setCell(14, 2, 'Freedo_domain.appium_0')
-data.setCell(14, 3, 31136);
+data.setCell(14, 1, 'TC_0066_Verify_after_Complete_ride_invoice_button')
+data.setCell(14, 2, 'Freedo_domain.appium_2')
+data.setCell(14, 3, 34347);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'TC_0012_verify_Terms_and_condition_link_on_create_an_account_page')
-data.setCell(15, 2, 'Freedo_domain.appium_0')
-data.setCell(15, 3, 30352);
+data.setCell(15, 1, 'TC_0048_Verify_summary_page_pay_now_button')
+data.setCell(15, 2, 'Freedo_domain.appium_1')
+data.setCell(15, 3, 33304);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'TC_0058_admin_Request_reject')
 data.setCell(16, 2, 'Freedo_domain.appium_2')
-data.setCell(16, 3, 28787);
+data.setCell(16, 3, 33241);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'TC_0053_Track_booking_status')
+data.setCell(17, 1, 'TC_0065_Verify_user_Complete_ride_booking_status')
 data.setCell(17, 2, 'Freedo_domain.appium_2')
-data.setCell(17, 3, 26801);
+data.setCell(17, 3, 25870);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'TC_0024_Verify_home_page_all_elements')
+data.setCell(18, 1, 'TC_0035_Verify_user_able_to_select_date_and_package_under_booking')
 data.setCell(18, 2, 'Freedo_domain.appium_1')
-data.setCell(18, 3, 26380);
+data.setCell(18, 3, 25772);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'TC_0065_Verify_user_Complete_ride_booking_status')
-data.setCell(19, 2, 'Freedo_domain.appium_2')
-data.setCell(19, 3, 25959);
+data.setCell(19, 1, 'TC_0024_Verify_home_page_all_elements')
+data.setCell(19, 2, 'Freedo_domain.appium_1')
+data.setCell(19, 3, 24608);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'TC_0048_Verify_summary_page_pay_now_button')
-data.setCell(20, 2, 'Freedo_domain.appium_1')
-data.setCell(20, 3, 25109);
+data.setCell(20, 1, 'TC_0011_verify_user_able_to_create_an_account')
+data.setCell(20, 2, 'Freedo_domain.appium_0')
+data.setCell(20, 3, 24339);
 data.setCell(21, 0, 21)
 data.setCell(21, 1, 'TC_0030_Verify_more_button_all_elements')
 data.setCell(21, 2, 'Freedo_domain.appium_1')
-data.setCell(21, 3, 24745);
+data.setCell(21, 3, 22655);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'TC_0045_Verify_summary_page_coupon_code')
-data.setCell(22, 2, 'Freedo_domain.appium_1')
-data.setCell(22, 3, 23961);
+data.setCell(22, 1, 'TC_0012_verify_Terms_and_condition_link_on_create_an_account_page')
+data.setCell(22, 2, 'Freedo_domain.appium_0')
+data.setCell(22, 3, 21528);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements')
+data.setCell(23, 1, 'TC_0045_Verify_summary_page_coupon_code')
 data.setCell(23, 2, 'Freedo_domain.appium_1')
-data.setCell(23, 3, 22325);
+data.setCell(23, 3, 20340);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'TC_0027_Verify_homepage_bike_rentals_tab_available_bike')
+data.setCell(24, 1, 'TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements')
 data.setCell(24, 2, 'Freedo_domain.appium_1')
-data.setCell(24, 3, 21990);
+data.setCell(24, 3, 20034);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'TC_0031_Verify_Booking_elements')
+data.setCell(25, 1, 'TC_0027_Verify_homepage_bike_rentals_tab_available_bike')
 data.setCell(25, 2, 'Freedo_domain.appium_1')
-data.setCell(25, 3, 21591);
+data.setCell(25, 3, 19837);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'TC_0054_Verify_user_able_to_logout_cancel')
-data.setCell(26, 2, 'Freedo_domain.appium_2')
-data.setCell(26, 3, 21485);
+data.setCell(26, 1, 'TC_0031_Verify_Booking_elements')
+data.setCell(26, 2, 'Freedo_domain.appium_1')
+data.setCell(26, 3, 19461);
 data.setCell(27, 0, 27)
 data.setCell(27, 1, 'TC_0025_Verify_available_all_bikes')
 data.setCell(27, 2, 'Freedo_domain.appium_1')
-data.setCell(27, 3, 20725);
+data.setCell(27, 3, 19363);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'TC_0032_Verify_Booking_elements')
-data.setCell(28, 2, 'Freedo_domain.appium_1')
-data.setCell(28, 3, 19478);
+data.setCell(28, 1, 'TC_0054_Verify_user_able_to_logout_cancel')
+data.setCell(28, 2, 'Freedo_domain.appium_2')
+data.setCell(28, 3, 19018);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'TC_0044_Verify_summary_page_additional_helmet_charges')
+data.setCell(29, 1, 'TC_0032_Verify_Booking_elements')
 data.setCell(29, 2, 'Freedo_domain.appium_1')
-data.setCell(29, 3, 16725);
+data.setCell(29, 3, 15305);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'TC_0055_Verify_user_able_to_successful_logout')
-data.setCell(30, 2, 'Freedo_domain.appium_2')
-data.setCell(30, 3, 15646);
+data.setCell(30, 1, 'TC_0028_Verify_Rent_tab_all_elements')
+data.setCell(30, 2, 'Freedo_domain.appium_1')
+data.setCell(30, 3, 14917);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'TC_0028_Verify_Rent_tab_all_elements')
+data.setCell(31, 1, 'TC_0044_Verify_summary_page_additional_helmet_charges')
 data.setCell(31, 2, 'Freedo_domain.appium_1')
-data.setCell(31, 3, 15170);
+data.setCell(31, 3, 14499);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'TC_0017_Verify_OTP_Verification_Page')
-data.setCell(32, 2, 'Freedo_domain.appium_0')
-data.setCell(32, 3, 14273);
+data.setCell(32, 1, 'TC_0033_Verify_Bike_button_on_homepage')
+data.setCell(32, 2, 'Freedo_domain.appium_1')
+data.setCell(32, 3, 12972);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'TC_0033_Verify_Bike_button_on_homepage')
-data.setCell(33, 2, 'Freedo_domain.appium_1')
-data.setCell(33, 3, 14215);
+data.setCell(33, 1, 'TC_0017_Verify_OTP_Verification_Page')
+data.setCell(33, 2, 'Freedo_domain.appium_0')
+data.setCell(33, 3, 12961);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'TC_0018_Select_location')
-data.setCell(34, 2, 'Freedo_domain.appium_0')
-data.setCell(34, 3, 13795);
+data.setCell(34, 1, 'TC_0055_Verify_user_able_to_successful_logout')
+data.setCell(34, 2, 'Freedo_domain.appium_2')
+data.setCell(34, 3, 12823);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'TC_0063_Verify_user_end_ride_booking_status')
-data.setCell(35, 2, 'Freedo_domain.appium_2')
-data.setCell(35, 3, 11056);
+data.setCell(35, 1, 'TC_0018_Select_location')
+data.setCell(35, 2, 'Freedo_domain.appium_0')
+data.setCell(35, 3, 11915);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'TC_0020_Search_wrong_city_name')
+data.setCell(36, 1, 'TC_001_verify_install_apk')
 data.setCell(36, 2, 'Freedo_domain.appium_0')
-data.setCell(36, 3, 10212);
+data.setCell(36, 3, 9467);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'TC_0046_Verify_summary_page_cash_on_delivery_method')
-data.setCell(37, 2, 'Freedo_domain.appium_1')
-data.setCell(37, 3, 10200);
+data.setCell(37, 1, 'TC_0064_Admin_check_End_ride_request')
+data.setCell(37, 2, 'Freedo_domain.appium_2')
+data.setCell(37, 3, 9163);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'TC_0010_verify_create_an_account_by_clicking_login_page')
-data.setCell(38, 2, 'Freedo_domain.appium_0')
-data.setCell(38, 3, 9763);
+data.setCell(38, 1, 'TC_0046_Verify_summary_page_cash_on_delivery_method')
+data.setCell(38, 2, 'Freedo_domain.appium_1')
+data.setCell(38, 3, 8689);
 data.setCell(39, 0, 39)
-data.setCell(39, 1, 'TC_0021_Search_city_name')
-data.setCell(39, 2, 'Freedo_domain.appium_0')
-data.setCell(39, 3, 9299);
+data.setCell(39, 1, 'TC_0034_Verify_scooter_button_on_homepage')
+data.setCell(39, 2, 'Freedo_domain.appium_1')
+data.setCell(39, 3, 8528);
 data.setCell(40, 0, 40)
-data.setCell(40, 1, 'TC_0034_Verify_scooter_button_on_homepage')
-data.setCell(40, 2, 'Freedo_domain.appium_1')
-data.setCell(40, 3, 8922);
+data.setCell(40, 1, 'TC_0010_verify_create_an_account_by_clicking_login_page')
+data.setCell(40, 2, 'Freedo_domain.appium_0')
+data.setCell(40, 3, 8364);
 data.setCell(41, 0, 41)
-data.setCell(41, 1, 'TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element')
+data.setCell(41, 1, 'TC_0020_Search_wrong_city_name')
 data.setCell(41, 2, 'Freedo_domain.appium_0')
-data.setCell(41, 3, 8326);
+data.setCell(41, 3, 8286);
 data.setCell(42, 0, 42)
-data.setCell(42, 1, 'TC_0029_Verify_freedo_rental_icon')
-data.setCell(42, 2, 'Freedo_domain.appium_1')
-data.setCell(42, 3, 8317);
+data.setCell(42, 1, 'TC_009_verify_login_button_on_create_an_account_page')
+data.setCell(42, 2, 'Freedo_domain.appium_0')
+data.setCell(42, 3, 7773);
 data.setCell(43, 0, 43)
-data.setCell(43, 1, 'TC_009_verify_login_button_on_create_an_account_page')
-data.setCell(43, 2, 'Freedo_domain.appium_0')
-data.setCell(43, 3, 8188);
+data.setCell(43, 1, 'TC_0063_Verify_user_end_ride_booking_status')
+data.setCell(43, 2, 'Freedo_domain.appium_2')
+data.setCell(43, 3, 7534);
 data.setCell(44, 0, 44)
-data.setCell(44, 1, 'TC_001_verify_install_apk')
+data.setCell(44, 1, 'TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element')
 data.setCell(44, 2, 'Freedo_domain.appium_0')
-data.setCell(44, 3, 7785);
+data.setCell(44, 3, 7460);
 data.setCell(45, 0, 45)
-data.setCell(45, 1, 'TC_003_Verify_the_NEXT_button_clicking')
+data.setCell(45, 1, 'TC_0021_Search_city_name')
 data.setCell(45, 2, 'Freedo_domain.appium_0')
-data.setCell(45, 3, 7005);
+data.setCell(45, 3, 7112);
 data.setCell(46, 0, 46)
-data.setCell(46, 1, 'TC_0016_Verify_otp_verification_time_slot')
+data.setCell(46, 1, 'TC_003_Verify_the_NEXT_button_clicking')
 data.setCell(46, 2, 'Freedo_domain.appium_0')
-data.setCell(46, 3, 6630);
+data.setCell(46, 3, 7098);
 data.setCell(47, 0, 47)
-data.setCell(47, 1, 'TC_0047_Verify_summary_page_i_accept_checkbox')
+data.setCell(47, 1, 'TC_0029_Verify_freedo_rental_icon')
 data.setCell(47, 2, 'Freedo_domain.appium_1')
-data.setCell(47, 3, 6447);
+data.setCell(47, 3, 7020);
 data.setCell(48, 0, 48)
-data.setCell(48, 1, 'TC_004_Verify_the_NEXT_button_clicking')
+data.setCell(48, 1, 'TC_008_Verify_login_functionality_Register_mo_number')
 data.setCell(48, 2, 'Freedo_domain.appium_0')
-data.setCell(48, 3, 6278);
+data.setCell(48, 3, 7015);
 data.setCell(49, 0, 49)
-data.setCell(49, 1, 'TC_0026_Verify_available_all_Scooters')
-data.setCell(49, 2, 'Freedo_domain.appium_1')
-data.setCell(49, 3, 6179);
+data.setCell(49, 1, 'TC_002_verify_select_pickup_location_date_and_packages')
+data.setCell(49, 2, 'Freedo_domain.appium_0')
+data.setCell(49, 3, 6731);
 data.setCell(50, 0, 50)
-data.setCell(50, 1, 'TC_0062_Verify_user_End_ride_request')
-data.setCell(50, 2, 'Freedo_domain.appium_2')
-data.setCell(50, 3, 5980);
+data.setCell(50, 1, 'TC_0026_Verify_available_all_Scooters')
+data.setCell(50, 2, 'Freedo_domain.appium_1')
+data.setCell(50, 3, 6288);
 data.setCell(51, 0, 51)
-data.setCell(51, 1, 'TC_002_verify_select_pickup_location_date_and_packages')
-data.setCell(51, 2, 'Freedo_domain.appium_0')
-data.setCell(51, 3, 5912);
+data.setCell(51, 1, 'TC_0047_Verify_summary_page_i_accept_checkbox')
+data.setCell(51, 2, 'Freedo_domain.appium_1')
+data.setCell(51, 3, 6201);
 data.setCell(52, 0, 52)
-data.setCell(52, 1, 'TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page')
-data.setCell(52, 2, 'Freedo_domain.appium_0')
-data.setCell(52, 3, 5374);
+data.setCell(52, 1, 'TC_0040_Verify_user_able_to_select_time_slot_Morning')
+data.setCell(52, 2, 'Freedo_domain.appium_1')
+data.setCell(52, 3, 5958);
 data.setCell(53, 0, 53)
-data.setCell(53, 1, 'TC_008_Verify_login_functionality_Register_mo_number')
+data.setCell(53, 1, 'TC_004_Verify_the_NEXT_button_clicking')
 data.setCell(53, 2, 'Freedo_domain.appium_0')
-data.setCell(53, 3, 5278);
+data.setCell(53, 3, 5625);
 data.setCell(54, 0, 54)
 data.setCell(54, 1, 'TC_007_Verify_login_component')
 data.setCell(54, 2, 'Freedo_domain.appium_0')
-data.setCell(54, 3, 5246);
+data.setCell(54, 3, 5458);
 data.setCell(55, 0, 55)
 data.setCell(55, 1, 'TC_0019_verify_user_select_City')
 data.setCell(55, 2, 'Freedo_domain.appium_0')
-data.setCell(55, 3, 5009);
+data.setCell(55, 3, 5438);
 data.setCell(56, 0, 56)
-data.setCell(56, 1, 'TC_0050_Verify_user_able_to_view_booking_status')
-data.setCell(56, 2, 'Freedo_domain.appium_1')
-data.setCell(56, 3, 4850);
+data.setCell(56, 1, 'TC_0016_Verify_otp_verification_time_slot')
+data.setCell(56, 2, 'Freedo_domain.appium_0')
+data.setCell(56, 3, 5310);
 data.setCell(57, 0, 57)
-data.setCell(57, 1, 'TC_0039_Verify_user_able_to_select_time_slot_Evening')
+data.setCell(57, 1, 'TC_0050_Verify_user_able_to_view_booking_status')
 data.setCell(57, 2, 'Freedo_domain.appium_1')
-data.setCell(57, 3, 4608);
+data.setCell(57, 3, 5106);
 data.setCell(58, 0, 58)
-data.setCell(58, 1, 'TC_0040_Verify_user_able_to_select_time_slot_Morning')
-data.setCell(58, 2, 'Freedo_domain.appium_1')
-data.setCell(58, 3, 4579);
+data.setCell(58, 1, 'TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page')
+data.setCell(58, 2, 'Freedo_domain.appium_0')
+data.setCell(58, 3, 5089);
 data.setCell(59, 0, 59)
-data.setCell(59, 1, 'TC_0066_Verify_after_Complete_ride_invoice_button')
-data.setCell(59, 2, 'Freedo_domain.appium_2')
-data.setCell(59, 3, 4394);
+data.setCell(59, 1, 'TC_0039_Verify_user_able_to_select_time_slot_Evening')
+data.setCell(59, 2, 'Freedo_domain.appium_1')
+data.setCell(59, 3, 5088);
 data.setCell(60, 0, 60)
 data.setCell(60, 1, 'TC_0041_Verify_user_able_to_list_button')
 data.setCell(60, 2, 'Freedo_domain.appium_1')
-data.setCell(60, 3, 3860);
+data.setCell(60, 3, 4632);
 data.setCell(61, 0, 61)
-data.setCell(61, 1, 'TC_0015_Verify_create_my_account_button')
+data.setCell(61, 1, 'TC_006_Verify_the_Done_button_clicking')
 data.setCell(61, 2, 'Freedo_domain.appium_0')
-data.setCell(61, 3, 3474);
+data.setCell(61, 3, 3175);
 data.setCell(62, 0, 62)
 data.setCell(62, 1, 'TC_0023_Verify_location_popup')
 data.setCell(62, 2, 'Freedo_domain.appium_0')
-data.setCell(62, 3, 3291);
+data.setCell(62, 3, 3047);
 data.setCell(63, 0, 63)
-data.setCell(63, 1, 'TC_006_Verify_the_Done_button_clicking')
+data.setCell(63, 1, 'TC_0022_Select_all__City')
 data.setCell(63, 2, 'Freedo_domain.appium_0')
-data.setCell(63, 3, 2350);
+data.setCell(63, 3, 2701);
 data.setCell(64, 0, 64)
-data.setCell(64, 1, 'TC_0022_Select_all__City')
+data.setCell(64, 1, 'TC_0015_Verify_create_my_account_button')
 data.setCell(64, 2, 'Freedo_domain.appium_0')
-data.setCell(64, 3, 2032);
+data.setCell(64, 3, 2613);
 data.setCell(65, 0, 65)
 data.setCell(65, 1, 'TC_005_Verify_the_slide_indicator')
 data.setCell(65, 2, 'Freedo_domain.appium_0')
-data.setCell(65, 3, 1454);
+data.setCell(65, 3, 2334);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 minutes</span>
+              <span class="suite-total-time">Total running time: 28 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -1307,541 +1373,545 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">OPEN_AND_INSTALL_APP</span>
-                <span class="method-start">1602 ms</span>
+                <span class="method-start">2185 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">20096 ms</span>
+                <span class="method-start">68001 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_001_verify_install_apk</span>
-                <span class="method-start">20098 ms</span>
+                <span class="method-start">68004 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">27894 ms</span>
+                <span class="method-start">77478 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_002_verify_select_pickup_location_date_and_packages</span>
-                <span class="method-start">27896 ms</span>
+                <span class="method-start">77479 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">33812 ms</span>
+                <span class="method-start">84217 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_003_Verify_the_NEXT_button_clicking</span>
-                <span class="method-start">33813 ms</span>
+                <span class="method-start">84220 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">40822 ms</span>
+                <span class="method-start">91323 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_004_Verify_the_NEXT_button_clicking</span>
-                <span class="method-start">40825 ms</span>
+                <span class="method-start">91326 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">47106 ms</span>
+                <span class="method-start">96955 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_005_Verify_the_slide_indicator</span>
-                <span class="method-start">47108 ms</span>
+                <span class="method-start">96957 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">48566 ms</span>
+                <span class="method-start">99295 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_006_Verify_the_Done_button_clicking</span>
-                <span class="method-start">48568 ms</span>
+                <span class="method-start">99298 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">50924 ms</span>
+                <span class="method-start">102478 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_007_Verify_login_component</span>
-                <span class="method-start">50927 ms</span>
+                <span class="method-start">102479 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">56175 ms</span>
+                <span class="method-start">107939 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_008_Verify_login_functionality_Register_mo_number</span>
-                <span class="method-start">56176 ms</span>
+                <span class="method-start">107940 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">61462 ms</span>
+                <span class="method-start">114962 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_009_verify_login_button_on_create_an_account_page</span>
-                <span class="method-start">61466 ms</span>
+                <span class="method-start">114966 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">69657 ms</span>
+                <span class="method-start">122742 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0010_verify_create_an_account_by_clicking_login_page</span>
-                <span class="method-start">69658 ms</span>
+                <span class="method-start">122745 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">79425 ms</span>
+                <span class="method-start">131114 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0011_verify_user_able_to_create_an_account</span>
-                <span class="method-start">79426 ms</span>
+                <span class="method-start">131116 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">110565 ms</span>
+                <span class="method-start">155456 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0012_verify_Terms_and_condition_link_on_create_an_account_page</span>
-                <span class="method-start">110566 ms</span>
+                <span class="method-start">155456 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">logger</span>
+                <span class="method-start">176986 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page</span>
-                <span class="method-start">140921 ms</span>
+                <span class="method-start">176986 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">140921 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">logger</span>
-                <span class="method-start">146299 ms</span>
+                <span class="method-start">182077 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element</span>
-                <span class="method-start">146300 ms</span>
+                <span class="method-start">182079 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">154632 ms</span>
+                <span class="method-start">189543 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0015_Verify_create_my_account_button</span>
-                <span class="method-start">154634 ms</span>
+                <span class="method-start">189545 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">158112 ms</span>
+                <span class="method-start">192162 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0016_Verify_otp_verification_time_slot</span>
-                <span class="method-start">158114 ms</span>
+                <span class="method-start">192165 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">164748 ms</span>
+                <span class="method-start">197477 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0017_Verify_OTP_Verification_Page</span>
-                <span class="method-start">164750 ms</span>
+                <span class="method-start">197478 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">179029 ms</span>
+                <span class="method-start">210443 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0018_Select_location</span>
-                <span class="method-start">179031 ms</span>
+                <span class="method-start">210445 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">192830 ms</span>
+                <span class="method-start">222364 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0019_verify_user_select_City</span>
-                <span class="method-start">192831 ms</span>
+                <span class="method-start">222366 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">197842 ms</span>
+                <span class="method-start">227807 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0020_Search_wrong_city_name</span>
-                <span class="method-start">197844 ms</span>
+                <span class="method-start">227810 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">208058 ms</span>
+                <span class="method-start">236100 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0021_Search_city_name</span>
-                <span class="method-start">208059 ms</span>
+                <span class="method-start">236101 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">217360 ms</span>
+                <span class="method-start">243217 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0022_Select_all__City</span>
-                <span class="method-start">217362 ms</span>
+                <span class="method-start">243220 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">219399 ms</span>
+                <span class="method-start">245925 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0023_Verify_location_popup</span>
-                <span class="method-start">219400 ms</span>
+                <span class="method-start">245926 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Freedo_domain.appium_1</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">222693 ms</span>
+                <span class="method-start">248976 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0024_Verify_home_page_all_elements</span>
-                <span class="method-start">222694 ms</span>
+                <span class="method-start">248977 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">249076 ms</span>
+                <span class="method-start">273589 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0025_Verify_available_all_bikes</span>
-                <span class="method-start">249078 ms</span>
+                <span class="method-start">273590 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">269806 ms</span>
+                <span class="method-start">292958 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0026_Verify_available_all_Scooters</span>
-                <span class="method-start">269806 ms</span>
+                <span class="method-start">292960 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">275990 ms</span>
+                <span class="method-start">299251 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0027_Verify_homepage_bike_rentals_tab_available_bike</span>
-                <span class="method-start">275992 ms</span>
+                <span class="method-start">299252 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">297986 ms</span>
+                <span class="method-start">319093 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0028_Verify_Rent_tab_all_elements</span>
-                <span class="method-start">297987 ms</span>
+                <span class="method-start">319094 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">logger</span>
-                <span class="method-start">313160 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0029_Verify_freedo_rental_icon</span>
-                <span class="method-start">313161 ms</span>
+                <span class="method-start">334015 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">321481 ms</span>
+                <span class="method-start">334015 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">logger</span>
+                <span class="method-start">341039 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0030_Verify_more_button_all_elements</span>
-                <span class="method-start">321483 ms</span>
+                <span class="method-start">341040 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">346231 ms</span>
+                <span class="method-start">363697 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0031_Verify_Booking_elements</span>
-                <span class="method-start">346232 ms</span>
+                <span class="method-start">363699 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">367829 ms</span>
+                <span class="method-start">383167 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0032_Verify_Booking_elements</span>
-                <span class="method-start">367830 ms</span>
+                <span class="method-start">383168 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">387311 ms</span>
+                <span class="method-start">398478 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0033_Verify_Bike_button_on_homepage</span>
-                <span class="method-start">387313 ms</span>
+                <span class="method-start">398479 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">401531 ms</span>
+                <span class="method-start">411454 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0034_Verify_scooter_button_on_homepage</span>
-                <span class="method-start">401532 ms</span>
+                <span class="method-start">411456 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">410456 ms</span>
+                <span class="method-start">419987 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0035_Verify_user_able_to_select_date_and_package_under_booking</span>
-                <span class="method-start">410457 ms</span>
+                <span class="method-start">419989 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">448719 ms</span>
+                <span class="method-start">445763 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements</span>
-                <span class="method-start">448721 ms</span>
+                <span class="method-start">445765 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">471051 ms</span>
+                <span class="method-start">465803 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery</span>
-                <span class="method-start">471052 ms</span>
+                <span class="method-start">465804 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">555489 ms</span>
+                <span class="method-start">541577 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0038_Verify_user_able_to_select_time_slot_afternoon</span>
-                <span class="method-start">555493 ms</span>
+                <span class="method-start">541579 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">606891 ms</span>
+                <span class="method-start">593308 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0039_Verify_user_able_to_select_time_slot_Evening</span>
-                <span class="method-start">606892 ms</span>
+                <span class="method-start">593309 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">logger</span>
-                <span class="method-start">611507 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0040_Verify_user_able_to_select_time_slot_Morning</span>
-                <span class="method-start">611510 ms</span>
+                <span class="method-start">598402 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">616093 ms</span>
+                <span class="method-start">598402 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">logger</span>
+                <span class="method-start">604364 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0041_Verify_user_able_to_list_button</span>
-                <span class="method-start">616094 ms</span>
+                <span class="method-start">604365 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">619957 ms</span>
+                <span class="method-start">609000 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0042_Verify_select_city</span>
-                <span class="method-start">619958 ms</span>
+                <span class="method-start">609002 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">679664 ms</span>
+                <span class="method-start">659867 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0043_Verify_continue_button_and_summary_page</span>
-                <span class="method-start">679665 ms</span>
+                <span class="method-start">659869 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">791533 ms</span>
+                <span class="method-start">699877 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0044_Verify_summary_page_additional_helmet_charges</span>
-                <span class="method-start">791534 ms</span>
+                <span class="method-start">699879 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">808262 ms</span>
+                <span class="method-start">714381 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0045_Verify_summary_page_coupon_code</span>
-                <span class="method-start">808263 ms</span>
+                <span class="method-start">714382 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">832226 ms</span>
+                <span class="method-start">734724 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0046_Verify_summary_page_cash_on_delivery_method</span>
-                <span class="method-start">832227 ms</span>
+                <span class="method-start">734725 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">842429 ms</span>
+                <span class="method-start">743416 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0047_Verify_summary_page_i_accept_checkbox</span>
-                <span class="method-start">842430 ms</span>
+                <span class="method-start">743417 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">848880 ms</span>
+                <span class="method-start">749621 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0048_Verify_summary_page_pay_now_button</span>
-                <span class="method-start">848881 ms</span>
+                <span class="method-start">749622 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">873996 ms</span>
+                <span class="method-start">782928 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0049_Verify_user_able_to_make_payment</span>
-                <span class="method-start">873997 ms</span>
+                <span class="method-start">782929 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">934089 ms</span>
+                <span class="method-start">841907 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0050_Verify_user_able_to_view_booking_status</span>
-                <span class="method-start">934090 ms</span>
+                <span class="method-start">841908 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">938943 ms</span>
+                <span class="method-start">847016 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0051_Verify_user_able_to_view_booking_status_all_elements</span>
-                <span class="method-start">938944 ms</span>
+                <span class="method-start">847017 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Freedo_domain.appium_2</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">980527 ms</span>
+                <span class="method-start">883613 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC_0052_admin_Request_reject</span>
-                <span class="method-start">980527 ms</span>
+                <span class="method-start">883614 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">logger</span>
+                <span class="method-start">1072523 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0053_Track_booking_status</span>
-                <span class="method-start">1013709 ms</span>
+                <span class="method-start">1072525 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">1013709 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">logger</span>
-                <span class="method-start">1040512 ms</span>
+                <span class="method-start">1128932 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0054_Verify_user_able_to_logout_cancel</span>
-                <span class="method-start">1040513 ms</span>
+                <span class="method-start">1128934 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">1062002 ms</span>
+                <span class="method-start">1147954 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0055_Verify_user_able_to_successful_logout</span>
-                <span class="method-start">1062003 ms</span>
+                <span class="method-start">1147955 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">1077652 ms</span>
+                <span class="method-start">1160779 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0056_Verify_user_able_to_deactivate_account</span>
-                <span class="method-start">1077654 ms</span>
+                <span class="method-start">1160780 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">1130394 ms</span>
+                <span class="method-start">1208416 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0057_Verify_user_able_to_COD_booking</span>
-                <span class="method-start">1130396 ms</span>
+                <span class="method-start">1208417 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">1194595 ms</span>
+                <span class="method-start">1255481 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0058_admin_Request_reject</span>
-                <span class="method-start">1194597 ms</span>
+                <span class="method-start">1255482 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">logger</span>
-                <span class="method-start">1223386 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0059_Verify_user_able_to_Online_payment_booking</span>
-                <span class="method-start">1223386 ms</span>
+                <span class="method-start">1288724 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">1357468 ms</span>
+                <span class="method-start">1288724 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">logger</span>
+                <span class="method-start">1394865 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0060_Admin_approved_request</span>
-                <span class="method-start">1357469 ms</span>
+                <span class="method-start">1394867 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">1409663 ms</span>
+                <span class="method-start">1453914 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0061_Verify_user_able_to_view_booking_status_all_elements</span>
-                <span class="method-start">1409664 ms</span>
+                <span class="method-start">1453922 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">1484741 ms</span>
+                <span class="method-start">1611422 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0062_Verify_user_End_ride_request</span>
-                <span class="method-start">1484742 ms</span>
+                <span class="method-start">1611423 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">1490725 ms</span>
+                <span class="method-start">1676215 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0063_Verify_user_end_ride_booking_status</span>
-                <span class="method-start">1490726 ms</span>
+                <span class="method-start">1676216 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">1501786 ms</span>
+                <span class="method-start">1683755 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC_0064_Admin_check_End_ride_request</span>
-                <span class="method-start">1501787 ms</span>
+                <span class="method-start">1683756 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">1539288 ms</span>
+                <span class="method-start">1694459 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0065_Verify_user_Complete_ride_booking_status</span>
-                <span class="method-start">1539289 ms</span>
+                <span class="method-start">1694459 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">logger</span>
-                <span class="method-start">1565251 ms</span>
+                <span class="method-start">1720333 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0066_Verify_after_Complete_ride_invoice_button</span>
-                <span class="method-start">1565252 ms</span>
+                <span class="method-start">1720333 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

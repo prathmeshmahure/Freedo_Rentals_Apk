@@ -124,14 +124,10 @@ public class base_class {
 					cap.setCapability("appium:automationName", "uiautomator2");
 					cap.setCapability("platformName", "Android");
 					cap.setCapability("appium:deviceName", "Infinix");//Infinix //pixel_6
-					cap.setCapability("appium:udid", "192.168.1.2:5555");// 0836731257071990 //emulator-5554 //0526532038000424 //192.168.1.2:5555
-					cap.setCapability("appium:avd", "Infinix");// if u connect real device comment this line
+					cap.setCapability("appium:udid", "0836731257071990");// 0836731257071990 //emulator-5554 //0526532038000424 //192.168.1.2:5555
 					cap.setCapability("appium:avdLaunchTimeout", 600000);		
 					cap.setCapability("appPackage", "com.heerofreedo");               //freedo
 					cap.setCapability("appActivity", "com.heerofreedo.MainActivity"); //freedo
-					cap.setCapability("appium:noReset", "false");		
-					cap.setCapability("appPackage", "com.freedoadmin");               //Champion
-					cap.setCapability("appActivity", "com.freedoadmin.MainActivity"); //Champion
 					cap.setCapability("appium:noReset", "false");
 					
 		//			cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\Champion.apk"));

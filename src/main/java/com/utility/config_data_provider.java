@@ -59,6 +59,9 @@ public class config_data_provider {
 				public  String getweb_credential() {
 					return pro.getProperty("web_credential");
 				}
+				public  String getweb_credential_password() {
+					return pro.getProperty("web_credential_password");
+				}
 				public  String getstart_km_reading() {
 					return pro.getProperty("start_km_reading");
 				}
@@ -76,6 +79,9 @@ public class config_data_provider {
 				}
 				public  String getgpsaddress() {
 					return pro.getProperty("gpsaddress");
+				}
+				public  String getPlatform_name() {
+					return pro.getProperty("Platform_name");
 				}
 				
 				

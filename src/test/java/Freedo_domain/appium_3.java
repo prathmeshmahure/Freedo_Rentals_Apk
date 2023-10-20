@@ -7,151 +7,103 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentTest;
 import com.page_object.booking_page;
+import com.page_object.launch_login;
 import com.utility.base_class;
 import com.utility.library;
-
-import io.appium.java_client.android.AndroidTouchAction;
+@Listeners(com.utility.listner.class)
 
 public class appium_3 extends base_class{
 	public booking_page book;
-	@SuppressWarnings("deprecation")
-	public AndroidTouchAction action;
-//==================================================================================================================
-	@SuppressWarnings("deprecation")
-	@Test(priority=6)
-	public void appium_3_TC_0024_verify_2_to_3_month_booking_with_valid_data() throws Exception {
-		book = PageFactory.initElements(driver1, booking_page.class);
-		log.info("***************appium_3_TC_0024_verify_2_to_3_month_booking_with_valid_data starts*****************");
-		
-	//	Assert.assertTrue(book.getClick_1st_location_dropdown().isDisplayed());
-		library.Custom_click(book.getClick_home_page_button(), "home button");
-		action=new AndroidTouchAction(driver1);
-		Thread.sleep(5000);
-	//	library.visible_link(book.getClick_1st_location_dropdown(), "1st location dropdown");
-	//	library.Custom_click(book.getClick_1st_location_dropdown(), "1st lo");
+	public launch_login login;
+	public static ExtentTest test;
 	
-		library.Custom_click(book.getClick_Autonation_city(), "location Automation");
-//		library.Custom_click(book.getClick_1st_Metro_Hospital_Sector_12(), "enter Area");
-		library.Custom_click(book.getClick_Package_dropdown(), "package dropdown");
-		library.Custom_click(book.getClick_90_Days_package(),"Selected package");
+	
+	//@Test(dependsOnMethods={"TC_0058_admin_Request_reject"})
+	@Test(priority=8)
+	public void TC_0059_Verify_user_able_to_Online_payment_booking() throws Exception  {
+		log.info("***************TC_0059_Verify_user_able_to_Online_payment_booking starts*****************");
+		book = new booking_page(driver1);
+		
+		library.Custom_click(book.getClick_home_page_button(), "Home button");
+		Thread.sleep(2000);
+		library.Custom_click(book.getClick_1st_page_enter_button(), "Enter button");
 		library.date_select();
-	//	library.Custom_click(book.getClick_Book_now_Button(), "Book now button");
-		
+		library.Custom_click(book.getClick_Package_dropdown(), "package dropdown");
+		library.Custom_click(book.getClick_1_Days_package(),"Selected package");
+		library.Custom_click(book.getClick_go_freedo_Button(), "Go Freedo button");
 		Thread.sleep(2000);
-		String s=book.getselect_random_Bike().getText();
-		Assert.assertEquals(s,"Book Now");
-		library.bike_book_page(book.getselect_random_Bike(), "Bike");
+		library.Custom_click(book.getBook_now_button(), "Book now button");
+		Thread.sleep(2000);
+		library.Custom_click(book.getclick_location_pop_up_ok_button(), "ok button");
+		library.Custom_click(book.getClick_Continue_Tab(), "Continue button");
 		Thread.sleep(4000);
-		appium_3.Scroll_UP_page_Action("page up");
-			String b=book.gettxt_BKD_pickup_location().getText();
-			if(b.equalsIgnoreCase("Select Pick Up Location")) {
-				library.Custom_click(book.gettxt_BKD_pickup_location(), "click pickup location ");
-				driver1.findElement(By.xpath("(//android.widget.CheckedTextView)[2]")).click();
-			}
+		appium_2.Scroll_UP_page_Action("page up");
+	//	library.Custom_click(book.getClick_I_accept_checkbox(), "I accept checkbox");
+		Thread.sleep(1000);
+		library.Custom_click(book.getClick_summary_pay_now_button(), "Pay now button");
+		Thread.sleep(5000);
+		library.Custom_click(book.getClick_Pay_using_Netbanking(), "Pay using Netbanking");
+		library.Custom_click(book.getClick_Pay_using_SBI_bank(), "Select SBI bank");
+		library.Custom_click(book.getClick_pay_now_button_sbi(), "Pay Now button");
 		
-//		driver1.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector())"+".scrollIntoView(text(\"Continue\"));"));
-		library.Custom_click(book.getClick_Continue_Tab(), "Click continue tab");
-		
-		String c=book.getsummary_page_text().getText();			
-		Assert.assertEquals(c, "SUMMARY");
-		appium_3.Scroll_UP_page_Action("page up");
-//		driver1.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector())"+".scrollIntoView(text(\"Pay Now\"));"));
-	}
-//========================================================================================================================
-	@Test(dependsOnMethods={"appium_3_TC_0024_verify_2_to_3_month_booking_with_valid_data"})
-	public void appium_3_TC_0025_verify_3_to_2_month_booking_summary_page() throws Exception {
-		log.info("***************appium_3_TC_0025_verify_3_to_2_month_booking_summary_page starts*****************");
-		
-		library.Custom_click(book.getClick_add_helmet(), "helment added");
-		Thread.sleep(2000);
-		library.visible_link(book.getClick_add_helmet_extra_charges(),"Extra helmet charges = "+book.getClick_add_helmet_extra_charges().getText());
-//		library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
-		library.Custom_click(book.getClick_split_payment(),"select split payment");
-		library.Custom_click(book.getClick_notification_close_button(), "Alert close button");
-			if(book.getClick_split_payment().isSelected()==true) {
-				library.passmsg("Split payment checkbox is = ", "Selected");
-			}else {
-				library.failmsg("Split payment checkbox is = ", "NOT Selected");
-			}
-	}
-//=======================================================================================================================
-	@Test(dependsOnMethods={"appium_3_TC_0025_verify_3_to_2_month_booking_summary_page"})
-	public void appium_3_TC_0026_verify_booking_payment_through_split() throws Exception {
-		log.info("***************appium_3_TC_0026_verify_booking_payment_through_split starts*****************");
-		
-	
-		library.Custom_click(book.getClick_SUmmary_page_Continue_Tab(), "click continue button");
-		Thread.sleep(2000);
-		library.Custom_click(book.getClick_split_payment_i_agree_check_box(), "click i agrre check box split payment");
-				if(book.getClick_split_payment_i_agree_check_box().isSelected()==true) {
-					library.passmsg("I agree to Split payment checkbox is = ", "Selected");
-				}else {
-					library.failmsg("I agree to Split payment checkbox is = ", "NOT Selected");
-				}
-		library.Custom_click(book.getClick_split_make_payment_button(), "make payment button");
-		Thread.sleep(4000);
-		library.Custom_click(book.getClick_Pay_using_Netbanking(), "select netbanking option");
-		library.Custom_click(book.getClick_Pay_using_SBI_bank(),"select bank ");
-		library.Custom_click(book.getClick_pay_now_button_sbi(), "pay now button");	
-		String g=book.getClick_payment_successful().getText();
-		Assert.assertEquals(g, "Success");
 		library.Custom_click(book.getClick_payment_successful(), "payment successful");
 		library.Custom_click(book.getClick_view_booking(), "booking details");
-		Thread.sleep(3000);
-		
-		library.Custom_click(book.getClick_show_more_details(), "show more details text");
-		Thread.sleep(3000);
-		appium_3.Scroll_UP_page_Action("page up");
-		library.Custom_click(book.getClick_show_less_details(), "show less text");
-		library.Custom_click(book.getClick_price_breakup(), "price breakp");
-		library.Custom_click(book.getClick_home_page_button(),"home button");
+		Thread.sleep(10000);	
+		library.Custom_click(book.getClick_view_booking(), "booking details");
+		Thread.sleep(7000);
+		try {
+			if(book.getClick_view_booking().isDisplayed()) {
+			driver1.findElement(By.xpath("//android.widget.TextView[@content-desc='txt_ViewBooking']")).click();
+			}
+		}catch(Exception e){		}	
 	}
-//====================================================================================================================	
-	
-//===================================================================================================================
-	
-	@SuppressWarnings("deprecation")
-	@Test(dependsOnMethods={"appium_3_TC_0026_verify_booking_payment_through_split"})
-//	@Test
-	public void appium_3_TC_0027_Admin_approved_request () throws Exception {
-		log.info("***************appium_3_TC_0027_Admin_approved_request starts*****************");
+//================================================================================================================================	
+	@Test(dependsOnMethods={"TC_0059_Verify_user_able_to_Online_payment_booking"})
+	//@Test(priority=9)
+	public void TC_0060_Admin_approved_request () throws Exception {
+		log.info("***************TC_0060_Admin_approved_request starts*****************");
 		
 		Browseropen();
+		Thread.sleep(3000);
 		Robot r = new Robot();
 		for(int i=0; i<4; i++) {
 			r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
 		}
 		Thread.sleep(3000);
-		
-		WebElement ele3=driver.findElement(By.xpath("//p[text()='Dashboard']"));library.Custom_click(ele3, "Dashboard");
+		r.keyPress(KeyEvent.VK_PAGE_DOWN);
+		r.keyRelease(KeyEvent.VK_PAGE_DOWN);
 		WebElement ele4=driver.findElement(By.xpath("//button[@title='Reset']"));library.Custom_click(ele4, "Reset button");
+//		WebElement ele1=driver.findElement(By.xpath("(//div[@aria-haspopup='listbox'])[3]"));library.Custom_click(ele1, "10 user");
+//		WebElement ele2=driver.findElement(By.xpath("//li[normalize-space()='50']"));library.Custom_click(ele2, "50 user");
 		Thread.sleep(3000);
 		String s=config.getFirst_name();//user name to find web table
-		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::div/parent::td//following-sibling::td//div[@id='approve-action']"));
+		String l=config.getLast_name();
+		Thread.sleep(3000);
+		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+" "+l+"']/parent::div/parent::td//following-sibling::td//div[@id='approve-action']"));
 		library.Custom_click(ele5, "accept booking request");
 		Thread.sleep(1000);
-		WebElement ele6=driver.findElement(By.xpath("//button[text()='Yes']"));library.Custom_click(ele6, "Yes button");
+		WebElement ele6=driver.findElement(By.xpath("//button[text()='Yes']"));
+		library.Custom_click(ele6, "Yes button");
 		
-		WebElement biketext=driver.findElement(By.xpath("//text[contains(text(),\"Prathmesh\")]/parent::div/parent::td//following-sibling::td[2]"));
-		String b1=biketext.getText();
+		Thread.sleep(4000);
 				try {
-				if(ele5.isDisplayed()) {
+				if(ele5.isDisplayed() && ele5.isEnabled() == true)  {
 					
-					library.Custom_click(ele5, "accept booking request");
+					library.Custom_click(ele5, "accept booking request 2");
 					Thread.sleep(1000);
-					library.Custom_click(ele6, "Yes button");
+					library.Custom_click(ele6, "Yes button 2");
 				}}catch(Exception e) {
 					library.passmsg("Admin request ", "Accepted");
 				}
 		
 		
 		Thread.sleep(2000);
-		WebElement ele7=driver.findElement(By.xpath("//text[text()='"+s+"']/parent::div/parent::td//following-sibling::td//div[@id='view-action']"));
+		WebElement ele7=driver.findElement(By.xpath("//text[text()='"+s+" "+l+"']/parent::div/parent::td//following-sibling::td//div[@id='view-action']"));
 		library.Custom_click(ele7, "view data");
 		Thread.sleep(3000);
 		WebElement ele8=driver.findElement(By.xpath("//p[text()='Booking Management']"));library.Custom_click(ele8, "Booking management");
@@ -170,7 +122,7 @@ public class appium_3 extends base_class{
 		
 		List<WebElement> lastday=driver.findElements(By.xpath("//div[@role][4]/parent::div/parent::div/parent::div//following-sibling::div//button"));
 		int totaldays=lastday.size();
-		int i=date;
+		int i=date + 2; //adding 2 days extra to visible 
 		int nextdate=i-totaldays;
 			if(i<=totaldays) {
 				WebElement dateselect=driver.findElement(By.xpath("(//button[normalize-space()="+i+"])[1]"));
@@ -186,50 +138,251 @@ public class appium_3 extends base_class{
 		WebElement ele10=driver.findElement(By.xpath("//h5[text()='Upcoming']"));library.Custom_click(ele10, "Upcoming button");
 		
 		Thread.sleep(1000);
-		WebElement ele11=driver.findElement(By.xpath("//text[contains(text(),"+s+")]/parent::td//following-sibling::td//div[@id='view-action']"));
+		WebElement ele11=driver.findElement(By.xpath("//div[@id='view-action']"));
 		library.Custom_click(ele11, "table search user request view action");
+		/////// Upgrade vehicle ////////
 		
-		WebElement ele12=driver.findElement(By.xpath("//*[text()='Control Buttons']"));library.Custom_click(ele12, "Control button");
-		WebElement ele13=driver.findElement(By.xpath("//button[text()='Start Ride']"));library.Custom_click(ele13, "Start ride");
-		WebElement ele14=driver.findElement(By.xpath("//input[@value='0']"));library.custom_sendkeys(ele14, config.getstart_km_reading(), "enter bike reading");
+		WebElement ele91=driver.findElement(By.xpath("//button[text()=' Upgrade Vehicle']"));library.Custom_click(ele91, "Upgrade vehicle");
+		WebElement ele92=driver.findElement(By.xpath("//em[text()='Available Vehicles']"));library.Custom_click(ele92, "Available vehicles");
+		WebElement ele93=driver.findElement(By.xpath("//li[text()='HF Deluxe']"));library.Custom_click(ele93, "Hf deluxe bike selected");
+		WebElement ele94=driver.findElement(By.xpath("//button[@title='Request Upgrade']"));library.Custom_click(ele94, "Request upgrade vehicle");
 		
-		WebElement ele15=driver.findElement(By.xpath("//button[text()='Submit']"));	library.Custom_click(ele15, "Submit button");
-		WebElement ele16=driver.findElement(By.xpath("//button[text()='Yes']"));library.Custom_click(ele16, "Yes button");
-		
-		
-		
-		
-		
-		
-		
-		
-		
-//		try {
-//			WebElement alert=driver.findElement(By.xpath("//div[contains(text(),'Vehicle is already engaged for booking number')]"));
-//			if(alert.isDisplayed()) {
-//				driver.findElement(By.xpath("//*[text()='Control Buttons']")).click();
-//				driver.findElement(By.xpath("//button[text()='Upgrade Vehicle']")).click();
-//				driver.findElement(By.xpath("//em[text()='Available Vehicles']")).click();
-//				String bike=b1;
-//				driver.findElement(By.xpath("//li[@data-value="+bike+"]")).click();
-//				driver.findElement(By.xpath("//em[text()='Vehicle Licenses']")).click();
-//				driver.findElement(By.xpath("(//li[@data-value])[2]")).click();
-//				driver.findElement(By.xpath("//button[text()='Request Upgrade']")).click();
-//				driver.findElement(By.xpath("//button[text()='Submit']")).click();
-//			}
-//		}catch(Exception e) {
-//			
-//		}
-//		
 		Thread.sleep(3000);
-		log.info("Approval is sucessfully Accepted");
+		
+		
+		////////////////
+		
+		
+	//	WebElement ele12=driver.findElement(By.xpath("//*[text()='Control Buttons']"));library.Custom_click(ele12, "Control button");
+		WebElement ele13=driver.findElement(By.xpath("(//button[text()='Start Ride' or @data-bs-toggle='modal'])[1]"));library.Custom_click(ele13, "Start ride");
+		WebElement ele14=driver.findElement(By.xpath("//input[@placeholder='Start Reading']"));library.custom_sendkeys(ele14, config.getstart_km_reading(), "enter bike reading");
+		WebElement dropdownbike=driver.findElement(By.xpath("//option[text()='Select Registration']"));library.Custom_click(dropdownbike, "Select bike number");
+		WebElement dropdownbike1=driver.findElement(By.xpath("(//option[@value])[2]"));library.Custom_click(dropdownbike1, "bike number is selected");
+		
+		//////////////////////////////////////////////////////// date as per select bike booking
+//		WebElement calendar2=driver.findElement(By.xpath("//input[@type=\"date\"]"));		library.Custom_click(calendar2, "calender click");
+//		if(i<=totaldays) {
+//			WebElement dateselect=driver.findElement(By.xpath("(//button[normalize-space()="+i+"])[1]"));
+//			library.Custom_click(dateselect, "Select date");
+//		}else {
+//			driver.findElement(By.xpath("//button[@title='Next month']")).click();
+//			WebElement dateselect=driver.findElement(By.xpath("(//button[normalize-space()="+nextdate+"])[1]"));
+//			library.Custom_click(dateselect, "Select date");
+//		}
+		/////////////////////////////////////////////////////// MITS form 
+		WebElement Generate_MITC_Form = driver.findElement(By.xpath("//button[normalize-space()='Generate MITC Form']"));	library.Custom_click(Generate_MITC_Form, "Generate MITC Form");
+		WebElement MITC_FORM_Link = driver.findElement(By.xpath("//a[normalize-space()='MITC FORM Link']"));	library.Custom_click(MITC_FORM_Link, "MITC FORM Link");
+		
+		WebElement MITS_form_checkbox = driver.findElement(By.xpath("//input[@value='Personal']"));	library.Custom_click(MITS_form_checkbox, "MITS form checkbox");
+		WebElement Send_Otp=driver.findElement(By.xpath("//button[normalize-space()='Send Otp']"));	library.Custom_click(Send_Otp, "Send Otp button");
+		WebElement OTP_input_box=driver.findElement(By.xpath("(//input[@type='number'])[1]"));	library.custom_sendkeys(OTP_input_box,config.getOTP(), "OTP input box");
+		WebElement Verify_button=driver.findElement(By.xpath("//div[text()='Verify']"));	library.Custom_click(Verify_button, "Verify button");
+		 
+		//close current tab short cut keys
+		WebElement about_text=driver.findElement(By.xpath("//a[normalize-space()='About']"));
+		if(about_text.isDisplayed()) {
+		r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_W);r.keyRelease(KeyEvent.VK_W);r.keyRelease(KeyEvent.VK_CONTROL);
+		}
+		/////////////////////// MITS form end 
+		WebElement MITC_FORM_status = driver.findElement(By.xpath("//a[normalize-space()='Check MITC Status']"));	library.Custom_click(MITC_FORM_status, "MITC FORM Status");
+		Thread.sleep(1000);
+		WebElement Start_Ride=driver.findElement(By.xpath("//button[text()='Start Ride']"));	library.Custom_click(Start_Ride, "Start ride button");
+		Thread.sleep(2000);
+		////// verify booking is ongoing
+		WebElement Ongoing=driver.findElement(By.xpath("//span[text()='Ongoing']"));
+		if(Ongoing.isDisplayed()) {
+			log.info("Approval is sucessfully Accepted");
+		}else {
+			log.error("Approval is not accepted");
+		}
+		driver.close();
+
+	}
+//===================================================================================================================================	
+	@Test(dependsOnMethods={"TC_0060_Admin_approved_request"})
+	//@Test(priority=10)
+	public void TC_0061_Verify_user_able_to_view_booking_status_all_elements() throws Exception {
+		log.info("***************TC_0061_Verify_user_able_to_view_booking_status_all_elements starts*****************");
+		
+		appium_2.Back_button();
+		Thread.sleep(1000);
+		appium_2.Back_button();
+		library.Custom_click(book.getClick_home_page_Bookings_button(), "Bookings button");
+		Thread.sleep(3000);
+		try {
+			driver1.findElement(By.xpath("//android.widget.TextView[@text='View']")).click();
+		}catch(Exception e){
+			
+		}
+		//library.Custom_click(book.getClick_booking_page_view_button(), "View button");
+		Thread.sleep(4000);
+		library.visible_link(book.getClick_show_more_details(), "show more details text");
+		library.Custom_click(book.getClick_show_more_details(), "show more details text");
+		Thread.sleep(2000);
+		appium_2.Scroll_down_page_Action("Down");
+		library.visible_link(book.getFBD_Booking_status(), "Booking status");
+		library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
+		Thread.sleep(2000);
+		library.visible_link(book.getFBD_Booking_id(), "Booking ID  ");
+		library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number  ");		
+		library.visible_link(book.getFBD_pick_up_date(), "Pick Up Date  ");
+		library.visible_link(book.getFBD_drop_off_date(), "Drop off date  ");
+		library.visible_link(book.getFBD_pick_up_location(), "Pick Up Location  ");
+		library.visible_link(book.getFBD_duration(), "Duration  ");
+		library.visible_link(book.getFBD_handover_time(), "Handover Time  ");
+		library.visible_link(book.getFBD_drop_off_location(), "Drop off Location  ");
+		library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date  ");
+		library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date  ");
+		library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up  ");
+		
+		try {
+		library.visible_link(book.getFBD_Booking_id(), "Booking ID = "+book.getFBD_Booking_id().getText());
+		library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number = "+book.getFBD_vehicle_nummber().getText());		
+		library.visible_link(book.getFBD_pick_up_date(), "Pick Up Date = "+book.getFBD_pick_up_date().getText());
+		library.visible_link(book.getFBD_drop_off_date(), "Drop off date = "+book.getFBD_drop_off_date().getText());
+		library.visible_link(book.getFBD_pick_up_location(), "Pick Up Location = "+book.getFBD_pick_up_location().getText());
+		library.visible_link(book.getFBD_duration(), "Duration = "+book.getFBD_duration().getText());
+		library.visible_link(book.getFBD_handover_time(), "Handover Time = "+book.getFBD_handover_time().getText());
+		library.visible_link(book.getFBD_drop_off_location(), "Drop off Location = "+book.getFBD_drop_off_location().getText());
+		library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date = "+book.getFBD_planned_drop_off_date().getText());
+		library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date = "+book.getFBD_Actual_drop_off_date().getText());
+		library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up = "+book.getFBD_mode_of_pick_up().getText());
+		}catch(Exception e) {
+			log.error("text is not present");
+		}
+		appium_2.Scroll_UP_page_Action("page up");
+		library.Custom_click(book.getClick_show_less_details(), "show less text");
+		library.visible_link(book.getClick_Home_booking_tab_extend_ride(), "Extend ride drop down");
+		library.visible_link(book.getFBD_end_ride(), "End ride drop down");
+		library.visible_link(book.getClick_price_breakup(), "price break up Drop down");
+		library.visible_link(book.getFBD_vehicle_documents(), "Vehicle document");
+		
+	}
+//============================================================================================================================
+	@Test(dependsOnMethods={"TC_0061_Verify_user_able_to_view_booking_status_all_elements"})
+	//@Test(priority=11)
+	public void TC_0062_Verify_user_End_ride_request() throws Exception {
+		log.info("***************TC_0062_Verify_user_End_ride_request starts*****************");
+		
+		library.Custom_click(book.getFBD_end_ride(), "End ride drop down");
+		library.Custom_click(book.getFBD_end_ride_raised_request_button(), "End ride raised request button");
+		
+	}
+	
+//============================================================================================================================	
+	@Test(dependsOnMethods={"TC_0062_Verify_user_End_ride_request"})
+	//@Test(priority=12)
+	public void TC_0063_Verify_user_end_ride_booking_status() throws Exception {
+		log.info("***************TC_0063_Verify_user_end_ride_booking_status starts*****************");
+		
+		Thread.sleep(5000);
+		library.visible_link(book.getFBD_Booking_status(), "Booking status");
+		library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
+	}
+	
+//============================================================================================================================	
+	@Test(dependsOnMethods={"TC_0063_Verify_user_end_ride_booking_status"})
+	//@Test(priority=13)
+	public void TC_0064_Admin_check_End_ride_request () throws Exception {
+		log.info("***************TC_0064_Admin_check_End_ride_request starts*****************");
+		
+		Browseropen();
+		Thread.sleep(3000);
+		Robot r = new Robot();
+		for(int i=0; i<4; i++) {
+			r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
+		}
+		Thread.sleep(3000);
+		r.keyPress(KeyEvent.VK_PAGE_DOWN);
+		r.keyRelease(KeyEvent.VK_PAGE_DOWN);
+		WebElement ele3=driver.findElement(By.xpath("//h5[normalize-space()='Return Requests Received']"));library.Custom_click(ele3, "Return Requests Received");
+		
+		Thread.sleep(3000);
+		String s=config.getFirst_name();//user name to find web table
+		String l=config.getLast_name();
+		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+" "+l+"']/parent::div/parent::td//following-sibling::td//div[@id='view-action']"));
+		library.Custom_click(ele5, "View booking request");
+		Thread.sleep(2000);
+		
+		r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_R);r.keyRelease(KeyEvent.VK_R);r.keyRelease(KeyEvent.VK_CONTROL);
+		
+		WebElement ViewEditreaidng=driver.findElement(By.xpath("//button[text()=' Update Odometer Reading']"));library.Custom_click(ViewEditreaidng, "Update Odometer Readings");
+		WebElement endreading=driver.findElement(By.xpath("//input[@placeholder='Update Reading']"));	library.custom_sendkeys(endreading, config.getend_km_reading(), "End ride km reading");
+		Thread.sleep(1000);
+		WebElement ele15=driver.findElement(By.xpath("//button[text()='Update Reading']"));	library.Custom_click(ele15, "Update Reading");
+		WebElement closepopup=driver.findElement(By.xpath("//a[@id='closeModal2']"));	library.Custom_click(closepopup, "Close Update Reading popup");
+		
+		Thread.sleep(2000);
+		WebElement ele19=driver.findElement(By.xpath("//button[text()=' Complete Ride']"));
+		library.Custom_click(ele19, "Complete ride");
+//		WebElement extracharge=driver.findElement(By.xpath("//button[text()='Add Extra Charges']"));library.Custom_click(extracharge, "add extra charges");
+		WebElement Complete=driver.findElement(By.xpath("//input[@id='checkboxNoLabel']"));		library.Custom_click(Complete, "Complete ride checkbox");
+		Thread.sleep(2000);
+		WebElement ele16=driver.findElement(By.xpath("//button[text()='Confirm & Complete Ride']"));library.Custom_click(ele16, "Confirm and complete ride button");
+		Thread.sleep(2000);
+		
+		Thread.sleep(3000);
+		log.info("Ride  is sucessfully completed");
 		driver.close();
 	}
-//=========================================	
-	
-	
-	
+//===================================================================================================================================	
+	//@Test(dependsOnMethods={"TC_0064_Admin_check_End_ride_request"})
+	@Test(priority=14)
+	public void TC_0065_Verify_user_Complete_ride_booking_status() throws Exception {
+		log.info("***************TC_0065_Verify_user_Complete_ride_booking_status starts*****************");
 		
+		Thread.sleep(3000);
+		library.Custom_click(book.getClick_home_page_button(), "Home button");
+		Thread.sleep(3000);
+		library.Custom_click(book.getClick_home_page_Bookings_button(), "Bookings button");
+		Thread.sleep(3000);
+		try {
+		//	driver1.findElement(By.xpath("//android.widget.TextView[@text='View']")).click();
+		}catch(Exception e) {}
+		Thread.sleep(10000);
+		
+		library.visible_link(book.getFBD_Booking_status(), "Booking status");
+		Thread.sleep(2000);
+		library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
+	}
+//====================================================================================================================================	
+	//@Test(dependsOnMethods={"TC_0065_Verify_user_Complete_ride_booking_status"})
+	@Test(priority=15)
+	public void TC_0066_Verify_after_Complete_ride_invoice_button() throws Exception {
+		log.info("***************TC_0066_Verify_after_Complete_ride_invoice_button starts*****************");
+		
+		Thread.sleep(2000);
+		library.visible_link(book.getFBD_Invoice_button(), "Invoice Button");
+	}
+//===================================================================================================================================	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 }

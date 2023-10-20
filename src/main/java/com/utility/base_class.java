@@ -51,64 +51,104 @@ public class base_class {
 	@BeforeTest	//(dependsOnMethods="Champion_app_install") 	
 	  public  void OPEN_AND_INSTALL_APP() throws MalformedURLException, Exception {
 		
-/*	 */
- 
-			DesiredCapabilities cap = new DesiredCapabilities();
-			cap.setCapability("appium:automationName", "uiautomator2");
-			cap.setCapability("platformName", "Android");
-			cap.setCapability("appium:deviceName", "pixel_6");//Infinix //pixel_6
-			cap.setCapability("appium:udid", "emulator-5554");// 0836731257071990 //emulator-5554 //0526532038000424
-			cap.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
-			cap.setCapability("appium:avdLaunchTimeout", 600000);		
-			cap.setCapability("appPackage", "com.heerofreedo");
-			cap.setCapability("appActivity", "com.heerofreedo.MainActivity");
-			cap.setCapability("appium:noReset", "true");
-			
-//			cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\10app-release.apk"));
-//			cap.setChromedriverExecutable(System.getProperty("user.dir")+"\\apk\\chromedriver.exe");
-			cap.setCapability("appium:ensureWebviewsHavePages", true);
-			cap.setCapability("appium:nativeWebScreenshot", true);
-			cap.setCapability("appium:newCommandTimeout", 66000);
-		    
-//		    URL remoteUrl = new URL("http://127.0.0.1:4723/");
-
-		    driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
-		
-		    /*		
-	*/	
-	
-		
-		
-		
-/*		//========================== *******  Pcloudy =========================
-		
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		 capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
-		 capabilities.setCapability("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
-		 capabilities.setCapability("pCloudy_DurationInMinutes", 15);
-		 capabilities.setCapability("newCommandTimeout", 600);
-		 capabilities.setCapability("launchTimeout", 90000);
-		 capabilities.setCapability("pCloudy_DeviceManufacturer", "GOOGLE");
-		 capabilities.setCapability("pCloudy_DeviceVersion", "13.0.0");
-		 capabilities.setCapability("platformVersion", "13.0.0");
-		 capabilities.setCapability("platformName", "Android");
-		 capabilities.setCapability("automationName", "uiautomator2");
-		 capabilities.setCapability("pCloudy_ApplicationName", "10app-release.apk");
-		 capabilities.setCapability("appPackage", "com.heerofreedo");
-		 capabilities.setCapability("appActivity", "com.heerofreedo.MainActivity");
-		 capabilities.setCapability("pCloudy_WildNet", "false");
-		 capabilities.setCapability("pCloudy_EnableVideo", "true");
-		 capabilities.setCapability("pCloudy_EnablePerformanceData", "true");
-		 capabilities.setCapability("pCloudy_EnableDeviceLogs", "true");
+			String Device_name = config.getPlatform_name();
+			if(Device_name.equalsIgnoreCase("emulator")) {
+				try {
 		 
-		 driver1 = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
-
-*/      
-		driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-	    log = LogManager.getLogger("Freedo_Rentals_Apk");
-	    log.info(" =============== /= Freedo Rentals Mobile App Automation Report =/ ==================  ");
-	  }	
-
+					DesiredCapabilities cap = new DesiredCapabilities();
+					cap.setCapability("appium:automationName", "uiautomator2");
+					cap.setCapability("platformName", "Android");
+					cap.setCapability("appium:deviceName", "pixel_6");//Infinix //pixel_6
+					cap.setCapability("appium:udid", "emulator-5554");// 0836731257071990 //emulator-5554 //0526532038000424
+					cap.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
+					cap.setCapability("appium:avdLaunchTimeout", 600000);		
+					cap.setCapability("appPackage", "com.heerofreedo");               //freedo
+					cap.setCapability("appActivity", "com.heerofreedo.MainActivity"); //freedo
+					cap.setCapability("appium:noReset", "false");		
+		//			cap.setCapability("appPackage", "com.freedoadmin");               //Champion
+		//			cap.setCapability("appActivity", "com.freedoadmin.MainActivity"); //Champion
+		//			cap.setCapability("appium:noReset", "false");
+					
+		//			cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\Champion.apk"));
+					cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\10app-release.apk"));
+					cap.setCapability("appium:ensureWebviewsHavePages", true);
+					cap.setCapability("appium:nativeWebScreenshot", true);
+					cap.setCapability("appium:newCommandTimeout", 66000);
+				    driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
+				    driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+				    log = LogManager.getLogger("Freedo_Rentals_Apk");
+				    log.info(" =============== /= Freedo Rentals Mobile App Automation Report =/ ==================  ");
+					} 
+					catch (Exception e) {
+					System.out.println(e);
+					}
+				
+			  }	
+				
+				//========================== *******  Pcloudy =========================
+			else if(Device_name.equalsIgnoreCase("pcloudy")) {
+			 try {
+				
+					DesiredCapabilities capabilities = new DesiredCapabilities();
+					 capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
+					 capabilities.setCapability("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
+					 capabilities.setCapability("pCloudy_DurationInMinutes", 15);
+					 capabilities.setCapability("newCommandTimeout", 600);
+					 capabilities.setCapability("launchTimeout", 90000);
+					 capabilities.setCapability("pCloudy_DeviceManufacturer", "GOOGLE");
+					 capabilities.setCapability("pCloudy_DeviceVersion", "13.0.0");
+					 capabilities.setCapability("platformVersion", "13.0.0");
+					 capabilities.setCapability("platformName", "Android");
+					 capabilities.setCapability("automationName", "uiautomator2");
+					 capabilities.setCapability("pCloudy_ApplicationName", "10app-release.apk");
+					 capabilities.setCapability("appPackage", "com.heerofreedo");
+					 capabilities.setCapability("appActivity", "com.heerofreedo.MainActivity");
+					 capabilities.setCapability("pCloudy_WildNet", "false");
+					 capabilities.setCapability("pCloudy_EnableVideo", "true");
+					 capabilities.setCapability("pCloudy_EnablePerformanceData", "true");
+					 capabilities.setCapability("pCloudy_EnableDeviceLogs", "true"); 
+					 driver1 = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
+					driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+				    log = LogManager.getLogger("Freedo_Rentals_Apk");
+				    log.info(" =============== /= Freedo Rentals Mobile App Automation Report =/ ==================  ");
+				  }
+			 		catch (Exception e) {
+						System.out.println(e);
+						}
+			 }	
+			//========================== *******  Real device =========================
+			else if(Device_name.equalsIgnoreCase("realdevice")) {
+				try {
+					 
+					DesiredCapabilities cap = new DesiredCapabilities();
+					cap.setCapability("appium:automationName", "uiautomator2");
+					cap.setCapability("platformName", "Android");
+					cap.setCapability("appium:deviceName", "Infinix");//Infinix //pixel_6
+					cap.setCapability("appium:udid", "192.168.1.2:5555");// 0836731257071990 //emulator-5554 //0526532038000424 //192.168.1.2:5555
+					cap.setCapability("appium:avd", "Infinix");// if u connect real device comment this line
+					cap.setCapability("appium:avdLaunchTimeout", 600000);		
+					cap.setCapability("appPackage", "com.heerofreedo");               //freedo
+					cap.setCapability("appActivity", "com.heerofreedo.MainActivity"); //freedo
+					cap.setCapability("appium:noReset", "false");		
+					cap.setCapability("appPackage", "com.freedoadmin");               //Champion
+					cap.setCapability("appActivity", "com.freedoadmin.MainActivity"); //Champion
+					cap.setCapability("appium:noReset", "false");
+					
+		//			cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\Champion.apk"));
+					cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\10app-release.apk"));
+					cap.setCapability("appium:ensureWebviewsHavePages", true);
+					cap.setCapability("appium:nativeWebScreenshot", true);
+					cap.setCapability("appium:newCommandTimeout", 66000);
+				    driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
+				    driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+				    log = LogManager.getLogger("Freedo_Rentals_Apk");
+				    log.info(" =============== /= Freedo Rentals Mobile App Automation Report =/ ==================  ");
+					} 
+					catch (Exception e) {
+					System.out.println(e);
+					}
+			  }
+			}
 //==========================================================================================================
 //	@BeforeTest	//(dependsOnMethods="Champion_app_install") 
 /*	  public  void OPEN_AND_INSTALL_APP() throws MalformedURLException, Exception {
@@ -260,7 +300,7 @@ public class base_class {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		Thread.sleep(2000);
 		WebElement ele=driver.findElement(By.xpath("//input[@id='userName']"));	library.custom_sendkeys(ele, config.getweb_credential(), "username");
-		WebElement ele1=driver.findElement(By.xpath("//input[@id='password']"));library.custom_sendkeys(ele1, config.getweb_credential(), "password");
+		WebElement ele1=driver.findElement(By.xpath("//input[@id='password']"));library.custom_sendkeys(ele1, config.getweb_credential_password(), "password");
 		WebElement ele2=driver.findElement(By.xpath("//button[normalize-space()='Login']"));library.Custom_click(ele2, "Login");
 		
 		Thread.sleep(1000);

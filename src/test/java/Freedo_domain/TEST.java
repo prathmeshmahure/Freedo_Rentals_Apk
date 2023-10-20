@@ -46,26 +46,16 @@ public class TEST extends base_class {
 			Thread.sleep(3000);
 			String s=config.getFirst_name();//user name to find web table
 			String l=config.getLast_name();
-			Thread.sleep(3000);
-			WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+" "+l+"']/parent::div/parent::td//following-sibling::td//div[@id='approve-action']"));
-			library.Custom_click(ele5, "accept booking request");
+			
+		//	WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+" "+l+"']/parent::div/parent::td//following-sibling::td//div[@id='approve-action']"));
+		//	library.Custom_click(ele5, "accept booking request");
 			Thread.sleep(1000);
-			WebElement ele6=driver.findElement(By.xpath("//button[text()='Yes']"));
-			library.Custom_click(ele6, "Yes button");
-			
-			Thread.sleep(4000);
-					try {
-					if(ele5.isDisplayed() && ele5.isEnabled() == true)  {
-						
-						library.Custom_click(ele5, "accept booking request 2");
-						Thread.sleep(1000);
-						library.Custom_click(ele6, "Yes button 2");
-					}}catch(Exception e) {
-						library.passmsg("Admin request ", "Accepted");
-					}
+		//	WebElement ele6=driver.findElement(By.xpath("//button[text()='Yes']"));
+		//	library.Custom_click(ele6, "Yes button");
 			
 			
-			Thread.sleep(2000);
+			
+			
 			WebElement ele7=driver.findElement(By.xpath("//text[text()='"+s+" "+l+"']/parent::div/parent::td//following-sibling::td//div[@id='view-action']"));
 			library.Custom_click(ele7, "view data");
 			Thread.sleep(3000);

@@ -10,6 +10,8 @@ import com.page_object.launch_login;
 import com.utility.base_class;
 import com.utility.library;
 
+import Store_class.appium_21;
+
 @Listeners(com.utility.listner.class)
 public class appium_0 extends base_class {
 	public booking_page book;

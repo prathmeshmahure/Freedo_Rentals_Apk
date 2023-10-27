@@ -8,7 +8,7 @@ public class config_data_provider {
 	Properties pro;
 	
 		public config_data_provider() throws Exception {
-			String path=System.getProperty("user.dir")+"\\config_data\\config.properties";
+			String path=System.getProperty("user.dir")+"/config_data/config.properties";
 			
 			FileInputStream fis=new FileInputStream(path); 
 			pro=new Properties();

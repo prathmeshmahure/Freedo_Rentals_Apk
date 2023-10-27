@@ -13,7 +13,7 @@ public class extent_reports_generator extends base_class{
 	public static ExtentReports getreports(){
 		
 		
-		String path=System.getProperty("user.dir")+"\\Report\\index.html";
+		String path=System.getProperty("user.dir")+"/Report/index.html";
 		report=new ExtentSparkReporter(path);
 		
 		report.config().setDocumentTitle("Freedo Rentals-Automation Test Report");

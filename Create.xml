@@ -5,8 +5,29 @@
 <listener class-name="com.utility.listner1"></listener>
 </listeners>
   <test thread-count="5" name="Test">
+  
     <classes>
-      <class name="Freedo_domain.demo"/>
+    
+    
+    
+    
+    
+    
+    
+       <class name="Freedo_domain.appium_0"></class>
+       <class name="Freedo_domain.appium_1"></class>
+       <class name="Freedo_domain.appium_2"></class>
+       <class name="Freedo_domain.appium_3"></class>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

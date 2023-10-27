@@ -19,7 +19,7 @@ public class listner extends base_class implements ITestListener {
 		
 		public void onTestStart(ITestResult result) {
 			library.test=extent.createTest(result.getTestClass().getName()+ " == " +result.getMethod().getMethodName());
-			library.test.addScreenCaptureFromBase64String(getscreenshot());
+		//	library.test.addScreenCaptureFromBase64String(getscreenshot());
 			extent_test.set(library.test);
 		}
 	

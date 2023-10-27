@@ -83,6 +83,15 @@ public class config_data_provider {
 				public  String getPlatform_name() {
 					return pro.getProperty("Platform_name");
 				}
+				public  String getrealdevice() {
+					return pro.getProperty("realdevice");
+				}
+				public  String getpCloudy_DeviceManufacturer() {
+					return pro.getProperty("pCloudy_DeviceManufacturer");
+				}
+				public  String getpCloudy_DeviceVersion() {
+					return pro.getProperty("pCloudy_DeviceVersion");
+				}
 				
 				
 

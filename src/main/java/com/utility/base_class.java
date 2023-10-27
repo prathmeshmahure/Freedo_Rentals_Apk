@@ -24,6 +24,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
@@ -79,38 +80,6 @@ public class base_class {
 					}
 				
 			  }	
-				
-				//========================== *******  Pcloudy =========================
-			else if(Device_name.equalsIgnoreCase("pcloudy")) {
-			 try {
-				
-					capabilities = new DesiredCapabilities();
-					 capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
-					 capabilities.setCapability("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
-					 capabilities.setCapability("pCloudy_DurationInMinutes", 15);
-					 capabilities.setCapability("newCommandTimeout", 600);
-					 capabilities.setCapability("launchTimeout", 90000);
-					 capabilities.setCapability("pCloudy_DeviceManufacturer", "SAMSUNG");
-					 capabilities.setCapability("pCloudy_DeviceVersion", "13.0.0");
-					 capabilities.setCapability("platformVersion", "13.0.0");
-					 capabilities.setCapability("platformName", "Android");
-					 capabilities.setCapability("automationName", "uiautomator2");
-					 capabilities.setCapability("pCloudy_ApplicationName", "Champion.apk");  //Champion
-					 capabilities.setCapability("appPackage", "com.freedoadmin");
-					 capabilities.setCapability("appActivity", "com.freedoadmin.MainActivity");
-					 capabilities.setCapability("pCloudy_WildNet", "false");
-					 capabilities.setCapability("pCloudy_EnableVideo", "true");
-					 capabilities.setCapability("pCloudy_EnablePerformanceData", "true");
-					 capabilities.setCapability("pCloudy_EnableDeviceLogs", "true"); 
-					 driver1 = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
-					driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-				    log = LogManager.getLogger("Freedo_Rentals_Apk");
-			//	    log.info(" =============== /= Freedo Rentals Mobile App Automation Report =/ ==================  ");
-				  }
-			 		catch (Exception e) {
-						System.out.println(e);
-						}
-			 }	
 			
 			//========================== *******  Real device =========================
 			else if(Device_name.equalsIgnoreCase("realdevice")) {
@@ -120,7 +89,7 @@ public class base_class {
 					cap.setCapability("appium:automationName", "uiautomator2");
 					cap.setCapability("platformName", "Android");
 					cap.setCapability("appium:deviceName", "Infinix");//Infinix //pixel_6
-					cap.setCapability("appium:udid", "0836731257071990");// 0836731257071990 //emulator-5554 //0526532038000424 //192.168.1.2:5555
+					cap.setCapability("appium:udid", config.getrealdevice());// 0836731257071990 //emulator-5554 //0526532038000424 //192.168.1.2:5555
 					cap.setCapability("appium:avdLaunchTimeout", 600000);		
 					cap.setCapability("appPackage", "com.freedoadmin");               //Champion
 					cap.setCapability("appActivity", "com.freedoadmin.MainActivity"); //Champion
@@ -140,6 +109,7 @@ public class base_class {
 					}
 			  }
 			}
+//=============================================================================================================================
 	@BeforeTest	//(dependsOnMethods="Champion_app_install") 	
 	  public  void OPEN_AND_INSTALL_APP() throws MalformedURLException, Exception {
 		
@@ -161,7 +131,7 @@ public class base_class {
 					cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\10app-release.apk"));
 					cap.setCapability("appium:ensureWebviewsHavePages", true);
 					cap.setCapability("appium:nativeWebScreenshot", true);
-					cap.setCapability("appium:newCommandTimeout", 66000);
+					cap.setCapability("appium:newCommandTimeout", 660000);
 				    driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
 				    driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 				    log = LogManager.getLogger("Freedo_Rentals_Apk");
@@ -182,17 +152,30 @@ public class base_class {
 					DesiredCapabilities capabilities = new DesiredCapabilities();
 					 capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
 					 capabilities.setCapability("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
-					 capabilities.setCapability("pCloudy_DurationInMinutes", 15);
+					 capabilities.setCapability("pCloudy_DurationInMinutes", 50);
 					 capabilities.setCapability("newCommandTimeout", 600);
 					 capabilities.setCapability("launchTimeout", 90000);
-					 capabilities.setCapability("pCloudy_DeviceManufacturer", "SAMSUNG");
-					 capabilities.setCapability("pCloudy_DeviceVersion", "13.0.0");
+					 capabilities.setCapability("pCloudy_DeviceManufacturer", config.getpCloudy_DeviceManufacturer());
+					 capabilities.setCapability("pCloudy_DeviceVersion",config.getpCloudy_DeviceVersion());
 				//	 capabilities.setCapability("pCloudy_DeviceFullName", "GOOGLE_Pixel7_Android_13.0.0_81870");
-					 capabilities.setCapability("platformVersion", "13.0.0");
+					 capabilities.setCapability("platformVersion", config.getpCloudy_DeviceVersion());
 					 capabilities.setCapability("platformName", "Android");
-					 capabilities.setCapability("automationName", "uiautomator2");			 
-					 capabilities.setCapability("pCloudy_ApplicationName", "10app-release.apk"); //freedo
+					 capabilities.setCapability("automationName", "uiautomator2");	
+					 
+//					 String appPath1 = "Champion.apk";
+//					 String appPath2 =  "10app-release.apk";
+//						
+//						JsonArray jsonArray = new JsonArray();
+//						jsonArray.add(appPath1);
+//						jsonArray.add(appPath2);
+//						System.out.println(jsonArray.toString());
+//					    capabilities.setCapability("otherApps", jsonArray.toString());
+
+				//	 capabilities.setCapability("pCloudy_ApplicationName", "Champion.apk");  //Champion
+					 capabilities.setCapability("pCloudy_ApplicationName", "10app-release.apk"); //freedo					 
+				//	 capabilities.setCapability("appPackage", "com.freedoadmin");					 
 					 capabilities.setCapability("appPackage", "com.heerofreedo");
+				//	 capabilities.setCapability("appActivity", "com.freedoadmin.MainActivity");
 					 capabilities.setCapability("appActivity", "com.heerofreedo.MainActivity");
 					 capabilities.setCapability("pCloudy_WildNet", "false");
 					 capabilities.setCapability("pCloudy_EnableVideo", "true");
@@ -215,16 +198,16 @@ public class base_class {
 					cap.setCapability("appium:automationName", "uiautomator2");
 					cap.setCapability("platformName", "Android");
 					cap.setCapability("appium:deviceName", "Infinix");//Infinix //pixel_6
-					cap.setCapability("appium:udid", "0836731257071990");// 0836731257071990 //emulator-5554 //0526532038000424 //192.168.1.2:5555
+					cap.setCapability("appium:udid",config.getrealdevice());// 0836731257071990 //emulator-5554 //0526532038000424 //192.168.1.13:5555
 					cap.setCapability("appium:avdLaunchTimeout", 600000);		
 					cap.setCapability("appPackage", "com.heerofreedo");               //freedo
 					cap.setCapability("appActivity", "com.heerofreedo.MainActivity"); //freedo
-					cap.setCapability("appium:noReset", "false");
+					cap.setCapability("appium:noReset", "true");
 					
 					cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\10app-release.apk"));
 					cap.setCapability("appium:ensureWebviewsHavePages", true);
 					cap.setCapability("appium:nativeWebScreenshot", true);
-					cap.setCapability("appium:newCommandTimeout", 66000);
+					cap.setCapability("appium:newCommandTimeout", 660000);
 				    driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
 				    driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 				    log = LogManager.getLogger("Freedo_Rentals_Apk");
@@ -268,6 +251,17 @@ public class base_class {
 					log.error("==NOT==Unable To Scroll up page Action "+fieldname);
 		}	    
     }
+ //======================================================================================================================================================
+    @SuppressWarnings("deprecation")
+	public static void scrollByText(String menuText) {
+
+    	 try {
+
+    	 driver1.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textMatches(\"" + menuText + "\").instance(0));")); 
+    	 } catch (Exception e) {
+    	 e.printStackTrace();
+    	 }
+    	    }
 //======================================================================================================================================================	    
     @SuppressWarnings({ "deprecation", "rawtypes" })
 	public static void Scroll_down_page_Action(String fieldname) {  	
@@ -414,7 +408,7 @@ public class base_class {
 	   
    }
 }
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 

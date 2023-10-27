@@ -8,6 +8,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
@@ -343,9 +344,58 @@ public class library extends base_class{
 					listner.onTestFailure(null);
 					}
 		}
-//==================================================================================================================================	    
-	   
-	    
+//=================================================================================================================================
+		public static void horizontal_scroll_image(WebElement end_position,WebElement Start_position ,String fieldname) {
+		try {	
+		
+			if(end_position.isDisplayed() || end_position.isEnabled() && Start_position.isDisplayed() || Start_position.isEnabled()==true) {
+					
+				Point location1=end_position.getLocation();
+				Point location2=Start_position.getLocation();
+				int end_x=location1.x;
+				int end_y=location1.y;
+				int start_x=location2.x;
+				int start_y=location2.y;
+				
+				for(int i=0;i<=3;i++) {
+					base_class.swipe_page_direction(start_x, start_y, end_x, end_y, "Page scroll");
+					}
+				
+				test.log(Status.PASS, "Successfully Scroll=="+ fieldname);
+				log.info("OK==Successfully Scroll "+fieldname);
+				}
+		}
+		catch(Exception e) {
+		test.log(Status.FAIL,fieldname+ "==Unable To Scroll =="+e);
+		log.error("==Not==Unable To Scroll"+fieldname);		
+		listner.onTestFailure(null);
+		}
+		} 
+//=================================================================================================================================
+		public static void Vertical_scroll_image(WebElement end_position,WebElement Start_position ,String fieldname) {
+				try {	
+				
+					if(end_position.isDisplayed() || end_position.isEnabled() && Start_position.isDisplayed() || Start_position.isEnabled()==true) {
+							
+						Point location1=end_position.getLocation();
+						Point location2=Start_position.getLocation();
+						int end_x=location1.x;
+						int end_y=location1.y;
+						int start_x=location2.x;
+						int start_y=location2.y;
+												
+							base_class.swipe_page_direction(start_x, start_y, end_x, end_y, "Page scroll");
+													
+						test.log(Status.PASS, "Successfully Scroll=="+ fieldname);
+						log.info("OK==Successfully Scroll "+fieldname);
+						}
+				}
+				catch(Exception e) {
+				test.log(Status.FAIL,fieldname+ "==Unable To Scroll =="+e);
+				log.error("==Not==Unable To Scroll"+fieldname);		
+				listner.onTestFailure(null);
+				}
+				} 	    
 	    
 	    
 	    

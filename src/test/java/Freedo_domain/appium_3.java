@@ -2,7 +2,6 @@ package Freedo_domain;
 
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
-import java.time.Duration;
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -69,7 +68,7 @@ public class appium_3 extends base_class{
 	public void TC_0060_Admin_approved_request () throws Exception {
 		log.info("***************TC_0060_Admin_approved_request starts*****************");
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			Browseropen();
 			Thread.sleep(3000);
 			Robot r = new Robot();
@@ -91,7 +90,7 @@ public class appium_3 extends base_class{
 			Thread.sleep(1000);
 			WebElement ele6=driver.findElement(By.xpath("//button[text()='Yes']"));
 			library.Custom_click(ele6, "Yes button");
-			
+			Thread.sleep(2000);
 			WebElement ele7=driver.findElement(By.xpath("//text[text()='"+s+" "+l+"']/parent::div/parent::td//following-sibling::td//div[@id='view-action']"));
 			library.Custom_click(ele7, "view data");
 			Thread.sleep(3000);
@@ -132,7 +131,7 @@ public class appium_3 extends base_class{
 			/////// Upgrade vehicle ////////
 			r.keyPress(KeyEvent.VK_PAGE_UP); Thread.sleep(1000);
 			r.keyRelease(KeyEvent.VK_PAGE_UP);
-			WebElement ele91=driver.findElement(By.xpath("//button[text()=' Upgrade Vehicle']"));library.Custom_click(ele91, "Upgrade vehicle");
+			WebElement ele91=driver.findElement(By.xpath("//button[text()='Upgrade Vehicle']"));library.Custom_click(ele91, "Upgrade vehicle");
 			WebElement ele92=driver.findElement(By.xpath("//em[text()='Available Vehicles']"));library.Custom_click(ele92, "Available vehicles");
 			WebElement ele93=driver.findElement(By.xpath("//li[text()='HF Deluxe']"));library.Custom_click(ele93, "Hf deluxe bike selected");
 			WebElement ele94=driver.findElement(By.xpath("//button[@title='Request Upgrade']"));library.Custom_click(ele94, "Request upgrade vehicle");

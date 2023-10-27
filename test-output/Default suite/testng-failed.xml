@@ -5,6 +5,7 @@
     <classes>
       <class name="Freedo_domain.TEST">
         <methods>
+          <include name="Champion_app_install"/>
           <include name="OPEN_AND_INSTALL_APP"/>
           <include name="logger"/>
           <include name="TC_0052_verify_install_apk"/>

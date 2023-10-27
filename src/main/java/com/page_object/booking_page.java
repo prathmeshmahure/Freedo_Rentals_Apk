@@ -447,9 +447,11 @@ public class booking_page {
 					@FindBy(xpath="//android.widget.TextView[@text='Book Now']")		//Click_home_page_More_button
 					private WebElement book_now_button;
 	
+					@FindBy(xpath="(//android.widget.ImageView)[1]")		//Click_home_page_More_button
+					private WebElement bike_1st_imageScroll;
 	
-	
-	
+					@FindBy(xpath="(//android.widget.ImageView)[2]")		//Click_home_page_More_button
+					private WebElement bike_2nd_imageScroll;
 
 //========================================== Payment page methods ============================================
 	@FindBy(xpath="//android.view.View[@text='Pay using UPI ']")				//Click_Pay_using_UPI
@@ -1949,6 +1951,18 @@ public class booking_page {
 
 					public WebElement getClick_home_delivery_back_button() {
 						return Click_home_delivery_back_button;
+					}
+
+					public WebElement getMore_button_MY_Profile() {
+						return More_button_MY_Profile;
+					}
+
+					public WebElement getBike_1st_imageScroll() {
+						return bike_1st_imageScroll;
+					}
+
+					public WebElement getBike_2nd_imageScroll() {
+						return bike_2nd_imageScroll;
 					}
 					
 

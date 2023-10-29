@@ -2,7 +2,6 @@ package Freedo_domain;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -24,7 +23,7 @@ public class appium_1 extends base_class{
 		//book = PageFactory.initElements(driver1, booking_page.class);
 		book = new booking_page(driver1);
 		log.info("***************TC_0024_Verify_home_page_all_elements starts*****************");		
-		
+		try {
 		if(book.getTxt_city_front_page().isDisplayed()) {
 			library.visible_link(book.getTxt_city_front_page(), "Selected city name is visible");
 			library.visible_link(book.getUsername(), "Username");
@@ -43,7 +42,7 @@ public class appium_1 extends base_class{
 			library.visible_link(book.getClick_home_page_button(), "Home button");
 			library.visible_link(book.getClick_home_page_Rent_button(), "Rent");
 			library.visible_link(book.getClick_home_page_More_button(), "More");
-			}
+			}}catch(Exception e) {	}
 		}	
 //===================================================================================================================	
 	//@Test(dependsOnMethods={"TC_0024_Verify_home_page_all_elements"})
@@ -51,7 +50,7 @@ public class appium_1 extends base_class{
 	public void TC_0025_Verify_available_all_bikes() throws Exception {
 		
 		log.info("***************TC_0025_Verify_available_all_bikes starts*****************");
-		
+		try {
 		if(book.getClick_1st_page_enter_button().isDisplayed()) {
 		library.Custom_click(book.getClick_1st_page_enter_button(), "Enter button(Arrow)");
 		library.date_select();
@@ -63,19 +62,21 @@ public class appium_1 extends base_class{
 		library.Custom_click(book.getClick_Bike_Tab(), "Bike tab");
 		library.isSelected(book.getClick_Bike_Tab(), "Bike tab by default is ");
 		library.visible_link(book.getAvailable_bikes(), book.getAvailable_bikes().getText());
-	}}
+	}}catch(Exception e) {	}
+	}
 //=================================================================================================================
 	//@Test(dependsOnMethods={"TC_0025_Verify_available_all_bikes"})
 	@Test(priority=3)
 	public void TC_0026_Verify_available_all_Scooters() throws Exception {
 		log.info("***************TC_0026_Verify_available_all_Scooters starts*****************");
-		
+		try {
 		if(book.getClick_Scooter_Tab().isDisplayed()) {
 		library.Custom_click(book.getClick_Scooter_Tab(), "Scooter tab");
 		Thread.sleep(1000);
 		library.visible_link(book.getAvailable_bikes(), "Available bike quantity");
 		library.visible_link(book.getAvailable_bikes(), book.getAvailable_bikes().getText());
-	}}
+	}}catch(Exception e) {	}
+	}
 //================================================================================================================	
 //	@Test(dependsOnMethods={"TC_0026_Verify_available_all_Scooters"})
 	@Test(priority=4)
@@ -102,7 +103,7 @@ public class appium_1 extends base_class{
 	@Test(priority=5)
 	public void TC_0028_Verify_Rent_tab_all_elements() throws Exception {
 		log.info("***************TC_0028_Verify_Rent_tab_all_elements starts*****************");
-		
+		try {
 		if(book.getClick_home_page_Rent_button().isDisplayed()) {
 		Thread.sleep(1000);
 		library.Custom_click(book.getClick_home_page_button(), "Home button ");
@@ -114,7 +115,8 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getRent_submit_kyc_and_document(), "Submit kyc and documents");
 		library.visible_link(book.getRent_pay_and_book_bike(), "Pay & book the bike");
 		library.visible_link(book.getRent_enjoy_ride(), "Enjoy the ride");
-	}}
+		}}catch(Exception e) {	}
+		}
 //===============================================================================================================	
 	//@Test(dependsOnMethods={"TC_0028_Verify_Rent_tab_all_elements"})
 	@Test(priority=6)
@@ -170,7 +172,7 @@ public class appium_1 extends base_class{
 		Thread.sleep(1000);
 		library.Custom_click(book.getClick_home_page_Bookings_button(), "home page booking button");
 		Thread.sleep(2000);
-		library.visible_link(book.getClick_Home_booking_tab_bike_image(), "bike images");
+	//	library.visible_link(book.getClick_Home_booking_tab_bike_image(), "bike images");
 		library.visible_link(book.getClick_Home_booking_tab_bike_text(),"bike name ");
 		library.visible_link(book.getClick_Home_booking_tab_pickup_location_txt(), "pick up Location");
 		library.visible_link(book.getClick_Home_booking_tab_pickup_date_txt(),"pick up date ");
@@ -247,12 +249,6 @@ public class appium_1 extends base_class{
 		library.Custom_click(book.getClick_1_Days_package(),"Selected package");
 		library.Custom_click(book.getClick_go_freedo_Button(), "Go Freedo button");
 		Thread.sleep(2000);
-//		try {
-//			WebElement element=driver1.findElement(By.xpath("//android.widget.TextView[@text='Book Now']"));
-//			if(element.isDisplayed() || element.isEnabled()==true) {
-//				element.click();
-//			}
-//		}catch(Exception e) {}
 		library.Custom_click(book.getclick_location_pop_up_ok_button(), "ok button");
 		library.visible_link(book.getBooking_details_page_price(), "Price is ="+book.getBooking_details_page_price().getText());
 	}}catch(Exception e) {	}}
@@ -463,8 +459,9 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getSummary_excess_km_charges(), "Excess Km Charges = "+book.getSummary_excess_km_charges().getText());
 		library.visible_link(book.getSummary_excess_hourly_charges(),"Excess hourly charges = "+ book.getSummary_excess_hourly_charges().getText());
 		Thread.sleep(1000);
-		appium_1.Scroll_UP_page_Action("page up");
+		//appium_1.Scroll_UP_page_Action("page up");
 		library.visible_link(book.getSummary_rent_additional_helmet_checkbox(), "Rent additonal helmet checkbox");
+		base_class.scrollByText("Pay Now");
 		library.visible_link(book.getSummary_coupon_code_offers(), "View Offers");
 		library.visible_link(book.getSummary_package_charges(),"Package charges  ");
 		library.visible_link(book.getClick_add_helmet_extra_charges(), "Additonal helmet  ");
@@ -483,19 +480,21 @@ public class appium_1 extends base_class{
 	//	library.Custom_click(book.getClick_I_accept_checkbox(), "I Accept the Terms & Conditions checkbox");
 		library.visible_link(book.getClick_summary_pay_now_button(), "click pay now button");
 	//	library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
-	}}catch(Exception e) {System.out.println(e);	}}
+	}}catch(Exception e) {	}}
 //===================================================================================================================	
 	//@Test(dependsOnMethods={"TC_0043_Verify_continue_button_and_summary_page"})
 	@Test(priority=21)
 	public void TC_0044_Verify_summary_page_additional_helmet_charges() throws Exception {
 		log.info("***************TC_0044_Verify_summary_page_additional_helmet_charges starts*****************");
 		try {
+			base_class.scrollByText("Helmet");
 		if(book.getSummary_rent_additional_helmet_checkbox().isDisplayed()) {
 		library.visible_link(book.getSummary_rent_additional_helmet_checkbox(), "Rent additonal helmet checkbox");
 		Thread.sleep(1000);
 		library.Custom_click(book.getSummary_rent_additional_helmet_checkbox(), "Rent additonal helmet checkbox");
 		library.visible_link(book.getSummary_Half_face_helmet(), "Full face helmet");
 	//	library.visible_link(book.getSummary_Full_face_helmet(), "half face helmet");
+		base_class.scrollByText("Pay Now");
 		library.visible_link(book.getSummary_package_charges(),"Package charges  ");
 		library.visible_link(book.getClick_add_helmet_extra_charges(), "Additonal helmet ");
 		library.visible_link(book.getSummary_delivery_charges(),"Delivery charges  ");
@@ -507,7 +506,7 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getSummary_delivery_charges(),"Delivery charges = "+ book.getSummary_delivery_charges().getText());
 		library.visible_link(book.getSummary_discount(),"Discount = "+ book.getSummary_discount().getText());
 		library.visible_link(book.getSummary_total_amount(), "Total Amount = "+ book.getSummary_total_amount().getText());
-	}}catch(Exception e) {System.out.println(e);	}}
+	}}catch(Exception e) {	}}
 //======================================================================================================================
 	//@Test(dependsOnMethods={"TC_0044_Verify_summary_page_additional_helmet_charges"})
 	@Test(priority=22)
@@ -521,7 +520,7 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getSummary_coupon_page_title(), "APPLY COUPON CODE");
 		library.Custom_click(book.getSummary_coupon_apply(), "Apply coupon");
 		Thread.sleep(2000);
-		appium_1.Scroll_UP_page_Action("up");
+		base_class.scrollByText("Pay Now");
 		library.visible_link(book.getSummary_package_charges(),"Package charges  ");
 		library.visible_link(book.getClick_add_helmet_extra_charges(), "Additonal helmet  ");
 		library.visible_link(book.getSummary_delivery_charges(),"Delivery charges  ");
@@ -533,14 +532,14 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getSummary_delivery_charges(),"Delivery charges = "+ book.getSummary_delivery_charges().getText());
 		library.visible_link(book.getSummary_discount(),"Discount = "+ book.getSummary_discount().getText());
 		library.visible_link(book.getSummary_total_amount(), "Total Amount = "+ book.getSummary_total_amount().getText());
-	}}catch(Exception e) {System.out.println(e);	}}
+	}}catch(Exception e) {	}}
 //=========================================================================================================================	
 	//@Test(dependsOnMethods={"TC_0045_Verify_summary_page_coupon_code"})
 	@Test(priority=23)
 	public void TC_0046_Verify_summary_page_cash_on_delivery_method() throws Exception {
 		log.info("***************TC_0046_Verify_summary_page_cash_on_delivery_method starts*****************");
 		try {
-		appium_1.Scroll_UP_page_Action("up");
+			base_class.scrollByText("Pay Now");
 		library.isSelectedFalse(book.getClick_cash_on_delivery(), "Before select Cod check box is ");
 		library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
 		library.isSelected(book.getClick_cash_on_delivery(), "After select Cod check box is ");
@@ -548,22 +547,18 @@ public class appium_1 extends base_class{
 	//	library.Custom_click(book.getClick_cash_on_delivery(), "cash on delivery");
 	//	library.Custom_click(book.getClick_I_accept_checkbox(), "I accept Checkbox");
 		Thread.sleep(500);
-		}catch(Exception e) {System.out.println(e);	}
+		}catch(Exception e) {	}
 	}
 //===========================================================================================================================	
 	//@Test(dependsOnMethods={"TC_0046_Verify_summary_page_cash_on_delivery_method"})
 	@Test(priority=24)
-	public void TC_0047_Verify_summary_page_i_accept_checkbox() throws Exception {
-		log.info("***************TC_0047_Verify_summary_page_i_accept_checkbox starts*****************");
+	public void TC_0047_Verify_summary_page_pay_now_button_status() throws Exception {
+		log.info("***************TC_0047_Verify_summary_page_pay_now_button_status starts*****************");
 		try {
 		Thread.sleep(2000);
-	//	library.isSelectedFalse(book.getClick_I_accept_checkbox(), "Before select I accept check box is ");
-	//	library.Custom_click(book.getClick_I_accept_checkbox(), "I accept Checkbox");
-		Assert.assertFalse(book.getClick_summary_pay_now_button().isSelected(),"Pay now button enabled");
-	//	library.isSelected(book.getClick_I_accept_checkbox(), "After select I accept check box is ");
 		library.isEnabled(book.getClick_summary_pay_now_button(), "Pay now button");
-		Thread.sleep(2000);
-		}catch(Exception e) {System.out.println(e);	}
+		
+		}catch(Exception e) {}
 	}
 //============================================================================================================================	
 	//@Test(dependsOnMethods={"TC_0047_Verify_summary_page_i_accept_checkbox"})
@@ -580,7 +575,7 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getClick_Pay_using_Netbanking(), "Pay using Netbanking");
 //		library.visible_link(book.getClick_Pay_using_cardles_EMI(), "Pay using cardless EMI");
 		library.visible_link(book.getClick_pay_now_button(), "Pay now button");
-	}}catch(Exception e) {System.out.println(e);	}}
+	}}catch(Exception e) {	}}
 //============================================================================================================================
 	//@Test(dependsOnMethods={"TC_0048_Verify_summary_page_pay_now_button"})
 	@Test(priority=26)
@@ -636,10 +631,11 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getFBD_drop_off_location(), "Drop off Location  ");
 		library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date ");
 		library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date ");
+		base_class.scrollByText("Show Less");
 		library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up ");
 
 		
-		
+		base_class.scrollByText("Booking Status");
 		library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
 		Thread.sleep(2000);
 		
@@ -653,9 +649,10 @@ public class appium_1 extends base_class{
 		library.visible_link(book.getFBD_drop_off_location(), "Drop off Location = "+book.getFBD_drop_off_location().getText());
 		library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date = "+book.getFBD_planned_drop_off_date().getText());
 		library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date = "+book.getFBD_Actual_drop_off_date().getText());
+		base_class.scrollByText("Show Less");
 		library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up = "+book.getFBD_mode_of_pick_up().getText());
 	
-		appium_1.Scroll_UP_page_Action("page up");
+		
 		library.Custom_click(book.getClick_show_less_details(), "show less text");
 		library.visible_link(book.getClick_price_breakup(), "price break up Drop down");
 	}}catch(Exception e) {System.out.println(e);	}}

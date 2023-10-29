@@ -259,6 +259,7 @@ public class base_class {
 
     	 driver1.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textMatches(\"" + menuText + "\").instance(0));")); 
     	 } catch (Exception e) {
+    		 log.error("==NOT==Unable To Scroll By text "+menuText);
     	 e.printStackTrace();
     	 }
     	    }
@@ -402,7 +403,7 @@ public class base_class {
 		cap.setCapability("appium:avdLaunchTimeout", 600000);
 		cap.setCapability("appPackage", "com.freedoadmin");
 		cap.setCapability("appActivity", "com.freedoadmin.MainActivity");
-		cap.setCapability("appium:noReset", "false");
+		cap.setCapability("appium:noReset", "true");
 		
 		driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
 	   

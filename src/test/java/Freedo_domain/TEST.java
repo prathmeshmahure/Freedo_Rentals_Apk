@@ -1,101 +1,77 @@
 package Freedo_domain;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import java.net.URL;
+
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.page_object.booking_page;
+import com.page_object.champion;
 import com.page_object.launch_login;
 import com.utility.base_class;
 import com.utility.library;
+
+import io.appium.java_client.android.AndroidDriver;
 @Listeners(com.utility.listner.class)
 public class TEST extends base_class {
 	public launch_login login;
 	public booking_page book;
+	public champion champ;
 	public static ExtentTest test;
 //	public SoftAssert ass= new SoftAssert(); 
 	
 //	@Test
 //	public void t1() throws Exception {
 		
+	@Test(priority=0)
+	public void TC_002_verify_select_pickup_location_date_and_packages() {
+		login = new launch_login(driver1);
+		log.info("***************TC_001_verify_select_pickup_location_date_and_packages starts*****************");
 		
-		@Test(priority=0)
+		try {
+		if(login.getFirst_page_Select_pickUP_location().isDisplayed()) {
+		
+		library.Custom_click(login.getClick_Next_button1(), "Next_button1 static 1st page");
+		}	}catch(Exception e) {}
+		android_home("Home");
+	}
+	
+		@Test(priority=1)
 		public void TC_0052_verify_install_apk() throws Exception {
 			login = new launch_login(driver1);
 			book = new booking_page(driver1);
-			log.info("***************TC_001_test_demo starts*****************");
+			champ = new champion(driver1);
+			log.info("***************TC_002_test_demo starts*****************");
 				
-			try {
-				library.Custom_click(book.getClick_home_delivery_radio_button(), "Home delivery radio button");
-				base_class.scrollByText("Select Time Slot");
-				library.Custom_click(book.getClick_home_delivery_add_address(), "Add Address");
-				try {
-				library.Custom_click(book.getCod_1st_available_ok_button(), "Location on device ok");
-				}catch(Exception e) {		}
-				library.custom_sendkeys(book.getClick_home_delivery_search_address(), config.getgpsaddress(), "Searching address");
-				appium_1.EnterButton();
-				Thread.sleep(1000);
-				library.Custom_click(book.getClick_home_delivery_search_address_1(), "Random 1 option is selected address");
-				library.Custom_click(book.getClick_home_delivery_confirm_location(), "Confirm location");
-				library.custom_sendkeys(book.getClick_home_delivery_enter_name(), config.getFirst_name(), "Prathmesh");
-				library.custom_sendkeys(book.getClick_home_delivery_enter_complete_address(), config.getPort(), "Dummy address");
-				library.custom_sendkeys(book.getClick_home_delivery_landmark_optional(), config.getPort(), "Dummy address");
-				appium_1.EnterButton();
-				base_class.scrollByText("Save Address Details");
-				library.Custom_click(book.getClick_home_delivery_save_address_details(), "Save address details");
-				library.Custom_click(book.getClick_home_delivery_delete_address(), "delete address");
-				library.Custom_click(book.getClick_home_delivery_yes_address(), "delete confirm Yes ");
-				Thread.sleep(3000);
-				library.Custom_click(book.getClick_home_delivery_add_new_address_(), "Add new address");
-				Thread.sleep(2000);
-				appium_1.Back_button();
-				Thread.sleep(1000);
-				appium_1.Back_button();
-				Thread.sleep(3000);
-				try {
-					WebElement element=driver1.findElement(By.xpath("//android.widget.Button[@content-desc='TabNav, back']"));
-					if(element.isDisplayed() || element.isEnabled()==true) {
-						element.click();
-						driver1.findElement(By.xpath("//android.view.ViewGroup[@content-desc='home_tab']")).click();
-					}
-				}catch(Exception e) {
-					driver1.findElement(By.xpath("//android.view.ViewGroup[@content-desc='home_tab']")).click();
-				}
-				Thread.sleep(1000);
-				base_class.scrollByText("Search in");
-				}catch(Exception e) {	}
+			championapp_launch();
+			library.custom_sendkeys(champ.getLogin_user_id(), config.getweb_credential(), "User id");
+			library.custom_sendkeys(champ.getLogin_password(), config.getweb_credential(), "Password");
+			android_home("Home");
+				
 			
+		}
+		@Test(priority=2)
+		public void TC_0052_Freddo_apk() throws Exception {
 			
+			log.info("***************TC_003_freedo test_demo starts*****************");
+				
 			
+			DesiredCapabilities cap = new DesiredCapabilities();
+			cap.setCapability("appium:automationName", "uiautomator2");
+			cap.setCapability("platformName", "Android");
+			cap.setCapability("appium:deviceName", "pixel_6");//Infinix //pixel_6
+			cap.setCapability("appium:udid", "emulator-5554");// 0836731257071990 //emulator-5554 //0526532038000424
+			cap.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
+			cap.setCapability("appium:avdLaunchTimeout", 600000);
+			cap.setCapability("appPackage", "com.heerofreedo");               //Champion
+			cap.setCapability("appActivity", "com.heerofreedo.MainActivity"); //Champion
+			cap.setCapability("appium:noReset", "true");
+			Thread.sleep(2000);
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-//			base_class.scrollByText("Why Freedo");
-			
-//			Thread.sleep(13000);
-//			Point s=login.getFirst_page_Select_pickUP_location().getLocation();
-//			int x=s.x;
-//			int y=s.y;
-//			System.out.println("x-asis= "+x+ "yaxis"+y);
-//			System.out.println(s);
-			
-			
-			
-			
-			
-			
-			
-			
-			
+			driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
+				
 			
 		}
 }

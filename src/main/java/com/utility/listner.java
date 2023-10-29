@@ -25,7 +25,7 @@ public class listner extends base_class implements ITestListener {
 	
 		public void onTestSuccess(ITestResult result) {
 			library.test.log(Status.PASS, "Test Case Pass" );
-		//	library.test.addScreenCaptureFromBase64String(getscreenshot());
+			library.test.addScreenCaptureFromBase64String(getscreenshot());
 		}
 	
 		public void onTestFailure(ITestResult result) {

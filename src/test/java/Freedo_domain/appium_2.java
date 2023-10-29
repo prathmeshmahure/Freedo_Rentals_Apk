@@ -181,7 +181,7 @@ public class appium_2 extends base_class{
 		library.Custom_click(book.getclick_location_pop_up_ok_button(), "ok button");
 		library.Custom_click(book.getClick_Continue_Tab(), "Continue button");
 		Thread.sleep(2000);
-		appium_2.Scroll_UP_page_Action("page up");
+		base_class.scrollByText("Pay Now");
 		library.Custom_click(book.getClick_cash_on_delivery(), "Cod booking");
 	//	library.Custom_click(book.getClick_I_accept_checkbox(), "I accept checkbox");
 		Thread.sleep(1000);

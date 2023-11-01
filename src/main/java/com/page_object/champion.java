@@ -27,7 +27,69 @@ public class champion {
 	
 		@FindBy(xpath="//android.widget.Button[@text='CANCEL']")			//login_cancel_notification
 		private WebElement login_cancel_notification;
+
+//================================== Dashboard page =================================================
+		
+		@FindBy(xpath="//android.widget.TextView[@text='New Booking Received']")			//
+		private WebElement DS_new_booking_request;
 	
+		@FindBy(xpath="//android.widget.EditText[@text='Search']")			//
+		private WebElement NBR_search_user;
+	
+		@FindBy(xpath="//android.view.ViewGroup[@content-desc='crossIcon']")			//
+		private WebElement NBR_request_reject_icon;
+	
+		@FindBy(xpath="//android.view.ViewGroup[@content-desc='RightTickIcon']")			//
+		private WebElement NBR_request_approve_icon;
+	
+		@FindBy(xpath="(//android.widget.TextView[@content-desc='mobile_number']//following-sibling::android.view.ViewGroup)[1]")			//
+		private WebElement NBR_request_view_icon;
+	
+		@FindBy(xpath="(//android.widget.TextView[@text='Select Reason'])[2]")			//
+		private WebElement NBR_reject_search_dropdown;
+	
+		@FindBy(xpath="//android.widget.TextView[@text='Booked by mistake']")			//
+		private WebElement NBR_reject_search_dropdown_booked_my_mistake;
+	
+		@FindBy(xpath="//android.widget.TextView[@text='Submit']")			//
+		private WebElement NBR_reject_search_dropdown_booked_my_mistake_submit_button;
+	
+		@FindBy(xpath="//android.widget.Button[@text='YES']")			//
+		private WebElement NBR_Yes_button;
+	
+		@FindBy(xpath="//android.widget.ImageButton[@content-desc='Navigate up']")			//
+		private WebElement NBR_back_button;
+	
+//		@FindBy(xpath="//android.widget.EditText[@text='User ID']")			//
+//		private WebElement txt_city_front_page;
+//	
+//		@FindBy(xpath="//android.widget.EditText[@text='User ID']")			//
+//		private WebElement txt_city_front_page;
+//	
+//		@FindBy(xpath="//android.widget.EditText[@text='User ID']")			//
+//		private WebElement txt_city_front_page;
+//	
+//		@FindBy(xpath="//android.widget.EditText[@text='User ID']")			//
+//		private WebElement txt_city_front_page;
+//	
+//		@FindBy(xpath="//android.widget.EditText[@text='User ID']")			//
+//		private WebElement txt_city_front_page;
+//	
+//		@FindBy(xpath="//android.widget.EditText[@text='User ID']")			//
+//		private WebElement txt_city_front_page;
+//	
+//		@FindBy(xpath="//android.widget.EditText[@text='User ID']")			//
+//		private WebElement txt_city_front_page;
+//	
+//		@FindBy(xpath="//android.widget.EditText[@text='User ID']")			//
+//		private WebElement txt_city_front_page;
+//	
+//		@FindBy(xpath="//android.widget.EditText[@text='User ID']")			//
+//		private WebElement txt_city_front_page;
+//	
+//		@FindBy(xpath="//android.widget.EditText[@text='User ID']")			//
+//		private WebElement txt_city_front_page;
+//	
 //		@FindBy(xpath="//android.widget.EditText[@text='User ID']")			//
 //		private WebElement txt_city_front_page;
 //	
@@ -66,6 +128,46 @@ public class champion {
 
 				public WebElement getLogin_cancel_notification() {
 					return login_cancel_notification;
+				}
+
+				public WebElement getDS_new_booking_request() {
+					return DS_new_booking_request;
+				}
+
+				public WebElement getNBR_search_user() {
+					return NBR_search_user;
+				}
+
+				public WebElement getNBR_request_reject_icon() {
+					return NBR_request_reject_icon;
+				}
+
+				public WebElement getNBR_request_approve_icon() {
+					return NBR_request_approve_icon;
+				}
+
+				public WebElement getNBR_request_view_icon() {
+					return NBR_request_view_icon;
+				}
+
+				public WebElement getNBR_reject_search_dropdown() {
+					return NBR_reject_search_dropdown;
+				}
+
+				public WebElement getNBR_reject_search_dropdown_booked_my_mistake() {
+					return NBR_reject_search_dropdown_booked_my_mistake;
+				}
+
+				public WebElement getNBR_reject_search_dropdown_booked_my_mistake_submit_button() {
+					return NBR_reject_search_dropdown_booked_my_mistake_submit_button;
+				}
+
+				public WebElement getNBR_Yes_button() {
+					return NBR_Yes_button;
+				}
+
+				public WebElement getNBR_back_button() {
+					return NBR_back_button;
 				}
 	
 	

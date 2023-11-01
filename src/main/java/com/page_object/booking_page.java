@@ -149,6 +149,9 @@ public class booking_page {
 	@FindBy(xpath="//android.widget.TextView[@content-desc='bookingId_detail_priceTwo']")						//txt_BKD_pickup_city
 	private WebElement booking_details_page_price;
 	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='txt_Location_Booking_Detail']")						//txt_BKD_pickup_city
+	private WebElement booking_details_page_city;
+	
 	@FindBy(xpath="//android.widget.RelativeLayout[@index='2']")						
 	private WebElement booking_details_page_map;
 	
@@ -1963,6 +1966,10 @@ public class booking_page {
 
 					public WebElement getBike_2nd_imageScroll() {
 						return bike_2nd_imageScroll;
+					}
+
+					public WebElement getBooking_details_page_city() {
+						return booking_details_page_city;
 					}
 					
 

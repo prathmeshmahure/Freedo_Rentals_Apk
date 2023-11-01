@@ -8,6 +8,8 @@
           <include name="Champion_app_install"/>
           <include name="OPEN_AND_INSTALL_APP"/>
           <include name="logger"/>
+          <include name="TC_002_verify_select_pickup_location_date_and_packages"/>
+          <include name="TC_0052_Freddo_apk"/>
           <include name="TC_0052_verify_install_apk"/>
           <include name="BS"/>
         </methods>

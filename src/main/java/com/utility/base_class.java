@@ -26,9 +26,11 @@ import org.testng.annotations.Listeners;
 
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
+import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
@@ -42,6 +44,8 @@ public class base_class {
 	public static AndroidDriver driver1 ;
 	public static Logger log;
 	public static DesiredCapabilities capabilities;
+	public static UiAutomator2Options cap;
+	
 	@BeforeSuite
 	public void  BS() throws Exception {
 		config=new config_data_provider();
@@ -54,8 +58,8 @@ public class base_class {
 			String Device_name = config.getPlatform_name();
 			if(Device_name.equalsIgnoreCase("emulator")) {
 				try {
-		 
-					DesiredCapabilities cap = new DesiredCapabilities();
+					 cap = new UiAutomator2Options();
+				//	DesiredCapabilities cap = new DesiredCapabilities();
 					cap.setCapability("appium:automationName", "uiautomator2");
 					cap.setCapability("platformName", "Android");
 					cap.setCapability("appium:deviceName", "pixel_6");//Infinix //pixel_6
@@ -85,7 +89,8 @@ public class base_class {
 			else if(Device_name.equalsIgnoreCase("realdevice")) {
 				try {
 					 
-					DesiredCapabilities cap = new DesiredCapabilities();
+					cap = new UiAutomator2Options();
+					//	DesiredCapabilities cap = new DesiredCapabilities();
 					cap.setCapability("appium:automationName", "uiautomator2");
 					cap.setCapability("platformName", "Android");
 					cap.setCapability("appium:deviceName", "Infinix");//Infinix //pixel_6
@@ -117,7 +122,8 @@ public class base_class {
 			if(Device_name.equalsIgnoreCase("emulator")) {
 				try {
 		 
-					DesiredCapabilities cap = new DesiredCapabilities();
+					 cap = new UiAutomator2Options();
+					//	DesiredCapabilities cap = new DesiredCapabilities();
 					cap.setCapability("appium:automationName", "uiautomator2");
 					cap.setCapability("platformName", "Android");
 					cap.setCapability("appium:deviceName", "pixel_6");//Infinix //pixel_6
@@ -127,7 +133,7 @@ public class base_class {
 					cap.setCapability("appPackage", "com.heerofreedo");               //freedo
 					cap.setCapability("appActivity", "com.heerofreedo.MainActivity"); //freedo
 					cap.setCapability("appium:noReset", "false");		
-					
+					cap.setCapability("appium:multiple", true);
 					cap.setCapability("appium:app",(System.getProperty("user.dir")+"\\apk\\10app-release.apk"));
 					cap.setCapability("appium:ensureWebviewsHavePages", true);
 					cap.setCapability("appium:nativeWebScreenshot", true);
@@ -148,8 +154,8 @@ public class base_class {
 				//========================== *******  Pcloudy =========================
 			else if(Device_name.equalsIgnoreCase("pcloudy")) {
 			 try {
-				
-					DesiredCapabilities capabilities = new DesiredCapabilities();
+				 	UiAutomator2Options capabilities = new UiAutomator2Options();					
+					//DesiredCapabilities capabilities = new DesiredCapabilities();
 					 capabilities.setCapability("pCloudy_Username", "randhir.kumar@heromotocorp.com");
 					 capabilities.setCapability("pCloudy_ApiKey", "2gdc5pv55mh54mqtwmvj4xbr");
 					 capabilities.setCapability("pCloudy_DurationInMinutes", 50);
@@ -194,7 +200,8 @@ public class base_class {
 			else if(Device_name.equalsIgnoreCase("realdevice")) {
 				try {
 					 
-					DesiredCapabilities cap = new DesiredCapabilities();
+					 cap = new UiAutomator2Options();
+					//	DesiredCapabilities cap = new DesiredCapabilities();
 					cap.setCapability("appium:automationName", "uiautomator2");
 					cap.setCapability("platformName", "Android");
 					cap.setCapability("appium:deviceName", "Infinix");//Infinix //pixel_6
@@ -260,7 +267,7 @@ public class base_class {
     	 driver1.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textMatches(\"" + menuText + "\").instance(0));")); 
     	 } catch (Exception e) {
     		 log.error("==NOT==Unable To Scroll By text "+menuText);
-    	 e.printStackTrace();
+    	 
     	 }
     	    }
 //======================================================================================================================================================	    
@@ -392,22 +399,34 @@ public class base_class {
 	   
    }
    //=====================================================================================================
-   public static void championapp_launch() throws MalformedURLException {
+   @SuppressWarnings("deprecation")
+public static void championapp_activity() throws MalformedURLException {
 	   
-	   DesiredCapabilities cap = new DesiredCapabilities();
-		cap.setCapability("appium:automationName", "uiautomator2");
-		cap.setCapability("platformName", "Android");
-		cap.setCapability("appium:deviceName", "pixel_6");//Infinix //pixel_6
-		cap.setCapability("appium:udid", "emulator-5554");// 0836731257071990 //emulator-5554 //0526532038000424
-		cap.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
-		cap.setCapability("appium:avdLaunchTimeout", 600000);
-		cap.setCapability("appPackage", "com.freedoadmin");
-		cap.setCapability("appActivity", "com.freedoadmin.MainActivity");
-		cap.setCapability("appium:noReset", "true");
-		
-		driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
-	   
+	   try {
+		   Activity activity = new Activity("com.freedoadmin", "com.freedoadmin.MainActivity");
+       activity.setStopApp(false);
+       ((AndroidDriver) driver1).startActivity(activity);
+       log.info("Champion app activity start");
+	   }
+	   catch(Exception e) {
+		   log.error("Unable to start Champion app activity");
+	   }
    }
+ //=====================================================================================================
+   @SuppressWarnings("deprecation")
+public static void freedoapp_activity() throws MalformedURLException {
+	   
+	   try {
+		   Activity activity = new Activity("com.heerofreedo", "com.heerofreedo.MainActivity");
+       activity.setStopApp(false);
+       ((AndroidDriver) driver1).startActivity(activity);
+       log.info("Freedo app activity start");
+	   }
+	   catch(Exception e) {
+		   log.error("Unable to start Freedo app activity");
+	   }
+   }
+   
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 

@@ -151,8 +151,9 @@ public class appium_1 extends base_class{
 			library.visible_link(book.getMore_button_KYC(), "KYC");
 			library.visible_link(book.getMore_button_terms_and_condition(), "Terms & condition");
 			library.visible_link(book.getMore_button_privacy_policy(), "Privacy policy");
-			library.visible_link(book.getMore_button_address_book(), "Address book");
 			base_class.scrollByText("Logout");
+			library.visible_link(book.getMore_button_address_book(), "Address book");
+			
 			library.visible_link(book.getMore_button_about_us(), "About us");
 			library.visible_link(book.getMore_button_contact_us(), "Contact us");
 			library.visible_link(book.getMore_button_invite_your_friend(), "Invite your friend");
@@ -262,6 +263,7 @@ public class appium_1 extends base_class{
 			library.visible_link(book.getClick_Pick_up_vehicle_radio_button(), "Pick-up vehicle radio button");
 			library.isSelected(book.getClick_Pick_up_vehicle_radio_button(), "Pick-up vehicle radio button");
 			library.visible_link(book.getClick_home_delivery_radio_button(), "Home delivery radio button");
+			library.Vertical_scroll_image(book.getBooking_details_page_city(), book.getClick_home_delivery_radio_button(), "Page scroll");
 			base_class.scrollByText("Select Time Slot");
 			library.visible_link(book.getBooking_details_page_price(), "Bike Price ");				
 			library.visible_link(book.getBooking_details_page_KM_limit(), "Km reading");
@@ -288,6 +290,7 @@ public class appium_1 extends base_class{
 		log.info("***************TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery starts*****************");
 		try {
 			library.Custom_click(book.getClick_home_delivery_radio_button(), "Home delivery radio button");
+			library.Vertical_scroll_image(book.getBooking_details_page_city(), book.getClick_home_delivery_radio_button(), "Page scroll");		library.Vertical_scroll_image(book.getClick_home_delivery_radio_button(), book.getBooking_details_page_price(), "Page scroll");
 			base_class.scrollByText("Select Time Slot");
 			library.Custom_click(book.getClick_home_delivery_add_address(), "Add Address");
 			try {
@@ -349,6 +352,7 @@ public class appium_1 extends base_class{
 		library.Custom_click(book.getBook_now_button(), "Booknow button");
 		Thread.sleep(1000);
 		library.Custom_click(book.getclick_location_pop_up_ok_button(), "ok button");
+		library.Vertical_scroll_image(book.getBooking_details_page_city(), book.getClick_home_delivery_radio_button(), "Page scroll");
 		base_class.scrollByText("Select Time Slot");
 		library.Custom_click(book.getBooking_details_page_afternoon(), "Afternoon");
 		Thread.sleep(1000);

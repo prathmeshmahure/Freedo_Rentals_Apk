@@ -386,12 +386,12 @@ public class library extends base_class{
 												
 							base_class.swipe_page_direction(start_x, start_y, end_x, end_y, "Page scroll");
 													
-						test.log(Status.PASS, "Successfully Scroll=="+ fieldname);
+						//test.log(Status.PASS, "Successfully Scroll=="+ fieldname);
 						log.info("OK==Successfully Scroll "+fieldname);
 						}
 				}
 				catch(Exception e) {
-				test.log(Status.FAIL,fieldname+ "==Unable To Scroll =="+e);
+			//	test.log(Status.FAIL,fieldname+ "==Unable To Scroll =="+e);
 				log.error("==Not==Unable To Scroll"+fieldname);		
 				listner.onTestFailure(null);
 				}

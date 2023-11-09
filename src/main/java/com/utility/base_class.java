@@ -139,7 +139,7 @@ public class base_class {
 					cap.setCapability("appium:nativeWebScreenshot", true);
 					cap.setCapability("appium:newCommandTimeout", 660000);
 				    driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
-				    driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+				    driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 				    log = LogManager.getLogger("Freedo_Rentals_Apk");
 				    log.info(" =============== /= Freedo Rentals Mobile App Automation Report =/ ==================  ");
 					} 
@@ -163,7 +163,7 @@ public class base_class {
 					 capabilities.setCapability("launchTimeout", 90000);
 					 capabilities.setCapability("pCloudy_DeviceManufacturer", config.getpCloudy_DeviceManufacturer());
 					 capabilities.setCapability("pCloudy_DeviceVersion",config.getpCloudy_DeviceVersion());
-				//	 capabilities.setCapability("pCloudy_DeviceFullName", "GOOGLE_Pixel7_Android_13.0.0_81870");
+				//	 capabilities.setCapability("pCloudy_DeviceFullName", "SAMSUNG_GalaxyS23_Android_13.0.0_c34d5");
 					 capabilities.setCapability("platformVersion", config.getpCloudy_DeviceVersion());
 					 capabilities.setCapability("platformName", "Android");
 					 capabilities.setCapability("automationName", "uiautomator2");	

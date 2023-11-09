@@ -17,7 +17,7 @@ public class extent_reports_generator extends base_class{
 		report=new ExtentSparkReporter(path);
 		
 		report.config().setDocumentTitle("Freedo Rentals-Automation Test Report");
-		report.config().setReportName("Freedo");
+		report.config().setReportName("Freedo Rentals");
 		report.config().setTheme(Theme.DARK);
 		
 		

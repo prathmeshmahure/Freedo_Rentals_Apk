@@ -73,10 +73,10 @@ public class appium_3 extends base_class{
 			Thread.sleep(3000);
 			Robot r = new Robot();
 			for(int i=0; i<4; i++) {
-				r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
+				r.keyPress(KeyEvent.VK_CONTROL);Thread.sleep(300); r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
 			}
 			Thread.sleep(2000);
-			r.keyPress(KeyEvent.VK_PAGE_DOWN);
+			r.keyPress(KeyEvent.VK_PAGE_DOWN);Thread.sleep(1000);
 			r.keyRelease(KeyEvent.VK_PAGE_DOWN);
 			WebElement ele4=driver.findElement(By.xpath("//button[@title='Reset']"));library.Custom_click(ele4, "Reset button");
 //			WebElement ele1=driver.findElement(By.xpath("(//div[@aria-haspopup='listbox'])[3]"));library.Custom_click(ele1, "10 user");
@@ -139,9 +139,13 @@ public class appium_3 extends base_class{
 			////////////////
 			
 			WebElement ele13=driver.findElement(By.xpath("(//button[text()='Start Ride' or @data-bs-toggle='modal'])[1]"));library.Custom_click(ele13, "Start ride");
-			Thread.sleep(2000);
-			WebElement ele14=driver.findElement(By.xpath("(//input[@placeholder='Start Reading'])[1]"));library.custom_sendkeys(ele14, "20", "enter bike reading");
+			Thread.sleep(3000);
+			WebElement ele14=driver.findElement(By.xpath("(//input[@placeholder='Start Reading'])[1]"));
+			try {ele14.click(); }catch(Exception e) {}Thread.sleep(2000);
+			library.custom_sendkeys(ele14, "20", "enter bike reading");
+			Thread.sleep(1000);
 			WebElement dropdownbike=driver.findElement(By.xpath("//option[text()='Select Registration']"));library.Custom_click(dropdownbike, "Select bike number");
+			Thread.sleep(700);
 			WebElement dropdownbike1=driver.findElement(By.xpath("(//option[@value])[2]"));library.Custom_click(dropdownbike1, "bike number is selected");
 			
 			//////////////////////////////////////////////////////// date as per select bike booking
@@ -155,6 +159,7 @@ public class appium_3 extends base_class{
 //				library.Custom_click(dateselect, "Select date");
 //			}
 			/////////////////////////////////////////////////////// MITS form 
+			Thread.sleep(700);
 			WebElement Generate_MITC_Form = driver.findElement(By.xpath("//button[normalize-space()='Generate MITC Form']"));	library.Custom_click(Generate_MITC_Form, "Generate MITC Form");
 			String parentwindow = driver.getWindowHandle();
 			WebElement MITC_FORM_Link = driver.findElement(By.xpath("//a[normalize-space()='MITC FORM Link']"));	library.Custom_click(MITC_FORM_Link, "MITC FORM Link");
@@ -228,7 +233,7 @@ public class appium_3 extends base_class{
 		//library.Custom_click(book.getClick_booking_page_view_button(), "View button");
 //		Thread.sleep(4000);
 //		library.visible_link(book.getClick_show_more_details(), "show more details text");
-//		library.Custom_click(book.getClick_show_more_details(), "show more details text");
+		library.Custom_click(book.getClick_show_more_details(), "show more details text");
 		Thread.sleep(2000);
 		base_class.scrollByText("Booking Status");
 		library.visible_link(book.getFBD_Booking_status(), "Booking status");
@@ -306,10 +311,10 @@ public class appium_3 extends base_class{
 		Thread.sleep(3000);
 		Robot r = new Robot();
 		for(int i=0; i<4; i++) {
-			r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
+			r.keyPress(KeyEvent.VK_CONTROL);Thread.sleep(300);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
 		}
 		Thread.sleep(3000);
-		r.keyPress(KeyEvent.VK_PAGE_DOWN);
+		r.keyPress(KeyEvent.VK_PAGE_DOWN);Thread.sleep(2000);
 		r.keyRelease(KeyEvent.VK_PAGE_DOWN);
 		WebElement ele3=driver.findElement(By.xpath("//h5[normalize-space()='Return Requests Received']"));library.Custom_click(ele3, "Return Requests Received");
 		
@@ -323,6 +328,7 @@ public class appium_3 extends base_class{
 		r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_R);r.keyRelease(KeyEvent.VK_R);r.keyRelease(KeyEvent.VK_CONTROL);
 		
 		WebElement ViewEditreaidng=driver.findElement(By.xpath("//button[text()=' Update Odometer Reading']"));library.Custom_click(ViewEditreaidng, "Update Odometer Readings");
+		Thread.sleep(2000);
 		WebElement endreading=driver.findElement(By.xpath("//input[@placeholder='Update Reading']"));	library.custom_sendkeys(endreading, config.getend_km_reading(), "End ride km reading");
 		Thread.sleep(1000);
 		WebElement ele15=driver.findElement(By.xpath("//button[text()='Update Reading']"));	library.Custom_click(ele15, "Update Reading");

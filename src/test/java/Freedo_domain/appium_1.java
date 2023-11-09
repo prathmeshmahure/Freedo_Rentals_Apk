@@ -290,7 +290,8 @@ public class appium_1 extends base_class{
 		log.info("***************TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery starts*****************");
 		try {
 			library.Custom_click(book.getClick_home_delivery_radio_button(), "Home delivery radio button");
-			library.Vertical_scroll_image(book.getBooking_details_page_city(), book.getClick_home_delivery_radio_button(), "Page scroll");		library.Vertical_scroll_image(book.getClick_home_delivery_radio_button(), book.getBooking_details_page_price(), "Page scroll");
+			library.Vertical_scroll_image(book.getBooking_details_page_city(), book.getClick_home_delivery_radio_button(), "Page scroll by elements");	
+			library.Vertical_scroll_image(book.getClick_home_delivery_radio_button(), book.getBooking_details_page_price(), "Page scroll by elements");
 			base_class.scrollByText("Select Time Slot");
 			library.Custom_click(book.getClick_home_delivery_add_address(), "Add Address");
 			try {
@@ -354,6 +355,7 @@ public class appium_1 extends base_class{
 		library.Custom_click(book.getclick_location_pop_up_ok_button(), "ok button");
 		library.Vertical_scroll_image(book.getBooking_details_page_city(), book.getClick_home_delivery_radio_button(), "Page scroll");
 		base_class.scrollByText("Select Time Slot");
+		base_class.scrollByText("Afternoon");
 		library.Custom_click(book.getBooking_details_page_afternoon(), "Afternoon");
 		Thread.sleep(1000);
 		library.isSelected(book.getBooking_details_page_afternoon(), "Afternoon is");

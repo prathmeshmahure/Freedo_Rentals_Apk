@@ -29,11 +29,11 @@ public class appium_2 extends base_class{
 		Thread.sleep(3000);
 		Robot r = new Robot();
 		for(int i=0; i<4; i++) {
-			r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
+			r.keyPress(KeyEvent.VK_CONTROL);Thread.sleep(300);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
 		}
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		
-		r.keyPress(KeyEvent.VK_PAGE_DOWN);
+		r.keyPress(KeyEvent.VK_PAGE_DOWN);Thread.sleep(1000);
 		r.keyRelease(KeyEvent.VK_PAGE_DOWN);
 //		WebElement ele1=driver.findElement(By.xpath("(//div[@aria-haspopup='listbox'])[3]"));library.Custom_click(ele1, "10 user");
 //		WebElement ele2=driver.findElement(By.xpath("//li[normalize-space()='50']"));library.Custom_click(ele2, "50 user");
@@ -41,7 +41,7 @@ public class appium_2 extends base_class{
 		Thread.sleep(2000);
 	//	WebElement ele4=driver.findElement(By.xpath("//button[@title='Reset']"));library.Custom_click(ele4, "Reset button");
 		
-		Thread.sleep(2000);
+		
 		
 		String s=config.getFirst_name();
 		String l=config.getLast_name();
@@ -198,7 +198,7 @@ public class appium_2 extends base_class{
 		Browseropen();
 		Robot r = new Robot();
 		for(int i=0; i<4; i++) {
-			r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
+			r.keyPress(KeyEvent.VK_CONTROL);Thread.sleep(300);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
 		}
 		Thread.sleep(3000);
 		r.keyPress(KeyEvent.VK_PAGE_DOWN);

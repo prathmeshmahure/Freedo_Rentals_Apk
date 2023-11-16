@@ -7,19 +7,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-import com.page_object.booking_page;
-import com.utility.base_class;
+import com.pageobject.BookingPage;
+import com.utility.BaseClass;
 
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
-public class appium_6 extends base_class{
-	public booking_page book;
+public class appium_6 extends BaseClass{
+	public BookingPage book;
 	
 	
 	@Test(enabled=true)
 	public void date () {
-		book = PageFactory.initElements(driver1, booking_page.class);
+		book = PageFactory.initElements(driver1, BookingPage.class);
 		
 		Set<String>context=driver1.getContextHandles();
 		for(String s:context) {
@@ -33,7 +33,7 @@ public class appium_6 extends base_class{
 	}
 	@Test(enabled=false)
 	public void keyboardcheck () {
-		book = PageFactory.initElements(driver1, booking_page.class);
+		book = PageFactory.initElements(driver1, BookingPage.class);
 		WebElement ele=driver1.findElement(By.xpath("//android.widget.RadioButton[@content-desc='radioBtn_Pickup']"));
 		if(book.getClick_Continue_Tab().isEnabled()) {
 			System.out.println("it is selected");

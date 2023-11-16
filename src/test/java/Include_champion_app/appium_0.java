@@ -4,15 +4,15 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
-import com.page_object.booking_page;
-import com.page_object.launch_login;
-import com.utility.base_class;
-import com.utility.library;
+import com.pageobject.BookingPage;
+import com.pageobject.LaunchLogin;
+import com.utility.BaseClass;
+import com.utility.Library;
 
 @Listeners(com.utility.listner.class)
-public class appium_0 extends base_class {
-	public booking_page book;
-	public launch_login login;
+public class appium_0 extends BaseClass {
+	public BookingPage book;
+	public LaunchLogin login;
 	public ExtentTest test;
 	
 	
@@ -21,8 +21,8 @@ public class appium_0 extends base_class {
 		public void TC_001_verify_install_apk() throws Exception {
 			log.info("***************TC_001_verify_install_apk starts*****************");
 		//	login=PageFactory.initElements(driver1, launch_login.class);	
-			login = new launch_login(driver1);
-			library.visible_link(login.getFirst_page_Select_pickUP_location(), "Freedo app is Install");
+			login = new LaunchLogin(driver1);
+			Library.visible_link(login.getFirst_page_Select_pickUP_location(), "Freedo app is Install");
 			
 		}
 	
@@ -34,13 +34,13 @@ public class appium_0 extends base_class {
 			
 			try {
 			if(login.getFirst_page_Select_pickUP_location().isDisplayed()) {
-			library.visible_link(login.getFirst_page_Select_pickUP_location(), "Select pickup location date and packages");
-			library.isSelected(login.getfirst_page_first_slide_indicator(), "First slide indicator is ");
-			library.visible_link(login.getfirst_page_first_slide_indicator(), "first slide indicator");
-			library.visible_link(login.getFirst_page_second_slide_indicator(), "second slide indicator");
-			library.visible_link(login.getFirst_page_third_slide_indicator(), "third slide indicator");
-			library.visible_link(login.getClick_Next_button1(), "Next_button static 1st page");
-			library.visible_link(login.getClick_Skip_button1(), "Skip_button static 1st page");
+			Library.visible_link(login.getFirst_page_Select_pickUP_location(), "Select pickup location date and packages");
+			Library.isSelected(login.getfirst_page_first_slide_indicator(), "First slide indicator is ");
+			Library.visible_link(login.getfirst_page_first_slide_indicator(), "first slide indicator");
+			Library.visible_link(login.getFirst_page_second_slide_indicator(), "second slide indicator");
+			Library.visible_link(login.getFirst_page_third_slide_indicator(), "third slide indicator");
+			Library.visible_link(login.getClick_Next_button1(), "Next_button static 1st page");
+			Library.visible_link(login.getClick_Skip_button1(), "Skip_button static 1st page");
 			}	}catch(Exception e) {}
 		}
 //================================ static_pages_view ============================================================
@@ -51,10 +51,10 @@ public class appium_0 extends base_class {
 			
 			try {
 			if(login.getClick_Next_button1().isDisplayed()) {
-			library.Custom_click(login.getClick_Next_button1(), "Next_button1 static 1st page");
-			library.isSelected(login.getFirst_page_second_slide_indicator(), "second slide indicator is ");
-			library.visible_link(login.getSecond_onboarding_tittle()," = "+ login.getSecond_onboarding_tittle().getText());
-			library.visible_link(login.getClick_Skip_button2(), "Skip_button static 2nd page");	
+			Library.Custom_click(login.getClick_Next_button1(), "Next_button1 static 1st page");
+			Library.isSelected(login.getFirst_page_second_slide_indicator(), "second slide indicator is ");
+			Library.visible_link(login.getSecond_onboarding_tittle()," = "+ login.getSecond_onboarding_tittle().getText());
+			Library.visible_link(login.getClick_Skip_button2(), "Skip_button static 2nd page");	
 			
 			}}catch(Exception e) {}
 		}
@@ -66,10 +66,10 @@ public class appium_0 extends base_class {
 			log.info("***************TC_004_Verify_the_NEXT_button_clicking starts*****************");
 			try {
 			if(login.getClick_Next_button2().isDisplayed()) {
-			library.Custom_click(login.getClick_Next_button2(), "Next_button2 static 2nd page");
+			Library.Custom_click(login.getClick_Next_button2(), "Next_button2 static 2nd page");
 			Thread.sleep(2000);
-			library.isSelected(login.getFirst_page_third_slide_indicator(), "Third slide indicator is ");
-			library.visible_link(login.getThirdpage_onboarding_tittle()," = "+ login.getThirdpage_onboarding_tittle().getText());
+			Library.isSelected(login.getFirst_page_third_slide_indicator(), "Third slide indicator is ");
+			Library.visible_link(login.getThirdpage_onboarding_tittle()," = "+ login.getThirdpage_onboarding_tittle().getText());
 			}}catch(Exception e) {}
 		}
 		
@@ -80,9 +80,9 @@ public class appium_0 extends base_class {
 			log.info("***************TC_005_Verify_the_slide_indicator starts*****************");
 			try {
 			if(login.getfirst_page_first_slide_indicator().isDisplayed()) {
-			library.isSelectedFalse(login.getfirst_page_first_slide_indicator(), "first slide indicator is ");
-			library.isSelectedFalse(login.getFirst_page_second_slide_indicator(), "Second slide indicator is ");
-			library.isSelected(login.getFirst_page_third_slide_indicator(), "Third slide indicator is ");
+			Library.isSelectedFalse(login.getfirst_page_first_slide_indicator(), "first slide indicator is ");
+			Library.isSelectedFalse(login.getFirst_page_second_slide_indicator(), "Second slide indicator is ");
+			Library.isSelected(login.getFirst_page_third_slide_indicator(), "Third slide indicator is ");
 		}}catch(Exception e) {}
 		}
 //================================================================================================================
@@ -92,8 +92,8 @@ public class appium_0 extends base_class {
 			log.info("***************TC_006_Verify_the_Done_button_clicking starts*****************");
 			try {
 			if(login.getClick_Done_button().isDisplayed()) {
-			library.visible_link(login.getClick_Done_button(), "Done button");
-			library.Custom_click(login.getClick_Done_button(), "Done_button static 3rd page");
+			Library.visible_link(login.getClick_Done_button(), "Done button");
+			Library.Custom_click(login.getClick_Done_button(), "Done_button static 3rd page");
 		}}catch(Exception e) {}
 
 		}
@@ -104,14 +104,14 @@ public class appium_0 extends base_class {
 			log.info("***************TC_007_Verify_login_component starts*****************");
 			try {
 			if(login.getLogin_heading().isDisplayed()) {       //Assert
-			library.visible_link(login.getLogin_heading(), "Login heading");
-			library.visible_link(login.getMobile_icon(), "Mobile icon");
-			library.visible_link(login.getIndian_code(), "+91 indian code ");
-			library.visible_link(login.getEnter_MO_Number(), "Enter mobile number");
-			library.visible_link(login.getClick_Login_button(), "login button");
-			library.isEnabledFalse(login.getClick_Login_button(), "Login button is ");
-			library.visible_link(login.getYou_dont_have_an_account(), "You don't have an account ?");
-			library.visible_link(login.getCreateAccount(), "Create an account");
+			Library.visible_link(login.getLogin_heading(), "Login heading");
+			Library.visible_link(login.getMobile_icon(), "Mobile icon");
+			Library.visible_link(login.getIndian_code(), "+91 indian code ");
+			Library.visible_link(login.getEnter_MO_Number(), "Enter mobile number");
+			Library.visible_link(login.getClick_Login_button(), "login button");
+			Library.isEnabledFalse(login.getClick_Login_button(), "Login button is ");
+			Library.visible_link(login.getYou_dont_have_an_account(), "You don't have an account ?");
+			Library.visible_link(login.getCreateAccount(), "Create an account");
 		}}catch(Exception e) {}
 		}
 //================================== Frontend_login ================================================================
@@ -121,9 +121,9 @@ public class appium_0 extends base_class {
 			log.info("***************TC_008_Verify_login_functionality_Register_mo_number starts*****************");
 		try {
 			if(login.getEnter_MO_Number().isDisplayed()) {
-			library.custom_sendkeys(login.getEnter_MO_Number(), config.getMobile(), "Enter mobile number");
+			Library.custom_sendkeys(login.getEnter_MO_Number(), config.getMobile(), "Enter mobile number");
 			appium_1.EnterButton();
-			library.isEnabled(login.getClick_Login_button(), "Login button is ");
+			Library.isEnabled(login.getClick_Login_button(), "Login button is ");
 		//	library.Custom_click(login.getClick_Login_button(), "login button");
 		}}catch(Exception e) {}
 		}
@@ -134,9 +134,9 @@ public class appium_0 extends base_class {
 			log.info("***************TC_009_verify_login_button_on_create_an_account_page starts*****************");
 			try {
 			if(login.getCreateAccount().isDisplayed()) {
-			library.Custom_click(login.getCreateAccount(), "Create an account at login page");
+			Library.Custom_click(login.getCreateAccount(), "Create an account at login page");
 			Thread.sleep(1000);
-			library.Custom_click(login.getClick_Login_button_C_A(), "login button on create an account page");
+			Library.Custom_click(login.getClick_Login_button_C_A(), "login button on create an account page");
 			Thread.sleep(2000);
 			}}catch(Exception e) {}
 		}	
@@ -147,17 +147,17 @@ public class appium_0 extends base_class {
 			log.info("***************TC_0010_verify_create_an_account_by_clicking_login_page starts*****************");
 			try {
 			if(login.getCreateAccount().isDisplayed()) {;
-			library.Custom_click(login.getCreateAccount(), "Create an account at login page");
-			library.visible_link(login.getField_first_name(), "First name");
-			library.visible_link(login.getField_last_name(), "Last name");
-			library.visible_link(login.getField_mobile_number(), "Mobile number");
-			library.visible_link(login.getField_email(), "Email");
-			library.visible_link(login.getField_gender(), "Gender");
-			library.isSelectedFalse(login.getClick_I_accept_checkbox(), " I accept checkbox");
-			library.visible_link(login.getField_terms_and_conditons(), "Terms and condition");
-			library.visible_link(login.getField_privacy_policy(), "Privacy Policy");
-			library.isEnabledFalse(login.getClick_Create_My_Account(), "Create my account button");
-			library.visible_link(login.getField_login(), "Login");			
+			Library.Custom_click(login.getCreateAccount(), "Create an account at login page");
+			Library.visible_link(login.getField_first_name(), "First name");
+			Library.visible_link(login.getField_last_name(), "Last name");
+			Library.visible_link(login.getField_mobile_number(), "Mobile number");
+			Library.visible_link(login.getField_email(), "Email");
+			Library.visible_link(login.getField_gender(), "Gender");
+			Library.isSelectedFalse(login.getClick_I_accept_checkbox(), " I accept checkbox");
+			Library.visible_link(login.getField_terms_and_conditons(), "Terms and condition");
+			Library.visible_link(login.getField_privacy_policy(), "Privacy Policy");
+			Library.isEnabledFalse(login.getClick_Create_My_Account(), "Create my account button");
+			Library.visible_link(login.getField_login(), "Login");			
 		}}catch(Exception e) {}
 	}
 //===================================================================================================================		
@@ -166,32 +166,32 @@ public class appium_0 extends base_class {
 		public void TC_0011_verify_user_able_to_create_an_account() {
 			log.info("***************TC_0011_verify_user_able_to_create_an_account starts*****************");
 		//	book = PageFactory.initElements(driver1, booking_page.class);
-			book = new booking_page(driver1);
+			book = new BookingPage(driver1);
 			try {
 			if(book.getCA_MF_firstname().isDisplayed()) {
-			library.visible_link(book.getCA_MF_firstname(), "First name mandotary field ( * )");
-			library.custom_sendkeys(login.getClick_First_name(), config.getFirst_name(), "First name");
-			library.visible_link(book.getCA_MF_lastname(), "Last name mandotary field ( * )");
-			library.custom_sendkeys(login.getClick_Last_name(), config.getLast_name(), "Last name");
-			base_class.EnterButton();
-			library.visible_link(book.getCA_MF_mobilenumber(), "Mobile number mandotary field ( * )");
+			Library.visible_link(book.getCA_MF_firstname(), "First name mandotary field ( * )");
+			Library.custom_sendkeys(login.getClick_First_name(), config.getFirst_name(), "First name");
+			Library.visible_link(book.getCA_MF_lastname(), "Last name mandotary field ( * )");
+			Library.custom_sendkeys(login.getClick_Last_name(), config.getLast_name(), "Last name");
+			BaseClass.EnterButton();
+			Library.visible_link(book.getCA_MF_mobilenumber(), "Mobile number mandotary field ( * )");
 		//	library.custom_sendkeys(login.getClick_Enter_Mobile_Number_C_A(), config.getMobile(), "Enter number");
-			library.visible_link(book.getCA_MF_email(), "Email ID mandotary field ( * )");
-			library.custom_sendkeys(login.getClick_Enter_Email(), config.getEnter_Email(), "Enter Email");
-			base_class.EnterButton();
-			library.visible_link(book.getCA_MF_gender(), "Gender mandotary field ( * )");
-			library.Custom_click(login.getClick_Gender_Female(), "Female gender selected");
-			library.Custom_click(login.getClick_Gender_Other(), "Other gender selected");
-			library.Custom_click(login.getClick_Gender_Male(), "Male gender selected");
+			Library.visible_link(book.getCA_MF_email(), "Email ID mandotary field ( * )");
+			Library.custom_sendkeys(login.getClick_Enter_Email(), config.getEnter_Email(), "Enter Email");
+			BaseClass.EnterButton();
+			Library.visible_link(book.getCA_MF_gender(), "Gender mandotary field ( * )");
+			Library.Custom_click(login.getClick_Gender_Female(), "Female gender selected");
+			Library.Custom_click(login.getClick_Gender_Other(), "Other gender selected");
+			Library.Custom_click(login.getClick_Gender_Male(), "Male gender selected");
 					if(login.getClick_I_accept_checkbox().isSelected()==false) {
-						library.passmsg("i accept checkbox By default is not = ", "selected");
-						library.Custom_click(login.getClick_I_accept_checkbox(), "I accept checkbox");
+						Library.passmsg("i accept checkbox By default is not = ", "selected");
+						Library.Custom_click(login.getClick_I_accept_checkbox(), "I accept checkbox");
 					}else {
-						library.failmsg("I accept check box is = ", "Selected");
+						Library.failmsg("I accept check box is = ", "Selected");
 					}
-			library.visible_link(login.getClick_Terms_and_Conditions(), "Terms and condition ");
-			library.visible_link(login.getClick_Login_button_C_A(), "login button is present");
-			library.isEnabled(login.getClick_Create_My_Account(), "Create my account");
+			Library.visible_link(login.getClick_Terms_and_Conditions(), "Terms and condition ");
+			Library.visible_link(login.getClick_Login_button_C_A(), "login button is present");
+			Library.isEnabled(login.getClick_Create_My_Account(), "Create my account");
 		//	library.Custom_click(login.getClick_Create_My_Account(), "Create my account");		
 		}}catch(Exception e) {}
 	}
@@ -202,12 +202,12 @@ public class appium_0 extends base_class {
 			log.info("***************TC_0012_verify_Terms_and_condition_link_on_create_an_account_page starts*****************");
 			try {
 			if(login.getClick_Terms_and_Conditions().isDisplayed()) {
-			library.Custom_click(login.getClick_Terms_and_Conditions(), "Terms and condition ");
+			Library.Custom_click(login.getClick_Terms_and_Conditions(), "Terms and condition ");
 			Thread.sleep(3000);
-			library.visible_link(login.getTerms_and_condition_page_heading(), "Terms and condition page Heading");
+			Library.visible_link(login.getTerms_and_condition_page_heading(), "Terms and condition page Heading");
 			Thread.sleep(3000);
-			library.visible_link(login.getT_and_c_page_info_present(), "Terms and condition page info");
-			library.Custom_click(login.getBack_button(), "Terms and condition page back button ");		
+			Library.visible_link(login.getT_and_c_page_info_present(), "Terms and condition page info");
+			Library.Custom_click(login.getBack_button(), "Terms and condition page back button ");		
 		}}catch(Exception e) {}
 	}
 //===================================================================================================================
@@ -217,11 +217,11 @@ public class appium_0 extends base_class {
 			log.info("***************TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page starts*****************");
 			try {
 			if(login.getClick_Privacy_Policy().isDisplayed()) {
-			library.Custom_click(login.getClick_Privacy_Policy(), "Privacy policy");
-			library.visible_link(login.getPrivacy_policy_page_heading(), "Privacy policy page Heaading");
+			Library.Custom_click(login.getClick_Privacy_Policy(), "Privacy policy");
+			Library.visible_link(login.getPrivacy_policy_page_heading(), "Privacy policy page Heaading");
 	//		library.visible_link(login.getDelete_account(), "Delete account txt");
-			library.visible_link(login.getPrivacy_policy(), "Privacy policy txt");
-			library.visible_link(login.getBack_button(), " back button ");		
+			Library.visible_link(login.getPrivacy_policy(), "Privacy policy txt");
+			Library.visible_link(login.getBack_button(), " back button ");		
 		}}catch(Exception e) {}
 	}
 //=======================================================================================================================		
@@ -231,10 +231,10 @@ public class appium_0 extends base_class {
 			log.info("***************TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element starts*****************");
 			try {
 			if(login.getPrivacy_policy_dropdown().isDisplayed()) {
-			library.Custom_click(login.getPrivacy_policy_dropdown(), "Privacy policy dropdown open");
-			library.visible_link(login.getPrivacy_policy_info(), "Privacy policy information");
-			library.Custom_click(login.getPrivacy_policy_dropdown(), "Privacy policy dropdown Close");	
-			library.Custom_click(login.getBack_button(), " back button ");
+			Library.Custom_click(login.getPrivacy_policy_dropdown(), "Privacy policy dropdown open");
+			Library.visible_link(login.getPrivacy_policy_info(), "Privacy policy information");
+			Library.Custom_click(login.getPrivacy_policy_dropdown(), "Privacy policy dropdown Close");	
+			Library.Custom_click(login.getBack_button(), " back button ");
 		}}catch(Exception e) {}
 	}
 //================================================================================================================		
@@ -245,7 +245,7 @@ public class appium_0 extends base_class {
 		public void TC_0015_Verify_create_my_account_button() throws Exception  {
 			log.info("***************TC_0015_Verify_create_my_account_button starts*****************");
 		try {
-			library.Custom_click(login.getClick_Create_My_Account(), "Create my account");
+			Library.Custom_click(login.getClick_Create_My_Account(), "Create my account");
 		}catch(Exception e) {}
 		}
 //=================================================================================================================
@@ -256,8 +256,8 @@ public class appium_0 extends base_class {
 			
 			Thread.sleep(2000);	
 			appium_0.EnterButton();
-			library.visible_link(login.getOtp_time_slot(), " Time duration ");
-			library.visible_link(login.getOtp_time_slot(), " Time duration "+login.getOtp_time_slot().getText());
+			Library.visible_link(login.getOtp_time_slot(), " Time duration ");
+			Library.visible_link(login.getOtp_time_slot(), " Time duration "+login.getOtp_time_slot().getText());
 			
 		}
 //================================================================================================================
@@ -272,11 +272,11 @@ public class appium_0 extends base_class {
 			Thread.sleep(5000);	
 			try {
 			if(login.getOtp_verification_txt().isDisplayed()) {
-		library.isDisplayed(login.getOtp_verification_txt(), "OTP VERIFICATION page tittle");
-		library.visible_link(login.getEnter_OTP(), "OTP Enter field");
-		library.visible_link(login.getClick_OTP_Verify_button(), "Verify otp button");
+		Library.isDisplayed(login.getOtp_verification_txt(), "OTP VERIFICATION page tittle");
+		Library.visible_link(login.getEnter_OTP(), "OTP Enter field");
+		Library.visible_link(login.getClick_OTP_Verify_button(), "Verify otp button");
 		
-		library.custom_sendkeys(login.getEnter_OTP(),config.getOTP(),"OTP send 6 digit successfully");
+		Library.custom_sendkeys(login.getEnter_OTP(),config.getOTP(),"OTP send 6 digit successfully");
 //		library.Custom_click(login.getClick_OTP_Verify_button(), "Otp Verify Button ");
 		}}catch(Exception e) {}
 		}
@@ -287,15 +287,15 @@ public class appium_0 extends base_class {
 			log.info("***************TC_0018_Select_location starts*****************");
 		try {
 			if(login.getWhile_using_this_app().isDisplayed()) {
-		library.visible_link(login.getWhile_using_this_app(), "While_using_this_app");
+		Library.visible_link(login.getWhile_using_this_app(), "While_using_this_app");
 //		library.visible_link(login.getOnly_this_time(), "location page Only_this_time");
-		library.visible_link(login.getDont_allow(), "Dont allow");
-		library.Custom_click(login.getDont_allow(), "Dont allow");					
+		Library.visible_link(login.getDont_allow(), "Dont allow");
+		Library.Custom_click(login.getDont_allow(), "Dont allow");					
 							//////// 2 nd page ///////
 		Thread.sleep(3000);
-		library.visible_link(login.getDetect_my_location(), "Detect_my_location");
-		library.visible_link(login.getSelect_Manually_location(), "Select_Manually_location");
-		library.Custom_click(login.getSelect_Manually_location(), "Select_Manually_location");//click
+		Library.visible_link(login.getDetect_my_location(), "Detect_my_location");
+		Library.visible_link(login.getSelect_Manually_location(), "Select_Manually_location");
+		Library.Custom_click(login.getSelect_Manually_location(), "Select_Manually_location");//click
 			}}catch(Exception e) {}
 		}
 //============================Verify city visible =======================================================================
@@ -306,11 +306,11 @@ public class appium_0 extends base_class {
 			log.info("***************TC_0019_verify_user_select_City starts*****************");
 			try {
 			if(login.getPopular_cities_txt().isDisplayed()) {
-			library.visible_link(login.getPopular_cities_txt(), "Popular cities text");
-			library.visible_link(login.getSelect_City_Delhi(), "Delhi");
-			library.visible_link(login.getSelect_City_Gurugram(), "Gurugram");
-			library.visible_link(login.getSelect_City_Noida(), "Noida");
-			library.visible_link(login.getSelect_City_Greater_Bengaluru(), "Bengaluru");
+			Library.visible_link(login.getPopular_cities_txt(), "Popular cities text");
+			Library.visible_link(login.getSelect_City_Delhi(), "Delhi");
+			Library.visible_link(login.getSelect_City_Gurugram(), "Gurugram");
+			Library.visible_link(login.getSelect_City_Noida(), "Noida");
+			Library.visible_link(login.getSelect_City_Greater_Bengaluru(), "Bengaluru");
 //			library.visible_link(login.getSelect_City_Automation_City(), "Automation city");
 //			library.visible_link(login.getSelect_City_Greater_Noida(), "Greater_Noida");
 				}
@@ -323,10 +323,10 @@ public class appium_0 extends base_class {
 				log.info("***************TC_0020_Search_wrong_city_name starts*****************");
 			try {
 				if(login.getSearch_city().isDisplayed()) {	
-			library.visible_link(login.getSearch_city(), "Please select your city");
-			library.custom_sendkeys(login.getSearch_city(), "Aurangabad", "Search city by city name");
+			Library.visible_link(login.getSearch_city(), "Please select your city");
+			Library.custom_sendkeys(login.getSearch_city(), "Aurangabad", "Search city by city name");
 			appium_0.EnterButton();
-			library.visible_link(login.getSelected_city_not_available(), "Selected city not available");
+			Library.visible_link(login.getSelected_city_not_available(), "Selected city not available");
 				}}catch(Exception e) {}
 				}
 //================================ Search city name =====================================================================
@@ -336,10 +336,10 @@ public class appium_0 extends base_class {
 			log.info("***************TC_0021_Search_city_name starts*****************");
 		try {
 			if(login.getSearch_city().isDisplayed()) {
-		library.visible_link(login.getSearch_city(), "Please select your city");
-		library.custom_sendkeys(login.getSearch_city(), config.getcity_name(), "Search city by city name");
+		Library.visible_link(login.getSearch_city(), "Please select your city");
+		Library.custom_sendkeys(login.getSearch_city(), config.getcity_name(), "Search city by city name");
 		appium_0.EnterButton();
-		library.visible_link(login.getSelect_City_Noida(), config.getcity_name()+" city");
+		Library.visible_link(login.getSelect_City_Noida(), config.getcity_name()+" city");
 		}}catch(Exception e) {}
 		}		
 //===========================Select city =============================================================================
@@ -349,7 +349,7 @@ public class appium_0 extends base_class {
 		public void TC_0022_Select_all__City() {
 			log.info("***************TC_0022_Select_all__City starts*****************");
 			
-			library.Custom_click(login.getSelect_City_Noida(), config.getcity_name()+" city");
+			Library.Custom_click(login.getSelect_City_Noida(), config.getcity_name()+" city");
 
 		}
 //=========================================================================================================================
@@ -359,10 +359,10 @@ public class appium_0 extends base_class {
 			log.info("***************TC_0023_Verify_location_popup starts*****************");
 			try {
 			if(login.getWhile_using_this_app().isDisplayed()) {
-			library.visible_link(login.getWhile_using_this_app(), "location page While_using_this_app");
+			Library.visible_link(login.getWhile_using_this_app(), "location page While_using_this_app");
 //			library.visible_link(login.getOnly_this_time(), "location page Only_this_time");
-			library.visible_link(login.getDont_allow_1(),"Dont allow 1");
-			library.Custom_click(login.getDont_allow_1(), "Dont allow 1");
+			Library.visible_link(login.getDont_allow_1(),"Dont allow 1");
+			Library.Custom_click(login.getDont_allow_1(), "Dont allow 1");
 			}}catch(Exception e) {}
 		}
 	

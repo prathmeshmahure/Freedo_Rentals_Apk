@@ -25,7 +25,7 @@
 					<configuration>
 						<suiteXmlFiles>
 							<suiteXmlFile>
-							appiumAll_file.xml
+							testng.xml
 							</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>

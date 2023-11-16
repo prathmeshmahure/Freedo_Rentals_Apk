@@ -11,15 +11,15 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
-import com.page_object.booking_page;
-import com.page_object.launch_login;
-import com.utility.base_class;
-import com.utility.library;
+import com.pageobject.BookingPage;
+import com.pageobject.LaunchLogin;
+import com.utility.BaseClass;
+import com.utility.Library;
 @Listeners(com.utility.listner.class)
 
-public class appium_3 extends base_class{
-	public booking_page book;
-	public launch_login login;
+public class appium_3 extends BaseClass{
+	public BookingPage book;
+	public LaunchLogin login;
 	public static ExtentTest test;
 	
 	
@@ -27,36 +27,36 @@ public class appium_3 extends base_class{
 	@Test(priority=8)
 	public void TC_0059_Verify_user_able_to_Online_payment_booking() throws Exception  {
 		log.info("***************TC_0059_Verify_user_able_to_Online_payment_booking starts*****************");
-		book = new booking_page(driver1);
+		book = new BookingPage(driver1);
 		
 		freedoapp_activity();
 		Thread.sleep(2000);
-		library.Custom_click(book.getClick_home_page_button(), "Home button");
+		Library.Custom_click(book.getClick_home_page_button(), "Home button");
 		Thread.sleep(2000);
-		library.Custom_click(book.getClick_1st_page_enter_button(), "Enter button");
-		library.date_select();
-		library.Custom_click(book.getClick_Package_dropdown(), "package dropdown");
-		library.Custom_click(book.getClick_1_Days_package(),"Selected package");
-		library.Custom_click(book.getClick_go_freedo_Button(), "Go Freedo button");
+		Library.Custom_click(book.getClick_1st_page_enter_button(), "Enter button");
+		Library.date_select();
+		Library.Custom_click(book.getClick_Package_dropdown(), "package dropdown");
+		Library.Custom_click(book.getClick_1_Days_package(),"Selected package");
+		Library.Custom_click(book.getClick_go_freedo_Button(), "Go Freedo button");
 		Thread.sleep(2000);
-		library.Custom_click(book.getBook_now_button(), "Book now button");
+		Library.Custom_click(book.getBook_now_button(), "Book now button");
 		Thread.sleep(2000);
-		library.Custom_click(book.getclick_location_pop_up_ok_button(), "ok button");
-		library.Custom_click(book.getClick_Continue_Tab(), "Continue button");
+		Library.Custom_click(book.getclick_location_pop_up_ok_button(), "ok button");
+		Library.Custom_click(book.getClick_Continue_Tab(), "Continue button");
 		Thread.sleep(4000);
-		base_class.scrollByText("Pay Now");
+		BaseClass.scrollByText("Pay Now");
 	//	library.Custom_click(book.getClick_I_accept_checkbox(), "I accept checkbox");
 		Thread.sleep(1000);
-		library.Custom_click(book.getClick_summary_pay_now_button(), "Pay now button");
+		Library.Custom_click(book.getClick_summary_pay_now_button(), "Pay now button");
 		Thread.sleep(5000);
-		library.Custom_click(book.getClick_Pay_using_Netbanking(), "Pay using Netbanking");
-		library.Custom_click(book.getClick_Pay_using_SBI_bank(), "Select SBI bank");
-		library.Custom_click(book.getClick_pay_now_button_sbi(), "Pay Now button");
+		Library.Custom_click(book.getClick_Pay_using_Netbanking(), "Pay using Netbanking");
+		Library.Custom_click(book.getClick_Pay_using_SBI_bank(), "Select SBI bank");
+		Library.Custom_click(book.getClick_pay_now_button_sbi(), "Pay Now button");
 		
-		library.Custom_click(book.getClick_payment_successful(), "payment successful");
-		library.Custom_click(book.getClick_view_booking(), "booking details");
+		Library.Custom_click(book.getClick_payment_successful(), "payment successful");
+		Library.Custom_click(book.getClick_view_booking(), "booking details");
 		Thread.sleep(10000);	
-		library.Custom_click(book.getClick_view_booking(), "booking details");
+		Library.Custom_click(book.getClick_view_booking(), "booking details");
 		Thread.sleep(7000);
 		try {
 			if(book.getClick_view_booking().isDisplayed()) {
@@ -80,7 +80,7 @@ public class appium_3 extends base_class{
 			Thread.sleep(2000);
 			r.keyPress(KeyEvent.VK_PAGE_DOWN);
 			r.keyRelease(KeyEvent.VK_PAGE_DOWN);
-			WebElement ele4=driver.findElement(By.xpath("//button[@title='Reset']"));library.Custom_click(ele4, "Reset button");
+			WebElement ele4=driver.findElement(By.xpath("//button[@title='Reset']"));Library.Custom_click(ele4, "Reset button");
 //			WebElement ele1=driver.findElement(By.xpath("(//div[@aria-haspopup='listbox'])[3]"));library.Custom_click(ele1, "10 user");
 //			WebElement ele2=driver.findElement(By.xpath("//li[normalize-space()='50']"));library.Custom_click(ele2, "50 user");
 			Thread.sleep(3000);
@@ -88,13 +88,13 @@ public class appium_3 extends base_class{
 			String l="Mahure";
 			
 			WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+" "+l+"']/parent::div/parent::td//following-sibling::td//div[@id='approve-action']"));
-			library.Custom_click(ele5, "accept booking request");
+			Library.Custom_click(ele5, "accept booking request");
 			Thread.sleep(1000);
 			WebElement ele6=driver.findElement(By.xpath("//button[text()='Yes']"));
-			library.Custom_click(ele6, "Yes button");
+			Library.Custom_click(ele6, "Yes button");
 			Thread.sleep(2000);
 			WebElement ele7=driver.findElement(By.xpath("//text[text()='"+s+" "+l+"']/parent::div/parent::td//following-sibling::td//div[@id='view-action']"));
-			library.Custom_click(ele7, "view data");
+			Library.Custom_click(ele7, "view data");
 			Thread.sleep(3000);
 //			WebElement ele8=driver.findElement(By.xpath("//p[text()='Booking Management']"));library.Custom_click(ele8, "Booking management");
 //			
@@ -133,18 +133,18 @@ public class appium_3 extends base_class{
 			/////// Upgrade vehicle ////////
 			r.keyPress(KeyEvent.VK_PAGE_UP); Thread.sleep(1000);
 			r.keyRelease(KeyEvent.VK_PAGE_UP);
-			WebElement ele91=driver.findElement(By.xpath("//button[text()='Upgrade Vehicle']"));library.Custom_click(ele91, "Upgrade vehicle");
-			WebElement ele92=driver.findElement(By.xpath("//em[text()='Available Vehicles']"));library.Custom_click(ele92, "Available vehicles");
-			WebElement ele93=driver.findElement(By.xpath("//li[text()='HF Deluxe']"));library.Custom_click(ele93, "Hf deluxe bike selected");
-			WebElement ele94=driver.findElement(By.xpath("//button[@title='Request Upgrade']"));library.Custom_click(ele94, "Request upgrade vehicle");
+			WebElement ele91=driver.findElement(By.xpath("//button[text()='Upgrade Vehicle']"));Library.Custom_click(ele91, "Upgrade vehicle");
+			WebElement ele92=driver.findElement(By.xpath("//em[text()='Available Vehicles']"));Library.Custom_click(ele92, "Available vehicles");
+			WebElement ele93=driver.findElement(By.xpath("//li[text()='HF Deluxe']"));Library.Custom_click(ele93, "Hf deluxe bike selected");
+			WebElement ele94=driver.findElement(By.xpath("//button[@title='Request Upgrade']"));Library.Custom_click(ele94, "Request upgrade vehicle");
 			Thread.sleep(3000);
 			////////////////
 			
-			WebElement ele13=driver.findElement(By.xpath("(//button[text()='Start Ride' or @data-bs-toggle='modal'])[1]"));library.Custom_click(ele13, "Start ride");
+			WebElement ele13=driver.findElement(By.xpath("(//button[text()='Start Ride' or @data-bs-toggle='modal'])[1]"));Library.Custom_click(ele13, "Start ride");
 			Thread.sleep(2000);
-			WebElement ele14=driver.findElement(By.xpath("(//input[@placeholder='Start Reading'])[1]"));library.custom_sendkeys(ele14, "20", "enter bike reading");
-			WebElement dropdownbike=driver.findElement(By.xpath("//option[text()='Select Registration']"));library.Custom_click(dropdownbike, "Select bike number");
-			WebElement dropdownbike1=driver.findElement(By.xpath("(//option[@value])[2]"));library.Custom_click(dropdownbike1, "bike number is selected");
+			WebElement ele14=driver.findElement(By.xpath("(//input[@placeholder='Start Reading'])[1]"));Library.custom_sendkeys(ele14, "20", "enter bike reading");
+			WebElement dropdownbike=driver.findElement(By.xpath("//option[text()='Select Registration']"));Library.Custom_click(dropdownbike, "Select bike number");
+			WebElement dropdownbike1=driver.findElement(By.xpath("(//option[@value])[2]"));Library.Custom_click(dropdownbike1, "bike number is selected");
 			
 			//////////////////////////////////////////////////////// date as per select bike booking
 //			WebElement calendar2=driver.findElement(By.xpath("//input[@type=\"date\"]"));		library.Custom_click(calendar2, "calender click");
@@ -157,9 +157,9 @@ public class appium_3 extends base_class{
 //				library.Custom_click(dateselect, "Select date");
 //			}
 			/////////////////////////////////////////////////////// MITS form 
-			WebElement Generate_MITC_Form = driver.findElement(By.xpath("//button[normalize-space()='Generate MITC Form']"));	library.Custom_click(Generate_MITC_Form, "Generate MITC Form");
+			WebElement Generate_MITC_Form = driver.findElement(By.xpath("//button[normalize-space()='Generate MITC Form']"));	Library.Custom_click(Generate_MITC_Form, "Generate MITC Form");
 			String parentwindow = driver.getWindowHandle();
-			WebElement MITC_FORM_Link = driver.findElement(By.xpath("//a[normalize-space()='MITC FORM Link']"));	library.Custom_click(MITC_FORM_Link, "MITC FORM Link");
+			WebElement MITC_FORM_Link = driver.findElement(By.xpath("//a[normalize-space()='MITC FORM Link']"));	Library.Custom_click(MITC_FORM_Link, "MITC FORM Link");
 			
 			Thread.sleep(3000);
 		      Set<String> allWindows = driver.getWindowHandles();
@@ -186,20 +186,20 @@ public class appium_3 extends base_class{
 											WebElement MITS_form_checkbox = driver.findElement(By.xpath("//input[@value='Personal']"));																							
 											WebElement Send_Otp=driver.findElement(By.xpath("//button[text()='Send OTP']"));												
 											js.executeScript("arguments[0].scrollIntoView();",Send_Otp);
-											library.Custom_click(MITS_form_checkbox, "MITS form checkbox");
-											library.Custom_click(Send_Otp, "Send Otp button");
-											WebElement OTP_input_box=driver.findElement(By.xpath("(//input[@type='number'])[1]"));	library.custom_sendkeys(OTP_input_box,"123456", "OTP input box");
-											WebElement Verify_button=driver.findElement(By.xpath("//div[text()='Verify']"));	library.Custom_click(Verify_button, "Verify button");
+											Library.Custom_click(MITS_form_checkbox, "MITS form checkbox");
+											Library.Custom_click(Send_Otp, "Send Otp button");
+											WebElement OTP_input_box=driver.findElement(By.xpath("(//input[@type='number'])[1]"));	Library.custom_sendkeys(OTP_input_box,"123456", "OTP input box");
+											WebElement Verify_button=driver.findElement(By.xpath("//div[text()='Verify']"));	Library.Custom_click(Verify_button, "Verify button");
 							 							
 		         } else {
 		            System.out.println("There are no children");
 		         }
 		      }
 			driver.switchTo().window(parentwindow);
-			library.Custom_click(ele13, "Start ride");			
-			WebElement MITC_FORM_status = driver.findElement(By.xpath("//a[normalize-space()='Check MITC Status']"));	library.Custom_click(MITC_FORM_status, "MITC FORM Status");
+			Library.Custom_click(ele13, "Start ride");			
+			WebElement MITC_FORM_status = driver.findElement(By.xpath("//a[normalize-space()='Check MITC Status']"));	Library.Custom_click(MITC_FORM_status, "MITC FORM Status");
 			Thread.sleep(1000);
-			WebElement Start_Ride=driver.findElement(By.xpath("(//button[text()='Start Ride'])[2]"));	library.Custom_click(Start_Ride, "Start ride button");
+			WebElement Start_Ride=driver.findElement(By.xpath("(//button[text()='Start Ride'])[2]"));	Library.Custom_click(Start_Ride, "Start ride button");
 			Thread.sleep(2000);
 			////// verify booking is ongoing
 			WebElement Ongoing=driver.findElement(By.xpath("//span[text()='Ongoing']"));
@@ -219,10 +219,10 @@ public class appium_3 extends base_class{
 		appium_2.Back_button();
 		Thread.sleep(1000);
 		appium_2.Back_button();
-		library.Custom_click(book.getClick_home_page_Bookings_button(), "Bookings button");
+		Library.Custom_click(book.getClick_home_page_Bookings_button(), "Bookings button");
 		Thread.sleep(3000);
 		try {
-			base_class.scrollByText("Booking Status");
+			BaseClass.scrollByText("Booking Status");
 			driver1.findElement(By.xpath("//android.widget.TextView[@text='View']")).click();
 		}catch(Exception e){
 			
@@ -232,47 +232,47 @@ public class appium_3 extends base_class{
 //		library.visible_link(book.getClick_show_more_details(), "show more details text");
 //		library.Custom_click(book.getClick_show_more_details(), "show more details text");
 		Thread.sleep(2000);
-		base_class.scrollByText("Booking Status");
-		library.visible_link(book.getFBD_Booking_status(), "Booking status");
-		library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
+		BaseClass.scrollByText("Booking Status");
+		Library.visible_link(book.getFBD_Booking_status(), "Booking status");
+		Library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
 		Thread.sleep(2000);
-		library.visible_link(book.getFBD_Booking_id(), "Booking ID  ");
-		library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number  ");		
-		library.visible_link(book.getFBD_pick_up_date(), "Pick Up Date  ");
-		library.visible_link(book.getFBD_drop_off_date(), "Drop off date  ");
-		library.visible_link(book.getFBD_pick_up_location(), "Pick Up Location  ");
-		library.visible_link(book.getFBD_duration(), "Duration  ");
-		library.visible_link(book.getFBD_handover_time(), "Handover Time  ");
-		library.visible_link(book.getFBD_drop_off_location(), "Drop off Location  ");
-		library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date  ");
-		library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date  ");
-		base_class.scrollByText("Mode of Pick-Up");
-		library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up  ");
+		Library.visible_link(book.getFBD_Booking_id(), "Booking ID  ");
+		Library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number  ");		
+		Library.visible_link(book.getFBD_pick_up_date(), "Pick Up Date  ");
+		Library.visible_link(book.getFBD_drop_off_date(), "Drop off date  ");
+		Library.visible_link(book.getFBD_pick_up_location(), "Pick Up Location  ");
+		Library.visible_link(book.getFBD_duration(), "Duration  ");
+		Library.visible_link(book.getFBD_handover_time(), "Handover Time  ");
+		Library.visible_link(book.getFBD_drop_off_location(), "Drop off Location  ");
+		Library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date  ");
+		Library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date  ");
+		BaseClass.scrollByText("Mode of Pick-Up");
+		Library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up  ");
 		
 		try {
-			base_class.scrollByText("Booking Status");
-		library.visible_link(book.getFBD_Booking_id(), "Booking ID = "+book.getFBD_Booking_id().getText());
-		library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number = "+book.getFBD_vehicle_nummber().getText());		
-		library.visible_link(book.getFBD_pick_up_date(), "Pick Up Date = "+book.getFBD_pick_up_date().getText());
-		library.visible_link(book.getFBD_drop_off_date(), "Drop off date = "+book.getFBD_drop_off_date().getText());
-		library.visible_link(book.getFBD_pick_up_location(), "Pick Up Location = "+book.getFBD_pick_up_location().getText());
-		library.visible_link(book.getFBD_duration(), "Duration = "+book.getFBD_duration().getText());
-		library.visible_link(book.getFBD_handover_time(), "Handover Time = "+book.getFBD_handover_time().getText());
-		library.visible_link(book.getFBD_drop_off_location(), "Drop off Location = "+book.getFBD_drop_off_location().getText());
-		library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date = "+book.getFBD_planned_drop_off_date().getText());
-		library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date = "+book.getFBD_Actual_drop_off_date().getText());
-		base_class.scrollByText("Mode of Pick-Up");
-		library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up = "+book.getFBD_mode_of_pick_up().getText());
+			BaseClass.scrollByText("Booking Status");
+		Library.visible_link(book.getFBD_Booking_id(), "Booking ID = "+book.getFBD_Booking_id().getText());
+		Library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number = "+book.getFBD_vehicle_nummber().getText());		
+		Library.visible_link(book.getFBD_pick_up_date(), "Pick Up Date = "+book.getFBD_pick_up_date().getText());
+		Library.visible_link(book.getFBD_drop_off_date(), "Drop off date = "+book.getFBD_drop_off_date().getText());
+		Library.visible_link(book.getFBD_pick_up_location(), "Pick Up Location = "+book.getFBD_pick_up_location().getText());
+		Library.visible_link(book.getFBD_duration(), "Duration = "+book.getFBD_duration().getText());
+		Library.visible_link(book.getFBD_handover_time(), "Handover Time = "+book.getFBD_handover_time().getText());
+		Library.visible_link(book.getFBD_drop_off_location(), "Drop off Location = "+book.getFBD_drop_off_location().getText());
+		Library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date = "+book.getFBD_planned_drop_off_date().getText());
+		Library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date = "+book.getFBD_Actual_drop_off_date().getText());
+		BaseClass.scrollByText("Mode of Pick-Up");
+		Library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up = "+book.getFBD_mode_of_pick_up().getText());
 		}catch(Exception e) {
 			log.error("text is not present");
 		}
-		base_class.scrollByText("Show Less");
-		library.Custom_click(book.getClick_show_less_details(), "show less text");
-		base_class.scrollByText("Invoice");
-		library.visible_link(book.getClick_Home_booking_tab_extend_ride(), "Extend ride drop down");
-		library.visible_link(book.getFBD_end_ride(), "End ride drop down");
-		library.visible_link(book.getClick_price_breakup(), "price break up Drop down");
-		library.visible_link(book.getFBD_vehicle_documents(), "Vehicle document");
+		BaseClass.scrollByText("Show Less");
+		Library.Custom_click(book.getClick_show_less_details(), "show less text");
+		BaseClass.scrollByText("Invoice");
+		Library.visible_link(book.getClick_Home_booking_tab_extend_ride(), "Extend ride drop down");
+		Library.visible_link(book.getFBD_end_ride(), "End ride drop down");
+		Library.visible_link(book.getClick_price_breakup(), "price break up Drop down");
+		Library.visible_link(book.getFBD_vehicle_documents(), "Vehicle document");
 		
 	}
 //============================================================================================================================
@@ -281,8 +281,8 @@ public class appium_3 extends base_class{
 	public void TC_0062_Verify_user_End_ride_request() throws Exception {
 		log.info("***************TC_0062_Verify_user_End_ride_request starts*****************");
 		
-		library.Custom_click(book.getFBD_end_ride(), "End ride drop down");
-		library.Custom_click(book.getFBD_end_ride_raised_request_button(), "End ride raised request button");
+		Library.Custom_click(book.getFBD_end_ride(), "End ride drop down");
+		Library.Custom_click(book.getFBD_end_ride_raised_request_button(), "End ride raised request button");
 		
 	}
 	
@@ -293,9 +293,9 @@ public class appium_3 extends base_class{
 		log.info("***************TC_0063_Verify_user_end_ride_booking_status starts*****************");
 		
 		Thread.sleep(5000);
-		base_class.scrollByText("Booking Status");
-		library.visible_link(book.getFBD_Booking_status(), "Booking status");
-		library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
+		BaseClass.scrollByText("Booking Status");
+		Library.visible_link(book.getFBD_Booking_status(), "Booking status");
+		Library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
 	}
 	
 //============================================================================================================================	
@@ -313,30 +313,30 @@ public class appium_3 extends base_class{
 		Thread.sleep(3000);
 		r.keyPress(KeyEvent.VK_PAGE_DOWN);
 		r.keyRelease(KeyEvent.VK_PAGE_DOWN);
-		WebElement ele3=driver.findElement(By.xpath("//h5[normalize-space()='Return Requests Received']"));library.Custom_click(ele3, "Return Requests Received");
+		WebElement ele3=driver.findElement(By.xpath("//h5[normalize-space()='Return Requests Received']"));Library.Custom_click(ele3, "Return Requests Received");
 		
 		Thread.sleep(3000);
 		String s=config.getFirst_name();//user name to find web table
 		String l=config.getLast_name();
 		WebElement ele5=driver.findElement(By.xpath("//text[text()='"+s+" "+l+"']/parent::div/parent::td//following-sibling::td//div[@id='view-action']"));
-		library.Custom_click(ele5, "View booking request");
+		Library.Custom_click(ele5, "View booking request");
 		Thread.sleep(2000);
 		
 		r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_R);r.keyRelease(KeyEvent.VK_R);r.keyRelease(KeyEvent.VK_CONTROL);
 		
-		WebElement ViewEditreaidng=driver.findElement(By.xpath("//button[text()=' Update Odometer Reading']"));library.Custom_click(ViewEditreaidng, "Update Odometer Readings");
-		WebElement endreading=driver.findElement(By.xpath("//input[@placeholder='Update Reading']"));	library.custom_sendkeys(endreading, config.getend_km_reading(), "End ride km reading");
+		WebElement ViewEditreaidng=driver.findElement(By.xpath("//button[text()=' Update Odometer Reading']"));Library.Custom_click(ViewEditreaidng, "Update Odometer Readings");
+		WebElement endreading=driver.findElement(By.xpath("//input[@placeholder='Update Reading']"));	Library.custom_sendkeys(endreading, config.getend_km_reading(), "End ride km reading");
 		Thread.sleep(1000);
-		WebElement ele15=driver.findElement(By.xpath("//button[text()='Update Reading']"));	library.Custom_click(ele15, "Update Reading");
-		WebElement closepopup=driver.findElement(By.xpath("//a[@id='closeModal2']"));	library.Custom_click(closepopup, "Close Update Reading popup");
+		WebElement ele15=driver.findElement(By.xpath("//button[text()='Update Reading']"));	Library.Custom_click(ele15, "Update Reading");
+		WebElement closepopup=driver.findElement(By.xpath("//a[@id='closeModal2']"));	Library.Custom_click(closepopup, "Close Update Reading popup");
 		
 		Thread.sleep(2000);
 		WebElement ele19=driver.findElement(By.xpath("//button[text()=' Complete Ride']"));
-		library.Custom_click(ele19, "Complete ride");
+		Library.Custom_click(ele19, "Complete ride");
 //		WebElement extracharge=driver.findElement(By.xpath("//button[text()='Add Extra Charges']"));library.Custom_click(extracharge, "add extra charges");
-		WebElement Complete=driver.findElement(By.xpath("//input[@id='checkboxNoLabel']"));		library.Custom_click(Complete, "Complete ride checkbox");
+		WebElement Complete=driver.findElement(By.xpath("//input[@id='checkboxNoLabel']"));		Library.Custom_click(Complete, "Complete ride checkbox");
 		Thread.sleep(2000);
-		WebElement ele16=driver.findElement(By.xpath("//button[text()='Confirm & Complete Ride']"));library.Custom_click(ele16, "Confirm and complete ride button");
+		WebElement ele16=driver.findElement(By.xpath("//button[text()='Confirm & Complete Ride']"));Library.Custom_click(ele16, "Confirm and complete ride button");
 		Thread.sleep(2000);
 		
 		Thread.sleep(3000);
@@ -350,18 +350,18 @@ public class appium_3 extends base_class{
 		log.info("***************TC_0065_Verify_user_Complete_ride_booking_status starts*****************");
 		
 		Thread.sleep(3000);
-		library.Custom_click(book.getClick_home_page_button(), "Home button");
+		Library.Custom_click(book.getClick_home_page_button(), "Home button");
 		Thread.sleep(3000);
-		library.Custom_click(book.getClick_home_page_Bookings_button(), "Bookings button");
+		Library.Custom_click(book.getClick_home_page_Bookings_button(), "Bookings button");
 		Thread.sleep(3000);
 		try {
 		//	driver1.findElement(By.xpath("//android.widget.TextView[@text='View']")).click();
 		}catch(Exception e) {}
 		Thread.sleep(10000);
-		base_class.scrollByText("Booking Status");
-		library.visible_link(book.getFBD_Booking_status(), "Booking status");
+		BaseClass.scrollByText("Booking Status");
+		Library.visible_link(book.getFBD_Booking_status(), "Booking status");
 		Thread.sleep(2000);
-		library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
+		Library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
 	}
 //====================================================================================================================================	
 	//@Test(dependsOnMethods={"TC_0065_Verify_user_Complete_ride_booking_status"})
@@ -370,8 +370,8 @@ public class appium_3 extends base_class{
 		log.info("***************TC_0066_Verify_after_Complete_ride_invoice_button starts*****************");
 		
 		Thread.sleep(2000);
-		base_class.scrollByText("Invoice");
-		library.visible_link(book.getFBD_Invoice_button(), "Invoice Button");
+		BaseClass.scrollByText("Invoice");
+		Library.visible_link(book.getFBD_Invoice_button(), "Invoice Button");
 	}
 //===================================================================================================================================	
 	

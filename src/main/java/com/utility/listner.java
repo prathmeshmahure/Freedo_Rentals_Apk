@@ -10,33 +10,33 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-public class listner extends base_class implements ITestListener {
+public class listner extends BaseClass implements ITestListener {
 	
 	
-	ExtentReports extent=extent_reports_generator.getreports();
+	ExtentReports extent=ExtentReportsGenerator.getreports();
 	ThreadLocal<ExtentTest> extent_test=new ThreadLocal<ExtentTest>();
 
 		
 		public void onTestStart(ITestResult result) {
-			library.test=extent.createTest(result.getTestClass().getName()+ " == " +result.getMethod().getMethodName());
+			Library.test=extent.createTest(result.getTestClass().getName()+ " == " +result.getMethod().getMethodName());
 		//	library.test.addScreenCaptureFromBase64String(getscreenshot());
-			extent_test.set(library.test);
+			extent_test.set(Library.test);
 		}
 	
 		public void onTestSuccess(ITestResult result) {
-			library.test.log(Status.PASS, "Test Case Pass" );
-			library.test.addScreenCaptureFromBase64String(getscreenshot());
+			Library.test.log(Status.PASS, "Test Case Pass" );
+			Library.test.addScreenCaptureFromBase64String(getscreenshot());
 		}
 	
 		public void onTestFailure(ITestResult result) {
-			library.test.log(Status.FAIL, "Test Case Fail");
-			library.test.addScreenCaptureFromBase64String(getscreenshot());	
+			Library.test.log(Status.FAIL, "Test Case Fail");
+			Library.test.addScreenCaptureFromBase64String(getscreenshot());	
 		
 		//	Basecapture(result.getMethod().getMethodName()+".jpg");
 		}
 	
 		public void onTestSkipped(ITestResult result) {
-			library.test.log(Status.SKIP, "Test Case Skip");
+			Library.test.log(Status.SKIP, "Test Case Skip");
 			}
 	
 	

@@ -2,550 +2,550 @@
 <testng-results ignored="9" total="75" passed="66" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-09T14:25:33 IST" name="Suite" finished-at="2023-11-09T14:44:02 IST" duration-ms="1108961">
+  <suite started-at="2023-11-15T19:34:48 IST" name="Suite" finished-at="2023-11-15T19:59:18 IST" duration-ms="1470757">
     <groups>
     </groups>
-    <test started-at="2023-11-09T14:25:33 IST" name="Test" finished-at="2023-11-09T14:44:02 IST" duration-ms="1108961">
+    <test started-at="2023-11-15T19:34:48 IST" name="Test" finished-at="2023-11-15T19:59:18 IST" duration-ms="1470757">
       <class name="Freedo_domain.appium_3">
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-09T14:39:47 IST" name="logger" finished-at="2023-11-09T14:39:47 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-15T19:53:47 IST" name="logger" finished-at="2023-11-15T19:53:47 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0059_Verify_user_able_to_Online_payment_booking()[pri:8, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-09T14:39:47 IST" name="TC_0059_Verify_user_able_to_Online_payment_booking" finished-at="2023-11-09T14:41:10 IST" duration-ms="82522" status="PASS">
+        <test-method signature="TC_0059_Verify_user_able_to_Online_payment_booking()[pri:8, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-15T19:53:47 IST" name="TC_0059_Verify_user_able_to_Online_payment_booking" finished-at="2023-11-15T19:55:28 IST" duration-ms="101357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0059_Verify_user_able_to_Online_payment_booking -->
-        <test-method signature="TC_0060_Admin_approved_request()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-09T14:41:10 IST" name="TC_0060_Admin_approved_request" finished-at="2023-11-09T14:42:09 IST" depends-on-methods="Freedo_domain.appium_3.TC_0059_Verify_user_able_to_Online_payment_booking" duration-ms="58348" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-15T19:55:29 IST" name="logger" finished-at="2023-11-15T19:55:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logger -->
+        <test-method signature="TC_0060_Admin_approved_request()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-15T19:55:29 IST" name="TC_0060_Admin_approved_request" finished-at="2023-11-15T19:56:37 IST" depends-on-methods="Freedo_domain.appium_3.TC_0059_Verify_user_able_to_Online_payment_booking" duration-ms="67389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0060_Admin_approved_request -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-09T14:41:10 IST" name="logger" finished-at="2023-11-09T14:41:10 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-15T19:56:38 IST" name="logger" finished-at="2023-11-15T19:56:38 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-09T14:42:09 IST" name="logger" finished-at="2023-11-09T14:42:09 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logger -->
-        <test-method signature="TC_0061_Verify_user_able_to_view_booking_status_all_elements()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-09T14:42:09 IST" name="TC_0061_Verify_user_able_to_view_booking_status_all_elements" finished-at="2023-11-09T14:42:54 IST" depends-on-methods="Freedo_domain.appium_3.TC_0060_Admin_approved_request" duration-ms="44833" status="PASS">
+        <test-method signature="TC_0061_Verify_user_able_to_view_booking_status_all_elements()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-15T19:56:38 IST" name="TC_0061_Verify_user_able_to_view_booking_status_all_elements" finished-at="2023-11-15T19:57:47 IST" depends-on-methods="Freedo_domain.appium_3.TC_0060_Admin_approved_request" duration-ms="68475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0061_Verify_user_able_to_view_booking_status_all_elements -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-09T14:42:54 IST" name="logger" finished-at="2023-11-09T14:42:54 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-15T19:57:48 IST" name="logger" finished-at="2023-11-15T19:57:48 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0062_Verify_user_End_ride_request()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-09T14:42:54 IST" name="TC_0062_Verify_user_End_ride_request" finished-at="2023-11-09T14:42:56 IST" depends-on-methods="Freedo_domain.appium_3.TC_0061_Verify_user_able_to_view_booking_status_all_elements" duration-ms="1542" status="PASS">
+        <test-method signature="TC_0062_Verify_user_End_ride_request()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-15T19:57:48 IST" name="TC_0062_Verify_user_End_ride_request" finished-at="2023-11-15T19:57:53 IST" depends-on-methods="Freedo_domain.appium_3.TC_0061_Verify_user_able_to_view_booking_status_all_elements" duration-ms="4376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0062_Verify_user_End_ride_request -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-09T14:42:56 IST" name="logger" finished-at="2023-11-09T14:42:56 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-15T19:57:54 IST" name="logger" finished-at="2023-11-15T19:57:54 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0063_Verify_user_end_ride_booking_status()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-09T14:42:56 IST" name="TC_0063_Verify_user_end_ride_booking_status" finished-at="2023-11-09T14:43:02 IST" depends-on-methods="Freedo_domain.appium_3.TC_0062_Verify_user_End_ride_request" duration-ms="5393" status="PASS">
+        <test-method signature="TC_0063_Verify_user_end_ride_booking_status()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-15T19:57:54 IST" name="TC_0063_Verify_user_end_ride_booking_status" finished-at="2023-11-15T19:58:04 IST" depends-on-methods="Freedo_domain.appium_3.TC_0062_Verify_user_End_ride_request" duration-ms="9948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0063_Verify_user_end_ride_booking_status -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-09T14:43:02 IST" name="logger" finished-at="2023-11-09T14:43:02 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-15T19:58:05 IST" name="logger" finished-at="2023-11-15T19:58:05 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0064_Admin_check_End_ride_request()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-09T14:43:02 IST" name="TC_0064_Admin_check_End_ride_request" finished-at="2023-11-09T14:43:37 IST" depends-on-methods="Freedo_domain.appium_3.TC_0063_Verify_user_end_ride_booking_status" duration-ms="35141" status="PASS">
+        <test-method signature="TC_0064_Admin_check_End_ride_request()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-15T19:58:05 IST" name="TC_0064_Admin_check_End_ride_request" finished-at="2023-11-15T19:58:45 IST" depends-on-methods="Freedo_domain.appium_3.TC_0063_Verify_user_end_ride_booking_status" duration-ms="40611" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0064_Admin_check_End_ride_request -->
-        <test-method signature="TC_0065_Verify_user_Complete_ride_booking_status()[pri:14, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-09T14:43:38 IST" name="TC_0065_Verify_user_Complete_ride_booking_status" finished-at="2023-11-09T14:44:00 IST" duration-ms="21986" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-15T19:58:47 IST" name="logger" finished-at="2023-11-15T19:58:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logger -->
+        <test-method signature="TC_0065_Verify_user_Complete_ride_booking_status()[pri:14, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-15T19:58:47 IST" name="TC_0065_Verify_user_Complete_ride_booking_status" finished-at="2023-11-15T19:59:14 IST" duration-ms="27006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0065_Verify_user_Complete_ride_booking_status -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-09T14:43:38 IST" name="logger" finished-at="2023-11-09T14:43:38 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logger -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-09T14:44:00 IST" name="logger" finished-at="2023-11-09T14:44:00 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logger -->
-        <test-method signature="TC_0066_Verify_after_Complete_ride_invoice_button()[pri:15, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-09T14:44:00 IST" name="TC_0066_Verify_after_Complete_ride_invoice_button" finished-at="2023-11-09T14:44:02 IST" duration-ms="2194" status="PASS">
+        <test-method signature="TC_0066_Verify_after_Complete_ride_invoice_button()[pri:15, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-15T19:59:15 IST" name="TC_0066_Verify_after_Complete_ride_invoice_button" finished-at="2023-11-15T19:59:17 IST" duration-ms="2767" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0066_Verify_after_Complete_ride_invoice_button -->
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_3@6dab9b6d]" started-at="2023-11-15T19:59:15 IST" name="logger" finished-at="2023-11-15T19:59:15 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logger -->
       </class> <!-- Freedo_domain.appium_3 -->
       <class name="Freedo_domain.appium_2">
-        <test-method signature="TC_0052_admin_Request_reject()[pri:1, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-09T14:37:14 IST" name="TC_0052_admin_Request_reject" finished-at="2023-11-09T14:37:41 IST" duration-ms="26753" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-15T19:49:51 IST" name="logger" finished-at="2023-11-15T19:49:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logger -->
+        <test-method signature="TC_0052_admin_Request_reject()[pri:1, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-15T19:49:51 IST" name="TC_0052_admin_Request_reject" finished-at="2023-11-15T19:50:25 IST" duration-ms="34079" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0052_admin_Request_reject -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-09T14:37:14 IST" name="logger" finished-at="2023-11-09T14:37:14 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-15T19:50:26 IST" name="logger" finished-at="2023-11-15T19:50:26 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0053_Track_booking_status()[pri:2, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-09T14:37:41 IST" name="TC_0053_Track_booking_status" finished-at="2023-11-09T14:38:01 IST" duration-ms="19088" status="PASS">
+        <test-method signature="TC_0053_Track_booking_status()[pri:2, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-15T19:50:26 IST" name="TC_0053_Track_booking_status" finished-at="2023-11-15T19:50:50 IST" duration-ms="23254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0053_Track_booking_status -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-09T14:37:41 IST" name="logger" finished-at="2023-11-09T14:37:41 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-15T19:50:51 IST" name="logger" finished-at="2023-11-15T19:50:51 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-09T14:38:01 IST" name="logger" finished-at="2023-11-09T14:38:01 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logger -->
-        <test-method signature="TC_0054_Verify_user_able_to_logout_cancel()[pri:3, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-09T14:38:01 IST" name="TC_0054_Verify_user_able_to_logout_cancel" finished-at="2023-11-09T14:38:14 IST" duration-ms="12864" status="PASS">
+        <test-method signature="TC_0054_Verify_user_able_to_logout_cancel()[pri:3, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-15T19:50:51 IST" name="TC_0054_Verify_user_able_to_logout_cancel" finished-at="2023-11-15T19:51:10 IST" duration-ms="18986" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0054_Verify_user_able_to_logout_cancel -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-09T14:38:14 IST" name="logger" finished-at="2023-11-09T14:38:14 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-15T19:51:11 IST" name="logger" finished-at="2023-11-15T19:51:11 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0055_Verify_user_able_to_successful_logout()[pri:4, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-09T14:38:14 IST" name="TC_0055_Verify_user_able_to_successful_logout" finished-at="2023-11-09T14:38:22 IST" duration-ms="8069" status="PASS">
+        <test-method signature="TC_0055_Verify_user_able_to_successful_logout()[pri:4, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-15T19:51:11 IST" name="TC_0055_Verify_user_able_to_successful_logout" finished-at="2023-11-15T19:51:28 IST" duration-ms="16580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0055_Verify_user_able_to_successful_logout -->
-        <test-method signature="TC_0056_Verify_user_able_to_deactivate_account()[pri:5, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-09T14:38:23 IST" name="TC_0056_Verify_user_able_to_deactivate_account" finished-at="2023-11-09T14:38:52 IST" duration-ms="29779" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-15T19:51:29 IST" name="logger" finished-at="2023-11-15T19:51:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logger -->
+        <test-method signature="TC_0056_Verify_user_able_to_deactivate_account()[pri:5, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-15T19:51:29 IST" name="TC_0056_Verify_user_able_to_deactivate_account" finished-at="2023-11-15T19:52:26 IST" duration-ms="56437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0056_Verify_user_able_to_deactivate_account -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-09T14:38:23 IST" name="logger" finished-at="2023-11-09T14:38:23 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-15T19:52:27 IST" name="logger" finished-at="2023-11-15T19:52:27 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0057_Verify_user_able_to_COD_booking()[pri:6, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-09T14:38:53 IST" name="TC_0057_Verify_user_able_to_COD_booking" finished-at="2023-11-09T14:39:21 IST" duration-ms="28345" status="PASS">
+        <test-method signature="TC_0057_Verify_user_able_to_COD_booking()[pri:6, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-15T19:52:27 IST" name="TC_0057_Verify_user_able_to_COD_booking" finished-at="2023-11-15T19:53:16 IST" duration-ms="49223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0057_Verify_user_able_to_COD_booking -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-09T14:38:53 IST" name="logger" finished-at="2023-11-09T14:38:53 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logger -->
-        <test-method signature="TC_0058_admin_Request_reject()[pri:0, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-09T14:39:22 IST" name="TC_0058_admin_Request_reject" finished-at="2023-11-09T14:39:47 IST" depends-on-methods="Freedo_domain.appium_2.TC_0057_Verify_user_able_to_COD_booking" duration-ms="25395" status="PASS">
+        <test-method signature="TC_0058_admin_Request_reject()[pri:0, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-15T19:53:17 IST" name="TC_0058_admin_Request_reject" finished-at="2023-11-15T19:53:46 IST" depends-on-methods="Freedo_domain.appium_2.TC_0057_Verify_user_able_to_COD_booking" duration-ms="29125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0058_admin_Request_reject -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-09T14:39:22 IST" name="logger" finished-at="2023-11-09T14:39:22 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_2@53941c2f]" started-at="2023-11-15T19:53:17 IST" name="logger" finished-at="2023-11-15T19:53:17 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
       </class> <!-- Freedo_domain.appium_2 -->
       <class name="Freedo_domain.appium_1">
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:28:45 IST" name="logger" finished-at="2023-11-09T14:28:45 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:38:27 IST" name="logger" finished-at="2023-11-15T19:38:27 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0024_Verify_home_page_all_elements()[pri:1, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:28:45 IST" name="TC_0024_Verify_home_page_all_elements" finished-at="2023-11-09T14:29:11 IST" duration-ms="25851" status="PASS">
+        <test-method signature="TC_0024_Verify_home_page_all_elements()[pri:1, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:38:27 IST" name="TC_0024_Verify_home_page_all_elements" finished-at="2023-11-15T19:38:51 IST" duration-ms="24277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0024_Verify_home_page_all_elements -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:29:13 IST" name="logger" finished-at="2023-11-09T14:29:13 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logger -->
-        <test-method signature="TC_0025_Verify_available_all_bikes()[pri:2, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:29:13 IST" name="TC_0025_Verify_available_all_bikes" finished-at="2023-11-09T14:29:30 IST" duration-ms="17779" status="PASS">
+        <test-method signature="TC_0025_Verify_available_all_bikes()[pri:2, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:38:52 IST" name="TC_0025_Verify_available_all_bikes" finished-at="2023-11-15T19:39:10 IST" duration-ms="18124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0025_Verify_available_all_bikes -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:29:31 IST" name="logger" finished-at="2023-11-09T14:29:31 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:38:52 IST" name="logger" finished-at="2023-11-15T19:38:52 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0026_Verify_available_all_Scooters()[pri:3, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:29:31 IST" name="TC_0026_Verify_available_all_Scooters" finished-at="2023-11-09T14:29:37 IST" duration-ms="5552" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:39:12 IST" name="logger" finished-at="2023-11-15T19:39:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logger -->
+        <test-method signature="TC_0026_Verify_available_all_Scooters()[pri:3, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:39:12 IST" name="TC_0026_Verify_available_all_Scooters" finished-at="2023-11-15T19:39:18 IST" duration-ms="6405" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0026_Verify_available_all_Scooters -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:29:38 IST" name="logger" finished-at="2023-11-09T14:29:38 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:39:19 IST" name="logger" finished-at="2023-11-15T19:39:19 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0027_Verify_homepage_bike_rentals_tab_available_bike()[pri:4, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:29:38 IST" name="TC_0027_Verify_homepage_bike_rentals_tab_available_bike" finished-at="2023-11-09T14:30:01 IST" duration-ms="22337" status="PASS">
+        <test-method signature="TC_0027_Verify_homepage_bike_rentals_tab_available_bike()[pri:4, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:39:19 IST" name="TC_0027_Verify_homepage_bike_rentals_tab_available_bike" finished-at="2023-11-15T19:39:40 IST" duration-ms="20646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0027_Verify_homepage_bike_rentals_tab_available_bike -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:30:03 IST" name="logger" finished-at="2023-11-09T14:30:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:39:41 IST" name="logger" finished-at="2023-11-15T19:39:41 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0028_Verify_Rent_tab_all_elements()[pri:5, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:30:03 IST" name="TC_0028_Verify_Rent_tab_all_elements" finished-at="2023-11-09T14:30:16 IST" duration-ms="13793" status="PASS">
+        <test-method signature="TC_0028_Verify_Rent_tab_all_elements()[pri:5, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:39:41 IST" name="TC_0028_Verify_Rent_tab_all_elements" finished-at="2023-11-15T19:39:54 IST" duration-ms="12784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0028_Verify_Rent_tab_all_elements -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:30:17 IST" name="logger" finished-at="2023-11-09T14:30:17 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:39:55 IST" name="logger" finished-at="2023-11-15T19:39:55 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0029_Verify_freedo_rental_icon()[pri:6, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:30:17 IST" name="TC_0029_Verify_freedo_rental_icon" finished-at="2023-11-09T14:30:23 IST" duration-ms="5833" status="PASS">
+        <test-method signature="TC_0029_Verify_freedo_rental_icon()[pri:6, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:39:55 IST" name="TC_0029_Verify_freedo_rental_icon" finished-at="2023-11-15T19:40:01 IST" duration-ms="6531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0029_Verify_freedo_rental_icon -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:30:24 IST" name="logger" finished-at="2023-11-09T14:30:24 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:40:03 IST" name="logger" finished-at="2023-11-15T19:40:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0030_Verify_more_button_all_elements()[pri:7, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:30:24 IST" name="TC_0030_Verify_more_button_all_elements" finished-at="2023-11-09T14:30:51 IST" duration-ms="26588" status="PASS">
+        <test-method signature="TC_0030_Verify_more_button_all_elements()[pri:7, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:40:03 IST" name="TC_0030_Verify_more_button_all_elements" finished-at="2023-11-15T19:40:28 IST" duration-ms="24576" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0030_Verify_more_button_all_elements -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:30:52 IST" name="logger" finished-at="2023-11-09T14:30:52 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:40:28 IST" name="logger" finished-at="2023-11-15T19:40:28 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0031_Verify_Booking_elements()[pri:8, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:30:52 IST" name="TC_0031_Verify_Booking_elements" finished-at="2023-11-09T14:31:12 IST" duration-ms="20140" status="PASS">
+        <test-method signature="TC_0031_Verify_Booking_elements()[pri:8, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:40:28 IST" name="TC_0031_Verify_Booking_elements" finished-at="2023-11-15T19:40:48 IST" duration-ms="20174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0031_Verify_Booking_elements -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:31:14 IST" name="logger" finished-at="2023-11-09T14:31:14 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:40:50 IST" name="logger" finished-at="2023-11-15T19:40:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0032_Verify_change_city()[pri:9, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:31:14 IST" name="TC_0032_Verify_change_city" finished-at="2023-11-09T14:31:32 IST" duration-ms="17675" status="PASS">
+        <test-method signature="TC_0032_Verify_change_city()[pri:9, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:40:50 IST" name="TC_0032_Verify_change_city" finished-at="2023-11-15T19:41:05 IST" duration-ms="15533" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0032_Verify_change_city -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:31:34 IST" name="logger" finished-at="2023-11-09T14:31:34 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:41:07 IST" name="logger" finished-at="2023-11-15T19:41:07 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0033_Verify_Bike_button_on_homepage()[pri:10, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:31:34 IST" name="TC_0033_Verify_Bike_button_on_homepage" finished-at="2023-11-09T14:31:52 IST" duration-ms="17131" status="PASS">
+        <test-method signature="TC_0033_Verify_Bike_button_on_homepage()[pri:10, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:41:07 IST" name="TC_0033_Verify_Bike_button_on_homepage" finished-at="2023-11-15T19:41:25 IST" duration-ms="18069" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0033_Verify_Bike_button_on_homepage -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:31:53 IST" name="logger" finished-at="2023-11-09T14:31:53 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logger -->
-        <test-method signature="TC_0034_Verify_scooter_button_on_homepage()[pri:11, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:31:53 IST" name="TC_0034_Verify_scooter_button_on_homepage" finished-at="2023-11-09T14:32:05 IST" duration-ms="11921" status="PASS">
+        <test-method signature="TC_0034_Verify_scooter_button_on_homepage()[pri:11, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:41:26 IST" name="TC_0034_Verify_scooter_button_on_homepage" finished-at="2023-11-15T19:41:39 IST" duration-ms="13327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0034_Verify_scooter_button_on_homepage -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:32:06 IST" name="logger" finished-at="2023-11-09T14:32:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:41:26 IST" name="logger" finished-at="2023-11-15T19:41:26 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0035_Verify_user_able_to_select_date_and_package_under_booking()[pri:12, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:32:06 IST" name="TC_0035_Verify_user_able_to_select_date_and_package_under_booking" finished-at="2023-11-09T14:32:31 IST" duration-ms="24716" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:41:40 IST" name="logger" finished-at="2023-11-15T19:41:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logger -->
+        <test-method signature="TC_0035_Verify_user_able_to_select_date_and_package_under_booking()[pri:12, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:41:40 IST" name="TC_0035_Verify_user_able_to_select_date_and_package_under_booking" finished-at="2023-11-15T19:42:05 IST" duration-ms="24597" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0035_Verify_user_able_to_select_date_and_package_under_booking -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:32:32 IST" name="logger" finished-at="2023-11-09T14:32:32 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:42:07 IST" name="logger" finished-at="2023-11-15T19:42:07 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements()[pri:13, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:32:32 IST" name="TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements" finished-at="2023-11-09T14:32:56 IST" duration-ms="23914" status="PASS">
+        <test-method signature="TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements()[pri:13, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:42:07 IST" name="TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements" finished-at="2023-11-15T19:42:28 IST" duration-ms="21042" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:32:59 IST" name="logger" finished-at="2023-11-09T14:32:59 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:42:30 IST" name="logger" finished-at="2023-11-15T19:42:30 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery()[pri:14, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:32:59 IST" name="TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery" finished-at="2023-11-09T14:34:20 IST" duration-ms="81175" status="PASS">
+        <test-method signature="TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery()[pri:14, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:42:30 IST" name="TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery" finished-at="2023-11-15T19:43:59 IST" duration-ms="89560" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:34:20 IST" name="logger" finished-at="2023-11-09T14:34:20 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:44:01 IST" name="logger" finished-at="2023-11-15T19:44:01 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0038_Verify_user_able_to_select_time_slot_afternoon()[pri:15, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:34:20 IST" name="TC_0038_Verify_user_able_to_select_time_slot_afternoon" finished-at="2023-11-09T14:34:46 IST" duration-ms="25271" status="PASS">
+        <test-method signature="TC_0038_Verify_user_able_to_select_time_slot_afternoon()[pri:15, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:44:01 IST" name="TC_0038_Verify_user_able_to_select_time_slot_afternoon" finished-at="2023-11-15T19:44:53 IST" duration-ms="52036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0038_Verify_user_able_to_select_time_slot_afternoon -->
-        <test-method signature="TC_0039_Verify_user_able_to_select_time_slot_Evening()[pri:16, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:34:46 IST" name="TC_0039_Verify_user_able_to_select_time_slot_Evening" finished-at="2023-11-09T14:34:48 IST" duration-ms="1723" status="PASS">
+        <test-method signature="TC_0039_Verify_user_able_to_select_time_slot_Evening()[pri:16, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:44:55 IST" name="TC_0039_Verify_user_able_to_select_time_slot_Evening" finished-at="2023-11-15T19:44:59 IST" duration-ms="4054" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0039_Verify_user_able_to_select_time_slot_Evening -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:34:46 IST" name="logger" finished-at="2023-11-09T14:34:46 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:44:55 IST" name="logger" finished-at="2023-11-15T19:44:55 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0040_Verify_user_able_to_select_time_slot_Morning()[pri:17, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:34:49 IST" name="TC_0040_Verify_user_able_to_select_time_slot_Morning" finished-at="2023-11-09T14:34:50 IST" duration-ms="1696" status="PASS">
+        <test-method signature="TC_0040_Verify_user_able_to_select_time_slot_Morning()[pri:17, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:45:01 IST" name="TC_0040_Verify_user_able_to_select_time_slot_Morning" finished-at="2023-11-15T19:45:05 IST" duration-ms="3244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0040_Verify_user_able_to_select_time_slot_Morning -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:34:49 IST" name="logger" finished-at="2023-11-09T14:34:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:45:01 IST" name="logger" finished-at="2023-11-15T19:45:01 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:34:51 IST" name="logger" finished-at="2023-11-09T14:34:51 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:45:06 IST" name="logger" finished-at="2023-11-15T19:45:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0041_Verify_user_able_to_list_button()[pri:18, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:34:51 IST" name="TC_0041_Verify_user_able_to_list_button" finished-at="2023-11-09T14:34:53 IST" duration-ms="1809" status="PASS">
+        <test-method signature="TC_0041_Verify_user_able_to_list_button()[pri:18, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:45:06 IST" name="TC_0041_Verify_user_able_to_list_button" finished-at="2023-11-15T19:45:11 IST" duration-ms="4142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0041_Verify_user_able_to_list_button -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:34:53 IST" name="logger" finished-at="2023-11-09T14:34:53 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:45:12 IST" name="logger" finished-at="2023-11-15T19:45:12 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0042_Verify_select_city()[pri:19, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:34:53 IST" name="TC_0042_Verify_select_city" finished-at="2023-11-09T14:35:22 IST" duration-ms="28462" status="PASS">
+        <test-method signature="TC_0042_Verify_select_city()[pri:19, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:45:12 IST" name="TC_0042_Verify_select_city" finished-at="2023-11-15T19:46:03 IST" duration-ms="50264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0042_Verify_select_city -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:35:22 IST" name="logger" finished-at="2023-11-09T14:35:22 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logger -->
-        <test-method signature="TC_0043_Verify_continue_button_and_summary_page()[pri:20, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:35:22 IST" name="TC_0043_Verify_continue_button_and_summary_page" finished-at="2023-11-09T14:35:37 IST" duration-ms="15156" status="PASS">
+        <test-method signature="TC_0043_Verify_continue_button_and_summary_page()[pri:20, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:46:05 IST" name="TC_0043_Verify_continue_button_and_summary_page" finished-at="2023-11-15T19:46:48 IST" duration-ms="43027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0043_Verify_continue_button_and_summary_page -->
-        <test-method signature="TC_0044_Verify_summary_page_additional_helmet_charges()[pri:21, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:35:38 IST" name="TC_0044_Verify_summary_page_additional_helmet_charges" finished-at="2023-11-09T14:35:46 IST" duration-ms="8095" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:46:05 IST" name="logger" finished-at="2023-11-15T19:46:05 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logger -->
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:46:50 IST" name="logger" finished-at="2023-11-15T19:46:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logger -->
+        <test-method signature="TC_0044_Verify_summary_page_additional_helmet_charges()[pri:21, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:46:50 IST" name="TC_0044_Verify_summary_page_additional_helmet_charges" finished-at="2023-11-15T19:47:11 IST" duration-ms="20445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0044_Verify_summary_page_additional_helmet_charges -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:35:38 IST" name="logger" finished-at="2023-11-09T14:35:38 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:47:12 IST" name="logger" finished-at="2023-11-15T19:47:12 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0045_Verify_summary_page_coupon_code()[pri:22, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:35:46 IST" name="TC_0045_Verify_summary_page_coupon_code" finished-at="2023-11-09T14:35:54 IST" duration-ms="7687" status="PASS">
+        <test-method signature="TC_0045_Verify_summary_page_coupon_code()[pri:22, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:47:12 IST" name="TC_0045_Verify_summary_page_coupon_code" finished-at="2023-11-15T19:47:31 IST" duration-ms="19133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0045_Verify_summary_page_coupon_code -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:35:46 IST" name="logger" finished-at="2023-11-09T14:35:46 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:47:32 IST" name="logger" finished-at="2023-11-15T19:47:32 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:35:54 IST" name="logger" finished-at="2023-11-09T14:35:54 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logger -->
-        <test-method signature="TC_0046_Verify_summary_page_cash_on_delivery_method()[pri:23, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:35:54 IST" name="TC_0046_Verify_summary_page_cash_on_delivery_method" finished-at="2023-11-09T14:35:56 IST" duration-ms="2102" status="PASS">
+        <test-method signature="TC_0046_Verify_summary_page_cash_on_delivery_method()[pri:23, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:47:32 IST" name="TC_0046_Verify_summary_page_cash_on_delivery_method" finished-at="2023-11-15T19:47:36 IST" duration-ms="3851" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0046_Verify_summary_page_cash_on_delivery_method -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:35:57 IST" name="logger" finished-at="2023-11-09T14:35:57 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logger -->
-        <test-method signature="TC_0047_Verify_summary_page_pay_now_button_status()[pri:24, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:35:57 IST" name="TC_0047_Verify_summary_page_pay_now_button_status" finished-at="2023-11-09T14:35:59 IST" duration-ms="2084" status="PASS">
+        <test-method signature="TC_0047_Verify_summary_page_pay_now_button_status()[pri:24, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:47:38 IST" name="TC_0047_Verify_summary_page_pay_now_button_status" finished-at="2023-11-15T19:47:40 IST" duration-ms="2343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0047_Verify_summary_page_pay_now_button_status -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:35:59 IST" name="logger" finished-at="2023-11-09T14:35:59 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:47:38 IST" name="logger" finished-at="2023-11-15T19:47:38 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0048_Verify_summary_page_pay_now_button()[pri:25, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:35:59 IST" name="TC_0048_Verify_summary_page_pay_now_button" finished-at="2023-11-09T14:36:11 IST" duration-ms="12011" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:47:42 IST" name="logger" finished-at="2023-11-15T19:47:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logger -->
+        <test-method signature="TC_0048_Verify_summary_page_pay_now_button()[pri:25, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:47:42 IST" name="TC_0048_Verify_summary_page_pay_now_button" finished-at="2023-11-15T19:48:05 IST" duration-ms="23666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0048_Verify_summary_page_pay_now_button -->
-        <test-method signature="TC_0049_Verify_user_able_to_make_payment()[pri:26, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:36:12 IST" name="TC_0049_Verify_user_able_to_make_payment" finished-at="2023-11-09T14:36:59 IST" duration-ms="47456" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:48:07 IST" name="logger" finished-at="2023-11-15T19:48:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logger -->
+        <test-method signature="TC_0049_Verify_user_able_to_make_payment()[pri:26, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:48:07 IST" name="TC_0049_Verify_user_able_to_make_payment" finished-at="2023-11-15T19:49:11 IST" duration-ms="64245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0049_Verify_user_able_to_make_payment -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:36:12 IST" name="logger" finished-at="2023-11-09T14:36:12 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:49:12 IST" name="logger" finished-at="2023-11-15T19:49:12 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:36:59 IST" name="logger" finished-at="2023-11-09T14:36:59 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logger -->
-        <test-method signature="TC_0050_Verify_user_able_to_view_booking_status()[pri:27, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:36:59 IST" name="TC_0050_Verify_user_able_to_view_booking_status" finished-at="2023-11-09T14:37:03 IST" duration-ms="3136" status="PASS">
+        <test-method signature="TC_0050_Verify_user_able_to_view_booking_status()[pri:27, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:49:12 IST" name="TC_0050_Verify_user_able_to_view_booking_status" finished-at="2023-11-15T19:49:15 IST" duration-ms="3235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0050_Verify_user_able_to_view_booking_status -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:37:03 IST" name="logger" finished-at="2023-11-09T14:37:03 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logger -->
-        <test-method signature="TC_0051_Verify_user_able_to_view_booking_status_all_elements()[pri:28, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-09T14:37:03 IST" name="TC_0051_Verify_user_able_to_view_booking_status_all_elements" finished-at="2023-11-09T14:37:14 IST" duration-ms="11145" status="PASS">
+        <test-method signature="TC_0051_Verify_user_able_to_view_booking_status_all_elements()[pri:28, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:49:16 IST" name="TC_0051_Verify_user_able_to_view_booking_status_all_elements" finished-at="2023-11-15T19:49:50 IST" duration-ms="33656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0051_Verify_user_able_to_view_booking_status_all_elements -->
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_1@4b79ac84]" started-at="2023-11-15T19:49:16 IST" name="logger" finished-at="2023-11-15T19:49:16 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logger -->
       </class> <!-- Freedo_domain.appium_1 -->
       <class name="Freedo_domain.appium_0">
-        <test-method is-config="true" signature="BS()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:25:32 IST" name="BS" finished-at="2023-11-09T14:25:33 IST" duration-ms="1490" status="PASS">
+        <test-method is-config="true" signature="BS()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:34:46 IST" name="BS" finished-at="2023-11-15T19:34:48 IST" duration-ms="1754" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BS -->
-        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:25:33 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-11-09T14:25:50 IST" duration-ms="16180" status="PASS">
+        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:34:48 IST" name="OPEN_AND_INSTALL_APP" finished-at="2023-11-15T19:35:07 IST" duration-ms="19579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OPEN_AND_INSTALL_APP -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:25:50 IST" name="logger" finished-at="2023-11-09T14:25:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:07 IST" name="logger" finished-at="2023-11-15T19:35:07 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_001_verify_install_apk()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:25:50 IST" name="TC_001_verify_install_apk" finished-at="2023-11-09T14:25:58 IST" duration-ms="8741" status="PASS">
+        <test-method signature="TC_001_verify_install_apk()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:07 IST" name="TC_001_verify_install_apk" finished-at="2023-11-15T19:35:18 IST" duration-ms="11110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_001_verify_install_apk -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:00 IST" name="logger" finished-at="2023-11-09T14:26:00 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:20 IST" name="logger" finished-at="2023-11-15T19:35:20 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_002_verify_select_pickup_location_date_and_packages()[pri:1, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:00 IST" name="TC_002_verify_select_pickup_location_date_and_packages" finished-at="2023-11-09T14:26:04 IST" duration-ms="4233" status="PASS">
+        <test-method signature="TC_002_verify_select_pickup_location_date_and_packages()[pri:1, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:20 IST" name="TC_002_verify_select_pickup_location_date_and_packages" finished-at="2023-11-15T19:35:23 IST" duration-ms="2999" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_002_verify_select_pickup_location_date_and_packages -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:06 IST" name="logger" finished-at="2023-11-09T14:26:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:24 IST" name="logger" finished-at="2023-11-15T19:35:24 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_003_Verify_the_NEXT_button_clicking()[pri:2, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:06 IST" name="TC_003_Verify_the_NEXT_button_clicking" finished-at="2023-11-09T14:26:10 IST" duration-ms="4625" status="PASS">
+        <test-method signature="TC_003_Verify_the_NEXT_button_clicking()[pri:2, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:24 IST" name="TC_003_Verify_the_NEXT_button_clicking" finished-at="2023-11-15T19:35:30 IST" duration-ms="5427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_003_Verify_the_NEXT_button_clicking -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:11 IST" name="logger" finished-at="2023-11-09T14:26:11 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:31 IST" name="logger" finished-at="2023-11-15T19:35:31 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_004_Verify_the_NEXT_button_clicking()[pri:3, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:11 IST" name="TC_004_Verify_the_NEXT_button_clicking" finished-at="2023-11-09T14:26:16 IST" duration-ms="4871" status="PASS">
+        <test-method signature="TC_004_Verify_the_NEXT_button_clicking()[pri:3, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:31 IST" name="TC_004_Verify_the_NEXT_button_clicking" finished-at="2023-11-15T19:35:35 IST" duration-ms="4528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_004_Verify_the_NEXT_button_clicking -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:17 IST" name="logger" finished-at="2023-11-09T14:26:17 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:36 IST" name="logger" finished-at="2023-11-15T19:35:36 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_005_Verify_the_slide_indicator()[pri:4, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:17 IST" name="TC_005_Verify_the_slide_indicator" finished-at="2023-11-09T14:26:18 IST" duration-ms="500" status="PASS">
+        <test-method signature="TC_005_Verify_the_slide_indicator()[pri:4, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:36 IST" name="TC_005_Verify_the_slide_indicator" finished-at="2023-11-15T19:35:37 IST" duration-ms="867" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_005_Verify_the_slide_indicator -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:19 IST" name="logger" finished-at="2023-11-09T14:26:19 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:38 IST" name="logger" finished-at="2023-11-15T19:35:38 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_006_Verify_the_Done_button_clicking()[pri:5, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:19 IST" name="TC_006_Verify_the_Done_button_clicking" finished-at="2023-11-09T14:26:20 IST" duration-ms="1175" status="PASS">
+        <test-method signature="TC_006_Verify_the_Done_button_clicking()[pri:5, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:38 IST" name="TC_006_Verify_the_Done_button_clicking" finished-at="2023-11-15T19:35:39 IST" duration-ms="1178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_006_Verify_the_Done_button_clicking -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:21 IST" name="logger" finished-at="2023-11-09T14:26:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:41 IST" name="logger" finished-at="2023-11-15T19:35:41 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_007_Verify_login_component()[pri:6, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:21 IST" name="TC_007_Verify_login_component" finished-at="2023-11-09T14:26:25 IST" duration-ms="3855" status="PASS">
+        <test-method signature="TC_007_Verify_login_component()[pri:6, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:41 IST" name="TC_007_Verify_login_component" finished-at="2023-11-15T19:35:44 IST" duration-ms="3772" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_007_Verify_login_component -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:26 IST" name="logger" finished-at="2023-11-09T14:26:26 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:45 IST" name="logger" finished-at="2023-11-15T19:35:45 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_008_Verify_login_functionality_Register_mo_number()[pri:7, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:26 IST" name="TC_008_Verify_login_functionality_Register_mo_number" finished-at="2023-11-09T14:26:31 IST" duration-ms="5138" status="PASS">
+        <test-method signature="TC_008_Verify_login_functionality_Register_mo_number()[pri:7, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:45 IST" name="TC_008_Verify_login_functionality_Register_mo_number" finished-at="2023-11-15T19:35:50 IST" duration-ms="4612" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_008_Verify_login_functionality_Register_mo_number -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:33 IST" name="logger" finished-at="2023-11-09T14:26:33 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:51 IST" name="logger" finished-at="2023-11-15T19:35:51 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_009_verify_login_button_on_create_an_account_page()[pri:8, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:33 IST" name="TC_009_verify_login_button_on_create_an_account_page" finished-at="2023-11-09T14:26:38 IST" duration-ms="5620" status="PASS">
+        <test-method signature="TC_009_verify_login_button_on_create_an_account_page()[pri:8, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:51 IST" name="TC_009_verify_login_button_on_create_an_account_page" finished-at="2023-11-15T19:35:57 IST" duration-ms="6454" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_009_verify_login_button_on_create_an_account_page -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:40 IST" name="logger" finished-at="2023-11-09T14:26:40 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:59 IST" name="logger" finished-at="2023-11-15T19:35:59 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0010_verify_create_an_account_by_clicking_login_page()[pri:9, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:40 IST" name="TC_0010_verify_create_an_account_by_clicking_login_page" finished-at="2023-11-09T14:26:48 IST" duration-ms="8378" status="PASS">
+        <test-method signature="TC_0010_verify_create_an_account_by_clicking_login_page()[pri:9, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:35:59 IST" name="TC_0010_verify_create_an_account_by_clicking_login_page" finished-at="2023-11-15T19:36:06 IST" duration-ms="7740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0010_verify_create_an_account_by_clicking_login_page -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:50 IST" name="logger" finished-at="2023-11-09T14:26:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:36:07 IST" name="logger" finished-at="2023-11-15T19:36:07 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0011_verify_user_able_to_create_an_account()[pri:10, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:26:50 IST" name="TC_0011_verify_user_able_to_create_an_account" finished-at="2023-11-09T14:27:14 IST" duration-ms="24170" status="PASS">
+        <test-method signature="TC_0011_verify_user_able_to_create_an_account()[pri:10, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:36:07 IST" name="TC_0011_verify_user_able_to_create_an_account" finished-at="2023-11-15T19:36:39 IST" duration-ms="31296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0011_verify_user_able_to_create_an_account -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:27:15 IST" name="logger" finished-at="2023-11-09T14:27:15 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:36:40 IST" name="logger" finished-at="2023-11-15T19:36:40 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0012_verify_Terms_and_condition_link_on_create_an_account_page()[pri:11, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:27:15 IST" name="TC_0012_verify_Terms_and_condition_link_on_create_an_account_page" finished-at="2023-11-09T14:27:29 IST" duration-ms="14575" status="PASS">
+        <test-method signature="TC_0012_verify_Terms_and_condition_link_on_create_an_account_page()[pri:11, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:36:40 IST" name="TC_0012_verify_Terms_and_condition_link_on_create_an_account_page" finished-at="2023-11-15T19:37:02 IST" duration-ms="21760" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0012_verify_Terms_and_condition_link_on_create_an_account_page -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:27:30 IST" name="logger" finished-at="2023-11-09T14:27:30 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:37:03 IST" name="logger" finished-at="2023-11-15T19:37:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page()[pri:12, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:27:30 IST" name="TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page" finished-at="2023-11-09T14:27:35 IST" duration-ms="4427" status="PASS">
+        <test-method signature="TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page()[pri:12, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:37:03 IST" name="TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page" finished-at="2023-11-15T19:37:08 IST" duration-ms="4750" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:27:36 IST" name="logger" finished-at="2023-11-09T14:27:36 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:37:09 IST" name="logger" finished-at="2023-11-15T19:37:09 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element()[pri:13, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:27:36 IST" name="TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element" finished-at="2023-11-09T14:27:42 IST" duration-ms="5762" status="PASS">
+        <test-method signature="TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element()[pri:13, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:37:09 IST" name="TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element" finished-at="2023-11-15T19:37:16 IST" duration-ms="6822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:27:43 IST" name="logger" finished-at="2023-11-09T14:27:43 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:37:18 IST" name="logger" finished-at="2023-11-15T19:37:18 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0015_Verify_create_my_account_button()[pri:14, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:27:43 IST" name="TC_0015_Verify_create_my_account_button" finished-at="2023-11-09T14:27:44 IST" duration-ms="1501" status="PASS">
+        <test-method signature="TC_0015_Verify_create_my_account_button()[pri:14, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:37:18 IST" name="TC_0015_Verify_create_my_account_button" finished-at="2023-11-15T19:37:19 IST" duration-ms="1128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0015_Verify_create_my_account_button -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:27:45 IST" name="logger" finished-at="2023-11-09T14:27:45 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:37:20 IST" name="logger" finished-at="2023-11-15T19:37:20 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0016_Verify_otp_verification_time_slot()[pri:15, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:27:45 IST" name="TC_0016_Verify_otp_verification_time_slot" finished-at="2023-11-09T14:27:49 IST" depends-on-methods="Freedo_domain.appium_0.TC_0015_Verify_create_my_account_button" duration-ms="4040" status="PASS">
+        <test-method signature="TC_0016_Verify_otp_verification_time_slot()[pri:15, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:37:20 IST" name="TC_0016_Verify_otp_verification_time_slot" finished-at="2023-11-15T19:37:24 IST" depends-on-methods="Freedo_domain.appium_0.TC_0015_Verify_create_my_account_button" duration-ms="3985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0016_Verify_otp_verification_time_slot -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:27:50 IST" name="logger" finished-at="2023-11-09T14:27:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:37:26 IST" name="logger" finished-at="2023-11-15T19:37:26 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0017_Verify_OTP_Verification_Page()[pri:16, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:27:50 IST" name="TC_0017_Verify_OTP_Verification_Page" finished-at="2023-11-09T14:28:01 IST" duration-ms="10818" status="PASS">
+        <test-method signature="TC_0017_Verify_OTP_Verification_Page()[pri:16, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:37:26 IST" name="TC_0017_Verify_OTP_Verification_Page" finished-at="2023-11-15T19:37:36 IST" duration-ms="10408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0017_Verify_OTP_Verification_Page -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:28:02 IST" name="logger" finished-at="2023-11-09T14:28:02 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:37:37 IST" name="logger" finished-at="2023-11-15T19:37:37 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0018_Select_location()[pri:17, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:28:02 IST" name="TC_0018_Select_location" finished-at="2023-11-09T14:28:14 IST" duration-ms="11923" status="PASS">
+        <test-method signature="TC_0018_Select_location()[pri:17, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:37:37 IST" name="TC_0018_Select_location" finished-at="2023-11-15T19:37:54 IST" duration-ms="17086" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0018_Select_location -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:28:16 IST" name="logger" finished-at="2023-11-09T14:28:16 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:37:56 IST" name="logger" finished-at="2023-11-15T19:37:56 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0019_verify_user_select_City()[pri:18, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:28:16 IST" name="TC_0019_verify_user_select_City" finished-at="2023-11-09T14:28:20 IST" duration-ms="4082" status="PASS">
+        <test-method signature="TC_0019_verify_user_select_City()[pri:18, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:37:56 IST" name="TC_0019_verify_user_select_City" finished-at="2023-11-15T19:38:01 IST" duration-ms="4815" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0019_verify_user_select_City -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:28:21 IST" name="logger" finished-at="2023-11-09T14:28:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:38:02 IST" name="logger" finished-at="2023-11-15T19:38:02 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0020_Search_wrong_city_name()[pri:19, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:28:21 IST" name="TC_0020_Search_wrong_city_name" finished-at="2023-11-09T14:28:29 IST" duration-ms="7643" status="PASS">
+        <test-method signature="TC_0020_Search_wrong_city_name()[pri:19, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:38:02 IST" name="TC_0020_Search_wrong_city_name" finished-at="2023-11-15T19:38:11 IST" duration-ms="9584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0020_Search_wrong_city_name -->
-        <test-method signature="TC_0021_Search_city_name()[pri:20, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:28:31 IST" name="TC_0021_Search_city_name" finished-at="2023-11-09T14:28:38 IST" duration-ms="7209" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:38:13 IST" name="logger" finished-at="2023-11-15T19:38:13 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logger -->
+        <test-method signature="TC_0021_Search_city_name()[pri:20, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:38:13 IST" name="TC_0021_Search_city_name" finished-at="2023-11-15T19:38:19 IST" duration-ms="6368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0021_Search_city_name -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:28:31 IST" name="logger" finished-at="2023-11-09T14:28:31 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:38:20 IST" name="logger" finished-at="2023-11-15T19:38:20 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:28:39 IST" name="logger" finished-at="2023-11-09T14:28:39 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logger -->
-        <test-method signature="TC_0022_Select_all__City()[pri:21, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:28:39 IST" name="TC_0022_Select_all__City" finished-at="2023-11-09T14:28:40 IST" depends-on-methods="Freedo_domain.appium_0.TC_0021_Search_city_name" duration-ms="937" status="PASS">
+        <test-method signature="TC_0022_Select_all__City()[pri:21, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:38:20 IST" name="TC_0022_Select_all__City" finished-at="2023-11-15T19:38:23 IST" depends-on-methods="Freedo_domain.appium_0.TC_0021_Search_city_name" duration-ms="3276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0022_Select_all__City -->
-        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:28:42 IST" name="logger" finished-at="2023-11-09T14:28:42 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="logger()[pri:0, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:38:25 IST" name="logger" finished-at="2023-11-15T19:38:25 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
-        <test-method signature="TC_0023_Verify_location_popup()[pri:22, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-09T14:28:42 IST" name="TC_0023_Verify_location_popup" finished-at="2023-11-09T14:28:44 IST" duration-ms="2028" status="PASS">
+        <test-method signature="TC_0023_Verify_location_popup()[pri:22, instance:Freedo_domain.appium_0@3c7c886c]" started-at="2023-11-15T19:38:25 IST" name="TC_0023_Verify_location_popup" finished-at="2023-11-15T19:38:26 IST" duration-ms="981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0023_Verify_location_popup -->

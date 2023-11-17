@@ -122,22 +122,22 @@ public class BaseClass {
 			if(Device_name.equalsIgnoreCase("emulator")) {
 				try {
 		 
-					 cap = new UiAutomator2Options();
-					//	DesiredCapabilities cap = new DesiredCapabilities();
+					// cap = new UiAutomator2Options();
+					DesiredCapabilities cap = new DesiredCapabilities();
 					cap.setCapability("appium:automationName", "uiautomator2");
 					cap.setCapability("platformName", "Android");
 					cap.setCapability("appium:deviceName", "pixel_6");//Infinix //pixel_6
 					cap.setCapability("appium:udid", "emulator-5554");// 0836731257071990 //emulator-5554 //0526532038000424
 					cap.setCapability("appium:avd", "Pixel_6");// if u connect real device comment this line
-					cap.setCapability("appium:avdLaunchTimeout", 600000);		
-					cap.setCapability("appPackage", "com.heerofreedo");               //freedo
-					cap.setCapability("appActivity", "com.heerofreedo.MainActivity"); //freedo
-					cap.setCapability("appium:noReset", "false");		
-					cap.setCapability("appium:multiple", true);
-					cap.setCapability("appium:app",(System.getProperty("user.dir")+"/src/test/resources/apk/10app-release.apk"));
+					cap.setCapability("appium:avdLaunchTimeout", 600000);	
+					cap.setCapability("appPackage", "com.heerofreedo");               //Champion
+					cap.setCapability("appActivity", "com.heerofreedo.MainActivity"); //Champion
+					cap.setCapability("appium:noReset", "false");
+					
+					cap.setCapability("appium:app",(System.getProperty("user.dir")+"/src/test/resources/apk/FreedoRentals.apk"));
 					cap.setCapability("appium:ensureWebviewsHavePages", true);
 					cap.setCapability("appium:nativeWebScreenshot", true);
-					cap.setCapability("appium:newCommandTimeout", 660000);
+					cap.setCapability("appium:newCommandTimeout", 66000);
 				    driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
 				    driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 				    log = LogManager.getLogger("FreedoRentalsApk");
@@ -178,7 +178,7 @@ public class BaseClass {
 //					    capabilities.setCapability("otherApps", jsonArray.toString());
 
 				//	 capabilities.setCapability("pCloudy_ApplicationName", "Champion.apk");  //Champion
-					 capabilities.setCapability("pCloudy_ApplicationName", "10app-release.apk"); //freedo					 
+					 capabilities.setCapability("pCloudy_ApplicationName", "FreedoRentals.apk"); //freedo					 
 				//	 capabilities.setCapability("appPackage", "com.freedoadmin");					 
 					 capabilities.setCapability("appPackage", "com.heerofreedo");
 				//	 capabilities.setCapability("appActivity", "com.freedoadmin.MainActivity");
@@ -211,7 +211,7 @@ public class BaseClass {
 					cap.setCapability("appActivity", "com.heerofreedo.MainActivity"); //freedo
 					cap.setCapability("appium:noReset", "false");
 					
-					cap.setCapability("appium:app",(System.getProperty("user.dir")+"/src/test/resource/apk/10app-release.apk"));
+					cap.setCapability("appium:app",(System.getProperty("user.dir")+"/src/test/resource/apk/FreedoRentals.apk"));
 					cap.setCapability("appium:ensureWebviewsHavePages", true);
 					cap.setCapability("appium:nativeWebScreenshot", true);
 					cap.setCapability("appium:newCommandTimeout", 660000);

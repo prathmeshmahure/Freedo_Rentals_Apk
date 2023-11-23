@@ -142,8 +142,11 @@ public class appium_3 extends BaseClass{
 			Thread.sleep(3000);
 			WebElement ele14=driver.findElement(By.xpath("(//input[@placeholder='Start Reading'])[1]"));
 			try {ele14.click(); }catch(Exception e) {}Thread.sleep(2000);
-			Library.custom_sendkeys(ele14, "20", "enter bike reading");
+			Library.custom_sendkeys(ele14, config.getstart_km_reading(), "enter bike reading");
 			Thread.sleep(1000);
+			try {
+				driver.findElement(By.xpath("//input[@value='20']")).isDisplayed();
+			}catch(Exception e) { ele14.sendKeys(config.getstart_km_reading());}
 			WebElement dropdownbike=driver.findElement(By.xpath("//option[text()='Select Registration']"));Library.Custom_click(dropdownbike, "Select bike number");
 			Thread.sleep(700);
 			WebElement dropdownbike1=driver.findElement(By.xpath("(//option[@value])[2]"));Library.Custom_click(dropdownbike1, "bike number is selected");
@@ -226,7 +229,7 @@ public class appium_3 extends BaseClass{
 		Thread.sleep(3000);
 		try {
 			BaseClass.scrollByText("Booking Status");
-			driver1.findElement(By.xpath("//android.widget.TextView[@text='View']")).click();
+		//	driver1.findElement(By.xpath("//android.widget.TextView[@text='View']")).click();
 		}catch(Exception e){
 			
 		}
@@ -297,6 +300,7 @@ public class appium_3 extends BaseClass{
 		
 		Thread.sleep(5000);
 		BaseClass.scrollByText("Booking Status");
+		Thread.sleep(2000);
 		Library.visible_link(book.getFBD_Booking_status(), "Booking status");
 		Library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
 	}

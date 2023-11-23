@@ -56,7 +56,7 @@ public class BookingPage {
 	@FindBy(xpath="//android.widget.EditText[@content-desc='input_Package_Home']")		////txt_Package_dropdown
 	private WebElement txt_Package_dropdown;
 	
-	@FindBy(xpath="//android.widget.CheckedTextView[@text='1 Days']")					//Click_1_Days_package
+	@FindBy(xpath="//android.widget.CheckedTextView[@text='1 Day']")					//Click_1_Days_package
 	private WebElement Click_1_Days_package;
 	
 	@FindBy(xpath="//android.widget.CheckedTextView[@text='2 Days']")					//Click_2_Days_package

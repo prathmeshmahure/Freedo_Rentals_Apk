@@ -33,7 +33,6 @@
           <include name="TC_0043_Verify_continue_button_and_summary_page"/>
           <include name="TC_0045_Verify_summary_page_coupon_code"/>
           <include name="BS"/>
-          <include name="Champion_app_install"/>
           <include name="TC_0034_Verify_scooter_button_on_homepage"/>
           <include name="TC_0029_Verify_freedo_rental_icon"/>
           <include name="logger"/>
@@ -67,7 +66,6 @@
           <include name="TC_0017_Verify_OTP_Verification_Page"/>
           <include name="BS"/>
           <include name="TC_0023_Verify_location_popup"/>
-          <include name="Champion_app_install"/>
           <include name="TC_0010_verify_create_an_account_by_clicking_login_page"/>
           <include name="logger"/>
           <include name="TC_0019_verify_user_select_City"/>
@@ -85,7 +83,6 @@
           <include name="TC_0058_admin_Request_reject"/>
           <include name="TC_0057_Verify_user_able_to_COD_booking"/>
           <include name="BS"/>
-          <include name="Champion_app_install"/>
         </methods>
       </class> <!-- freedodomain.appium_2 -->
       <class name="freedodomain.appium_3">
@@ -101,7 +98,6 @@
           <include name="TC_0060_Admin_approved_request"/>
           <include name="TC_0059_Verify_user_able_to_Online_payment_booking"/>
           <include name="BS"/>
-          <include name="Champion_app_install"/>
         </methods>
       </class> <!-- freedodomain.appium_3 -->
     </classes>

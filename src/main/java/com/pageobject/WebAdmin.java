@@ -1,14 +1,18 @@
 package com.pageobject;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import io.appium.java_client.android.AndroidDriver;
+import com.utility.Library;
 
 public class WebAdmin {
-	public static WebDriver driver;
+	public  WebDriver driver;
 	
 	@FindBy(xpath="//input[@id='userName']")				 	 //Click_login_username
 	private WebElement Click_login_username;
@@ -16,8 +20,8 @@ public class WebAdmin {
 	@FindBy(xpath="//input[@id='password']")				 	 //Click_login_password
 	private WebElement Click_login_password;
 	
-	@FindBy(xpath="//button[@title='SUBMIT']")				 	 //Click_login_submit_button
-	private WebElement Click_login_submit_button;
+	@FindBy(xpath="//button[normalize-space()='Login']")				 	 //Click_login_submit_button
+	private WebElement Click_login_button;
 	
 	@FindBy(xpath="//p[text()='Dashboard']")				 	 //Click_dashboard
 	private WebElement Click_dashboard;
@@ -83,7 +87,7 @@ public class WebAdmin {
 	private WebElement Click_complete_ride;
 	
 //=======================================================================================================
-			public WebAdmin(AndroidDriver driver1) 
+			public WebAdmin(WebDriver driver1) 
 			{
 				driver=driver1;
 				PageFactory.initElements(driver1, this);
@@ -103,7 +107,7 @@ public class WebAdmin {
 						}
 						
 						public WebElement getClick_login_submit_button() {
-							return Click_login_submit_button;
+							return Click_login_button;
 						}
 						
 						public WebElement getClick_dashboard() {
@@ -189,6 +193,56 @@ public class WebAdmin {
 						public WebElement getClick_complete_ride() {
 							return Click_complete_ride;
 						}
+	////////////////////////////////////////////////////////////////////////////////////////////////
+				public void verifyAdminLogin(String url,String username, String password) throws Exception {
+					ChromeOptions co = new ChromeOptions();
+			    	co.addArguments("--remote-allow-origins=*");
+					driver = new ChromeDriver(co);
+					driver.manage().window().maximize();
+					driver.get(url);
+					driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+					Thread.sleep(2000);
+					Library.custom_sendkeys(Click_login_username, username ,"User Name");
+					Library.custom_sendkeys(Click_login_password, password ,"password");
+					Library.Custom_click(Click_login_button, "Login");
+				}
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						 
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
 						
 						
 }

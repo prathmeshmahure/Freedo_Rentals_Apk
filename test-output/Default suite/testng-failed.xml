@@ -3,17 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Freedo_domain.TEST">
+      <class name="freedodomain.TEST">
         <methods>
-          <include name="Champion_app_install"/>
+          <include name="TC_002_verify_select_pickup_location_date_and_packages"/>
           <include name="OPEN_AND_INSTALL_APP"/>
           <include name="logger"/>
-          <include name="TC_002_verify_select_pickup_location_date_and_packages"/>
-          <include name="TC_0052_Freddo_apk"/>
-          <include name="TC_0052_verify_install_apk"/>
           <include name="BS"/>
         </methods>
-      </class> <!-- Freedo_domain.TEST -->
+      </class> <!-- freedodomain.TEST -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

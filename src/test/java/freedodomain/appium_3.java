@@ -29,38 +29,16 @@ public class appium_3 extends BaseClass{
 		log.info("***************TC_0059_Verify_user_able_to_Online_payment_booking starts*****************");
 		book = new BookingPage(driver1);
 		
-		Library.Custom_click(book.getClick_home_page_button(), "Home button");
-		Thread.sleep(2000);
-		Library.Custom_click(book.getClick_1st_page_enter_button(), "Enter button");
-		Library.date_select();
-		Library.Custom_click(book.getClick_Package_dropdown(), "package dropdown");
-		Library.Custom_click(book.getClick_1_Days_package(),"Selected package");
-		Library.Custom_click(book.getClick_go_freedo_Button(), "Go Freedo button");
-		Thread.sleep(2000);
-		Library.Custom_click(book.getBook_now_button(), "Book now button");
-		Thread.sleep(2000);
-		Library.Custom_click(book.getclick_location_pop_up_ok_button(), "ok button");
-		Library.Custom_click(book.getClick_Continue_Tab(), "Continue button");
-		Thread.sleep(4000);
-		BaseClass.scrollByText("Pay Now");
-	//	library.Custom_click(book.getClick_I_accept_checkbox(), "I accept checkbox");
-		Thread.sleep(1000);
-		Library.Custom_click(book.getClick_summary_pay_now_button(), "Pay now button");
-		Thread.sleep(5000);
-		Library.Custom_click(book.getClick_Pay_using_Netbanking(), "Pay using Netbanking");
-		Library.Custom_click(book.getClick_Pay_using_SBI_bank(), "Select SBI bank");
-		Library.Custom_click(book.getClick_pay_now_button_sbi(), "Pay Now button");
-		
-		Library.Custom_click(book.getClick_payment_successful(), "payment successful");
-		Library.Custom_click(book.getClick_view_booking(), "booking details");
-		Thread.sleep(10000);	
-		Library.Custom_click(book.getClick_view_booking(), "booking details");
-		Thread.sleep(7000);
-		try {
-			if(book.getClick_view_booking().isDisplayed()) {
-			driver1.findElement(By.xpath("//android.widget.TextView[@content-desc='txt_ViewBooking']")).click();
-			}
-		}catch(Exception e){		}	
+		book.clickOnHomeButton();
+		book.clickOnEnterAerrowButton();
+		book.clickDatePackageAndGoFreedoButton();
+		book.clickOnBookNowButton();
+		book.clickOnLocationPopUpOkButton();
+		book.clickOnContinueButton();
+		book.clickOnSummaryPagePaynowButton();
+		book.clickOnNetbankingPaymentOption();
+		book.clickOnBankAndDoPayment();
+		book.clickOnPaymentSuccessful();
 	}
 //================================================================================================================================	
 	@Test(dependsOnMethods={"TC_0059_Verify_user_able_to_Online_payment_booking"})
@@ -222,64 +200,13 @@ public class appium_3 extends BaseClass{
 	public void TC_0061_Verify_user_able_to_view_booking_status_all_elements() throws Exception {
 		log.info("***************TC_0061_Verify_user_able_to_view_booking_status_all_elements starts*****************");
 		
-		appium_2.Back_button();
-		Thread.sleep(1000);
-		appium_2.Back_button();
-		Library.Custom_click(book.getClick_home_page_Bookings_button(), "Bookings button");
-		Thread.sleep(3000);
-		try {
-			BaseClass.scrollByText("Booking Status");
-		//	driver1.findElement(By.xpath("//android.widget.TextView[@text='View']")).click();
-		}catch(Exception e){
-			
-		}
-		//library.Custom_click(book.getClick_booking_page_view_button(), "View button");
-//		Thread.sleep(4000);
-//		library.visible_link(book.getClick_show_more_details(), "show more details text");
-		Library.Custom_click(book.getClick_show_more_details(), "show more details text");
-		Thread.sleep(2000);
-		BaseClass.scrollByText("Booking Status");
-		Library.visible_link(book.getFBD_Booking_status(), "Booking status");
-		Library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
-		Thread.sleep(2000);
-		Library.visible_link(book.getFBD_Booking_id(), "Booking ID  ");
-		Library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number  ");		
-		Library.visible_link(book.getFBD_pick_up_date(), "Pick Up Date  ");
-		Library.visible_link(book.getFBD_drop_off_date(), "Drop off date  ");
-		Library.visible_link(book.getFBD_pick_up_location(), "Pick Up Location  ");
-		Library.visible_link(book.getFBD_duration(), "Duration  ");
-		Library.visible_link(book.getFBD_handover_time(), "Handover Time  ");
-		Library.visible_link(book.getFBD_drop_off_location(), "Drop off Location  ");
-		Library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date  ");
-		Library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date  ");
-		BaseClass.scrollByText("Mode of Pick-Up");
-		Library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up  ");
-		
-		try {
-			BaseClass.scrollByText("Booking Status");
-		Library.visible_link(book.getFBD_Booking_id(), "Booking ID = "+book.getFBD_Booking_id().getText());
-		Library.visible_link(book.getFBD_vehicle_nummber(), "Vehicle number = "+book.getFBD_vehicle_nummber().getText());		
-		Library.visible_link(book.getFBD_pick_up_date(), "Pick Up Date = "+book.getFBD_pick_up_date().getText());
-		Library.visible_link(book.getFBD_drop_off_date(), "Drop off date = "+book.getFBD_drop_off_date().getText());
-		Library.visible_link(book.getFBD_pick_up_location(), "Pick Up Location = "+book.getFBD_pick_up_location().getText());
-		Library.visible_link(book.getFBD_duration(), "Duration = "+book.getFBD_duration().getText());
-		Library.visible_link(book.getFBD_handover_time(), "Handover Time = "+book.getFBD_handover_time().getText());
-		Library.visible_link(book.getFBD_drop_off_location(), "Drop off Location = "+book.getFBD_drop_off_location().getText());
-		Library.visible_link(book.getFBD_planned_drop_off_date(), "Planned drop off date = "+book.getFBD_planned_drop_off_date().getText());
-		Library.visible_link(book.getFBD_Actual_drop_off_date(), "Actual Drop-off date = "+book.getFBD_Actual_drop_off_date().getText());
-		BaseClass.scrollByText("Mode of Pick-Up");
-		Library.visible_link(book.getFBD_mode_of_pick_up(), "Mode of pick-up = "+book.getFBD_mode_of_pick_up().getText());
-		}catch(Exception e) {
-			log.error("text is not present");
-		}
-		BaseClass.scrollByText("Show Less");
-		Library.Custom_click(book.getClick_show_less_details(), "show less text");
-		BaseClass.scrollByText("Invoice");
-		Library.visible_link(book.getClick_Home_booking_tab_extend_ride(), "Extend ride drop down");
-		Library.visible_link(book.getFBD_end_ride(), "End ride drop down");
-		Library.visible_link(book.getClick_price_breakup(), "price break up Drop down");
-		Library.visible_link(book.getFBD_vehicle_documents(), "Vehicle document");
-		
+		book.clickOnHomeButton();
+		book.clickOnHomePageBookingsButton();
+		book.verifyBookingStatus();
+		book.verifyFullBookingDetails();
+		book.clickOnShowLessText();
+		book.verifyPriceBreakup();
+		book.verifyExtendEndRide();
 	}
 //============================================================================================================================
 	@Test(dependsOnMethods={"TC_0061_Verify_user_able_to_view_booking_status_all_elements"})
@@ -287,9 +214,8 @@ public class appium_3 extends BaseClass{
 	public void TC_0062_Verify_user_End_ride_request() throws Exception {
 		log.info("***************TC_0062_Verify_user_End_ride_request starts*****************");
 		
-		Library.Custom_click(book.getFBD_end_ride(), "End ride drop down");
-		Library.Custom_click(book.getFBD_end_ride_raised_request_button(), "End ride raised request button");
-		
+		book.clickOnExtendRide();
+		book.clickOnEndRideRequestButton();	
 	}
 	
 //============================================================================================================================	
@@ -298,11 +224,9 @@ public class appium_3 extends BaseClass{
 	public void TC_0063_Verify_user_end_ride_booking_status() throws Exception {
 		log.info("***************TC_0063_Verify_user_end_ride_booking_status starts*****************");
 		
-		Thread.sleep(5000);
-		BaseClass.scrollByText("Booking Status");
-		Thread.sleep(2000);
-		Library.visible_link(book.getFBD_Booking_status(), "Booking status");
-		Library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
+		book.clickOnHomeButton();
+		book.clickOnHomePageBookingsButton();
+		book.verifyBookingStatus();
 	}
 	
 //============================================================================================================================	
@@ -357,19 +281,9 @@ public class appium_3 extends BaseClass{
 	public void TC_0065_Verify_user_Complete_ride_booking_status() throws Exception {
 		log.info("***************TC_0065_Verify_user_Complete_ride_booking_status starts*****************");
 		
-		Thread.sleep(3000);
-		Library.Custom_click(book.getClick_home_page_button(), "Home button");
-		Thread.sleep(3000);
-		Library.Custom_click(book.getClick_home_page_Bookings_button(), "Bookings button");
-		Thread.sleep(3000);
-		try {
-		//	driver1.findElement(By.xpath("//android.widget.TextView[@text='View']")).click();
-		}catch(Exception e) {}
-		Thread.sleep(10000);
-		BaseClass.scrollByText("Booking Status");
-		Library.visible_link(book.getFBD_Booking_status(), "Booking status");
-		Thread.sleep(2000);
-		Library.visible_link(book.getFBD_booking_status_txt(), "Booking status = "+book.getFBD_booking_status_txt().getText());
+		book.clickOnHomeButton();
+		book.clickOnHomePageBookingsButton();
+		book.verifyBookingStatus();
 	}
 //====================================================================================================================================	
 	//@Test(dependsOnMethods={"TC_0065_Verify_user_Complete_ride_booking_status"})
@@ -377,9 +291,7 @@ public class appium_3 extends BaseClass{
 	public void TC_0066_Verify_after_Complete_ride_invoice_button() throws Exception {
 		log.info("***************TC_0066_Verify_after_Complete_ride_invoice_button starts*****************");
 		
-		Thread.sleep(2000);
-		BaseClass.scrollByText("Invoice");
-		Library.visible_link(book.getFBD_Invoice_button(), "Invoice Button");
+		book.verifyInvoiceButton();
 	}
 //===================================================================================================================================	
 	

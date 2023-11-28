@@ -8,78 +8,17 @@
     <classes>
       <class name="freedodomain.appium_1">
         <methods>
-          <include name="TC_0038_Verify_user_able_to_select_time_slot_afternoon"/>
-          <include name="TC_0028_Verify_Rent_tab_all_elements"/>
-          <include name="TC_0046_Verify_summary_page_cash_on_delivery_method"/>
-          <include name="TC_0037_Verify_user_able_to_select_date_and_package_under_booking_all_elements_using_home_delivery"/>
-          <include name="TC_0048_Verify_summary_page_pay_now_button"/>
-          <include name="TC_0032_Verify_change_city"/>
-          <include name="TC_0040_Verify_user_able_to_select_time_slot_Morning"/>
-          <include name="TC_0035_Verify_user_able_to_select_date_and_package_under_booking"/>
-          <include name="TC_0024_Verify_home_page_all_elements"/>
-          <include name="TC_0027_Verify_homepage_bike_rentals_tab_available_bike"/>
-          <include name="TC_0025_Verify_available_all_bikes"/>
-          <include name="TC_0026_Verify_available_all_Scooters"/>
-          <include name="TC_0031_Verify_Booking_elements"/>
-          <include name="TC_0033_Verify_Bike_button_on_homepage"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC_0042_Verify_select_city"/>
-          <include name="TC_0036_Verify_user_able_to_select_date_and_package_under_booking_all_elements"/>
-          <include name="TC_0047_Verify_summary_page_pay_now_button_status"/>
-          <include name="TC_0050_Verify_user_able_to_view_booking_status"/>
-          <include name="TC_0041_Verify_user_able_to_list_button"/>
-          <include name="TC_0049_Verify_user_able_to_make_payment"/>
-          <include name="TC_0030_Verify_more_button_all_elements"/>
-          <include name="TC_0043_Verify_continue_button_and_summary_page"/>
-          <include name="TC_0045_Verify_summary_page_coupon_code"/>
-          <include name="BS"/>
-          <include name="TC_0034_Verify_scooter_button_on_homepage"/>
-          <include name="TC_0029_Verify_freedo_rental_icon"/>
           <include name="logger"/>
           <include name="TC_0051_Verify_user_able_to_view_booking_status_all_elements"/>
-          <include name="TC_0044_Verify_summary_page_additional_helmet_charges"/>
-          <include name="TC_0039_Verify_user_able_to_select_time_slot_Evening"/>
+          <include name="BS"/>
         </methods>
       </class> <!-- freedodomain.appium_1 -->
-      <class name="freedodomain.appium_0">
-        <methods>
-          <include name="TC_005_Verify_the_slide_indicator"/>
-          <include name="TC_0016_Verify_otp_verification_time_slot"/>
-          <include name="TC_0018_Select_location"/>
-          <include name="TC_0020_Search_wrong_city_name"/>
-          <include name="TC_001_verify_install_apk"/>
-          <include name="TC_006_Verify_the_Done_button_clicking"/>
-          <include name="TC_003_Verify_the_NEXT_button_clicking"/>
-          <include name="TC_009_verify_login_button_on_create_an_account_page"/>
-          <include name="TC_0014_verify_Privacy_policy_under_Privacy_policy_dropdown_all_element"/>
-          <include name="TC_0015_Verify_create_my_account_button"/>
-          <include name="TC_0021_Search_city_name"/>
-          <include name="TC_008_Verify_login_functionality_Register_mo_number"/>
-          <include name="TC_0022_Select_all__City"/>
-          <include name="TC_002_verify_select_pickup_location_date_and_packages"/>
-          <include name="TC_004_Verify_the_NEXT_button_clicking"/>
-          <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC_0013_verify_Privacy_and_policy_link_on_create_an_account_page"/>
-          <include name="TC_007_Verify_login_component"/>
-          <include name="TC_0011_verify_user_able_to_create_an_account"/>
-          <include name="TC_0012_verify_Terms_and_condition_link_on_create_an_account_page"/>
-          <include name="TC_0017_Verify_OTP_Verification_Page"/>
-          <include name="BS"/>
-          <include name="TC_0023_Verify_location_popup"/>
-          <include name="TC_0010_verify_create_an_account_by_clicking_login_page"/>
-          <include name="logger"/>
-          <include name="TC_0019_verify_user_select_City"/>
-        </methods>
-      </class> <!-- freedodomain.appium_0 -->
       <class name="freedodomain.appium_2">
         <methods>
-          <include name="TC_0056_Verify_user_able_to_deactivate_account"/>
-          <include name="TC_0052_admin_Request_reject"/>
           <include name="OPEN_AND_INSTALL_APP"/>
           <include name="TC_0053_Track_booking_status"/>
-          <include name="TC_0054_Verify_user_able_to_logout_cancel"/>
           <include name="logger"/>
-          <include name="TC_0055_Verify_user_able_to_successful_logout"/>
           <include name="TC_0058_admin_Request_reject"/>
           <include name="TC_0057_Verify_user_able_to_COD_booking"/>
           <include name="BS"/>

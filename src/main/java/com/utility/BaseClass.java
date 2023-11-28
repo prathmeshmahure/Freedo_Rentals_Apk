@@ -78,7 +78,7 @@ public class BaseClass {
 					cap.setCapability("appium:nativeWebScreenshot", true);
 					cap.setCapability("appium:newCommandTimeout", 66000);
 				    driver1=new AndroidDriver(new URL(config.getIpAddress()),cap);
-				    driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+				//    driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 				    log = LogManager.getLogger("FreedoRentalsApk");
 				    log.info(" =============== /= Freedo Rentals Mobile App Automation Report =/ ==================  ");
 					} 
@@ -98,10 +98,10 @@ public class BaseClass {
 					 capabilities.setCapability("pCloudy_DurationInMinutes", 25);
 					 capabilities.setCapability("newCommandTimeout", 600);
 					 capabilities.setCapability("launchTimeout", 90000);
-//					 capabilities.setCapability("pCloudy_DeviceManufacturer", config.getpCloudy_DeviceManufacturer());
-//					 capabilities.setCapability("pCloudy_DeviceVersion",config.getpCloudy_DeviceVersion());
-//					 capabilities.setCapability("platformVersion", config.getpCloudy_DeviceVersion());
-					 capabilities.setCapability("pCloudy_DeviceFullName", b);					
+					 capabilities.setCapability("pCloudy_DeviceManufacturer", config.getpCloudy_DeviceManufacturer());
+					 capabilities.setCapability("pCloudy_DeviceVersion",config.getpCloudy_DeviceVersion());
+					 capabilities.setCapability("platformVersion", config.getpCloudy_DeviceVersion());
+					// capabilities.setCapability("pCloudy_DeviceFullName", b);					
 					 capabilities.setCapability("platformName", "Android");
 					 capabilities.setCapability("automationName", "uiautomator2");
 					 capabilities.setCapability("pCloudy_ApplicationName", "FreedoRentals.apk"); //freedo									 
@@ -112,7 +112,7 @@ public class BaseClass {
 					 capabilities.setCapability("pCloudy_EnablePerformanceData", "true");
 					 capabilities.setCapability("pCloudy_EnableDeviceLogs", "true"); 
 					 driver1 = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
-						driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+				//		driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 					    log = LogManager.getLogger("FreedoRentalsApk");
 					    log.info(" =============== /= Freedo Rentals Mobile App Automation Report =/ ==================  ");					
 				  }
@@ -187,11 +187,12 @@ public class BaseClass {
 	public static void scrollByText(String menuText) {
 
     	 try {
-
+    		 Thread.sleep(1000);
     	 driver1.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textMatches(\"" + menuText + "\").instance(0));")); 
     	 } catch (Exception e) {
     		 log.error("==NOT==Unable To Scroll By text "+menuText);
-    	 
+        	 driver1.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textMatches(\"" + menuText + "\").instance(0));")); 
+
     	 }
     	    }
 //======================================================================================================================================================	    
@@ -229,33 +230,7 @@ public class BaseClass {
 		}	
     }
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-	public static void android_home(String fieldname) {
-		try {driver1.pressKey(new KeyEvent(AndroidKey.HOME));
-			log.info("OK==Successfully click Android home "+fieldname);	
-			}
-		catch(Exception e) {
-			log.error("==NOT==Unable To Click Android home "+fieldname);
-			}
-			}
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////    
-	public static void android_switch_app (String fieldname) 	{
-		try {driver1.pressKey(new KeyEvent(AndroidKey.APP_SWITCH));
-			log.info("OK==Successfully click Android switch_app "+fieldname);	
-			}
-		catch(Exception e) {
-			log.error("==NOT==Unable To Click Android switch_app "+fieldname);
-			}
-			}		
-///////////////////////////////////////////Android keys //////////////////////////////////////////////////////////////  	
-		    public static void EnterButton() {
-		    	try {
-		    	driver1.pressKey(new KeyEvent(AndroidKey.ENTER));
-		    	}
-		    	catch(Exception e) {
-		    		
-		    	}
-		    	
-		    }
+
 ///////////////////////////////////////////Android keys //////////////////////////////////////////////////////////////  	
 			public static void Back_button() {
 			try {

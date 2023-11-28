@@ -7,59 +7,79 @@ import com.aventstack.extentreports.ExtentTest;
 import com.pageobject.BookingPage;
 import com.pageobject.ChampionApp;
 import com.pageobject.LaunchLogin;
+import com.pageobject.WebAdmin;
 import com.utility.BaseClass;
-import com.utility.Library;
 @Listeners(com.utility.listner.class)
 public class TEST extends BaseClass {
 	public LaunchLogin login;
 	public BookingPage book;
 	public ChampionApp champ;
+	public WebAdmin admin;
 	public static ExtentTest test;
-//	public SoftAssert ass= new SoftAssert(); 
-	
-//	@Test
-//	public void t1() throws Exception {
+
 		
 	@Test(priority=0)
-	public void TC_002_verify_select_pickup_location_date_and_packages() {
+	public void TC_002_verify_select_pickup_location_date_and_packages() throws Exception {
 		login = new LaunchLogin(driver1);
-		log.info("***************TC_001_verify_select_pickup_location_date_and_packages starts*****************");
+		book = new BookingPage(driver1);
+		admin = new WebAdmin(driver1);
 		
-		try {
-		if(login.getFirst_page_Select_pickUP_location().isDisplayed()) {
 		
-		Library.Custom_click(login.getClick_Next_button1(), "Next_button1 static 1st page");
-		}	}catch(Exception e) {}
-		android_home("Home");
-	}
-	//////////////////////////////////////////////
-		@Test(priority=1)
-		public void TC_0052_verify_install_apk() throws Exception {
-			login = new LaunchLogin(driver1);
-			book = new BookingPage(driver1);
-			champ = new ChampionApp(driver1);
-			log.info("***************TC_002_test_demo starts*****************");
-			Thread.sleep(5000);
-				
-
-		       
-			championapp_activity();
-			Library.custom_sendkeys(champ.getLogin_user_id(), config.getweb_credential(), "User id");
-			Library.custom_sendkeys(champ.getLogin_password(), config.getweb_credential(), "Password");
-			android_home("Home");
-				
-			
-		}
-		///////////////////////////
-		@SuppressWarnings("deprecation")
-		@Test(priority=2)
-		public void TC_0052_Freddo_apk() throws Exception {
-			
-			log.info("***************TC_003_freedo test_demo starts*****************");
-				
-			BaseClass.freedoapp_activity();
-		       Library.Custom_click(login.getClick_Next_button2(), "Next_button2 static 2nd page");
-		       championapp_activity();  
-		       Library.Custom_click(champ.getLogin_Button(), "Login button");
-		}
+		admin.verifyAdminLogin(config.getweb_credential(), config.getweb_credential_password(), null);
+		
+		
+		
+		
+		
 }
+}
+			//login.verifyInstallApk();
+			//login.verifyPickUpLocation();
+			//login.verifySlideIndicator();
+			//login.verifyNextButton1();
+			//login.verifySkipButton1();
+			//login.clickNextButton1();
+			//login.verifySlideIndicator2();
+			//login.verifySecondPageOnboardingTittle();
+			//login.verifySkipButton2();
+			//login.clickNextButton2();
+			//login.verifySlideIndicator3();
+			//login.verifyThirdPageOnboardingTittle();
+			//login.verifyThirdPageAllSlideIndicatorStatus();
+			//login.verifyAndClickDoneButton();
+			//login.verifyLoginHeading();
+			//login.verifyMobileIconAndIndianCode();
+			//login.verifyLoginComponent();
+			//login.enterMobileNumber(config.getMobile());
+			//login.clickCreateAccountLink();
+			//login.clickLoginButtonOnCreateAccountPage();
+			//login.clickCreateAccountLink();
+			//login.verifyCreateAccountAllComponents();
+			//login.verifyAndEnterFirstName(config.getFirst_name());
+			//login.verifyAndEnterLastName(config.getLast_name());
+			//login.verifyMFMobileNumber();
+			//login.verifyAndEnterEmailId(config.getEnter_Email());
+			//login.verifyAndClickAllGender();
+			//login.verifyIAcceptCheckBox();
+			//login.verifyTermsAndCondition();
+			//login.verifyLoginButtonLinkOnCAPage();
+			//login.verifyCreateAnAccountButtonStatus();
+			//login.clickAndVerifyTermsAndCondition();
+			//login.verifyTermsAndConditionPageInfo();
+			//login.clickTermsAndConditionBackButton();
+			//login.clickAndVerifyPrivacyPolicy();
+			//login.clickAndVerifyPrivacyPolicyDropDown();
+			//login.clickPrivacyPolicyBackButton();
+			//login.clickCreateAnAccountButton();
+			//login.verifyOtpVerificationTime();
+			//login.verifyOtpVerificationComponent();
+			//login.enterOtp(config.getOTP());
+			//login.verifyAndClickDontAllowNotification();
+			//login.verifyAndClicklocationNotification();
+			//login.verifyUserSelectCityPage();
+			//login.verifyAndEnterSearchCity();
+			//login.verifySelectedCityNotAvailable();
+			//login.verifyAndEnterValidSearchCity(config.getcity_name());
+			//login.verifySelectedCityName(config.getcity_name());
+			//login.clickSelectedCityName();
+			//login.verifyAndClickDontAllowLocation();

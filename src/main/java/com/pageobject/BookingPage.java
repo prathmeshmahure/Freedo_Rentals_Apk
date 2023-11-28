@@ -1,9 +1,13 @@
 package com.pageobject;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.utility.BaseClass;
+import com.utility.Library;
 
 import io.appium.java_client.android.AndroidDriver;
 
@@ -228,7 +232,7 @@ public class BookingPage {
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_Close']")				//Click_notification_close_button
 	private WebElement Click_notification_close_button;
 	
-	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_PayNow']")							//Click_pay_now_button
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_PayNow' or @text='Pay Now']")							//Click_pay_now_button
 	private WebElement Click_summary_pay_now_button;
 	
 	@FindBy(xpath="//android.widget.Button[@text='Pay Now']")							//Click_pay_now_button
@@ -317,7 +321,10 @@ public class BookingPage {
 	@FindBy(xpath="//android.widget.TextView[@content-desc='imgradioBtn_book_detail_Home']")	//Click_home_delivery_radio_button
 	private WebElement Click_home_delivery_radio_button;
 	
-	@FindBy(xpath="//android.view.ViewGroup[@content-desc='bookingID_detail_address_click']")					
+	@FindBy(xpath="//android.widget.TextView[@content-desc='Change_Address_Booking_Detail']")					
+	private WebElement Click_home_delivery_change_address;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc='bookingID_detail_add_address_txt']")					
 	private WebElement Click_home_delivery_add_address;
 	
 	@FindBy(xpath="//android.widget.EditText[@text='Enter Location Manually']")					
@@ -362,6 +369,9 @@ public class BookingPage {
 	
 	@FindBy(xpath="//android.widget.EditText[@content-desc='ipt_Pincode_bDetail']")						//Click_home_delivery_pincode
 	private WebElement Click_home_delivery_pincode;
+	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='btn_Back_addAddress']")						//Click_home_delivery_pincode
+	private WebElement select_address_back_button;
 	
 	@FindBy(xpath="//android.widget.Button[@content-desc='TabNav, back']")						//
 	private WebElement Click_home_delivery_back_button;
@@ -699,20 +709,7 @@ public class BookingPage {
 	@FindBy(xpath="//android.widget.TextView[@content-desc='asteriskNrNRedProEmer']")
 	private WebElement Update_profile_MF_EM_relation;
 	
-	@FindBy(xpath="//android.widget.TextView[@content-desc='asteriskNfNRed']")
-	private WebElement CA_MF_firstname;
 	
-	@FindBy(xpath="//android.widget.TextView[@content-desc='asteriskNlNRed']")
-	private WebElement CA_MF_lastname;
-	
-	@FindBy(xpath="//android.widget.TextView[@content-desc='asteriskNmNRed']")
-	private WebElement CA_MF_mobilenumber;
-	
-	@FindBy(xpath="//android.widget.TextView[@content-desc='asteriskNeNRed']")
-	private WebElement CA_MF_email;
-	
-	@FindBy(xpath="//android.widget.TextView[@content-desc='asteriskNgNRed']")
-	private WebElement CA_MF_gender;
 //============================== Booking History page =======================================
 	@FindBy(xpath="//android.widget.TextView[@text='Booking Status']//following-sibling::android.widget.TextView")
 	private WebElement FBD_booking_status_txt;
@@ -820,6 +817,7 @@ public class BookingPage {
 //============================================ 1st drop down componenets getter ======= 1st page ================================					
 					public WebElement getClick_1st_page_enter_button() {
 						return Click_1st_page_enter_button;
+						
 					}
 			
 					public WebElement getClick_1st_Metro_Hospital_Sector_12() {
@@ -1508,26 +1506,6 @@ public class BookingPage {
 						return Update_profile_MF_EM_relation;
 					}
 
-					public WebElement getCA_MF_firstname() {
-						return CA_MF_firstname;
-					}
-
-					public WebElement getCA_MF_lastname() {
-						return CA_MF_lastname;
-					}
-
-					public WebElement getCA_MF_mobilenumber() {
-						return CA_MF_mobilenumber;
-					}
-
-					public WebElement getCA_MF_email() {
-						return CA_MF_email;
-					}
-
-					public WebElement getCA_MF_gender() {
-						return CA_MF_gender;
-					}
-
 					public WebElement getMy_profile_page_title() {
 						return my_profile_page_title;
 					}
@@ -1971,6 +1949,429 @@ public class BookingPage {
 					public WebElement getBooking_details_page_city() {
 						return booking_details_page_city;
 					}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+					public void verifyHomePageCityNameAndUsername() {
+						Library.visible_link(txt_city_front_page, "Home page city name ");
+						Library.visible_link(username, "Username");
+						Library.visible_link_gettext(username, "username"); 
+						Library.visible_link(home_city_name,"City name" );
+						Library.visible_link_gettext(home_city_name, "City Name"); 
+					}
+					public void verifyHomePageLocationIcon() {
+						Library.visible_link(location_icon, "Location icon");
+					}
+					public void verifyEnterAerrowAndDifferentCity() {
+						BaseClass.scrollByText("Search in");
+						Library.visible_link(Click_1st_page_enter_button, "Enter button(Arrow)");
+						Library.visible_link(different_city_name, "Different city ?");
+			
+					}
+					public void verifyBikeAndScooterTab() {
+						BaseClass.scrollByText("Why Freedo");
+						BaseClass.Scroll_UP_page_Action("Up");
+						Library.visible_link(home_bike_tab, "Bike button");
+						Library.visible_link(home_scooter_tab, "Scooter button");
+						BaseClass.scrollByText("Search in");	
+					}
+					public void verifyAllFooterElements() {
+						Library.visible_link(Click_home_page_bike_rental_button,  "Bike Rental");
+						Library.visible_link(Click_home_page_Bookings_button, "Bookings");
+						Library.visible_link(Click_home_page_button, "Home button");
+						Library.visible_link(Click_home_page_Rent_button, "Rent");
+						Library.visible_link(Click_home_page_More_button, "More");
+					}
+					public void clickOnEnterAerrowButton() {
+						BaseClass.scrollByText("Search in");
+						Library.Custom_click(Click_1st_page_enter_button, "Enter button(Arrow)");
+					}
+					public void clickDatePackageAndGoFreedoButton() {
+						Library.date_select();
+						Library.Custom_click(Click_Package_dropdown, "package dropdown");
+						Library.Custom_click(Click_1_Days_package,"Selected package");
+						Library.Custom_click(Click_go_freedo_Button, "Go Freedo button");
+					}
+					public void verifyOurRentingFleetPageTitle() throws Exception {
+						Thread.sleep(1000);
+						Library.visible_link(Our_renting_fleet_page_txt, "Our Renting fleet Page tittle ");
+					}
+					public void clickBikeTabAndGetAvailableBikes() {
+						Library.Custom_click(Click_Bike_Tab, "Bike tab");
+						Library.isSelected(Click_Bike_Tab, "Bike tab by default is ");
+						Library.visible_link_gettext(available_bikes, "Available bike quantity ");
+					}
+					public void clickScooterTabAndGetAvailableScooters() throws Exception {
+						Library.Custom_click(Click_Scooter_Tab, "Scooter tab");
+						Thread.sleep(1000);
+						Library.visible_link(available_bikes, "Available Scooter quantity");
+						Library.visible_link_gettext(available_bikes, "Available Scooter quantity ");
+					}
+					public void clickOnHomeButton() {
+						Library.waitForElementToBeClickable(Click_home_page_button);
+						Library.waitAndClick(Click_home_page_button, "Home button ",3000);
+						try {
+							driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc='home_tab']")).click();
+						}catch(Exception e) { }
+					}
+					public void clickOnBikeRentalButton() {
+						Library.Custom_click(Click_home_page_bike_rental_button, "Bike Rental button ");
+					}
+					public void clickHomePageRentButton() {
+						Library.Custom_click(Click_home_page_Rent_button, "Rent tab ");
+					}
+					public void verifyRentalProcess() {
+						Library.visible_link(Rent_page_heading, "Rental Process page heading");
+						Library.visible_link(rent_select_date_and_pickup_location, "Select date & pickup location");
+						Library.visible_link(rent_bikes_and_scooters, "Select from the list of Bikes/Scooters");
+						Library.visible_link(rent_submit_kyc_and_document, "Submit kyc and documents");
+						Library.visible_link(rent_pay_and_book_bike, "Pay & book the bike");
+						Library.visible_link(rent_enjoy_ride, "Enjoy the ride");
+					}
+					public void clickOnHomePageMoreButton() {
+						Library.Custom_click(Click_home_page_More_button, "More button ");
+					}
+					public void verifyMoreButtonAllElements() throws Exception {
+						Thread.sleep(2000);
+						BaseClass.scrollByText("Prathmesh");
+						Library.visible_link(click_dark_theme, "Dark theme mode");
+						Library.visible_link(More_button_notification, "Notification");
+						Library.visible_link(More_button_MY_Profile, "My profile");
+						Library.visible_link(More_button_split_payment, "Split payment");
+						Library.visible_link(More_button_rate_us, "Rate us");
+						Library.visible_link(More_button_KYC, "KYC");
+						Library.visible_link(More_button_terms_and_condition, "Terms & condition");
+						Library.visible_link(More_button_privacy_policy, "Privacy policy");
+						BaseClass.scrollByText("Logout");
+						Library.visible_link(More_button_address_book, "Address book");	
+						Library.visible_link(More_button_about_us, "About us");
+						Library.visible_link(More_button_contact_us, "Contact us");
+						Library.visible_link(More_button_invite_your_friend, "Invite your friend");
+						Library.visible_link(More_button_faq, "FAQ");
+						Library.visible_link(Click_more_option_logout_txt, "Logout");
+						Library.visible_link_gettext(More_button_app_version, "App ");
+					}
+					public void clickOnHomePageBookingsButton() throws Exception {
+						Library.waitAndClick(Click_home_page_Bookings_button, "home page booking button",2000);
+						Thread.sleep(3000);
+					}
+					public void verifyBookingHistory() {
+						Library.visible_link(Click_Home_booking_tab_bike_image, "bike images");
+						Library.visible_link_gettext(Click_Home_booking_tab_bike_text,"bike name = ");
+						Library.visible_link_gettext(Click_Home_booking_tab_pickup_location_txt, "pick up Location = ");
+						Library.visible_link_gettext(Click_Home_booking_tab_pickup_date_txt,"pick up date = ");
+						Library.visible_link_gettext(Click_Home_booking_tab_package_duration,"Duration = ");
+						Library.visible_link_gettext(Click_Home_booking_tab_dropoff_date,"Drop of date = ");
+						Library.visible_link_gettext(Click_Home_booking_tab_total_amount_paid, "Total amount = ");
+						Library.visible_link(Click_booking_page_view_button, "view booking");
+					}
+					public void clickOnDifferentCity() {
+						BaseClass.scrollByText("Search in");
+						Library.Custom_click(different_city_name, "Different city");
+					}
+					public void verifyBikeTabStatus() {
+						BaseClass.scrollByText("Why Freedo");
+						Library.isSelected(home_bike_tab, "Bike button by default is ");
+					}
+					public void verifyBikeImagesScroll() {
+						try {
+						Library.horizontal_scroll_image(bike_1st_imageScroll, bike_2nd_imageScroll, "Bike Horizontal scroll");
+						Library.passmsg("bike is ", "Available");
+						}catch(Exception e) { }
+					}
+					public void clickOnScooterTabAndCheckStatus() {
+						BaseClass.scrollByText("Why Freedo");
+						Library.Custom_click(home_scooter_tab, "Scooter button");
+						Library.isSelected(home_scooter_tab, "Scooter button is ");
+					}
+					public void verifyScooterImagesScroll() {
+						try {
+						Library.horizontal_scroll_image(bike_1st_imageScroll, bike_2nd_imageScroll, "Scooter Horizontal scroll");
+						Library.passmsg("Scooter is ", "Available");
+						}catch(Exception e) { }
+					}
+					public void clickOnHomeBikeTab() {
+						Library.Custom_click(home_bike_tab, "Bike button");
+					}
+					public void clickOnBookNowButton() {
+						Library.Custom_click(book_now_button, "Booknow button");
+					}
+					public void clickOnLocationPopUpOkButton() {
+						Library.waitAndClick(click_location_pop_up_ok_button, "ok button",2000);
+					}
+					public void verifyBikePrice() {
+						BaseClass.scrollByText("Low Price");
+						Library.visible_link_gettext(booking_details_page_price, "Price is = ");
+					}
+					public void verifyBookingDetailsPage() {
+						BaseClass.scrollByText("Mode of Delivery");
+						Library.visible_link(Click_Pick_up_vehicle_radio_button, "Pick-up vehicle radio button");
+						Library.isSelected(Click_Pick_up_vehicle_radio_button, "Pick-up vehicle radio button");
+						Library.visible_link(Click_home_delivery_radio_button, "Home delivery radio button");
+						Library.Vertical_scroll_image(booking_details_page_city, Click_home_delivery_radio_button, "Page scroll");
+						BaseClass.scrollByText("Select Time Slot");
+						Library.visible_link_gettext(booking_details_page_price, "Price is = ");
+						Library.visible_link_gettext(booking_details_page_KM_limit, "Km Limit is = ");
+						Library.visible_link_gettext(booking_details_page_excess_km_charges, "Price is = ");
+						Library.visible_link_gettext(booking_details_page_excess_hourly_charges, "Price is = ");
+						Library.visible_link(booking_details_page_map, "Map");
+						Library.visible_link(booking_details_page_morning, "Time slot Morning");
+						Library.visible_link(booking_details_page_afternoon, "Time slot Afternoon");
+						Library.visible_link(booking_details_page_evening, "Time slot Evening");
+						Library.visible_link(booking_details_page_list_button, "List button");
+						Library.visible_link(Click_Continue_Tab, "Continue button");
+						Library.Vertical_scroll_image(booking_details_page_list_button, booking_details_page_price, "Page scroll");
+					}
+					public void clickOnHomeDeliveryRadioButton() {
+						BaseClass.scrollByText("Mode of Delivery");
+						Library.Custom_click(Click_home_delivery_radio_button, "Home delivery radio button");
+					}
+					public void homeDeliveryPageScroll() {
+						Library.Vertical_scroll_image(booking_details_page_city, Click_home_delivery_radio_button, "Page scroll by elements");	
+						Library.Vertical_scroll_image(Click_home_delivery_radio_button, booking_details_page_price, "Page scroll by elements");
+						BaseClass.scrollByText("Select Time Slot");
+					}
+					public void clickOnAddAddress() {
+						Library.Custom_click(Click_home_delivery_add_address, "Add Address");
+						Library.Custom_click(click_location_pop_up_ok_button, "Location on device ok");
+					}
+					public void enterHomeDeliveryAddress(String address,String name ,String landmark) {
+						Library.custom_sendkeys(Click_home_delivery_search_address, address, "Searching address");
+						Library.EnterButton();
+						Library.waitAndClick(Click_home_delivery_search_address_1, "Random 1 option is selected address",1000);
+						Library.Custom_click(Click_home_delivery_confirm_location, "Confirm location");
+						Library.custom_sendkeys(Click_home_delivery_enter_name, name, "Prathmesh");
+						Library.custom_sendkeys(Click_home_delivery_enter_complete_address, landmark, "Dummy address");
+						Library.custom_sendkeys(Click_home_delivery_landmark_optional, landmark, "Dummy address");
+						Library.EnterButton();
+						BaseClass.scrollByText("Save Address Details");
+						Library.Custom_click(Click_home_delivery_save_address_details, "Save address details");
+					}
+					public void clickOnDeleteAddress() {
+						Library.Custom_click(Click_home_delivery_delete_address, "delete address");
+						Library.Custom_click(Click_home_delivery_yes_address, "delete confirm Yes ");
+					}
+					public void clickOnAddNewAddress() throws Exception {
+						Library.waitAndClick(select_address_back_button, "Select address back button", 2000);
+						Library.Custom_click(click_location_pop_up_ok_button, "Location on device ok");
+						Library.Custom_click(Click_home_delivery_back_button, "Booking details page back button");
+						Thread.sleep(2000);
+						Library.waitAndClick(Click_home_page_button, "Home button ",1000);
+						try {
+								driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc='home_tab']")).click();
+							}catch(Exception e) {}
+						BaseClass.scrollByText("Search in");
+					}
+					public void clickOnAfternoonTimeSlot() throws Exception {
+						Library.Vertical_scroll_image(booking_details_page_city, Click_home_delivery_radio_button, "Page scroll");
+						BaseClass.scrollByText("Select Time Slot");
+						BaseClass.scrollByText("Afternoon");
+						Library.Custom_click(booking_details_page_afternoon, "Afternoon");
+						Thread.sleep(1000);
+						Library.isSelected(booking_details_page_afternoon, "Afternoon is");
+					}
+					public void clickOnEveningTimeSlot() throws Exception {
+						Library.Custom_click(booking_details_page_evening, "Evening");
+						Thread.sleep(1000);
+						Library.isSelected(booking_details_page_evening, "Evening is");
+					}
+					public void clickOnMorningTimeSlot() throws Exception {
+						Library.Custom_click(booking_details_page_morning, "Morning");
+						Thread.sleep(1000);
+						Library.isSelected(booking_details_page_morning, "Morning is");
+					}
+					public void clickOnListButton() {
+						Library.Custom_click(booking_details_page_list_button, "List");
+					}
+					public void verifyMapButton() {
+						Library.visible_link(booking_details_page_map_button, "Maps");
+						Library.Back_button();
+					}
+					public void clickOnContinueButton() {
+						Library.Custom_click(Click_Continue_Tab, "Continue button");
+					}
+					public void verifySummaryPageDetails() {
+						Library.isDisplayed(summary_page_text, "SUMMARY page title is ");
+						Library.visible_link_gettext(summary_bike_name_txt,"bike name ");
+						Library.visible_link_gettext(summary_start_date, "Start date  ");
+						Library.visible_link_gettext(summary_end_date, " End date ");
+						Library.visible_link_gettext(summary_start_time, " Start time  ");
+						Library.visible_link_gettext(summary_end_time, " End Time  ");
+						Library.visible_link_gettext(summary_package_duration,"Duration  ");
+						Library.visible_link_gettext(summary_pickup_location,"Pick up Location  ");
+						Library.visible_link_gettext(summary_km_limit, "KM LIMIT ");
+						Library.visible_link_gettext(summary_excess_km_charges, "Excess Km Charges  ");
+						Library.visible_link_gettext(summary_excess_hourly_charges,"Excess hourly charges  ");
+						Library.visible_link(summary_rent_additional_helmet_checkbox, "Rent additonal helmet checkbox");
+					}
+					public void verifyPackageChargesDetails() {
+						BaseClass.scrollByText("Pay Now");
+						Library.visible_link(summary_coupon_code_offers, "View Offers");
+						Library.visible_link_gettext(summary_package_charges,"Package charges  = ");
+						Library.visible_link_gettext(Click_add_helmet_extra_charges, "Additonal helmet = ");
+						Library.visible_link_gettext(summary_delivery_charges,"Delivery charges = ");
+						Library.visible_link_gettext(summary_discount,"Discount =");
+						Library.visible_link_gettext(summary_total_amount, "Total Amount = ");	
+					}
+					public void verifyCODCheckboxStatusAndPaynowButton() {
+						Library.isSelectedFalse(Click_cash_on_delivery, "Before select Cod check box is ");
+						Library.Custom_click(Click_cash_on_delivery, "cash on delivery");
+						Library.isSelected(Click_cash_on_delivery, "After select Cod check box is ");
+						Library.visible_link(Click_summary_pay_now_button, "click pay now button");
+					}
+					public void verifyAdditionalHelmetCharges() {
+						BaseClass.scrollByText("Helmet");						
+						Library.visible_link(summary_rent_additional_helmet_checkbox, "Rent additonal helmet checkbox");
+						Library.Custom_click(summary_rent_additional_helmet_checkbox, "Rent additonal helmet checkbox");
+						Library.visible_link(summary_Half_face_helmet, "Full face helmet");
+					}
+					public void verifyApplyCouponCode() throws Exception {
+						BaseClass.scrollByText("Coupon code");
+						Library.visible_link(summary_coupon_code_offers, "View offers ");
+						Library.Custom_click(summary_coupon_code_offers, "View offers ");
+						Thread.sleep(3000);
+						Library.visible_link(summary_coupon_page_title, "APPLY COUPON CODE");
+						Library.Custom_click(summary_coupon_apply, "Apply coupon");
+						Thread.sleep(2000);
+					}
+					public void clickOnCODBooking() {
+						BaseClass.scrollByText("Pay Now");
+						Library.isSelectedFalse(Click_cash_on_delivery, "Before select Cod check box is ");
+						Library.Custom_click(Click_cash_on_delivery, "cash on delivery");
+						Library.isSelected(Click_cash_on_delivery, "After select Cod check box is ");
+					}
+					public void verifySummaryPagePaynowButton() {
+						BaseClass.scrollByText("Pay Now");
+						Library.isEnabled(Click_summary_pay_now_button, "Pay now button");
+					}
+					public void clickOnSummaryPagePaynowButton() {
+						BaseClass.scrollByText("Pay Now");
+						Library.Custom_click(Click_summary_pay_now_button, "Pay now button");
+					}
+					public void verifyWalletPaymentOption() throws Exception {
+						Thread.sleep(10000);
+						Library.visible_link(Click_Pay_using_UPI, "Pay using UPI");
+						Library.visible_link(Click_Pay_using_Card, "Pay using card");
+						Library.visible_link(Click_Pay_using_Wallet, "pay using wallet");
+						Library.visible_link(Click_Pay_using_Netbanking, "Pay using Netbanking");
+						Library.visible_link(Click_pay_now_button, "Pay now button");
+					}
+					public void clickOnNetbankingPaymentOption() {
+						Library.Custom_click(Click_Pay_using_Netbanking, "Pay using Netbanking");
+					}
+					public void clickOnBankAndDoPayment() {
+						Library.Custom_click(Click_Pay_using_SBI_bank, "Select SBI bank");
+						Library.Custom_click(Click_pay_now_button_sbi, "Pay Now button");
+					}
+					public void clickOnPaymentSuccessful() {
+						Library.Custom_click(Click_payment_successful, "payment successful");
+						Library.waitForElementToBeClickable(Click_view_booking);
+						Library.Custom_click(Click_view_booking, "booking details");	
+						Library.waitAndClick(Click_view_booking, "booking details",10000);
+						try {
+							Click_view_booking.click();
+						}catch(Exception e) { }
+					}
+					public void verifyBookingStatus() throws Exception {
+						Thread.sleep(2000);
+						BaseClass.scrollByText("Booking Status");
+						Library.waitForVisibilityOf(FBD_Booking_status);
+						Library.visible_link_gettext(FBD_Booking_status, "Booking status");
+					}
+					public void verifyFullBookingDetails() throws Exception {
+						BaseClass.scrollByText("Booking Status");
+						Thread.sleep(3000);
+						Library.visible_link_gettext(FBD_Booking_status, "Booking status = ");
+						Library.visible_link_gettext(FBD_booking_status_txt, "Booking status = ");
+						Library.visible_link_gettext(FBD_Booking_id, "Booking ID = ");
+						Library.visible_link_gettext(FBD_vehicle_nummber, "Vehicle number = ");		
+						Library.visible_link_gettext(FBD_pick_up_date, "Pick Up Date = ");
+						Library.visible_link_gettext(FBD_drop_off_date, "Drop off date = ");
+						try {
+							driver.findElement(By.xpath("//android.widget.TextView[@text='Show More']")).click();
+						}catch(Exception e) {				}	
+						Library.visible_link_gettext(FBD_pick_up_location, "Pick Up Location = ");
+						Library.visible_link_gettext(FBD_duration, "Duration = ");
+						Library.visible_link_gettext(FBD_handover_time, "Handover Time = ");
+						Library.visible_link_gettext(FBD_drop_off_location, "Drop off Location = ");
+						BaseClass.scrollByText("Show Less");
+						Library.visible_link_gettext(FBD_planned_drop_off_date, "Planned drop off date = ");
+						BaseClass.scrollByText("Show Less");
+						Library.visible_link_gettext(FBD_Actual_drop_off_date, "Actual Drop-off date = ");
+						BaseClass.scrollByText("Show Less");
+						Library.visible_link_gettext(FBD_mode_of_pick_up, "Mode of pick-up = ");
+					}
+					
+					public void clickOnShowLessText() {
+						BaseClass.scrollByText("Show Less");
+						Library.Custom_click(Click_show_less_details, "show less text");
+						
+					}
+					public void verifyPriceBreakup() {
+						BaseClass.scrollByText("Price Breakup");
+						Library.visible_link(Click_price_breakup, "price break up Drop down");
+					}
+					public void verifyExtendEndRide() {
+						BaseClass.scrollByText("Invoice");
+						Library.visible_link(Click_Home_booking_tab_extend_ride, "Extend ride drop down");
+						BaseClass.scrollByText("Invoice");
+						Library.visible_link(FBD_end_ride, "End ride drop down");
+						BaseClass.scrollByText("Invoice");
+						Library.visible_link(Click_price_breakup, "price break up Drop down");
+						BaseClass.scrollByText("Invoice");
+						Library.visible_link(FBD_vehicle_documents, "Vehicle document");
+					}
+					public void verifyTrackBookingStatus() {
+						Library.waitForVisibilityOf(Click_Home_booking_tab_track_booking_status);
+						Library.visible_link_gettext(Click_Home_booking_tab_track_booking_status, "Track booking status");
+					}
+					public void clickOnBackButtonInFBDPage() {
+						Library.Custom_click(Click_Home_booking_tab_back_button, "Back button");
+						Library.Back_button();
+					}
+					public void clickOnLogoutCancelButton() {
+						BaseClass.scrollByText("Logout");
+						Library.Custom_click(Click_more_option_logout_txt, "log out account");
+						Library.Custom_click(More_button_logout_cancel, "Logout cancel");
+					}
+					public void clickOnLogoutYesButton() {
+						BaseClass.scrollByText("Logout");
+						Library.Custom_click(Click_more_option_logout_txt, "log out account");
+						Library.Custom_click(Click_more_option_logout_yes_txt, "Logout");
+					}
+					public void clickAndVerifyPrivacyPolicyPage() {
+						Library.Custom_click(More_button_privacy_policy, "Privacy policy");
+					}
+					public void clickOnViewBooking() {
+						Library.Custom_click(Click_view_booking, "View booking");
+					}
+					public void clickOnExtendRide() {
+						Library.Custom_click(FBD_end_ride, "End ride drop down");
+					}
+					public void clickOnEndRideRequestButton() {
+						Library.Custom_click(FBD_end_ride_raised_request_button, "End ride raised request button");
+					}
+					public void verifyInvoiceButton	() {
+						BaseClass.scrollByText("Invoice");
+						Library.visible_link(FBD_Invoice_button, "Invoice Button");
+					}
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					
 
 }
